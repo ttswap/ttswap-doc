@@ -44,8 +44,8 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "docs/.vuepress/dist/"  # VuePress默认输出目录
-          target: "/var/www/ttswap-doc/"
+          source: "docs/.vuepress/dist/*"  # VuePress默认输出目录
+          target: "/var/www/ttswap-doc"
           rm: true
           debug: true
           capture_stdout: true
