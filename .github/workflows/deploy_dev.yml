@@ -52,7 +52,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: docs/.vuepress/dist/*  # VuePress默认输出目录
-          target: /var/www/html/ttswap-doc/
+          target: ~/ttswap-doc/
           overwrite: true
           debug: true
 
