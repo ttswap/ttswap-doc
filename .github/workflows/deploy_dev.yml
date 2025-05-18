@@ -38,6 +38,9 @@ jobs:
         run: |
           npm install
           npm run docs:build  # 假设你的package.json中有build脚本
+          pwd
+          cd docs/.vuepress/dist
+          pwd
 
       - name: Deploy to Server
         uses: appleboy/scp-action@master
