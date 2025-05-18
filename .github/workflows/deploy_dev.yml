@@ -58,6 +58,7 @@ jobs:
           target: ~/ttswap-doc/
           overwrite: true
           debug: true
+          strip_components: 1
 
       - name: Restart Nginx (optional)
         uses: appleboy/ssh-action@master
