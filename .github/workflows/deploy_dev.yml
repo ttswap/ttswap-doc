@@ -27,6 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: actions/setup-node@v4
+        uses: actions/setup-node@v4
         with:
           # 选择要使用的 node 版本
           node-version: 22
