@@ -45,6 +45,9 @@ jobs:
       - name: Build documentation site
         run: pnpm docs:build  
 
+      - name: Check files
+        run: ls -la docs/.vuepress/dist/
+
       - name: Deploy to Server
         uses: appleboy/scp-action@v1
         with:
@@ -55,7 +58,7 @@ jobs:
           target: ~/ttswap-doc/
           overwrite: true
           debug: true
-
+          strip_components: 1
 
       - name: Restart Nginx (optional)
         uses: appleboy/ssh-action@master
