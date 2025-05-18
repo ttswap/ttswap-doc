@@ -38,12 +38,12 @@ jobs:
           # 缓存 pnpm 依赖
           cache: pnpm
 
-      - name: Install dependencies and build
-        run: |
-          pnpm install  --frozen-lockfile
-          pnpm docs:build  # 假设你的package.json中有build脚本
-          pwd
-          echo "pwd1"
+
+      - name: Install dependencies
+        run: pnpm install  --frozen-lockfile
+
+      - name: Build documentation site
+        run: pnpm docs:build  
 
       - name: Deploy to Server
         uses: appleboy/scp-action@master
@@ -54,10 +54,6 @@ jobs:
           source: "docs/.vuepress/dist/*"  # VuePress默认输出目录
           target: "/var/www/ttswap-doc/"
 
-      - name: testpwd
-        run: |
-          echo "pwd2"
-          pwd
 
       - name: Restart Nginx (optional)
         uses: appleboy/ssh-action@master

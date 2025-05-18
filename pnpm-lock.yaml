@@ -33,6 +33,12 @@ importers:
       sass-embedded:
         specifier: ^1.89.0
         version: 1.89.0
+      tm-grammars:
+        specifier: ^1.23.21
+        version: 1.23.21
+      tm-themes:
+        specifier: ^1.10.6
+        version: 1.10.6
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
