@@ -41,6 +41,7 @@ jobs:
           pwd
           cd docs/.vuepress/dist
           pwd
+          tree -s ./
 
       - name: Deploy to Server
         uses: appleboy/scp-action@master
