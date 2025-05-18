@@ -46,16 +46,11 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "docs/.vuepress/dist/*"  # VuePress默认输出目录
           target: "/var/www/ttswap-doc/"
-          rm: true
-          debug: true
-          capture_stdout: true
-
 
       - name: testpwd
         run: |
           echo "pwd2"
           pwd
-
 
       - name: Restart Nginx (optional)
         uses: appleboy/ssh-action@master
