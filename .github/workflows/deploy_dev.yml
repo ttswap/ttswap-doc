@@ -48,16 +48,11 @@ jobs:
       - name: Check files
         run: ls -la docs/.vuepress/dist/
 
-      - name: Deploy to Server
-        uses: shimataro/ssh-scp-action@v2
-        with:
-          host: ${{ secrets.SERVER_IP }}
-          user: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 22
-          source: docs/.vuepress/dist/*  # VuePress默认输出目录
-          target: /var/www/html/
-          strip_components: 1
+      - name: scp file
+        run: |
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > key.pem
+          chmod 600 key.pem
+          scp -o StrictHostKeyChecking=no -i key.pem -r docs/.vuepress/dist/* ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/var/www/html
 
       - name: Restart Nginx (optional)
         uses: appleboy/ssh-action@master
