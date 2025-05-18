@@ -46,14 +46,16 @@ jobs:
         run: pnpm docs:build  
 
       - name: Deploy to Server
-        uses: appleboy/scp-action@master
+        uses: appleboy/scp-action@v1
         with:
           host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: "docs/.vuepress/dist/*"  # VuePress默认输出目录
-          target: "/var/www/ttswap-doc/"
-          recursive: true
+          source: docs/.vuepress/dist/*  # VuePress默认输出目录
+          target: /var/www/ttswap-doc/
+          rm: true
+          overwrite: true
+          debug: true
 
 
       - name: Restart Nginx (optional)
