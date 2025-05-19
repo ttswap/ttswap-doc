@@ -3,21 +3,41 @@ import { defineNavbarConfig } from "vuepress-theme-plume";
 export const enNavbar = defineNavbarConfig([
         { text: "Home", link: "/" },
         {
-                text: "activity",
+                text: "Activity",
                 items: [
                         {
-                                text: "activity1",
-                                link: "/activity/activity1.md",
+                                text: "Public Sell",
+                                link: "/en/activity/activity1.md",
                         },
-                        { text: "activity2", link: "/activity/activity2.md" },
                         {
-                                text: "activity3",
-                                link: "/activity/activity3.md",
+                                text: "Token Airdrop",
+                                link: "/en/activity/activity2.md",
                         },
                 ],
         },
-        { text: "docs", link: "/user/" },
-        { text: "whitepaper", link: "/whitepaper/" },
+        { text: "Document", link: "/en/document/" },
+        { text: "Whitepaper", link: "/en/whitepaper/" },
+        {
+                text: "Join",
+                items: [
+                        {
+                                text: "Become Token Keeper",
+                                link: "/en/activity/activity1.md",
+                        },
+                        {
+                                text: "Become Recommender",
+                                link: "/en/activity/activity2.md",
+                        },
+                        {
+                                text: "Become Service Provider",
+                                link: "/en/activity/activity3.md",
+                        },
+                        {
+                                text: "Become Project Developer",
+                                link: "/en/activity/activity3.md",
+                        },
+                ],
+        },
 ]);
 
 export const zhNavbar = defineNavbarConfig([
@@ -26,13 +46,33 @@ export const zhNavbar = defineNavbarConfig([
                 text: "活动",
                 items: [
                         {
-                                text: "快东向前1",
+                                text: "项目公售",
                                 link: "/zh/activity/activity1.md",
                         },
-                        { text: "快东向2", link: "/zh/activity/activity2.md" },
-                        { text: "快东向3", link: "/zh/activity/activity3.md" },
+                        { text: "代币空投", link: "/zh/activity/activity2.md" },
                 ],
         },
         { text: "文档", link: "/zh/user/" },
+        {
+                text: "加入社区",
+                items: [
+                        {
+                                text: "成为代币运营者",
+                                link: "/zh/activity/activity1.md",
+                        },
+                        {
+                                text: "成为代币推广者",
+                                link: "/zh/activity/activity2.md",
+                        },
+                        {
+                                text: "成为门户运营者",
+                                link: "/zh/activity/activity3.md",
+                        },
+                        {
+                                text: "成为社区开发者",
+                                link: "/zh/activity/activity3.md",
+                        },
+                ],
+        },
         { text: "白皮书", link: "/zh/whitepaper/" },
 ]);

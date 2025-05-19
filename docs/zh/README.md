@@ -1,7 +1,6 @@
 ---
 home: true
 title: Home
-heroImage: /logo.jpeg
 config:
   -
     type: hero
@@ -25,41 +24,41 @@ config:
     type: features
     features:
       -
-        title: 自由兑换任何代币
+        title: 所有代币共享流动性，交易更自由
         icon: 🚀
-        details: 适配移动设备，PC，平板
+        details: 你不再需要一个个建立币对，也不用担心“池子太小流动性不够”。TTSWAP 让所有币对中的同一个代币共用一个超级池子，交易更快、更顺畅。
       -
-        title: 无损提供流动性,赚稳定收益
+        title:  没有无常损失，LP更安心
         icon: 💰
-        details: 无论是想写博客，或想写产品文档，或者两者兼顾
+        details: 在其他平台，当你提供流动性时容易因为价格波动而亏钱，这叫“无常损失”。TTSWAP 的机制可以有效避免这个问题，你的投入不会减少。
       -
-        title: 交易无滑点
+        title: 稳定价格，不怕滑点
         icon: 🚀
-        details: 支持零配置即可使用，也支持丰富的自定义配置
+        details: 在 TTSWAP 中，小额交易不会因价格波动导致“亏损”，你预估多少就能成交多少——交易体验更可控。
       -
-        title: 按角色分佣
+        title: 手续费自动按角色分红
         icon: 📦
-        details: 内置丰富的插件，一站式解决网站一般需求
+        details: 你是用户、推荐者、门户、流动性提供者、代币运营者？都能获得一定比例的手续费分润，人人可参与。
       -
-        title: 低Gas费,节约交易成本
+        title: Gas费节省 50%-90%
         icon: ⛽️
-        details: 支持多种评论系统，支持本地搜索、Algolia搜索
+        details: 智能合约结构精简，计算逻辑优化，让你每一笔交易都比在传统平台省钱——Gas 省得看得见。
       -
         title: ETH二次质押,享五次收益
         icon: 🔒
-        details: 支持全站加密、部分加密（加密目录、加密文章）
+        details: 把 ETH 投入 SETH / SWETH 池子后，系统会自动将未使用资金进行 Rocketpool 质押，享受年化 3~5% 的额外回报。
       -
-        title: 流动性挖矿
+        title:  每笔投资都可能挖矿（TTS）
         icon: 💎
-        details: 支持 Markdown 语法，支持 代码块分组、提示容器、任务列表、数学公式、代码演示等
+        details: 当你投入代币，系统会按你投入的价值自动计算并开始「二次挖矿」，赚取额外 TTS 奖励。
       -
-        title: 代码开源
+        title: 社区驱动，用户主导未来
         icon: 💎
-        details: 支持 Markdown 语法，支持 代码块分组、提示容器、任务列表、数学公式、代码演示等
+        details: TTSWAP 不属于某个公司，它属于社区。项目发展方向和奖励机制，由社区共识推动决定。
       -
-        title: 社区驱动
+        title: 模块化，灵活配置，轻松集成
         icon: 💎
-        details: 支持 Markdown 语法，支持 代码块分组、提示容器、任务列表、数学公式、代码演示等
+        details: 协议接口简单，调用方便，同时每个代币的参数、手续费、挖矿比率都可以灵活设置，为项目方和开发者提供更多自由度。
 
 
 footer: BSL Licensed | Copyright © 2018-present TTswap Community 
