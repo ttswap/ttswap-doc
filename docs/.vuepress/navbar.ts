@@ -7,11 +7,11 @@ export const enNavbar = defineNavbarConfig([
                 items: [
                         {
                                 text: "Public Sell",
-                                link: "/en/activity/activity1.md",
+                                link: "/en/activity/publicSell.md",
                         },
                         {
                                 text: "Token Airdrop",
-                                link: "/en/activity/activity2.md",
+                                link: "/en/activity/tokenAirdrop.md",
                         },
                 ],
         },
@@ -47,9 +47,9 @@ export const zhNavbar = defineNavbarConfig([
                 items: [
                         {
                                 text: "项目公售",
-                                link: "/zh/activity/activity1.md",
+                                link: "/zh/activity/publicSell_zh.md",
                         },
-                        { text: "代币空投", link: "/zh/activity/activity2.md" },
+                        { text: "代币空投", link: "/zh/activity/tokenAirdrop_zh.md" },
                 ],
         },
         { text: "文档", link: "/zh/user/" },
