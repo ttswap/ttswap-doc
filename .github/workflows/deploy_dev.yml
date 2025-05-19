@@ -45,9 +45,6 @@ jobs:
       - name: Build documentation site
         run: pnpm docs:build  
 
-      - name: Check files
-        run: ls -la docs/.vuepress/dist/
-
       - name: scp file
         run: |
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > key.pem
