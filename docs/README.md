@@ -1,5 +1,5 @@
 ---
-home: true
+pageLayout: 'home'
 title: Home
 config:
   -

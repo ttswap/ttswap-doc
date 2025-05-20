@@ -5,6 +5,7 @@ docs/.vuepress/dist/
 docs/.vuepress/.DS_Store
 # Node modules
 node_modules/
+.github
 
 # MacOS Desktop Services Store
 .DS_Store

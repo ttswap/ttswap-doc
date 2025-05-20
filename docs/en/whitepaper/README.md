@@ -14,32 +14,32 @@ In summary, TTSWAP provides a simple, transparent, and efficient cryptocurrency 
 ----
 
 ## 2 Features
-1. Constant Value Trading Model  
-   The core idea of this model is to ensure that the value of the transaction remains constant throughout the process. This means that regardless of when the transaction occurs, it objectively reflects the market value of the tokens, allowing for free, simple, and fast token trading.
+1. Constant Value Trading Model    
+The core idea of this model is to ensure that the value of the transaction remains constant throughout the process. This means that regardless of when the transaction occurs, it objectively reflects the market value of the tokens, allowing for free, simple, and fast token trading.
 
 2. Direct Trading Without Intermediaries  
-   On this protocol, any two tokens can be traded directly without needing to convert one token into an intermediary token first. This direct trading model simplifies the transaction process, saving time and costs.
+On this protocol, any two tokens can be traded directly without needing to convert one token into an intermediary token first. This direct trading model simplifies the transaction process, saving time and costs.
 
 3. No Slippage Trading  
-   Slippage refers to the phenomenon where the transaction price deviates from expectations due to market price fluctuations during the transaction. In this protocol, as long as the transaction amount is below a specific threshold, there will be no price slippage, meaning the transaction is stable and reliable under certain conditions.
+Slippage refers to the phenomenon where the transaction price deviates from expectations due to market price fluctuations during the transaction. In this protocol, as long as the transaction amount is below a specific threshold, there will be no price slippage, meaning the transaction is stable and reliable under certain conditions.
 
 4. No Impermanent Loss  
-   Impermanent loss refers to the loss suffered by liquidity providers due to market fluctuations when providing liquidity. This trading model avoids the issue of impermanent loss through its design logic, meaning liquidity providers or token investors can maintain the original value of their investment when withdrawing and also earn profits from providing liquidity.
+Impermanent loss refers to the loss suffered by liquidity providers due to market fluctuations when providing liquidity. This trading model avoids the issue of impermanent loss through its design logic, meaning liquidity providers or token investors can maintain the original value of their investment when withdrawing and also earn profits from providing liquidity.
 
 5. Low Gas Fees  
-   Gas fees are the costs required to execute smart contracts on the Ethereum network. Due to the relatively simple logic and low computational requirements of this trading model, Gas consumption is low, allowing users to save significant Gas fees during transactions, making trading more economical and efficient. Compared to other trading models, it can save 50% to 90% in Gas fees.
+Gas fees are the costs required to execute smart contracts on the Ethereum network. Due to the relatively simple logic and low computational requirements of this trading model, Gas consumption is low, allowing users to save significant Gas fees during transactions, making trading more economical and efficient. Compared to other trading models, it can save 50% to 90% in Gas fees.
 
 6. Fee Distribution by Role  
-   On the protocol, fees are distributed according to the different roles of participants, including merchants (token sellers), token investors (liquidity providers), gateways, referrers, and ordinary users. Anyone has the opportunity to participate in the protocol's operations and share the profits from the protocol's development, thereby incentivizing more users to participate in the protocol's construction.
+On the protocol, fees are distributed according to the different roles of participants, including merchants (token sellers), token investors (liquidity providers), gateways, referrers, and ordinary users. Anyone has the opportunity to participate in the protocol's operations and share the profits from the protocol's development, thereby incentivizing more users to participate in the protocol's construction.
 
 7. Native ETH Support  
-   The protocol supports direct exchange of native ETH for any token.
+The protocol supports direct exchange of native ETH for any token.
 
 8. Proof of Investment Secondary TTS Mining  
-   When users invest in tokens, the protocol automatically mines for them based on the investment value.
+When users invest in tokens, the protocol automatically mines for them based on the investment value.
 
 9. Community-Driven  
-   TTSWAP embraces the community, driving project improvements and refinements through community involvement.
+TTSWAP embraces the community, driving project improvements and refinements through community involvement.
 
 ---
 ## 3 Constant Value Trading Model Principle
@@ -335,7 +335,7 @@ When a user transacts with a token for the first time, GAS consumption is at the
 
 To promote better project growth and protect the interests of project supporters, the following token plan is introduced.  
 ## 10 Roles in the Protocol  
-The protocol supports five roles: Token~a~dministrator, Token Liquidity Provider, Service Provider, Referrer, User, and Platform.  
+The protocol supports five roles: Token administrator, Token Liquidity Provider, Service Provider, Referrer, User, and Platform.  
 
 ### 10.1 Token Administrator  
 When a user adds a token to the platform for the first time, they become the token's administrator, equivalent to being entrusted by the community to manage the token. They enjoy a commission of 1%-3% of the fees. Tokens not directly operated by the project are evaluated every two years.  
