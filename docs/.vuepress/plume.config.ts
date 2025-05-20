@@ -6,12 +6,15 @@ import { enNotes, zhNotes } from "./notes";
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-        logo: "logo.png",
+        logo: "logo.jpeg",
 
         appearance: true, // 配置 深色模式
 
-        social: [{ icon: "github", link: "https://github.com/tt-swap" }],
-        navbarSocialInclude: ["github"], // 允许显示在导航栏的 social 社交链接
+       
+
+        social: [{ icon: "github", link: "https://github.com/tt-swap" },{
+                 icon: "twitter", link: "https://github.com/tt-swap" }],
+        navbarSocialInclude: ["github","twitter"], // 允许显示在导航栏的 social 社交链接
         // aside: true, // 页内侧边栏， 默认显示在右侧
         // outline: [2, 3], // 页内大纲， 默认显示 h2, h3
 
@@ -50,13 +53,26 @@ export default defineThemeConfig({
                          * @see https://theme-plume.vuejs.press/config/basic/#profile
                          */
                         profile: {
-                                avatar: "local.png",
+                                avatar: "logo.jpeg",
                                 name: "TTswap",
                                 description: "Trade &amp; Invest crypto freely",
                                 // circle: true,
                                 // location: '',
-                                // organization: '',
+                                // organization: '' ,
                         },
+
+
+                //         bulletin: {
+                //         layout: 'top-right',
+                //         title: '公告板标题',
+                //         contentType: 'markdown', 
+                //         content:`\
+                // **更新说明**
+
+                // - 新增了一些功能
+                // - 修复了一些 bug
+                // `,
+                //         },
 
                         navbar: enNavbar,
                         notes: enNotes,
@@ -77,7 +93,7 @@ export default defineThemeConfig({
                          * @see https://theme-plume.vuejs.press/config/basic/#profile
                          */
                         profile: {
-                                avatar: "https://theme-plume.vuejs.press/plume.png",
+                                avatar: "logo.jpeg",
                                 name: "TTswap",
                                 description: "Trad &amp; Invest crypto freely",
                                 // circle: true,
@@ -98,6 +114,8 @@ export default defineThemeConfig({
                         //   title: '',
                         //   content: '',
                         // },
+
+                        
                 },
         },
 });

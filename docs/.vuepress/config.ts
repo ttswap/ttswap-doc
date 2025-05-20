@@ -14,9 +14,9 @@ export default defineUserConfig({
                 },
                 "/zh/": {
                         lang: "zh-CN",
-                        title: "欢迎来到TTSwap",
+                        title: "欢迎来到TTswap",
                         description:
-                                "TTSWAP 是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。",
+                                "TTswap是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。",
                 },
         },
 
@@ -31,7 +31,6 @@ export default defineUserConfig({
                         },
                 ],
         ],
-
         bundler: viteBundler(),
         shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
 
@@ -103,11 +102,11 @@ export default defineUserConfig({
                  * Shiki 代码高亮
                  * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
                  */
-                // codeHighlighter: {
-                //   twoslash: true, // 启用 twoslash
-                //   whitespace: true, // 启用 空格/Tab 高亮
-                //   lineNumbers: true, // 启用行号
-                // },
+                codeHighlighter: {
+                  twoslash: true, // 启用 twoslash
+                  whitespace: true, // 启用 空格/Tab 高亮
+                  lineNumbers: true, // 启用行号
+                },
 
                 /* 文章字数统计、阅读时间，设置为 false 则禁用 */
                 // readingTime: true,

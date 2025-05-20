@@ -1,0 +1,14 @@
+# VuePress files
+docs/.vuepress/.temp/
+docs/.vuepress/.cache/
+docs/.vuepress/dist/
+docs/.vuepress/.DS_Store
+# Node modules
+node_modules/
+.github
+
+# MacOS Desktop Services Store
+.DS_Store
+
+# Log files
+*.log
