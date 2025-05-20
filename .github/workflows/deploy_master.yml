@@ -47,9 +47,10 @@ jobs:
 
       - name: scp file
         run: |
+          echo "${{ secrets.SERVER_IP }}"
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > key.pem
           chmod 600 key.pem
-          scp -o StrictHostKeyChecking=no -i key.pem -r docs/.vuepress/dist/* ${{ secrets.SSH_USERNAME }}@${{ secrets.SERVER_IP }}:/var/www/html
+          scp -o StrictHostKeyChecking=no -i key.pem -r docs/.vuepress/dist/* ${{ secrets.SSH_USERNAME }}@${{ secrets.SERVER_IP }}:/mydata/nginx/html/docs
 
       # - name: Restart Nginx (optional)
       #   uses: appleboy/ssh-action@master
