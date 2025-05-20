@@ -14,9 +14,9 @@ export default defineUserConfig({
                 },
                 "/zh/": {
                         lang: "zh-CN",
-                        title: "欢迎来到TTSwap",
+                        title: "欢迎来到TTswap",
                         description:
-                                "TTSWAP 是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。",
+                                "TTswap是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。",
                 },
         },
 
