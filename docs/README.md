@@ -17,7 +17,7 @@ config:
       actions:
         -
           text: Trade Crypto
-          link: https://ttswap.io
+          link: https://app.ttswap.io
           theme: brand
 
   -

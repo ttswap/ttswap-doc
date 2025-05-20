@@ -17,7 +17,7 @@ config:
       actions:
         -
           text: 去交易
-          link: https://ttswap.io
+          link: https://app.ttswap.io
           theme: brand
 
   -
