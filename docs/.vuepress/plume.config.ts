@@ -50,7 +50,7 @@ export default defineThemeConfig({
                          * @see https://theme-plume.vuejs.press/config/basic/#profile
                          */
                         profile: {
-                                avatar: "local.png",
+                                avatar: "logo.jpeg",
                                 name: "TTswap",
                                 description: "Trade &amp; Invest crypto freely",
                                 // circle: true,
@@ -77,7 +77,7 @@ export default defineThemeConfig({
                          * @see https://theme-plume.vuejs.press/config/basic/#profile
                          */
                         profile: {
-                                avatar: "https://theme-plume.vuejs.press/plume.png",
+                                avatar: "logo.jpeg",
                                 name: "TTswap",
                                 description: "Trad &amp; Invest crypto freely",
                                 // circle: true,

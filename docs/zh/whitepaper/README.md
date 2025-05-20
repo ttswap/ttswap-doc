@@ -158,8 +158,8 @@ Token数量Q~a1~:2000
 ### 4.1 Token介绍
 关于Token的描述：协议拥有市场价值3000的15枚Token~a~，那么Token就有两个属性：市场价值与当前数量。如下图
 ![Alt text](whitepaper_image_cn/TOKEN_INTRO.png)
-* 名词解释
-市场价值：用来衡量用户对协议Token的需求程度的。如果用户购买某个Token，说明用户对这个Token的需求增加，那么这个Token的市场价值就会上升。相反，如果用户开始卖出某个Token，说明用户对这个Token的需求减少，那么这个Token的市场价值就会下降。
+* 名词解释  
+市场价值：用来衡量用户对协议Token的需求程度的。如果用户购买某个Token，说明用户对这个Token的需求增加，那么这个Token的市场价值就会上升。相反，如果用户开始卖出某个Token，说明用户对这个Token的需求减少，那么这个Token的市场价值就会下降。  
 当前数量：记录协议中Token的当前数量。
 - 可以如下图描述其它任何Token，例如
 ![Alt text](whitepaper_image_cn/TOKENS.png)
@@ -216,24 +216,24 @@ $$
 ### 6.1 记录投资和撤资
 协议中Token的交易，需有用户提供流动性。就应记录Token投资总市场价值与投资总数量。
 ![Alt text](whitepaper_image_cn/TOKEN_INVEST_STATE.png)
-* 名词解释
-投资价值：用户投资时Token的市场总价值。
-投资数量：用户投资时Token的总数量。
+* 名词解释  
+投资价值：用户投资时Token的市场总价值。  
+投资数量：用户投资时Token的总数量。  
 ### 6.2 价值Token投资与撤资流程
 ![Alt text](whitepaper_image_cn/TOKEN_INVESTORDEVIST.png)
-* 用户投资价值Token
+* 用户投资价值Token  
   用户根据当前价值Token的状态，计算投资数量对应的市场价值。方便撤资时计算收益。
-* 用户撤资价值Token
+* 用户撤资价值Token  
   用户根据投资记录，计算投资产生的收益
 >撤资Token时，取消数量＜Token当前的总数量/撤资切片数 和 取消数量对应的市场价值＜Token总价值/撤资切片数。
 ### 6.3 普通Token投资
 ![Alt text](whitepaper_image_cn/TOKEN_NORMAL_INVEST.png)
-* 用户投资普通Token
+* 用户投资普通Token  
   由于普通Token的市场价值波动太大，可能会导致协议内套利，造成Token投资者的损失。为避免这种情况的发生，需要投资等市场价值的价值Token。投资的价值Token和普通Token都会产生投资收益，具体参见手续费分配。
 ### 6.4 普通Token撤资
 ![Alt text](whitepaper_image_cn/TOKEN_NORMAL_DIVEST.png)
-* 用户撤资普通Token
-  根据投资记录，计算普通Token和投资Token的收益。具体参见手续费分配。
+* 用户撤资普通Token  
+  根据投资记录，计算普通Token和投资Token的收益。具体参见手续费分配。  
   撤资Token时，取消数量或者取消数量对应的市场价值需要小于Token当前的总数量或者总价值除以最大撤资比例。
 ---
 
@@ -249,13 +249,13 @@ $$
 手续费(实际手续费)的来源是根据Token的费率，当用户进行操作时，计算得到。
 ### 7.3 手续费分配
 ![Alt text](whitepaper_image_cn/TOKEN_FEE_ALLOCATION.png)
-协议中涉及协议技术、门户运营、推荐人、用户以及流动性提供者。协议会合理分配利润。
-其中流动性提供者的手续费分配参见 7.4与7.5手续费流程
-* 如果用户填写了推荐者。
-按用户的相关角色进行实时分配。
-* 如果用户未填写推荐者。
-手续费分配中用户所占比例划归于代币管理员。
-手续费分配中推荐者所占比例划归于门户角色。
+协议中涉及协议技术、门户运营、推荐人、用户以及流动性提供者。协议会合理分配利润。   
+其中流动性提供者的手续费分配参见 7.4与7.5手续费流程  
+* 如果用户填写了推荐者。  
+按用户的相关角色进行实时分配。  
+* 如果用户未填写推荐者。  
+手续费分配中用户所占比例划归于代币管理员。  
+手续费分配中推荐者所占比例划归于门户角色。  
 ___
 ### 7.4 手续费计算流程(投资)
 ![Alt text](whitepaper_image_cn/TOKEN_FEE_COMPUTE_1.png)
@@ -426,12 +426,12 @@ h. 用户会得到提供流动性reth时挖矿tts代币.
 
 
 ## 14 法律许可
-### 14.1 说明
-为了维护项目正常权利，同时也方便其它用户了解协议，对于不同文件不同开源协议。违反协议将得到法律追究。
-### 14.2 协议说明
-采用MIT协议的文件供大家自由使用
-采用BUSL-1.1协议的文件才协议有效期内只能用户于学习目标，不能运用于商业用途。具体协议内容参见：
-[项目中LICENSE文件](https://github.com/tt-swap/ttswap-core/blob/529db0eb94ac1c5631beb03c4697222a6ce1cd79/LICENSE):https://github.com/tt-swap/ttswap-core/blob/529db0eb94ac1c5631beb03c4697222a6ce1cd79/LICENSE。
+### 14.1 说明  
+为了维护项目正常权利，同时也方便其它用户了解协议，对于不同文件不同开源协议。违反协议将得到法律追究。  
+### 14.2 协议说明  
+采用MIT协议的文件供大家自由使用  
+采用BUSL-1.1协议的文件才协议有效期内只能用户于学习目标，不能运用于商业用途。具体协议内容参见：  
+[项目中LICENSE文件](https://github.com/tt-swap/ttswap-core/blob/529db0eb94ac1c5631beb03c4697222a6ce1cd79/LICENSE):https://github.com/tt-swap/ttswap-core/blob/529db0eb94ac1c5631beb03c4697222a6ce1cd79/LICENSE   
 如因项目在未知的情况违反其它项目开源协议，及时联系我们，我们尽快调整。
 ### 14.3 文件开源协议信息
 ```markdown
