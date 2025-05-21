@@ -48,15 +48,16 @@ TTSWAP embraces the community, driving project improvements and refinements thro
 $$
 \begin{align}
     {V_a\over Q_a}*Δa={V_b\over Q_b}*Δb&=...={V_z\over Q_z}*Δz  \\
-    V_a:Record　token　a's&　market　value  \\
-    Q_a:Record　token　a's&　quantity  \\
-    Δa:Record　token　a's&　change　amount(buy　or　sell )  \\
-    V_b:Record　token　b's&　market　value   \\
-    Q_b:Record　token　b's&　quantity  \\
-    Δb:Record　token　b's&　change　amount(buy　or　sell )  \\
-    V_z:Record　token　z's&　market　value   \\
-    Q_z:Record　token　z's&　quantity  \\
-    Δz:Record　token　z's&　change　amount( buy　or　sell )   \\
+    trade before(V_a+V_b+....+V_z)&=trade after(V_a+V_b+....+V_z)  \\
+    V_a:Record token a's& market value  \\
+    Q_a:Record token a's& quantity  \\
+    Δa:Record token a's& change amount(buy or sell )  \\
+    V_b:Record token b's& market value   \\
+    Q_b:Record token b's& quantity  \\
+    Δb:Record token b's& change amount(buy or sell )  \\
+    V_z:Record token z's& market value   \\
+    Q_z:Record token z's& quantity  \\
+    Δz:Record token z's& change amount( buy or sell )   \\
 \end{align}
 $$
 
@@ -65,20 +66,20 @@ Market value measures the degree of user demand for tokens in the protocol. When
 * State of Token~a~ and Token~b~ before the transaction    
 $$
 \begin{align}
-    a's　market 　value　in　protocol:V_a \\
-    a's　quantity　in　protocol:Q_a \\
-    b's　market　value　in　protocol:V_b \\
-    b's　quantity　in　protocol:Q_b \\
+    a's market  value in protocol:V_a \\
+    a's quantity in protocol:Q_a \\
+    b's market value in protocol:V_b \\
+    b's quantity in protocol:Q_b \\
 \end{align}
 $$
 alter trading  Δa for Δb
 $$
 \begin{align}
-    a's　market　value　in　protocol:V_a-{V_a \over Q_a}*Δa \\
-    a's　quantity　in　protocol:Q_b+Δb \\
-    b's　market　value　in　protocol:V_a+{V_a \over Q_a}*Δa \\
-    b's　quantity　in　protocol:Q_b-{ {V_a \over Q_a}*Δa*Q_b \over V_b}   \\
-    receive　Δb={ {V_a \over Q_a}*Δa*Q_b \over V_b} 
+    a's market value in protocol:V_a-{V_a \over Q_a}*Δa \\
+    a's quantity in protocol:Q_b+Δb \\
+    b's market value in protocol:V_a+{V_a \over Q_a}*Δa \\
+    b's quantity in protocol:Q_b-{ {V_a \over Q_a}*Δa*Q_b \over V_b}   \\
+    receive Δb={ {V_a \over Q_a}*Δa*Q_b \over V_b} 
 \end{align}
 $$
 
@@ -189,13 +190,13 @@ Token exchange essentially involves users swapping their Token~a~ for Token~b~ i
 $$
 \begin{align}
     {V_a\over Q_a}*Δa&={V_b\over Q_b}*Δb  \\
-    before　trading:　P_{ab}&={ {V_a*Q_b} \over {Q_a*V_b}}=4 \\
+    before trading: P_{ab}&={ {V_a*Q_b} \over {Q_a*V_b}}=4 \\
     ΔB={ {V_a*Δa*Q_b} \over {Q_a*V_b}}&={ {40000*2500*40000} \over {20000*20000}}=10000 \\
     V_a=V_a-{V_a\over Q_a}*Δa&=40000-{40000\over 20000}*2500=35000\\
     Q_a=Q_a+Δa&=20000+2500=22500 \\
     V_b=V_b+{V_b\over Q_b}*ΔB&=20000+{20000\over 40000}*10000=25000\\
     Q_b=Q_b+ΔB&=40000-10000=30000 \\
-    after　trading:　P_{ab}&={ {V_a*Q_b} \over {Q_a*V_b}}=1.86666 \\   
+    after trading: P_{ab}&={ {V_a*Q_b} \over {Q_a*V_b}}=1.86666 \\   
 \end{align}
 $$
 
