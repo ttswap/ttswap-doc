@@ -3,7 +3,7 @@ import { defineUserConfig } from "vuepress";
 import { plumeTheme } from "vuepress-theme-plume";
 import { searchPlugin } from "@vuepress-plume/plugin-search";
 export default defineUserConfig({
-        base: "",
+        base: "/",
         lang: "en-US",
         plugins: [],
         locales: {

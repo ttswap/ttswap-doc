@@ -69,6 +69,7 @@ TTSWAP 也是这样运作的。不同的是，它不是用法币定价，而是�
 📐计算原理是
 $$\begin{align}
     {V_a\over Q_a}*Δa={V_b\over Q_b}*Δb=...&={V_z\over Q_z}*Δz  \\
+    交易前(V_a+V_b+....+V_z)&=交易后(V_a+V_b+....+V_z)  \\
     V_a:表示协议中Token_A&的市场价值  \\
     Q_a:表示协议中Token_A&的数量  \\
     Δa:表示协议中Token_A&的购买量或者出售量  \\
