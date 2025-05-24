@@ -18,8 +18,7 @@ config:
         -
           text: Trade Crypto
           link: https://app.ttswap.io
-          theme: brand
-
+          theme: brand  
   -
     type: features
     features:
@@ -59,7 +58,10 @@ config:
         title: Community-Driven, User-Governed Future
         icon: 👥
         details: TTSWAP doesn’t belong to any single company — it belongs to the community. Its direction and reward mechanisms are guided by community consensus.
-
-
-footer: BSL Licensed | Copyright © 2018-present TTswap Community 
+  
+  -
+    type: custom
 ---
+
+## contracts
+[Twitter](https://x.com/ttswap_exchange)     [Telegram](https://t.me/ttswap01)   [Email](mailto:ttswap.exchange@gmail.com)   [Discord](https://discord.gg/5PhXn9DR) 

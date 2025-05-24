@@ -383,7 +383,8 @@ TTSWAP 通过组合池设计 + 自动复利，实现收益叠加效果，远超�
 - SETH / SWETH：TTSWAP 内部 ETH/WETH 映射代币，支持用户参与并追踪
 
 ---
-✅ 图解流程（将在 Markdown 文件中插图展示）  
+✅ 图解流程
+![ethRestaking](whitepaper_image_cn/ETHReStaking.png) 
 a. 用户存入 ETH → SETH 池子  
 b. 用户得到SETH池子的手续费分佣  
 c. 用户得到SETH池子流动性挖矿TTS  
@@ -394,7 +395,7 @@ g. 用户得到rETH池子的手续费分佣
 h. 用户得到rETHTH池子流动性挖矿TTS  
 用户同时获得五份收益：  
 - SETH池的手续费 +SETH池的挖矿 + 验证奖励 + rETH池的手续费 + rETH池的挖矿  
-[图片]
+
 
 
 ---
