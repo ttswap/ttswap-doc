@@ -13,7 +13,6 @@ config:
       name: TTswap
       tagline: New Generation Dex
       text: Directly trade,  No slippage,  No impermanent loss, Commission allocation by role, Lower gas
-
       actions:
         -
           text: Trade Crypto
@@ -63,5 +62,12 @@ config:
     type: custom
 ---
 
-## contracts
-[Twitter](https://x.com/ttswap_exchange)     [Telegram](https://t.me/ttswap01)   [Email](mailto:ttswap.exchange@gmail.com)   [Discord](https://discord.gg/5PhXn9DR) 
+## Contracts
+Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  
+Telegram:[@ttswap01](https://t.me/ttswap01)  
+Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
+Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
+Website:[ttswap.io](http://www.ttswap.io)    
+Github:[ttswap](http://github.com/ttswap)  
+
+Welcome talents from all regions to join the community.
