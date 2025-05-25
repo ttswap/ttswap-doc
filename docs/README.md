@@ -13,13 +13,11 @@ config:
       name: TTswap
       tagline: New Generation Dex
       text: Directly trade,  No slippage,  No impermanent loss, Commission allocation by role, Lower gas
-
       actions:
         -
           text: Trade Crypto
           link: https://app.ttswap.io
-          theme: brand
-
+          theme: brand  
   -
     type: features
     features:
@@ -59,7 +57,17 @@ config:
         title: Community-Driven, User-Governed Future
         icon: 👥
         details: TTSWAP doesn’t belong to any single company — it belongs to the community. Its direction and reward mechanisms are guided by community consensus.
-
-
-footer: BSL Licensed | Copyright © 2018-present TTswap Community 
+  
+  -
+    type: custom
 ---
+
+## Contracts
+Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  
+Telegram:[@ttswap01](https://t.me/ttswap01)  
+Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
+Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
+Website:[ttswap.io](http://www.ttswap.io)    
+Github:[ttswap](http://github.com/ttswap)  
+
+Welcome talents from all regions to join the community.

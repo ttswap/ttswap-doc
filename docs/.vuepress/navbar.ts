@@ -52,7 +52,7 @@ export const zhNavbar = defineNavbarConfig([
         //                 { text: "代币空投", link: "/zh/activity/tokenAirdrop_zh.md" },
         //         ],
         // },
-        { text: "文档", link: "/zh/user/" },
+        { text: "文档", link: "/zh/document/" },
         // {
         //         text: "加入社区",
         //         items: [

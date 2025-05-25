@@ -1,7 +1,6 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
 import { plumeTheme } from "vuepress-theme-plume";
-import { searchPlugin } from "@vuepress-plume/plugin-search";
 export default defineUserConfig({
         base: "/",
         lang: "en-US",
@@ -27,7 +26,7 @@ export default defineUserConfig({
                         {
                                 rel: "icon",
                                 type: "image/png",
-                                href: "logo.jpeg",
+                                href: "logo.png",
                         },
                 ],
         ],
@@ -41,7 +40,7 @@ export default defineUserConfig({
                 hostname: "https://ttswap.io",
                 /* 文档仓库配置，用于 editLink */
                 // docsRepo: '',
-                //docsDir: "docs",
+                // docsDir: "docs",
                 // docsBranch: '',
 
                 /* 页内信息 */
@@ -56,12 +55,12 @@ export default defineUserConfig({
                  */
                 // blog: false, // 禁用博客
                 // blog: {
-                //   postList: true, // 是否启用文章列表页
-                //   tags: true, // 是否启用标签页
-                //   archives: true, // 是否启用归档页
-                //   categories: true, // 是否启用分类页
-                //   postCover: 'right', // 文章封面位置
-                //   pagination: 15, // 每页显示文章数量
+                // postList: true, // 是否启用文章列表页
+                // tags: true, // 是否启用标签页
+                // archives: true, // 是否启用归档页
+                // categories: true, // 是否启用分类页
+                // postCover: 'right', // 文章封面位置
+                // pagination: 15, // 每页显示文章数量
                 // },
 
                 /* 博客文章页面链接前缀 */

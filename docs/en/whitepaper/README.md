@@ -1,3 +1,8 @@
+---
+lang: en-US
+title: TTswap WhitePaper
+description: 
+---
 
 ## 1 Overview  
 TTSWAP (token-token swap) is an automated market-making protocol built on EVM-compatible blockchains, meaning it does not rely on centralized institutions or individuals to conduct transactions. Its core principle is to automatically trigger the transfer of market value based on user behavior, thereby creating a protocol based on a constant value trading model.  
@@ -448,9 +453,11 @@ tests
 ``` 
 
 ## 13 Participation and Collaboration Contact Information  
-Twitter: [ttswap_exchange](https://x.com/ttswap_exchange)  
-Telegram: [@ttswap01](https://t.me/ttswap01)  
-Email: [ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
-Discord: [ttswap](https://discord.gg/5PhXn9DR)  
-Website: [ttswap.io](http://www.ttswap.io)  
+Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  
+Telegram:[@ttswap01](https://t.me/ttswap01)  
+Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
+Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
+Website:[ttswap.io](http://www.ttswap.io)    
+Github:[ttswap](http://github.com/ttswap)  
+ 
 We welcome talents from all regions to join the community.
