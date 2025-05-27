@@ -1,7 +1,7 @@
 import { defineNavbarConfig } from "vuepress-theme-plume";
 
 export const enNavbar = defineNavbarConfig([
-        { text: "Home", link: "/" },
+        { text: "🏛️Home", link: "/" },
         // {
         //         text: "Activity",
         //         items: [
@@ -16,7 +16,7 @@ export const enNavbar = defineNavbarConfig([
         //         ],
         // },
         // { text: "Document", link: "/en/document/" },
-        { text: "Whitepaper", link: "/en/whitepaper/" },
+        { text: "📖Whitepaper", link: "/en/whitepaper/" },
         // {
         //         text: "Join",
         //         items: [
@@ -41,7 +41,7 @@ export const enNavbar = defineNavbarConfig([
 ]);
 
 export const zhNavbar = defineNavbarConfig([
-        { text: "首页", link: "/zh/" },
+        { text: "🏛️首页", link: "/zh/" },
         // {
         //         text: "活动",
         //         items: [
@@ -52,7 +52,7 @@ export const zhNavbar = defineNavbarConfig([
         //                 { text: "代币空投", link: "/zh/activity/tokenAirdrop_zh.md" },
         //         ],
         // },
-        { text: "文档", link: "/zh/document/" },
+        { text: "📒文档", link: "/zh/document/" },
         // {
         //         text: "加入社区",
         //         items: [
@@ -74,5 +74,5 @@ export const zhNavbar = defineNavbarConfig([
         //                 },
         //         ],
         // },
-        { text: "白皮书", link: "/zh/whitepaper/" },
+        { text: "📖白皮书", link: "/zh/whitepaper/" },
 ]);
