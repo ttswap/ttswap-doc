@@ -8,7 +8,7 @@ export default defineUserConfig({
         locales: {
                 "/": {
                         lang: "en-US",
-                        title: "TTswap document",
+                        title: "TTswap",
                         description: "TTswap is a dex , any one can trade",
                 },
                 "/zh/": {

@@ -61,6 +61,23 @@ config:
   -
     type: custom
 ---
+## Constant Value Module
+$$
+\begin{align}
+    {V_a\over Q_a}*Δa={V_b\over Q_b}*Δb&=...={V_z\over Q_z}*Δz  \\
+    trade before(V_a+V_b+....+V_z)&=trade after(V_a+V_b+....+V_z)  \\
+    V_a:Record token a's& market value  \\
+    Q_a:Record token a's& quantity  \\
+    Δa:Record token a's& change amount(buy or sell )  \\
+    V_b:Record token b's& market value   \\
+    Q_b:Record token b's& quantity  \\
+    Δb:Record token b's& change amount(buy or sell )  \\
+    V_z:Record token z's& market value   \\
+    Q_z:Record token z's& quantity  \\
+    Δz:Record token z's& change amount( buy or sell )   \\
+\end{align}
+$$
+
 
 ## Contracts
 Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  

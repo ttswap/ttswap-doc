@@ -59,31 +59,27 @@ config:
         title: 模块化，灵活配置，轻松集成
         icon: 💎
         details: 协议接口简单，调用方便，同时每个代币的参数、手续费、挖矿比率都可以灵活设置，为项目方和开发者提供更多自由度。
-  # -
-  #   type: image-text
-  #   title: 恒定价值交易模型
-  #   description: 真实反映代币的价值,多资产
-  #   image: ConstantValue.png
-  #   list:
-  #     -
-  #       title: 集中流动性
-  #       description: 为文章添加标签、分类、字数统计、阅读时间、写作日期等信息。
-  #     -
-  #       title: 多资产多态平衡
-  #       description: 支持 4 种评论系统，你可以自由选择符合你的需求的评论系统。
-  #     -
-  #       title: 更低滑点
-  #       description: 支持基于 minisearch 的本地搜索， 支持Algolia搜索。
-  #     -
-  #       title: 没有无常损失
-  #       description: 支持全站加密、部分加密（加密目录、加密文章）。
-  #     -
-  #       title: 更高效转化效率
-  #       description: 一键复制代码块中的内容
   -
     type: custom
 ---
+## 恒定价值模型
+$$\begin{align}
+    {V_a\over Q_a}*Δa={V_b\over Q_b}*Δb=...&={V_z\over Q_z}*Δz  \\
+    交易前(V_a+V_b+....+V_z)& \\
+    =交易后& (V_a+V_b+....+V_z)  \\
+    V_a:表示协议中Token_A&的市场价值  \\
+    Q_a:表示协议中Token_A&的数量  \\
+    Δa:表示协议中Token_A&的购买量或者出售量  \\
+    V_b:表示协议中Token_B&的市场价值  \\
+    Q_b:表示协议中Token_B&的数量  \\
+    Δb:表示协议中Token_B&的购买量或者出售量  \\
+    V_z:表示协议中Token_Z&的市场价值  \\
+    Q_z:表示协议中Token_Z&的数量  \\
+    Δz:表示协议中Token_Z&的购买量或者出售量  \\
+\end{align}
+$$
 
+---
 Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  
 Telegram:[@ttswap01](https://t.me/ttswap01)  
 Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
