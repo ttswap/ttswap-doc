@@ -83,8 +83,7 @@ $$
 Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  
 Telegram:[@ttswap01](https://t.me/ttswap01)  
 Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
-Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
-Website:[ttswap.io](http://www.ttswap.io)    
+Discord:[ttswap](https://discord.gg/XygqnmQgX3) 
 Github:[ttswap](http://github.com/ttswap)  
 
 欢迎各界人士加入我们社区

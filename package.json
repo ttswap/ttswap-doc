@@ -27,6 +27,7 @@
     "vuepress-theme-plume": "1.0.0-rc.149"
   },
   "dependencies": {
+    "@iconify/vue": "^5.0.0",
     "@vuepress/shiki-twoslash": "2.0.0-rc.105",
     "artplayer": "^5.2.3",
     "chart.js": "^4.4.9",
