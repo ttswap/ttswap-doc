@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 项目公售
+title: TTSWAP项目公售
 description: TTSWAP 是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。
 createTime: 2025/05/18 13:45:20
 ---
@@ -90,10 +90,11 @@ TTS 将作为贯穿整个生态系统的主轴代币，享受平台成长带来�
 
 ## 📣 加入社区，抢先一步！
 
-* X（Twitter）：\[@官方账号]
-* YouTube：项目动态视频发布中
-* Discord：参与AMA、活动与社区治理
-* 官网：\[链接]
+* X（Twitter）：[ttswap_exchange](https://x.com/ttswap_exchange)
+* Telegram：[@ttswap01](https://t.me/ttswap01)  
+* Discord：[ttswap](https://discord.gg/XygqnmQgX3) 
+* 邮箱：[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
+* 官网：[ttswap.io](http://www.ttswap.io)
 
 ---
 

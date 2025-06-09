@@ -10,7 +10,7 @@ config:
       light: 0.1
       dark: 0.3
     hero:
-      name: TTswap
+      name: TTSWAP
       tagline: 新一代去中心代交易所
       text: 无中转 无滑点 没有无常损失 按角色分佣 低GAS
 
@@ -65,8 +65,8 @@ config:
 ## 恒定价值模型
 $$\begin{align}
     {V_a\over Q_a}*Δa={V_b\over Q_b}*Δb=...&={V_z\over Q_z}*Δz  \\
-    交易前(V_a+V_b+....+V_z)& \\
-    =交易后& (V_a+V_b+....+V_z)  \\
+    交易前总价值(V_a+V_b+....+V_z)& \\
+    =交易后总价值& (V_a+V_b+....+V_z)  \\
     V_a:表示协议中Token_A&的市场价值  \\
     Q_a:表示协议中Token_A&的数量  \\
     Δa:表示协议中Token_A&的购买量或者出售量  \\
@@ -84,7 +84,6 @@ Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)
 Telegram:[@ttswap01](https://t.me/ttswap01)  
 Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
-Website:[ttswap.io](http://www.ttswap.io)    
 Github:[ttswap](http://github.com/ttswap)  
 
 欢迎各界人士加入我们社区

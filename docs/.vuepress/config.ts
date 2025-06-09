@@ -8,14 +8,15 @@ export default defineUserConfig({
         locales: {
                 "/": {
                         lang: "en-US",
-                        title: "TTswap",
-                        description: "TTswap is a dex , any one can trade",
+                        title: "TTSWAP",
+                        description: "TTSWAP is a dex , any one can trade",
                 },
+                
                 "/zh/": {
                         lang: "zh-CN",
-                        title: "欢迎来到TTswap",
+                        title: "欢迎来到TTSWAP",
                         description:
-                                "TTswap是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。",
+                                "TTSWAP是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。",
                 },
         },
 
@@ -44,27 +45,28 @@ export default defineUserConfig({
                 // docsBranch: '',
 
                 /* 页内信息 */
-                // editLink: true,
-                // lastUpdated: true,
-                contributors: true,
+                //editLink: true,
+                //lastUpdated: true,
+                //contributors: true,
                 // changelog: false,
 
                 /**
                  * 博客
                  * @see https://theme-plume.vuejs.press/config/basic/#blog
                  */
-                // blog: false, // 禁用博客
-                // blog: {
-                // postList: true, // 是否启用文章列表页
-                // tags: true, // 是否启用标签页
+                //blog: true, // 禁用博客
+                blog: {
+                postList: true, // 是否启用文章列表页
+                tags: true, // 是否启用标签页
                 // archives: true, // 是否启用归档页
                 // categories: true, // 是否启用分类页
-                // postCover: 'right', // 文章封面位置
-                // pagination: 15, // 每页显示文章数量
-                // },
+                postCover: 'right', // 文章封面位置
+                pagination: 15, // 每页显示文章数量
+                include: ['*/blog/*.md','blog/*.md']
+                },
 
                 /* 博客文章页面链接前缀 */
-                article: "/user/",
+                article: "/blog/",
 
                 /**
                  * 编译缓存，加快编译速度
