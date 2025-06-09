@@ -10,7 +10,7 @@ export const enNavbar = defineNavbarConfig([
                                 text: "💵Public Sell",
                                 link: "/activity_en/publicSell.md",
                         },
-                        { text: "🪂 Token Airdrop", link: "/activity_en/tokenAirdrop.md" },
+                        { text: "🪂Token Airdrop", link: "/activity_en/tokenAirdrop.md" },
                 ],
         },
         {
