@@ -1,7 +1,6 @@
 ---
 lang: zh-CN
-title: 代币空投-计划中
-description: TTSWAP 是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。
+title: 🌟 TTSWAP 空投活动：筹划中
+description: 
 createTime: 2025/05/17 14:18:10
 ---
-计划中

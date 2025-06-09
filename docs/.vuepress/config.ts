@@ -45,7 +45,7 @@ export default defineUserConfig({
                 // docsBranch: '',
 
                 /* 页内信息 */
-                editLink: true,
+                //editLink: true,
                 //lastUpdated: true,
                 //contributors: true,
                 // changelog: false,
