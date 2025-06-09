@@ -1,8 +1,8 @@
 ---
 lang: zh-CN
 title: 🌟 TTSWAP 空投活动：成为早期共建者，共享生态红利
-description:TTSWAP空投活动详情，邀请用户成为早期共建者，共享生态发展红利。
-createTime: 2025/05/17 14:18:10
+description: TTSWAP空投活动详情，邀请用户成为早期共建者，共享生态发展红利。
+createTime: 2025/05/17 14:18:11
 ---
 
 
