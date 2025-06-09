@@ -10,7 +10,7 @@ config:
       light: 0.1
       dark: 0.3
     hero:
-      name: TTswap
+      name: TTSWAP
       tagline: New Generation Dex
       text: Directly trade,  No slippage,  No impermanent loss, Commission allocation by role, Lower gas
       actions:
@@ -65,16 +65,16 @@ config:
 $$
 \begin{align}
     {V_a\over Q_a}*Δa={V_b\over Q_b}*Δb&=...={V_z\over Q_z}*Δz  \\
-    trade before(V_a+V_b+....+V_z)&=trade after(V_a+V_b+....+V_z)  \\
-    V_a:Record token a's& market value  \\
-    Q_a:Record token a's& quantity  \\
-    Δa:Record token a's& change amount(buy or sell )  \\
-    V_b:Record token b's& market value   \\
-    Q_b:Record token b's& quantity  \\
-    Δb:Record token b's& change amount(buy or sell )  \\
-    V_z:Record token z's& market value   \\
-    Q_z:Record token z's& quantity  \\
-    Δz:Record token z's& change amount( buy or sell )   \\
+    trade\ before(V_a+V_b+....+V_z)&=trade\ after(V_a+V_b+....+V_z)  \\
+    V_a:Record\ token\ a's&\ market\ value  \\
+    Q_a:Record\ token\ a's&\ quantity  \\
+    Δa:Record\ token\ a's&\ change\ amount(buy\ or\ sell )  \\
+    V_b:Record\ token\ b's&\ market\ value   \\
+    Q_b:Record\ token\ b's&\ quantity  \\
+    Δb:Record\ token\ b's&\ change\ amount(buy\ or\ sell )  \\
+    V_z:Record\ token\ z's&\ market value   \\
+    Q_z:Record\ token\ z's&\ quantity  \\
+    Δz:Record\ token\ z's&\ change\ amount(buy\ or\ sell )   \\
 \end{align}
 $$
 
@@ -84,7 +84,7 @@ Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)
 Telegram:[@ttswap01](https://t.me/ttswap01)  
 Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
-Website:[ttswap.io](http://www.ttswap.io)    
+Website:[ttswap.io](http://www.ttswap.io)  
 Github:[ttswap](http://github.com/ttswap)  
 
 Welcome talents from all regions to join the community.

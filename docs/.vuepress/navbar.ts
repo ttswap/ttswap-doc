@@ -23,7 +23,7 @@ export const enNavbar = defineNavbarConfig([
                         link: "/document_en/token/Token.md"
                 }, 
                 { text: "📖Whitepaper",
-                         link: "/document_en/whitepaper/README.md" }
+                         link: "/document_en/whitepaper/whitepaper.md" }
                 ]
         },{
                 text: "🏘️Join DAO",

@@ -40,7 +40,7 @@ export default defineThemeConfig({
 
         /* 站点页脚 */
         footer: {
-                message: "Power by TTswap",
+                message: "Power by TTSWAP",
                 copyright: "",
         },
         /* 过渡动画 @see https://theme-plume.vuejs.press/config/basic/#transition */
@@ -57,7 +57,7 @@ export default defineThemeConfig({
                          */
                         profile: {
                                 avatar: "logo.png",
-                                name: "TTswap",
+                                name: "TTSWAP",
                                 description: "Trade &amp; Invest crypto freely",
                                 circle: true,
                                 location: 'everywhere',
@@ -87,7 +87,7 @@ export default defineThemeConfig({
                          */
                         profile: {
                                 avatar: "logo.png",
-                                name: "TTswap",
+                                name: "TTSWAP",
                                 description: "Trade &amp; Invest crypto freely",
                                 circle: true,
                                 location: 'everywhere',

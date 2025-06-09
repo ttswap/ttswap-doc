@@ -8,15 +8,15 @@ export default defineUserConfig({
         locales: {
                 "/": {
                         lang: "en-US",
-                        title: "TTswap",
-                        description: "TTswap is a dex , any one can trade",
+                        title: "TTSWAP",
+                        description: "TTSWAP is a dex , any one can trade",
                 },
                 
                 "/zh/": {
                         lang: "zh-CN",
-                        title: "欢迎来到TTswap",
+                        title: "欢迎来到TTSWAP",
                         description:
-                                "TTswap是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。",
+                                "TTSWAP是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。",
                 },
         },
 
