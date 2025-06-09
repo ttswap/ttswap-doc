@@ -50,7 +50,7 @@ TTSWAP(token-token swap)是建立在支持EVM的区块链上的自动做市协�
   当用户提供流动性到SETH和SWETH代币时,池子中未使用的流动性会自动添加到rocketpool中进行验证者质押,享受验证者奖励.
 
 1. 社区驱动
-  ttswap拥抱社区，通过社区驱动带动项目的改进，完善。
+  TTSWAP拥抱社区，通过社区驱动带动项目的改进，完善。
 
 ## 3 价值守恒交易横型原理
 
@@ -466,7 +466,7 @@ h. 用户会得到提供流动性reth时挖矿tts代币.
 
 ## 13 代币经济方案
 
-1. 代币名称为<font size=5>TTSwap Token</font>，简称<font size=5>TTS</font>。
+1. 代币名称为<font size=5>TTSWAP Token</font>，简称<font size=5>TTS</font>。
 2. 初始发行<font size=5>五千万枚。</font>(<font color='red'>均为锁定状态，需达到条件才能解锁</font>)。
 3. 每年新增(2亿-已解锁代币数量)\* 0.02给流动性提供者。
 4. 社区所有收益均用于在市场上购买官方代币进行销毁。禁止用于其它用途。

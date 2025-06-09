@@ -10,7 +10,7 @@ config:
       light: 0.1
       dark: 0.3
     hero:
-      name: TTswap
+      name: TTSWAP
       tagline: 新一代去中心代交易所
       text: 无中转 无滑点 没有无常损失 按角色分佣 低GAS
 
@@ -83,7 +83,7 @@ $$
 Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  
 Telegram:[@ttswap01](https://t.me/ttswap01)  
 Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
-Discord:[ttswap](https://discord.gg/XygqnmQgX3) 
+Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
 Github:[ttswap](http://github.com/ttswap)  
 
 欢迎各界人士加入我们社区

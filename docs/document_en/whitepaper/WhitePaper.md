@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: TTswap WhitePaper
+title: TTSWAP whitepaper
 description: null
 createTime: 2025/05/20 23:47:01
 ---
@@ -55,16 +55,16 @@ TTSWAP embraces the community, driving project improvements and refinements thro
 $$
 \begin{align}
     {V_a\over Q_a}*Δa={V_b\over Q_b}*Δb&=...={V_z\over Q_z}*Δz  \\
-    trade before(V_a+V_b+....+V_z)&=trade after(V_a+V_b+....+V_z)  \\
-    V_a:Record token a's& market value  \\
-    Q_a:Record token a's& quantity  \\
-    Δa:Record token a's& change amount(buy or sell )  \\
-    V_b:Record token b's& market value   \\
-    Q_b:Record token b's& quantity  \\
-    Δb:Record token b's& change amount(buy or sell )  \\
-    V_z:Record token z's& market value   \\
-    Q_z:Record token z's& quantity  \\
-    Δz:Record token z's& change amount( buy or sell )   \\
+    trade\ before(V_a+V_b+....+V_z)&=trade\ after(V_a+V_b+....+V_z)  \\
+    V_a:Record\ token\ a's&\ market\ value  \\
+    Q_a:Record\ token\ a's&\ quantity  \\
+    Δa:Record\ token\ a's&\ change\ amount(buy\ or\ sell )  \\
+    V_b:Record\ token\ b's&\ market\ value   \\
+    Q_b:Record\ token\ b's&\ quantity  \\
+    Δb:Record\ token\ b's&\ change\ amount(buy\ or\ sell )  \\
+    V_z:Record\ token\ z's&\ market\ value   \\
+    Q_z:Record\ token\ z's&\ quantity  \\
+    Δz:Record\ token\ z's&\ change\ amount( buy\ or\ sell )   \\
 \end{align}
 $$
 
@@ -78,20 +78,20 @@ When users buy tokens, it indicates an increase in demand for the tokens in the 
 
 $$
 \begin{align}
-    a's market  value in protocol:V_a \\
-    a's quantity in protocol:Q_a \\
-    b's market value in protocol:V_b \\
-    b's quantity in protocol:Q_b \\
+    a's\ market\  value\ in\ protocol:V_a \\
+    a's\ quantity\ in\ protocol:Q_a \\
+    b's\ market\ value\ in\ protocol:V_b \\
+    b's\ quantity\ in\ protocol:Q_b \\
 \end{align}
 $$
 alter trading  Δa for Δb
 $$
 \begin{align}
-    a's market value in protocol:V_a-{V_a \over Q_a}*Δa \\
-    a's quantity in protocol:Q_b+Δb \\
-    b's market value in protocol:V_a+{V_a \over Q_a}*Δa \\
-    b's quantity in protocol:Q_b-{ {V_a \over Q_a}*Δa*Q_b \over V_b}   \\
-    receive Δb={ {V_a \over Q_a}*Δa*Q_b \over V_b} \\
+    a's\ market\ value\ in\ protocol:V_a-{V_a \over Q_a}*Δa \\
+    a's\ quantity\ in\ protocol:Q_b+Δb \\
+    b's\ market\ value\ in\ protocol:V_a+{V_a \over Q_a}*Δa \\
+    b's\ quantity\ in\ protocol:Q_b-{ {V_a \over Q_a}*Δa*Q_b \over V_b}   \\
+    receive\ Δb={ {V_a \over Q_a}*Δa*Q_b \over V_b} \\
 \end{align}
 $$
 
@@ -228,13 +228,13 @@ As shown in the figure, when users give up Token~a~, the quantity of Token~a~ in
 $$
 \begin{align}
     {V_a\over Q_a}*Δa&={V_b\over Q_b}*Δb  \\
-    before trading: P_{ab}&={ {V_a*Q_b} \over {Q_a*V_b}}=4 \\
+    before\ trading: P_{ab}&={ {V_a*Q_b} \over {Q_a*V_b}}=4 \\
     ΔB={ {V_a*Δa*Q_b} \over {Q_a*V_b}}&={ {40000*2500*40000} \over {20000*20000}}=10000 \\
     V_a=V_a-{V_a\over Q_a}*Δa&=40000-{40000\over 20000}*2500=35000\\
     Q_a=Q_a+Δa&=20000+2500=22500 \\
     V_b=V_b+{V_b\over Q_b}*ΔB&=20000+{20000\over 40000}*10000=25000\\
     Q_b=Q_b+ΔB&=40000-10000=30000 \\
-    after trading: P_{ab}&={ {V_a*Q_b} \over {Q_a*V_b}}=1.86666 \\
+    after\ trading: P_{ab}&={ {V_a*Q_b} \over {Q_a*V_b}}=1.86666 \\
 \end{align}
 $$
 
@@ -501,16 +501,21 @@ If the project unintentionally violates other projects' open-source licenses, pl
 Contract
 ├── TTSwap_Market.sol(BUSL-1.1)  
 ├── TTSwap_Token.sol(BUSL-1.1)
+├── TTSwap_StakeETH.sol(BUSL-1.1)
 ├── interfaces  
 │   ├── I_TTSwap_Market.sol(MIT)   
-│   └── I_TTSwap_Token.sol(MIT)    
+│   ├── I_TTSwap_Token.sol(MIT)   
+│   └── I_TTSwap_StakeETH.sol(MIT)    
 └── libraries           
+   ├── L_Currency_Stake.sol (MIT)    
    ├── L_Currency.sol (MIT)    
    ├── L_Error.sol (MIT)     
    ├── L_Good.sol(BUSL-1.1)    
    ├── L_GoodConfig.sol(MIT)     
    ├── L_MarketConfig.sol(MIT)    
-   ├── L_Proof.sol(BUSL-1.1)   
+   ├── L_Proof.sol(BUSL-1.1)     
+   ├── L_SignatureVerification.sol(MIT)   
+   ├── L_Transient_Stake.sol (MIT)  
    ├── L_Transient.sol (MIT)  
    ├── L_TTSTokenConfig.sol (MIT)     
    ├── L_TTSwapUINT256.sol (MIT)     
@@ -522,7 +527,9 @@ docs
 └── whitepaper-en
     └──whitepaper-en.pdf(BUSL-1.1)
 tests
+
 ```
+
 
 ## 13 Participation and Collaboration Contact Information  
 
@@ -530,7 +537,7 @@ Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)
 Telegram:[@ttswap01](https://t.me/ttswap01)  
 Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
-Website:[ttswap.io](http://www.ttswap.io)
+Website:[ttswap.io](http://www.ttswap.io)  
 Github:[ttswap](http://github.com/ttswap)  
 
 We welcome talents from all regions to join the community.

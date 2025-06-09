@@ -1,13 +1,13 @@
 ---
 lang: zh-CN
-title: TTswap项目公售
+title: TTSWAP项目公售
 description: TTSWAP 是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。
 createTime: 2025/05/18 13:45:20
 ---
 # 项目公售方案
 
 
-## 🚀【TTswap 公售开启｜TTS 代币限量发售】
+## 🚀【TTSWAP 公售开启｜TTS 代币限量发售】
 
 ### 为建设下一代DEX注入动力，与我们一起成长！
 
