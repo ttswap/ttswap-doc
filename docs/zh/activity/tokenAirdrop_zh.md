@@ -1,6 +1,4 @@
 ---
-lang: zh-CN
-title: 🌟 TTSWAP 空投活动：筹划中
-description: 
-createTime: 2025/05/17 14:18:10
+title: tokenAirdrop_zh
+createTime: 2025/05/20 23:47:01
 ---
