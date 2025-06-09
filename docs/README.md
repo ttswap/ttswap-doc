@@ -65,7 +65,8 @@ config:
 $$
 \begin{align}
     {V_a\over Q_a}*Δa={V_b\over Q_b}*Δb&=...={V_z\over Q_z}*Δz  \\
-    trade\ before(V_a+V_b+....+V_z)&=trade\ after(V_a+V_b+....+V_z)  \\
+    Total\ value\ before\ the\ trade&(V_a+V_b+....+V_z)  \\
+    =Total\ value\ after& \ the\ trade(V_a+V_b+....+V_z)  \\
     V_a:Record\ token\ a's&\ market\ value  \\
     Q_a:Record\ token\ a's&\ quantity  \\
     Δa:Record\ token\ a's&\ change\ amount(buy\ or\ sell )  \\
