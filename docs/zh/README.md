@@ -26,7 +26,7 @@ config:
         title:  没有无常损失，LP更安心
         icon: 🌐
         details: 在其他平台，当你提供流动性时容易因为价格波动而亏钱，这叫"无常损失"。TTSWAP 的机制可以有效避免这个问题，你的投入不会减少。
-        link: https://app.ttswap.io
+        # link: https://app.ttswap.io
       -
         title: 所有代币共享流动性，交易更自由
         icon: 💧
@@ -80,7 +80,7 @@ $$\begin{align}
 $$
 
 ---
-Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  
+Twitter:[ttswap_exchange](https://x.com/ttswapFinance)
 Telegram:[@ttswap01](https://t.me/ttswap01)  
 Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
