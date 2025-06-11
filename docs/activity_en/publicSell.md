@@ -77,13 +77,7 @@ TTSWAP will gradually build a complete **multi-chain aggregated trading ecosyste
 
 TTS will serve as the backbone token throughout the entire ecosystem, enjoying comprehensive benefits from platform growth.
 
----
 
-## 🕒 Public Sale Schedule (Proposed)
-
-* First Round: June 10, 2025, 12:00 UTC
-* Second Round: July 17, 2025, 12:00 UTC
-* Third Round: August 24, 2025, 12:00 UTC
 
 ---
 

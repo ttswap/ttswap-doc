@@ -61,7 +61,7 @@ When you invest tokens, the system automatically calculates and starts **seconda
 After depositing ETH into the SETH/SWETH pool, the system automatically stakes unused funds in Rocketpool, enjoying an additional **3-5% annual return**.
 
 ### 📊 8. Everyone Can Participate, Fees Automatically Distributed by Role  
-Are you a user, referrer, portal, liquidity provider, or token operator? Everyone gets a certain percentage of fee sharing, **everyone can participate**.
+Are you a user, referral, portal, liquidity provider, or token operator? Everyone gets a certain percentage of fee sharing, **everyone can participate**.
 
 ### 🧱 9. Modular, Flexible Configuration, Easy Integration  
 Simple protocol interface, convenient calls, while each token's parameters, fees, and mining ratios can be **flexibly set**, providing more freedom for project parties and developers.
@@ -331,11 +331,11 @@ Fees aren't monopolized by the platform but reasonably distributed based on your
 | --------- | --------------------- |
 | 💧 Liquidity Provider | 50%~80% (distributed by investment proportion) |
 | 🧑‍💼 Service Provider/Portal | 5%~25% |
-| 👤 Referrer | 5%~10% |
+| 👤 Referral | 5%~10% |
 | 🧑‍🤝‍🧑 User | Exclusive 10% discount or reward |
 | 🛠️ Token Administrator | 1%~3% sharing |     
 | 🌐 Community and Protocol | Used for buyback/burning/development funds etc. |
->💡 The system automatically adjusts these ratios based on conditions like whether a referrer is filled in or if a portal is used, ensuring fairness and transparency.  
+>💡 The system automatically adjusts these ratios based on conditions like whether a referral is filled in or if a portal is used, ensuring fairness and transparency.  
 
 ---
 ### 🧮 3. How Are Investor Fees Calculated?
@@ -378,7 +378,7 @@ Yes, project parties or token issuers can actively deposit some tokens into the 
 - Figure 1: How fees accumulate after investment
 - Figure 2: How returns are settled upon withdrawal
 - Figure 3: How multiple investments are merged and calculated
-- Figure 4: Referrer/service provider fee path diagram
+- Figure 4: Referral/service provider fee path diagram
 
 ---
 
@@ -495,7 +495,7 @@ Just one operation, system automatically helps you earn 5 streams of income, was
 
 ## ✅ X. Who Participates, Who Benefits - TTSWAP's Role Incentive Mechanism
 TTSWAP's core philosophy is: **Let everyone who contributes to the ecosystem receive real returns.**
-Whether you're a user, developer, project party, referrer, portal operator... as long as you participate, there's a reward for you.
+Whether you're a user, developer, project party, referral, portal operator... as long as you participate, there's a reward for you.
 
 ---
 ### 🎯 1. System Roles and Corresponding Return Sources   
@@ -503,7 +503,7 @@ Whether you're a user, developer, project party, referrer, portal operator... as
 | --------- | --------------------- |
 | 💧 Liquidity Provider | 50%~80% (distributed by investment proportion) |
 | 🧑‍💼 Service Provider/Portal | 5%~25% |
-| 👤 Referrer | 5%~10% |
+| 👤 Referral | 5%~10% |
 | 🧑‍🤝‍🧑 User | Exclusive 10% discount or reward |
 | 🛠️ Token Administrator | 1%~3% sharing |     
 | 🌐 Community and Protocol | Used for buyback/burning/development funds etc. |
@@ -518,7 +518,7 @@ The system internally supports flexible setting of sharing ratios for each role,
 |Investor Sharing | 0% ~ 63% | 60%|
 |Merchant Sharing | 0% ~ 63% | 2% |
 |Portal Sharing | 0% ~ 63% | 15% |
-|Referrer Sharing | 0% ~ 63% | 10% |
+|Referral Sharing | 0% ~ 63% | 10% |
 |User Sharing (Discount) | 0% ~ 63% | 5% |
 |Protocol Base Rate | 0% ~ 63% | 3%|
 
@@ -528,7 +528,7 @@ These parameters can be flexibly adjusted according to market conditions. **Plat
 ### 📌 3. Example: Fee Distribution Path for One Transaction  
 Suppose User A exchanges ETH for Token B, generating $10 in fees, configured as follows:
 - Investor sharing: $5
-- Referrer (A filled in you) sharing: $1
+- Referral (A filled in you) sharing: $1
 - Portal platform (like integrated third-party DApp) sharing: $1
 - User discount reward: $1
 - Protocol income: $2
@@ -587,7 +587,7 @@ The platform divides all participants into 6 role types, each can receive **real
 |🛠️ Token Administrator | First to list a token, set parameters, operate that Token | Receive 1~3% fee sharing from that token's trading |
 |💧 Liquidity Provider | Deposit tokens to provide trading pool for platform | Share 50%~80% of fees + mining rewards |
 |🧑‍💼 Service Provider | Provide technical interfaces, integrate wallets, create investment entry points | Can receive 5%~25% fee sharing |
-|👥 Referrer | Refer others to use TTSWAP | Can receive 5%~10% of referred users' fees |
+|👥 Referral | Refer others to use TTSWAP | Can receive 5%~10% of referred users' fees |
 |🙋‍♂️ Regular User | Use platform for trading, investing | Receive fee discounts (default 10%) |
 |🌐 Community Member | Participate in project governance, make suggestions, vote | Have proposal rights, voting rights, and information rights |
 
@@ -603,7 +603,7 @@ Token holders can:
 ---
 ### 💡 3. Becoming a Role is Very Simple:
 - Want to be an administrator? Just be the first to list a Token
-- Want to be a referrer? Register and share your invitation code
+- Want to be a referral? Register and share your invitation code
 - Want to earn service sharing? Develop wallets, integrate entry points
 - Want governance rights? Just hold TTS tokens
 

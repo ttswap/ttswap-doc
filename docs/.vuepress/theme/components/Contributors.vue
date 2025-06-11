@@ -15,7 +15,7 @@ const list = computed(() =>
   <div class="contributors">
     <div v-for="contributor in list" :key="contributor.github" class="contributor">
       <img :src="`https://avatars.githubusercontent.com/${contributor.github}?v=4`" :alt="contributor.name" loading="lazy" width="460" height="460">
-      <a :href="`https://github.com/${contributor.github}`" target="_blank" rel="noopener noreferrer">{{ contributor.name }}</a>
+      <a :href="`https://github.com/${contributor.github}`" target="_blank" rel="noopener noreferral">{{ contributor.name }}</a>
     </div>
   </div>
 </template>

@@ -52,7 +52,7 @@ config:
       -
         title: Fee Sharing Based on Roles 
         icon: 📊
-        details: Whether you’re a user, referrer, portal, LP, or token project — you get a share of the trading fees. Everyone benefits and can participate.
+        details: Whether you’re a user, referral, gate, LP, or token operator — you get a share of the trading fees. Everyone benefits and can participate.
       -
         title: Community-Driven, User-Governed Future
         icon: 👥
@@ -79,9 +79,8 @@ $$
 \end{align}
 $$
 
-
 ## Contracts
-Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  
+Twitter:[ttswap_exchange](https://x.com/ttswapFinance)  
 Telegram:[@ttswap01](https://t.me/ttswap01)  
 Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  

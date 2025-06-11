@@ -31,11 +31,11 @@ export const enNavbar = defineNavbarConfig([
                         text: "Commission allocation by role",
                         link: "/document_en/community/introduce.md"
                 }, {
-                        text: "👥Be Refer",
+                        text: "👥Be Referral",
                         link: "/document_en/community/recommander.md"
                 }, {
-                        text: "👤Be TokenKeeper",
-                        link: "/document_en/community/tokenkeeper.md"
+                        text: "👤Be Token Operator",
+                        link: "/document_en/community/tokenoperator.md"
                 }, {
                         text: "🔆Be Gate",
                         link: "/document_en/community/gate.md"
@@ -86,7 +86,7 @@ export const zhNavbar = defineNavbarConfig([
                         link: "/zh/document/community/recommander.md"
                 }, {
                         text: "👤成为代币运营者",
-                        link: "/zh/document/community/tokenkeeper.md"
+                        link: "/zh/document/community/tokenoperator.md"
                 }, {
                         text: "🔆成为门户",
                         link: "/zh/document/community/gate.md"
