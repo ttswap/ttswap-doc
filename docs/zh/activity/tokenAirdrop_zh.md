@@ -1,4 +1,4 @@
 ---
-title: tokenAirdrop_zh
+title: 代币空投1期(筹建中)
 createTime: 2025/05/20 23:47:01
 ---

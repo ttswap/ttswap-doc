@@ -37,7 +37,7 @@ Impermanent loss refers to the loss suffered by liquidity providers due to marke
 Gas fees are the costs required to execute smart contracts on the Ethereum network. Due to the relatively simple logic and low computational requirements of this trading model, Gas consumption is low, allowing users to save significant Gas fees during transactions, making trading more economical and efficient. Compared to other trading models, it can save 50% to 90% in Gas fees.
 
 6. Fee Distribution by Role  
-On the protocol, fees are distributed according to the different roles of participants, including merchants (token sellers), token investors (liquidity providers), gateways, referrers, and ordinary users. Anyone has the opportunity to participate in the protocol's operations and share the profits from the protocol's development, thereby incentivizing more users to participate in the protocol's construction.
+On the protocol, fees are distributed according to the different roles of participants, including merchants (token sellers), token investors (liquidity providers), gateways, referrals, and ordinary users. Anyone has the opportunity to participate in the protocol's operations and share the profits from the protocol's development, thereby incentivizing more users to participate in the protocol's construction.
 
 7. Native ETH Support  
 The protocol supports direct exchange of native ETH for any token.
@@ -296,15 +296,15 @@ Fees (actual fees) are generated based on the token's fee rate when users perfor
 ### 7.3 Fee Distribution  
 
 ![Alt text](./whitepaper_image_en/TOKENFEEALLOCATION_EN.png)  
-The protocol involves protocol technology, gateway operations, referrers, users, and liquidity providers. The protocol will distribute profits fairly.  
+The protocol involves protocol technology, gateway operations, referrals, users, and liquidity providers. The protocol will distribute profits fairly.  
 The fee distribution for liquidity providers is detailed in sections 7.4 and 7.5.  
 
-* If the user has a referrer:  
+* If the user has a referral:  
   Fees are distributed in real-time based on the user's relevant roles.  
 
-* If the user does not have a referrer:  
+* If the user does not have a referral:  
   The user's share of the fee distribution is allocated to the token administrator.  
-  The referrer's share of the fee distribution is allocated to the gateway role.  
+  The referral's share of the fee distribution is allocated to the gateway role.  
 
 ### 7.4 Fee Calculation Process (Investment)  
 
@@ -362,7 +362,7 @@ Project parties or sellers can deposit tokens into the fee pool to increase inve
 | 1   | Token Investor Commission | 6    | One percent | 63        | 0         | 256       | 251     |             |
 | 2   | Merchant Commission       | 6    | One percent | 63        | 0         | 250       | 245     |             |
 | 3   | Gateway Commission        | 6    | One percent | 63        | 0         | 244       | 239     |             |
-| 4   | Referrer Commission       | 6    | One percent | 63        | 0         | 238       | 233     |             |
+| 4   | Referral Commission       | 6    | One percent | 63        | 0         | 238       | 233     |             |
 | 5   | User Commission           | 6    | One percent | 63        | 0         | 232       | 227     |             |
 | 6   | Protocol Fee Rate         | 6    | One percent | 63        | 0         | 226       | 221     |             |
 | ... |                           |      |             |           |           |           |         |             |
@@ -395,7 +395,7 @@ To promote better project growth and protect the interests of project supporters
 
 ## 10 Roles in the Protocol  
 
-The protocol supports five roles: Token administrator, Token Liquidity Provider, Service Provider, Referrer, User, and Platform.  
+The protocol supports five roles: Token administrator, Token Liquidity Provider, Service Provider, Referral, User, and Platform.  
 
 ### 10.1 Token Administrator  
 
@@ -409,13 +409,13 @@ When a user provides liquidity for a token, they automatically become a liquidit
 
 Service providers offer trading, investment, and other services to users and can enjoy a commission of 5% to 25% of the fees.  
 
-### 10.4 Referrer  
+### 10.4 Referral  
 
 When a user refers other users, they can enjoy a commission of 5%-10% of the fees from the referred users.  
 
 ### 10.5 User  
 
-When a user adds a referrer, they enjoy a 10% discount on fees.  
+When a user adds a referral, they enjoy a 10% discount on fees.  
 
 ### 10.6 Community  
 

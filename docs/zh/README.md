@@ -19,18 +19,18 @@ config:
           text: 去交易
           link: https://app.ttswap.io
           theme: brand
-
   -
     type: features
     features:
       -
         title:  没有无常损失，LP更安心
         icon: 🌐
-        details: 在其他平台，当你提供流动性时容易因为价格波动而亏钱，这叫“无常损失”。TTSWAP 的机制可以有效避免这个问题，你的投入不会减少。
+        details: 在其他平台，当你提供流动性时容易因为价格波动而亏钱，这叫"无常损失"。TTSWAP 的机制可以有效避免这个问题，你的投入不会减少。
+        # link: https://app.ttswap.io
       -
         title: 所有代币共享流动性，交易更自由
         icon: 💧
-        details: 你不再需要一个个建立币对，也不用担心“池子太小流动性不够”。TTSWAP 让所有币对中的同一个代币共用一个超级池子，交易更快、更顺畅。
+        details: 你不再需要一个个建立币对，也不用担心"池子太小流动性不够"。TTSWAP 让所有币对中的同一个代币共用一个超级池子，交易更快、更顺畅。
       -
         title: Gas费节省 50%-90%
         icon: ⛽️
@@ -38,7 +38,7 @@ config:
       -
         title: 稳定价格，不怕滑点
         icon: 🛡️
-        details: 在 TTSWAP 中，小额交易不会因价格波动导致“亏损”，你预估多少就能成交多少——交易体验更可控。
+        details: 在 TTSWAP 中，小额交易不会因价格波动导致"亏损"，你预估多少就能成交多少——交易体验更可控。
       -
         title: 手续费自动按角色分红
         icon: 📊
@@ -80,7 +80,7 @@ $$\begin{align}
 $$
 
 ---
-Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  
+Twitter:[ttswap_exchange](https://x.com/ttswapFinance)
 Telegram:[@ttswap01](https://t.me/ttswap01)  
 Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
