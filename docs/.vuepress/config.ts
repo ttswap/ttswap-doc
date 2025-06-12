@@ -31,18 +31,7 @@ export default defineUserConfig({
                         },
                 ],
         ],
-        bundler: viteBundler({
-                viteOptions: {
-                        server: {
-                                proxy: {
-                                        '/api': {
-                                                target: 'http://localhost:8888',
-                                                changeOrigin: true
-                                        }
-                                }
-                        }
-                }
-        }),
+        bundler: viteBundler(),
         shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
 
         theme: plumeTheme({
