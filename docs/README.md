@@ -80,7 +80,7 @@ $$
 $$
 
 ## Contracts
-Twitter:[ttswap_exchange](https://x.com/ttswapFinance)  
+Twitter:[ttswapFinance](https://x.com/ttswapFinance)  
 Telegram:[@ttswap01](https://t.me/ttswap01)  
 Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
