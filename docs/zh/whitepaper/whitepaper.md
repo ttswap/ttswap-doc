@@ -404,10 +404,10 @@ h. 用户会得到提供流动性reth时挖矿tts代币.
 | 1   | Token投资者分佣 | 6    | 百分之一 | 63     | 0      | 256    | 251    |      |
 | 2   | 商家分佣        | 6    | 百分之一 | 63     | 0      | 250    | 245    |      |
 | 3   | 门户分佣        | 6    | 百分之一 | 63     | 0      | 244    | 239    |      |
-| 4   | 推荐者分佣      | 6    | 百分之一 | 63     | 0      | 238    | 233    |      |
+| 4   | 推荐者分佣       | 6    | 百分之一 | 63     | 0      | 238    | 233    |      |
 | 5   | 用户分佣        | 6    | 百分之一 | 63     | 0      | 232    | 227    |      |
 | 6   | 协议费率        | 6    | 百分之一 | 63     | 0      | 226    | 221    |      |
-| ... |                 |      |          |        |        |        |        |      |
+| ... |                |      |          |        |        |        |        |      |
 
 ## 11 主要代码实现(参见代码)
 
@@ -432,7 +432,7 @@ h. 用户会得到提供流动性reth时挖矿tts代币.
 | collectProof       | 140453 | 103453         | 获取价值投资证明收益 |
 | warefare           | 69462  | 52362          | 增加手续费发福利     |
 
-当第用户第一次交易一个Token时，GAS费消耗在MEDIAN，用户第二次或者后续交易这个Token时GAS消耗一般在MIN。
+当第用户第一次交易一个Token时，GAS费消耗稍微多一点，用户第二次或者后续交易这个Token时GAS消耗稍微少一点。
 
 为促进项目更好成长，为维护项目支持者的利益，现推出以下代币方案。
 
@@ -586,9 +586,9 @@ tests
 
 ## 15 参与和合作联系方式
 
-Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  
-Telegram:[@ttswap01](https://t.me/ttswap01)  
-Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
+Twitter:[ttswapfinance](https://x.com/ttswapfinance)  
+Telegram:[@ttswapfinance](https://t.me/ttswapfinance)  
+Email:[ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
 Website:[ttswap.io](http://www.ttswap.io)  
 
