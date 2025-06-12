@@ -15,10 +15,10 @@ export default defineThemeConfig({
         social: [{ icon: "github", link: "https://github.com/ttswap" }, {
                 icon: "twitter", link: "https://github.com/ttswap"
         }, {
-                icon: "youtube", link: "https://youtube.com"
+                icon: "telegram", link: "https://t.me/ttswapfinance"
         },],
 
-        navbarSocialInclude: ["github", "twitter"], // 允许显示在导航栏的 social 社交链接
+        navbarSocialInclude: ["github", "twitter","telegram"], // 允许显示在导航栏的 social 社交链接
         aside: true, // 页内侧边栏， 默认显示在右侧
         outline: [2, 4], // 页内大纲， 默认显示 h2, h4
 

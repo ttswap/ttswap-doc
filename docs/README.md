@@ -80,11 +80,11 @@ $$
 $$
 
 ## Contracts
-Twitter:[ttswapFinance](https://x.com/ttswapFinance)  
-Telegram:[@ttswap01](https://t.me/ttswap01)  
-Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
+Twitter:[@ttswapfinance](https://x.com/ttswapFinance)  
+Telegram:[@ttswapfinance](https://t.me/ttswapfinance)  
+Email:[ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
 Website:[ttswap.io](http://www.ttswap.io)  
-Github:[ttswap](http://github.com/ttswap)  
+Github:[ttswap](http://github.com/ttswap)
 
 Welcome talents from all regions to join the community.

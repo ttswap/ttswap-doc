@@ -89,10 +89,10 @@ TTS 将作为贯穿整个生态系统的主轴代币，享受平台成长带来�
 
 ## 📣 加入社区，抢先一步！
 
-* X（Twitter）：[ttswap_exchange](https://x.com/ttswap_exchange)
-* Telegram：[@ttswap01](https://t.me/ttswap01)  
+* X（Twitter）：[ttswapfinance](https://x.com/ttswapfinance)
+* Telegram：[@ttswapfinance](https://t.me/ttswapfinance)  
 * Discord：[ttswap](https://discord.gg/XygqnmQgX3) 
-* 邮箱：[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
+* 邮箱：[ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)  
 * 官网：[ttswap.io](http://www.ttswap.io)
 
 ---

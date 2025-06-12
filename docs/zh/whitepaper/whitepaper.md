@@ -586,9 +586,9 @@ tests
 
 ## 15 参与和合作联系方式
 
-Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  
-Telegram:[@ttswap01](https://t.me/ttswap01)  
-Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
+Twitter:[ttswapfinance](https://x.com/ttswapfinance)  
+Telegram:[@ttswapfinance](https://t.me/ttswapfinance)  
+Email:[ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
 Website:[ttswap.io](http://www.ttswap.io)  
 

@@ -34,9 +34,9 @@ TTSWAP正在开启"早期共建者"空投计划，邀请你成为这个革命性
 ## 🎯 如何参与空投？
 
 ### 第一步：加入社区
-- 加入 [TTSWAP Telegram](https://t.me/ttswap01) 群组
+- 加入 [TTSWAP Telegram](https://t.me/ttswapfinance) 群组
 - 参与 [Discord](https://discord.com/invite/XygqnmQgX3) 社区讨论
-- 关注 [@ttswap_exchange](https://x.com/ttswap_exchange) Twitter
+- 关注 [@ttswapfinance](https://x.com/ttswapfinance) Twitter
 
 ### 第二步：完成社区任务
 1. 转发并评论TTSWAP官方推文
@@ -93,10 +93,10 @@ TTSWAP正在开启"早期共建者"空投计划，邀请你成为这个革命性
 ## 📢 加入我们
 
 - 官网：[ttswap.io](https://ttswap.io)
-- Twitter：[@ttswap_exchange](https://x.com/ttswap_exchange)
-- Telegram：[@ttswap01](https://t.me/ttswap01)
+- Twitter：[@ttswapfinance](https://x.com/ttswapfinance)
+- Telegram：[@ttswapfinance](https://t.me/ttswapfinance)
 - Discord：[ttswap0](https://discord.com/invite/XygqnmQgX3)
-- 邮箱：ttswap.exchange@gmail.com
+- 邮箱：ttswapfinance@gmail.com
 
 ---
 

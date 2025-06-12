@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: Airdrop Session1
+title: Airdrop (Planing)
 description: 
 createTime: 2025/05/17 14:18:10
 ---

@@ -726,9 +726,9 @@ TTSWAP 是一个去中心化项目，欢迎全球用户、开发者、内容创�
 |渠道 |	地址|
 |-------|------|
 |🌐 官网|	[ttswap.io](https://ttswap.io)|
-|✉️ 邮箱|	[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)|
-|🐦 Twitter |	[@ttswap_exchange](https://x.com/ttswapFinance)|
-|💬 Telegram|	[@ttswap01](https://t.me/ttswap01)|
+|✉️ 邮箱|	[ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)|
+|🐦 Twitter |	[@ttswapfinance](https://x.com/ttswapFinance)|
+|💬 Telegram|	[@ttswapfinance](https://t.me/ttswapfinance)|
 |💻 Discord	| [ttswap0](https://discord.com/invite/XygqnmQgX3)|
 
 ---
