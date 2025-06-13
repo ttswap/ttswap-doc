@@ -3,7 +3,7 @@ title: 【Zero Threshold】TTSWAP Ambassador Recruitment~ 5%-10% Permanent Reven
 createTime: 2025/06/08 23:52:07
 ---
 
-# 🎯 TTSWAP Ambassador Guide
+<ShareButtonEn/>
 
 ## I. What is a TTSWAP Ambassador? 🤔
 
