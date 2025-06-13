@@ -1,163 +1,272 @@
-<script setup lang="ts">
-import { ref, onMounted } from 'vue';
-// import { usePage, useRoute } from 'vuepress/client';
-
-// const page = usePage();
-// const route = useRoute();
-const showModal = ref(false);
-const username = ref('');
-const shortUrl = ref('');
-const error = ref('');
-
-// 从 cookie 获取用户名
-const getUsernameFromCookie = () => {
-    if (typeof document === 'undefined') return '';
-    let name: any = document.cookie.match(new RegExp(`(^| )username=([^;]+)`));
-    name = name ? decodeURIComponent(name[2]) : "";
-    const currentUrl = window.location.href;
-    let url: any = document.cookie.match(new RegExp(`(^| )${currentUrl}=([^;]+)`));
-    url = url ? decodeURIComponent(url[2]) : "";
-    console.log("cookie-name:", name, "--url:", url)
-    username.value = name;
-    shortUrl.value = url;
-    // return match ? decodeURIComponent(match[1]) : '';
-};
-
-function isValidETHAddress(address) {
-  return /^0x[a-fA-F0-9]{40}$/.test(address);
-}
-
-// 生成短链接
-const generateShortUrl = async () => {
-    if (!username.value.trim()) {
-        error.value = 'Please input your wallet address';
-        return;
-    }
-    // console.log("111",isValidETHAddress(username.value))
-    // return;
-    if (!isValidETHAddress(username.value)) {
-        error.value = 'Please input the correct wallet address';
-        return;
-    }
-
-    try {
-        const currentUrl = window.location.href;
-        const response = await fetch('/api/generate-short-link', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                originalUrl: currentUrl,
-                username: username.value
-            })
-        });
-
-        const data = await response.json();
-        if (response.ok) {
-            console.log("----", data)
-            shortUrl.value = data.shortUrl;
-            // 保存用户名到 cookie (30 天有效期)
-            document.cookie = `username=${encodeURIComponent(username.value)}; max-age=${300 * 24 * 60 * 60}; path=/`;
-            document.cookie = `${currentUrl}=${encodeURIComponent(shortUrl.value)}; max-age=${300 * 24 * 60 * 60}; path=/`;
-        } else {
-            throw new Error(data.error || 'Generation failed');
-        }
-    } catch (err: any) {
-        error.value = err.message || 'request failure';
-    }
-};
-
-// 复制短链接
-const copyToClipboard = () => {
-  const textarea = document.createElement('textarea');
-  textarea.value = shortUrl.value;
-  textarea.style.position = 'fixed';  // 避免页面滚动
-  document.body.appendChild(textarea);
-  textarea.select();
-  try {
-    document.execCommand('copy');
-    alert('Link copied!');
-  } catch (err) {
-    console.error('Downgrade replication failed:', err);
-  } finally {
-    document.body.removeChild(textarea);
-  }
-  showModal.value = false;
-};
-
-onMounted(() => {
-    // 组件挂载时从 cookie 加载用户名
-    // username.value = 
-    getUsernameFromCookie();
-});
-</script>
-
 <template>
-    <div class="share-container">
-        <button class="share-btn" @click="showModal = true">
+    <div class="share-button-container">
+        <button class="share-button" :class="{
+            'loading': buttonState === 'loading',
+            'success': buttonState === 'success',
+            'error': buttonState === 'error'
+        }" @click="showModal = true" :disabled="buttonState === 'loading'">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
                 <path
                     d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
             </svg>
-            Share
+
+            <span v-if="buttonState === 'loading'" class="button-content">
+                Share
+            </span>
+            <span v-else-if="buttonState === 'success'" class="button-content">
+                Share
+            </span>
+            <span v-else-if="buttonState === 'error'" class="button-content">
+                Share
+            </span>
+            <span v-else class="button-content">
+                Share
+            </span>
         </button>
 
-        <div v-if="showModal" class="modal">
+        <!-- 地址输入模态框 -->
+        <div v-if="showModal" class="modal-overlay" @click.self="showModal = false">
             <div class="modal-content">
-                <span class="close" @click="showModal = false">&times;</span>
-
-                <div v-if="!shortUrl">
-                    <h3>Create link</h3>
-                    <input v-model="username" placeholder="Input user name" class="input-field" />
-                    <p class="error">{{ error }}</p>
-                    <button @click="generateShortUrl" class="generate-btn">
-                        Create link
-                    </button>
+                <div class="modal-header">
+                    <h3>Personalized Share Link</h3>
+                    <button class="close-button" @click="showModal = false">&times;</button>
                 </div>
-
-                <div v-else>
-                    <h3>Link has been created</h3>
-                    <p class="short-url">{{ shortUrl }}</p>
-                    <button @click="copyToClipboard" class="copy-btn">
-                        Copy link
-                    </button>
+                <div class="modal-body">
+                    <input v-model="inputAddress" type="text" class="address-input" placeholder="Bind wallet address, generate personalized share link(optional)"
+                        @keyup.enter="handleAddressSubmit" />
+                    <p v-if="inputError" class="error-message">{{ inputError }}</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="cancel-button" @click="showModal = false">cancel</button>
+                    <button class="submit-button" @click="handleAddressSubmit">confirm</button>
                 </div>
             </div>
         </div>
     </div>
 </template>
 
-<style scoped>
-.share-container {
-    margin: 2rem 0;
-    display: flex;
-    justify-content: right;
+<script>
+export default {
+    name: "ShareButton",
+    data() {
+        return {
+            savedReferAddress: '',
+            savedPath: '',
+            buttonState: '', // 'loading', 'success', 'error', ''
+            showModal: false,
+            inputAddress: '',
+            inputError: ''
+        }
+    },
+    mounted() {
+        this.checkSavedData()
+        this.inputAddress = this.savedReferAddress
+    },
+    methods: {
+        async generateShareLink(savedReferAddress, currentPath) {
+            // 创建一个超时Promise
+            this.buttonState = 'loading'
+            const timeout = new Promise((_, reject) => {
+                setTimeout(() => {
+                    // reject(new Error('请求超时'));
+                }, 2000); // 2秒超时
+            });
+            try {
+                // 使用 Promise.race 竞争超时和请求
+                const response = await Promise.race([
+                    fetch('/api/generate-share-link', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            savedReferAddress,
+                            currentPath
+                        })
+                    }),
+                    timeout
+                ]);
+                
+                if (!response.ok) {
+                    return ""
+                }
+                
+                const data = await response.json();
+                this.buttonState = 'success'
+                return data.shareLink;
+            } catch (error) {
+                return ""
+            }
+        },
+        async handleAddressSubmit() {
+            const shareAddress = this.inputAddress.trim()
+            
+            // 只有当输入不为空且格式不正确时才显示错误
+            if (shareAddress && !/^0x[a-fA-F0-9]{40}$/.test(shareAddress)) {
+                this.inputError = 'Please enter a valid wallet address'
+                return
+            }
+
+            this.inputError = ''
+            this.showModal = false
+
+            // 如果地址为空，直接使用通用链接
+            if (!shareAddress) {
+                const shareLink = `${window.location.origin}`
+                await navigator.clipboard.writeText(shareLink)
+                this.buttonState = 'success'
+                setTimeout(() => {
+                    this.buttonState = ''
+                }, 5000)
+                return
+            } else {
+                // 获取当前路径
+                const currentPath = window.location.pathname
+                // 设置cookie，有效期30天
+                const expiryDate = new Date()
+                expiryDate.setDate(expiryDate.getDate() + 30)
+                this.savedReferAddress = shareAddress
+                this.setCookie('shareAddress', shareAddress, expiryDate)
+                
+                // 设置加载状态
+                this.buttonState = 'loading'
+                
+                try {
+                    // 调用服务器接口生成分享链接
+                    const shareLink = await this.generateShareLink(shareAddress, currentPath);
+
+                    if(shareLink){
+                        await navigator.clipboard.writeText(shareLink);
+                    }else{
+                        const shareLink = `${window.location.origin}`+currentPath;
+                        navigator.clipboard.writeText(shareLink);
+                    }
+                    
+                    // 设置成功状态
+                    this.buttonState = 'success'
+                    setTimeout(() => {
+                        this.buttonState = ''
+                    }, 5000)
+                } catch (error) {
+                    // 设置错误状态
+                    setTimeout(() => {
+                        this.buttonState = ''
+                    }, 5000)
+
+                    const shareLink = `${window.location.origin}`
+                    console.log("shareLink22",shareLink);
+                    navigator.clipboard.writeText(shareLink);
+                }
+            }
+
+        },
+        setCookie(name, value, expiryDate) {
+            document.cookie = `${name}=${value}; expires=${expiryDate.toUTCString()}; path=/`
+        },
+        getCookie(name) {
+            const cookies = document.cookie.split(';')
+            for (let cookie of cookies) {
+                const [cookieName, cookieValue] = cookie.trim().split('=')
+                if (cookieName === name) {
+                    return cookieValue
+                }
+            }
+            return ''
+        },
+        checkSavedData() {
+            this.savedReferAddress = this.getCookie('shareAddress')
+
+        }
+    },
 }
 
-.share-btn {
+</script>
+
+
+
+<style scoped>
+.share-button-container {
+    text-align: right;
+    margin: 20px 0;
+}
+
+.share-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    position: relative;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+}
+
+.share-button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+.share-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
     gap: 8px;
-    background: #eee;
-    color: rgb(10, 10, 10);
-    border: none;
-    padding: 8px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.2s;
 }
 
-.share-btn:hover {
-    background: #ddd;
+/* Loading state */
+.share-button.loading {
+    background-color: #2196F3;
 }
 
-.modal {
+.loading-spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Success state */
+.share-button.success {
+    background-color: #4CAF50;
+}
+
+.success-icon {
+    font-size: 18px;
+}
+
+/* Error state */
+.share-button.error {
+    background-color: #f44336;
+}
+
+.error-icon {
+    font-size: 18px;
+}
+
+/* Modal styles */
+.modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,69 +275,88 @@ onMounted(() => {
 
 .modal-content {
     background: white;
-    padding: 25px;
     border-radius: 8px;
+    padding: 20px;
     width: 90%;
-    max-width: 450px;
-    position: relative;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.close {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 28px;
-    cursor: pointer;
-    color: #999;
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.close:hover {
+.modal-header h3 {
+    margin: 0;
     color: #333;
 }
 
-.input-field {
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    padding: 0;
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.address-input {
     width: 100%;
-    padding: 12px;
-    margin: 15px 0;
+    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
-.generate-btn,
-.copy-btn {
-    background: #eee;
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 12px 20px;
+.address-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.error-message {
+    color: #f44336;
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cancel-button,
+.submit-button {
+    padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: background 0.2s;
+    font-size: 14px;
+    border: none;
 }
 
-.generate-btn:hover,
-.copy-btn:hover {
-    background: #ddd;
+.cancel-button {
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-.short-url {
-    word-break: break-all;
-    background: #f8f8f8;
-    padding: 15px;
-    border-radius: 4px;
-    font-size: 0.95rem;
-    border: 1px solid #eee;
-    margin: 15px 0;
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
 }
 
-.error {
-    color: #e53935;
-    font-size: 0.9em;
-    margin-top: -10px;
-    margin-bottom: 10px;
+.cancel-button:hover {
+    background-color: #e0e0e0;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
 }
 </style>

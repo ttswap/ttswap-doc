@@ -45,8 +45,6 @@ export default defineClientConfig({
       // 替换交易按钮行为的函数
       const replaceTradeButtonBehavior = () => {
         let button=document.getElementsByClassName('vp-button medium brand')[0]
-          // 移除之前的事件监听器（如果有的话）
-        button.removeEventListener('click', handleTradeButtonClick)
           // 添加新的事件监听器
         button.addEventListener('click', handleTradeButtonClick)   
       }

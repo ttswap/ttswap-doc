@@ -7,8 +7,6 @@ createTime: 2025/05/18 13:45:20
 
 <ShareButtonZh/>
 
-
-
 ### 为建设下一代DEX注入动力，与我们一起成长！
 
 TTSWAP 是一款为用户打造的**高效、安全、创新型去中心化交易平台**。现在，我们正式开启 **TTS 代币公开发售**，本轮公售将为 TTSWAP 提供初始流动性，推动生态全面启动！
@@ -90,10 +88,10 @@ TTS 将作为贯穿整个生态系统的主轴代币，享受平台成长带来�
 
 ## 📣 加入社区，抢先一步！
 
-* X（Twitter）：[ttswapfinance](https://x.com/ttswapfinance)
+* X（Twitter）：[@ttswapfinance](https://x.com/ttswapfinance)
 * Telegram：[@ttswapfinance](https://t.me/ttswapfinance)  
-* Discord：[ttswap](https://discord.gg/XygqnmQgX3) 
 * 邮箱：[ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)  
+* Discord：[ttswap](https://discord.gg/XygqnmQgX3) 
 * 官网：[ttswap.io](http://www.ttswap.io)
 
 ---
