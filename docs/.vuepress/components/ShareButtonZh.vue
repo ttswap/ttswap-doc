@@ -136,7 +136,7 @@ export default {
                 try {
                     // 调用服务器接口生成分享链接
                     const shareLink = await this.generateShareLink(shareAddress, currentPath);
-
+                    console.log("shareLink",shareLink);
                     if(shareLink){
                         await navigator.clipboard.writeText(shareLink);
                     }else{
