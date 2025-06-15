@@ -72,6 +72,8 @@ export default {
                 }, 2000); // 2秒超时
             });
             try {
+                console.log("savedReferAddress",savedReferAddress);
+                console.log("currentPath",currentPath);
                 // 使用 Promise.race 竞争超时和请求
                 const response = await Promise.race([
                     fetch('/api/generate-short-link', {
