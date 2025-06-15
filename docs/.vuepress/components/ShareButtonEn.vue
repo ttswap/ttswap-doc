@@ -71,9 +71,10 @@ export default {
                     // reject(new Error('请求超时'));
                 }, 2000); // 2秒超时
             });
-            console.log("savedReferAddress",savedReferAddress);
-            console.log("currentPath",currentPath);
+
             try {
+                console.log("savedReferAddress",savedReferAddress);
+                console.log("currentPath",currentPath);
                 // 使用 Promise.race 竞争超时和请求
                 const response = await Promise.race([
                     fetch('/api/generate-short-link', {
@@ -82,9 +83,8 @@ export default {
                             'Content-Type': 'application/json',
                         },
                         body: JSON.stringify({
-
                             originalUrl: currentPath,
-                username:savedReferAddress
+                            username:savedReferAddress
                         })
                     }),
                     timeout
@@ -96,7 +96,8 @@ export default {
                 
                 const data = await response.json();
                 this.buttonState = 'success'
-                return data.shareLink;
+                console.log("shortUrl",data);
+                return data.shortUrl;
             } catch (error) {
                 return ""
             }
