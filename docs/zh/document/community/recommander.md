@@ -3,6 +3,8 @@ title: 【零门槛】TTSWAP推荐官招募：永久分成5%-10%，打造你的�
 createTime: 2025/06/08 23:52:07
 ---
 
+<ShareButtonZh/>
+
 # 🎯 TTSWAP推荐官指南
 
 ## 一、什么是TTSWAP推荐官？ 🤔
@@ -177,3 +179,11 @@ TTSWAP的推荐机制通过智能合约确保了收益的可靠性和持续性�
 
 ---
 💫 立即开始你的推荐之旅，成为TTSWAP生态的重要建设者！
+
+Twitter:[@ttswapfinance](https://x.com/ttswapFinance)  
+Telegram:[@ttswapfinance](https://t.me/ttswapfinance)  
+Email:[ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)  
+Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
+Website:[ttswap.io](http://www.ttswap.io)  
+Github:[ttswap](http://github.com/ttswap)  
+

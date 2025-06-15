@@ -1,22 +1,24 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
 import { plumeTheme } from "vuepress-theme-plume";
+
 export default defineUserConfig({
         base: "/",
         lang: "en-US",
-        plugins: [],
+        plugins: [
+              
+        ],
         locales: {
                 "/": {
                         lang: "en-US",
-                        title: "TTSWAP",
-                        description: "TTSWAP is a dex , any one can trade",
+                        title: "TTSWAP - Trade Crypto, Earn Freedom",
+                        description: "Experience the future of decentralized trading with TTSWAP - where anyone can trade crypto assets instantly, securely, and without intermediaries. Join the revolution of borderless finance.",
                 },
                 
                 "/zh/": {
                         lang: "zh-CN",
-                        title: "欢迎来到TTSWAP",
-                        description:
-                                "TTSWAP是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。",
+                        title: "TTSWAP - 安全交易，拥抱自由",
+                        description: "体验去中心化交易的未来 - TTSWAP让每个人都能即时、安全地交易加密资产，无需中介。加入无边界金融革命，开启您的加密之旅。",
                 },
         },
 
@@ -62,7 +64,8 @@ export default defineUserConfig({
                 // categories: true, // 是否启用分类页
                 postCover: 'right', // 文章封面位置
                 pagination: 15, // 每页显示文章数量
-                include: ['*/blog/*.md','blog/*.md','*/document/community/*.md','*/document/activity/*.md']
+                include: ['*/blog/*.md','blog/*.md','*/document/community/*.md','document_en/community/*.md'],
+                
                 },
 
                 /* 博客文章页面链接前缀 */
@@ -92,6 +95,7 @@ export default defineUserConfig({
                  * 启用此搜索需要将 本地搜索 search 设置为 false
                  * @see https://theme-plume.vuejs.press/config/plugins/search/#algolia-docsearch
                  */
+                
                 // search: {
                 //   provider: 'algolia',
                 //   appId: '',

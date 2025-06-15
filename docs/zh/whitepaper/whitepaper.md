@@ -5,6 +5,8 @@ description: TTSWAP 是一个去中心化的代币交易平台，任何人都可
 createTime: 2025/05/20 23:47:01
 ---
 
+<ShareButtonZh/>
+
 ## 1 概要  
 
 TTSWAP(token-token swap)是建立在支持EVM的区块链上的自动做市协议，意味着它不依赖于中心化的机构或个人来进行交易。它的核心原理是根据用户的行为，自动触发市场价值的转移，形成新的价格，从而构建了一个基于恒定价值交易的自动做市协议。  
@@ -404,10 +406,10 @@ h. 用户会得到提供流动性reth时挖矿tts代币.
 | 1   | Token投资者分佣 | 6    | 百分之一 | 63     | 0      | 256    | 251    |      |
 | 2   | 商家分佣        | 6    | 百分之一 | 63     | 0      | 250    | 245    |      |
 | 3   | 门户分佣        | 6    | 百分之一 | 63     | 0      | 244    | 239    |      |
-| 4   | 推荐者分佣      | 6    | 百分之一 | 63     | 0      | 238    | 233    |      |
+| 4   | 推荐者分佣       | 6    | 百分之一 | 63     | 0      | 238    | 233    |      |
 | 5   | 用户分佣        | 6    | 百分之一 | 63     | 0      | 232    | 227    |      |
 | 6   | 协议费率        | 6    | 百分之一 | 63     | 0      | 226    | 221    |      |
-| ... |                 |      |          |        |        |        |        |      |
+| ... |                |      |          |        |        |        |        |      |
 
 ## 11 主要代码实现(参见代码)
 
@@ -432,7 +434,7 @@ h. 用户会得到提供流动性reth时挖矿tts代币.
 | collectProof       | 140453 | 103453         | 获取价值投资证明收益 |
 | warefare           | 69462  | 52362          | 增加手续费发福利     |
 
-当第用户第一次交易一个Token时，GAS费消耗在MEDIAN，用户第二次或者后续交易这个Token时GAS消耗一般在MIN。
+当第用户第一次交易一个Token时，GAS费消耗稍微多一点，用户第二次或者后续交易这个Token时GAS消耗稍微少一点。
 
 为促进项目更好成长，为维护项目支持者的利益，现推出以下代币方案。
 
@@ -586,9 +588,9 @@ tests
 
 ## 15 参与和合作联系方式
 
-Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  
-Telegram:[@ttswap01](https://t.me/ttswap01)  
-Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
+Twitter:[ttswapfinance](https://x.com/ttswapfinance)  
+Telegram:[@ttswapfinance](https://t.me/ttswapfinance)  
+Email:[ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
 Website:[ttswap.io](http://www.ttswap.io)  
 

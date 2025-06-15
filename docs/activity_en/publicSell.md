@@ -83,10 +83,10 @@ TTS will serve as the backbone token throughout the entire ecosystem, enjoying c
 
 ## 📣 Join Our Community, Get Ahead!
 
-* X (Twitter): [ttswap_exchange](https://x.com/ttswap_exchange)
-* Telegram: [@ttswap01](https://t.me/ttswap01)
+* X (Twitter): [ttswapfinance](https://x.com/ttswapfinance)
+* Telegram: [@ttswapfinance](https://t.me/ttswapfinance)
 * Discord: [ttswap](https://discord.gg/XygqnmQgX3)
-* Email: [ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)
+* Email: [ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)
 * Website: [ttswap.io](http://www.ttswap.io)
 
 ---

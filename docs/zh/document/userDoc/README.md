@@ -5,6 +5,8 @@ description: TTSWAP 是一个去中心化的代币交易平台，任何人都可
 collapsed: true
 ---
 
+<ShareButtonZh/>
+
 ## ✅ 一 什么是 TTSWAP？
 TTSWAP 是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。
 它的运行完全由智能合约驱动，不需要中间人，价格由协议交易自动决定。这种新型的机制被称为「恒定价值交易协议，它让交易过程更加透明、公平和稳定。  
@@ -726,9 +728,9 @@ TTSWAP 是一个去中心化项目，欢迎全球用户、开发者、内容创�
 |渠道 |	地址|
 |-------|------|
 |🌐 官网|	[ttswap.io](https://ttswap.io)|
-|✉️ 邮箱|	[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)|
-|🐦 Twitter |	[@ttswap_exchange](https://x.com/ttswapFinance)|
-|💬 Telegram|	[@ttswap01](https://t.me/ttswap01)|
+|✉️ 邮箱|	[ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)|
+|🐦 Twitter |	[@ttswapfinance](https://x.com/ttswapFinance)|
+|💬 Telegram|	[@ttswapfinance](https://t.me/ttswapfinance)|
 |💻 Discord	| [ttswap0](https://discord.com/invite/XygqnmQgX3)|
 
 ---

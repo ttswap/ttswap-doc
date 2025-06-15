@@ -51,7 +51,6 @@ export default {
                     reject(new Error('请求超时'));
                 }, 2000); // 2秒超时
             });
-
             try {
                 // 使用 Promise.race 竞争超时和请求
                 const response = await Promise.race([
@@ -84,7 +83,6 @@ export default {
                 throw error;
             }
         },
-
         async showShareInput() {
             this.checkSavedData()
             const shareAddress = prompt("生成专属链接,需输入你的钱包地址：", this.savedReferAddress)
@@ -93,11 +91,9 @@ export default {
                 if (/^0x[a-fA-F0-9]{40}$/.test(shareAddress)) {
                     // 获取当前路径
                     const currentPath = window.location.pathname
-
                     // 设置cookie，有效期30天
                     const expiryDate = new Date()
                     expiryDate.setDate(expiryDate.getDate() + 30)
-
                     this.savedReferAddress = shareAddress
                     this.setCookie('shareAddress', shareAddress, expiryDate)
                     
@@ -173,10 +169,9 @@ export default {
 
 <style scoped>
 .share-button-container {
-    text-align: center;
+    text-align: left;
     margin: 20px 0;
 }
-
 .share-button {
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -192,27 +187,22 @@ export default {
     align-items: center;
     justify-content: center;
 }
-
 .share-button:hover:not(:disabled) {
     background-color: #45a049;
 }
-
 .share-button:disabled {
     cursor: not-allowed;
     opacity: 0.8;
 }
-
 .button-content {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-
 /* Loading state */
 .share-button.loading {
     background-color: #2196F3;
 }
-
 .loading-spinner {
     width: 16px;
     height: 16px;
@@ -221,27 +211,22 @@ export default {
     border-top-color: transparent;
     animation: spin 1s linear infinite;
 }
-
 @keyframes spin {
     to {
         transform: rotate(360deg);
     }
 }
-
 /* Success state */
 .share-button.success {
     background-color: #4CAF50;
 }
-
 .success-icon {
     font-size: 18px;
 }
-
 /* Error state */
 .share-button.error {
     background-color: #f44336;
 }
-
 .error-icon {
     font-size: 18px;
 }

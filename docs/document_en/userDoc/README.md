@@ -5,6 +5,8 @@ description: TTSWAP is a decentralized token trading platform where anyone can q
 collapsed: true
 ---
 
+<ShareButtonEn/>
+
 ## ✅ I. What is TTSWAP?
 TTSWAP is a decentralized token trading platform where anyone can quickly and safely exchange one token for another without relying on centralized exchanges.
 It operates entirely through smart contracts, eliminating intermediaries, with prices automatically determined by protocol trading. This innovative mechanism is called the "Constant Value Trading Protocol," making the trading process more transparent, fair, and stable.
@@ -703,9 +705,9 @@ TTSWAP is a decentralized project, welcoming global users, developers, content c
 |Channel | Address|
 |-------|------|
 |🌐 Website | [ttswap.io](https://ttswap.io)|
-|✉️ Email | [ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)|
-|🐦 Twitter | [@ttswap_exchange](https://x.com/ttswap_exchange)|
-|💬 Telegram | [@ttswap01](https://t.me/ttswap01)|
+|✉️ Email | [ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)|
+|🐦 Twitter | [@ttswapfinance](https://x.com/ttswapfinance)|
+|💬 Telegram | [@ttswapfinance](https://t.me/ttswapfinance)|
 |💻 Discord | [ttswap0](https://discord.com/invite/XygqnmQgX3)|
 
 ---
