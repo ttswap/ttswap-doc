@@ -80,8 +80,8 @@ export default {
                             'Content-Type': 'application/json',
                         },
                         body: JSON.stringify({
-                            savedReferAddress,
-                            currentPath
+                            originalUrl: currentPath,
+                            username:savedReferAddress
                         })
                     }),
                     timeout
