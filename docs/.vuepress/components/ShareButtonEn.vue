@@ -71,6 +71,8 @@ export default {
                     // reject(new Error('请求超时'));
                 }, 2000); // 2秒超时
             });
+            console.log("savedReferAddress",savedReferAddress);
+            console.log("currentPath",currentPath);
             try {
                 // 使用 Promise.race 竞争超时和请求
                 const response = await Promise.race([
@@ -80,8 +82,9 @@ export default {
                             'Content-Type': 'application/json',
                         },
                         body: JSON.stringify({
-                            savedReferAddress,
-                            currentPath
+
+                            originalUrl: currentPath,
+                username:savedReferAddress
                         })
                     }),
                     timeout
