@@ -96,7 +96,8 @@ export default {
                 
                 const data = await response.json();
                 this.buttonState = 'success'
-                return data.shareLink;
+                console.log("shortUrl",data);
+                return data.shortUrl;
             } catch (error) {
                 return ""
             }
