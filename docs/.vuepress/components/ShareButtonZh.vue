@@ -74,7 +74,7 @@ export default {
             try {
                 // 使用 Promise.race 竞争超时和请求
                 const response = await Promise.race([
-                    fetch('/api/generate-share-link', {
+                    fetch('/api/generate-short-link', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
