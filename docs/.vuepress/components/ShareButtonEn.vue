@@ -37,8 +37,8 @@
                     <p v-if="inputError" class="error-message">{{ inputError }}</p>
                 </div>
                 <div class="modal-footer">
-                    <button class="cancel-button" @click="showModal = false">cancel</button>
-                    <button class="submit-button" @click="handleAddressSubmit">confirm</button>
+                    <button class="cancel-button" @click="showModal = false">Cancel</button>
+                    <button class="submit-button" @click="handleAddressSubmit">Confirm</button>
                 </div>
             </div>
         </div>

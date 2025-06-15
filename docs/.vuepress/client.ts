@@ -55,6 +55,7 @@ export default defineClientConfig({
         setTimeout(() => {
           replaceTradeButtonBehavior()
         }, 100)
+        
       })
 
       // 页面首次加载时也执行
