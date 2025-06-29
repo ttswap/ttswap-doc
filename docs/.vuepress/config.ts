@@ -23,13 +23,36 @@ export default defineUserConfig({
         },
 
         head: [
-                // 配置站点图标
+                // 配置站点图标 - 更完整的favicon配置
                 [
                         "link",
                         {
                                 rel: "icon",
                                 type: "image/png",
-                                href: "logo.png",
+                                href: "/logo.png",
+                        },
+                ],
+                [
+                        "link",
+                        {
+                                rel: "shortcut icon",
+                                type: "image/png",
+                                href: "/logo.png",
+                        },
+                ],
+                [
+                        "link",
+                        {
+                                rel: "apple-touch-icon",
+                                type: "image/png",
+                                href: "/logo.png",
+                        },
+                ],
+                [
+                        "meta",
+                        {
+                                name: "msapplication-TileImage",
+                                content: "/logo.png",
                         },
                 ],
         ],
