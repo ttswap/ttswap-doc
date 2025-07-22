@@ -705,7 +705,7 @@ TTSWAP is a decentralized project, welcoming global users, developers, content c
 |Channel | Address|
 |-------|------|
 |🌐 Website | [ttswap.io](https://ttswap.io)|
-|✉️ Email | [ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)|
+|✉️ Email | [bussiness@ttswap.io](mailto:bussiness@ttswap.io)|
 |🐦 Twitter | [@ttswapfinance](https://x.com/ttswapfinance)|
 |💬 Telegram | [@ttswapfinance](https://t.me/ttswapfinance)|
 |💻 Discord | [ttswap0](https://discord.com/invite/XygqnmQgX3)|

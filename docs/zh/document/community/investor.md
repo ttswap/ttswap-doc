@@ -195,7 +195,7 @@ TTSWAP为投资者提供了完善的投资工具和透明的收益机制，让�
 
 Twitter:[@ttswapfinance](https://x.com/ttswapFinance)  
 Telegram:[@ttswapfinance](https://t.me/ttswapfinance)  
-Email:[ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)  
+Email:[bussiness@ttswap.io](mailto:bussiness@ttswap.io)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
 Website:[ttswap.io](http://www.ttswap.io)  
 Github:[ttswap](http://github.com/ttswap)  

@@ -236,7 +236,7 @@ TTSWAP为门户运营商提供全方位的支持，让您轻松开启Web3商业�
 立即开启您的门户运营商之旅：  
 Twitter:[@ttswapfinance](https://x.com/ttswapFinance)  
 Telegram:[@ttswapfinance](https://t.me/ttswapfinance)  
-Email:[ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)  
+Email:[bussiness@ttswap.io](mailto:bussiness@ttswap.io)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
 Website:[ttswap.io](http://www.ttswap.io)  
 Github:[ttswap](http://github.com/ttswap)  

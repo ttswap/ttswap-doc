@@ -96,7 +96,7 @@ TTSWAP正在开启"早期共建者"空投计划，邀请你成为这个革命性
 - Twitter：[@ttswapfinance](https://x.com/ttswapfinance)
 - Telegram：[@ttswapfinance](https://t.me/ttswapfinance)
 - Discord：[ttswap0](https://discord.com/invite/XygqnmQgX3)
-- 邮箱：ttswapfinance@gmail.com
+- 邮箱：bussiness@ttswap.io
 
 ---
 
