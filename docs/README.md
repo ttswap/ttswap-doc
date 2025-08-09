@@ -120,10 +120,10 @@ $$
 $$
 R_{a \to b} = \frac{P_a^{\text{new}}}{P_b^{\text{new}}}
 $$
-```
 
+---  
 
-## Contracts
+##  Contracts
 Twitter:[@ttswapfinance](https://x.com/ttswapFinance)  
 Telegram:[@ttswapfinance](https://t.me/ttswapfinance)  
 Email:[bussiness@ttswap.io](mailto:bussiness@ttswap.io)  
