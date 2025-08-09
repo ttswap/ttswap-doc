@@ -29,10 +29,10 @@ config:
         title: No Impermanent Loss — LPs Can Rest Easy
         icon: 🛡️
         details: On other platforms, providing liquidity often means risking losses due to price fluctuations — known as impermanent loss. TTSWAP’s mechanism effectively avoids this, so your assets stay safe.
-     -
-        title:  Reduce trading slippage by over 50% through enhanced and concentrated investment
+      -
+        title:  Reduce trading slippage by over 70% through enhanced and concentrated investment
         icon: 🌱
-        details: The protocol reduces trading slippage by over 70% through enhanced liquidity that allows one investment to provide multiple times the liquidity, and by canceling token pairs to concentrate liquidity distributed across various pairs into a single pool, thereby improving overall liquidity.
+        details: The protocol reduces trading slippage by over 70% through enhanced & concentrate investment into a single pool
       -
         title: Save 50%–90% on Gas Fees
         icon: ⛽
@@ -57,7 +57,6 @@ config:
         title: Community-Driven, User-Governed Future
         icon: 👥
         details: TTSWAP doesn’t belong to any single company — it belongs to the community. Its direction and reward mechanisms are guided by community consensus.
-  
   -
     type: custom
 ---
@@ -68,7 +67,7 @@ $$
 \text{Before trading }(V_a+V_b+....+V_z)=\text{After trading }(V_a+V_b+....+V_z)
 $$
 
-### �� Step 1: Definition Introduction
+### 🔹 Step 1: Definition Introduction
 
 Let:
 
