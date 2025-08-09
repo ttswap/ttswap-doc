@@ -233,10 +233,10 @@ Remember: Successful gateway operators focus not only on revenue but also on cre
 
 ---
 
-Start your gateway operator journey now:
+Start your gateway operator journey now:  
 Twitter: [@ttswapfinance](https://x.com/ttswapFinance)  
 Telegram: [@ttswapfinance](https://t.me/ttswapfinance)  
-Email: [ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)  
+Email: [bussiness@ttswap.io](mailto:bussiness@ttswap.io)  
 Discord: [ttswap](https://discord.gg/XygqnmQgX3)  
 Website: [ttswap.io](http://www.ttswap.io)  
 Github: [ttswap](http://github.com/ttswap) 

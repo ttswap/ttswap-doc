@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.1",
   "description": "Trad & Invest crypto freely",
-  "author": "ttswap <ttswapfinance@gmail.com>",
+  "author": "ttswap <bussiness@ttswap.io>",
   "license": "MIT",
   "engines": {
     "node": "^20.6.0 || >=22.0.0"

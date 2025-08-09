@@ -135,10 +135,10 @@ TTSWAP正在寻找志同道合的伙伴，一起重塑Web3交易体验！作为�
 **🚀 立即申请成为TTSWAP建设者，开启你的Web3事业新篇章！**
 
 ---
-> 💡 **申请通道**
+> 💡 **申请通道**  
 Twitter:[@ttswapfinance](https://x.com/ttswapFinance)  
 Telegram:[@ttswapfinance](https://t.me/ttswapfinance)  
-Email:[ttswapfinance@gmail.com](mailto:ttswapfinance@gmail.com)  
+Email:[bussiness@ttswap.io](mailto:bussiness@ttswap.io)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
 Website:[ttswap.io](http://www.ttswap.io)  
 Github:[ttswap](http://github.com/ttswap)  
