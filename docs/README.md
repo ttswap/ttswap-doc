@@ -44,6 +44,7 @@ config:
       -
         title: Everyone Participates, Fees Automatically Distributed by Role
         icon: 📊
+        link: document_en/community/introduce.html
         details: Everyone can participate. Users, referrers, gateways, liquidity providers, token operators, and ecosystem contributors can all receive a certain percentage of fee commissions.
       -
         title: Every Investment Can Mine (TTS)
@@ -56,6 +57,7 @@ config:
       -
         title: TTS Tokens Are Frozen, Price Must Double to Unfreeze Proportionally
         icon: 👥
+        link: document_en/token/Token.html
         details: TTS tokens adopt an innovative goal-oriented deflationary model, ensuring token value is tightly bound to project development through price unlocking mechanisms and community profit burning. Meanwhile, through differentiated unlocking rules, different roles are incentivized to contribute to the ecosystem, achieving win-win for all parties.
 
   -

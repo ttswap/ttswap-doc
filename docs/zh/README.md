@@ -11,7 +11,7 @@ config:
       dark: 0.3
     hero:
       name: TTSWAP
-      tagline: 新一代去中心代交易所
+      tagline: 大众的去中心代交易所
       text: 无中转 低滑点 没有无常损失 按角色分佣 低GAS
       actions:
         -
@@ -44,6 +44,7 @@ config:
       -
         title: 人人参与，手续费自动按角色分红
         icon: 📊
+        link: document/community/introduce.html
         details: 人人可参与，用户、推荐者、门户、流动性提供者、代币运营者、生态贡献？都能获得一定比例的手续费分佣。
       -
         title: 每笔投资都可能挖矿（TTS）
@@ -56,6 +57,7 @@ config:
       -
         title: TTS代币均冻结，价格翻倍才能按比例解冻
         icon: 👥
+        link: document/token/Token.html
         details: TTS代币采用创新的目标导向型通缩模型，通过价格解锁机制和社区盈利销毁，确保代币价值与项目发展紧密绑定。同时，通过差异化的解锁规则，激励不同角色为生态做出贡献，实现多方共赢。
 
   -
