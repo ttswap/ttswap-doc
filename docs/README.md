@@ -11,52 +11,53 @@ config:
       dark: 0.3
     hero:
       name: TTSWAP
-      tagline: New Generation Dex
-      text: Directly trade,  Lower slippage,  No impermanent loss, Commission allocation by role, Lower gas
+      tagline: Next Generation Decentralized Exchange
+      text: No Intermediary • Low Slippage • No Impermanent Loss • Role-Based Commission • Low Gas
       actions:
         -
-          text: Trade Crypto
+          text: Start Trading
+          theme: brand
           link: https://app.ttswap.io
-          theme: brand  
   -
     type: features
     features:
       -
-        title: Shared Liquidity Across All Tokens, Freer Trading
+        title: All Tokens Share Liquidity, Trading is More Free
         icon: 💧
-        details: No need to create individual trading pairs or worry about “low liquidity.” TTSWAP enables all pairs to share a unified super pool for the same token, resulting in faster and smoother trades.
+        details: You no longer need to establish trading pairs one by one, nor worry about "pool too small, insufficient liquidity". TTSWAP allows all trading pairs to share a super pool for the same token, making trading faster and smoother.
       -
-        title: No Impermanent Loss — LPs Can Rest Easy
-        icon: 🛡️
-        details: On other platforms, providing liquidity often means risking losses due to price fluctuations — known as impermanent loss. TTSWAP’s mechanism effectively avoids this, so your assets stay safe.
+        title: No Principal Loss, LPs Feel More Secure
+        icon: 🌐
+        details: On other platforms, when you provide liquidity, you easily lose money due to price fluctuations, which is called principal loss, also known as "impermanent loss". TTSWAP's mechanism can effectively avoid this problem, and your investment won't decrease.
       -
-        title:  Reduce trading slippage by over 70% through enhanced and concentrated investment
+        title: Ultra-Low Trading Loss, Reduced by Over 70%
         icon: 🌱
-        details: The protocol reduces trading slippage by over 70% through enhanced & concentrate investment into a single pool
+        details: The protocol enhances liquidity by allowing one investment to provide multiple times the liquidity, and eliminates trading pairs to concentrate liquidity distributed across various pairs into one pool, ultimately reducing trading loss by over 70%.
       -
-        title: Save 50%–90% on Gas Fees
-        icon: ⛽
-        details: Thanks to streamlined smart contract design and optimized logic, every transaction on TTSWAP saves you real money on gas — significantly more efficient than traditional platforms.
+        title: Gas Fee Savings of 50%-90%
+        icon: ⛽️
+        details: Streamlined smart contract structure and optimized computational logic make every transaction cheaper than on traditional platforms—Gas savings you can see.
       -
-        title: Native ETH Support — No Wrapping Needed
+        title: Native ETH Support
         icon: 🔁
-        details: Trade directly with ETH — no need to wrap it into WETH first. It’s faster and more convenient & save 20000 gwei.
+        details: Trading supports Native ETH, no wrapping needed, more convenient and direct, while saving over 20,000 gwei in fees.
       -
-        title: Fee Sharing Based on Roles 
+        title: Everyone Participates, Fees Automatically Distributed by Role
         icon: 📊
-        details: Whether you’re a user, referral, gate, LP, or token operator — you get a share of the trading fees. Everyone benefits and can participate.
+        details: Everyone can participate. Users, referrers, gateways, liquidity providers, token operators, and ecosystem contributors can all receive a certain percentage of fee commissions.
       -
-        title: Every Investment Can Trigger TTS Mining
+        title: Every Investment Can Mine (TTS)
         icon: 💰
-        details: When you provide tokens, the system automatically calculates your contribution’s value and initiates secondary mining — earning you extra TTS rewards.
+        details: When you invest tokens, the system automatically calculates based on your investment value and starts "secondary mining", earning additional TTS rewards.
       -
-        title:  Anti-MEV attack protection, ensuring trading security
+        title: MEV Attack Protection, Ensuring Trading Security
         icon: 🪖
-        details: Users can enable anti-MEV attack protection to ensure their trading security.
+        details: Users can enable MEV attack protection to ensure trading security.
       -
-        title: Community-Driven, User-Governed Future
+        title: TTS Tokens Are Frozen, Price Must Double to Unfreeze Proportionally
         icon: 👥
-        details: TTSWAP doesn’t belong to any single company — it belongs to the community. Its direction and reward mechanisms are guided by community consensus.
+        details: TTS tokens adopt an innovative goal-oriented deflationary model, ensuring token value is tightly bound to project development through price unlocking mechanisms and community profit burning. Meanwhile, through differentiated unlocking rules, different roles are incentivized to contribute to the ecosystem, achieving win-win for all parties.
+
   -
     type: custom
 ---
@@ -64,55 +65,58 @@ config:
 ## Constant Value Trading Protocol Introduction
 
 $$
-\text{Before trading }(V_a+V_b+....+V_z)=\text{After trading }(V_a+V_b+....+V_z)
+\text{Value before commodity exchange} = \text{Value after commodity exchange} \\
 $$
+>The reason for exchange is the mismatch between quantity and value, automatically matched through market mechanisms
 
 ### 🔹 Step 1: Definition Introduction
-
 Let:
-
-* $V_a$: Current total value of token A (unit: e.g., USD)
-* $Q_a$: Current total quantity of token A
-* $V_b$, $Q_b$: Total value and quantity of token B
-* $\Delta a$: Amount of A that the user wants to invest
-* $\Delta V$: Value transferred in this trade (from A to B)
-* $\Delta b$: Amount of B exchanged from the pool based on value transfer
-
----
-
-### 🔹 Step 2: Calculate the value ΔV represented by Δa
-
-$$
-\Delta V = \frac{V_a}{Q_a + \Delta a} \cdot \Delta a
-$$
+* $V_a$: Current total value of Token A (unit: e.g., USD)
+* $Q_a$: Current total quantity of Token A
+* $V_b$, $Q_b$: Total value and quantity of Token B
+* $Δa$: Quantity of A that the user wants to invest
+* $ΔV$: Value transferred in this exchange (from A to B)
+* $Δb$: Quantity of B exchanged from the pool based on value transfer
 
 ---
 
-### 🔹 Step 3: Calculate the exchangeable amount of B based on value ΔV
+### 🔹 Step 2: Formula Under Equal Value Conditions
 
 $$
-\Delta b = \frac{Q_b}{V_b + \Delta V} \cdot \Delta V
+Δb = \frac{Q_b}{Q_a + Δa} \cdot  Δa
+$$
+>Split commodity b according to the quantity of a, then exchange Δa portions
+
+---
+
+### 🔹 Step 3: Derivation of Exchange Formula Under Unequal Value Conditions
+
+$$
+ΔV = \frac{V_a}{Q_a + {{Δa}\over 2}} \cdot Δa \\
+$$
+$$
+Δb = \frac{Q_b}{V_b + {{ΔV}\over 2}} \cdot ΔV \\
 $$
 
 ---
 
-### 🔹 Step 4: Update the value and quantity of tokens A and B after trading
+### 🔹 Step 4: Update Token A and B Values and Quantities After Trading
 
 |    | Token A          | Token B          |
 | -- | ---------------- | ---------------- |
-| Value | $V_a - \Delta V$ | $V_b + \Delta V$ |
-| Quantity | $Q_a + \Delta a$ | $Q_b - \Delta b$ |
+| Value | $V_a$ | $V_b$ |
+| Quantity | $Q_a + Δa$ | $Q_b - Δb$ |
 
 ---
 
-### 🔹 Step 5: Form new exchange ratio after trading
+### 🔹 Step 5: New Exchange Ratio After Trading
 
 * After trading completion, new marginal values:
 
 $$
-P_a^{\text{new}} = \frac{V_a - \Delta V}{Q_a + \Delta a}
+P_a^{\text{new}} = \frac{V_a}{Q_a + Δa}
 \quad , \quad
-P_b^{\text{new}} = \frac{V_b + \Delta V}{Q_b - \Delta b}
+P_b^{\text{new}} = \frac{V_b}{Q_b - Δb}
 $$
 
 * New exchange ratio:
@@ -120,15 +124,16 @@ $$
 $$
 R_{a \to b} = \frac{P_a^{\text{new}}}{P_b^{\text{new}}}
 $$
-```
 
 
-## Contracts
-Twitter:[@ttswapfinance](https://x.com/ttswapFinance)  
+## Contact Information
+
+Twitter:[@ttswapfinance](https://x.com/ttswapfinance)  
 Telegram:[@ttswapfinance](https://t.me/ttswapfinance)  
 Email:[bussiness@ttswap.io](mailto:bussiness@ttswap.io)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
-Website:[ttswap.io](http://www.ttswap.io)  
-Github:[ttswap](http://github.com/ttswap)
+Github:[ttswap](http://github.com/ttswap)  
+Website:[ttswap.io](https://ttswap.io)
 
-Welcome talents from all regions to join the community.
+
+Welcome everyone to join our community
