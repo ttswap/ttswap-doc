@@ -48,11 +48,8 @@ TTSWAP(token-token swap)是建立在支持EVM的区块链上的自动做市协�
 1. 投资证明二次TTS挖矿  
   当用户投资了Token后，协议会根据投资价值自动为用户进行挖矿。
 
-1. 支持ETH验证者质押  
-  当用户提供流动性到SETH和SWETH代币时,池子中未使用的流动性会自动添加到rocketpool中进行验证者质押,享受验证者奖励.
-
-1. 社区驱动
-  TTSWAP拥抱社区，通过社区驱动带动项目的改进，完善。
+1. 价格导向型代币经济模型  
+  TTS代币采用创新的价格导向型解锁模型，通过价格翻倍解锁机制和社区盈利销毁，确保代币价值与项目发展紧密绑定。同时，通过差异化的解锁规则，激励不同角色为生态做出贡献，实现多方共赢。
 
 ## 3 价值守恒交易横型原理
 
@@ -113,31 +110,23 @@ $$
 R_{a \to b} = \frac{P_a^{\text{new}}}{P_b^{\text{new}}}
 $$
 
-### 3.2 Token的市场价值
-
-当Token添加到协议时，此时的Token的市场价值与Token的真实价值相同。
-例：在协议中添加有2000个Token~a1~，由于此时的真实价值是2000，那么这个Token的市场价值2000。
-![Alt text](whitepaper_image_cn/TOKEN_STATE.png)  
-定义：
-市场价值V~a1~:2000
-Token数量Q~a1~:2000
-单位市场价值:1
-
 
 ## 4 Token
 
 ### 4.1 Token介绍
 
-关于Token的描述：协议拥有市场价值3000的15枚Token~a~，那么Token就有两个属性：市场价值与当前数量。如下图  
+关于Token的描述：协议拥有市场价值3000的15枚Token~A~，那么Token就有三个基础属性：市场价值,当前数量,投资数量。如下图  
+
 ![Alt text](whitepaper_image_cn/TOKEN_INTRO.png)
 
 * 名词解释  
+**市场价值**：用来衡量代币的市场价值,代币的市场价值在交易过程不发生变化。  
+**当前数量**：记录协议中Token的当前数量和代币产生的手续费。  
+**投资数量**：记录协议中Token的总投资数量和代币产生的手续费。  
+当用户认为代币的价值偏低(即市场价值/当前数量),用户会购入此代币.  
+当用记认为代币的价值低高(即市场价值/当前数量),用户会出售此代币.  
 
-**市场价值**：用来衡量用户对协议Token的需求程度的。  
-如果用户购买某个Token，说明用户对这个Token的需求增加，那么这个Token的市场价值就会上升。相反，如果用户开始卖出某个Token，说明用户对这个Token的需求减少，那么这个Token的市场价值就会下降。  
-**当前数量**：记录协议中Token的当前数量。
-
-可以如下图描述其它任何Token，例如
+可以如下图描述其它任何Token，例如.  
 
 ![Alt text](whitepaper_image_cn/TOKENS.png)
 
@@ -182,7 +171,8 @@ Token配置占255位
 
 ## 5 Token交换
 
-Token的交换实际上就是用户用自己手里的Token~a~去交换市场上的Token~b~。当用户选择放弃Token~a~时，这时就计算Token~a~的市场价值,从而选择购买等市场价值的Token~b~时，  
+Token的交换实际上就是用户用自己手里的Token~a~去交换市场上的Token~b~。当用户选择放弃Token~a~时，这时就计算Token~a~的市场价值,从而选择购买等市场价值的Token~b~时.  
+
 ![token swap image](whitepaper_image_cn/TOKEN_SWAP.png)
 
 如图所示，当用户放弃Token~a~时，协议中的Token~a~数量增加，而Token~a~的单位价值降低。  
@@ -191,27 +181,29 @@ Token的交换实际上就是用户用自己手里的Token~a~去交换市场上�
 
 ### 5.1 计算过程
 
-#### 5.1.1 计算Token~a~对应的市场价值
+#### 5.1.1 计算Token~a~对应的市场价值  
+
 $$
 \begin{align}
-    价值(RV)&={2*V_a *Δa\over {2*Q_a+Δa}} \\
-    价值(RV)&={2*40000 *2500\over {2*20000+2500}}  \\
+    价值(RV)&={V_a *Δa\over {Q_a+{Δa\over 2}}} \\
+    价值(RV)&={40000 *2500\over {20000+{2500\over 2}}}  \\
     价值(RV)&=4705.8  \\
 \end{align}
 $$
 
-#### 5.1.2 计算等市场价值的Token b
+#### 5.1.2 计算等市场价值的Token b  
+
 $$
 \begin{align}
-    数量Δb&={2*Q_b*RV\over {2*V_b+RV}} \\
-    数量Δb&= {2*40000*4705.8\over {2*20000+4705.8}} \\
+    数量Δb&={Q_b*RV\over {V_b+{RV\over 2}}} \\
+    数量Δb&= {40000*4705.8\over {20000+{4705.8\over 2}}} \\
     数量Δb&=8420.9 \\
 \end{align}
 $$
 
 #### 5.1.3 结果
-用户花费2500个Token a获得8420.9个 Token b
-
+用户花费2500个Token a获得8420.9个 Token b.收取用户1个token A 1,2个token B作为手续费.  
+![alt text](whitepaper_image_cn/TOKEN_SWAP_RESULT.png)
 ### 5.2 关于合约  验证
 #### 5.2.1 验证1:公平性
 用户使用 Token~a~ 购买 Token~b~ 后,再使用购买到的Token~b~再到协议中能购买到最初数量的Token~a~
@@ -227,14 +219,15 @@ $$
 
 ### 6.1 记录投资和撤资
 
-协议中Token的交易，需有用户提供流动性。就应记录Token投资总市场价值与投资总数量。
-![Alt text](whitepaper_image_cn/TOKEN_INVEST_STATE.png)
+协议中Token的交易，需有用户提供流动性。就应记录Token投资总市场价值与投资总数量。  
+
+![Alt text](whitepaper_image_cn/TOKEN_INVEST_STATE.png)  
 
 * 名词解释  
 **投资价值**：用户投资时Token的市场总价值。  
 **投资数量**：用户投资时Token的总数量。  
 
-### 6.2 价值Token投资与撤资流程
+### 6.2 Token投资与撤资流程  
 
 ![Alt text](whitepaper_image_cn/TOKEN_INVESTORDEVIST.png)
 
@@ -245,42 +238,20 @@ $$
 
 >撤资Token时，取消数量＜Token当前的总数量/撤资切片数 和 取消数量对应的市场价值＜Token总价值/撤资切片数。
 
-### 6.3 普通Token投资
-
-![Alt text](whitepaper_image_cn/TOKEN_NORMAL_INVEST.png)
-
-* 用户投资普通Token  
-  由于普通Token的市场价值波动太大，可能会导致协议内套利，造成Token投资者的损失。为避免这种情况的发生，需要投资等市场价值的价值Token。投资的价值Token和普通Token都会产生投资收益，具体参见手续费分配。
-
-### 6.4 普通Token撤资
-
-![Alt text](whitepaper_image_cn/TOKEN_NORMAL_DIVEST.png)
-
-* 用户撤资普通Token  
-
-  根据投资记录，计算普通Token和投资Token的收益。具体参见手续费分配。  
-  撤资Token时，取消数量或者取消数量对应的市场价值需要小于Token当前的总数量或者总价值除以最大撤资比例。
-
-## 7 Token手续费
-
-当用户进行交易，投资时均会产生手续费，这部份手续存储于池子中，当用户移出流动性时，会触发手续费分配。
-
 ### 7.1 Token手续费记录方式
 
-![Alt text](whitepaper_image_cn/TOKEN_FEE_STATE.png)
-
-* 名词解释
-  **费用总额**=实际产生的手续费汇总+构建手续费汇总
-  **构建手续费**=计算用户投资产生的利润而引入虚拟手续费，不实际发生的手续费。具体参见7.4与7.5。
+  **手续费**=每次交易产生的手续费都会记录到代币的当前数量和投资数量中去
 
 ### 7.2 手续费来源
 
-![Alt text](whitepaper_image_cn/TOKEN_FEE_SOURCE.png)
+![Alt text](whitepaper_image_cn/TOKEN_FEE_SOURCE.png)  
+
 手续费(实际手续费)的来源是根据Token的费率，当用户进行操作时，计算得到。
 
 ### 7.3 手续费分配
 
-![Alt text](whitepaper_image_cn/TOKEN_FEE_ALLOCATION.png)
+![Alt text](whitepaper_image_cn/TOKEN_FEE_ALLOCATION.png)  
+
 协议中涉及协议技术、门户运营、推荐人、用户以及流动性提供者。协议会合理分配利润。  
 其中流动性提供者的手续费分配参见 7.4与7.5手续费流程  
 
@@ -291,57 +262,34 @@ $$
 手续费分配中用户所占比例划归于代币管理员。  
 手续费分配中推荐者所占比例划归于门户角色。  
 
-### 7.4 手续费计算流程(投资)
+### 7.4 手续费计算流程(投资与撤资)  
 
-![Alt text](whitepaper_image_cn/TOKEN_FEE_COMPUTE_1.png)  
+![Alt text](whitepaper_image_cn/TOKEN_FEE_COMPUTE_1.png)
 
 * 图1 用户投资前Token状态
-  单位手续费指单位投资应该得到多少手续费，单位手续费=手续费总额/总投资数量;
-  随着交易的进行，手续费不断产生，手续费总额增加，单位手续费就增加。
-  构建手续费提用户开始投资时，为记录用户不应该享受的手续费总额。
-  构建手续费=投资数量X投资时单位手续费
+  净值指每一份对应的代币数量，净值=(投资总数+手续费)/总份额;
+  随着交易的进行，手续费不断产生，手续费总额增加，净值就增加。
 
-* 图2 用户投资后手续费积累增加
-  当协议中不停有手续费产生时，单位手续费会不停增加。
-  用户投资产生的收益=单位手续费x投资数量-构建手续费。
+* 图2 用户开始投资
+  协议根据用户投资的数量,计算应得的投资份额。
+  用户投资份额=(用户投资数量)/净值。
 
-* 图3 个人在Token上的多笔投资
-  当用户在同一下Token上，进行多笔投资，可以合成同一条投资记录。
-  合并后的构建手续费=合并前的构建手续费汇总
-  手户投资产生的收益=单位手续费x投资数量-汇总后的构建手续费
+* 图3 随着代币不断流通,不停有手续费收益
+  由于手续费的不断增加,导致净值在不断上升
 
-* 图4 个人在Token上多笔投资进行合并
-  该图展示合并后的投资情况
-
-* 图5 多人在Token上的投资
-  当多个用户进行投资时，就可以汇总成这个Token总投资数量，总投资市场价值，总构建手续费。
-  该Token当前总共实际投资利润=当前总费用-汇总构建手续费。
-
-* 图6 多人在Token上的投资进行合并
-  
-### 7.5 手续费计算流程(撤资)
-
-![Alt text](whitepaper_image_cn/TOKEN_FEE_COMPUTE_2.png)
-
-* 图1 个人Token投资(此图表示如果提供流程性时无无常损失)
-  此图是个人在此Token的投资情况，当用户进行撤资时，计算逻辑：
-  Token当前单位手续费=Token当前手续费总额/Token当前投资数量
-  撤资时构建手续费=构建手续费X(撤资数量/用户投资总量)
-  当用户撤资时，获得利润= 当前单位手续费X撤资数量-撤资时构建手续费
-* 图2 Token总投资
-  在Token减去用户撤资时的计算逻辑：
-  Token当前手续费总额=原Token当前手续费总额-用户撤资时利润-撤资时构建手续费
-  Token构建手续费=Token构建手续费-撤资时构建手续费
-  Token投资数量=原Token投资数量-用户撤资数量
+* 图4 用户撤资
+  用户撤资时,协议计算用户的收益与本金后,一同发放给用户.
 
 ### 7.6 Token福利
 
-项目方或者卖家可以充值Token到手续费中，提升投资年化，增强投资吸引力。
-![alt text](whitepaper_image_cn/TOKEN_WALEFARE.png)
+项目方或者卖家可以充值Token到手续费中，提升投资年化，增强投资吸引力。  
+
+![alt text](whitepaper_image_cn/TOKEN_WALEFARE.png)  
 
 ## 8 流动性挖矿
 
 协议中所有代币会自动进行二次挖矿,根据给代币添加流动性时的价值,折算成算力.  
+
 ![alt text](whitepaper_image_cn/Liquidity_Mining.png)
 a. 用户把任意代币存入代币池子
 b. 用户享受池子产生的手续费返佣
