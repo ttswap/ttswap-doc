@@ -1,0 +1,18 @@
+{
+  "id": "whitepaper/whitepaper",
+  "title": "TTSWAP 白皮书",
+  "description": "1 概要",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/current/whitepaper/whitepaper.md",
+  "sourceDirName": "whitepaper",
+  "slug": "/whitepaper",
+  "permalink": "/zh/docs/whitepaper",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/whitepaper/whitepaper.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "slug": "/whitepaper"
+  },
+  "sidebar": "tutorialSidebar"
+}
