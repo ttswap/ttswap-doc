@@ -1,4 +1,4 @@
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import {
   Wallet,
   Menu,
@@ -140,7 +140,7 @@ export function Header() {
               {/* Mobile Social Links */}
               <div className="pt-4 border-t border-border/50">
                 <div className="text-sm font-medium text-muted-foreground mb-3 px-4">
-                  Follow Us
+                  关注我们
                 </div>
                 <div className="grid grid-cols-2 gap-2 px-4">
                   {socialLinks.map((social) => (

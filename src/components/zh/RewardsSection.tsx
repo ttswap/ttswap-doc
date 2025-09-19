@@ -1,5 +1,5 @@
-import { Card } from "./ui/card";
-import { Button } from "./ui/button";
+import { Card } from "../ui/card";
+import { Button } from "../ui/button";
 import {
   Crown,
   Droplets,
@@ -16,90 +16,90 @@ export function RewardsSection() {
   const roles = [
     {
       icon: Crown,
-      title: "Token Manager",
-      subtitle: "First Token Contributor",
+      title: "代币管理者",
+      subtitle: "首个添加代币者",
       commission: "1%-3%",
       description:
-        "When users first add tokens to the platform, they become token managers representing token operations delegated by the community.",
+        "当用户首次向平台添加代币时，他们将成为代币管理者，代表社区委托的代币操作。",
       details: [
-        "Community delegated management",
-        "2-year evaluation cycle for non-project tokens",
-        "Earn 1%-3% commission from token trades",
-        "Responsible for token community growth",
+        "社区委托管理",
+        "非项目代币2年评估周期",
+        "享受代币交易1%-3%分佣",
+        "负责代币社区增长",
       ],
       gradient: "from-yellow-500 to-orange-500",
     },
     {
       icon: Droplets,
-      title: "Liquidity Provider",
-      subtitle: "Pool Liquidity Contributor",
+      title: "流动性提供者",
+      subtitle: "资金池流动性贡献者",
       commission: "50%-80%",
       description:
-        "Users who provide liquidity automatically become liquidity providers, sharing the majority of trading fees.",
+        "提供流动性的用户自动成为流动性提供者，分享大部分交易费用。",
       details: [
-        "Automatic status after providing liquidity",
-        "Share 50%-80% of trading fees",
-        "Distribution based on contribution ratio",
-        "No impermanent loss risk",
+        "提供流动性后自动获得身份",
+        "分享50%-80%的交易费用",
+        "基于贡献比例分配",
+        "无无常损失风险",
       ],
       gradient: "from-blue-500 to-cyan-500",
     },
     {
       icon: Headphones,
-      title: "Service Provider",
-      subtitle: "Trading & Investment Services",
+      title: "服务提供者",
+      subtitle: "交易与投资服务",
       commission: "5%-25%",
       description:
-        "Service providers who offer trading, investment, and other DeFi services to users.",
+        "为用户提供交易、投资和其他DeFi服务的服务提供者。",
       details: [
-        "Provide trading and investment services",
-        "Earn 5%-25% commission from facilitated trades",
-        "Build reputation through quality service",
-        "Revenue scales with user base growth",
+        "提供交易和投资服务",
+        "从促成的交易中获得5%-25%分佣",
+        "通过优质服务建立声誉",
+        "随用户基数扩大收益",
       ],
       gradient: "from-purple-500 to-pink-500",
     },
     {
       icon: Share,
-      title: "Referrer",
-      subtitle: "User Referral",
+      title: "推荐人",
+      subtitle: "用户推荐",
       commission: "5%-10%",
       description:
-        "Users who refer others to the platform can earn commissions from their referees' trading fees.",
+        "推荐他人使用平台的用户可从被推荐人的交易费用中获得分佣。",
       details: [
-        "Earn from referee trading activities",
-        "Get 5%-10% commission from referee fees",
-        "Build passive income through networks",
-        "Unlimited referral potential",
+        "从被推荐人交易活动中获得收益",
+        "获得被推荐人费用的5%-10%分佣",
+        "通过网络建立被动收入",
+        "无限推荐潜力",
       ],
       gradient: "from-green-500 to-teal-500",
     },
     {
       icon: User,
-      title: "User",
-      subtitle: "Platform Trader",
-      commission: "10% Discount",
+      title: "用户",
+      subtitle: "平台交易者",
+      commission: "10%折扣",
       description:
-        "Regular users who add referrers enjoy trading fee discounts on all trading activities.",
+        "添加推荐人的普通用户在所有交易活动中享受交易费折扣。",
       details: [
-        "Enjoy 10% trading fee discount with referrer",
-        "Access to all platform features",
-        "Potential to become other roles",
-        "Participate in community governance",
+        "有推荐人时享受10%交易费折扣",
+        "使用所有平台功能",
+        "有潜力成为其他角色",
+        "参与社区治理",
       ],
       gradient: "from-indigo-500 to-purple-500",
     },
     {
       icon: Building,
-      title: "Community",
-      subtitle: "Technical Support",
+      title: "社区",
+      subtitle: "技术支持",
       commission: "2%-8%",
-      description: "Community provides technical support and development, receiving platform fee shares.",
+      description: "社区提供技术支持和开发，获得平台费用分成。",
       details: [
-        "Provide technical support and development",
-        "Receive 2%-8% of total platform fees",
-        "Governance and protocol improvements",
-        "Focus on long-term sustainability",
+        "提供技术支持和开发",
+        "获得平台总费用的2%-8%",
+        "治理和协议改进",
+        "专注长期可持续性",
       ],
       gradient: "from-red-500 to-pink-500",
     },
@@ -110,12 +110,12 @@ export function RewardsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            <span className="text-gradient">Everyone Participates</span>
-            , Everyone Benefits
+            <span className="text-gradient">人人参与</span>
+            ，人人受益
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Revolutionary multi-role commission system ensures
-            all platform participants fairly share trading fees
+            革命性的多角色分佣体系确保
+            平台所有参与者公平分享交易费用
           </p>
         </div>
 
@@ -240,7 +240,7 @@ export function RewardsSection() {
               <Button
                 className={`bg-gradient-to-r ${roles[selectedRole].gradient} hover:opacity-90 hover:scale-105 hover:shadow-lg transition-all duration-300`}
               >
-                Become {roles[selectedRole].title}
+                成为{roles[selectedRole].title}
               </Button>
             </div>
 

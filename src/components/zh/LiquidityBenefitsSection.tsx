@@ -1,6 +1,6 @@
-import { Card } from "./ui/card";
-import { Button } from "./ui/button";
-import { Badge } from "./ui/badge";
+import { Card } from "../ui/card";
+import { Button } from "../ui/button";
+import { Badge } from "../ui/badge";
 import {
   Zap,
   Coins,
@@ -20,112 +20,108 @@ export function LiquidityBenefitsSection() {
   const benefits = [
     {
       icon: TrendingUp,
-      title: "Liquidity Amplification",
-      subtitle: "Multiple Fee Commission",
+      title: "流动性放大机制",
+      subtitle: "多倍手续费分佣",
       description:
-        "Innovative liquidity amplification mechanism allows single liquidity to earn multiple fee rewards, maximizing your capital efficiency",
+        "创新的流动性放大机制，让单份流动性获得多倍手续费收益，最大化您的资金效率",
       features: [
-        "2-5x Liquidity Amplification",
-        "Smart Commission Algorithm",
-        "Real-time Yield Calculation",
-        "No Additional Collateral",
+        "2-5倍流动性放大",
+        "智能分佣算法",
+        "实时收益计算",
+        "无需额外抵押",
       ],
       color: "primary",
       multiplier: "2-63x",
-      highlight: "Up to 63x Amplification",
+      highlight: "高达63倍放大",
     },
     {
       icon: Coins,
-      title: "Auto TTS Token Mining",
-      subtitle: "Governance Token Rewards",
+      title: "自动TTS代币挖矿",
+      subtitle: "获得治理代币奖励",
       description:
-        "Automatically participate in TTS token mining by providing liquidity, earn platform governance token rewards and enjoy protocol growth dividends",
+        "提供流动性即可自动参与TTS代币挖矿，获得平台治理代币奖励，享受协议成长红利",
       features: [
-        "Automatic Mining Rewards",
-        "Governance Rights Access",
-        "Staking Yield Stacking",
-        "Long-term Value Growth",
+        "自动挖矿奖励",
+        "治理权益获得",
+        "质押收益叠加",
+        "长期价值增长",
       ],
       color: "secondary",
       multiplier: "TTS",
-      highlight: "Passive Yield Growth",
+      highlight: "被动收益增长",
     },
     {
       icon: Gift,
-      title: "Auto Project Airdrops",
-      subtitle: "Ecosystem Rewards Auto-Claim",
+      title: "自动参与项目空投",
+      subtitle: "生态奖励自动获取",
       description:
-        "Liquidity providers automatically qualify for partner project airdrops, enjoying ecosystem project rewards without additional operations",
+        "流动性提供者自动获得合作项目空投资格，无需额外操作即可享受生态项目奖励",
       features: [
-        "Partner Project Airdrops",
-        "Ecosystem Reward Access",
-        "No Additional Operations",
-        "Multiple Yield Stacking",
+        "合作项目空投",
+        "生态奖励获取",
+        "无需额外操作",
+        "多重收益叠加",
       ],
       color: "accent",
-      multiplier: "Airdrop",
-      highlight: "Extra Surprise Yields",
+      multiplier: "空投",
+      highlight: "额外惊喜收益",
     },
   ];
 
   const stats = [
     {
-      label: "Average APY Increase",
+      label: "平均年化收益提升",
       value: "150%+",
       icon: TrendingUp,
       color: "primary",
-      description: "vs Traditional AMMs",
+      description: "相比传统AMM",
     },
     {
-      label: "Active Liquidity Providers",
+      label: "参与流动性提供者",
       value: "50K+",
       icon: Users,
       color: "secondary",
-      description: "Community Members",
+      description: "活跃用户数量",
     },
     {
-      label: "Total Rewards Distributed",
+      label: "累计分发奖励",
       value: "$10M+",
       icon: Coins,
       color: "tertiary",
-      description: "Total Reward Value",
+      description: "总奖励价值",
     },
     {
-      label: "Partner Projects",
+      label: "合作项目",
       value: "25+",
       icon: Gift,
       color: "accent",
-      description: "Ecosystem Partners",
+      description: "生态伙伴",
     },
   ];
 
   const yieldBoosts = [
     {
       icon: Target,
-      title: "Precise Yield Calculation",
-      description:
-        "Real-time expected yield display with transparent reward distribution mechanism",
+      title: "精准收益计算",
+      description: "实时显示预期收益，透明化收益分配机制",
       color: "primary",
     },
     {
       icon: Award,
-      title: "Tiered Reward System",
-      description:
-        "Earn different tier bonuses based on your liquidity contribution level",
+      title: "层级奖励系统",
+      description: "根据流动性贡献获得不同层级的额外奖励",
       color: "secondary",
     },
     {
       icon: PiggyBank,
-      title: "Compound Growth Mechanism",
-      description:
-        "Automatic reward reinvestment for long-term compound growth benefits",
+      title: "复利增长机制",
+      description: "奖励自动复投，享受复利增长带来的长期收益",
       color: "tertiary",
     },
     {
       icon: Rocket,
-      title: "Early Participant Rewards",
-      description:
-        "Early liquidity providers enjoy additional bootstrap incentives",
+      title: "早期参与奖励",
+      description: "早期流动性提供者享受额外的启动奖励",
       color: "accent",
     },
   ];
@@ -148,17 +144,20 @@ export function LiquidityBenefitsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium mb-6">
+            <Sparkles className="w-4 h-4 mr-2" />
+            流动性投资收益
+          </div>
+
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Maximize Your
+            最大化您的
             <span className="text-gradient mx-3">
-              Liquidity Returns
+              流动性收益
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            TTSwap not only eliminates impermanent loss but also
-            significantly enhances comprehensive yield rates for
-            liquidity providers through innovative mechanisms,
-            maximizing the value of every unit of liquidity
+            TTSwap不仅消除无常损失，更通过创新机制大幅提升流动性提供者的综合收益率，
+            让每一份流动性发挥最大价值
           </p>
         </div>
 
@@ -290,7 +289,7 @@ export function LiquidityBenefitsSection() {
                     }`}
                     variant="default"
                   >
-                    Learn More
+                    了解详情
                     <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                   </Button>
                 </div>
@@ -303,12 +302,10 @@ export function LiquidityBenefitsSection() {
         <div className="mb-16 animate-fade-in-delay-4">
           <div className="text-center mb-12">
             <h3 className="text-2xl font-bold mb-4">
-              Multiple Yield Enhancement Mechanisms
+              多重收益增强机制
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Through multi-tier yield optimization strategies,
-              ensuring liquidity providers achieve maximum
-              returns
+              通过多层级的收益优化策略，确保流动性提供者获得最大化回报
             </p>
           </div>
         </div>
@@ -366,16 +363,12 @@ export function LiquidityBenefitsSection() {
 
           <div className="relative">
             <h3 className="text-2xl font-bold mb-4 group-hover:text-primary/90 transition-colors duration-300">
-              Start Earning
-              <span className="text-gradient mx-2">
-                High Yields
-              </span>
-              Now
+              立即开始
+              <span className="text-gradient mx-2">高收益</span>
+              流动性挖矿
             </h3>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto group-hover:text-foreground/80 transition-colors duration-300">
-              Join TTSwap ecosystem and enjoy multiple yield
-              stacking, maximizing returns on every unit of your
-              liquidity
+              加入TTSwap生态，享受多重收益叠加，让您的每一份流动性都获得最大化回报
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -383,14 +376,14 @@ export function LiquidityBenefitsSection() {
                 className="bg-primary hover:bg-primary/90 px-8 hover:scale-105 transition-all duration-300"
               >
                 <Zap className="mr-2 h-5 w-5" />
-                Start Providing Liquidity
+                开始提供流动性
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-primary/30 hover:border-primary/50 px-8 hover:scale-105 transition-all duration-300"
               >
-                View Yield Calculator
+                查看收益计算器
                 <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
               </Button>
             </div>

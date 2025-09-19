@@ -1,0 +1,5094 @@
+/* TTSwap Isolated Styles - 完全隔离的CSS文件，避免与Docusaurus样式冲突 */
+
+/* 自定义变体声明 */
+@custom-variant ttswap-dark (.ttswap-app:is(.dark *));
+
+/* TTSwap应用的隔离样式作用域 */
+.ttswap-app {
+  /* CSS变量定义 */
+  --font-size: 16px;
+  --background: #fafafa;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --primary: #10b981;
+  --primary-foreground: #ffffff;
+  --secondary: #f59e0b;
+  --secondary-foreground: #ffffff;
+  --muted: #f5f5f5;
+  --muted-foreground: #64748b;
+  --accent: #ef4444;
+  --accent-foreground: #ffffff;
+  --tertiary: #fbbf24;
+  --tertiary-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #e1e1e1;
+  --input: #ffffff;
+  --input-background: #ffffff;
+  --switch-background: #e5e7eb;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #10b981;
+  --chart-1: #10b981;
+  --chart-2: #fbbf24;
+  --chart-3: #f59e0b;
+  --chart-4: #ef4444;
+  --chart-5: #8b5cf6;
+  --radius: 0.75rem;
+  --sidebar: #fafafa;
+  --sidebar-foreground: #1a1a1a;
+  --sidebar-primary: #10b981;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e5e7eb;
+  --sidebar-accent-foreground: #1a1a1a;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #10b981;
+
+  /* Tailwind V4 主题变量 */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-tertiary: var(--tertiary);
+  --color-tertiary-foreground: var(--tertiary-foreground);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* 文字大小变量 */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  /* 基础样式 */
+  min-height: 100vh;
+  background: #fafafa;
+  color: #1a1a1a;
+  font-size: var(--font-size);
+}
+
+/* 暗色主题 */
+.ttswap-app.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+/* 基础元素样式重置和设置 */
+.ttswap-app * {
+  border-color: var(--border);
+  outline-color: rgba(16, 185, 129, 0.5);
+}
+
+/* 自定义渐变和效果类 */
+.ttswap-app .gradient-border {
+  position: relative;
+  background: linear-gradient(135deg, #10b981, #fbbf24, #f59e0b, #ef4444);
+  border-radius: 0.75rem;
+  padding: 1px;
+}
+
+.ttswap-app .gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  background: var(--card);
+  border-radius: calc(0.75rem - 1px);
+}
+
+.ttswap-app .glow-effect {
+  box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.15), 0 2px 4px -1px rgba(16, 185, 129, 0.1);
+}
+
+.ttswap-app .text-gradient {
+  background: linear-gradient(135deg, #10b981, #fbbf24, #f59e0b, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ttswap-app .gradient-primary {
+  background: linear-gradient(135deg, #10b981, #34d399);
+}
+
+.ttswap-app .gradient-secondary {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+}
+
+.ttswap-app .gradient-warm {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+}
+
+.ttswap-app .gradient-cool {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.ttswap-app .gradient-energy {
+  background: linear-gradient(135deg, #fbbf24, #ef4444);
+}
+
+.ttswap-app .gradient-full {
+  background: linear-gradient(135deg, #10b981 0%, #fbbf24 25%, #f59e0b 75%, #ef4444 100%);
+}
+
+.ttswap-app .bg-primary-soft {
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.ttswap-app .bg-secondary-soft {
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.ttswap-app .bg-accent-soft {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.ttswap-app .bg-yellow-soft {
+  background: rgba(251, 191, 36, 0.1);
+}
+
+.ttswap-app .card-shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.ttswap-app .card-shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* 动画类 */
+.ttswap-app .animate-fade-in {
+  animation: ttswap-fadeIn 0.6s ease-out;
+}
+
+.ttswap-app .animate-fade-in-up {
+  animation: ttswap-fadeInUp 0.8s ease-out;
+}
+
+.ttswap-app .animate-fade-in-delay-1 {
+  animation: ttswap-fadeInUp 0.8s ease-out 0.1s both;
+}
+
+.ttswap-app .animate-fade-in-delay-2 {
+  animation: ttswap-fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.ttswap-app .animate-fade-in-delay-3 {
+  animation: ttswap-fadeInUp 0.8s ease-out 0.3s both;
+}
+
+.ttswap-app .animate-fade-in-delay-4 {
+  animation: ttswap-fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.ttswap-app .animate-fade-in-delay-5 {
+  animation: ttswap-fadeInUp 0.8s ease-out 0.5s both;
+}
+
+.ttswap-app .animate-fade-in-delay-6 {
+  animation: ttswap-fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.ttswap-app .animate-pulse-soft {
+  animation: ttswap-pulseSoft 2s ease-in-out infinite;
+}
+
+/* 动画关键帧 */
+@keyframes ttswap-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ttswap-fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes ttswap-pulseSoft {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+/* Typography样式 - 只应用于没有Tailwind文字类的元素 */
+.ttswap-app :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) h1 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+.ttswap-app :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) h2 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+.ttswap-app :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) h3 {
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+.ttswap-app :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) h4 {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+.ttswap-app :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) p {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5;
+}
+
+.ttswap-app :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) label {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+.ttswap-app :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) button {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.5;
+}
+
+.ttswap-app :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) input {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5;
+}
+
+/* Tailwind颜色类的隔离实现 */
+.ttswap-app .bg-background {
+  background-color: var(--background);
+}
+
+.ttswap-app .bg-foreground {
+  background-color: var(--foreground);
+}
+
+.ttswap-app .bg-card {
+  background-color: var(--card);
+}
+
+.ttswap-app .bg-primary {
+  background-color: var(--primary);
+}
+
+.ttswap-app .bg-secondary {
+  background-color: var(--secondary);
+}
+
+.ttswap-app .bg-accent {
+  background-color: var(--accent);
+}
+
+.ttswap-app .bg-muted {
+  background-color: var(--muted);
+}
+
+.ttswap-app .bg-tertiary {
+  background-color: var(--tertiary);
+}
+
+.ttswap-app .text-background {
+  color: var(--background);
+}
+
+.ttswap-app .text-foreground {
+  color: var(--foreground);
+}
+
+.ttswap-app .text-card {
+  color: var(--card);
+}
+
+.ttswap-app .text-primary {
+  color: var(--primary);
+}
+
+.ttswap-app .text-secondary {
+  color: var(--secondary);
+}
+
+.ttswap-app .text-accent {
+  color: var(--accent);
+}
+
+.ttswap-app .text-muted {
+  color: var(--muted);
+}
+
+.ttswap-app .text-muted-foreground {
+  color: var(--muted-foreground);
+}
+
+.ttswap-app .text-tertiary {
+  color: var(--tertiary);
+}
+
+.ttswap-app .border-border {
+  border-color: var(--border);
+}
+
+.ttswap-app .border-primary {
+  border-color: var(--primary);
+}
+
+.ttswap-app .border-secondary {
+  border-color: var(--secondary);
+}
+
+.ttswap-app .border-accent {
+  border-color: var(--accent);
+}
+
+/* 布局和间距类 */
+.ttswap-app .min-h-screen {
+  min-height: 100vh;
+}
+
+.ttswap-app .max-w-7xl {
+  max-width: 80rem;
+}
+
+.ttswap-app .max-w-6xl {
+  max-width: 72rem;
+}
+
+.ttswap-app .max-w-4xl {
+  max-width: 56rem;
+}
+
+.ttswap-app .max-w-2xl {
+  max-width: 42rem;
+}
+
+.ttswap-app .max-w-xl {
+  max-width: 36rem;
+}
+
+.ttswap-app .max-w-lg {
+  max-width: 32rem;
+}
+
+.ttswap-app .max-w-md {
+  max-width: 28rem;
+}
+
+.ttswap-app .max-w-sm {
+  max-width: 24rem;
+}
+
+.ttswap-app .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ttswap-app .container {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Flexbox和Grid */
+.ttswap-app .flex {
+  display: flex;
+}
+
+.ttswap-app .grid {
+  display: grid;
+}
+
+.ttswap-app .hidden {
+  display: none;
+}
+
+.ttswap-app .block {
+  display: block;
+}
+
+.ttswap-app .inline-block {
+  display: inline-block;
+}
+
+.ttswap-app .inline {
+  display: inline;
+}
+
+.ttswap-app .flex-col {
+  flex-direction: column;
+}
+
+.ttswap-app .flex-row {
+  flex-direction: row;
+}
+
+.ttswap-app .items-center {
+  align-items: center;
+}
+
+.ttswap-app .items-start {
+  align-items: flex-start;
+}
+
+.ttswap-app .items-end {
+  align-items: flex-end;
+}
+
+.ttswap-app .justify-center {
+  justify-content: center;
+}
+
+.ttswap-app .justify-between {
+  justify-content: space-between;
+}
+
+.ttswap-app .justify-around {
+  justify-content: space-around;
+}
+
+.ttswap-app .justify-start {
+  justify-content: flex-start;
+}
+
+.ttswap-app .justify-end {
+  justify-content: flex-end;
+}
+
+.ttswap-app .grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.ttswap-app .grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ttswap-app .grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.ttswap-app .grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* 间距类 */
+.ttswap-app .gap-1 {
+  gap: 0.25rem;
+}
+
+.ttswap-app .gap-2 {
+  gap: 0.5rem;
+}
+
+.ttswap-app .gap-3 {
+  gap: 0.75rem;
+}
+
+.ttswap-app .gap-4 {
+  gap: 1rem;
+}
+
+.ttswap-app .gap-6 {
+  gap: 1.5rem;
+}
+
+.ttswap-app .gap-8 {
+  gap: 2rem;
+}
+
+.ttswap-app .gap-12 {
+  gap: 3rem;
+}
+
+.ttswap-app .gap-16 {
+  gap: 4rem;
+}
+
+.ttswap-app .gap-20 {
+  gap: 5rem;
+}
+
+.ttswap-app .gap-24 {
+  gap: 6rem;
+}
+
+.ttswap-app .p-0 {
+  padding: 0;
+}
+
+.ttswap-app .p-1 {
+  padding: 0.25rem;
+}
+
+.ttswap-app .p-2 {
+  padding: 0.5rem;
+}
+
+.ttswap-app .p-3 {
+  padding: 0.75rem;
+}
+
+.ttswap-app .p-4 {
+  padding: 1rem;
+}
+
+.ttswap-app .p-6 {
+  padding: 1.5rem;
+}
+
+.ttswap-app .p-8 {
+  padding: 2rem;
+}
+
+.ttswap-app .p-12 {
+  padding: 3rem;
+}
+
+.ttswap-app .p-16 {
+  padding: 4rem;
+}
+
+.ttswap-app .p-20 {
+  padding: 5rem;
+}
+
+.ttswap-app .p-24 {
+  padding: 6rem;
+}
+
+.ttswap-app .px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.ttswap-app .px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.ttswap-app .px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.ttswap-app .py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.ttswap-app .py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.ttswap-app .py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.ttswap-app .py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.ttswap-app .py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.ttswap-app .py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.ttswap-app .py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.ttswap-app .py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.ttswap-app .m-0 {
+  margin: 0;
+}
+
+.ttswap-app .m-1 {
+  margin: 0.25rem;
+}
+
+.ttswap-app .m-2 {
+  margin: 0.5rem;
+}
+
+.ttswap-app .m-4 {
+  margin: 1rem;
+}
+
+.ttswap-app .mt-4 {
+  margin-top: 1rem;
+}
+
+.ttswap-app .mt-6 {
+  margin-top: 1.5rem;
+}
+
+.ttswap-app .mt-8 {
+  margin-top: 2rem;
+}
+
+.ttswap-app .mb-4 {
+  margin-bottom: 1rem;
+}
+
+.ttswap-app .mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.ttswap-app .mb-8 {
+  margin-bottom: 2rem;
+}
+
+/* 边框和圆角 */
+.ttswap-app .rounded {
+  border-radius: 0.25rem;
+}
+
+.ttswap-app .rounded-md {
+  border-radius: 0.375rem;
+}
+
+.ttswap-app .rounded-lg {
+  border-radius: var(--radius-lg);
+}
+
+.ttswap-app .rounded-xl {
+  border-radius: var(--radius-xl);
+}
+
+.ttswap-app .rounded-full {
+  border-radius: 9999px;
+}
+
+.ttswap-app .border {
+  border-width: 1px;
+}
+
+.ttswap-app .border-2 {
+  border-width: 2px;
+}
+
+.ttswap-app .border-t {
+  border-top-width: 1px;
+}
+
+.ttswap-app .border-b {
+  border-bottom-width: 1px;
+}
+
+/* 位置和层级 */
+.ttswap-app .relative {
+  position: relative;
+}
+
+.ttswap-app .absolute {
+  position: absolute;
+}
+
+.ttswap-app .fixed {
+  position: fixed;
+}
+
+.ttswap-app .sticky {
+  position: sticky;
+}
+
+.ttswap-app .top-0 {
+  top: 0;
+}
+
+.ttswap-app .left-0 {
+  left: 0;
+}
+
+.ttswap-app .right-0 {
+  right: 0;
+}
+
+.ttswap-app .bottom-0 {
+  bottom: 0;
+}
+
+.ttswap-app .z-10 {
+  z-index: 10;
+}
+
+.ttswap-app .z-20 {
+  z-index: 20;
+}
+
+.ttswap-app .z-50 {
+  z-index: 50;
+}
+
+/* 过渡和变换 */
+.ttswap-app .transition-all {
+  transition: all 0.15s ease-in-out;
+}
+
+.ttswap-app .transition-colors {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.ttswap-app .transition-transform {
+  transition: transform 0.15s ease-in-out;
+}
+
+.ttswap-app .transition-opacity {
+  transition: opacity 0.15s ease-in-out;
+}
+
+.ttswap-app .hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.ttswap-app .hover\:scale-110:hover {
+  transform: scale(1.1);
+}
+
+.ttswap-app .hover\:-translate-y-1:hover {
+  transform: translateY(-0.25rem);
+}
+
+.ttswap-app .hover\:-translate-y-2:hover {
+  transform: translateY(-0.5rem);
+}
+
+/* 透明度和阴影 */
+.ttswap-app .opacity-0 {
+  opacity: 0;
+}
+
+.ttswap-app .opacity-50 {
+  opacity: 0.5;
+}
+
+.ttswap-app .opacity-75 {
+  opacity: 0.75;
+}
+
+.ttswap-app .opacity-100 {
+  opacity: 1;
+}
+
+.ttswap-app .shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.ttswap-app .shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.ttswap-app .shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.ttswap-app .shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* 响应式设计 */
+@media (min-width: 640px) {
+  .ttswap-app .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ttswap-app .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .ttswap-app .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ttswap-app .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .ttswap-app .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .ttswap-app .md\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .ttswap-app .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .ttswap-app .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .ttswap-app .md\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .ttswap-app .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .ttswap-app .md\:gap-8 {
+    gap: 2rem;
+  }
+
+  .ttswap-app .md\:gap-12 {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ttswap-app .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .ttswap-app .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .ttswap-app .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .ttswap-app .lg\:gap-8 {
+    gap: 2rem;
+  }
+
+  .ttswap-app .lg\:gap-12 {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .ttswap-app .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .ttswap-app .xl\:gap-8 {
+    gap: 2rem;
+  }
+
+  .ttswap-app .xl\:gap-12 {
+    gap: 3rem;
+  }
+}
+
+/* 确保在隔离环境中的ShadCN组件样式生效 */
+.ttswap-app .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 文本对齐 */
+.ttswap-app .text-left {
+  text-align: left;
+}
+
+.ttswap-app .text-center {
+  text-align: center;
+}
+
+.ttswap-app .text-right {
+  text-align: right;
+}
+
+/* 宽度和高度 */
+.ttswap-app .w-full {
+  width: 100%;
+}
+
+.ttswap-app .w-auto {
+  width: auto;
+}
+
+.ttswap-app .w-fit {
+  width: fit-content;
+}
+
+.ttswap-app .h-full {
+  height: 100%;
+}
+
+.ttswap-app .h-auto {
+  height: auto;
+}
+
+.ttswap-app .h-fit {
+  height: fit-content;
+}
+
+/* 鼠标指针 */
+.ttswap-app .cursor-pointer {
+  cursor: pointer;
+}
+
+.ttswap-app .cursor-default {
+  cursor: default;
+}
+
+/* 溢出处理 */
+.ttswap-app .overflow-hidden {
+  overflow: hidden;
+}
+
+.ttswap-app .overflow-auto {
+  overflow: auto;
+}
+
+/* 用户选择 */
+.ttswap-app .select-none {
+  user-select: none;
+}
+
+
+  .ttswap-app .\@container\/card-header {
+    container: card-header / inline-size;
+  }
+
+  .ttswap-app .pointer-events-none {
+    pointer-events: none;
+  }
+
+  .ttswap-app .absolute {
+    position: absolute;
+  }
+
+  .ttswap-app .fixed {
+    position: fixed;
+  }
+
+  .ttswap-app .relative {
+    position: relative;
+  }
+
+  .ttswap-app .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
+
+  .ttswap-app .-top-2 {
+    top: calc(var(--spacing) * -2);
+  }
+
+  .ttswap-app .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+
+  .ttswap-app .top-1\/2 {
+    top: 50%;
+  }
+
+  .ttswap-app .top-32 {
+    top: calc(var(--spacing) * 32);
+  }
+
+  .ttswap-app .-right-2 {
+    right: calc(var(--spacing) * -2);
+  }
+
+  .ttswap-app .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+
+  .ttswap-app .right-2 {
+    right: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .right-20 {
+    right: calc(var(--spacing) * 20);
+  }
+
+  .ttswap-app .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+
+  .ttswap-app .bottom-32 {
+    bottom: calc(var(--spacing) * 32);
+  }
+
+  .ttswap-app .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+
+  .ttswap-app .left-1\/2 {
+    left: 50%;
+  }
+
+  .ttswap-app .left-20 {
+    left: calc(var(--spacing) * 20);
+  }
+
+  .ttswap-app .z-10 {
+    z-index: 10;
+  }
+
+  .ttswap-app .z-50 {
+    z-index: 50;
+  }
+
+  .ttswap-app .col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .ttswap-app .row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .ttswap-app .row-start-1 {
+    grid-row-start: 1;
+  }
+
+  .ttswap-app .container {
+    width: 100%;
+  }
+
+  @media (width >=40rem) {
+    .ttswap-app .container {
+      max-width: 40rem;
+    }
+  }
+
+  @media (width >=48rem) {
+    .ttswap-app .container {
+      max-width: 48rem;
+    }
+  }
+
+  @media (width >=64rem) {
+    .ttswap-app .container {
+      max-width: 64rem;
+    }
+  }
+
+  @media (width >=80rem) {
+    .ttswap-app .container {
+      max-width: 80rem;
+    }
+  }
+
+  @media (width >=96rem) {
+    .ttswap-app .container {
+      max-width: 96rem;
+    }
+  }
+
+  .ttswap-app .-mx-1 {
+    margin-inline: calc(var(--spacing) * -1);
+  }
+
+  .ttswap-app .-mx-2 {
+    margin-inline: calc(var(--spacing) * -2);
+  }
+
+  .ttswap-app .mx-2 {
+    margin-inline: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .mx-3 {
+    margin-inline: calc(var(--spacing) * 3);
+  }
+
+  .ttswap-app .mx-auto {
+    margin-inline: auto;
+  }
+
+  .ttswap-app .my-1 {
+    margin-block: calc(var(--spacing) * 1);
+  }
+
+  .ttswap-app .my-16 {
+    margin-block: calc(var(--spacing) * 16);
+  }
+
+  .ttswap-app .mt-0\.5 {
+    margin-top: calc(var(--spacing) * .5);
+  }
+
+  .ttswap-app .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
+
+  .ttswap-app .mt-1\.5 {
+    margin-top: calc(var(--spacing) * 1.5);
+  }
+
+  .ttswap-app .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+
+  .ttswap-app .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+
+  .ttswap-app .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+
+  .ttswap-app .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+
+  .ttswap-app .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
+
+  .ttswap-app .mt-16 {
+    margin-top: calc(var(--spacing) * 16);
+  }
+
+  .ttswap-app .mr-1 {
+    margin-right: calc(var(--spacing) * 1);
+  }
+
+  .ttswap-app .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .mb-0 {
+    margin-bottom: calc(var(--spacing) * 0);
+  }
+
+  .ttswap-app .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
+  }
+
+  .ttswap-app .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+
+  .ttswap-app .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+
+  .ttswap-app .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+
+  .ttswap-app .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+
+  .ttswap-app .mb-12 {
+    margin-bottom: calc(var(--spacing) * 12);
+  }
+
+  .ttswap-app .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
+
+  .ttswap-app .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
+  }
+
+  .ttswap-app .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .ml-8 {
+    margin-left: calc(var(--spacing) * 8);
+  }
+
+  .ttswap-app .ml-auto {
+    margin-left: auto;
+  }
+
+  .ttswap-app .block {
+    display: block;
+  }
+
+  .ttswap-app .flex {
+    display: flex;
+  }
+
+  .ttswap-app .grid {
+    display: grid;
+  }
+
+  .ttswap-app .hidden {
+    display: none;
+  }
+
+  .ttswap-app .inline-flex {
+    display: inline-flex;
+  }
+
+  .ttswap-app .size-3\.5 {
+    width: calc(var(--spacing) * 3.5);
+    height: calc(var(--spacing) * 3.5);
+  }
+
+  .ttswap-app .size-4 {
+    width: calc(var(--spacing) * 4);
+    height: calc(var(--spacing) * 4);
+  }
+
+  .ttswap-app .size-9 {
+    width: calc(var(--spacing) * 9);
+    height: calc(var(--spacing) * 9);
+  }
+
+  .ttswap-app .h-0\.5 {
+    height: calc(var(--spacing) * .5);
+  }
+
+  .ttswap-app .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+
+  .ttswap-app .h-1\.5 {
+    height: calc(var(--spacing) * 1.5);
+  }
+
+  .ttswap-app .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+
+  .ttswap-app .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+
+  .ttswap-app .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+
+  .ttswap-app .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+
+  .ttswap-app .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
+
+  .ttswap-app .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+
+  .ttswap-app .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
+
+  .ttswap-app .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+
+  .ttswap-app .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+
+  .ttswap-app .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
+
+  .ttswap-app .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
+
+  .ttswap-app .h-32 {
+    height: calc(var(--spacing) * 32);
+  }
+
+  .ttswap-app .h-40 {
+    height: calc(var(--spacing) * 40);
+  }
+
+  .ttswap-app .h-\[calc\(100\%-1px\)\] {
+    height: calc(100% - 1px);
+  }
+
+  .ttswap-app .h-\[var\(--radix-select-trigger-height\)\] {
+    height: var(--radix-select-trigger-height);
+  }
+
+  .ttswap-app .h-full {
+    height: 100%;
+  }
+
+  .ttswap-app .h-px {
+    height: 1px;
+  }
+
+  .ttswap-app .max-h-\(--radix-select-content-available-height\) {
+    max-height: var(--radix-select-content-available-height);
+  }
+
+  .ttswap-app .min-h-screen {
+    min-height: 100vh;
+  }
+
+  .ttswap-app .w-0 {
+    width: calc(var(--spacing) * 0);
+  }
+
+  .ttswap-app .w-1\.5 {
+    width: calc(var(--spacing) * 1.5);
+  }
+
+  .ttswap-app .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+
+  .ttswap-app .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+
+  .ttswap-app .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+
+  .ttswap-app .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+
+  .ttswap-app .w-7 {
+    width: calc(var(--spacing) * 7);
+  }
+
+  .ttswap-app .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+
+  .ttswap-app .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+
+  .ttswap-app .w-12 {
+    width: calc(var(--spacing) * 12);
+  }
+
+  .ttswap-app .w-16 {
+    width: calc(var(--spacing) * 16);
+  }
+
+  .ttswap-app .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
+
+  .ttswap-app .w-32 {
+    width: calc(var(--spacing) * 32);
+  }
+
+  .ttswap-app .w-40 {
+    width: calc(var(--spacing) * 40);
+  }
+
+  .ttswap-app .w-fit {
+    width: fit-content;
+  }
+
+  .ttswap-app .w-full {
+    width: 100%;
+  }
+
+  .ttswap-app .w-px {
+    width: 1px;
+  }
+
+  .ttswap-app .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+
+  .ttswap-app .max-w-3xl {
+    max-width: var(--container-3xl);
+  }
+
+  .ttswap-app .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
+
+  .ttswap-app .max-w-6xl {
+    max-width: var(--container-6xl);
+  }
+
+  .ttswap-app .max-w-7xl {
+    max-width: var(--container-7xl);
+  }
+
+  .ttswap-app .max-w-md {
+    max-width: var(--container-md);
+  }
+
+  .ttswap-app .max-w-none {
+    max-width: none;
+  }
+
+  .ttswap-app .max-w-xs {
+    max-width: var(--container-xs);
+  }
+
+  .ttswap-app .min-w-0 {
+    min-width: calc(var(--spacing) * 0);
+  }
+
+  .ttswap-app .min-w-\[8rem\] {
+    min-width: 8rem;
+  }
+
+  .ttswap-app .min-w-\[140px\] {
+    min-width: 140px;
+  }
+
+  .ttswap-app .min-w-\[var\(--radix-select-trigger-width\)\] {
+    min-width: var(--radix-select-trigger-width);
+  }
+
+  .ttswap-app .flex-1 {
+    flex: 1;
+  }
+
+  .ttswap-app .flex-shrink-0,
+  .ttswap-app .shrink-0 {
+    flex-shrink: 0;
+  }
+
+  .ttswap-app .origin-\(--radix-select-content-transform-origin\) {
+    transform-origin: var(--radix-select-content-transform-origin);
+  }
+
+  .ttswap-app .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
+  .ttswap-app .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
+  .ttswap-app .scale-75 {
+    --tw-scale-x: 75%;
+    --tw-scale-y: 75%;
+    --tw-scale-z: 75%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+
+  .ttswap-app .scale-100 {
+    --tw-scale-x: 100%;
+    --tw-scale-y: 100%;
+    --tw-scale-z: 100%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+
+  .ttswap-app .scale-105 {
+    --tw-scale-x: 105%;
+    --tw-scale-y: 105%;
+    --tw-scale-z: 105%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+
+  .ttswap-app .scale-110 {
+    --tw-scale-x: 110%;
+    --tw-scale-y: 110%;
+    --tw-scale-z: 110%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+
+  .ttswap-app .transform {
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+
+  .ttswap-app .animate-pulse {
+    animation: var(--animate-pulse);
+  }
+
+  .ttswap-app .cursor-default {
+    cursor: default;
+  }
+
+  .ttswap-app .cursor-pointer {
+    cursor: pointer;
+  }
+
+  .ttswap-app .scroll-my-1 {
+    scroll-margin-block: calc(var(--spacing) * 1);
+  }
+
+  .ttswap-app .list-inside {
+    list-style-position: inside;
+  }
+
+  .ttswap-app .list-disc {
+    list-style-type: disc;
+  }
+
+  .ttswap-app .auto-rows-min {
+    grid-auto-rows: min-content;
+  }
+
+  .ttswap-app .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .ttswap-app .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ttswap-app .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .ttswap-app .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .ttswap-app .grid-rows-\[auto_auto\] {
+    grid-template-rows: auto auto;
+  }
+
+  .ttswap-app .flex-col {
+    flex-direction: column;
+  }
+
+  .ttswap-app .items-center {
+    align-items: center;
+  }
+
+  .ttswap-app .items-start {
+    align-items: flex-start;
+  }
+
+  .ttswap-app .justify-between {
+    justify-content: space-between;
+  }
+
+  .ttswap-app .justify-center {
+    justify-content: center;
+  }
+
+  .ttswap-app .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+
+  .ttswap-app .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
+
+  .ttswap-app .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+
+  .ttswap-app .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+
+  .ttswap-app .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+
+  .ttswap-app .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
+
+  .ttswap-app .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+
+  :where(.space-y-1 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 1) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
+  }
+
+  :where(.space-y-2 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+  }
+
+  :where(.space-y-3 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+  }
+
+  :where(.space-y-4 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+  }
+
+  :where(.space-y-6 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+  }
+
+  :where(.space-y-8 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 8) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-y-reverse)));
+  }
+
+  :where(.space-x-0 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 0) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  :where(.space-x-1 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 1) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  :where(.space-x-2 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  :where(.space-x-3 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  :where(.space-x-4 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  :where(.space-x-6 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 6) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  :where(.space-x-8 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .ttswap-app .self-start {
+    align-self: flex-start;
+  }
+
+  .ttswap-app .justify-self-end {
+    justify-self: flex-end;
+  }
+
+  .ttswap-app .overflow-hidden {
+    overflow: hidden;
+  }
+
+  .ttswap-app .overflow-x-auto {
+    overflow-x: auto;
+  }
+
+  .ttswap-app .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .ttswap-app .overflow-y-auto {
+    overflow-y: auto;
+  }
+
+  .ttswap-app .rounded {
+    border-radius: .25rem;
+  }
+
+  .ttswap-app .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+
+  .ttswap-app .rounded-full {
+    border-radius: 3.40282e38px;
+  }
+
+  .ttswap-app .rounded-lg {
+    border-radius: var(--radius);
+  }
+
+  .ttswap-app .rounded-md {
+    border-radius: calc(var(--radius) - 2px);
+  }
+
+  .ttswap-app .rounded-sm {
+    border-radius: calc(var(--radius) - 4px);
+  }
+
+  .ttswap-app .rounded-xl {
+    border-radius: calc(var(--radius) + 4px);
+  }
+
+  .ttswap-app .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+
+  .ttswap-app .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+
+  .ttswap-app .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+
+  .ttswap-app .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+
+  .ttswap-app .border-l-2 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 2px;
+  }
+
+  .ttswap-app .border-l-4 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 4px;
+  }
+
+  .ttswap-app .border-dashed {
+    --tw-border-style: dashed;
+    border-style: dashed;
+  }
+
+  .ttswap-app .border-accent\/20 {
+    border-color: var(--accent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-accent\/20 {
+      border-color: color-mix(in oklab, var(--accent) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .border-accent\/40 {
+    border-color: var(--accent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-accent\/40 {
+      border-color: color-mix(in oklab, var(--accent) 40%, transparent);
+    }
+  }
+
+  .ttswap-app .border-blue-200 {
+    border-color: var(--color-blue-200);
+  }
+
+  .ttswap-app .border-blue-500 {
+    border-color: var(--color-blue-500);
+  }
+
+  .ttswap-app .border-border {
+    border-color: var(--border);
+  }
+
+  .ttswap-app .border-border\/50 {
+    border-color: var(--border);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-border\/50 {
+      border-color: color-mix(in oklab, var(--border) 50%, transparent);
+    }
+  }
+
+  .ttswap-app .border-current {
+    border-color: currentColor;
+  }
+
+  .ttswap-app .border-gray-200 {
+    border-color: var(--color-gray-200);
+  }
+
+  .ttswap-app .border-gray-700 {
+    border-color: var(--color-gray-700);
+  }
+
+  .ttswap-app .border-green-500\/10 {
+    border-color: color-mix(in srgb, oklch(.723 .219 149.579) 10%, transparent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-green-500\/10 {
+      border-color: color-mix(in oklab, var(--color-green-500) 10%, transparent);
+    }
+  }
+
+  .ttswap-app .border-green-500\/20 {
+    border-color: color-mix(in srgb, oklch(.723 .219 149.579) 20%, transparent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-green-500\/20 {
+      border-color: color-mix(in oklab, var(--color-green-500) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .border-input {
+    border-color: var(--input);
+  }
+
+  .ttswap-app .border-orange-300 {
+    border-color: var(--color-orange-300);
+  }
+
+  .ttswap-app .border-primary\/20 {
+    border-color: var(--primary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-primary\/20 {
+      border-color: color-mix(in oklab, var(--primary) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .border-primary\/30 {
+    border-color: var(--primary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-primary\/30 {
+      border-color: color-mix(in oklab, var(--primary) 30%, transparent);
+    }
+  }
+
+  .ttswap-app .border-primary\/40 {
+    border-color: var(--primary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-primary\/40 {
+      border-color: color-mix(in oklab, var(--primary) 40%, transparent);
+    }
+  }
+
+  .ttswap-app .border-primary\/50 {
+    border-color: var(--primary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-primary\/50 {
+      border-color: color-mix(in oklab, var(--primary) 50%, transparent);
+    }
+  }
+
+  .ttswap-app .border-red-500\/10 {
+    border-color: color-mix(in srgb, oklch(.637 .237 25.331) 10%, transparent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-red-500\/10 {
+      border-color: color-mix(in oklab, var(--color-red-500) 10%, transparent);
+    }
+  }
+
+  .ttswap-app .border-red-500\/20 {
+    border-color: color-mix(in srgb, oklch(.637 .237 25.331) 20%, transparent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-red-500\/20 {
+      border-color: color-mix(in oklab, var(--color-red-500) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .border-secondary\/20 {
+    border-color: var(--secondary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-secondary\/20 {
+      border-color: color-mix(in oklab, var(--secondary) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .border-secondary\/30 {
+    border-color: var(--secondary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-secondary\/30 {
+      border-color: color-mix(in oklab, var(--secondary) 30%, transparent);
+    }
+  }
+
+  .ttswap-app .border-secondary\/40 {
+    border-color: var(--secondary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-secondary\/40 {
+      border-color: color-mix(in oklab, var(--secondary) 40%, transparent);
+    }
+  }
+
+  .ttswap-app .border-tertiary\/20 {
+    border-color: var(--tertiary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-tertiary\/20 {
+      border-color: color-mix(in oklab, var(--tertiary) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .border-transparent {
+    border-color: #0000;
+  }
+
+  .ttswap-app .border-white\/10 {
+    border-color: #ffffff1a;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-white\/10 {
+      border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+
+  .ttswap-app .border-white\/20 {
+    border-color: #fff3;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-white\/20 {
+      border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .border-yellow-500\/20 {
+    border-color: color-mix(in srgb, oklch(.795 .184 86.047) 20%, transparent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .border-yellow-500\/20 {
+      border-color: color-mix(in oklab, var(--color-yellow-500) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-accent {
+    background-color: var(--accent);
+  }
+
+  .ttswap-app .bg-accent\/5 {
+    background-color: var(--accent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-accent\/5 {
+      background-color: color-mix(in oklab, var(--accent) 5%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-accent\/10 {
+    background-color: var(--accent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-accent\/10 {
+      background-color: color-mix(in oklab, var(--accent) 10%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-background {
+    background-color: var(--background);
+  }
+
+  .ttswap-app .bg-background\/50 {
+    background-color: var(--background);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-background\/50 {
+      background-color: color-mix(in oklab, var(--background) 50%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-background\/80 {
+    background-color: var(--background);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-background\/80 {
+      background-color: color-mix(in oklab, var(--background) 80%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-background\/95 {
+    background-color: var(--background);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-background\/95 {
+      background-color: color-mix(in oklab, var(--background) 95%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-blue-100 {
+    background-color: var(--color-blue-100);
+  }
+
+  .ttswap-app .bg-blue-600 {
+    background-color: var(--color-blue-600);
+  }
+
+  .ttswap-app .bg-border {
+    background-color: var(--border);
+  }
+
+  .ttswap-app .bg-border\/50 {
+    background-color: var(--border);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-border\/50 {
+      background-color: color-mix(in oklab, var(--border) 50%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-card {
+    background-color: var(--card);
+  }
+
+  .ttswap-app .bg-card\/80 {
+    background-color: var(--card);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-card\/80 {
+      background-color: color-mix(in oklab, var(--card) 80%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-destructive {
+    background-color: var(--destructive);
+  }
+
+  .ttswap-app .bg-gray-50 {
+    background-color: var(--color-gray-50);
+  }
+
+  .ttswap-app .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+
+  .ttswap-app .bg-gray-900 {
+    background-color: var(--color-gray-900);
+  }
+
+  .ttswap-app .bg-green-50 {
+    background-color: var(--color-green-50);
+  }
+
+  .ttswap-app .bg-green-100 {
+    background-color: var(--color-green-100);
+  }
+
+  .ttswap-app .bg-green-500 {
+    background-color: var(--color-green-500);
+  }
+
+  .ttswap-app .bg-green-500\/5 {
+    background-color: color-mix(in srgb, oklch(.723 .219 149.579) 5%, transparent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-green-500\/5 {
+      background-color: color-mix(in oklab, var(--color-green-500) 5%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-green-500\/10 {
+    background-color: color-mix(in srgb, oklch(.723 .219 149.579) 10%, transparent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-green-500\/10 {
+      background-color: color-mix(in oklab, var(--color-green-500) 10%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-green-500\/20 {
+    background-color: color-mix(in srgb, oklch(.723 .219 149.579) 20%, transparent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-green-500\/20 {
+      background-color: color-mix(in oklab, var(--color-green-500) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-input-background {
+    background-color: var(--input-background);
+  }
+
+  .ttswap-app .bg-muted {
+    background-color: var(--muted);
+  }
+
+  .ttswap-app .bg-muted\/20 {
+    background-color: var(--muted);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-muted\/20 {
+      background-color: color-mix(in oklab, var(--muted) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-muted\/30 {
+    background-color: var(--muted);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-muted\/30 {
+      background-color: color-mix(in oklab, var(--muted) 30%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-muted\/50 {
+    background-color: var(--muted);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-muted\/50 {
+      background-color: color-mix(in oklab, var(--muted) 50%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-orange-100 {
+    background-color: var(--color-orange-100);
+  }
+
+  .ttswap-app .bg-popover {
+    background-color: var(--popover);
+  }
+
+  .ttswap-app .bg-primary {
+    background-color: var(--primary);
+  }
+
+  .ttswap-app .bg-primary\/5 {
+    background-color: var(--primary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-primary\/5 {
+      background-color: color-mix(in oklab, var(--primary) 5%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-primary\/10 {
+    background-color: var(--primary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-primary\/10 {
+      background-color: color-mix(in oklab, var(--primary) 10%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-primary\/20 {
+    background-color: var(--primary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-primary\/20 {
+      background-color: color-mix(in oklab, var(--primary) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-purple-50 {
+    background-color: var(--color-purple-50);
+  }
+
+  .ttswap-app .bg-purple-100 {
+    background-color: var(--color-purple-100);
+  }
+
+  .ttswap-app .bg-red-100 {
+    background-color: var(--color-red-100);
+  }
+
+  .ttswap-app .bg-red-500 {
+    background-color: var(--color-red-500);
+  }
+
+  .ttswap-app .bg-red-500\/5 {
+    background-color: color-mix(in srgb, oklch(.637 .237 25.331) 5%, transparent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-red-500\/5 {
+      background-color: color-mix(in oklab, var(--color-red-500) 5%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-red-500\/10 {
+    background-color: color-mix(in srgb, oklch(.637 .237 25.331) 10%, transparent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-red-500\/10 {
+      background-color: color-mix(in oklab, var(--color-red-500) 10%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-red-500\/20 {
+    background-color: color-mix(in srgb, oklch(.637 .237 25.331) 20%, transparent);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-red-500\/20 {
+      background-color: color-mix(in oklab, var(--color-red-500) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-secondary {
+    background-color: var(--secondary);
+  }
+
+  .ttswap-app .bg-secondary\/5 {
+    background-color: var(--secondary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-secondary\/5 {
+      background-color: color-mix(in oklab, var(--secondary) 5%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-secondary\/10 {
+    background-color: var(--secondary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-secondary\/10 {
+      background-color: color-mix(in oklab, var(--secondary) 10%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-secondary\/20 {
+    background-color: var(--secondary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-secondary\/20 {
+      background-color: color-mix(in oklab, var(--secondary) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-tertiary {
+    background-color: var(--tertiary);
+  }
+
+  .ttswap-app .bg-tertiary\/5 {
+    background-color: var(--tertiary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-tertiary\/5 {
+      background-color: color-mix(in oklab, var(--tertiary) 5%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-tertiary\/10 {
+    background-color: var(--tertiary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-tertiary\/10 {
+      background-color: color-mix(in oklab, var(--tertiary) 10%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-white {
+    background-color: var(--color-white);
+  }
+
+  .ttswap-app .bg-white\/20 {
+    background-color: #fff3;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .bg-white\/20 {
+      background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .bg-yellow-50 {
+    background-color: var(--color-yellow-50);
+  }
+
+  .ttswap-app .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
+  }
+
+  .ttswap-app .bg-gradient-to-b {
+    --tw-gradient-position: to bottom in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+
+  .ttswap-app .bg-gradient-to-br {
+    --tw-gradient-position: to bottom right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+
+  .ttswap-app .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+
+  .ttswap-app .from-accent\/5 {
+    --tw-gradient-from: var(--accent);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .from-accent\/5 {
+      --tw-gradient-from: color-mix(in oklab, var(--accent) 5%, transparent);
+    }
+  }
+
+  .ttswap-app .from-background {
+    --tw-gradient-from: var(--background);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .from-blue-50 {
+    --tw-gradient-from: var(--color-blue-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .from-blue-500 {
+    --tw-gradient-from: var(--color-blue-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .from-green-500 {
+    --tw-gradient-from: var(--color-green-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .from-green-500\/5 {
+    --tw-gradient-from: color-mix(in srgb, oklch(.723 .219 149.579) 5%, transparent);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .from-green-500\/5 {
+      --tw-gradient-from: color-mix(in oklab, var(--color-green-500) 5%, transparent);
+    }
+  }
+
+  .ttswap-app .from-indigo-500 {
+    --tw-gradient-from: var(--color-indigo-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .from-muted\/30 {
+    --tw-gradient-from: var(--muted);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .from-muted\/30 {
+      --tw-gradient-from: color-mix(in oklab, var(--muted) 30%, transparent);
+    }
+  }
+
+  .ttswap-app .from-orange-50 {
+    --tw-gradient-from: var(--color-orange-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .from-primary {
+    --tw-gradient-from: var(--primary);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .from-primary\/5 {
+    --tw-gradient-from: var(--primary);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .from-primary\/5 {
+      --tw-gradient-from: color-mix(in oklab, var(--primary) 5%, transparent);
+    }
+  }
+
+  .ttswap-app .from-primary\/10 {
+    --tw-gradient-from: var(--primary);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .from-primary\/10 {
+      --tw-gradient-from: color-mix(in oklab, var(--primary) 10%, transparent);
+    }
+  }
+
+  .ttswap-app .from-purple-50 {
+    --tw-gradient-from: var(--color-purple-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .from-purple-500 {
+    --tw-gradient-from: var(--color-purple-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .from-red-500 {
+    --tw-gradient-from: var(--color-red-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .from-red-500\/5 {
+    --tw-gradient-from: color-mix(in srgb, oklch(.637 .237 25.331) 5%, transparent);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .from-red-500\/5 {
+      --tw-gradient-from: color-mix(in oklab, var(--color-red-500) 5%, transparent);
+    }
+  }
+
+  .ttswap-app .from-secondary {
+    --tw-gradient-from: var(--secondary);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .from-secondary\/5 {
+    --tw-gradient-from: var(--secondary);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .from-secondary\/5 {
+      --tw-gradient-from: color-mix(in oklab, var(--secondary) 5%, transparent);
+    }
+  }
+
+  .ttswap-app .from-tertiary {
+    --tw-gradient-from: var(--tertiary);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .from-tertiary\/5 {
+    --tw-gradient-from: var(--tertiary);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .from-tertiary\/5 {
+      --tw-gradient-from: color-mix(in oklab, var(--tertiary) 5%, transparent);
+    }
+  }
+
+  .ttswap-app .from-yellow-500 {
+    --tw-gradient-from: var(--color-yellow-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .to-accent {
+    --tw-gradient-to: var(--accent);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .to-background {
+    --tw-gradient-to: var(--background);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .to-card\/20 {
+    --tw-gradient-to: var(--card);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .to-card\/20 {
+      --tw-gradient-to: color-mix(in oklab, var(--card) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .to-cyan-500 {
+    --tw-gradient-to: var(--color-cyan-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .to-green-500 {
+    --tw-gradient-to: var(--color-green-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .to-indigo-50 {
+    --tw-gradient-to: var(--color-indigo-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .to-muted\/30 {
+    --tw-gradient-to: var(--muted);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .to-muted\/30 {
+      --tw-gradient-to: color-mix(in oklab, var(--muted) 30%, transparent);
+    }
+  }
+
+  .ttswap-app .to-orange-500 {
+    --tw-gradient-to: var(--color-orange-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .to-pink-50 {
+    --tw-gradient-to: var(--color-pink-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .to-pink-500 {
+    --tw-gradient-to: var(--color-pink-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .to-purple-500 {
+    --tw-gradient-to: var(--color-purple-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .to-red-50 {
+    --tw-gradient-to: var(--color-red-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .to-secondary {
+    --tw-gradient-to: var(--secondary);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .to-secondary\/10 {
+    --tw-gradient-to: var(--secondary);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .to-secondary\/10 {
+      --tw-gradient-to: color-mix(in oklab, var(--secondary) 10%, transparent);
+    }
+  }
+
+  .ttswap-app .to-teal-500 {
+    --tw-gradient-to: var(--color-teal-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .to-transparent {
+    --tw-gradient-to: transparent;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+
+  .ttswap-app .bg-clip-text {
+    background-clip: text;
+  }
+
+  .ttswap-app .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
+
+  .ttswap-app .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+
+  .ttswap-app .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+
+  .ttswap-app .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+
+  .ttswap-app .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+
+  .ttswap-app .p-8 {
+    padding: calc(var(--spacing) * 8);
+  }
+
+  .ttswap-app .p-\[3px\] {
+    padding: 3px;
+  }
+
+  .ttswap-app .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+
+  .ttswap-app .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+
+  .ttswap-app .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+
+  .ttswap-app .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+
+  .ttswap-app .py-0\.5 {
+    padding-block: calc(var(--spacing) * .5);
+  }
+
+  .ttswap-app .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
+
+  .ttswap-app .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+
+  .ttswap-app .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+
+  .ttswap-app .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+
+  .ttswap-app .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
+
+  .ttswap-app .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
+
+  .ttswap-app .py-12 {
+    padding-block: calc(var(--spacing) * 12);
+  }
+
+  .ttswap-app .py-24 {
+    padding-block: calc(var(--spacing) * 24);
+  }
+
+  .ttswap-app .pt-1 {
+    padding-top: calc(var(--spacing) * 1);
+  }
+
+  .ttswap-app .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
+
+  .ttswap-app .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+
+  .ttswap-app .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+  }
+
+  .ttswap-app .pt-16 {
+    padding-top: calc(var(--spacing) * 16);
+  }
+
+  .ttswap-app .pr-8 {
+    padding-right: calc(var(--spacing) * 8);
+  }
+
+  .ttswap-app .pb-1 {
+    padding-bottom: calc(var(--spacing) * 1);
+  }
+
+  .ttswap-app .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+
+  .ttswap-app .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
+  }
+
+  .ttswap-app .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
+  }
+
+  .ttswap-app .text-center {
+    text-align: center;
+  }
+
+  .ttswap-app .text-right {
+    text-align: right;
+  }
+
+  .ttswap-app .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+
+  .ttswap-app .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+
+  .ttswap-app .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+
+  .ttswap-app .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+
+  .ttswap-app .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+
+  .ttswap-app .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+
+  .ttswap-app .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+
+  .ttswap-app .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+
+  .ttswap-app .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
+
+  .ttswap-app .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+
+  .ttswap-app .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
+
+  .ttswap-app .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .ttswap-app .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+
+  .ttswap-app .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  .ttswap-app .whitespace-nowrap {
+    white-space: nowrap;
+  }
+
+  .ttswap-app .text-accent {
+    color: var(--accent);
+  }
+
+  .ttswap-app .text-blue-500 {
+    color: var(--color-blue-500);
+  }
+
+  .ttswap-app .text-blue-600 {
+    color: var(--color-blue-600);
+  }
+
+  .ttswap-app .text-blue-700 {
+    color: var(--color-blue-700);
+  }
+
+  .ttswap-app .text-blue-900 {
+    color: var(--color-blue-900);
+  }
+
+  .ttswap-app .text-card-foreground {
+    color: var(--card-foreground);
+  }
+
+  .ttswap-app .text-foreground {
+    color: var(--foreground);
+  }
+
+  .ttswap-app .text-gray-300 {
+    color: var(--color-gray-300);
+  }
+
+  .ttswap-app .text-gray-400 {
+    color: var(--color-gray-400);
+  }
+
+  .ttswap-app .text-gray-500 {
+    color: var(--color-gray-500);
+  }
+
+  .ttswap-app .text-gray-600 {
+    color: var(--color-gray-600);
+  }
+
+  .ttswap-app .text-gray-800 {
+    color: var(--color-gray-800);
+  }
+
+  .ttswap-app .text-gray-900 {
+    color: var(--color-gray-900);
+  }
+
+  .ttswap-app .text-green-400 {
+    color: var(--color-green-400);
+  }
+
+  .ttswap-app .text-green-500 {
+    color: var(--color-green-500);
+  }
+
+  .ttswap-app .text-green-600 {
+    color: var(--color-green-600);
+  }
+
+  .ttswap-app .text-green-700 {
+    color: var(--color-green-700);
+  }
+
+  .ttswap-app .text-green-800 {
+    color: var(--color-green-800);
+  }
+
+  .ttswap-app .text-muted-foreground {
+    color: var(--muted-foreground);
+  }
+
+  .ttswap-app .text-orange-700 {
+    color: var(--color-orange-700);
+  }
+
+  .ttswap-app .text-orange-800 {
+    color: var(--color-orange-800);
+  }
+
+  .ttswap-app .text-orange-900 {
+    color: var(--color-orange-900);
+  }
+
+  .ttswap-app .text-popover-foreground {
+    color: var(--popover-foreground);
+  }
+
+  .ttswap-app .text-primary {
+    color: var(--primary);
+  }
+
+  .ttswap-app .text-primary-foreground {
+    color: var(--primary-foreground);
+  }
+
+  .ttswap-app .text-purple-500 {
+    color: var(--color-purple-500);
+  }
+
+  .ttswap-app .text-purple-600 {
+    color: var(--color-purple-600);
+  }
+
+  .ttswap-app .text-purple-700 {
+    color: var(--color-purple-700);
+  }
+
+  .ttswap-app .text-purple-800 {
+    color: var(--color-purple-800);
+  }
+
+  .ttswap-app .text-purple-900 {
+    color: var(--color-purple-900);
+  }
+
+  .ttswap-app .text-red-400 {
+    color: var(--color-red-400);
+  }
+
+  .ttswap-app .text-red-600 {
+    color: var(--color-red-600);
+  }
+
+  .ttswap-app .text-red-700 {
+    color: var(--color-red-700);
+  }
+
+  .ttswap-app .text-secondary {
+    color: var(--secondary);
+  }
+
+  .ttswap-app .text-secondary-foreground {
+    color: var(--secondary-foreground);
+  }
+
+  .ttswap-app .text-tertiary {
+    color: var(--tertiary);
+  }
+
+  .ttswap-app .text-transparent {
+    color: #0000;
+  }
+
+  .ttswap-app .text-white {
+    color: var(--color-white);
+  }
+
+  .ttswap-app .text-yellow-500 {
+    color: var(--color-yellow-500);
+  }
+
+  .ttswap-app .text-yellow-600 {
+    color: var(--color-yellow-600);
+  }
+
+  .ttswap-app .text-yellow-800 {
+    color: var(--color-yellow-800);
+  }
+
+  .ttswap-app .italic {
+    font-style: italic;
+  }
+
+  .ttswap-app .underline-offset-4 {
+    text-underline-offset: 4px;
+  }
+
+  .ttswap-app .opacity-0 {
+    opacity: 0;
+  }
+
+  .ttswap-app .opacity-5 {
+    opacity: .05;
+  }
+
+  .ttswap-app .opacity-20 {
+    opacity: .2;
+  }
+
+  .ttswap-app .opacity-50 {
+    opacity: .5;
+  }
+
+  .ttswap-app .opacity-90 {
+    opacity: .9;
+  }
+
+  .ttswap-app .opacity-100 {
+    opacity: 1;
+  }
+
+  .ttswap-app .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a), 0 4px 6px -4px var(--tw-shadow-color, #0000001a);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+
+  .ttswap-app .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, #0000001a), 0 2px 4px -2px var(--tw-shadow-color, #0000001a);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+
+  .ttswap-app .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, #0000001a), 0 1px 2px -1px var(--tw-shadow-color, #0000001a);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+
+  .ttswap-app .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, #0000001a), 0 8px 10px -6px var(--tw-shadow-color, #0000001a);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+
+  .ttswap-app .outline-hidden {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+
+  @media (forced-colors: active) {
+    .ttswap-app .outline-hidden {
+      outline-offset: 2px;
+      outline: 2px solid #0000;
+    }
+  }
+
+  .ttswap-app .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+
+  .ttswap-app .blur-2xl {
+    --tw-blur: blur(var(--blur-2xl));
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+  }
+
+  .ttswap-app .blur-3xl {
+    --tw-blur: blur(var(--blur-3xl));
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+  }
+
+  .ttswap-app .backdrop-blur-sm {
+    --tw-backdrop-blur: blur(var(--blur-sm));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+    backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+  }
+
+  .ttswap-app .backdrop-blur-xl {
+    --tw-backdrop-blur: blur(var(--blur-xl));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+    backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+  }
+
+  .ttswap-app .transition-\[color\,box-shadow\] {
+    transition-property: color, box-shadow;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+
+  .ttswap-app .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+
+  .ttswap-app .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+
+  .ttswap-app .transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+
+  .ttswap-app .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+
+  .ttswap-app .duration-200 {
+    --tw-duration: .2s;
+    transition-duration: .2s;
+  }
+
+  .ttswap-app .duration-300 {
+    --tw-duration: .3s;
+    transition-duration: .3s;
+  }
+
+  .ttswap-app .duration-500 {
+    --tw-duration: .5s;
+    transition-duration: .5s;
+  }
+
+  .ttswap-app .outline-none {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+
+  .ttswap-app .select-none {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:w-full:is(:where(.group):hover *) {
+      width: 100%;
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:translate-x-1:is(:where(.group):hover *) {
+      --tw-translate-x: calc(var(--spacing) * 1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:-translate-y-1:is(:where(.group):hover *) {
+      --tw-translate-y: calc(var(--spacing) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:scale-105:is(:where(.group):hover *) {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:scale-110:is(:where(.group):hover *) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:border-green-500\/20:is(:where(.group):hover *) {
+      border-color: color-mix(in srgb, oklch(.723 .219 149.579) 20%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:border-green-500\/20:is(:where(.group):hover *) {
+        border-color: color-mix(in oklab, var(--color-green-500) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:border-green-500\/30:is(:where(.group):hover *) {
+      border-color: color-mix(in srgb, oklch(.723 .219 149.579) 30%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:border-green-500\/30:is(:where(.group):hover *) {
+        border-color: color-mix(in oklab, var(--color-green-500) 30%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:border-primary\/30:is(:where(.group):hover *) {
+      border-color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:border-primary\/30:is(:where(.group):hover *) {
+        border-color: color-mix(in oklab, var(--primary) 30%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:border-red-500\/20:is(:where(.group):hover *) {
+      border-color: color-mix(in srgb, oklch(.637 .237 25.331) 20%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:border-red-500\/20:is(:where(.group):hover *) {
+        border-color: color-mix(in oklab, var(--color-red-500) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:border-red-500\/30:is(:where(.group):hover *) {
+      border-color: color-mix(in srgb, oklch(.637 .237 25.331) 30%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:border-red-500\/30:is(:where(.group):hover *) {
+        border-color: color-mix(in oklab, var(--color-red-500) 30%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:border-secondary\/20:is(:where(.group):hover *) {
+      border-color: var(--secondary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:border-secondary\/20:is(:where(.group):hover *) {
+        border-color: color-mix(in oklab, var(--secondary) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:border-secondary\/30:is(:where(.group):hover *) {
+      border-color: var(--secondary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:border-secondary\/30:is(:where(.group):hover *) {
+        border-color: color-mix(in oklab, var(--secondary) 30%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:bg-accent\/20:is(:where(.group):hover *) {
+      background-color: var(--accent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:bg-accent\/20:is(:where(.group):hover *) {
+        background-color: color-mix(in oklab, var(--accent) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:bg-background\/70:is(:where(.group):hover *) {
+      background-color: var(--background);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:bg-background\/70:is(:where(.group):hover *) {
+        background-color: color-mix(in oklab, var(--background) 70%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:bg-green-200:is(:where(.group):hover *) {
+      background-color: var(--color-green-200);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:bg-green-500\/20:is(:where(.group):hover *) {
+      background-color: color-mix(in srgb, oklch(.723 .219 149.579) 20%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:bg-green-500\/20:is(:where(.group):hover *) {
+        background-color: color-mix(in oklab, var(--color-green-500) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:bg-green-600:is(:where(.group):hover *) {
+      background-color: var(--color-green-600);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:bg-primary\/20:is(:where(.group):hover *) {
+      background-color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:bg-primary\/20:is(:where(.group):hover *) {
+        background-color: color-mix(in oklab, var(--primary) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:bg-purple-200:is(:where(.group):hover *) {
+      background-color: var(--color-purple-200);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:bg-red-500\/20:is(:where(.group):hover *) {
+      background-color: color-mix(in srgb, oklch(.637 .237 25.331) 20%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:bg-red-500\/20:is(:where(.group):hover *) {
+        background-color: color-mix(in oklab, var(--color-red-500) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:bg-red-600:is(:where(.group):hover *) {
+      background-color: var(--color-red-600);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:bg-secondary\/20:is(:where(.group):hover *) {
+      background-color: var(--secondary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:bg-secondary\/20:is(:where(.group):hover *) {
+        background-color: color-mix(in oklab, var(--secondary) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:bg-tertiary\/20:is(:where(.group):hover *) {
+      background-color: var(--tertiary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:bg-tertiary\/20:is(:where(.group):hover *) {
+        background-color: color-mix(in oklab, var(--tertiary) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:text-accent\/90:is(:where(.group):hover *) {
+      color: var(--accent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:text-accent\/90:is(:where(.group):hover *) {
+        color: color-mix(in oklab, var(--accent) 90%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:text-foreground\/70:is(:where(.group):hover *) {
+      color: var(--foreground);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:text-foreground\/70:is(:where(.group):hover *) {
+        color: color-mix(in oklab, var(--foreground) 70%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:text-foreground\/80:is(:where(.group):hover *) {
+      color: var(--foreground);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:text-foreground\/80:is(:where(.group):hover *) {
+        color: color-mix(in oklab, var(--foreground) 80%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:text-primary\/80:is(:where(.group):hover *) {
+      color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:text-primary\/80:is(:where(.group):hover *) {
+        color: color-mix(in oklab, var(--primary) 80%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:text-primary\/90:is(:where(.group):hover *) {
+      color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:text-primary\/90:is(:where(.group):hover *) {
+        color: color-mix(in oklab, var(--primary) 90%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:text-secondary\/90:is(:where(.group):hover *) {
+      color: var(--secondary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\:text-secondary\/90:is(:where(.group):hover *) {
+        color: color-mix(in oklab, var(--secondary) 90%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:opacity-100:is(:where(.group):hover *) {
+      opacity: 1;
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:shadow-lg:is(:where(.group):hover *) {
+      --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a), 0 4px 6px -4px var(--tw-shadow-color, #0000001a);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:shadow-md:is(:where(.group):hover *) {
+      --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, #0000001a), 0 2px 4px -2px var(--tw-shadow-color, #0000001a);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\:shadow-xl:is(:where(.group):hover *) {
+      --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, #0000001a), 0 8px 10px -6px var(--tw-shadow-color, #0000001a);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/calc\:text-foreground\/70:is(:where(.group\/calc):hover *) {
+      color: var(--foreground);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/calc\:text-foreground\/70:is(:where(.group\/calc):hover *) {
+        color: color-mix(in oklab, var(--foreground) 70%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/calc\:text-primary\/80:is(:where(.group\/calc):hover *) {
+      color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/calc\:text-primary\/80:is(:where(.group\/calc):hover *) {
+        color: color-mix(in oklab, var(--primary) 80%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/comparison\:scale-105:is(:where(.group\/comparison):hover *) {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/comparison\:bg-green-500\/10:is(:where(.group\/comparison):hover *) {
+      background-color: color-mix(in srgb, oklch(.723 .219 149.579) 10%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/comparison\:bg-green-500\/10:is(:where(.group\/comparison):hover *) {
+        background-color: color-mix(in oklab, var(--color-green-500) 10%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/comparison\:bg-red-500\/10:is(:where(.group\/comparison):hover *) {
+      background-color: color-mix(in srgb, oklch(.637 .237 25.331) 10%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/comparison\:bg-red-500\/10:is(:where(.group\/comparison):hover *) {
+        background-color: color-mix(in oklab, var(--color-red-500) 10%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/cost\:scale-110:is(:where(.group\/cost):hover *) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/cost\:text-foreground\/80:is(:where(.group\/cost):hover *) {
+      color: var(--foreground);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/cost\:text-foreground\/80:is(:where(.group\/cost):hover *) {
+        color: color-mix(in oklab, var(--foreground) 80%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/flow\:scale-110:is(:where(.group\/flow):hover *) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/flow\:text-accent:is(:where(.group\/flow):hover *) {
+      color: var(--accent);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/flow\:text-foreground\/70:is(:where(.group\/flow):hover *) {
+      color: var(--foreground);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/flow\:text-foreground\/70:is(:where(.group\/flow):hover *) {
+        color: color-mix(in oklab, var(--foreground) 70%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/flow\:text-primary:is(:where(.group\/flow):hover *) {
+      color: var(--primary);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/flow\:text-secondary:is(:where(.group\/flow):hover *) {
+      color: var(--secondary);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/flow\:text-tertiary:is(:where(.group\/flow):hover *) {
+      color: var(--tertiary);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/flow\:shadow-lg:is(:where(.group\/flow):hover *) {
+      --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a), 0 4px 6px -4px var(--tw-shadow-color, #0000001a);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/item\:scale-105:is(:where(.group\/item):hover *) {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/item\:scale-110:is(:where(.group\/item):hover *) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/item\:scale-150:is(:where(.group\/item):hover *) {
+      --tw-scale-x: 150%;
+      --tw-scale-y: 150%;
+      --tw-scale-z: 150%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/item\:text-foreground\/70:is(:where(.group\/item):hover *) {
+      color: var(--foreground);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/item\:text-foreground\/70:is(:where(.group\/item):hover *) {
+        color: color-mix(in oklab, var(--foreground) 70%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/item\:text-foreground\/80:is(:where(.group\/item):hover *) {
+      color: var(--foreground);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/item\:text-foreground\/80:is(:where(.group\/item):hover *) {
+        color: color-mix(in oklab, var(--foreground) 80%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/item\:text-secondary\/80:is(:where(.group\/item):hover *) {
+      color: var(--secondary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/item\:text-secondary\/80:is(:where(.group\/item):hover *) {
+        color: color-mix(in oklab, var(--secondary) 80%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/ratio\:scale-110:is(:where(.group\/ratio):hover *) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/ratio\:border-accent\/40:is(:where(.group\/ratio):hover *) {
+      border-color: var(--accent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/ratio\:border-accent\/40:is(:where(.group\/ratio):hover *) {
+        border-color: color-mix(in oklab, var(--accent) 40%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/ratio\:border-primary\/40:is(:where(.group\/ratio):hover *) {
+      border-color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/ratio\:border-primary\/40:is(:where(.group\/ratio):hover *) {
+        border-color: color-mix(in oklab, var(--primary) 40%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/ratio\:border-secondary\/40:is(:where(.group\/ratio):hover *) {
+      border-color: var(--secondary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/ratio\:border-secondary\/40:is(:where(.group\/ratio):hover *) {
+        border-color: color-mix(in oklab, var(--secondary) 40%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/ratio\:border-tertiary\/40:is(:where(.group\/ratio):hover *) {
+      border-color: var(--tertiary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/ratio\:border-tertiary\/40:is(:where(.group\/ratio):hover *) {
+        border-color: color-mix(in oklab, var(--tertiary) 40%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/ratio\:text-accent:is(:where(.group\/ratio):hover *) {
+      color: var(--accent);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/ratio\:text-primary:is(:where(.group\/ratio):hover *) {
+      color: var(--primary);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/ratio\:text-secondary:is(:where(.group\/ratio):hover *) {
+      color: var(--secondary);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/ratio\:text-tertiary:is(:where(.group\/ratio):hover *) {
+      color: var(--tertiary);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/rule\:scale-105:is(:where(.group\/rule):hover *) {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/rule\:text-foreground\/70:is(:where(.group\/rule):hover *) {
+      color: var(--foreground);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/rule\:text-foreground\/70:is(:where(.group\/rule):hover *) {
+        color: color-mix(in oklab, var(--foreground) 70%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/stat\:scale-105:is(:where(.group\/stat):hover *) {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/stat\:scale-110:is(:where(.group\/stat):hover *) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/stat\:bg-primary\/20:is(:where(.group\/stat):hover *) {
+      background-color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/stat\:bg-primary\/20:is(:where(.group\/stat):hover *) {
+        background-color: color-mix(in oklab, var(--primary) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/stat\:bg-secondary\/20:is(:where(.group\/stat):hover *) {
+      background-color: var(--secondary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/stat\:bg-secondary\/20:is(:where(.group\/stat):hover *) {
+        background-color: color-mix(in oklab, var(--secondary) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/stat\:bg-tertiary\/20:is(:where(.group\/stat):hover *) {
+      background-color: var(--tertiary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/stat\:bg-tertiary\/20:is(:where(.group\/stat):hover *) {
+        background-color: color-mix(in oklab, var(--tertiary) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/stat\:text-foreground\/80:is(:where(.group\/stat):hover *) {
+      color: var(--foreground);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/stat\:text-foreground\/80:is(:where(.group\/stat):hover *) {
+        color: color-mix(in oklab, var(--foreground) 80%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/stat\:opacity-100:is(:where(.group\/stat):hover *) {
+      opacity: 1;
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/step\:scale-110:is(:where(.group\/step):hover *) {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/step\:text-blue-500:is(:where(.group\/step):hover *) {
+      color: var(--color-blue-500);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/step\:text-foreground\/80:is(:where(.group\/step):hover *) {
+      color: var(--foreground);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .group-hover\/step\:text-foreground\/80:is(:where(.group\/step):hover *) {
+        color: color-mix(in oklab, var(--foreground) 80%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/step\:text-green-500:is(:where(.group\/step):hover *) {
+      color: var(--color-green-500);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/step\:text-purple-500:is(:where(.group\/step):hover *) {
+      color: var(--color-purple-500);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/step\:opacity-100:is(:where(.group\/step):hover *) {
+      opacity: 1;
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .group-hover\/step\:shadow-lg:is(:where(.group\/step):hover *) {
+      --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a), 0 4px 6px -4px var(--tw-shadow-color, #0000001a);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+
+  .ttswap-app .selection\:bg-primary ::selection,
+  .ttswap-app .selection\:bg-primary::selection {
+    background-color: var(--primary);
+  }
+
+  .ttswap-app .selection\:text-primary-foreground ::selection,
+  .ttswap-app .selection\:text-primary-foreground::selection {
+    color: var(--primary-foreground);
+  }
+
+  .ttswap-app .file\:inline-flex::file-selector-button {
+    display: inline-flex;
+  }
+
+  .ttswap-app .file\:h-7::file-selector-button {
+    height: calc(var(--spacing) * 7);
+  }
+
+  .ttswap-app .file\:border-0::file-selector-button {
+    border-style: var(--tw-border-style);
+    border-width: 0;
+  }
+
+  .ttswap-app .file\:bg-transparent::file-selector-button {
+    background-color: #0000;
+  }
+
+  .ttswap-app .file\:text-sm::file-selector-button {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+
+  .ttswap-app .file\:font-medium::file-selector-button {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+
+  .ttswap-app .file\:text-foreground::file-selector-button {
+    color: var(--foreground);
+  }
+
+  .ttswap-app .placeholder\:text-muted-foreground::placeholder {
+    color: var(--muted-foreground);
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:scale-105:hover {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:scale-110:hover {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:scale-\[1\.02\]:hover {
+      scale: 1.02;
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:border-accent\/40:hover {
+      border-color: var(--accent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:border-accent\/40:hover {
+        border-color: color-mix(in oklab, var(--accent) 40%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:border-green-500\/40:hover {
+      border-color: color-mix(in srgb, oklch(.723 .219 149.579) 40%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:border-green-500\/40:hover {
+        border-color: color-mix(in oklab, var(--color-green-500) 40%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:border-primary\/30:hover {
+      border-color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:border-primary\/30:hover {
+        border-color: color-mix(in oklab, var(--primary) 30%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:border-primary\/40:hover {
+      border-color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:border-primary\/40:hover {
+        border-color: color-mix(in oklab, var(--primary) 40%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:border-primary\/50:hover {
+      border-color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:border-primary\/50:hover {
+        border-color: color-mix(in oklab, var(--primary) 50%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:border-red-500\/40:hover {
+      border-color: color-mix(in srgb, oklch(.637 .237 25.331) 40%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:border-red-500\/40:hover {
+        border-color: color-mix(in oklab, var(--color-red-500) 40%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:border-secondary\/40:hover {
+      border-color: var(--secondary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:border-secondary\/40:hover {
+        border-color: color-mix(in oklab, var(--secondary) 40%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:border-tertiary\/40:hover {
+      border-color: var(--tertiary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:border-tertiary\/40:hover {
+        border-color: color-mix(in oklab, var(--tertiary) 40%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-accent:hover {
+      background-color: var(--accent);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-accent\/5:hover {
+      background-color: var(--accent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-accent\/5:hover {
+        background-color: color-mix(in oklab, var(--accent) 5%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-accent\/10:hover {
+      background-color: var(--accent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-accent\/10:hover {
+        background-color: color-mix(in oklab, var(--accent) 10%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-accent\/90:hover {
+      background-color: var(--accent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-accent\/90:hover {
+        background-color: color-mix(in oklab, var(--accent) 90%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-blue-700:hover {
+      background-color: var(--color-blue-700);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-destructive\/90:hover {
+      background-color: var(--destructive);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-destructive\/90:hover {
+        background-color: color-mix(in oklab, var(--destructive) 90%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-green-500\/20:hover {
+      background-color: color-mix(in srgb, oklch(.723 .219 149.579) 20%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-green-500\/20:hover {
+        background-color: color-mix(in oklab, var(--color-green-500) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-green-500\/30:hover {
+      background-color: color-mix(in srgb, oklch(.723 .219 149.579) 30%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-green-500\/30:hover {
+        background-color: color-mix(in oklab, var(--color-green-500) 30%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-muted:hover {
+      background-color: var(--muted);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-muted\/30:hover {
+      background-color: var(--muted);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-muted\/30:hover {
+        background-color: color-mix(in oklab, var(--muted) 30%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-muted\/50:hover {
+      background-color: var(--muted);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-muted\/50:hover {
+        background-color: color-mix(in oklab, var(--muted) 50%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-muted\/80:hover {
+      background-color: var(--muted);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-muted\/80:hover {
+        background-color: color-mix(in oklab, var(--muted) 80%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-primary\/5:hover {
+      background-color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-primary\/5:hover {
+        background-color: color-mix(in oklab, var(--primary) 5%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-primary\/10:hover {
+      background-color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-primary\/10:hover {
+        background-color: color-mix(in oklab, var(--primary) 10%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-primary\/90:hover {
+      background-color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-primary\/90:hover {
+        background-color: color-mix(in oklab, var(--primary) 90%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-red-500\/20:hover {
+      background-color: color-mix(in srgb, oklch(.637 .237 25.331) 20%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-red-500\/20:hover {
+        background-color: color-mix(in oklab, var(--color-red-500) 20%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-red-500\/30:hover {
+      background-color: color-mix(in srgb, oklch(.637 .237 25.331) 30%, transparent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-red-500\/30:hover {
+        background-color: color-mix(in oklab, var(--color-red-500) 30%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-secondary\/5:hover {
+      background-color: var(--secondary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-secondary\/5:hover {
+        background-color: color-mix(in oklab, var(--secondary) 5%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-secondary\/10:hover {
+      background-color: var(--secondary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-secondary\/10:hover {
+        background-color: color-mix(in oklab, var(--secondary) 10%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-secondary\/80:hover {
+      background-color: var(--secondary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-secondary\/80:hover {
+        background-color: color-mix(in oklab, var(--secondary) 80%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-secondary\/90:hover {
+      background-color: var(--secondary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-secondary\/90:hover {
+        background-color: color-mix(in oklab, var(--secondary) 90%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-tertiary\/5:hover {
+      background-color: var(--tertiary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-tertiary\/5:hover {
+        background-color: color-mix(in oklab, var(--tertiary) 5%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:bg-tertiary\/10:hover {
+      background-color: var(--tertiary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:bg-tertiary\/10:hover {
+        background-color: color-mix(in oklab, var(--tertiary) 10%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:text-\[\#26A5E4\]:hover {
+      color: #26a5e4;
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:text-\[\#5865F2\]:hover {
+      color: #5865f2;
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:text-accent-foreground:hover {
+      color: var(--accent-foreground);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:text-blue-800:hover {
+      color: var(--color-blue-800);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:text-foreground:hover {
+      color: var(--foreground);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:text-foreground\/80:hover {
+      color: var(--foreground);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .hover\:text-foreground\/80:hover {
+        color: color-mix(in oklab, var(--foreground) 80%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:text-gray-700:hover {
+      color: var(--color-gray-700);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:text-gray-900:hover {
+      color: var(--color-gray-900);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:text-primary:hover {
+      color: var(--primary);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:text-white:hover {
+      color: var(--color-white);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:underline:hover {
+      text-decoration-line: underline;
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:opacity-90:hover {
+      opacity: .9;
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:shadow-2xl:hover {
+      --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, #00000040);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:shadow-lg:hover {
+      --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a), 0 4px 6px -4px var(--tw-shadow-color, #0000001a);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:shadow-md:hover {
+      --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, #0000001a), 0 2px 4px -2px var(--tw-shadow-color, #0000001a);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .hover\:shadow-xl:hover {
+      --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, #0000001a), 0 8px 10px -6px var(--tw-shadow-color, #0000001a);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+
+  .ttswap-app .focus\:border-primary\/50:focus {
+    border-color: var(--primary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .focus\:border-primary\/50:focus {
+      border-color: color-mix(in oklab, var(--primary) 50%, transparent);
+    }
+  }
+
+  .ttswap-app .focus\:border-secondary\/50:focus {
+    border-color: var(--secondary);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .focus\:border-secondary\/50:focus {
+      border-color: color-mix(in oklab, var(--secondary) 50%, transparent);
+    }
+  }
+
+  .ttswap-app .focus\:bg-accent:focus {
+    background-color: var(--accent);
+  }
+
+  .ttswap-app .focus\:text-accent-foreground:focus {
+    color: var(--accent-foreground);
+  }
+
+  .ttswap-app .focus-visible\:border-ring:focus-visible {
+    border-color: var(--ring);
+  }
+
+  .ttswap-app .focus-visible\:ring-\[3px\]:focus-visible {
+    --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+
+  .ttswap-app .focus-visible\:ring-destructive\/20:focus-visible {
+    --tw-ring-color: var(--destructive);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .focus-visible\:ring-destructive\/20:focus-visible {
+      --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .focus-visible\:ring-ring\/50:focus-visible {
+    --tw-ring-color: var(--ring);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .focus-visible\:ring-ring\/50:focus-visible {
+      --tw-ring-color: color-mix(in oklab, var(--ring) 50%, transparent);
+    }
+  }
+
+  .ttswap-app .focus-visible\:outline-1:focus-visible {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+
+  .ttswap-app .focus-visible\:outline-ring:focus-visible {
+    outline-color: var(--ring);
+  }
+
+  .ttswap-app .disabled\:pointer-events-none:disabled {
+    pointer-events: none;
+  }
+
+  .ttswap-app .disabled\:cursor-not-allowed:disabled {
+    cursor: not-allowed;
+  }
+
+  .ttswap-app .disabled\:opacity-50:disabled {
+    opacity: .5;
+  }
+
+  .ttswap-app .has-data-\[slot\=card-action\]\:grid-cols-\[1fr_auto\]:has([data-slot="card-action"]) {
+    grid-template-columns: 1fr auto;
+  }
+
+  .ttswap-app .has-\[\>svg\]\:px-2\.5:has(> svg) {
+    padding-inline: calc(var(--spacing) * 2.5);
+  }
+
+  .ttswap-app .has-\[\>svg\]\:px-3:has(> svg) {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+
+  .ttswap-app .has-\[\>svg\]\:px-4:has(> svg) {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+
+  .ttswap-app .aria-invalid\:border-destructive[aria-invalid="true"] {
+    border-color: var(--destructive);
+  }
+
+  .ttswap-app .aria-invalid\:ring-destructive\/20[aria-invalid="true"] {
+    --tw-ring-color: var(--destructive);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .aria-invalid\:ring-destructive\/20[aria-invalid="true"] {
+      --tw-ring-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+    }
+  }
+
+  .ttswap-app .data-\[disabled\]\:pointer-events-none[data-disabled] {
+    pointer-events: none;
+  }
+
+  .ttswap-app .data-\[disabled\]\:opacity-50[data-disabled] {
+    opacity: .5;
+  }
+
+  .ttswap-app .data-\[placeholder\]\:text-muted-foreground[data-placeholder] {
+    color: var(--muted-foreground);
+  }
+
+  .ttswap-app .data-\[side\=bottom\]\:translate-y-1[data-side="bottom"] {
+    --tw-translate-y: calc(var(--spacing) * 1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
+  .ttswap-app .data-\[side\=bottom\]\:slide-in-from-top-2[data-side="bottom"] {
+    --tw-enter-translate-y: calc(2 * var(--spacing) * -1);
+  }
+
+  .ttswap-app .data-\[side\=left\]\:-translate-x-1[data-side="left"] {
+    --tw-translate-x: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
+  .ttswap-app .data-\[side\=left\]\:slide-in-from-right-2[data-side="left"] {
+    --tw-enter-translate-x: calc(2 * var(--spacing));
+  }
+
+  .ttswap-app .data-\[side\=right\]\:translate-x-1[data-side="right"] {
+    --tw-translate-x: calc(var(--spacing) * 1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
+  .ttswap-app .data-\[side\=right\]\:slide-in-from-left-2[data-side="right"] {
+    --tw-enter-translate-x: calc(2 * var(--spacing) * -1);
+  }
+
+  .ttswap-app .data-\[side\=top\]\:-translate-y-1[data-side="top"] {
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+
+  .ttswap-app .data-\[side\=top\]\:slide-in-from-bottom-2[data-side="top"] {
+    --tw-enter-translate-y: calc(2 * var(--spacing));
+  }
+
+  .ttswap-app .data-\[size\=default\]\:h-9[data-size="default"] {
+    height: calc(var(--spacing) * 9);
+  }
+
+  .ttswap-app .data-\[size\=sm\]\:h-8[data-size="sm"] {
+    height: calc(var(--spacing) * 8);
+  }
+
+  :is(.\*\:data-\[slot\=select-value\]\:line-clamp-1 > *)[data-slot="select-value"] {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+  }
+
+  :is(.\*\:data-\[slot\=select-value\]\:flex > *)[data-slot="select-value"] {
+    display: flex;
+  }
+
+  :is(.\*\:data-\[slot\=select-value\]\:items-center > *)[data-slot="select-value"] {
+    align-items: center;
+  }
+
+  :is(.\*\:data-\[slot\=select-value\]\:gap-2 > *)[data-slot="select-value"] {
+    gap: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .data-\[state\=active\]\:bg-card[data-state="active"] {
+    background-color: var(--card);
+  }
+
+  .ttswap-app .data-\[state\=closed\]\:animate-out[data-state="closed"] {
+    animation: exit var(--tw-duration, .15s) var(--tw-ease, ease);
+  }
+
+  .ttswap-app .data-\[state\=closed\]\:fade-out-0[data-state="closed"] {
+    --tw-exit-opacity: 0;
+  }
+
+  .ttswap-app .data-\[state\=closed\]\:zoom-out-95[data-state="closed"] {
+    --tw-exit-scale: .95;
+  }
+
+  .ttswap-app .data-\[state\=open\]\:animate-in[data-state="open"] {
+    animation: enter var(--tw-duration, .15s) var(--tw-ease, ease);
+  }
+
+  .ttswap-app .data-\[state\=open\]\:fade-in-0[data-state="open"] {
+    --tw-enter-opacity: 0;
+  }
+
+  .ttswap-app .data-\[state\=open\]\:zoom-in-95[data-state="open"] {
+    --tw-enter-scale: .95;
+  }
+
+  @media (width >=40rem) {
+    .ttswap-app .sm\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (width >=40rem) {
+    .ttswap-app .sm\:flex-row {
+      flex-direction: row;
+    }
+  }
+
+  @media (width >=40rem) {
+    .ttswap-app .sm\:px-6 {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
+
+  @media (width >=40rem) {
+    .ttswap-app .sm\:text-4xl {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+
+  @media (width >=40rem) {
+    .ttswap-app .sm\:text-5xl {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+
+  @media (width >=48rem) {
+    .ttswap-app .md\:flex {
+      display: flex;
+    }
+  }
+
+  @media (width >=48rem) {
+    .ttswap-app .md\:hidden {
+      display: none;
+    }
+  }
+
+  @media (width >=48rem) {
+    .ttswap-app .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (width >=48rem) {
+    .ttswap-app .md\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (width >=48rem) {
+    .ttswap-app .md\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (width >=48rem) {
+    .ttswap-app .md\:flex-row {
+      flex-direction: row;
+    }
+  }
+
+  @media (width >=48rem) {
+    :where(.md\:space-y-0 > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 0) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+
+  @media (width >=48rem) {
+    .ttswap-app .md\:text-sm {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+
+  @media (width >=64rem) {
+    .ttswap-app .lg\:col-span-2 {
+      grid-column: span 2 / span 2;
+    }
+  }
+
+  @media (width >=64rem) {
+    .ttswap-app .lg\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (width >=64rem) {
+    .ttswap-app .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (width >=64rem) {
+    .ttswap-app .lg\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (width >=64rem) {
+    .ttswap-app .lg\:grid-cols-6 {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+  }
+
+  @media (width >=64rem) {
+    .ttswap-app .lg\:gap-16 {
+      gap: calc(var(--spacing) * 16);
+    }
+  }
+
+  @media (width >=64rem) {
+    .ttswap-app .lg\:px-8 {
+      padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+
+  @media (width >=64rem) {
+    .ttswap-app .lg\:text-left {
+      text-align: left;
+    }
+  }
+
+  @media (width >=64rem) {
+    .ttswap-app .lg\:text-3xl {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+
+  @media (width >=64rem) {
+    .ttswap-app .lg\:text-5xl {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+
+  @media (width >=64rem) {
+    .ttswap-app .lg\:text-6xl {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+
+  .ttswap-app .dark\:border-input:is(.dark *) {
+    border-color: var(--input);
+  }
+
+  .ttswap-app .dark\:bg-destructive\/60:is(.dark *) {
+    background-color: var(--destructive);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .dark\:bg-destructive\/60:is(.dark *) {
+      background-color: color-mix(in oklab, var(--destructive) 60%, transparent);
+    }
+  }
+
+  .ttswap-app .dark\:bg-input\/30:is(.dark *) {
+    background-color: var(--input);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .dark\:bg-input\/30:is(.dark *) {
+      background-color: color-mix(in oklab, var(--input) 30%, transparent);
+    }
+  }
+
+  .ttswap-app .dark\:text-muted-foreground:is(.dark *) {
+    color: var(--muted-foreground);
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .dark\:hover\:bg-accent\/50:is(.dark *):hover {
+      background-color: var(--accent);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .dark\:hover\:bg-accent\/50:is(.dark *):hover {
+        background-color: color-mix(in oklab, var(--accent) 50%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .ttswap-app .dark\:hover\:bg-input\/50:is(.dark *):hover {
+      background-color: var(--input);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .ttswap-app .dark\:hover\:bg-input\/50:is(.dark *):hover {
+        background-color: color-mix(in oklab, var(--input) 50%, transparent);
+      }
+    }
+  }
+
+  .ttswap-app .dark\:focus-visible\:ring-destructive\/40:is(.dark *):focus-visible {
+    --tw-ring-color: var(--destructive);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .dark\:focus-visible\:ring-destructive\/40:is(.dark *):focus-visible {
+      --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+    }
+  }
+
+  .ttswap-app .dark\:aria-invalid\:ring-destructive\/40:is(.dark *)[aria-invalid="true"] {
+    --tw-ring-color: var(--destructive);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .dark\:aria-invalid\:ring-destructive\/40:is(.dark *)[aria-invalid="true"] {
+      --tw-ring-color: color-mix(in oklab, var(--destructive) 40%, transparent);
+    }
+  }
+
+  .ttswap-app .dark\:data-\[state\=active\]\:border-input:is(.dark *)[data-state="active"] {
+    border-color: var(--input);
+  }
+
+  .ttswap-app .dark\:data-\[state\=active\]\:bg-input\/30:is(.dark *)[data-state="active"] {
+    background-color: var(--input);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ttswap-app .dark\:data-\[state\=active\]\:bg-input\/30:is(.dark *)[data-state="active"] {
+      background-color: color-mix(in oklab, var(--input) 30%, transparent);
+    }
+  }
+
+  .ttswap-app .dark\:data-\[state\=active\]\:text-foreground:is(.dark *)[data-state="active"] {
+    color: var(--foreground);
+  }
+
+  .ttswap-app .\[\&_svg\]\:pointer-events-none svg {
+    pointer-events: none;
+  }
+
+  .ttswap-app .\[\&_svg\]\:shrink-0 svg {
+    flex-shrink: 0;
+  }
+
+  .ttswap-app .\[\&_svg\:not\(\[class\*\=\'size-\'\]\)\]\:size-4 svg:not([class*="size-"]) {
+    width: calc(var(--spacing) * 4);
+    height: calc(var(--spacing) * 4);
+  }
+
+  .ttswap-app .\[\&_svg\:not\(\[class\*\=\'text-\'\]\)\]\:text-muted-foreground svg:not([class*="text-"]) {
+    color: var(--muted-foreground);
+  }
+
+  .ttswap-app .\[\.border-b\]\:pb-6.border-b {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+
+  .ttswap-app .\[\.border-t\]\:pt-6.border-t {
+    padding-top: calc(var(--spacing) * 6);
+  }
+
+  :is(.\*\:\[span\]\:last\:flex > *):is(span):last-child {
+    display: flex;
+  }
+
+  :is(.\*\:\[span\]\:last\:items-center > *):is(span):last-child {
+    align-items: center;
+  }
+
+  :is(.\*\:\[span\]\:last\:gap-2 > *):is(span):last-child {
+    gap: calc(var(--spacing) * 2);
+  }
+
+  .ttswap-app .\[\&\:last-child\]\:pb-6:last-child {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+
+  .ttswap-app .\[\&\>svg\]\:pointer-events-none>svg {
+    pointer-events: none;
+  }
+
+  .ttswap-app .\[\&\>svg\]\:size-3>svg {
+    width: calc(var(--spacing) * 3);
+    height: calc(var(--spacing) * 3);
+  }
+
+  @media (hover: hover) {
+    a.\[a\&\]\:hover\:bg-accent:hover {
+      background-color: var(--accent);
+    }
+  }
+
+  @media (hover: hover) {
+    a.\[a\&\]\:hover\:bg-destructive\/90:hover {
+      background-color: var(--destructive);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      a.\[a\&\]\:hover\:bg-destructive\/90:hover {
+        background-color: color-mix(in oklab, var(--destructive) 90%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    a.\[a\&\]\:hover\:bg-primary\/90:hover {
+      background-color: var(--primary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      a.\[a\&\]\:hover\:bg-primary\/90:hover {
+        background-color: color-mix(in oklab, var(--primary) 90%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    a.\[a\&\]\:hover\:bg-secondary\/90:hover {
+      background-color: var(--secondary);
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      a.\[a\&\]\:hover\:bg-secondary\/90:hover {
+        background-color: color-mix(in oklab, var(--secondary) 90%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    a.\[a\&\]\:hover\:text-accent-foreground:hover {
+      color: var(--accent-foreground);
+    }
+  }
