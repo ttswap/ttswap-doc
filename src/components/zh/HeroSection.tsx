@@ -21,7 +21,6 @@ import {
 import { useState } from "react";
 import { MathFormula } from "./MathFormula";
 
-// import  '../../pages/index.module.css';
 export function HeroSection() {
   const [swapAmount, setSwapAmount] = useState("");
   const [stakeAmount, setStakeAmount] = useState("");

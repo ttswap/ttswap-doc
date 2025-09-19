@@ -160,7 +160,7 @@ export function TokenomicsSection() {
     {
       icon: TrendingUp,
       title: "年度增发",
-      value: "(2亿-已解锁)*0.02",
+      value: "2%*(2亿-已解锁)",
       description: "全部给予流动性提供者",
       color: "text-secondary",
     },
@@ -509,13 +509,13 @@ export function TokenomicsSection() {
                     <Lock className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   <h3 className="text-xl font-semibold group-hover:text-primary/90 transition-colors duration-300">
-                    初始锁定机制
+                    解锁机制
                   </h3>
                 </div>
                 <div className="relative space-y-4">
                   <div className="p-4 bg-primary-soft rounded-lg border border-primary/20 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 group/item">
                     <h4 className="font-semibold text-primary mb-2 group-hover/item:scale-105 transition-transform duration-300">
-                      配置要求
+                      解锁要求
                     </h4>
                     <ul className="text-sm space-y-2">
                       <li className="flex items-center space-x-2 group-hover/item:text-foreground/80 transition-colors duration-300">

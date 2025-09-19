@@ -24,7 +24,7 @@ export default function Home(): ReactNode {
       wrapperClassName="ttswap-docusaurus-wrapper"
     >
       <div className="ttswap-app">
-        <main>
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           {/* First Screen - Hero with Features and Trading Interface */}
           <HeroSection />
 

@@ -20,82 +20,82 @@ export function LiquidityBenefitsSection() {
   const benefits = [
     {
       icon: TrendingUp,
-      title: "Liquidity Amplification",
-      subtitle: "Multiple Fee Commission",
+      title: "Liquidity Amplification Mechanism",
+      subtitle: "Multi-fold fee commission",
       description:
-        "Innovative liquidity amplification mechanism allows single liquidity to earn multiple fee rewards, maximizing your capital efficiency",
+        "Innovative liquidity amplification mechanism allows single liquidity to earn multi-fold fee returns, maximizing your capital efficiency",
       features: [
-        "2-5x Liquidity Amplification",
-        "Smart Commission Algorithm",
-        "Real-time Yield Calculation",
-        "No Additional Collateral",
+        "2-5x liquidity amplification",
+        "Smart commission algorithm",
+        "Real-time yield calculation",
+        "No additional collateral required",
       ],
       color: "primary",
       multiplier: "2-63x",
-      highlight: "Up to 63x Amplification",
+      highlight: "Up to 63x amplification",
     },
     {
       icon: Coins,
-      title: "Auto TTS Token Mining",
-      subtitle: "Governance Token Rewards",
+      title: "Automatic TTS Token Mining",
+      subtitle: "Earn governance token rewards",
       description:
-        "Automatically participate in TTS token mining by providing liquidity, earn platform governance token rewards and enjoy protocol growth dividends",
+        "Providing liquidity automatically participates in TTS token mining, earning platform governance token rewards and enjoying protocol growth dividends",
       features: [
-        "Automatic Mining Rewards",
-        "Governance Rights Access",
-        "Staking Yield Stacking",
-        "Long-term Value Growth",
+        "Automatic mining rewards",
+        "Governance rights acquisition",
+        "Staking yield stacking",
+        "Long-term value growth",
       ],
       color: "secondary",
       multiplier: "TTS",
-      highlight: "Passive Yield Growth",
+      highlight: "Passive yield growth",
     },
     {
       icon: Gift,
-      title: "Auto Project Airdrops",
-      subtitle: "Ecosystem Rewards Auto-Claim",
+      title: "Automatic Project Airdrops",
+      subtitle: "Ecosystem rewards auto-collection",
       description:
         "Liquidity providers automatically qualify for partner project airdrops, enjoying ecosystem project rewards without additional operations",
       features: [
-        "Partner Project Airdrops",
-        "Ecosystem Reward Access",
-        "No Additional Operations",
-        "Multiple Yield Stacking",
+        "Partner project airdrops",
+        "Ecosystem reward collection",
+        "No additional operations required",
+        "Multiple yield stacking",
       ],
       color: "accent",
-      multiplier: "Airdrop",
-      highlight: "Extra Surprise Yields",
+      multiplier: "Airdrops",
+      highlight: "Extra surprise yields",
     },
   ];
 
   const stats = [
     {
-      label: "Average APY Increase",
+      label: "Average APY Improvement",
       value: "150%+",
       icon: TrendingUp,
       color: "primary",
-      description: "vs Traditional AMMs",
+      description: "vs Traditional AMM",
     },
     {
       label: "Active Liquidity Providers",
       value: "50K+",
       icon: Users,
       color: "secondary",
-      description: "Community Members",
+      description: "Active users count",
     },
     {
       label: "Total Rewards Distributed",
       value: "$10M+",
       icon: Coins,
       color: "tertiary",
-      description: "Total Reward Value",
+      description: "Total reward value",
     },
     {
       label: "Partner Projects",
       value: "25+",
       icon: Gift,
       color: "accent",
-      description: "Ecosystem Partners",
+      description: "Ecosystem partners",
     },
   ];
 
@@ -103,29 +103,25 @@ export function LiquidityBenefitsSection() {
     {
       icon: Target,
       title: "Precise Yield Calculation",
-      description:
-        "Real-time expected yield display with transparent reward distribution mechanism",
+      description: "Real-time display of expected returns with transparent yield distribution mechanism",
       color: "primary",
     },
     {
       icon: Award,
       title: "Tiered Reward System",
-      description:
-        "Earn different tier bonuses based on your liquidity contribution level",
+      description: "Different tier additional rewards based on liquidity contribution",
       color: "secondary",
     },
     {
       icon: PiggyBank,
       title: "Compound Growth Mechanism",
-      description:
-        "Automatic reward reinvestment for long-term compound growth benefits",
+      description: "Rewards auto-compound for long-term compound growth benefits",
       color: "tertiary",
     },
     {
       icon: Rocket,
-      title: "Early Participant Rewards",
-      description:
-        "Early liquidity providers enjoy additional bootstrap incentives",
+      title: "Early Participation Rewards",
+      description: "Early liquidity providers enjoy additional launch rewards",
       color: "accent",
     },
   ];
@@ -151,14 +147,12 @@ export function LiquidityBenefitsSection() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
             Maximize Your
             <span className="text-gradient mx-3">
-              Liquidity Returns
+              Liquidity Yield
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            TTSwap not only eliminates impermanent loss but also
-            significantly enhances comprehensive yield rates for
-            liquidity providers through innovative mechanisms,
-            maximizing the value of every unit of liquidity
+            TTSwap not only eliminates volatility losses but also significantly enhances the overall return on liquidity provision through innovative mechanisms,
+            allowing every unit of liquidity to achieve its maximum value
           </p>
         </div>
 
@@ -306,9 +300,7 @@ export function LiquidityBenefitsSection() {
               Multiple Yield Enhancement Mechanisms
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Through multi-tier yield optimization strategies,
-              ensuring liquidity providers achieve maximum
-              returns
+              Through multi-tiered yield optimization strategies, ensure liquidity providers receive maximum returns
             </p>
           </div>
         </div>
@@ -366,16 +358,12 @@ export function LiquidityBenefitsSection() {
 
           <div className="relative">
             <h3 className="text-2xl font-bold mb-4 group-hover:text-primary/90 transition-colors duration-300">
-              Start Earning
-              <span className="text-gradient mx-2">
-                High Yields
-              </span>
-              Now
+              Start Now
+              <span className="text-gradient mx-2">High Yield</span>
+              Liquidity Mining
             </h3>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto group-hover:text-foreground/80 transition-colors duration-300">
-              Join TTSwap ecosystem and enjoy multiple yield
-              stacking, maximizing returns on every unit of your
-              liquidity
+              Join the TTSwap ecosystem, enjoy multiple yield stacking, and maximize your return on every unit of liquidity
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -383,7 +371,7 @@ export function LiquidityBenefitsSection() {
                 className="bg-primary hover:bg-primary/90 px-8 hover:scale-105 transition-all duration-300"
               >
                 <Zap className="mr-2 h-5 w-5" />
-                Start Providing Liquidity
+                Provide Liquidity
               </Button>
               <Button
                 size="lg"
