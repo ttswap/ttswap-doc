@@ -1,4 +1,4 @@
-import { Card } from "./ui/card";
+import { Card } from "../ui/card";
 import {
   BarChart,
   Bar,
@@ -38,11 +38,11 @@ export function CostReductionSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            How We Reduce{" "}
-            <span className="text-gradient">50% Trading Costs</span>
+            我们如果降低{" "}
+            <span className="text-gradient">50%交易成本</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Through direct trading and gas fee optimization innovations, achieving revolutionary cost optimization
+            通过直接交易和燃料费优化创新 实现革命性的成本优化
           </p>
         </div>
 
@@ -59,9 +59,9 @@ export function CostReductionSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">
-                    Direct Token Trading Reduces 50% Service Fees
+                    直接代币交易减少50%服务费
                   </h3>
-                  <p className="text-sm text-primary">Method 1</p>
+                  <p className="text-sm text-primary">方法一</p>
                 </div>
               </div>
 
@@ -69,7 +69,7 @@ export function CostReductionSection() {
                 {/* Traditional Path */}
                 <div className="p-4 bg-red-500/10 rounded-lg border border-red-500/20 group-hover:bg-red-500/20 group-hover:border-red-500/30 transition-all duration-300">
                   <div className="text-sm text-red-400 mb-3 font-semibold">
-                    Traditional DEX Path
+                    传统DEX路径
                   </div>
                   <div className="flex items-center justify-between text-xs">
                     <span className="bg-red-500/20 px-2 py-1 rounded hover:bg-red-500/30 transition-colors duration-200">
@@ -95,20 +95,20 @@ export function CostReductionSection() {
                     </span>
                   </div>
                   <div className="text-xs text-red-400 mt-2 font-medium">
-                    Multiple Hops = Higher Fees (0.1% × 3 = 0.3%)
+                    多次跳转 = 更高手续费 (0.1% × 3 = 0.3%)
                   </div>
                 </div>
 
                 <div className="flex justify-center">
                   <div className="text-primary font-bold px-3 py-1 rounded-full bg-primary/10 border border-primary/20 animate-pulse-soft">
-                    VS
+                    对比
                   </div>
                 </div>
 
                 {/* TTSwap Direct */}
                 <div className="p-4 bg-green-500/10 rounded-lg border border-green-500/20 group-hover:bg-green-500/20 group-hover:border-green-500/30 transition-all duration-300">
                   <div className="text-sm text-green-400 mb-3 font-semibold">
-                    TTSwap Direct Path
+                    TTSwap直接路径
                   </div>
                   <div className="flex items-center justify-center space-x-4 text-xs">
                     <span className="bg-green-500/20 px-3 py-2 rounded hover:bg-green-500/30 hover:scale-105 transition-all duration-200">
@@ -120,20 +120,20 @@ export function CostReductionSection() {
                     </span>
                   </div>
                   <div className="text-xs text-green-400 mt-2 text-center font-medium">
-                    Direct Exchange = Lower Fees (0.1%)
+                    直接兑换 = 更低手续费 (0.1%)
                   </div>
                 </div>
               </div>
 
               <div className="bg-primary/10 p-4 rounded-lg border border-primary/20 group-hover:bg-primary/20 group-hover:border-primary/30 transition-all duration-300">
                 <div className="text-sm font-semibold text-primary mb-1">
-                  Service Fee Reduction:
+                  服务费降低：
                 </div>
                 <div className="text-2xl font-bold text-primary group-hover:scale-105 transition-transform duration-300">
-                  67% Lower
+                  降低67%
                 </div>
                 <div className="text-xs text-muted-foreground group-hover:text-foreground/80 transition-colors duration-300">
-                  Each trade reduced from 0.3% to 0.1%
+                  每次交易从0.3%降至0.1%
                 </div>
               </div>
             </div>
@@ -151,10 +151,10 @@ export function CostReductionSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">
-                    Simple Calculations Reduce 50% Gas Fees
+                    计算简单减少50%Gas费
                   </h3>
                   <p className="text-sm text-secondary">
-                    Method 2
+                    方法二
                   </p>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export function CostReductionSection() {
               <div className="space-y-4">
                 <div className="bg-background/50 p-4 rounded-lg border border-white/10 group-hover:bg-background/70 group-hover:border-secondary/20 transition-all duration-300">
                   <h5 className="font-semibold mb-3">
-                    Gas Cost Comparison
+                    Gas成本对比
                   </h5>
                   <ResponsiveContainer
                     width="100%"
@@ -195,7 +195,7 @@ export function CostReductionSection() {
                       $5
                     </div>
                     <div className="text-xs text-muted-foreground group-hover/cost:text-foreground/80 transition-colors duration-300">
-                      Traditional DEX
+                      传统DEX
                     </div>
                   </div>
                   <div className="bg-green-500/10 p-3 rounded-lg border border-green-500/20 text-center hover:bg-green-500/20 hover:scale-105 transition-all duration-300 group/cost">
@@ -211,13 +211,13 @@ export function CostReductionSection() {
 
               <div className="bg-secondary/10 p-4 rounded-lg border border-secondary/20 group-hover:bg-secondary/20 group-hover:border-secondary/30 transition-all duration-300">
                 <div className="text-sm font-semibold text-secondary mb-1">
-                  Gas Fee Savings:
+                  燃料费节省：
                 </div>
                 <div className="text-2xl font-bold text-secondary group-hover:scale-105 transition-transform duration-300">
-                  60% Lower
+                  降低60%
                 </div>
                 <div className="text-xs text-muted-foreground group-hover:text-foreground/80 transition-colors duration-300">
-                  Optimized smart contract execution
+                  优化智能合约执行
                 </div>
               </div>
             </div>
@@ -231,25 +231,25 @@ export function CostReductionSection() {
 
           <div className="relative text-center space-y-6">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Total Cost Savings
+              总成本节省
             </h3>
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4 group/comparison">
                 <h4 className="font-semibold text-red-400 group-hover/comparison:scale-105 transition-transform duration-300">
-                  Traditional DEX
+                  传统DEX
                 </h4>
                 <div className="space-y-2 text-sm bg-red-500/5 p-4 rounded-lg border border-red-500/10 group-hover/comparison:bg-red-500/10 transition-all duration-300">
                   <div className="flex justify-between hover:text-foreground/80 transition-colors duration-200">
-                    <span>Service Fee (0.3%)</span>
+                    <span>服务费 (0.3%)</span>
                     <span>$3.00</span>
                   </div>
                   <div className="flex justify-between hover:text-foreground/80 transition-colors duration-200">
-                    <span>Gas Fee</span>
+                    <span>燃料费</span>
                     <span>$5.00</span>
                   </div>
                   <div className="border-t border-white/20 pt-2 flex justify-between font-bold text-red-400 group-hover/comparison:scale-105 transition-transform duration-300">
-                    <span>Total</span>
+                    <span>总计</span>
                     <span>$8.00</span>
                   </div>
                 </div>
@@ -261,15 +261,15 @@ export function CostReductionSection() {
                 </h4>
                 <div className="space-y-2 text-sm bg-green-500/5 p-4 rounded-lg border border-green-500/10 group-hover/comparison:bg-green-500/10 transition-all duration-300">
                   <div className="flex justify-between hover:text-foreground/80 transition-colors duration-200">
-                    <span>Service Fee (0.1%)</span>
+                    <span>服务费 (0.1%)</span>
                     <span>$1.00</span>
                   </div>
                   <div className="flex justify-between hover:text-foreground/80 transition-colors duration-200">
-                    <span>Gas Fee</span>
+                    <span>燃料费</span>
                     <span>$2.00</span>
                   </div>
                   <div className="border-t border-white/20 pt-2 flex justify-between font-bold text-green-400 group-hover/comparison:scale-105 transition-transform duration-300">
-                    <span>Total</span>
+                    <span>总计</span>
                     <span>$3.00</span>
                   </div>
                 </div>
@@ -279,15 +279,15 @@ export function CostReductionSection() {
             <div className="bg-gradient-to-r from-primary to-secondary p-6 rounded-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-500 animate-pulse-soft">
               <div className="text-white">
                 <div className="text-3xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300">
-                  75% Total Savings
+                  总共节省75%
                 </div>
                 <div className="text-sm opacity-90 group-hover:opacity-100 transition-opacity duration-300">
-                  Save $5 on every $1000 trade
+                  每1000美元交易节省5美元
                 </div>
                 <div className="mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="flex items-center justify-center text-xs bg-white/20 rounded-full px-3 py-1">
                     <Zap className="w-3 h-3 mr-1" />
-                    Experience Savings Now
+                    立即体验节省
                   </div>
                 </div>
               </div>

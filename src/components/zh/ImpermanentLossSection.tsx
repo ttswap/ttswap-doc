@@ -1,4 +1,4 @@
-import { Card } from "./ui/card";
+import { Card } from "../ui/card";
 import {
   LineChart,
   Line,
@@ -29,12 +29,12 @@ export function ImpermanentLossSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            How We Guarantee{" "}
-            <span className="text-gradient">Zero Impermanent Loss</span>
+            我们如何保障{" "}
+            <span className="text-gradient">零无常损失</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Revolutionary fund pool architecture completely eliminates
-            the impermanent loss problem that plagued traditional AMM protocols
+            革命性的资金池架构完全消除了
+            困扰传统AMM协议的无常损失问题
           </p>
         </div>
 
@@ -51,40 +51,40 @@ export function ImpermanentLossSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">
-                    Traditional AMM
+                    传统AMM
                   </h3>
                   <p className="text-sm text-red-400">
-                    Impermanent Loss Risk
+                    无常损失风险
                   </p>
                 </div>
               </div>
 
               <div className="space-y-4">
                 <p className="text-sm text-muted-foreground">
-                  When token prices deviate from their initial ratio, liquidity providers
-                  lose value compared to simply holding tokens separately.
+                  当代币价格偏离其初始比例时，流动性提供者
+                  相比单独持有代币会损失价值。
                 </p>
 
                 <div className="bg-red-500/10 p-4 rounded-lg border border-red-500/20 group-hover:bg-red-500/20 group-hover:border-red-500/30 transition-all duration-300">
                   <h5 className="font-semibold text-red-400 mb-2">
-                    Example Scenario:
+                    示例场景：
                   </h5>
                   <ul className="space-y-1 text-sm text-muted-foreground">
                     <li className="hover:text-foreground/80 transition-colors duration-200">
-                      • Token A Price: $100 → $200 (+100%)
+                      • 代币A价格：$100 → $200 (+100%)
                     </li>
                     <li className="hover:text-foreground/80 transition-colors duration-200">
-                      • Token B Price: $100 → $50 (-50%)
+                      • 代币B价格：$100 → $50 (-50%)
                     </li>
                     <li className="hover:text-foreground/80 transition-colors duration-200 font-medium text-red-400">
-                      • Impermanent Loss: ~20%
+                      • 无常损失：约20%
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-background/50 p-4 rounded-lg border border-white/10 group-hover:bg-background/70 group-hover:border-red-500/20 transition-all duration-300">
                   <h5 className="font-semibold mb-2">
-                    Loss Visualization
+                    损失可视化
                   </h5>
                   <ResponsiveContainer
                     width="100%"
@@ -119,41 +119,41 @@ export function ImpermanentLossSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">
-                    TTSwap Protocol
+                    TTSwap协议
                   </h3>
                   <p className="text-sm text-green-400">
-                    Zero Impermanent Loss
+                    零无常损失
                   </p>
                 </div>
               </div>
 
               <div className="space-y-4">
                 <p className="text-sm text-muted-foreground">
-                  Our constant value algorithm maintains proportional value
-                  regardless of price fluctuations, completely eliminating impermanent loss.
+                  我们的恒定价值算法无论价格如何波动
+                  都能维持比例价值，完全消除无常损失。
                 </p>
 
                 <div className="bg-green-500/10 p-4 rounded-lg border border-green-500/20 group-hover:bg-green-500/20 group-hover:border-green-500/30 transition-all duration-300">
                   <h5 className="font-semibold text-green-400 mb-2">
-                    Example Scenario:
+                    示例场景：
                   </h5>
                   <ul className="space-y-1 text-sm text-muted-foreground">
                     <li className="flex items-center space-x-2 hover:text-foreground/80 transition-colors duration-200">
                       <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
                       <span>
-                        Initial Deposit: 100 Token A, 200 Token B
+                        投资代币时:代币A 100 个,代币B 200个
                       </span>
                     </li>
                     <li className="flex items-center space-x-2 hover:text-foreground/80 transition-colors duration-200">
                       <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
                       <span>
-                        Withdrawal: 100 Token A, 200 Token B
+                        撤资代币时:代币A 100个,代币B 200个
                       </span>
                     </li>
                     <li className="flex items-center space-x-2 hover:text-foreground/80 transition-colors duration-200 font-medium text-green-400">
                       <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
                       <span>
-                        Additional Yield: 10 Token A, 15 Token B
+                        撤资收益: 代币A 10个,代币B 15个
                       </span>
                     </li>
                   </ul>
@@ -161,7 +161,7 @@ export function ImpermanentLossSection() {
 
                 <div className="bg-background/50 p-4 rounded-lg border border-white/10 group-hover:bg-background/70 group-hover:border-green-500/20 transition-all duration-300">
                   <h5 className="font-semibold mb-2">
-                    Zero Loss Protection
+                    零损失保障
                   </h5>
                   <ResponsiveContainer
                     width="100%"
@@ -196,7 +196,7 @@ export function ImpermanentLossSection() {
 
           <div className="relative text-center space-y-6">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-green-500 bg-clip-text text-transparent">
-              Technical Implementation
+              技术实现
             </h3>
 
             <div className="grid md:grid-cols-3 gap-6">
@@ -207,15 +207,15 @@ export function ImpermanentLossSection() {
                   </span>
                 </div>
                 <h4 className="font-semibold group-hover/step:text-blue-500 transition-colors duration-300">
-                  Value Tracking
+                  价值追踪
                 </h4>
                 <p className="text-sm text-muted-foreground group-hover/step:text-foreground/80 transition-colors duration-300">
-                  Real-time continuous monitoring of total pool value
+                  实时持续监控资金池总价值
                 </p>
                 <div className="opacity-0 group-hover/step:opacity-100 transition-opacity duration-300">
                   <div className="inline-flex items-center text-xs font-medium text-blue-500">
                     <CheckCircle className="w-3 h-3 mr-1" />
-                    Real-time Monitoring
+                    实时监控
                   </div>
                 </div>
               </div>
@@ -230,15 +230,15 @@ export function ImpermanentLossSection() {
                   </span>
                 </div>
                 <h4 className="font-semibold group-hover/step:text-purple-500 transition-colors duration-300">
-                  Dynamic Rebalancing
+                  动态再平衡
                 </h4>
                 <p className="text-sm text-muted-foreground group-hover/step:text-foreground/80 transition-colors duration-300">
-                  Automatically adjust pool ratios to maintain value
+                  自动调整资金池比例以维持价值
                 </p>
                 <div className="opacity-0 group-hover/step:opacity-100 transition-opacity duration-300">
                   <div className="inline-flex items-center text-xs font-medium text-purple-500">
                     <CheckCircle className="w-3 h-3 mr-1" />
-                    Auto Adjustment
+                    自动调整
                   </div>
                 </div>
               </div>
@@ -253,15 +253,15 @@ export function ImpermanentLossSection() {
                   </span>
                 </div>
                 <h4 className="font-semibold group-hover/step:text-green-500 transition-colors duration-300">
-                  Loss Prevention
+                  损失预防
                 </h4>
                 <p className="text-sm text-muted-foreground group-hover/step:text-foreground/80 transition-colors duration-300">
-                  Mathematical guarantee of zero impermanent loss
+                  数学保证零无常损失
                 </p>
                 <div className="opacity-0 group-hover/step:opacity-100 transition-opacity duration-300">
                   <div className="inline-flex items-center text-xs font-medium text-green-500">
                     <CheckCircle className="w-3 h-3 mr-1" />
-                    Zero Loss Guarantee
+                    零损失保障
                   </div>
                 </div>
               </div>

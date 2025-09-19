@@ -1,4 +1,4 @@
-import { Card } from "./ui/card";
+import { Card } from "../ui/card";
 import {
   TrendingDown,
   Shield,
@@ -15,16 +15,16 @@ export function ProblemsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Solving DeFi's{" "}
+            解决DeFi{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Four Major
+              四大
             </span>{" "}
-            Pain Points
+            痛点
           </h2>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            TTSwap addresses the fundamental challenges plaguing traditional decentralized exchanges,
-            delivering unprecedented efficiency and user returns.
+            TTSwap解决了困扰传统去中心化交易所的根本挑战，
+            提供前所未有的效率和用户收益。
           </p>
         </div>
 
@@ -45,17 +45,17 @@ export function ProblemsSection() {
                   50%+
                 </div>
                 <div className="text-lg font-semibold text-foreground mb-3">
-                  Slippage Reduction
+                  滑点减少
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
-                  Innovative algorithms minimize slippage and maximize trading efficiency
+                  创新算法最小化滑点和最大化交易效率
                 </p>
               </div>
 
               {/* Hover indicator */}
               <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="inline-flex items-center text-xs font-medium text-primary">
-                  Learn More
+                  了解更多
                   <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
               </div>
@@ -76,16 +76,16 @@ export function ProblemsSection() {
                   0%
                 </div>
                 <div className="text-lg font-semibold text-foreground mb-3">
-                  Impermanent Loss
+                  无常损失
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
-                  Revolutionary constant value formula completely eliminates AMM impermanent loss
+                  革命性恒定价值公式彻底消除AMM无常损失
                 </p>
               </div>
 
               <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="inline-flex items-center text-xs font-medium text-secondary">
-                  Learn More
+                  了解更多
                   <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
               </div>
@@ -106,16 +106,16 @@ export function ProblemsSection() {
                   90%
                 </div>
                 <div className="text-lg font-semibold text-foreground mb-3">
-                  Gas Savings
+                  Gas节省
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
-                  Significantly reduce transaction fees through optimized contract architecture
+                  通过优化合约架构大幅降低交易手续费
                 </p>
               </div>
 
               <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="inline-flex items-center text-xs font-medium text-tertiary">
-                  Learn More
+                  了解更多
                   <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
               </div>
@@ -136,16 +136,16 @@ export function ProblemsSection() {
                   100%
                 </div>
                 <div className="text-lg font-semibold text-foreground mb-3">
-                  Fair Distribution
+                  公平分配
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
-                  Contribution-based transparent reward mechanism ensures fairness
+                  基于贡献的透明奖励机制确保公平
                 </p>
               </div>
 
               <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="inline-flex items-center text-xs font-medium text-accent">
-                  Learn More
+                  了解更多
                   <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
               </div>

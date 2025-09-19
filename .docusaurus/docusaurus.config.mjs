@@ -53,7 +53,7 @@ export default {
   },
   "presets": [
     [
-      "classic",
+      "@docusaurus/preset-classic",
       {
         "docs": {
           "sidebarPath": "./sidebars.ts",

@@ -1,4 +1,4 @@
-import { Card } from "./ui/card";
+import { Card } from "../ui/card";
 import {
   ArrowDown,
   Layers,
@@ -13,14 +13,14 @@ export function LossReductionSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            How We Reduce{" "}
+            我们如何减少{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              50% Trading Loss
+              50%交易损失
             </span>
           </h2>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Two revolutionary methods to maximize liquidity, enhance trading efficiency, and minimize trading losses
+            两种革命性方法最大化增加流动性,提升交易效率,最大化减少交易损失
           </p>
         </div>
 
@@ -38,15 +38,15 @@ export function LossReductionSection() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold">
-                      Concentrated Liquidity
+                      集中流动性
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Concentrate multi-pool liquidity into a single pool
+                      集中多池流动性到单一池中
                     </p>
                   </div>
                 </div>
                 <div className="ml-auto px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-bold">
-                  Step 1
+                  步骤1
                 </div>
               </div>
 
@@ -54,21 +54,21 @@ export function LossReductionSection() {
                 {/* Before */}
                 <div className="p-5 bg-muted/30 rounded-xl border border-border/50">
                   <div className="text-sm font-medium text-muted-foreground mb-3">
-                    Traditional AMM (Before)
+                    传统AMM（之前）
                   </div>
                   <div className="grid grid-cols-3 gap-2 mb-3">
                     <div className="text-xs bg-red-100 text-red-700 px-3 py-2 rounded-lg text-center font-medium">
-                      Pool A: $1M
+                      池A: 100万美元
                     </div>
                     <div className="text-xs bg-red-100 text-red-700 px-3 py-2 rounded-lg text-center font-medium">
-                      Pool B: $500K
+                      池B: 50万美元
                     </div>
                     <div className="text-xs bg-red-100 text-red-700 px-3 py-2 rounded-lg text-center font-medium">
-                      Pool C: $750K
+                      池C: 75万美元
                     </div>
                   </div>
                   <div className="text-xs text-red-600 mt-3 text-center font-medium">
-                    Fragmented Liquidity = Higher Slippage
+                    流动性分散 = 滑点更高
                   </div>
                 </div>
 
@@ -81,25 +81,25 @@ export function LossReductionSection() {
                 {/* After */}
                 <div className="p-5 bg-muted/30 rounded-xl border border-border/50">
                   <div className="text-sm font-medium text-muted-foreground mb-3">
-                    TTSwap (After)
+                    TTSwap（之后）
                   </div>
                   <div className="flex justify-center">
                     <div className="text-sm bg-green-100 text-green-700 px-6 py-3 rounded-lg text-center font-medium group-hover:scale-105 group-hover:bg-green-200 transition-all duration-300">
-                      Unified Pool: $2.25M
+                      统一池: 225万美元
                     </div>
                   </div>
                   <div className="text-xs text-green-600 mt-3 text-center font-medium">
-                    Concentrated Liquidity = Lower Slippage
+                    集中流动性 = 滑点更低
                   </div>
                 </div>
               </div>
 
               <div className="p-4 bg-primary/10 rounded-xl border border-primary/20">
                 <div className="text-sm font-semibold text-primary mb-2">
-                  Result:
+                  结果：
                 </div>
                 <div className="text-sm text-muted-foreground">
-                  Significantly reduce slippage and trading costs through liquidity aggregation
+                  通过流动性聚合大幅降低滑点和交易成本
                 </div>
               </div>
             </div>
@@ -118,15 +118,15 @@ export function LossReductionSection() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold">
-                      Amplified Liquidity
+                      放大流动性
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Multiply liquidity depth exponentially
+                      成倍放大流动性深度
                     </p>
                   </div>
                 </div>
                 <div className="ml-auto px-3 py-1 rounded-full bg-secondary/20 text-secondary text-xs font-bold">
-                  Step 2
+                  步骤2
                 </div>
               </div>
 
@@ -134,11 +134,11 @@ export function LossReductionSection() {
                 {/* Real Liquidity */}
                 <div className="p-5 bg-muted/30 rounded-xl border border-border/50">
                   <div className="text-sm font-medium text-muted-foreground mb-3">
-                    Real Liquidity
+                    真实流动性
                   </div>
                   <div className="w-full bg-blue-100 h-10 rounded-lg flex items-center justify-center">
                     <span className="text-sm font-semibold text-blue-700">
-                      $1M
+                      100万美元
                     </span>
                   </div>
                 </div>
@@ -146,7 +146,7 @@ export function LossReductionSection() {
                 <div className="flex justify-center items-center">
                   <div className="px-4 py-2 bg-secondary/10 rounded-lg border border-secondary/20 group-hover:bg-secondary/20 transition-all duration-300 animate-pulse-soft">
                     <span className="text-lg font-bold text-secondary">
-                      5x Amplification
+                      5倍放大
                     </span>
                   </div>
                 </div>
@@ -154,11 +154,11 @@ export function LossReductionSection() {
                 {/* Virtual Liquidity */}
                 <div className="p-5 bg-muted/30 rounded-xl border border-border/50">
                   <div className="text-sm font-medium text-muted-foreground mb-3">
-                    Effective Liquidity
+                    有效流动性
                   </div>
                   <div className="w-full bg-purple-100 h-12 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-all duration-300">
                     <span className="text-lg font-bold text-purple-700 group-hover:scale-105 transition-transform duration-300">
-                      $5M
+                      500万美元
                     </span>
                   </div>
                 </div>
@@ -166,10 +166,10 @@ export function LossReductionSection() {
 
               <div className="p-4 bg-secondary/10 rounded-xl border border-secondary/20">
                 <div className="text-sm font-semibold text-secondary mb-2">
-                  Result:
+                  结果：
                 </div>
                 <div className="text-sm text-muted-foreground">
-                  Achieve 5x effective liquidity depth without additional capital requirements
+                  在无需额外资本要求下实现5倍有效流动性深度
                 </div>
               </div>
             </div>
@@ -185,7 +185,7 @@ export function LossReductionSection() {
             <div className="relative">
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold bg-gradient-to-r from-tertiary to-accent bg-clip-text text-transparent">
-                  Liquidity Enhancement (20-2000x)
+                  流动性提升（20-2000倍）
                 </h3>
               </div>
 
@@ -198,10 +198,10 @@ export function LossReductionSection() {
                     50%+
                   </div>
                   <div className="text-sm font-medium text-muted-foreground group-hover/stat:text-foreground/80 transition-colors duration-300">
-                    Slippage Reduction
+                    滑点减少
                   </div>
                   <p className="text-xs text-muted-foreground mt-2 opacity-0 group-hover/stat:opacity-100 transition-opacity duration-300">
-                    Significantly reduce trading slippage through concentrated liquidity
+                    通过集中流动性显著降低交易滑点
                   </p>
                 </div>
 
@@ -213,10 +213,10 @@ export function LossReductionSection() {
                     1-50倍
                   </div>
                   <div className="text-sm font-medium text-muted-foreground group-hover/stat:text-foreground/80 transition-colors duration-300">
-                    Effective Liquidity
+                    有效流动性
                   </div>
                   <p className="text-xs text-muted-foreground mt-2 opacity-0 group-hover/stat:opacity-100 transition-opacity duration-300">
-                    Virtual liquidity amplifies actual available capital depth
+                    虚拟流动性放大实际可用资金深度
                   </p>
                 </div>
 
@@ -228,10 +228,10 @@ export function LossReductionSection() {
                     75%
                   </div>
                   <div className="text-sm font-medium text-muted-foreground group-hover/stat:text-foreground/80 transition-colors duration-300">
-                    Better Price Impact
+                    更好的价格影响
                   </div>
                   <p className="text-xs text-muted-foreground mt-2 opacity-0 group-hover/stat:opacity-100 transition-opacity duration-300">
-                    Large trades have minimal impact on market prices
+                    大额交易对市场价格影响更小
                   </p>
                 </div>
               </div>

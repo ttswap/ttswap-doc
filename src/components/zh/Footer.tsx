@@ -1,5 +1,5 @@
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
 import {
   Github,
   Twitter,
@@ -11,28 +11,28 @@ import {
 export function Footer() {
   const navigation = {
     product: [
-      { name: "Trading", href: "#trade" },
-      { name: "Staking", href: "#stake" },
-      { name: "Governance", href: "#governance" },
-      { name: "Analytics", href: "#analytics" },
+      { name: "交易", href: "#trade" },
+      { name: "质押", href: "#stake" },
+      { name: "治理", href: "#governance" },
+      { name: "分析", href: "#analytics" },
     ],
     resources: [
-      { name: "Documentation", href: "#docs" },
-      { name: "Whitepaper", href: "#whitepaper" },
+      { name: "文档", href: "#docs" },
+      { name: "白皮书", href: "#whitepaper" },
       { name: "API", href: "#api" },
       { name: "SDK", href: "#sdk" },
     ],
     community: [
       { name: "Discord", href: "#discord" },
-      { name: "Forum", href: "#forum" },
-      { name: "Blog", href: "#blog" },
-      { name: "Newsletter", href: "#newsletter" },
+      { name: "论坛", href: "#forum" },
+      { name: "博客", href: "#blog" },
+      { name: "订阅", href: "#newsletter" },
     ],
     company: [
-      { name: "About", href: "#about" },
-      { name: "Careers", href: "#careers" },
-      { name: "Privacy", href: "#privacy" },
-      { name: "Terms", href: "#terms" },
+      { name: "关于", href: "#about" },
+      { name: "招聘", href: "#careers" },
+      { name: "隐私", href: "#privacy" },
+      { name: "条款", href: "#terms" },
     ],
   };
 
@@ -44,7 +44,7 @@ export function Footer() {
       href: "#telegram",
     },
     { name: "Github", icon: Github, href: "#github" },
-    { name: "Documentation", icon: BookOpen, href: "#docs" },
+    { name: "文档", icon: BookOpen, href: "#docs" },
   ];
 
   return (
@@ -53,18 +53,18 @@ export function Footer() {
         {/* Newsletter Section */}
         <div className="py-12 border-b border-border/50">
           <div className="max-w-2xl mx-auto text-center space-y-6">
-            <h3 className="text-2xl font-bold">Subscribe for Updates</h3>
+            <h3 className="text-2xl font-bold">订阅更新</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Get the latest updates on TTSwap development, new features, and ecosystem growth
+              获取TTSwap开发、新功能和生态系统增长的最新更新
             </p>
             <div className="flex max-w-md mx-auto space-x-2">
               <Input
-                placeholder="Enter your email"
+                placeholder="输入您的邮箱"
                 className="bg-background/50 backdrop-blur-sm border-border/50 focus:border-primary/50"
               />
               <Button className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
                 <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-                Subscribe
+                订阅
               </Button>
             </div>
           </div>
@@ -86,7 +86,7 @@ export function Footer() {
                 </span>
               </div>
               <p className="text-muted-foreground max-w-xs leading-relaxed">
-                Revolutionary DeFi protocol that eliminates impermanent loss and reduces trading costs by 50%+ through constant value algorithms.
+                通过恒定价值算法消除无常损失并降低50%+交易成本的革命性DeFi协议。
               </p>
               <div className="flex space-x-3">
                 {socialLinks.map((social) => {
@@ -106,7 +106,7 @@ export function Footer() {
 
             {/* Product Links */}
             <div className="space-y-4">
-              <h4 className="font-semibold">Product</h4>
+              <h4 className="font-semibold">产品</h4>
               <nav className="space-y-2">
                 {navigation.product.map((item) => (
                   <a
@@ -122,7 +122,7 @@ export function Footer() {
 
             {/* Resources Links */}
             <div className="space-y-4">
-              <h4 className="font-semibold">Resources</h4>
+              <h4 className="font-semibold">资源</h4>
               <nav className="space-y-2">
                 {navigation.resources.map((item) => (
                   <a
@@ -138,7 +138,7 @@ export function Footer() {
 
             {/* Community Links */}
             <div className="space-y-4">
-              <h4 className="font-semibold">Community</h4>
+              <h4 className="font-semibold">社区</h4>
               <nav className="space-y-2">
                 {navigation.community.map((item) => (
                   <a
@@ -154,7 +154,7 @@ export function Footer() {
 
             {/* Company Links */}
             <div className="space-y-4">
-              <h4 className="font-semibold">Company</h4>
+              <h4 className="font-semibold">公司</h4>
               <nav className="space-y-2">
                 {navigation.company.map((item) => (
                   <a
@@ -174,10 +174,10 @@ export function Footer() {
         <div className="py-6 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-muted-foreground">
-              © 2024 TTSwap. All rights reserved.
+              © 2024 TTSwap. 保留所有权利。
             </div>
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">
-              {["Privacy Policy", "Terms of Service", "Security"].map((item) => (
+              {["隐私政策", "服务条款", "安全"].map((item) => (
                 <a
                   key={item}
                   href="#"

@@ -38,11 +38,6 @@ export default [
     exact: true
   },
   {
-    path: '/App',
-    component: ComponentCreator('/App', 'eba'),
-    exact: true
-  },
-  {
     path: '/blog',
     component: ComponentCreator('/blog', 'b2f'),
     exact: true
@@ -110,6 +105,11 @@ export default [
   {
     path: '/blog/welcome',
     component: ComponentCreator('/blog/welcome', 'd2b'),
+    exact: true
+  },
+  {
+    path: '/zh/',
+    component: ComponentCreator('/zh/', '5bc'),
     exact: true
   },
   {

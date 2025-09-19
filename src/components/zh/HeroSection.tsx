@@ -1,13 +1,13 @@
-import { Button } from "./ui/button";
-import { Card } from "./ui/card";
-import { Input } from "./ui/input";
+import { Button } from "../ui/button";
+import { Card } from "../ui/card";
+import { Input } from "../ui/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "./ui/select";
+} from "../ui/select";
 import {
   ArrowDownUp,
   Zap,
@@ -20,8 +20,8 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { MathFormula } from "./MathFormula";
-import styles from './Component.module.css';
 
+// import  '../../pages/index.module.css';
 export function HeroSection() {
   const [swapAmount, setSwapAmount] = useState("");
   const [stakeAmount, setStakeAmount] = useState("");
@@ -29,32 +29,32 @@ export function HeroSection() {
   const features = [
     {
       icon: TrendingUp,
-      title: "Reduce 50%+ Trading Loss",
-      subtitle: "Slippage Reduction",
+      title: "减少50%+交易损失",
+      subtitle: "滑点减少",
       color: "text-primary",
       bgColor: "bg-primary/5",
       borderColor: "border-primary/20",
     },
     {
       icon: Shield,
-      title: "Zero Impermanent Loss",
-      subtitle: "Fund Protection",
+      title: "零无常损失",
+      subtitle: "资金保护",
       color: "text-secondary",
       bgColor: "bg-secondary/5",
       borderColor: "border-secondary/20",
     },
     {
       icon: Zap,
-      title: "Lower 50%+ Trading Costs",
-      subtitle: "Fee & Gas Optimization",
+      title: "降低50%+交易成本",
+      subtitle: "手续费与Gas优化",
       color: "text-tertiary",
       bgColor: "bg-tertiary/5",
       borderColor: "border-tertiary/20",
     },
     {
       icon: Users,
-      title: "Universal Participation",
-      subtitle: "Benefits for All",
+      title: "全民参与",
+      subtitle: "人人受益",
       color: "text-accent",
       bgColor: "bg-accent/5",
       borderColor: "border-accent/20",
@@ -62,7 +62,6 @@ export function HeroSection() {
   ];
 
   return (
-    <div className={`${styles['tailwind-scope']} ${styles.wrapper}`}>
     <section className="min-h-screen flex items-center pt-16 pb-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -70,16 +69,16 @@ export function HeroSection() {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6 text-center lg:text-left">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-                Revolutionary{" "}
+                革命性{" "}
                 <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   DeFi
                 </span>{" "}
-                Trading Protocol
+                交易协议
               </h1>
 
               <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-                Constant value algorithm eliminates impermanent loss and reduces trading costs by 50%+.
-                Decentralized trading accessible to everyone.
+                恒定价值算法消除无常损失，降低50%+交易成本。
+                人人都能参与的去中心化交易。
               </p>
             </div>
 
@@ -118,7 +117,7 @@ export function HeroSection() {
                   <Calculator className="h-4 w-4 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  Constant Value Trading Formula
+                  恒定价值交易公式
                 </h3>
               </div>
 
@@ -126,10 +125,10 @@ export function HeroSection() {
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <p className="text-sm font-medium text-muted-foreground">
-                      Calculate value from input quantity
+                      通过输入数量计算价值
                     </p>
                     <div className="px-2 py-1 rounded-md bg-primary/10 text-primary text-xs font-medium">
-                      Formula 1
+                      公式1
                     </div>
                   </div>
                   <div className="p-4 bg-primary/5 rounded-xl border border-primary/20 overflow-x-auto">
@@ -143,10 +142,10 @@ export function HeroSection() {
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <p className="text-sm font-medium text-muted-foreground">
-                      Calculate output quantity from value
+                      通过价值计算输出数量
                     </p>
                     <div className="px-2 py-1 rounded-md bg-secondary/10 text-secondary text-xs font-medium">
-                      Formula 2
+                      公式2
                     </div>
                   </div>
                   <div className="p-4 bg-secondary/5 rounded-xl border border-secondary/20 overflow-x-auto">
@@ -161,14 +160,14 @@ export function HeroSection() {
               <div className="mt-6 p-4 bg-muted/30 rounded-xl border border-border/50">
                 <div className="text-xs text-muted-foreground">
                   <span className="font-medium">
-                    Variable Description:
+                    变量说明：
                   </span>
                   <span className="ml-2">
-                    V: Market Value | Q: Token Quantity | a,b: Token Types
+                    V: 市场价值 | Q: 代币数量 | a,b: 代币种类
                   </span>
                 </div>
                 <p className="text-xs text-muted-foreground mt-2 italic">
-                  Revolutionary algorithm ensures constant value preservation in all trades
+                  革命性算法确保所有交易中的恒定价值保持
                 </p>
               </div>
             </Card>
@@ -183,17 +182,17 @@ export function HeroSection() {
                   <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mr-1">
                     <ArrowDownUp className="h-4 w-4 text-primary" />
                   </div>
-                  Quick Trade
+                  快速交易
                 </h3>
                 <div className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">
-                  Live
+                  实时
                 </div>
               </div>
 
               <div className="space-y-2">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-muted-foreground">
-                    Sell
+                    卖出
                   </label>
                   <div className="flex space-x-0">
                     <Select defaultValue="eth">
@@ -231,7 +230,7 @@ export function HeroSection() {
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-muted-foreground">
-                    Buy
+                    买入
                   </label>
                   <div className="flex space-x-2">
                     <Select defaultValue="usdc">
@@ -257,7 +256,7 @@ export function HeroSection() {
 
                 <div className="flex justify-between text-sm py-2">
                   <span className="text-muted-foreground">
-                    Price Impact
+                    价格影响
                   </span>
                   <span className="text-primary font-medium">
                     ~0.01%
@@ -266,7 +265,7 @@ export function HeroSection() {
 
                 <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <Zap className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                  Trade Now
+                  立即交易
                 </Button>
               </div>
             </Card>
@@ -278,7 +277,7 @@ export function HeroSection() {
                   <div className="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center mr-1">
                     <TrendingUp className="h-4 w-4 text-secondary" />
                   </div>
-                  Quick Stake
+                  快速质押
                 </h3>
                 <div className="text-right">
                   <div className="text-sm text-muted-foreground">
@@ -293,7 +292,7 @@ export function HeroSection() {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-muted-foreground">
-                    Stake Amount
+                    质押数量
                   </label>
                   <div className="flex space-x-2">
                     <Select defaultValue="tts">
@@ -314,14 +313,14 @@ export function HeroSection() {
                     />
                   </div>
                   <div className="text-xs text-muted-foreground">
-                    Balance: 12,345.67 TTS
+                    余额：12,345.67 TTS
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4 py-3">
                   <div>
                     <div className="text-muted-foreground">
-                      Est. Monthly Return
+                      预计月收益
                     </div>
                     <div className="font-medium text-secondary">
                       +245 TTS
@@ -329,21 +328,21 @@ export function HeroSection() {
                   </div>
                   <div>
                     <div className="text-muted-foreground">
-                      Lock Period
+                      锁定期
                     </div>
-                    <div className="font-medium">Flexible</div>
+                    <div className="font-medium">灵活</div>
                   </div>
                 </div>
 
                 <Button className="w-full bg-secondary hover:bg-secondary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <TrendingUp className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                  Start Staking
+                  开始质押
                 </Button>
               </div>
             </Card>
           </div>
         </div>
       </div>
-    </section></div>
+    </section>
   );
 }
