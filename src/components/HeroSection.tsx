@@ -20,7 +20,6 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { MathFormula } from "./MathFormula";
-import styles from './Component.module.css';
 
 export function HeroSection() {
   const [swapAmount, setSwapAmount] = useState("");
@@ -38,7 +37,7 @@ export function HeroSection() {
     {
       icon: Shield,
       title: "Zero Impermanent Loss",
-      subtitle: "Fund Protection",
+      subtitle: "Capital Protection",
       color: "text-secondary",
       bgColor: "bg-secondary/5",
       borderColor: "border-secondary/20",
@@ -54,7 +53,7 @@ export function HeroSection() {
     {
       icon: Users,
       title: "Universal Participation",
-      subtitle: "Benefits for All",
+      subtitle: "Everyone Benefits",
       color: "text-accent",
       bgColor: "bg-accent/5",
       borderColor: "border-accent/20",
@@ -62,7 +61,6 @@ export function HeroSection() {
   ];
 
   return (
-    <div className={`${styles['tailwind-scope']} ${styles.wrapper}`}>
     <section className="min-h-screen flex items-center pt-16 pb-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -78,8 +76,8 @@ export function HeroSection() {
               </h1>
 
               <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-                Constant value algorithm eliminates impermanent loss and reduces trading costs by 50%+.
-                Decentralized trading accessible to everyone.
+                Constant value algorithm eliminates impermanent loss, lowers 50%+ trading costs.
+                Everyone can participate in decentralized trading.
               </p>
             </div>
 
@@ -126,7 +124,7 @@ export function HeroSection() {
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <p className="text-sm font-medium text-muted-foreground">
-                      Calculate value from input quantity
+                      Through input quantity to calculate value
                     </p>
                     <div className="px-2 py-1 rounded-md bg-primary/10 text-primary text-xs font-medium">
                       Formula 1
@@ -143,7 +141,7 @@ export function HeroSection() {
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <p className="text-sm font-medium text-muted-foreground">
-                      Calculate output quantity from value
+                      Through value to calculate output quantity
                     </p>
                     <div className="px-2 py-1 rounded-md bg-secondary/10 text-secondary text-xs font-medium">
                       Formula 2
@@ -161,14 +159,14 @@ export function HeroSection() {
               <div className="mt-6 p-4 bg-muted/30 rounded-xl border border-border/50">
                 <div className="text-xs text-muted-foreground">
                   <span className="font-medium">
-                    Variable Description:
+                    Variable Explanation：
                   </span>
                   <span className="ml-2">
                     V: Market Value | Q: Token Quantity | a,b: Token Types
                   </span>
                 </div>
                 <p className="text-xs text-muted-foreground mt-2 italic">
-                  Revolutionary algorithm ensures constant value preservation in all trades
+                  Revolutionary algorithm ensures constant value in all transactions
                 </p>
               </div>
             </Card>
@@ -183,10 +181,10 @@ export function HeroSection() {
                   <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mr-1">
                     <ArrowDownUp className="h-4 w-4 text-primary" />
                   </div>
-                  Quick Trade
+                  Quick Trading
                 </h3>
                 <div className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">
-                  Live
+                  Real-time
                 </div>
               </div>
 
@@ -266,7 +264,7 @@ export function HeroSection() {
 
                 <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <Zap className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                  Trade Now
+                  Immediate Trading
                 </Button>
               </div>
             </Card>
@@ -278,7 +276,7 @@ export function HeroSection() {
                   <div className="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center mr-1">
                     <TrendingUp className="h-4 w-4 text-secondary" />
                   </div>
-                  Quick Stake
+                  Quick Staking
                 </h3>
                 <div className="text-right">
                   <div className="text-sm text-muted-foreground">
@@ -293,7 +291,7 @@ export function HeroSection() {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-muted-foreground">
-                    Stake Amount
+                    Staking Quantity
                   </label>
                   <div className="flex space-x-2">
                     <Select defaultValue="tts">
@@ -321,7 +319,7 @@ export function HeroSection() {
                 <div className="grid grid-cols-2 gap-4 py-3">
                   <div>
                     <div className="text-muted-foreground">
-                      Est. Monthly Return
+                      Expected Monthly Return
                     </div>
                     <div className="font-medium text-secondary">
                       +245 TTS
@@ -329,7 +327,7 @@ export function HeroSection() {
                   </div>
                   <div>
                     <div className="text-muted-foreground">
-                      Lock Period
+                      Lock-up Period
                     </div>
                     <div className="font-medium">Flexible</div>
                   </div>
@@ -344,6 +342,6 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-    </section></div>
+    </section>
   );
 }

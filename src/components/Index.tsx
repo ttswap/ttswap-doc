@@ -9,9 +9,6 @@ import { TokenomicsSection } from "./TokenomicsSection";
 import { LiquidityBenefitsSection } from "./LiquidityBenefitsSection";
 import { Footer } from "./Footer";
 
-// import '../css/index.css'
-// import styles from './Component.module.css';
-// import "../css/ttswap-docusaurus-isolated.css";
 export function Index() {
 
   return (

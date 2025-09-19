@@ -59,7 +59,7 @@ export function CostReductionSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">
-                    直接代币交易减少50%服务费
+                    直接代币交易,减少50%服务费
                   </h3>
                   <p className="text-sm text-primary">方法一</p>
                 </div>
@@ -151,7 +151,7 @@ export function CostReductionSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">
-                    计算简单减少50%Gas费
+                    优化计算,减少50%Gas费
                   </h3>
                   <p className="text-sm text-secondary">
                     方法二
