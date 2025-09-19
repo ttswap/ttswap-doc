@@ -33,8 +33,8 @@ export function ImpermanentLossSection() {
             <span className="text-gradient">Zero Impermanent Loss</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Revolutionary fund pool architecture completely eliminates
-            the impermanent loss problem that plagued traditional AMM protocols
+            Revolutionary pool architecture completely eliminates
+            the impermanent loss problem that plagues traditional AMM protocols
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export function ImpermanentLossSection() {
               <div className="space-y-4">
                 <p className="text-sm text-muted-foreground">
                   When token prices deviate from their initial ratio, liquidity providers
-                  lose value compared to simply holding tokens separately.
+                  lose value compared to simply holding the tokens.
                 </p>
 
                 <div className="bg-red-500/10 p-4 rounded-lg border border-red-500/20 group-hover:bg-red-500/20 group-hover:border-red-500/30 transition-all duration-300">
@@ -71,10 +71,10 @@ export function ImpermanentLossSection() {
                   </h5>
                   <ul className="space-y-1 text-sm text-muted-foreground">
                     <li className="hover:text-foreground/80 transition-colors duration-200">
-                      • Token A Price: $100 → $200 (+100%)
+                      • Token A price: $100 → $200 (+100%)
                     </li>
                     <li className="hover:text-foreground/80 transition-colors duration-200">
-                      • Token B Price: $100 → $50 (-50%)
+                      • Token B price: $100 → $50 (-50%)
                     </li>
                     <li className="hover:text-foreground/80 transition-colors duration-200 font-medium text-red-400">
                       • Impermanent Loss: ~20%
@@ -141,19 +141,19 @@ export function ImpermanentLossSection() {
                     <li className="flex items-center space-x-2 hover:text-foreground/80 transition-colors duration-200">
                       <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
                       <span>
-                        Initial Deposit: 100 Token A, 200 Token B
+                        Initial deposit: 100 Token A, 200 Token B
                       </span>
                     </li>
                     <li className="flex items-center space-x-2 hover:text-foreground/80 transition-colors duration-200">
                       <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
                       <span>
-                        Withdrawal: 100 Token A, 200 Token B
+                        Upon withdrawal: 100 Token A, 200 Token B
                       </span>
                     </li>
                     <li className="flex items-center space-x-2 hover:text-foreground/80 transition-colors duration-200 font-medium text-green-400">
                       <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
                       <span>
-                        Additional Yield: 10 Token A, 15 Token B
+                        Additional rewards: 10 Token A, 15 Token B
                       </span>
                     </li>
                   </ul>
@@ -161,7 +161,7 @@ export function ImpermanentLossSection() {
 
                 <div className="bg-background/50 p-4 rounded-lg border border-white/10 group-hover:bg-background/70 group-hover:border-green-500/20 transition-all duration-300">
                   <h5 className="font-semibold mb-2">
-                    Zero Loss Protection
+                    Zero Loss Guarantee
                   </h5>
                   <ResponsiveContainer
                     width="100%"
@@ -210,7 +210,7 @@ export function ImpermanentLossSection() {
                   Value Tracking
                 </h4>
                 <p className="text-sm text-muted-foreground group-hover/step:text-foreground/80 transition-colors duration-300">
-                  Real-time continuous monitoring of total pool value
+                  Real-time continuous monitoring of pool total value
                 </p>
                 <div className="opacity-0 group-hover/step:opacity-100 transition-opacity duration-300">
                   <div className="inline-flex items-center text-xs font-medium text-blue-500">

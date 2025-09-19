@@ -42,7 +42,7 @@ export function CostReductionSection() {
             <span className="text-gradient">50% Trading Costs</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Through direct trading and gas fee optimization innovations, achieving revolutionary cost optimization
+            Revolutionary cost optimization through direct trading and gas fee optimization innovations
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export function CostReductionSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">
-                    Direct Token Trading Reduces 50% Service Fees
+                    Direct Token Trading, Reduce 50% Service Fees
                   </h3>
                   <p className="text-sm text-primary">Method 1</p>
                 </div>
@@ -95,7 +95,7 @@ export function CostReductionSection() {
                     </span>
                   </div>
                   <div className="text-xs text-red-400 mt-2 font-medium">
-                    Multiple Hops = Higher Fees (0.1% × 3 = 0.3%)
+                    Multiple hops = Higher fees (0.1% × 3 = 0.3%)
                   </div>
                 </div>
 
@@ -120,7 +120,7 @@ export function CostReductionSection() {
                     </span>
                   </div>
                   <div className="text-xs text-green-400 mt-2 text-center font-medium">
-                    Direct Exchange = Lower Fees (0.1%)
+                    Direct swap = Lower fees (0.1%)
                   </div>
                 </div>
               </div>
@@ -133,7 +133,7 @@ export function CostReductionSection() {
                   67% Lower
                 </div>
                 <div className="text-xs text-muted-foreground group-hover:text-foreground/80 transition-colors duration-300">
-                  Each trade reduced from 0.3% to 0.1%
+                  From 0.3% to 0.1% per trade
                 </div>
               </div>
             </div>
@@ -151,7 +151,7 @@ export function CostReductionSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">
-                    Simple Calculations Reduce 50% Gas Fees
+                    Optimized Computing, Reduce 50% Gas Fees
                   </h3>
                   <p className="text-sm text-secondary">
                     Method 2
@@ -279,7 +279,7 @@ export function CostReductionSection() {
             <div className="bg-gradient-to-r from-primary to-secondary p-6 rounded-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-500 animate-pulse-soft">
               <div className="text-white">
                 <div className="text-3xl font-bold mb-2 group-hover:scale-110 transition-transform duration-300">
-                  75% Total Savings
+                  Total 75% Savings
                 </div>
                 <div className="text-sm opacity-90 group-hover:opacity-100 transition-opacity duration-300">
                   Save $5 on every $1000 trade

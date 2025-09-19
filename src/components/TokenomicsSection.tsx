@@ -41,11 +41,10 @@ import {
 export function TokenomicsSection() {
   const tokenDistribution = [
     {
-      role: "Founders",
+      role: "Founder",
       percentage: 20,
       unlockRatio: "≤1/12",
-      description:
-        "Project initiators who bear enormous failure risks",
+      description: "Project initiators who bear huge failure risks",
       color: "bg-primary",
       icon: Crown,
       gradient: "gradient-primary",
@@ -54,8 +53,7 @@ export function TokenomicsSection() {
       role: "Partners",
       percentage: 12,
       unlockRatio: "≤1/8",
-      description:
-        "Core members who persist and believe in the project during early stages",
+      description: "Core members who persisted and believed in the project during early stages",
       color: "bg-secondary",
       icon: Handshake,
       gradient: "gradient-warm",
@@ -76,31 +74,26 @@ export function TokenomicsSection() {
       role: "Value Contributors",
       percentage: 44,
       unlockRatio: "≤1/6",
-      description:
-        "Members who contribute value to community building",
+      description: "Members who contribute value to community building",
       color: "bg-yellow-500",
       icon: Star,
       gradient: "gradient-energy",
       subtypes: [
         {
           name: "Position Contribution",
-          description:
-            "Full-time and part-time employees contributing through their positions",
+          description: "Full-time and part-time employees contributing through their roles",
         },
         {
           name: "Employee Options",
-          description:
-            "Equity incentives for key employees and contributors",
+          description: "Equity incentives given to key employees and contributors",
         },
         {
           name: "Activities",
-          description:
-            "Rewards for participating in community activities and events",
+          description: "Rewards for participating in community activities and events",
         },
         {
           name: "Community",
-          description:
-            "General community contributors and active participants",
+          description: "General community contributors and active participants",
         },
       ],
     },
@@ -114,9 +107,8 @@ export function TokenomicsSection() {
       gradient: "gradient-secondary",
       subtypes: [
         {
-          name: "Capital Investment",
-          description:
-            "Institutional and strategic investors providing capital",
+          name: "Fund Investment",
+          description: "Institutional and strategic investors providing capital",
         },
         {
           name: "Early Participation",
@@ -124,8 +116,7 @@ export function TokenomicsSection() {
         },
         {
           name: "Public Sale",
-          description:
-            "Public sale participants with fully unlocked status",
+          description: "Public sale participants with fully unlocked status",
         },
       ],
     },
@@ -140,8 +131,8 @@ export function TokenomicsSection() {
     },
     {
       icon: Shield,
-      title: "Supervision Rights",
-      description: "Right to supervise all community behaviors",
+      title: "Right to Supervision",
+      description: "Right to supervise all community actions",
       color: "text-secondary",
     },
     {
@@ -153,8 +144,7 @@ export function TokenomicsSection() {
     {
       icon: Target,
       title: "Proposal Rights",
-      description:
-        "Proposal rights for holders of certain token amounts",
+      description: "Proposal rights for holders of certain token amounts",
       color: "text-accent",
     },
   ];
@@ -163,127 +153,30 @@ export function TokenomicsSection() {
     {
       icon: Lock,
       title: "Initial Lock",
-      value: "50M Tokens",
-      description:
-        "All locked initially, unlock only when conditions are met",
+      value: "50M tokens",
+      description: "All in locked state, unlocked only when conditions are met",
       color: "text-primary",
     },
     {
       icon: TrendingUp,
       title: "Annual Issuance",
-      value: "(200M-unlocked)*0.02",
+      value: "2%*(200M-unlocked)",
       description: "All given to liquidity providers",
       color: "text-secondary",
     },
     {
       icon: Flame,
       title: "Buyback & Burn",
-      value: "100% Revenue",
-      description:
-        "All community revenue used to buy and burn tokens",
+      value: "100% profit",
+      description: "All community profits used to buy and burn tokens",
       color: "text-accent",
     },
     {
       icon: Calendar,
       title: "Notice Period",
-      value: "30+ Days",
-      description:
-        "Distribution changes require advance notice",
+      value: "30+ days",
+      description: "Distribution changes require advance notice",
       color: "text-yellow-500",
-    },
-  ];
-
-  const governanceProcess = [
-    {
-      step: 1,
-      title: "Proposal Submission",
-      description:
-        "Token holders submit governance proposals through the official platform",
-      icon: Target,
-      color: "text-primary",
-      detail:
-        "Any holder with at least 1% of total supply can submit proposals for community consideration",
-    },
-    {
-      step: 2,
-      title: "Community Discussion",
-      description:
-        "Open discussion period for proposal review and feedback",
-      icon: Users,
-      color: "text-secondary",
-      detail:
-        "7-day discussion period where community members can provide feedback and suggestions",
-    },
-    {
-      step: 3,
-      title: "Voting Process",
-      description:
-        "Token holders vote on proposals using their governance tokens",
-      icon: Vote,
-      color: "text-yellow-500",
-      detail:
-        "Voting power proportional to token holdings, with quorum requirements for validity",
-    },
-    {
-      step: 4,
-      title: "Implementation",
-      description:
-        "Approved proposals are implemented by the development team",
-      icon: CheckCircle,
-      color: "text-accent",
-      detail:
-        "Proposals passing with >50% approval and minimum quorum are executed within 30 days",
-    },
-  ];
-
-  const economicMechanisms = [
-    {
-      title: "Liquidity Mining",
-      description:
-        "Rewards for providing liquidity to trading pairs",
-      icon: Droplets,
-      color: "text-primary",
-      features: [
-        "Dynamic APY based on pool utilization",
-        "Bonus rewards for long-term staking",
-        "Auto-compounding for maximum efficiency",
-      ],
-    },
-    {
-      title: "Trading Fee Distribution",
-      description:
-        "Fee sharing mechanism for active participants",
-      icon: Banknote,
-      color: "text-secondary",
-      features: [
-        "0.3% trading fee shared with stakeholders",
-        "Higher tier holders receive larger shares",
-        "Monthly distribution in native tokens",
-      ],
-    },
-    {
-      title: "Governance Incentives",
-      description:
-        "Rewards for active governance participation",
-      icon: Award,
-      color: "text-yellow-500",
-      features: [
-        "Voting rewards for proposal participation",
-        "Bonus tokens for proposal creators",
-        "Delegation rewards for vote delegation",
-      ],
-    },
-    {
-      title: "Ecosystem Growth",
-      description:
-        "Sustainable economic model for long-term growth",
-      icon: TrendingUp,
-      color: "text-accent",
-      features: [
-        "Regular buyback and burn mechanisms",
-        "Strategic partnerships and integrations",
-        "Community treasury for ecosystem development",
-      ],
     },
   ];
 
@@ -297,9 +190,8 @@ export function TokenomicsSection() {
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Innovative token economic protocol based on 4C
-            growth community, ensuring long-term value growth
-            and fair distribution
+            Innovative token economic protocol based on 4C growth community,
+            ensuring long-term value growth and fair distribution
           </p>
         </div>
 
@@ -403,8 +295,7 @@ export function TokenomicsSection() {
                 4C Growth Community Token Distribution
               </h3>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Fair and transparent token distribution based on
-                community contribution model
+                Fair and transparent token distribution based on community contribution model
               </p>
             </div>
 
@@ -566,7 +457,7 @@ export function TokenomicsSection() {
                       50M
                     </div>
                     <div className="text-sm text-muted-foreground group-hover/stat:text-foreground/80 transition-colors duration-300">
-                      Supply
+                      Total Supply
                     </div>
                   </div>
                   <div className="text-center group/stat hover:scale-105 transition-transform duration-300">
@@ -590,7 +481,7 @@ export function TokenomicsSection() {
                       Buyback & Burn
                     </div>
                     <div className="text-sm text-muted-foreground group-hover/stat:text-foreground/80 transition-colors duration-300">
-                      Value Realization
+                      Value Capture
                     </div>
                   </div>
                 </div>
@@ -604,8 +495,7 @@ export function TokenomicsSection() {
                 Smart Unlock Mechanism
               </h3>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Tiered unlock mechanism based on price doubling,
-                ensuring stable token value growth
+                Layered unlock mechanism based on price doubling to ensure stable token value growth
               </p>
             </div>
 
@@ -619,30 +509,25 @@ export function TokenomicsSection() {
                     <Lock className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   <h3 className="text-xl font-semibold group-hover:text-primary/90 transition-colors duration-300">
-                    Initial Lock Mechanism
+                    Unlock Mechanism
                   </h3>
                 </div>
                 <div className="relative space-y-4">
                   <div className="p-4 bg-primary-soft rounded-lg border border-primary/20 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 group/item">
                     <h4 className="font-semibold text-primary mb-2 group-hover/item:scale-105 transition-transform duration-300">
-                      Configuration Requirements
+                      Unlock Requirements
                     </h4>
                     <ul className="text-sm space-y-2">
                       <li className="flex items-center space-x-2 group-hover/item:text-foreground/80 transition-colors duration-300">
                         <div className="w-2 h-2 rounded-full bg-primary animate-pulse-soft" />
-                        <span>
-                          Unlock ratio cannot exceed 20%
-                        </span>
+                        <span>Unlock ratio cannot exceed 20%</span>
                       </li>
                       <li className="flex items-center space-x-2 group-hover/item:text-foreground/80 transition-colors duration-300">
                         <div
                           className="w-2 h-2 rounded-full bg-primary animate-pulse-soft"
                           style={{ animationDelay: "0.1s" }}
                         />
-                        <span>
-                          Initial price cannot be lower than
-                          current price
-                        </span>
+                        <span>Initial price cannot be lower than current price</span>
                       </li>
                       <li className="flex items-center space-x-2 group-hover/item:text-foreground/80 transition-colors duration-300">
                         <div
@@ -650,8 +535,7 @@ export function TokenomicsSection() {
                           style={{ animationDelay: "0.2s" }}
                         />
                         <span>
-                          When price doubles, unlock remaining ×
-                          unlock ratio
+                          When price doubles, unlock remaining portion × unlock ratio
                         </span>
                       </li>
                     </ul>
@@ -662,19 +546,17 @@ export function TokenomicsSection() {
                     </h4>
                     <div className="text-sm text-muted-foreground space-y-1 group-hover/calc:text-foreground/70 transition-colors duration-300">
                       <p>
-                        Allocate 20,000 tokens, unlock ratio
-                        18%, allocation price 0.05
+                        Allocate 20,000 tokens, unlock ratio 18%, allocation price 0.05
                       </p>
                       <p className="pl-4 border-l-2 border-primary/30">
-                        When price reaches 0.05, unlock:
-                        20,000×0.18 ={" "}
+                        When price reaches 0.05, unlock: 20,000×0.18 ={" "}
                         <span className="font-semibold text-primary">
                           3,600 tokens
                         </span>
                       </p>
                       <p className="pl-4 border-l-2 border-secondary/30">
-                        When price reaches 0.1, unlock:
-                        (20,000-3,600)×0.18 ={" "}
+                        When price reaches 0.1, unlock: (20,000-3,600)×0.18
+                        ={" "}
                         <span className="font-semibold text-secondary">
                           2,952 tokens
                         </span>
@@ -693,7 +575,7 @@ export function TokenomicsSection() {
                     <Unlock className="h-6 w-6 text-secondary group-hover:scale-110 transition-transform duration-300" />
                   </div>
                   <h3 className="text-xl font-semibold group-hover:text-secondary/90 transition-colors duration-300">
-                    Unlock Ratio (When Price Doubles)
+                    Unlock Ratio (when price doubles)
                   </h3>
                 </div>
                 <div className="relative space-y-3">
@@ -741,7 +623,7 @@ export function TokenomicsSection() {
                   />
                   <div className="flex items-center justify-between p-3 bg-primary-soft rounded-lg hover:bg-primary/10 hover:scale-[1.02] transition-all duration-300 group/ratio">
                     <span className="font-medium group-hover/ratio:text-primary transition-colors duration-300">
-                      Founders
+                      Founder
                     </span>
                     <Badge
                       variant="outline"
@@ -754,49 +636,100 @@ export function TokenomicsSection() {
               </Card>
             </div>
 
-            {/* Additional mechanism details */}
-            <Card className="p-8 bg-muted/20 border border-tertiary/20 hover:border-tertiary/40 hover:shadow-xl transition-all duration-500 group overflow-hidden relative animate-fade-in-delay-3">
-              <div className="absolute inset-0 bg-gradient-to-br from-tertiary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <Card className="p-6 border border-primary/20 hover:border-primary/40 hover:shadow-xl transition-all duration-500 group overflow-hidden relative animate-fade-in-delay-3">
+              {/* Subtle background gradient effect */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
               <div className="relative">
-                <h4 className="text-xl font-bold text-center mb-6 text-gradient">
-                  Price-Doubling Unlock Strategy
-                </h4>
-                <div className="grid md:grid-cols-3 gap-6">
-                  <div className="text-center group/feature hover:scale-105 transition-transform duration-300">
-                    <div className="w-16 h-16 rounded-full bg-gradient-primary mx-auto mb-4 flex items-center justify-center group-hover/feature:scale-110 transition-transform duration-300">
-                      <TrendingUp className="h-8 w-8 text-white" />
+                <h3 className="text-xl font-semibold mb-4 group-hover:text-primary/90 transition-colors duration-300">
+                  Detailed Unlock Rules
+                </h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
+                    <div className="p-4 border border-border rounded-lg hover:border-primary/40 hover:bg-primary/5 hover:scale-[1.02] transition-all duration-300 group/rule">
+                      <h4 className="font-semibold text-primary mb-2 group-hover/rule:scale-105 transition-transform duration-300">
+                        Type A Partners
+                      </h4>
+                      <ul className="text-sm space-y-2 text-muted-foreground">
+                        <li className="flex items-center space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                          <span>Member joins with initial price</span>
+                        </li>
+                        <li className="flex items-center space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                          <span>Unlock ratio ≤1/10 when price doubles</span>
+                        </li>
+                        <li className="flex items-center space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                          <span>Unlocked portion not destroyed when leaving community</span>
+                        </li>
+                      </ul>
                     </div>
-                    <h5 className="font-semibold mb-2">
-                      Progressive Unlock
-                    </h5>
-                    <p className="text-sm text-muted-foreground">
-                      Tokens unlock progressively as price
-                      milestones are achieved
-                    </p>
+                    <div className="p-4 border border-border rounded-lg hover:border-secondary/40 hover:bg-secondary/5 hover:scale-[1.02] transition-all duration-300 group/rule">
+                      <h4 className="font-semibold text-secondary mb-2 group-hover/rule:scale-105 transition-transform duration-300">
+                        Type B Partners
+                      </h4>
+                      <ul className="text-sm space-y-2 text-muted-foreground">
+                        <li className="flex items-center space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-secondary" />
+                          <span>Member joins with initial price</span>
+                        </li>
+                        <li className="flex items-center space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-secondary" />
+                          <span>Unlock ratio ≤1/8 when price doubles</span>
+                        </li>
+                        <li className="flex items-center space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-secondary" />
+                          <span>Unlocked portion destroyed when leaving community</span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div className="text-center group/feature hover:scale-105 transition-transform duration-300">
-                    <div className="w-16 h-16 rounded-full bg-gradient-secondary mx-auto mb-4 flex items-center justify-center group-hover/feature:scale-110 transition-transform duration-300">
-                      <Shield className="h-8 w-8 text-white" />
+                  <div className="space-y-4">
+                    <div className="p-4 border border-border rounded-lg hover:border-tertiary/40 hover:bg-tertiary/5 hover:scale-[1.02] transition-all duration-300 group/rule">
+                      <h4 className="font-semibold text-tertiary mb-2 group-hover/rule:scale-105 transition-transform duration-300">
+                        Value Contribution Incentives
+                      </h4>
+                      <ul className="text-sm space-y-2 text-muted-foreground">
+                        <li className="flex items-center space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-tertiary" />
+                          <span>Initial price higher than allocation price</span>
+                        </li>
+                        <li className="flex items-center space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-tertiary" />
+                          <span>Unlock ratio ≤1/6 when price doubles</span>
+                        </li>
+                        <li className="flex items-start space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-tertiary mt-1.5 flex-shrink-0" />
+                          <span>
+                            Unlocked portion adjusted by community based on performance, no longer for community service when leaving
+                          </span>
+                        </li>
+                      </ul>
                     </div>
-                    <h5 className="font-semibold mb-2">
-                      Value Protection
-                    </h5>
-                    <p className="text-sm text-muted-foreground">
-                      Mechanism protects against rapid token
-                      dumps and maintains stability
-                    </p>
-                  </div>
-                  <div className="text-center group/feature hover:scale-105 transition-transform duration-300">
-                    <div className="w-16 h-16 rounded-full bg-gradient-energy mx-auto mb-4 flex items-center justify-center group-hover/feature:scale-110 transition-transform duration-300">
-                      <Users className="h-8 w-8 text-white" />
+                    <div className="p-4 border border-border rounded-lg hover:border-accent/40 hover:bg-accent/5 hover:scale-[1.02] transition-all duration-300 group/rule">
+                      <h4 className="font-semibold text-accent mb-2 group-hover/rule:scale-105 transition-transform duration-300">
+                        Capital Contribution Rules
+                      </h4>
+                      <ul className="text-sm space-y-2 text-muted-foreground">
+                        <li className="flex items-center space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+                          <span>Public sale portion fully unlocked</span>
+                        </li>
+                        <li className="flex items-start space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" />
+                          <span>
+                            Investment portion price and unlock ratio determined through negotiation, ≤1/5
+                          </span>
+                        </li>
+                        <li className="flex items-start space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
+                          <div className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" />
+                          <span>
+                            Airdrop portion determined by specific activity plans, ≤1/5
+                          </span>
+                        </li>
+                      </ul>
                     </div>
-                    <h5 className="font-semibold mb-2">
-                      Fair Distribution
-                    </h5>
-                    <p className="text-sm text-muted-foreground">
-                      Ensures long-term commitment and fair
-                      token distribution
-                    </p>
                   </div>
                 </div>
               </div>
@@ -806,128 +739,116 @@ export function TokenomicsSection() {
           <TabsContent value="governance" className="space-y-8">
             <div className="text-center mb-12 animate-fade-in">
               <h3 className="text-3xl font-bold mb-4 text-gradient">
-                Community Governance System
+                Decentralized Governance System
               </h3>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Decentralized governance empowering token
-                holders to shape the future of TTSwap
+                Token holders enjoy full rights to information, supervision, voting, and proposal
               </p>
             </div>
 
-            {/* Token Rights */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="grid md:grid-cols-2 gap-6">
               {tokenRights.map((right, index) => (
                 <Card
                   key={index}
-                  className={`p-6 text-center border hover:shadow-xl hover:scale-105 transition-all duration-500 group overflow-hidden relative animate-fade-in-delay-${index + 1}`}
+                  className={`p-6 border hover:shadow-xl hover:scale-[1.02] transition-all duration-500 group overflow-hidden relative ${
+                    index === 0
+                      ? "animate-fade-in-delay-1 border-primary/20 hover:border-primary/40"
+                      : index === 1
+                        ? "animate-fade-in-delay-2 border-secondary/20 hover:border-secondary/40"
+                        : index === 2
+                          ? "animate-fade-in-delay-3 border-tertiary/20 hover:border-tertiary/40"
+                          : "animate-fade-in-delay-4 border-accent/20 hover:border-accent/40"
+                  }`}
                 >
-                  <div className="relative mb-4">
-                    <div className="w-16 h-16 mx-auto rounded-full bg-gradient-primary flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg transition-all duration-300">
+                  {/* Subtle background gradient effect */}
+                  <div
+                    className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+                      index === 0
+                        ? "bg-gradient-to-br from-primary/5 to-transparent"
+                        : index === 1
+                          ? "bg-gradient-to-br from-secondary/5 to-transparent"
+                          : index === 2
+                            ? "bg-gradient-to-br from-tertiary/5 to-transparent"
+                            : "bg-gradient-to-br from-accent/5 to-transparent"
+                    }`}
+                  />
+
+                  <div className="relative flex items-center space-x-4 mb-4">
+                    <div
+                      className={`w-12 h-12 rounded-full flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg transition-all duration-300 ${
+                        index === 0
+                          ? "bg-primary/10"
+                          : index === 1
+                            ? "bg-secondary/10"
+                            : index === 2
+                              ? "bg-tertiary/10"
+                              : "bg-accent/10"
+                      }`}
+                    >
                       <right.icon
-                        className={`h-8 w-8 text-white group-hover:scale-110 transition-transform duration-300`}
+                        className={`h-6 w-6 ${right.color} group-hover:scale-110 transition-transform duration-300`}
                       />
                     </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold mb-1 group-hover:text-primary/90 transition-colors duration-300">
+                        {right.title}
+                      </h3>
+                      <p className="text-muted-foreground group-hover:text-foreground/70 transition-colors duration-300">
+                        {right.description}
+                      </p>
+                    </div>
                   </div>
-                  <h4 className="font-semibold mb-2 group-hover:text-primary/80 transition-colors duration-300">
-                    {right.title}
-                  </h4>
-                  <p className="text-sm text-muted-foreground group-hover:text-foreground/80 transition-colors duration-300">
-                    {right.description}
-                  </p>
                 </Card>
               ))}
             </div>
 
-            {/* Community Governance Process */}
-            <div className="space-y-8">
-              <h4 className="text-2xl font-bold text-center text-gradient">
-                Community Governance Process
-              </h4>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                {governanceProcess.map((step, index) => (
-                  <Card
-                    key={index}
-                    className={`p-6 border hover:shadow-xl hover:scale-[1.02] transition-all duration-500 group overflow-hidden relative animate-fade-in-delay-${index + 1}`}
-                  >
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0">
-                        <div
-                          className={`w-12 h-12 rounded-full ${
-                            step.color === "text-primary"
-                              ? "bg-primary/10"
-                              : step.color === "text-secondary"
-                                ? "bg-secondary/10"
-                                : step.color ===
-                                    "text-yellow-500"
-                                  ? "bg-tertiary/10"
-                                  : "bg-accent/10"
-                          } flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
-                        >
-                          <step.icon
-                            className={`h-6 w-6 ${step.color} group-hover:scale-110 transition-transform duration-300`}
-                          />
-                        </div>
-                        <div className="w-8 h-8 rounded-full bg-gradient-primary text-white flex items-center justify-center text-sm font-bold mt-2 mx-auto">
-                          {step.step}
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <h5 className="font-semibold mb-2 group-hover:text-primary/80 transition-colors duration-300">
-                          {step.title}
-                        </h5>
-                        <p className="text-muted-foreground text-sm mb-3 group-hover:text-foreground/80 transition-colors duration-300">
-                          {step.description}
-                        </p>
-                        <p className="text-xs text-muted-foreground bg-muted/50 p-2 rounded-lg group-hover:bg-muted/80 transition-colors duration-300">
-                          {step.detail}
-                        </p>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
-              </div>
-            </div>
-
-            {/* Governance Statistics */}
-            <Card className="p-8 bg-muted/20 border border-primary/20 hover:border-primary/40 hover:shadow-xl transition-all duration-500 group overflow-hidden relative animate-fade-in-delay-5">
+            <Card className="p-8 border border-primary/20 hover:border-primary/40 hover:shadow-xl transition-all duration-500 group overflow-hidden relative animate-fade-in-delay-5">
+              {/* Subtle background gradient effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
               <div className="relative">
-                <h4 className="text-xl font-bold text-center mb-6 text-gradient">
-                  Governance Participation
-                </h4>
-                <div className="grid md:grid-cols-4 gap-6">
-                  <div className="text-center group/stat hover:scale-105 transition-transform duration-300">
-                    <div className="text-3xl font-bold text-gradient mb-2 group-hover/stat:scale-110 transition-transform duration-300">
-                      1%
+                <h3 className="text-2xl font-bold mb-6 text-center group-hover:text-primary/90 transition-colors duration-300">
+                  Community Governance Process
+                </h3>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="text-center p-6 rounded-lg border border-border hover:border-primary/40 hover:bg-primary/5 hover:scale-105 transition-all duration-300 group/flow">
+                    <div className="w-16 h-16 mx-auto rounded-full gradient-primary flex items-center justify-center mb-4 group-hover/flow:scale-110 group-hover/flow:shadow-lg transition-all duration-300 animate-pulse-soft">
+                      <Eye className="h-8 w-8 text-white group-hover/flow:scale-110 transition-transform duration-300" />
                     </div>
-                    <div className="text-sm text-muted-foreground group-hover/stat:text-foreground/80 transition-colors duration-300">
-                      Min Proposal Threshold
-                    </div>
+                    <h4 className="font-semibold mb-2 group-hover/flow:text-primary transition-colors duration-300">
+                      Information Transparency
+                    </h4>
+                    <p className="text-sm text-muted-foreground group-hover/flow:text-foreground/70 transition-colors duration-300">
+                      All decisions and actions disclosed to token holders to ensure transparency
+                    </p>
                   </div>
-                  <div className="text-center group/stat hover:scale-105 transition-transform duration-300">
-                    <div className="text-3xl font-bold text-gradient mb-2 group-hover/stat:scale-110 transition-transform duration-300">
-                      7
+                  <div className="text-center p-6 rounded-lg border border-border hover:border-secondary/40 hover:bg-secondary/5 hover:scale-105 transition-all duration-300 group/flow">
+                    <div
+                      className="w-16 h-16 mx-auto rounded-full gradient-warm flex items-center justify-center mb-4 group-hover/flow:scale-110 group-hover/flow:shadow-lg transition-all duration-300 animate-pulse-soft"
+                      style={{ animationDelay: "0.1s" }}
+                    >
+                      <Target className="h-8 w-8 text-white group-hover/flow:scale-110 transition-transform duration-300" />
                     </div>
-                    <div className="text-sm text-muted-foreground group-hover/stat:text-foreground/80 transition-colors duration-300">
-                      Discussion Days
-                    </div>
+                    <h4 className="font-semibold mb-2 group-hover/flow:text-secondary transition-colors duration-300">
+                      Proposal Mechanism
+                    </h4>
+                    <p className="text-sm text-muted-foreground group-hover/flow:text-foreground/70 transition-colors duration-300">
+                      Users with a certain amount of tokens can initiate community proposals
+                    </p>
                   </div>
-                  <div className="text-center group/stat hover:scale-105 transition-transform duration-300">
-                    <div className="text-3xl font-bold text-gradient mb-2 group-hover/stat:scale-110 transition-transform duration-300">
-                      50%+
+                  <div className="text-center p-6 rounded-lg border border-border hover:border-accent/40 hover:bg-accent/5 hover:scale-105 transition-all duration-300 group/flow">
+                    <div
+                      className="w-16 h-16 mx-auto rounded-full gradient-secondary flex items-center justify-center mb-4 group-hover/flow:scale-110 group-hover/flow:shadow-lg transition-all duration-300 animate-pulse-soft"
+                      style={{ animationDelay: "0.2s" }}
+                    >
+                      <Vote className="h-8 w-8 text-white group-hover/flow:scale-110 transition-transform duration-300" />
                     </div>
-                    <div className="text-sm text-muted-foreground group-hover/stat:text-foreground/80 transition-colors duration-300">
-                      Approval Required
-                    </div>
-                  </div>
-                  <div className="text-center group/stat hover:scale-105 transition-transform duration-300">
-                    <div className="text-3xl font-bold text-gradient mb-2 group-hover/stat:scale-110 transition-transform duration-300">
-                      30
-                    </div>
-                    <div className="text-sm text-muted-foreground group-hover/stat:text-foreground/80 transition-colors duration-300">
-                      Implementation Days
-                    </div>
+                    <h4 className="font-semibold mb-2 group-hover/flow:text-accent transition-colors duration-300">
+                      Voting Decision
+                    </h4>
+                    <p className="text-sm text-muted-foreground group-hover/flow:text-foreground/70 transition-colors duration-300">
+                      All token holders can participate in proposal voting decisions
+                    </p>
                   </div>
                 </div>
               </div>
@@ -940,143 +861,166 @@ export function TokenomicsSection() {
                 Sustainable Economic Model
               </h3>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive economic framework designed for
-                long-term sustainability and community growth
+                Through buyback and burn mechanisms, build a long-term sustainable token economic ecosystem
               </p>
             </div>
 
-            {/* Economic Mechanisms */}
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              {economicMechanisms.map((mechanism, index) => (
-                <Card
-                  key={index}
-                  className={`p-6 border hover:shadow-xl hover:scale-[1.02] transition-all duration-500 group overflow-hidden relative animate-fade-in-delay-${index + 1}`}
-                >
-                  <div className="flex items-start space-x-4 mb-4">
-                    <div
-                      className={`w-12 h-12 rounded-full ${
-                        mechanism.color === "text-primary"
-                          ? "bg-primary/10"
-                          : mechanism.color === "text-secondary"
-                            ? "bg-secondary/10"
-                            : mechanism.color ===
-                                "text-yellow-500"
-                              ? "bg-tertiary/10"
-                              : "bg-accent/10"
-                      } flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
-                    >
-                      <mechanism.icon
-                        className={`h-6 w-6 ${mechanism.color} group-hover:scale-110 transition-transform duration-300`}
-                      />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-semibold mb-2 group-hover:text-primary/80 transition-colors duration-300">
-                        {mechanism.title}
-                      </h4>
-                      <p className="text-sm text-muted-foreground group-hover:text-foreground/80 transition-colors duration-300">
-                        {mechanism.description}
-                      </p>
-                    </div>
-                  </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="p-6 border border-primary/20 hover:border-primary/40 hover:shadow-xl hover:scale-[1.02] transition-all duration-500 group overflow-hidden relative animate-fade-in-delay-1">
+                {/* Subtle background gradient effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                  <div className="space-y-2">
-                    {mechanism.features.map(
-                      (feature, featureIndex) => (
-                        <div
-                          key={featureIndex}
-                          className="flex items-center space-x-2 text-sm"
-                        >
-                          <div
-                            className={`w-2 h-2 rounded-full ${
-                              mechanism.color === "text-primary"
-                                ? "bg-primary"
-                                : mechanism.color ===
-                                    "text-secondary"
-                                  ? "bg-secondary"
-                                  : mechanism.color ===
-                                      "text-yellow-500"
-                                    ? "bg-tertiary"
-                                    : "bg-accent"
-                            } animate-pulse-soft`}
-                            style={{
-                              animationDelay: `${featureIndex * 0.1}s`,
-                            }}
-                          />
-                          <span className="text-muted-foreground group-hover:text-foreground/80 transition-colors duration-300">
-                            {feature}
-                          </span>
-                        </div>
-                      ),
-                    )}
+                <div className="relative flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg transition-all duration-300">
+                    <TrendingUp className="h-6 w-6 text-primary group-hover:scale-110 transition-transform duration-300" />
                   </div>
-                </Card>
-              ))}
+                  <h3 className="text-xl font-semibold group-hover:text-primary/90 transition-colors duration-300">
+                    Value Growth Mechanism
+                  </h3>
+                </div>
+                <div className="relative space-y-4">
+                  <div className="flex items-center space-x-3 p-3 bg-primary-soft rounded-lg hover:bg-primary/5 hover:scale-[1.02] transition-all duration-300 group/item">
+                    <CheckCircle className="h-5 w-5 text-primary group-hover/item:scale-110 transition-transform duration-300" />
+                    <span className="text-sm group-hover/item:text-foreground/80 transition-colors duration-300">
+                      All project profits used for token buyback
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3 p-3 bg-primary-soft rounded-lg hover:bg-primary/5 hover:scale-[1.02] transition-all duration-300 group/item">
+                    <CheckCircle className="h-5 w-5 text-primary group-hover/item:scale-110 transition-transform duration-300" />
+                    <span className="text-sm group-hover/item:text-foreground/80 transition-colors duration-300">
+                      Token holder income comes from value appreciation or project contributions
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3 p-3 bg-primary-soft rounded-lg hover:bg-primary/5 hover:scale-[1.02] transition-all duration-300 group/item">
+                    <CheckCircle className="h-5 w-5 text-primary group-hover/item:scale-110 transition-transform duration-300" />
+                    <span className="text-sm group-hover/item:text-foreground/80 transition-colors duration-300">
+                      No profit from harming any participant
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-3 p-3 bg-primary-soft rounded-lg hover:bg-primary/5 hover:scale-[1.02] transition-all duration-300 group/item">
+                    <CheckCircle className="h-5 w-5 text-primary group-hover/item:scale-110 transition-transform duration-300" />
+                    <span className="text-sm group-hover/item:text-foreground/80 transition-colors duration-300">
+                      Recommendation relationships maintained in tokens, once confirmed cannot be modified
+                    </span>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6 border border-accent/20 hover:border-accent/40 hover:shadow-xl hover:scale-[1.02] transition-all duration-500 group overflow-hidden relative animate-fade-in-delay-2">
+                {/* Subtle background gradient effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                <div className="relative flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg transition-all duration-300">
+                    <Flame className="h-6 w-6 text-accent group-hover:scale-110 transition-transform duration-300" />
+                  </div>
+                  <h3 className="text-xl font-semibold group-hover:text-accent/90 transition-colors duration-300">
+                    Deflation Mechanism
+                  </h3>
+                </div>
+                <div className="relative space-y-4">
+                  <div className="p-4 bg-accent-soft rounded-lg border border-accent/20 hover:border-accent/40 hover:bg-accent/5 hover:scale-[1.02] transition-all duration-300 group/item">
+                    <h4 className="font-semibold text-accent mb-2 group-hover/item:scale-105 transition-transform duration-300">
+                      Buyback and Burn
+                    </h4>
+                    <p className="text-sm group-hover/item:text-foreground/80 transition-colors duration-300">
+                      All community profits used to buy and burn tokens
+                    </p>
+                  </div>
+                  <div className="p-4 bg-muted rounded-lg hover:bg-muted/80 hover:scale-[1.02] transition-all duration-300 group/item">
+                    <h4 className="font-semibold mb-2 group-hover/item:text-secondary/80 transition-colors duration-300">
+                      Annual Issuance Decreasing
+                    </h4>
+                    <p className="text-sm text-muted-foreground group-hover/item:text-foreground/70 transition-colors duration-300">
+                      Annual new token quantity = (200M - unlocked) ×
+                      0.02
+                    </p>
+                  </div>
+                  <div className="p-4 bg-yellow-soft rounded-lg border border-yellow-500/20 hover:border-tertiary/40 hover:bg-tertiary/5 hover:scale-[1.02] transition-all duration-300 group/item">
+                    <h4 className="font-semibold text-tertiary mb-2 group-hover/item:scale-105 transition-transform duration-300">
+                      Reduce Selling Volume
+                    </h4>
+                    <p className="text-sm group-hover/item:text-foreground/80 transition-colors duration-300">
+                      Any participant can only unlock in proportion when price doubles
+                    </p>
+                  </div>
+                </div>
+              </Card>
             </div>
 
-            {/* Economic Flow Revenue Distribution */}
-            <Card className="p-8 bg-muted/20 border border-primary/20 hover:border-primary/40 hover:shadow-xl transition-all duration-500 group overflow-hidden relative animate-fade-in-delay-5 mb-8">
+            <Card className="p-8 border border-primary/20 hover:border-primary/40 hover:shadow-xl transition-all duration-500 group overflow-hidden relative animate-fade-in-delay-3">
+              {/* Subtle background gradient effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
               <div className="relative">
-                <h4 className="text-xl font-bold text-center mb-8 text-gradient">
-                  Economic Flow Revenue Distribution
-                </h4>
-
+                <h3 className="text-2xl font-bold mb-6 text-center group-hover:text-primary/90 transition-colors duration-300">
+                  Economic Flow and Income Distribution
+                </h3>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  {/* Trading Revenue */}
-                  <div className="text-center group/flow hover:scale-105 transition-transform duration-300">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary/20 mx-auto mb-4 flex items-center justify-center group-hover/flow:scale-110 group-hover/flow:bg-primary/20 group-hover/flow:shadow-lg group-hover/flow:border-primary/40 transition-all duration-300">
-                      <TrendingUp className="h-8 w-8 text-primary group-hover/flow:scale-110 transition-transform duration-300" />
+                  <Card className="p-6 bg-primary-soft border border-primary/20 hover:border-primary/40 hover:scale-105 transition-all duration-300 group/flow">
+                    <div className="text-center space-y-4">
+                      <div className="w-16 h-16 mx-auto rounded-full gradient-primary flex items-center justify-center group-hover/flow:scale-110 group-hover/flow:shadow-lg transition-all duration-300 animate-pulse-soft">
+                        <TrendingUp className="h-8 w-8 text-white group-hover/flow:scale-110 transition-transform duration-300" />
+                      </div>
+                      <h4 className="font-semibold group-hover/flow:text-primary transition-colors duration-300">
+                        Transaction Income
+                      </h4>
+                      <p className="text-sm text-muted-foreground group-hover/flow:text-foreground/70 transition-colors duration-300">
+                        Platform transaction fee income and protocol income generated
+                      </p>
                     </div>
-                    <h5 className="font-semibold mb-3 text-primary">
-                      Trading Revenue
-                    </h5>
-                    <p className="text-sm text-muted-foreground group-hover/flow:text-foreground/80 transition-colors duration-300">
-                      Revenue distribution from platform trading
-                      fees
-                    </p>
-                  </div>
+                  </Card>
 
-                  {/* Value Enhancement */}
-                  <div className="text-center group/flow hover:scale-105 transition-transform duration-300">
-                    <div className="w-16 h-16 rounded-full bg-secondary/10 border-2 border-secondary/20 mx-auto mb-4 flex items-center justify-center group-hover/flow:scale-110 group-hover/flow:bg-secondary/20 group-hover/flow:shadow-lg group-hover/flow:border-secondary/40 transition-all duration-300">
-                      <ArrowUp className="h-8 w-8 text-secondary group-hover/flow:scale-110 transition-transform duration-300" />
+                  <Card className="p-6 bg-yellow-soft border border-yellow-500/20 hover:border-tertiary/40 hover:scale-105 transition-all duration-300 group/flow">
+                    <div className="text-center space-y-4">
+                      <div
+                        className="w-16 h-16 mx-auto rounded-full gradient-energy flex items-center justify-center group-hover/flow:scale-110 group-hover/flow:shadow-lg transition-all duration-300 animate-pulse-soft"
+                        style={{ animationDelay: "0.1s" }}
+                      >
+                        <ArrowUp className="h-8 w-8 text-white group-hover/flow:scale-110 transition-transform duration-300" />
+                      </div>
+                      <h4 className="font-semibold group-hover/flow:text-tertiary transition-colors duration-300">
+                        Value Enhancement
+                      </h4>
+                      <p className="text-sm text-muted-foreground group-hover/flow:text-foreground/70 transition-colors duration-300">
+                        Continuously improve ecosystem value through agreements
+                      </p>
                     </div>
-                    <h5 className="font-semibold mb-3 text-secondary">
-                      Value Enhancement
-                    </h5>
-                    <p className="text-sm text-muted-foreground group-hover/flow:text-foreground/80 transition-colors duration-300">
-                      Enhance user value through token price
-                      appreciation
-                    </p>
-                  </div>
+                  </Card>
 
-                  {/* Buyback & Burn */}
-                  <div className="text-center group/flow hover:scale-105 transition-transform duration-300">
-                    <div className="w-16 h-16 rounded-full bg-accent/10 border-2 border-accent/20 mx-auto mb-4 flex items-center justify-center group-hover/flow:scale-110 group-hover/flow:bg-accent/20 group-hover/flow:shadow-lg group-hover/flow:border-accent/40 transition-all duration-300">
-                      <Flame className="h-8 w-8 text-accent group-hover/flow:scale-110 transition-transform duration-300" />
+                  <Card className="p-6 bg-accent-soft border border-accent/20 hover:border-accent/40 hover:scale-105 transition-all duration-300 group/flow">
+                    <div className="text-center space-y-4">
+                      <div
+                        className="w-16 h-16 mx-auto rounded-full gradient-secondary flex items-center justify-center group-hover/flow:scale-110 group-hover/flow:shadow-lg transition-all duration-300 animate-pulse-soft"
+                        style={{ animationDelay: "0.2s" }}
+                      >
+                        <Flame className="h-8 w-8 text-white group-hover/flow:scale-110 transition-transform duration-300" />
+                      </div>
+                      <h4 className="font-semibold group-hover/flow:text-accent transition-colors duration-300">
+                        Buyback and Burn
+                      </h4>
+                      <p className="text-sm text-muted-foreground group-hover/flow:text-foreground/70 transition-colors duration-300">
+                        Continuously reduce token supply
+                      </p>
                     </div>
-                    <h5 className="font-semibold mb-3 text-accent">
-                      Buyback & Burn
-                    </h5>
-                    <p className="text-sm text-muted-foreground group-hover/flow:text-foreground/80 transition-colors duration-300">
-                      Continuously reduce token market
-                      circulation
-                    </p>
-                  </div>
+                  </Card>
 
-                  {/* Liquidity Incentives */}
-                  <div className="text-center group/flow hover:scale-105 transition-transform duration-300">
-                    <div className="w-16 h-16 rounded-full bg-tertiary/10 border-2 border-tertiary/20 mx-auto mb-4 flex items-center justify-center group-hover/flow:scale-110 group-hover/flow:bg-tertiary/20 group-hover/flow:shadow-lg group-hover/flow:border-tertiary/40 transition-all duration-300">
-                      <Droplets className="h-8 w-8 text-tertiary group-hover/flow:scale-110 transition-transform duration-300" />
+                  <Card className="p-6 bg-secondary-soft border border-secondary/20 hover:border-secondary/40 hover:scale-105 transition-all duration-300 group/flow">
+                    <div className="text-center space-y-4">
+                      <div
+                        className="w-16 h-16 mx-auto rounded-full gradient-warm flex items-center justify-center group-hover/flow:scale-110 group-hover/flow:shadow-lg transition-all duration-300 animate-pulse-soft"
+                        style={{ animationDelay: "0.3s" }}
+                      >
+                        <Droplets className="h-8 w-8 text-white group-hover/flow:scale-110 transition-transform duration-300" />
+                      </div>
+                      <h4 className="font-semibold group-hover/flow:text-secondary transition-colors duration-300">
+                        Liquidity Incentive
+                      </h4>
+                      <p className="text-sm text-muted-foreground group-hover/flow:text-foreground/70 transition-colors duration-300">
+                        Allocate additional tokens to liquidity providers
+                      </p>
                     </div>
-                    <h5 className="font-semibold mb-3 text-tertiary">
-                      Liquidity Incentives
-                    </h5>
-                    <p className="text-sm text-muted-foreground group-hover/flow:text-foreground/80 transition-colors duration-300">
-                      Allocate more tokens to liquidity
-                      providers
-                    </p>
-                  </div>
+                  </Card>
                 </div>
               </div>
             </Card>

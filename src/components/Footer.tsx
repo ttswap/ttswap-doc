@@ -44,7 +44,7 @@ export function Footer() {
       href: "#telegram",
     },
     { name: "Github", icon: Github, href: "#github" },
-    { name: "Documentation", icon: BookOpen, href: "#docs" },
+    { name: "Docs", icon: BookOpen, href: "#docs" },
   ];
 
   return (
@@ -86,7 +86,7 @@ export function Footer() {
                 </span>
               </div>
               <p className="text-muted-foreground max-w-xs leading-relaxed">
-                Revolutionary DeFi protocol that eliminates impermanent loss and reduces trading costs by 50%+ through constant value algorithms.
+                Revolutionary DeFi protocol that eliminates impermanent loss and reduces 50%+ trading costs through constant value algorithms.
               </p>
               <div className="flex space-x-3">
                 {socialLinks.map((social) => {

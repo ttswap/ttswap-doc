@@ -17,14 +17,14 @@ export function RewardsSection() {
     {
       icon: Crown,
       title: "Token Manager",
-      subtitle: "First Token Contributor",
+      subtitle: "First token contributor",
       commission: "1%-3%",
       description:
-        "When users first add tokens to the platform, they become token managers representing token operations delegated by the community.",
+        "When users first add a token to the platform, they become token managers, representing community-delegated token operations.",
       details: [
-        "Community delegated management",
-        "2-year evaluation cycle for non-project tokens",
-        "Earn 1%-3% commission from token trades",
+        "Community-delegated management",
+        "Non-project tokens 2-year evaluation period",
+        "Enjoy 1%-3% commission from token trades",
         "Responsible for token community growth",
       ],
       gradient: "from-yellow-500 to-orange-500",
@@ -32,12 +32,12 @@ export function RewardsSection() {
     {
       icon: Droplets,
       title: "Liquidity Provider",
-      subtitle: "Pool Liquidity Contributor",
+      subtitle: "Pool liquidity contributor",
       commission: "50%-80%",
       description:
         "Users who provide liquidity automatically become liquidity providers, sharing the majority of trading fees.",
       details: [
-        "Automatic status after providing liquidity",
+        "Automatically gain status after providing liquidity",
         "Share 50%-80% of trading fees",
         "Distribution based on contribution ratio",
         "No impermanent loss risk",
@@ -47,7 +47,7 @@ export function RewardsSection() {
     {
       icon: Headphones,
       title: "Service Provider",
-      subtitle: "Trading & Investment Services",
+      subtitle: "Trading & investment services",
       commission: "5%-25%",
       description:
         "Service providers who offer trading, investment, and other DeFi services to users.",
@@ -55,21 +55,21 @@ export function RewardsSection() {
         "Provide trading and investment services",
         "Earn 5%-25% commission from facilitated trades",
         "Build reputation through quality service",
-        "Revenue scales with user base growth",
+        "Revenue grows with user base",
       ],
       gradient: "from-purple-500 to-pink-500",
     },
     {
       icon: Share,
       title: "Referrer",
-      subtitle: "User Referral",
+      subtitle: "User referral",
       commission: "5%-10%",
       description:
-        "Users who refer others to the platform can earn commissions from their referees' trading fees.",
+        "Users who refer others to the platform can earn commission from their referees' trading fees.",
       details: [
         "Earn from referee trading activities",
         "Get 5%-10% commission from referee fees",
-        "Build passive income through networks",
+        "Build passive income through network",
         "Unlimited referral potential",
       ],
       gradient: "from-green-500 to-teal-500",
@@ -77,8 +77,8 @@ export function RewardsSection() {
     {
       icon: User,
       title: "User",
-      subtitle: "Platform Trader",
-      commission: "10% Discount",
+      subtitle: "Platform trader",
+      commission: "10% discount",
       description:
         "Regular users who add referrers enjoy trading fee discounts on all trading activities.",
       details: [
@@ -92,12 +92,12 @@ export function RewardsSection() {
     {
       icon: Building,
       title: "Community",
-      subtitle: "Technical Support",
+      subtitle: "Technical support",
       commission: "2%-8%",
-      description: "Community provides technical support and development, receiving platform fee shares.",
+      description: "Community provides technical support and development, earning platform fee share.",
       details: [
         "Provide technical support and development",
-        "Receive 2%-8% of total platform fees",
+        "Earn 2%-8% of total platform fees",
         "Governance and protocol improvements",
         "Focus on long-term sustainability",
       ],
@@ -246,7 +246,7 @@ export function RewardsSection() {
 
             <div className="space-y-4">
               <h4 className="text-lg font-semibold group-hover:text-primary/90 transition-colors duration-300">
-                核心优势
+                Core Benefits
               </h4>
               <ul className="space-y-3">
                 {roles[selectedRole].details.map(

@@ -23,8 +23,8 @@ export function ProblemsSection() {
           </h2>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            TTSwap addresses the fundamental challenges plaguing traditional decentralized exchanges,
-            delivering unprecedented efficiency and user returns.
+            TTSwap solves fundamental challenges that plague traditional decentralized exchanges,
+            providing unprecedented efficiency and user benefits.
           </p>
         </div>
 

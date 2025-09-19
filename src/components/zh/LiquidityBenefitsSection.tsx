@@ -144,11 +144,6 @@ export function LiquidityBenefitsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium mb-6">
-            <Sparkles className="w-4 h-4 mr-2" />
-            流动性投资收益
-          </div>
-
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
             最大化您的
             <span className="text-gradient mx-3">
