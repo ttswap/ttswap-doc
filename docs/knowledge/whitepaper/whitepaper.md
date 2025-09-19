@@ -1,6 +1,3 @@
----
-slug: /whitepaper
----
 
 ## 1 Overview  
 

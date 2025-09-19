@@ -89,72 +89,114 @@ const config: Config = {
       title: 'TTSwap',
       logo: {
         alt: 'TTSwap Logo',
-        src: 'img/logo.png',
+        src: 'img/logo.png',  // 记得把 logo 放到 /static/img/tt_logo.png
       },
-      items: [
-        {to: '/docs/whitepaper', label: 'Whitepaper', position: 'left'},
-        {to: '/blog', label: 'Blog', position: 'left'},
+       items: [
+        // 中间菜单
+        {to: '/', label: 'Home', position: 'left'},
+        {label: 'Activity', position: 'left',items:[
+          {to: '/docs/articles/publicsell', label: 'Public Sell', },
+          {to: '/docs/articles/tokenairdrop', label: 'Token Airdrop', },
+        ],},
+        {label: 'Knowledge', position: 'left',items:[
+          {to: '/docs/knowledge/userdoc', label: 'User Doc', },
+          {to: '/docs/knowledge/tokeneconomic', label: 'Token Economic', },
+          {to: '/docs/knowledge/whitepaper', label: 'WhitePaper', },
+        ],},
+        {label: 'Join DAO', position: 'left',items:[
+          {to: '/docs/community/introduce', label: 'Allocate Commission By Role', },
+          {to: '/docs/community/recommander', label: 'Be Referral', },
+          {to: '/docs/community/tokenoperator', label: 'Be Token Operator', },
+          {to: '/docs/community/gate', label: 'Be Service Provider', },
+          {to: '/docs/community/builder', label: 'Be Builder', },
+          {to: '/docs/community/liquidityprovider', label: 'Be Liquidityprovider', },
+          {to: '/docs/community/investor', label: 'Be Investor', },
+        ],},
+
+        // 右侧社交图标
         {
-          type: 'localeDropdown',
+          href: 'https://discord.gg/xxxx',
           position: 'right',
+          className: 'header-discord-link',
+          'aria-label': 'Discord',
         },
-       
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://t.me/xxxx',
           position: 'right',
+          className: 'header-telegram-link',
+          'aria-label': 'Telegram',
+        },
+        {
+          href: 'https://twitter.com/xxxx',
+          position: 'right',
+          className: 'header-twitter-link',
+          'aria-label': 'Twitter',
+        },
+        {
+          href: 'https://github.com/xxxx',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub',
+        },
+
+        // 最右边 Connect Wallet 按钮
+        {
+          href: 'https://app.ttswap.io',
+          label: 'Connect Wallet',
+          position: 'right',
+          className: 'navbar-wallet-button',
         },
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/whitepaper',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-    },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-    },
+    // footer: {
+    //   style: 'dark',
+    //   links: [
+    //     {
+    //       title: 'Docs',
+    //       items: [
+    //         {
+    //           label: 'Tutorial',
+    //           to: '/docs/whitepaper',
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: 'Community',
+    //       items: [
+    //         {
+    //           label: 'Stack Overflow',
+    //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+    //         },
+    //         {
+    //           label: 'Discord',
+    //           href: 'https://discordapp.com/invite/docusaurus',
+    //         },
+    //         {
+    //           label: 'X',
+    //           href: 'https://x.com/docusaurus',
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: 'More',
+    //       items: [
+    //         {
+    //           label: 'Blog',
+    //           to: '/blog',
+    //         },
+    //         {
+    //           label: 'GitHub',
+    //           href: 'https://github.com/facebook/docusaurus',
+    //         },
+    //       ],
+    //     },
+    //   ],
+    //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+    // },
+    // prism: {
+    //   theme: prismThemes.github,
+    //   darkTheme: prismThemes.dracula,
+    // },
   } satisfies Preset.ThemeConfig,
 };
 

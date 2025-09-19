@@ -1,6 +1,6 @@
 {
   "docusaurusVersion": "3.8.1",
-  "siteVersion": "0.0.0",
+  "siteVersion": "0.0.3",
   "pluginVersions": {
     "docusaurus-plugin-css-cascade-layers": {
       "type": "package",
