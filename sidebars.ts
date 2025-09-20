@@ -20,11 +20,11 @@ const sidebars: SidebarsConfig = {
   
   tutorialSidebar: [
    
-    {
-      type: 'category', 
-      label: 'Whitepaper',
-      items: ['whitepaper/whitepaper'],
-    },
+    // {
+    //   type: 'category', 
+    //   label: 'WhitePaper',
+    //   items: ['docs/whitepaper/whitepaper'],
+    // },
   ],
    
 };

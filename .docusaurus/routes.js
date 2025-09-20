@@ -114,21 +114,75 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '002'),
+    component: ComponentCreator('/docs', 'f38'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'de0'),
+        component: ComponentCreator('/docs', 'f11'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '256'),
+            component: ComponentCreator('/docs', '6d4'),
             routes: [
               {
-                path: '/docs/whitepaper',
-                component: ComponentCreator('/docs/whitepaper', '588'),
-                exact: true,
-                sidebar: "tutorialSidebar"
+                path: '/docs/articles/publicsell',
+                component: ComponentCreator('/docs/articles/publicsell', '531'),
+                exact: true
+              },
+              {
+                path: '/docs/articles/tokenairdrop',
+                component: ComponentCreator('/docs/articles/tokenairdrop', 'b04'),
+                exact: true
+              },
+              {
+                path: '/docs/community/builder',
+                component: ComponentCreator('/docs/community/builder', '9a2'),
+                exact: true
+              },
+              {
+                path: '/docs/community/gate',
+                component: ComponentCreator('/docs/community/gate', '378'),
+                exact: true
+              },
+              {
+                path: '/docs/community/introduce',
+                component: ComponentCreator('/docs/community/introduce', '654'),
+                exact: true
+              },
+              {
+                path: '/docs/community/investor',
+                component: ComponentCreator('/docs/community/investor', '179'),
+                exact: true
+              },
+              {
+                path: '/docs/community/liquidityprovider',
+                component: ComponentCreator('/docs/community/liquidityprovider', '55c'),
+                exact: true
+              },
+              {
+                path: '/docs/community/recommander',
+                component: ComponentCreator('/docs/community/recommander', '9b0'),
+                exact: true
+              },
+              {
+                path: '/docs/community/tokenoperator',
+                component: ComponentCreator('/docs/community/tokenoperator', '331'),
+                exact: true
+              },
+              {
+                path: '/docs/knowledge/tokeneconomic',
+                component: ComponentCreator('/docs/knowledge/tokeneconomic', '9f1'),
+                exact: true
+              },
+              {
+                path: '/docs/knowledge/userdoc/',
+                component: ComponentCreator('/docs/knowledge/userdoc/', '9e3'),
+                exact: true
+              },
+              {
+                path: '/docs/knowledge/whitepaper/',
+                component: ComponentCreator('/docs/knowledge/whitepaper/', '0db'),
+                exact: true
               }
             ]
           }

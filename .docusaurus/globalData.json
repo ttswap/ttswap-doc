@@ -8,22 +8,60 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "whitepaper/whitepaper",
+          "mainDocId": "articles/publicsell",
           "docs": [
             {
-              "id": "whitepaper/whitepaper",
-              "path": "/docs/whitepaper",
-              "sidebar": "tutorialSidebar"
+              "id": "articles/publicsell",
+              "path": "/docs/articles/publicsell"
+            },
+            {
+              "id": "articles/tokenairdrop",
+              "path": "/docs/articles/tokenairdrop"
+            },
+            {
+              "id": "community/builder",
+              "path": "/docs/community/builder"
+            },
+            {
+              "id": "community/gate",
+              "path": "/docs/community/gate"
+            },
+            {
+              "id": "community/introduce",
+              "path": "/docs/community/introduce"
+            },
+            {
+              "id": "community/investor",
+              "path": "/docs/community/investor"
+            },
+            {
+              "id": "community/liquidityprovider",
+              "path": "/docs/community/liquidityprovider"
+            },
+            {
+              "id": "community/recommander",
+              "path": "/docs/community/recommander"
+            },
+            {
+              "id": "community/tokenoperator",
+              "path": "/docs/community/tokenoperator"
+            },
+            {
+              "id": "knowledge/tokeneconomic",
+              "path": "/docs/knowledge/tokeneconomic"
+            },
+            {
+              "id": "knowledge/userdoc/userdoc",
+              "path": "/docs/knowledge/userdoc/"
+            },
+            {
+              "id": "knowledge/whitepaper/whitepaper",
+              "path": "/docs/knowledge/whitepaper/"
             }
           ],
           "draftIds": [],
           "sidebars": {
-            "tutorialSidebar": {
-              "link": {
-                "path": "/docs/whitepaper",
-                "label": "whitepaper/whitepaper"
-              }
-            }
+            "tutorialSidebar": {}
           }
         }
       ],

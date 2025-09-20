@@ -12,7 +12,7 @@ import { TokenomicsSection } from "../../components/zh/TokenomicsSection";
 import { LiquidityBenefitsSection } from "../../components/zh/LiquidityBenefitsSection";
 import { Footer } from "../../components/zh/Footer";
 import { TTSwapWrapper } from "../../components/zh/TTSwapWrapper";
-import "../../css/ttswap-isolated.css";
+//import "../../css/ttswap-isolated.css";
 
 
 export default function Home(): ReactNode {

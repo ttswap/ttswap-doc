@@ -1,0 +1,15 @@
+{
+  "id": "knowledge/userdoc/userdoc",
+  "title": "userdoc",
+  "description": "✅ I. What is TTSWAP?",
+  "source": "@site/docs/knowledge/userdoc/userdoc.md",
+  "sourceDirName": "knowledge/userdoc",
+  "slug": "/knowledge/userdoc/",
+  "permalink": "/docs/knowledge/userdoc/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/knowledge/userdoc/userdoc.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

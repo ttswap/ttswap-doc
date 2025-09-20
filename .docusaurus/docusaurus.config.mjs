@@ -96,277 +96,108 @@ export default {
       },
       "items": [
         {
-          "to": "/docs/whitepaper",
-          "label": "Whitepaper",
+          "to": "/",
+          "label": "Home",
           "position": "left"
         },
         {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
+          "label": "Activity",
+          "position": "left",
+          "items": [
+            {
+              "to": "/docs/articles/publicsell",
+              "label": "Public Sell"
+            },
+            {
+              "to": "/docs/articles/tokenairdrop",
+              "label": "Token Airdrop"
+            }
+          ]
         },
         {
-          "type": "localeDropdown",
+          "label": "Knowledge",
+          "position": "left",
+          "items": [
+            {
+              "to": "/docs/knowledge/userdoc",
+              "label": "User Doc"
+            },
+            {
+              "to": "/docs/knowledge/tokeneconomic",
+              "label": "Token Economic"
+            },
+            {
+              "to": "/docs/knowledge/whitepaper",
+              "label": "WhitePaper"
+            }
+          ]
+        },
+        {
+          "label": "Join DAO",
+          "position": "left",
+          "items": [
+            {
+              "to": "/docs/community/introduce",
+              "label": "Allocate Commission By Role"
+            },
+            {
+              "to": "/docs/community/recommander",
+              "label": "Be Referral"
+            },
+            {
+              "to": "/docs/community/tokenoperator",
+              "label": "Be Token Operator"
+            },
+            {
+              "to": "/docs/community/gate",
+              "label": "Be Service Provider"
+            },
+            {
+              "to": "/docs/community/builder",
+              "label": "Be Builder"
+            },
+            {
+              "to": "/docs/community/liquidityprovider",
+              "label": "Be Liquidityprovider"
+            },
+            {
+              "to": "/docs/community/investor",
+              "label": "Be Investor"
+            }
+          ]
+        },
+        {
+          "href": "https://discord.gg/xxxx",
           "position": "right",
-          "dropdownItemsBefore": [],
-          "dropdownItemsAfter": []
+          "className": "header-discord-link",
+          "aria-label": "Discord"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
-          "label": "GitHub",
-          "position": "right"
+          "href": "https://t.me/xxxx",
+          "position": "right",
+          "className": "header-telegram-link",
+          "aria-label": "Telegram"
+        },
+        {
+          "href": "https://twitter.com/xxxx",
+          "position": "right",
+          "className": "header-twitter-link",
+          "aria-label": "Twitter"
+        },
+        {
+          "href": "https://github.com/xxxx",
+          "position": "right",
+          "className": "header-github-link",
+          "aria-label": "GitHub"
+        },
+        {
+          "href": "https://app.ttswap.io",
+          "label": "Connect Wallet",
+          "position": "right",
+          "className": "navbar-wallet-button"
         }
       ],
       "hideOnScroll": false
-    },
-    "footer": {
-      "style": "dark",
-      "links": [
-        {
-          "title": "Docs",
-          "items": [
-            {
-              "label": "Tutorial",
-              "to": "/docs/whitepaper"
-            }
-          ]
-        },
-        {
-          "title": "Community",
-          "items": [
-            {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
-            },
-            {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              "label": "X",
-              "href": "https://x.com/docusaurus"
-            }
-          ]
-        },
-        {
-          "title": "More",
-          "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
-              "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
-            }
-          ]
-        }
-      ],
-      "copyright": "Copyright © 2025 My Project, Inc. Built with Docusaurus."
-    },
-    "prism": {
-      "theme": {
-        "plain": {
-          "color": "#393A34",
-          "backgroundColor": "#f6f8fa"
-        },
-        "styles": [
-          {
-            "types": [
-              "comment",
-              "prolog",
-              "doctype",
-              "cdata"
-            ],
-            "style": {
-              "color": "#999988",
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "types": [
-              "namespace"
-            ],
-            "style": {
-              "opacity": 0.7
-            }
-          },
-          {
-            "types": [
-              "string",
-              "attr-value"
-            ],
-            "style": {
-              "color": "#e3116c"
-            }
-          },
-          {
-            "types": [
-              "punctuation",
-              "operator"
-            ],
-            "style": {
-              "color": "#393A34"
-            }
-          },
-          {
-            "types": [
-              "entity",
-              "url",
-              "symbol",
-              "number",
-              "boolean",
-              "variable",
-              "constant",
-              "property",
-              "regex",
-              "inserted"
-            ],
-            "style": {
-              "color": "#36acaa"
-            }
-          },
-          {
-            "types": [
-              "atrule",
-              "keyword",
-              "attr-name",
-              "selector"
-            ],
-            "style": {
-              "color": "#00a4db"
-            }
-          },
-          {
-            "types": [
-              "function",
-              "deleted",
-              "tag"
-            ],
-            "style": {
-              "color": "#d73a49"
-            }
-          },
-          {
-            "types": [
-              "function-variable"
-            ],
-            "style": {
-              "color": "#6f42c1"
-            }
-          },
-          {
-            "types": [
-              "tag",
-              "selector",
-              "keyword"
-            ],
-            "style": {
-              "color": "#00009f"
-            }
-          }
-        ]
-      },
-      "darkTheme": {
-        "plain": {
-          "color": "#F8F8F2",
-          "backgroundColor": "#282A36"
-        },
-        "styles": [
-          {
-            "types": [
-              "prolog",
-              "constant",
-              "builtin"
-            ],
-            "style": {
-              "color": "rgb(189, 147, 249)"
-            }
-          },
-          {
-            "types": [
-              "inserted",
-              "function"
-            ],
-            "style": {
-              "color": "rgb(80, 250, 123)"
-            }
-          },
-          {
-            "types": [
-              "deleted"
-            ],
-            "style": {
-              "color": "rgb(255, 85, 85)"
-            }
-          },
-          {
-            "types": [
-              "changed"
-            ],
-            "style": {
-              "color": "rgb(255, 184, 108)"
-            }
-          },
-          {
-            "types": [
-              "punctuation",
-              "symbol"
-            ],
-            "style": {
-              "color": "rgb(248, 248, 242)"
-            }
-          },
-          {
-            "types": [
-              "string",
-              "char",
-              "tag",
-              "selector"
-            ],
-            "style": {
-              "color": "rgb(255, 121, 198)"
-            }
-          },
-          {
-            "types": [
-              "keyword",
-              "variable"
-            ],
-            "style": {
-              "color": "rgb(189, 147, 249)",
-              "fontStyle": "italic"
-            }
-          },
-          {
-            "types": [
-              "comment"
-            ],
-            "style": {
-              "color": "rgb(98, 114, 164)"
-            }
-          },
-          {
-            "types": [
-              "attr-name"
-            ],
-            "style": {
-              "color": "rgb(241, 250, 140)"
-            }
-          }
-        ]
-      },
-      "additionalLanguages": [],
-      "magicComments": [
-        {
-          "className": "theme-code-block-highlighted-line",
-          "line": "highlight-next-line",
-          "block": {
-            "start": "highlight-start",
-            "end": "highlight-end"
-          }
-        }
-      ]
     },
     "colorMode": {
       "defaultMode": "light",
@@ -386,6 +217,148 @@ export default {
       }
     },
     "metadata": [],
+    "prism": {
+      "additionalLanguages": [],
+      "theme": {
+        "plain": {
+          "color": "#bfc7d5",
+          "backgroundColor": "#292d3e"
+        },
+        "styles": [
+          {
+            "types": [
+              "comment"
+            ],
+            "style": {
+              "color": "rgb(105, 112, 152)",
+              "fontStyle": "italic"
+            }
+          },
+          {
+            "types": [
+              "string",
+              "inserted"
+            ],
+            "style": {
+              "color": "rgb(195, 232, 141)"
+            }
+          },
+          {
+            "types": [
+              "number"
+            ],
+            "style": {
+              "color": "rgb(247, 140, 108)"
+            }
+          },
+          {
+            "types": [
+              "builtin",
+              "char",
+              "constant",
+              "function"
+            ],
+            "style": {
+              "color": "rgb(130, 170, 255)"
+            }
+          },
+          {
+            "types": [
+              "punctuation",
+              "selector"
+            ],
+            "style": {
+              "color": "rgb(199, 146, 234)"
+            }
+          },
+          {
+            "types": [
+              "variable"
+            ],
+            "style": {
+              "color": "rgb(191, 199, 213)"
+            }
+          },
+          {
+            "types": [
+              "class-name",
+              "attr-name"
+            ],
+            "style": {
+              "color": "rgb(255, 203, 107)"
+            }
+          },
+          {
+            "types": [
+              "tag",
+              "deleted"
+            ],
+            "style": {
+              "color": "rgb(255, 85, 114)"
+            }
+          },
+          {
+            "types": [
+              "operator"
+            ],
+            "style": {
+              "color": "rgb(137, 221, 255)"
+            }
+          },
+          {
+            "types": [
+              "boolean"
+            ],
+            "style": {
+              "color": "rgb(255, 88, 116)"
+            }
+          },
+          {
+            "types": [
+              "keyword"
+            ],
+            "style": {
+              "fontStyle": "italic"
+            }
+          },
+          {
+            "types": [
+              "doctype"
+            ],
+            "style": {
+              "color": "rgb(199, 146, 234)",
+              "fontStyle": "italic"
+            }
+          },
+          {
+            "types": [
+              "namespace"
+            ],
+            "style": {
+              "color": "rgb(178, 204, 214)"
+            }
+          },
+          {
+            "types": [
+              "url"
+            ],
+            "style": {
+              "color": "rgb(221, 221, 221)"
+            }
+          }
+        ]
+      },
+      "magicComments": [
+        {
+          "className": "theme-code-block-highlighted-line",
+          "line": "highlight-next-line",
+          "block": {
+            "start": "highlight-start",
+            "end": "highlight-end"
+          }
+        }
+      ]
+    },
     "tableOfContents": {
       "minHeadingLevel": 2,
       "maxHeadingLevel": 3

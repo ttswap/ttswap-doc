@@ -78,3 +78,46 @@
   --sidebar-border: oklch(.269 0 0);
   --sidebar-ring: oklch(.439 0 0);
 }
+
+.header-discord-link {
+  background: url('/img/logo.png') no-repeat center;
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+  opacity: 0.7;
+}
+.header-telegram-link {
+  background: url('/img/logo.png') no-repeat center;
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+  opacity: 0.7;
+}
+.header-twitter-link {
+  background: url('/img/logo.png') no-repeat center;
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+  opacity: 0.7;
+}
+.header-github-link {
+  background: url('/img/logo.png') no-repeat center;
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+  opacity: 0.7;
+}
+
+/* Connect Wallet 按钮 */
+.navbar-wallet-button {
+  background: #0fb981;
+  border-radius: 8px;
+  padding: 6px 16px;
+  color: #fff !important;
+  font-weight: 600;
+  margin-left: 8px;
+}
+.navbar-wallet-button:hover {
+  background: #0ca86e;
+  text-decoration: none;
+}

@@ -1,0 +1,20 @@
+{
+  "id": "knowledge/userdoc/README",
+  "title": "⚖️ TTSWAP Detailed Introduction",
+  "description": "TTSWAP is a decentralized token trading platform where anyone can quickly and safely exchange one token for another without relying on centralized exchanges.",
+  "source": "@site/docs/knowledge/userdoc/README.md",
+  "sourceDirName": "knowledge/userdoc",
+  "slug": "/knowledge/userdoc/",
+  "permalink": "/docs/knowledge/userdoc/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/knowledge/userdoc/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "lang": "en-US",
+    "title": "⚖️ TTSWAP Detailed Introduction",
+    "description": "TTSWAP is a decentralized token trading platform where anyone can quickly and safely exchange one token for another without relying on centralized exchanges.",
+    "collapsed": true
+  }
+}
