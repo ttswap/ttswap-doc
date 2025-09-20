@@ -81,27 +81,34 @@
 
 .header-discord-link {
   background: url('/img/discord.svg') no-repeat center;
+  background-size: 32px;
   width: 32px;
   height: 32px;
   margin: 0 4px;
   opacity: 0.7;
 }
+
 .header-telegram-link {
   background: url('/img/tg.svg') no-repeat center;
+  background-size: 32px;
   width: 32px;
   height: 32px;
   margin: 0 4px;
   opacity: 0.7;
 }
+
 .header-twitter-link {
   background: url('/img/x.svg') no-repeat center;
+  background-size: 32px;
   width: 32px;
   height: 32px;
   margin: 0 4px;
   opacity: 0.7;
 }
+
 .header-github-link {
   background: url('/img/github.svg') no-repeat center;
+  background-size: 32px;
   width: 32px;
   height: 32px;
   margin: 0 4px;
@@ -117,6 +124,7 @@
   font-weight: 600;
   margin-left: 8px;
 }
+
 .navbar-wallet-button:hover {
   background: #0ca86e;
   text-decoration: none;
