@@ -1,0 +1,20 @@
+{
+  "id": "articles/tokenairdrop",
+  "title": "Airdrop (Planing)",
+  "description": "aa",
+  "source": "@site/i18n/zh/docusaurus-plugin-content-docs/current/articles/tokenairdrop.md",
+  "sourceDirName": "articles",
+  "slug": "/articles/tokenairdrop",
+  "permalink": "/zh/docs/articles/tokenairdrop",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/articles/tokenairdrop.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "lang": "en-US",
+    "title": "Airdrop (Planing)",
+    "description": "aa",
+    "createTime": "2025/05/17 14:18:10"
+  }
+}

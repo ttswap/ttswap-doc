@@ -79,74 +79,74 @@ export default [
   },
   {
     path: '/zh/docs',
-    component: ComponentCreator('/zh/docs', 'da6'),
+    component: ComponentCreator('/zh/docs', 'c3a'),
     routes: [
       {
         path: '/zh/docs',
-        component: ComponentCreator('/zh/docs', '8bd'),
+        component: ComponentCreator('/zh/docs', 'e9e'),
         routes: [
           {
             path: '/zh/docs',
-            component: ComponentCreator('/zh/docs', 'b33'),
+            component: ComponentCreator('/zh/docs', '3e1'),
             routes: [
               {
                 path: '/zh/docs/articles/publicsell',
-                component: ComponentCreator('/zh/docs/articles/publicsell', 'a89'),
+                component: ComponentCreator('/zh/docs/articles/publicsell', 'eb0'),
                 exact: true
               },
               {
                 path: '/zh/docs/articles/tokenairdrop',
-                component: ComponentCreator('/zh/docs/articles/tokenairdrop', '88e'),
+                component: ComponentCreator('/zh/docs/articles/tokenairdrop', 'fd4'),
                 exact: true
               },
               {
                 path: '/zh/docs/community/builder',
-                component: ComponentCreator('/zh/docs/community/builder', 'ed8'),
+                component: ComponentCreator('/zh/docs/community/builder', '2ee'),
                 exact: true
               },
               {
                 path: '/zh/docs/community/gate',
-                component: ComponentCreator('/zh/docs/community/gate', '0ed'),
+                component: ComponentCreator('/zh/docs/community/gate', '659'),
                 exact: true
               },
               {
                 path: '/zh/docs/community/introduce',
-                component: ComponentCreator('/zh/docs/community/introduce', 'e54'),
+                component: ComponentCreator('/zh/docs/community/introduce', '9c1'),
                 exact: true
               },
               {
                 path: '/zh/docs/community/investor',
-                component: ComponentCreator('/zh/docs/community/investor', '705'),
+                component: ComponentCreator('/zh/docs/community/investor', '653'),
                 exact: true
               },
               {
                 path: '/zh/docs/community/liquidityprovider',
-                component: ComponentCreator('/zh/docs/community/liquidityprovider', '9c3'),
+                component: ComponentCreator('/zh/docs/community/liquidityprovider', '445'),
                 exact: true
               },
               {
                 path: '/zh/docs/community/recommander',
-                component: ComponentCreator('/zh/docs/community/recommander', '692'),
+                component: ComponentCreator('/zh/docs/community/recommander', 'cd4'),
                 exact: true
               },
               {
                 path: '/zh/docs/community/tokenoperator',
-                component: ComponentCreator('/zh/docs/community/tokenoperator', '502'),
+                component: ComponentCreator('/zh/docs/community/tokenoperator', '820'),
                 exact: true
               },
               {
                 path: '/zh/docs/knowledge/tokeneconomic',
-                component: ComponentCreator('/zh/docs/knowledge/tokeneconomic', '536'),
+                component: ComponentCreator('/zh/docs/knowledge/tokeneconomic', '47b'),
                 exact: true
               },
               {
                 path: '/zh/docs/knowledge/userdoc/',
-                component: ComponentCreator('/zh/docs/knowledge/userdoc/', '995'),
+                component: ComponentCreator('/zh/docs/knowledge/userdoc/', '471'),
                 exact: true
               },
               {
                 path: '/zh/docs/knowledge/whitepaper/',
-                component: ComponentCreator('/zh/docs/knowledge/whitepaper/', 'b9e'),
+                component: ComponentCreator('/zh/docs/knowledge/whitepaper/', '46b'),
                 exact: true
               }
             ]
