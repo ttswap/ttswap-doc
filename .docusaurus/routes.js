@@ -3,185 +3,150 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
+    path: '/zh/blog',
+    component: ComponentCreator('/zh/blog', '0fc'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
+    path: '/zh/blog/archive',
+    component: ComponentCreator('/zh/blog/archive', '3be'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
+    path: '/zh/blog/authors',
+    component: ComponentCreator('/zh/blog/authors', '55d'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
+    path: '/zh/blog/authors/all-sebastien-lorber-articles',
+    component: ComponentCreator('/zh/blog/authors/all-sebastien-lorber-articles', '54f'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
+    path: '/zh/blog/authors/yangshun',
+    component: ComponentCreator('/zh/blog/authors/yangshun', '4df'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
+    path: '/zh/blog/first-blog-post',
+    component: ComponentCreator('/zh/blog/first-blog-post', 'ef6'),
     exact: true
   },
   {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
+    path: '/zh/blog/long-blog-post',
+    component: ComponentCreator('/zh/blog/long-blog-post', '99a'),
     exact: true
   },
   {
-    path: '/blog',
-    component: ComponentCreator('/blog', 'b2f'),
+    path: '/zh/blog/mdx-blog-post',
+    component: ComponentCreator('/zh/blog/mdx-blog-post', '0aa'),
     exact: true
   },
   {
-    path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', '182'),
+    path: '/zh/blog/tags',
+    component: ComponentCreator('/zh/blog/tags', 'e48'),
     exact: true
   },
   {
-    path: '/blog/authors',
-    component: ComponentCreator('/blog/authors', '0b7'),
+    path: '/zh/blog/tags/docusaurus',
+    component: ComponentCreator('/zh/blog/tags/docusaurus', 'fb3'),
     exact: true
   },
   {
-    path: '/blog/authors/all-sebastien-lorber-articles',
-    component: ComponentCreator('/blog/authors/all-sebastien-lorber-articles', '4a1'),
+    path: '/zh/blog/tags/facebook',
+    component: ComponentCreator('/zh/blog/tags/facebook', '0a8'),
     exact: true
   },
   {
-    path: '/blog/authors/yangshun',
-    component: ComponentCreator('/blog/authors/yangshun', 'a68'),
+    path: '/zh/blog/tags/hello',
+    component: ComponentCreator('/zh/blog/tags/hello', '94c'),
     exact: true
   },
   {
-    path: '/blog/first-blog-post',
-    component: ComponentCreator('/blog/first-blog-post', '89a'),
+    path: '/zh/blog/tags/hola',
+    component: ComponentCreator('/zh/blog/tags/hola', 'b09'),
     exact: true
   },
   {
-    path: '/blog/long-blog-post',
-    component: ComponentCreator('/blog/long-blog-post', '9ad'),
+    path: '/zh/blog/welcome',
+    component: ComponentCreator('/zh/blog/welcome', '1e2'),
     exact: true
   },
   {
-    path: '/blog/mdx-blog-post',
-    component: ComponentCreator('/blog/mdx-blog-post', 'e9f'),
+    path: '/zh/zh/',
+    component: ComponentCreator('/zh/zh/', '862'),
     exact: true
   },
   {
-    path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', '287'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/docusaurus',
-    component: ComponentCreator('/blog/tags/docusaurus', '704'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/facebook',
-    component: ComponentCreator('/blog/tags/facebook', '858'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/hello',
-    component: ComponentCreator('/blog/tags/hello', '299'),
-    exact: true
-  },
-  {
-    path: '/blog/tags/hola',
-    component: ComponentCreator('/blog/tags/hola', '00d'),
-    exact: true
-  },
-  {
-    path: '/blog/welcome',
-    component: ComponentCreator('/blog/welcome', 'd2b'),
-    exact: true
-  },
-  {
-    path: '/zh/',
-    component: ComponentCreator('/zh/', '5bc'),
-    exact: true
-  },
-  {
-    path: '/docs',
-    component: ComponentCreator('/docs', 'f38'),
+    path: '/zh/docs',
+    component: ComponentCreator('/zh/docs', 'da6'),
     routes: [
       {
-        path: '/docs',
-        component: ComponentCreator('/docs', 'f11'),
+        path: '/zh/docs',
+        component: ComponentCreator('/zh/docs', '8bd'),
         routes: [
           {
-            path: '/docs',
-            component: ComponentCreator('/docs', '6d4'),
+            path: '/zh/docs',
+            component: ComponentCreator('/zh/docs', 'b33'),
             routes: [
               {
-                path: '/docs/articles/publicsell',
-                component: ComponentCreator('/docs/articles/publicsell', '531'),
+                path: '/zh/docs/articles/publicsell',
+                component: ComponentCreator('/zh/docs/articles/publicsell', 'a89'),
                 exact: true
               },
               {
-                path: '/docs/articles/tokenairdrop',
-                component: ComponentCreator('/docs/articles/tokenairdrop', 'b04'),
+                path: '/zh/docs/articles/tokenairdrop',
+                component: ComponentCreator('/zh/docs/articles/tokenairdrop', '88e'),
                 exact: true
               },
               {
-                path: '/docs/community/builder',
-                component: ComponentCreator('/docs/community/builder', '9a2'),
+                path: '/zh/docs/community/builder',
+                component: ComponentCreator('/zh/docs/community/builder', 'ed8'),
                 exact: true
               },
               {
-                path: '/docs/community/gate',
-                component: ComponentCreator('/docs/community/gate', '378'),
+                path: '/zh/docs/community/gate',
+                component: ComponentCreator('/zh/docs/community/gate', '0ed'),
                 exact: true
               },
               {
-                path: '/docs/community/introduce',
-                component: ComponentCreator('/docs/community/introduce', '654'),
+                path: '/zh/docs/community/introduce',
+                component: ComponentCreator('/zh/docs/community/introduce', 'e54'),
                 exact: true
               },
               {
-                path: '/docs/community/investor',
-                component: ComponentCreator('/docs/community/investor', '179'),
+                path: '/zh/docs/community/investor',
+                component: ComponentCreator('/zh/docs/community/investor', '705'),
                 exact: true
               },
               {
-                path: '/docs/community/liquidityprovider',
-                component: ComponentCreator('/docs/community/liquidityprovider', '55c'),
+                path: '/zh/docs/community/liquidityprovider',
+                component: ComponentCreator('/zh/docs/community/liquidityprovider', '9c3'),
                 exact: true
               },
               {
-                path: '/docs/community/recommander',
-                component: ComponentCreator('/docs/community/recommander', '9b0'),
+                path: '/zh/docs/community/recommander',
+                component: ComponentCreator('/zh/docs/community/recommander', '692'),
                 exact: true
               },
               {
-                path: '/docs/community/tokenoperator',
-                component: ComponentCreator('/docs/community/tokenoperator', '331'),
+                path: '/zh/docs/community/tokenoperator',
+                component: ComponentCreator('/zh/docs/community/tokenoperator', '502'),
                 exact: true
               },
               {
-                path: '/docs/knowledge/tokeneconomic',
-                component: ComponentCreator('/docs/knowledge/tokeneconomic', '9f1'),
+                path: '/zh/docs/knowledge/tokeneconomic',
+                component: ComponentCreator('/zh/docs/knowledge/tokeneconomic', '536'),
                 exact: true
               },
               {
-                path: '/docs/knowledge/userdoc/',
-                component: ComponentCreator('/docs/knowledge/userdoc/', '9e3'),
+                path: '/zh/docs/knowledge/userdoc/',
+                component: ComponentCreator('/zh/docs/knowledge/userdoc/', '995'),
                 exact: true
               },
               {
-                path: '/docs/knowledge/whitepaper/',
-                component: ComponentCreator('/docs/knowledge/whitepaper/', '0db'),
+                path: '/zh/docs/knowledge/whitepaper/',
+                component: ComponentCreator('/zh/docs/knowledge/whitepaper/', 'b9e'),
                 exact: true
               }
             ]
@@ -191,8 +156,8 @@ export default [
     ]
   },
   {
-    path: '/',
-    component: ComponentCreator('/', 'e5f'),
+    path: '/zh/',
+    component: ComponentCreator('/zh/', 'a79'),
     exact: true
   },
   {

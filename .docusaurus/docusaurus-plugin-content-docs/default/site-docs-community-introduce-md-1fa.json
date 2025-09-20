@@ -5,7 +5,7 @@
   "source": "@site/docs/community/introduce.md",
   "sourceDirName": "community",
   "slug": "/community/introduce",
-  "permalink": "/docs/community/introduce",
+  "permalink": "/zh/docs/community/introduce",
   "draft": false,
   "unlisted": false,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/community/introduce.md",

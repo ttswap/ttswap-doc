@@ -37,7 +37,7 @@ export default {
     }
   ],
   "url": "https://ttswap.io",
-  "baseUrl": "/",
+  "baseUrl": "/zh/",
   "organizationName": "ttswap",
   "projectName": "ttswap-docs",
   "onBrokenLinks": "throw",
@@ -88,6 +88,11 @@ export default {
   ],
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
+    "colorMode": {
+      "defaultMode": "light",
+      "disableSwitch": true,
+      "respectPrefersColorScheme": false
+    },
     "navbar": {
       "title": "TTSwap",
       "logo": {
@@ -191,18 +196,19 @@ export default {
           "aria-label": "GitHub"
         },
         {
+          "type": "localeDropdown",
+          "position": "right",
+          "dropdownItemsBefore": [],
+          "dropdownItemsAfter": []
+        },
+        {
           "href": "https://app.ttswap.io",
-          "label": "Connect Wallet",
+          "label": "Launch App",
           "position": "right",
           "className": "navbar-wallet-button"
         }
       ],
       "hideOnScroll": false
-    },
-    "colorMode": {
-      "defaultMode": "light",
-      "disableSwitch": false,
-      "respectPrefersColorScheme": false
     },
     "docs": {
       "versionPersistence": "localStorage",
