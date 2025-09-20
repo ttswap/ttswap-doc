@@ -85,6 +85,11 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       title: 'TTSwap',
       logo: {
@@ -138,11 +143,16 @@ const config: Config = {
           className: 'header-github-link',
           'aria-label': 'GitHub',
         },
-
+        {
+          type: 'localeDropdown',
+          position: 'right',
+          "dropdownItemsBefore": [],
+          "dropdownItemsAfter": []
+        },
         // 最右边 Connect Wallet 按钮
         {
           href: 'https://app.ttswap.io',
-          label: 'Connect Wallet',
+          label: 'Launch App',
           position: 'right',
           className: 'navbar-wallet-button',
         },
