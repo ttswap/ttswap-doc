@@ -284,12 +284,12 @@ export function CostReductionSection() {
                 <div className="text-sm opacity-90 group-hover:opacity-100 transition-opacity duration-300">
                   每1000美元交易节省5美元
                 </div>
-                <div className="mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* <div className="mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="flex items-center justify-center text-xs bg-white/20 rounded-full px-3 py-1">
                     <Zap className="w-3 h-3 mr-1" />
                     立即体验节省
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

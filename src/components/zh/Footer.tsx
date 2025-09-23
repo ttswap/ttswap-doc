@@ -1,57 +1,15 @@
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
-import {
-  Github,
-  Twitter,
-  MessageCircle,
-  BookOpen,
-  Mail,
-} from "lucide-react";
+import { Mail } from "lucide-react";
+import { socialLinks, navigationZh } from "../FooterConfig";
 
 export function Footer() {
-  const navigation = {
-    product: [
-      { name: "交易", href: "#trade" },
-      { name: "质押", href: "#stake" },
-      { name: "治理", href: "#governance" },
-      { name: "分析", href: "#analytics" },
-    ],
-    resources: [
-      { name: "文档", href: "#docs" },
-      { name: "白皮书", href: "#whitepaper" },
-      { name: "API", href: "#api" },
-      { name: "SDK", href: "#sdk" },
-    ],
-    community: [
-      { name: "Discord", href: "#discord" },
-      { name: "论坛", href: "#forum" },
-      { name: "博客", href: "#blog" },
-      { name: "订阅", href: "#newsletter" },
-    ],
-    company: [
-      { name: "关于", href: "#about" },
-      { name: "招聘", href: "#careers" },
-      { name: "隐私", href: "#privacy" },
-      { name: "条款", href: "#terms" },
-    ],
-  };
-
-  const socialLinks = [
-    { name: "Twitter", icon: Twitter, href: "#twitter" },
-    {
-      name: "Telegram",
-      icon: MessageCircle,
-      href: "#telegram",
-    },
-    { name: "Github", icon: Github, href: "#github" },
-    { name: "文档", icon: BookOpen, href: "#docs" },
-  ];
 
   return (
     <footer className="bg-muted/30 border-t border-border/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Newsletter Section */}
-        <div className="py-12 border-b border-border/50">
+        {/* <div className="py-12 border-b border-border/50">
           <div className="max-w-2xl mx-auto text-center space-y-6">
             <h3 className="text-2xl font-bold">订阅更新</h3>
             <p className="text-muted-foreground leading-relaxed">
@@ -68,7 +26,7 @@ export function Footer() {
               </Button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Main Footer Content */}
         <div className="py-12">
@@ -76,11 +34,7 @@ export function Footer() {
             {/* Brand Section */}
             <div className="lg:col-span-2 space-y-4">
               <div className="flex items-center space-x-2 group">
-                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300">
-                  <span className="text-white font-bold">
-                    TT
-                  </span>
-                </div>
+                <img src="/img/logo.png" alt="TTSwap Logo" className="w-9 h-9 rounded-lg" />
                 <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   TTSwap
                 </span>
@@ -108,7 +62,7 @@ export function Footer() {
             <div className="space-y-4">
               <h4 className="font-semibold">产品</h4>
               <nav className="space-y-2">
-                {navigation.product.map((item) => (
+                {navigationZh.product.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
@@ -122,9 +76,9 @@ export function Footer() {
 
             {/* Resources Links */}
             <div className="space-y-4">
-              <h4 className="font-semibold">资源</h4>
+              <h4 className="font-semibold">文档</h4>
               <nav className="space-y-2">
-                {navigation.resources.map((item) => (
+                {navigationZh.resources.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
@@ -140,7 +94,7 @@ export function Footer() {
             <div className="space-y-4">
               <h4 className="font-semibold">社区</h4>
               <nav className="space-y-2">
-                {navigation.community.map((item) => (
+                {navigationZh.community.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
@@ -153,10 +107,10 @@ export function Footer() {
             </div>
 
             {/* Company Links */}
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               <h4 className="font-semibold">公司</h4>
               <nav className="space-y-2">
-                {navigation.company.map((item) => (
+                {navigationZh.company.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
@@ -166,7 +120,7 @@ export function Footer() {
                   </a>
                 ))}
               </nav>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -174,9 +128,9 @@ export function Footer() {
         <div className="py-6 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-muted-foreground">
-              © 2024 TTSwap. 保留所有权利。
+              © 2025 TTSwap. 保留所有权利。
             </div>
-            <div className="flex items-center space-x-6 text-sm text-muted-foreground">
+            {/* <div className="flex items-center space-x-6 text-sm text-muted-foreground">
               {["隐私政策", "服务条款", "安全"].map((item) => (
                 <a
                   key={item}
@@ -186,7 +140,7 @@ export function Footer() {
                   {item}
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

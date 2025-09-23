@@ -27,6 +27,7 @@ export function RewardsSection() {
         "享受代币交易1%-3%分佣",
         "负责代币社区增长",
       ],
+      to: "/zh/docs/community/tokenoperator",
       gradient: "from-yellow-500 to-orange-500",
     },
     {
@@ -42,6 +43,7 @@ export function RewardsSection() {
         "基于贡献比例分配",
         "无无常损失风险",
       ],
+      to: "/zh/docs/community/liquidityprovider",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
@@ -57,6 +59,7 @@ export function RewardsSection() {
         "通过优质服务建立声誉",
         "随用户基数扩大收益",
       ],
+      to: "/zh/docs/community/gate",
       gradient: "from-purple-500 to-pink-500",
     },
     {
@@ -72,6 +75,7 @@ export function RewardsSection() {
         "通过网络建立被动收入",
         "无限推荐潜力",
       ],
+      to: "/zh/docs/community/recommander",
       gradient: "from-green-500 to-teal-500",
     },
     {
@@ -87,6 +91,7 @@ export function RewardsSection() {
         "有潜力成为其他角色",
         "参与社区治理",
       ],
+      to: null,
       gradient: "from-indigo-500 to-purple-500",
     },
     {
@@ -101,6 +106,7 @@ export function RewardsSection() {
         "治理和协议改进",
         "专注长期可持续性",
       ],
+      to: "/zh/docs/community/builder",
       gradient: "from-red-500 to-pink-500",
     },
   ];
@@ -128,25 +134,23 @@ export function RewardsSection() {
             return (
               <Card
                 key={index}
-                className={`p-6 cursor-pointer transition-all duration-500 group overflow-hidden relative ${
-                  index === 0
-                    ? "animate-fade-in-delay-1"
-                    : index === 1
-                      ? "animate-fade-in-delay-2"
-                      : index === 2
-                        ? "animate-fade-in-delay-3"
-                        : index === 3
-                          ? "animate-fade-in-delay-4"
-                          : index === 4
-                            ? "animate-fade-in-delay-5"
-                            : index === 5
-                              ? "animate-fade-in-delay-6"
-                              : "animate-fade-in"
-                } ${
-                  isSelected
+                className={`p-6 cursor-pointer transition-all duration-500 group overflow-hidden relative ${index === 0
+                  ? "animate-fade-in-delay-1"
+                  : index === 1
+                    ? "animate-fade-in-delay-2"
+                    : index === 2
+                      ? "animate-fade-in-delay-3"
+                      : index === 3
+                        ? "animate-fade-in-delay-4"
+                        : index === 4
+                          ? "animate-fade-in-delay-5"
+                          : index === 5
+                            ? "animate-fade-in-delay-6"
+                            : "animate-fade-in"
+                  } ${isSelected
                     ? "border-primary/50 bg-primary/5 glow-effect shadow-xl scale-105"
                     : "border-white/10 bg-card/80 hover:border-primary/30 hover:shadow-lg hover:scale-[1.02]"
-                }`}
+                  }`}
                 onClick={() => setSelectedRole(index)}
               >
                 {/* Subtle background gradient effect */}
@@ -154,11 +158,10 @@ export function RewardsSection() {
 
                 <div className="relative text-center space-y-4">
                   <div
-                    className={`w-16 h-16 mx-auto rounded-full bg-gradient-to-r ${role.gradient} flex items-center justify-center ${
-                      isSelected
-                        ? "scale-110 shadow-lg"
-                        : "group-hover:scale-110 group-hover:shadow-md"
-                    } transition-all duration-300 animate-pulse-soft`}
+                    className={`w-16 h-16 mx-auto rounded-full bg-gradient-to-r ${role.gradient} flex items-center justify-center ${isSelected
+                      ? "scale-110 shadow-lg"
+                      : "group-hover:scale-110 group-hover:shadow-md"
+                      } transition-all duration-300 animate-pulse-soft`}
                     style={{
                       animationDelay: `${index * 0.2}s`,
                     }}
@@ -187,11 +190,10 @@ export function RewardsSection() {
 
                     {/* Selection indicator */}
                     <div
-                      className={`mt-3 h-1 bg-gradient-to-r ${role.gradient} rounded-full transition-all duration-300 ${
-                        isSelected
-                          ? "opacity-100 scale-100"
-                          : "opacity-0 scale-75"
-                      }`}
+                      className={`mt-3 h-1 bg-gradient-to-r ${role.gradient} rounded-full transition-all duration-300 ${isSelected
+                        ? "opacity-100 scale-100"
+                        : "opacity-0 scale-75"
+                        }`}
                     />
                   </div>
                 </div>
@@ -236,12 +238,14 @@ export function RewardsSection() {
               <p className="text-muted-foreground group-hover:text-foreground/80 transition-colors duration-300">
                 {roles[selectedRole].description}
               </p>
-
-              <Button
-                className={`bg-gradient-to-r ${roles[selectedRole].gradient} hover:opacity-90 hover:scale-105 hover:shadow-lg transition-all duration-300`}
-              >
-                成为{roles[selectedRole].title}
-              </Button>
+              {roles[selectedRole].to !== null ? (
+                <Button
+                  onClick={() => { location.href = roles[selectedRole].to; }}
+                  className={`bg-gradient-to-r ${roles[selectedRole].gradient} hover:opacity-90 hover:scale-105 hover:shadow-lg transition-all duration-300`}
+                >
+                  成为{roles[selectedRole].title}
+                </Button>
+              ) : null}
             </div>
 
             <div className="space-y-4">

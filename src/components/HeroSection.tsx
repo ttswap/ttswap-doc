@@ -189,7 +189,9 @@ export function HeroSection() {
               </div>
 
               <div className="space-y-2">
-                <div className="space-y-2">
+                <img src="/img/swap-en.png" alt="Swap" className="w-full" />
+
+                {/* <div className="space-y-2">
                   <label className="text-sm font-medium text-muted-foreground">
                     Sell
                   </label>
@@ -260,9 +262,10 @@ export function HeroSection() {
                   <span className="text-primary font-medium">
                     ~0.01%
                   </span>
-                </div>
+                </div> */}
 
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
+                  onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?en") }}>
                   <Zap className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                   Immediate Trading
                 </Button>
@@ -278,18 +281,20 @@ export function HeroSection() {
                   </div>
                   Quick Staking
                 </h3>
-                <div className="text-right">
+                {/* <div className="text-right">
                   <div className="text-sm text-muted-foreground">
                     APY
                   </div>
                   <div className="text-lg font-bold text-secondary">
                     24.5%
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div className="space-y-4">
-                <div className="space-y-2">
+                <img src="/img/invest-en.png" alt="Swap" className="w-full" />
+
+                {/* <div className="space-y-2">
                   <label className="text-sm font-medium text-muted-foreground">
                     Staking Quantity
                   </label>
@@ -331,11 +336,12 @@ export function HeroSection() {
                     </div>
                     <div className="font-medium">Flexible</div>
                   </div>
-                </div>
+                </div> */}
 
-                <Button className="w-full bg-secondary hover:bg-secondary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <Button className="w-full bg-secondary hover:bg-secondary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
+                  onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?en") }}>
                   <TrendingUp className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                  Start Staking
+                  Start Invest
                 </Button>
               </div>
             </Card>

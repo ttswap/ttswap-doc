@@ -27,6 +27,7 @@ export function RewardsSection() {
         "Enjoy 1%-3% commission from token trades",
         "Responsible for token community growth",
       ],
+      to: "/docs/community/tokenoperator",
       gradient: "from-yellow-500 to-orange-500",
     },
     {
@@ -42,6 +43,7 @@ export function RewardsSection() {
         "Distribution based on contribution ratio",
         "No impermanent loss risk",
       ],
+      to: "/docs/community/liquidityprovider",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
@@ -57,6 +59,7 @@ export function RewardsSection() {
         "Build reputation through quality service",
         "Revenue grows with user base",
       ],
+      to: "/docs/community/gate",
       gradient: "from-purple-500 to-pink-500",
     },
     {
@@ -72,6 +75,7 @@ export function RewardsSection() {
         "Build passive income through network",
         "Unlimited referral potential",
       ],
+      to: "/docs/community/recommander",
       gradient: "from-green-500 to-teal-500",
     },
     {
@@ -87,6 +91,7 @@ export function RewardsSection() {
         "Potential to become other roles",
         "Participate in community governance",
       ],
+      to: null,
       gradient: "from-indigo-500 to-purple-500",
     },
     {
@@ -101,6 +106,7 @@ export function RewardsSection() {
         "Governance and protocol improvements",
         "Focus on long-term sustainability",
       ],
+      to: "/docs/community/builder",
       gradient: "from-red-500 to-pink-500",
     },
   ];
@@ -236,12 +242,15 @@ export function RewardsSection() {
               <p className="text-muted-foreground group-hover:text-foreground/80 transition-colors duration-300">
                 {roles[selectedRole].description}
               </p>
+              {roles[selectedRole].to !== null ? (
+                <Button
+                  onClick={() => { location.href = roles[selectedRole].to; }}
+                  className={`bg-gradient-to-r ${roles[selectedRole].gradient} hover:opacity-90 hover:scale-105 hover:shadow-lg transition-all duration-300`}
+                >
+                  Become {roles[selectedRole].title}
+                </Button>
+              ) : null}
 
-              <Button
-                className={`bg-gradient-to-r ${roles[selectedRole].gradient} hover:opacity-90 hover:scale-105 hover:shadow-lg transition-all duration-300`}
-              >
-                Become {roles[selectedRole].title}
-              </Button>
             </div>
 
             <div className="space-y-4">

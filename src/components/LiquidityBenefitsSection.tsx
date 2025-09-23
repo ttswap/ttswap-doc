@@ -274,7 +274,7 @@ export function LiquidityBenefitsSection() {
                   </div>
 
                   {/* Action Button */}
-                  <Button
+                  {/* <Button
                     className={`w-full transition-all duration-300 hover:scale-105 ${
                       index === 0
                         ? "bg-primary hover:bg-primary/90"
@@ -286,7 +286,7 @@ export function LiquidityBenefitsSection() {
                   >
                     Learn More
                     <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
-                  </Button>
+                  </Button> */}
                 </div>
               </Card>
             );
@@ -366,19 +366,21 @@ export function LiquidityBenefitsSection() {
               Join the TTSwap ecosystem, enjoy multiple yield stacking, and maximize your return on every unit of liquidity
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+              {/* <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 px-8 hover:scale-105 transition-all duration-300"
+                onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?en") }}
               >
                 <Zap className="mr-2 h-5 w-5" />
                 Provide Liquidity
-              </Button>
+              </Button> */}
               <Button
                 size="lg"
                 variant="outline"
                 className="border-primary/30 hover:border-primary/50 px-8 hover:scale-105 transition-all duration-300"
+                onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/profile?en") }}
               >
-                View Yield Calculator
+                View Earnings
                 <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
               </Button>
             </div>
