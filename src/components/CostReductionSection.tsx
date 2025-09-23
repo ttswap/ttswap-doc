@@ -284,12 +284,12 @@ export function CostReductionSection() {
                 <div className="text-sm opacity-90 group-hover:opacity-100 transition-opacity duration-300">
                   Save $5 on every $1000 trade
                 </div>
-                <div className="mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                {/* <div className="mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="flex items-center justify-center text-xs bg-white/20 rounded-full px-3 py-1">
                     <Zap className="w-3 h-3 mr-1" />
                     Experience Savings Now
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

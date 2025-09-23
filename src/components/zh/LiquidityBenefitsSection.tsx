@@ -163,36 +163,33 @@ export function LiquidityBenefitsSection() {
             return (
               <Card
                 key={index}
-                className={`p-8 h-full border hover:shadow-xl hover:scale-[1.02] transition-all duration-500 group overflow-hidden relative ${
-                  index === 0
+                className={`p-8 h-full border hover:shadow-xl hover:scale-[1.02] transition-all duration-500 group overflow-hidden relative ${index === 0
                     ? "animate-fade-in-delay-1 border-primary/20 hover:border-primary/40"
                     : index === 1
                       ? "animate-fade-in-delay-2 border-secondary/20 hover:border-secondary/40"
                       : "animate-fade-in-delay-3 border-accent/20 hover:border-accent/40"
-                }`}
+                  }`}
               >
                 {/* Subtle background gradient effect */}
                 <div
-                  className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
-                    index === 0
+                  className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${index === 0
                       ? "bg-gradient-to-br from-primary/5 to-transparent"
                       : index === 1
                         ? "bg-gradient-to-br from-secondary/5 to-transparent"
                         : "bg-gradient-to-br from-accent/5 to-transparent"
-                  }`}
+                    }`}
                 />
 
                 <div className="relative">
                   {/* Header */}
                   <div className="flex items-center justify-between mb-6">
                     <div
-                      className={`w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg animate-pulse-soft ${
-                        index === 0
+                      className={`w-16 h-16 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:shadow-xl transition-all duration-300 shadow-lg animate-pulse-soft ${index === 0
                           ? "gradient-primary"
                           : index === 1
                             ? "gradient-warm"
                             : "gradient-secondary"
-                      }`}
+                        }`}
                       style={{
                         animationDelay: `${index * 0.3}s`,
                       }}
@@ -201,13 +198,12 @@ export function LiquidityBenefitsSection() {
                     </div>
                     <Badge
                       variant="outline"
-                      className={`group-hover:scale-110 transition-transform duration-300 ${
-                        index === 0
+                      className={`group-hover:scale-110 transition-transform duration-300 ${index === 0
                           ? "border-primary/40 text-primary"
                           : index === 1
                             ? "border-secondary/40 text-secondary"
                             : "border-accent/40 text-accent"
-                      }`}
+                        }`}
                     >
                       {benefit.multiplier}
                     </Badge>
@@ -215,13 +211,12 @@ export function LiquidityBenefitsSection() {
 
                   {/* Highlight Badge */}
                   <div
-                    className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium mb-4 ${
-                      index === 0
+                    className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium mb-4 ${index === 0
                         ? "bg-primary/10 text-primary border border-primary/20"
                         : index === 1
                           ? "bg-secondary/10 text-secondary border border-secondary/20"
                           : "bg-accent/10 text-accent border border-accent/20"
-                    }`}
+                      }`}
                   >
                     <Zap className="w-3 h-3 mr-1" />
                     {benefit.highlight}
@@ -233,13 +228,12 @@ export function LiquidityBenefitsSection() {
                       {benefit.title}
                     </h3>
                     <div
-                      className={`text-sm font-semibold mb-3 ${
-                        index === 0
+                      className={`text-sm font-semibold mb-3 ${index === 0
                           ? "text-primary"
                           : index === 1
                             ? "text-secondary"
                             : "text-accent"
-                      }`}
+                        }`}
                     >
                       {benefit.subtitle}
                     </div>
@@ -257,13 +251,12 @@ export function LiquidityBenefitsSection() {
                           className="flex items-center space-x-3 group/item hover:scale-[1.02] transition-transform duration-300"
                         >
                           <div
-                            className={`w-2 h-2 rounded-full shadow-sm ${
-                              index === 0
+                            className={`w-2 h-2 rounded-full shadow-sm ${index === 0
                                 ? "gradient-primary"
                                 : index === 1
                                   ? "gradient-warm"
                                   : "gradient-secondary"
-                            }`}
+                              }`}
                           ></div>
                           <span className="text-sm text-muted-foreground group-hover/item:text-foreground/70 transition-colors duration-300">
                             {feature}
@@ -274,7 +267,7 @@ export function LiquidityBenefitsSection() {
                   </div>
 
                   {/* Action Button */}
-                  <Button
+                  {/* <Button
                     className={`w-full transition-all duration-300 hover:scale-105 ${
                       index === 0
                         ? "bg-primary hover:bg-primary/90"
@@ -286,7 +279,7 @@ export function LiquidityBenefitsSection() {
                   >
                     了解详情
                     <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
-                  </Button>
+                  </Button> */}
                 </div>
               </Card>
             );
@@ -315,26 +308,24 @@ export function LiquidityBenefitsSection() {
                 className="p-6 text-center border border-border/50 hover:border-primary/30 hover:shadow-lg hover:scale-105 transition-all duration-300 group"
               >
                 <div
-                  className={`w-12 h-12 mx-auto mb-4 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg transition-all duration-300 ${
-                    index === 0
+                  className={`w-12 h-12 mx-auto mb-4 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:shadow-lg transition-all duration-300 ${index === 0
                       ? "bg-primary/10"
                       : index === 1
                         ? "bg-secondary/10"
                         : index === 2
                           ? "bg-tertiary/10"
                           : "bg-accent/10"
-                  }`}
+                    }`}
                 >
                   <Icon
-                    className={`h-6 w-6 group-hover:scale-110 transition-transform duration-300 ${
-                      index === 0
+                    className={`h-6 w-6 group-hover:scale-110 transition-transform duration-300 ${index === 0
                         ? "text-primary"
                         : index === 1
                           ? "text-secondary"
                           : index === 2
                             ? "text-tertiary"
                             : "text-accent"
-                    }`}
+                      }`}
                   />
                 </div>
                 <div className="text-2xl lg:text-3xl font-bold text-gradient mb-2 group-hover:scale-110 transition-transform duration-300">
@@ -366,19 +357,21 @@ export function LiquidityBenefitsSection() {
               加入TTSwap生态，享受多重收益叠加，让您的每一份流动性都获得最大化回报
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
+              {/* <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 px-8 hover:scale-105 transition-all duration-300"
+                onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?zh") }}
               >
                 <Zap className="mr-2 h-5 w-5" />
                 开始提供流动性
-              </Button>
+              </Button> */}
               <Button
                 size="lg"
                 variant="outline"
                 className="border-primary/30 hover:border-primary/50 px-8 hover:scale-105 transition-all duration-300"
+                onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/profile?zh") }}
               >
-                查看收益计算器
+                查看收益
                 <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
               </Button>
             </div>
