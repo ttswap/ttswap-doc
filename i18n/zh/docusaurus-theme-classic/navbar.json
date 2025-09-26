@@ -7,18 +7,6 @@
     "message": "TTSwap logo",
     "description": "The alt text of navbar logo"
   },
-  "item.label.Tutorial": {
-    "message": "Tutorial",
-    "description": "Navbar item with label Tutorial"
-  },
-  "item.label.Blog": {
-    "message": "Blog",
-    "description": "Navbar item with label Blog"
-  },
-  "item.label.GitHub": {
-    "message": "GitHub",
-    "description": "Navbar item with label GitHub"
-  },
   "item.label.Home": {
     "message": "首页",
     "description": "Navbar item with label Home"
@@ -27,28 +15,20 @@
     "message": "活动",
     "description": "Navbar item with label Activity"
   },
-  "item.label.Knowledge": {
-    "message": "知识中心",
-    "description": "Navbar item with label Knowledge"
-  },
-  "item.label.Join DAO": {
-    "message": "加入DAO",
-    "description": "Navbar item with label Join DAO"
-  },
-  "item.label.Launch App": {
-    "message": "Launch App",
-    "description": "Navbar item with label Launch App"
-  },
   "item.label.Public Sell": {
-    "message": "公售活动",
+    "message": "公开发售",
     "description": "Navbar item with label Public Sell"
   },
   "item.label.Token Airdrop": {
-    "message": "代币空投活动",
+    "message": "代币空投",
     "description": "Navbar item with label Token Airdrop"
   },
+  "item.label.Knowledge": {
+    "message": "知识",
+    "description": "Navbar item with label Knowledge"
+  },
   "item.label.User Doc": {
-    "message": "用户通用文档",
+    "message": "用户文档",
     "description": "Navbar item with label User Doc"
   },
   "item.label.Token Economic": {
@@ -59,8 +39,12 @@
     "message": "白皮书",
     "description": "Navbar item with label WhitePaper"
   },
+  "item.label.Join DAO": {
+    "message": "加入DAO",
+    "description": "Navbar item with label Join DAO"
+  },
   "item.label.Allocate Commission By Role": {
-    "message": "按角色分佣",
+    "message": "按角色分配佣金",
     "description": "Navbar item with label Allocate Commission By Role"
   },
   "item.label.Be Referral": {
@@ -68,11 +52,11 @@
     "description": "Navbar item with label Be Referral"
   },
   "item.label.Be Token Operator": {
-    "message": "成为代币运营者",
+    "message": "成为代币操作员",
     "description": "Navbar item with label Be Token Operator"
   },
   "item.label.Be Service Provider": {
-    "message": "成为服务商",
+    "message": "成为服务提供商",
     "description": "Navbar item with label Be Service Provider"
   },
   "item.label.Be Builder": {
@@ -86,5 +70,13 @@
   "item.label.Be Investor": {
     "message": "成为投资者",
     "description": "Navbar item with label Be Investor"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Launch App": {
+    "message": "启动应用",
+    "description": "Navbar item with label Launch App"
   }
 }

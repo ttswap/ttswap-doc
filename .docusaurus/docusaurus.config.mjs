@@ -37,7 +37,7 @@ export default {
     }
   ],
   "url": "https://ttswap.io",
-  "baseUrl": "/zh/",
+  "baseUrl": "/",
   "organizationName": "ttswap",
   "projectName": "ttswap-docs",
   "onBrokenLinks": "throw",

@@ -9,15 +9,26 @@ import {
   splitNavbarItems,
   useNavbarMobileSidebar,
 } from '@docusaurus/theme-common/internal';
+import { useLocation } from '@docusaurus/router';
 import NavbarItem, {type Props as NavbarItemConfig} from '@theme/NavbarItem';
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import SearchBar from '@theme/SearchBar';
 import NavbarMobileSidebarToggle from '@theme/Navbar/MobileSidebar/Toggle';
 import NavbarLogo from '@theme/Navbar/Logo';
 import NavbarSearch from '@theme/Navbar/Search';
+import { englishNavbarItems, chineseNavbarItems } from '../../navbarItems.config';
 
 import styles from './styles.module.css';
 
+function getLocalizedNavbarItems(locale: string): NavbarItemConfig[] {
+  switch (locale) {
+    case 'zh':
+      return chineseNavbarItems;
+    case 'en':
+    default:
+      return englishNavbarItems;
+  }
+}
 function useNavbarItems() {
   // TODO temporary casting until ThemeConfig type is improved
   return useThemeConfig().navbar.items as NavbarItemConfig[];
@@ -73,8 +84,12 @@ function NavbarContentLayout({
 
 export default function NavbarContent(): ReactNode {
   const mobileSidebar = useNavbarMobileSidebar();
-
-  const items = useNavbarItems();
+  const location = useLocation();
+  
+  const locale = location.pathname.startsWith('/zh/') ? 'zh' : 'en';
+  // const items = useNavbarItems();
+  const items = getLocalizedNavbarItems(locale);
+  // console.log('locale', locale,useThemeConfig().navbar.items,items);
   const [leftItems, rightItems] = splitNavbarItems(items);
 
   const searchBarItem = items.find((item) => item.type === 'search');
