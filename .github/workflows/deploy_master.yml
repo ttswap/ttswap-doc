@@ -26,16 +26,12 @@ jobs:
           fetch-depth: 0
 
       # Runs a single command using the runners shell
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-
-      # Runs a single command using the runners shell
       - name: install node
         uses: actions/setup-node@v4
         with:
           # 选择要使用的 node 版本
           node-version: 22
-          # 缓存 pnpm 依赖
+          # 缓存 npm 依赖
           cache: npm
 
 
