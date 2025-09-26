@@ -9,8 +9,8 @@ export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title="TTSwap - 去中心化交易协议"
-      description="创新的Web3交易解决方案，消除无常损失，降低交易成本"
+      title="TTSwap"
+      description=""
       wrapperClassName="ttswap-docusaurus-wrapper"
     >
       <div className="ttswap-app">
