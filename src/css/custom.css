@@ -1,0 +1,131 @@
+
+:root {
+  --font-size: 16px;
+  --background: #fafafa;
+  --foreground: #1a1a1a;
+  --card: #fff;
+  --card-foreground: #1a1a1a;
+  --popover: #fff;
+  --popover-foreground: #1a1a1a;
+  --primary: #10b981;
+  --primary-foreground: #fff;
+  --secondary: #f59e0b;
+  --secondary-foreground: #fff;
+  --muted: #f5f5f5;
+  --muted-foreground: #64748b;
+  --accent: #ef4444;
+  --accent-foreground: #fff;
+  --tertiary: #fbbf24;
+  --tertiary-foreground: #fff;
+  --destructive: #ef4444;
+  --destructive-foreground: #fff;
+  --border: #e1e1e1;
+  --input: #fff;
+  --input-background: #fff;
+  --switch-background: #e5e7eb;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #10b981;
+  --chart-1: #10b981;
+  --chart-2: #fbbf24;
+  --chart-3: #f59e0b;
+  --chart-4: #ef4444;
+  --chart-5: #8b5cf6;
+  --radius: .75rem;
+  --sidebar: #fafafa;
+  --sidebar-foreground: #1a1a1a;
+  --sidebar-primary: #10b981;
+  --sidebar-primary-foreground: #fff;
+  --sidebar-accent: #e5e7eb;
+  --sidebar-accent-foreground: #1a1a1a;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #10b981;
+}
+
+.dark {
+  --background: oklch(.145 0 0);
+  --foreground: oklch(.985 0 0);
+  --card: oklch(.145 0 0);
+  --card-foreground: oklch(.985 0 0);
+  --popover: oklch(.145 0 0);
+  --popover-foreground: oklch(.985 0 0);
+  --primary: oklch(.985 0 0);
+  --primary-foreground: oklch(.205 0 0);
+  --secondary: oklch(.269 0 0);
+  --secondary-foreground: oklch(.985 0 0);
+  --muted: oklch(.269 0 0);
+  --muted-foreground: oklch(.708 0 0);
+  --accent: oklch(.269 0 0);
+  --accent-foreground: oklch(.985 0 0);
+  --destructive: oklch(.396 .141 25.723);
+  --destructive-foreground: oklch(.637 .237 25.331);
+  --border: oklch(.269 0 0);
+  --input: oklch(.269 0 0);
+  --ring: oklch(.439 0 0);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: oklch(.488 .243 264.376);
+  --chart-2: oklch(.696 .17 162.48);
+  --chart-3: oklch(.769 .188 70.08);
+  --chart-4: oklch(.627 .265 303.9);
+  --chart-5: oklch(.645 .246 16.439);
+  --sidebar: oklch(.205 0 0);
+  --sidebar-foreground: oklch(.985 0 0);
+  --sidebar-primary: oklch(.488 .243 264.376);
+  --sidebar-primary-foreground: oklch(.985 0 0);
+  --sidebar-accent: oklch(.269 0 0);
+  --sidebar-accent-foreground: oklch(.985 0 0);
+  --sidebar-border: oklch(.269 0 0);
+  --sidebar-ring: oklch(.439 0 0);
+}
+
+.header-discord-link {
+  background: url('/img/discord.svg') no-repeat center;
+  background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+  opacity: 0.7;
+}
+
+.header-telegram-link {
+  background: url('/img/tg.svg') no-repeat center ;
+  background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+  opacity: 0.7;
+}
+
+.header-twitter-link {
+  background: url('/img/x.svg') no-repeat center;
+  background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+  opacity: 0.7;
+}
+
+.header-github-link {
+  background: url('/img/github.svg') no-repeat center;
+  background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+  opacity: 0.7;
+}
+
+/* Connect Wallet 按钮 */
+.navbar-wallet-button {
+  background: #0fb981;
+  border-radius: 8px;
+  padding: 6px 16px;
+  color: #fff !important;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.navbar-wallet-button:hover {
+  background: #0ca86e;
+  text-decoration: none;
+}

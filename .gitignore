@@ -1,9 +1,8 @@
-# VuePress files
-docs/.vuepress/.temp/
-docs/.vuepress/.cache/
-docs/.vuepress/dist/
-docs/.vuepress/.DS_Store
-# Node modules
+
+node_modules
+.DS_Store
+build/
+
 node_modules/
 .github
 
@@ -13,3 +12,4 @@ node_modules/
 
 # Log files
 *.log
+

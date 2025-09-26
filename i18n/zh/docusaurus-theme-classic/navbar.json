@@ -1,0 +1,82 @@
+{
+  "title": {
+    "message": "TTSwap",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "TTSwap logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Home": {
+    "message": "首页",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Activity": {
+    "message": "活动",
+    "description": "Navbar item with label Activity"
+  },
+  "item.label.Public Sell": {
+    "message": "公开发售",
+    "description": "Navbar item with label Public Sell"
+  },
+  "item.label.Token Airdrop": {
+    "message": "代币空投",
+    "description": "Navbar item with label Token Airdrop"
+  },
+  "item.label.Knowledge": {
+    "message": "知识",
+    "description": "Navbar item with label Knowledge"
+  },
+  "item.label.User Doc": {
+    "message": "用户文档",
+    "description": "Navbar item with label User Doc"
+  },
+  "item.label.Token Economic": {
+    "message": "代币经济",
+    "description": "Navbar item with label Token Economic"
+  },
+  "item.label.WhitePaper": {
+    "message": "白皮书",
+    "description": "Navbar item with label WhitePaper"
+  },
+  "item.label.Join DAO": {
+    "message": "加入DAO",
+    "description": "Navbar item with label Join DAO"
+  },
+  "item.label.Allocate Commission By Role": {
+    "message": "按角色分配佣金",
+    "description": "Navbar item with label Allocate Commission By Role"
+  },
+  "item.label.Be Referral": {
+    "message": "成为推荐人",
+    "description": "Navbar item with label Be Referral"
+  },
+  "item.label.Be Token Operator": {
+    "message": "成为代币操作员",
+    "description": "Navbar item with label Be Token Operator"
+  },
+  "item.label.Be Service Provider": {
+    "message": "成为服务提供商",
+    "description": "Navbar item with label Be Service Provider"
+  },
+  "item.label.Be Builder": {
+    "message": "成为建设者",
+    "description": "Navbar item with label Be Builder"
+  },
+  "item.label.Be Liquidityprovider": {
+    "message": "成为流动性提供者",
+    "description": "Navbar item with label Be Liquidityprovider"
+  },
+  "item.label.Be Investor": {
+    "message": "成为投资者",
+    "description": "Navbar item with label Be Investor"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Launch App": {
+    "message": "启动应用",
+    "description": "Navbar item with label Launch App"
+  }
+}

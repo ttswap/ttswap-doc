@@ -1,0 +1,82 @@
+{
+  "title": {
+    "message": "TTSwap",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "TTSwap Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Home": {
+    "message": "Home",
+    "description": "Navbar item with label Home"
+  },
+  "item.label.Activity": {
+    "message": "Activity",
+    "description": "Navbar item with label Activity"
+  },
+  "item.label.Public Sell": {
+    "message": "Public Sell",
+    "description": "Navbar item with label Public Sell"
+  },
+  "item.label.Token Airdrop": {
+    "message": "Token Airdrop",
+    "description": "Navbar item with label Token Airdrop"
+  },
+  "item.label.Knowledge": {
+    "message": "Knowledge",
+    "description": "Navbar item with label Knowledge"
+  },
+  "item.label.User Doc": {
+    "message": "User Doc",
+    "description": "Navbar item with label User Doc"
+  },
+  "item.label.Token Economic": {
+    "message": "Token Economic",
+    "description": "Navbar item with label Token Economic"
+  },
+  "item.label.WhitePaper": {
+    "message": "WhitePaper",
+    "description": "Navbar item with label WhitePaper"
+  },
+  "item.label.Join DAO": {
+    "message": "Join DAO",
+    "description": "Navbar item with label Join DAO"
+  },
+  "item.label.Allocate Commission By Role": {
+    "message": "Allocate Commission By Role",
+    "description": "Navbar item with label Allocate Commission By Role"
+  },
+  "item.label.Be Referral": {
+    "message": "Be Referral",
+    "description": "Navbar item with label Be Referral"
+  },
+  "item.label.Be Token Operator": {
+    "message": "Be Token Operator",
+    "description": "Navbar item with label Be Token Operator"
+  },
+  "item.label.Be Service Provider": {
+    "message": "Be Service Provider",
+    "description": "Navbar item with label Be Service Provider"
+  },
+  "item.label.Be Builder": {
+    "message": "Be Builder",
+    "description": "Navbar item with label Be Builder"
+  },
+  "item.label.Be Liquidityprovider": {
+    "message": "Be Liquidityprovider",
+    "description": "Navbar item with label Be Liquidityprovider"
+  },
+  "item.label.Be Investor": {
+    "message": "Be Investor",
+    "description": "Navbar item with label Be Investor"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Launch App": {
+    "message": "Launch App",
+    "description": "Navbar item with label Launch App"
+  }
+}
