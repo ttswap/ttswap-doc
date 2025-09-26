@@ -36,14 +36,14 @@ jobs:
           # 选择要使用的 node 版本
           node-version: 22
           # 缓存 pnpm 依赖
-          cache: pnpm
+          cache: npm
 
 
       - name: Install dependencies
-        run: pnpm install  --frozen-lockfile
+        run: npm ci
 
       - name: Build documentation site
-        run: pnpm docs:build  
+        run: npm run build 
 
       - name: scp file
         run: |
