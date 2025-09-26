@@ -1,62 +1,66 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/zh/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
-          "mainDocId": "articles/publicsell",
+          "path": "/zh/docs",
+          "mainDocId": "README",
           "docs": [
             {
               "id": "articles/publicsell",
-              "path": "/docs/articles/publicsell"
+              "path": "/zh/docs/articles/publicsell"
             },
             {
               "id": "articles/tokenairdrop",
-              "path": "/docs/articles/tokenairdrop"
+              "path": "/zh/docs/articles/tokenairdrop"
             },
             {
               "id": "community/builder",
-              "path": "/docs/community/builder"
+              "path": "/zh/docs/community/builder"
             },
             {
               "id": "community/gate",
-              "path": "/docs/community/gate"
+              "path": "/zh/docs/community/gate"
             },
             {
               "id": "community/introduce",
-              "path": "/docs/community/introduce"
+              "path": "/zh/docs/community/introduce"
             },
             {
               "id": "community/investor",
-              "path": "/docs/community/investor"
+              "path": "/zh/docs/community/investor"
             },
             {
               "id": "community/liquidityprovider",
-              "path": "/docs/community/liquidityprovider"
+              "path": "/zh/docs/community/liquidityprovider"
             },
             {
               "id": "community/recommander",
-              "path": "/docs/community/recommander"
+              "path": "/zh/docs/community/recommander"
             },
             {
               "id": "community/tokenoperator",
-              "path": "/docs/community/tokenoperator"
+              "path": "/zh/docs/community/tokenoperator"
             },
             {
               "id": "knowledge/tokeneconomic",
-              "path": "/docs/knowledge/tokeneconomic"
+              "path": "/zh/docs/knowledge/tokeneconomic"
             },
             {
               "id": "knowledge/userdoc/userdoc",
-              "path": "/docs/knowledge/userdoc/"
+              "path": "/zh/docs/knowledge/userdoc/"
             },
             {
               "id": "knowledge/whitepaper/whitepaper",
-              "path": "/docs/knowledge/whitepaper/"
+              "path": "/zh/docs/knowledge/whitepaper/"
+            },
+            {
+              "id": "README",
+              "path": "/zh/docs/"
             }
           ],
           "draftIds": [],
