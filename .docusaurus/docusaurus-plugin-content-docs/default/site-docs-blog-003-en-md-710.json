@@ -1,0 +1,18 @@
+{
+  "id": "blog/003en",
+  "title": "TTSWAP Constant Value 🆚 Constant Product --- TheBattle of Liquidity Design Intelligence",
+  "description": "Hello everyone! Today we're diving deep into two different liquidity design approaches in the DeFi space: TTSWAP's constant value formula with its \"multi-pool integration\" solution and Constant Product Formula's \"virtual liquidity\" solution. Through comparison, you'll understand how they enhance user trading experiences in different ways.",
+  "source": "@site/docs/blog/003en.md",
+  "sourceDirName": "blog",
+  "slug": "/blog/003en",
+  "permalink": "/docs/blog/003en",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/blog/003en.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "TTSWAP Constant Value 🆚 Constant Product --- TheBattle of Liquidity Design Intelligence",
+    "createTime": "2025/06/04 00:14:34"
+  }
+}

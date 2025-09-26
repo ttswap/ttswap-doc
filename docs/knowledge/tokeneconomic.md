@@ -1,7 +1,6 @@
 ---
 lang: en-US
 title: TTSWAP Token Economics
-description: TTSWAP is a decentralized token trading platform where anyone can quickly and securely swap one token for another without relying on centralized exchanges.
 collapsed: true
 createTime: 2025/06/08 23:48:54
 ---

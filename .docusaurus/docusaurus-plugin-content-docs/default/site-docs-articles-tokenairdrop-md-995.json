@@ -1,7 +1,7 @@
 {
   "id": "articles/tokenairdrop",
   "title": "Airdrop (Planing)",
-  "description": "aa",
+  "description": "",
   "source": "@site/docs/articles/tokenairdrop.md",
   "sourceDirName": "articles",
   "slug": "/articles/tokenairdrop",
@@ -14,7 +14,6 @@
   "frontMatter": {
     "lang": "en-US",
     "title": "Airdrop (Planing)",
-    "description": "aa",
     "createTime": "2025/05/17 14:18:10"
   }
 }

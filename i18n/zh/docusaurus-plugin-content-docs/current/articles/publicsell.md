@@ -4,7 +4,7 @@
 
 ## 🚀【TTSWAP Public Sale Launch | Limited TTS Token Offering】
 
-### Powering the Next Generation DEX - Grow With Us!
+### Powering the Next Generation DEX - Grow With Us! 我们是好学生
 
 TTSWAP is an **efficient, secure, and innovative decentralized trading platform** built for users. We are now officially launching the **public sale of TTS tokens**. This public sale will provide initial liquidity for TTSWAP and drive the full launch of our ecosystem!
 

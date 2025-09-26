@@ -37,7 +37,7 @@ export default {
     }
   ],
   "url": "https://ttswap.io",
-  "baseUrl": "/",
+  "baseUrl": "/zh/",
   "organizationName": "ttswap",
   "projectName": "ttswap-docs",
   "onBrokenLinks": "throw",
@@ -96,78 +96,78 @@ export default {
     "navbar": {
       "title": "TTSwap",
       "logo": {
-        "alt": "TTSwap Logo",
+        "alt": "TTSwap logo",
         "src": "img/logo.png"
       },
       "items": [
         {
           "to": "/",
-          "label": "Home",
+          "label": "首页",
           "position": "left"
         },
         {
-          "label": "Activity",
+          "label": "活动",
           "position": "left",
           "items": [
             {
               "to": "/docs/articles/publicsell",
-              "label": "Public Sell"
+              "label": "公开发售"
             },
             {
               "to": "/docs/articles/tokenairdrop",
-              "label": "Token Airdrop"
+              "label": "代币空投"
             }
           ]
         },
         {
-          "label": "Knowledge",
+          "label": "知识",
           "position": "left",
           "items": [
             {
               "to": "/docs/knowledge/userdoc/userdoc",
-              "label": "User Doc"
+              "label": "用户文档"
             },
             {
               "to": "/docs/knowledge/tokeneconomic",
-              "label": "Token Economic"
+              "label": "代币经济"
             },
             {
               "to": "/docs/knowledge/whitepaper/whitepaper",
-              "label": "WhitePaper"
+              "label": "白皮书"
             }
           ]
         },
         {
-          "label": "Join DAO",
+          "label": "加入DAO",
           "position": "left",
           "items": [
             {
               "to": "/docs/community/introduce",
-              "label": "Allocate Commission By Role"
+              "label": "按角色分配佣金"
             },
             {
               "to": "/docs/community/recommander",
-              "label": "Be Referral"
+              "label": "成为推荐人"
             },
             {
               "to": "/docs/community/tokenoperator",
-              "label": "Be Token Operator"
+              "label": "成为代币操作员"
             },
             {
               "to": "/docs/community/gate",
-              "label": "Be Service Provider"
+              "label": "成为服务提供商"
             },
             {
               "to": "/docs/community/builder",
-              "label": "Be Builder"
+              "label": "成为建设者"
             },
             {
               "to": "/docs/community/liquidityprovider",
-              "label": "Be Liquidityprovider"
+              "label": "成为流动性提供者"
             },
             {
               "to": "/docs/community/investor",
-              "label": "Be Investor"
+              "label": "成为投资者"
             }
           ]
         },
@@ -203,7 +203,7 @@ export default {
         },
         {
           "href": "https://app.ttswap.io",
-          "label": "Launch App",
+          "label": "启动应用",
           "position": "right",
           "className": "navbar-wallet-button"
         }
