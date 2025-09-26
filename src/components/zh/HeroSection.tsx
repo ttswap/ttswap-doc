@@ -189,7 +189,9 @@ export function HeroSection() {
               </div>
 
               <div className="space-y-2">
-                <div className="space-y-2">
+              <img src="/img/swap-zh.png" alt="Swap" className="w-full" />
+
+                {/* <div className="space-y-2">
                   <label className="text-sm font-medium text-muted-foreground">
                     卖出
                   </label>
@@ -260,9 +262,10 @@ export function HeroSection() {
                   <span className="text-primary font-medium">
                     ~0.01%
                   </span>
-                </div>
+                </div> */}
 
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
+                onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?zh") }}>
                   <Zap className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                   立即交易
                 </Button>
@@ -278,18 +281,20 @@ export function HeroSection() {
                   </div>
                   快速质押
                 </h3>
-                <div className="text-right">
+                {/* <div className="text-right">
                   <div className="text-sm text-muted-foreground">
                     APY
                   </div>
                   <div className="text-lg font-bold text-secondary">
                     24.5%
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div className="space-y-4">
-                <div className="space-y-2">
+              <img src="/img/invest-zh.png" alt="Swap" className="w-full" />
+
+                {/* <div className="space-y-2">
                   <label className="text-sm font-medium text-muted-foreground">
                     质押数量
                   </label>
@@ -331,11 +336,12 @@ export function HeroSection() {
                     </div>
                     <div className="font-medium">灵活</div>
                   </div>
-                </div>
+                </div> */}
 
-                <Button className="w-full bg-secondary hover:bg-secondary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <Button className="w-full bg-secondary hover:bg-secondary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
+                onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?zh") }}>
                   <TrendingUp className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                  开始质押
+                  开始投资
                 </Button>
               </div>
             </Card>
