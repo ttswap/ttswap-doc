@@ -104,9 +104,9 @@ const config: Config = {
           {to: '/docs/articles/tokenairdrop', label: 'Token Airdrop', },
         ],},
         {label: 'Knowledge', position: 'left',items:[
-          {to: '/docs/knowledge/userdoc', label: 'User Doc', },
+          {to: '/docs/knowledge/userdoc/userdoc', label: 'User Doc', },
           {to: '/docs/knowledge/tokeneconomic', label: 'Token Economic', },
-          {to: '/docs/knowledge/whitepaper', label: 'WhitePaper', },
+          {to: '/docs/knowledge/whitepaper/whitepaper', label: 'WhitePaper', },
         ],},
         {label: 'Join DAO', position: 'left',items:[
           {to: '/docs/community/introduce', label: 'Allocate Commission By Role', },

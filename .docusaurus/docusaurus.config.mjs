@@ -96,78 +96,78 @@ export default {
     "navbar": {
       "title": "TTSwap",
       "logo": {
-        "alt": "TTSwap logo",
+        "alt": "TTSwap Logo",
         "src": "img/logo.png"
       },
       "items": [
         {
           "to": "/",
-          "label": "首页",
+          "label": "Home",
           "position": "left"
         },
         {
-          "label": "活动",
+          "label": "Activity",
           "position": "left",
           "items": [
             {
               "to": "/docs/articles/publicsell",
-              "label": "公售活动"
+              "label": "Public Sell"
             },
             {
               "to": "/docs/articles/tokenairdrop",
-              "label": "代币空投活动"
+              "label": "Token Airdrop"
             }
           ]
         },
         {
-          "label": "知识中心",
+          "label": "Knowledge",
           "position": "left",
           "items": [
             {
-              "to": "/docs/knowledge/userdoc",
-              "label": "用户通用文档"
+              "to": "/docs/knowledge/userdoc/userdoc",
+              "label": "User Doc"
             },
             {
               "to": "/docs/knowledge/tokeneconomic",
-              "label": "代币经济"
+              "label": "Token Economic"
             },
             {
-              "to": "/docs/knowledge/whitepaper",
-              "label": "白皮书"
+              "to": "/docs/knowledge/whitepaper/whitepaper",
+              "label": "WhitePaper"
             }
           ]
         },
         {
-          "label": "加入DAO",
+          "label": "Join DAO",
           "position": "left",
           "items": [
             {
               "to": "/docs/community/introduce",
-              "label": "按角色分佣"
+              "label": "Allocate Commission By Role"
             },
             {
               "to": "/docs/community/recommander",
-              "label": "成为推荐人"
+              "label": "Be Referral"
             },
             {
               "to": "/docs/community/tokenoperator",
-              "label": "成为代币运营者"
+              "label": "Be Token Operator"
             },
             {
               "to": "/docs/community/gate",
-              "label": "成为服务商"
+              "label": "Be Service Provider"
             },
             {
               "to": "/docs/community/builder",
-              "label": "成为建设者"
+              "label": "Be Builder"
             },
             {
               "to": "/docs/community/liquidityprovider",
-              "label": "成为流动性提供者"
+              "label": "Be Liquidityprovider"
             },
             {
               "to": "/docs/community/investor",
-              "label": "成为投资者"
+              "label": "Be Investor"
             }
           ]
         },

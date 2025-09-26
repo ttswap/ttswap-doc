@@ -20,9 +20,9 @@ export const navigationZh = {
         // { name: "分析", href: "#analytics" },
     ],
     resources: [
-        { href: '/zh/docs/knowledge/userdoc', name: '用户文档' },
+        { href: '/zh/docs/knowledge/userdoc/userdoc', name: '用户文档' },
         { href: '/zh/docs/knowledge/tokeneconomic', name: '代币经济' },
-        { href: '/zh/docs/knowledge/whitepaper', name: '白皮书' },
+        { href: '/zh/docs/knowledge/whitepaper/whitepaper', name: '白皮书' },
     ],
     community: [
         { href: '/zh/docs/community/recommander', name: '成为推荐人' },

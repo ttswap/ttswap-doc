@@ -123,6 +123,56 @@ export default [
     exact: true
   },
   {
+    path: '/zh/docs/community/builder',
+    component: ComponentCreator('/zh/docs/community/builder', '60c'),
+    exact: true
+  },
+  {
+    path: '/zh/docs/community/gate',
+    component: ComponentCreator('/zh/docs/community/gate', '49d'),
+    exact: true
+  },
+  {
+    path: '/zh/docs/community/introduce',
+    component: ComponentCreator('/zh/docs/community/introduce', '470'),
+    exact: true
+  },
+  {
+    path: '/zh/docs/community/investor',
+    component: ComponentCreator('/zh/docs/community/investor', 'f1c'),
+    exact: true
+  },
+  {
+    path: '/zh/docs/community/liquidityprovider',
+    component: ComponentCreator('/zh/docs/community/liquidityprovider', '207'),
+    exact: true
+  },
+  {
+    path: '/zh/docs/community/recommander',
+    component: ComponentCreator('/zh/docs/community/recommander', '80d'),
+    exact: true
+  },
+  {
+    path: '/zh/docs/community/tokenoperator',
+    component: ComponentCreator('/zh/docs/community/tokenoperator', 'a02'),
+    exact: true
+  },
+  {
+    path: '/zh/docs/knowledge/tokeneconomic',
+    component: ComponentCreator('/zh/docs/knowledge/tokeneconomic', 'aa7'),
+    exact: true
+  },
+  {
+    path: '/zh/docs/knowledge/userdoc/userdoc',
+    component: ComponentCreator('/zh/docs/knowledge/userdoc/userdoc', '740'),
+    exact: true
+  },
+  {
+    path: '/zh/docs/knowledge/whitepaper/whitepaper',
+    component: ComponentCreator('/zh/docs/knowledge/whitepaper/whitepaper', '98a'),
+    exact: true
+  },
+  {
     path: '/docs',
     component: ComponentCreator('/docs', 'f38'),
     routes: [

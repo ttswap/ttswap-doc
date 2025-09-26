@@ -263,6 +263,76 @@
     },
     "content": "content---zh-docs-articles-tokenairdrop-9-f-2-aed"
   },
+  "/zh/docs/community/builder-60c": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---zh-a-74-96f"
+    },
+    "content": "content---zh-docs-community-builder-9-ac-8fe"
+  },
+  "/zh/docs/community/gate-49d": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---zh-a-74-96f"
+    },
+    "content": "content---zh-docs-community-gate-329-cea"
+  },
+  "/zh/docs/community/introduce-470": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---zh-a-74-96f"
+    },
+    "content": "content---zh-docs-community-introduce-311-58c"
+  },
+  "/zh/docs/community/investor-f1c": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---zh-a-74-96f"
+    },
+    "content": "content---zh-docs-community-investor-888-e8b"
+  },
+  "/zh/docs/community/liquidityprovider-207": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---zh-a-74-96f"
+    },
+    "content": "content---zh-docs-community-liquidityprovider-8-f-8-6f9"
+  },
+  "/zh/docs/community/recommander-80d": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---zh-a-74-96f"
+    },
+    "content": "content---zh-docs-community-recommander-012-468"
+  },
+  "/zh/docs/community/tokenoperator-a02": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---zh-a-74-96f"
+    },
+    "content": "content---zh-docs-community-tokenoperator-4-e-2-97c"
+  },
+  "/zh/docs/knowledge/tokeneconomic-aa7": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---zh-a-74-96f"
+    },
+    "content": "content---zh-docs-knowledge-tokeneconomicf-37-530"
+  },
+  "/zh/docs/knowledge/userdoc/userdoc-740": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---zh-a-74-96f"
+    },
+    "content": "content---zh-docs-knowledge-userdoc-userdoc-800-92d"
+  },
+  "/zh/docs/knowledge/whitepaper/whitepaper-98a": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---zh-a-74-96f"
+    },
+    "content": "content---zh-docs-knowledge-whitepaper-whitepaper-252-c51"
+  },
   "/docs-f38": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {

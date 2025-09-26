@@ -81,9 +81,9 @@ export const chineseNavbarItems: NavbarItemConfig[] = [
     label: '知识',
     position: 'left',
     items: [
-      { to: '/zh/docs/knowledge/userdoc', label: '用户文档' },
+      { to: '/zh/docs/knowledge/userdoc/userdoc', label: '用户文档' },
       { to: '/zh/docs/knowledge/tokeneconomic', label: '代币经济' },
-      { to: '/zh/docs/knowledge/whitepaper', label: '白皮书' },
+      { to: '/zh/docs/knowledge/whitepaper/whitepaper', label: '白皮书' },
     ],
   },
   {
