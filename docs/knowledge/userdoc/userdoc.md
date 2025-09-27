@@ -1,5 +1,6 @@
 
-
+# User document
+This documentation provides users with an understanding of TTSWAP's operational mechanics, design rationale, and implementation guidelines.
 ## ✅ I. What is TTSWAP?
 TTSWAP is a decentralized token trading platform where anyone can quickly and safely exchange one token for another without relying on centralized exchanges.
 It operates entirely through smart contracts, eliminating intermediaries, with prices automatically determined by protocol trading. This innovative mechanism is called the "Constant Value Trading Protocol," making the trading process more transparent, fair, and stable.
@@ -81,21 +82,13 @@ TTSWAP operates similarly. The difference is that it doesn't use fiat currency p
 The system uses the following formula to keep prices fair as supply and demand change.
 
 ---
-### ⚖️ 3. Calculation Principle  
-$$\begin{align}
-    {V_a\over Q_a}*Δa={V_b\over Q_b}*Δb=...&={V_z\over Q_z}*Δz  \\
-    Before(V_a+V_b+....+V_z)&=After(V_a+V_b+....+V_z)  \\
-    V_a:\ represents\ Token_A's&\ market\ value\ in\ protocol  \\
-    Q_a:\ represents\ Token_A's&\ quantity\ in\ protocol  \\
-    Δa:\ represents\ Token_A's&\ purchase\ or\ sale\ amount  \\
-    V_b:\ represents\ Token_B's&\ market\ value\ in\ protocol  \\
-    Q_b:\ represents\ Token_B's&\ quantity\ in\ protocol  \\
-    Δb:\ represents\ Token_B's&\ purchase\ or\ sale\ amount  \\
-    V_z:\ represents\ Token_Z's&\ market\ value\ in\ protocol  \\
-    Q_z:\ represents\ Token_Z's&\ quantity\ in\ protocol  \\
-    Δz:\ represents\ Token_Z's&\ purchase\ or\ sale\ amount  \\
-\end{align}
+### ⚖️ 3. Compute the input token value  
+
 $$
+ΔV = \frac{V_a}{Q_a + {{Δa}\over 2}} \cdot Δa \\
+$$
+
+
 
 ---
 ### 🔄 4. How is the Exchange Rate Calculated?  
@@ -103,12 +96,10 @@ The system determines how much A you need to exchange for B based on:
 - The quantity of each token in the pool
 - The current market value of each token  
 $$
-\begin{align}
-    Get\ Δb&={ {V_a \over Q_a}*Δa*Q_b \over V_b} 
-\end{align}
+Δb = \frac{Q_b}{V_b + {{ΔV}\over 2}} \cdot ΔV \\
 $$
 
-> 💡 If many people are buying Token A, its "market value" will rise, and you'll get fewer tokens in return; conversely, if many are selling, its price will fall.
+
 
 ---
 ### 📐 5. What are "No Slippage" and "Trading Threshold"?  
@@ -207,9 +198,8 @@ So next time you exchange, the same amount of A might not get you as many B.
 The system actually executes this formula:  
 $$
 \begin{align}
-   Given:&={Token~A\ market\ value \over quantity} × amount  \\
-Received:&= {Token~B\ market\ value \over quantity} × amount  \\
-Given:&= Received \\
+   ΔV = \frac{V_a}{Q_a + {{Δa}\over 2}} \cdot Δa \\
+Δb = \frac{Q_b}{V_b + {{ΔV}\over 2}} \cdot ΔV \\
 \end{align}
 $$
  
