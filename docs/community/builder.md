@@ -1,10 +1,6 @@
----
-title: 【EXCLUSIVE RECRUITMENT】Join TTSWAP, Become a Leader in the Web3 Trading Revolution! 🚀
-createTime: 2025/06/08 23:52:44
----
 
 # 🌟 TTSWAP Protocol Builder Recruitment Program
-
+【EXCLUSIVE RECRUITMENT】Join TTSWAP, Become a Leader in the Web3 Trading Revolution!
 > 💡 **Why Choose to Become a TTSWAP Builder?**
 > - Impact a community of 10,000+ users 👥
 > - Create a new paradigm for Web3 trading 🌐

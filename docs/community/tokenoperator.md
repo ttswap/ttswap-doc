@@ -1,7 +1,6 @@
----
-title: 【EXCLUSIVE】TTSWAP Token Operator Recruitment~ 1-3% Permanent Revenue Share + Auction Profits, Build Your DeFi Wealth Empire!
-createTime: 2025/06/08 23:52:26
----
+
+# How to be TTSWAP Token Operator
+【EXCLUSIVE】TTSWAP Token Operator Recruitment~ 1-3% Permanent Revenue Share + Auction Profits, Build Your DeFi Wealth Empire!
 
 ## I. What is a Token Operator? 🤔
 
