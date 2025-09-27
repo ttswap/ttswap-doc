@@ -1,7 +1,5 @@
----
-title: 【Zero Threshold】TTSWAP Ambassador Recruitment~ 5%-10% Permanent Revenue Share, Build Your Passive Income Pipeline!
-createTime: 2025/06/08 23:52:07
----
+# How to Become the TTswap Ambassador
+【Zero Threshold】TTSWAP Ambassador Recruitment~ 5%-10% Permanent Revenue Share, Build Your Passive Income Pipeline!
 
 ## I. What is a TTSWAP Ambassador? 🤔
 

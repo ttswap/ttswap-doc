@@ -1,9 +1,6 @@
----
-title: TTSWAP Innovative Revenue Sharing Mechanism~ Six Roles Share Trillion-Dollar Trading Benefits
-createTime: 2025/06/08 23:51:55
----
 
-
+# how to sharing the fee income
+TTSWAP Innovative Revenue Sharing Mechanism~ Six Roles Share Trillion-Dollar Trading Benefits
 
 ## I. What is Role-Based Revenue Sharing? 🤔
 
