@@ -8,6 +8,7 @@ import {
   ArrowRight,
   BarChart3,
 } from "lucide-react";
+import Translate from '@docusaurus/Translate';
 
 export function ProblemsSection() {
   return (
@@ -15,16 +16,18 @@ export function ProblemsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Solving DeFi's{" "}
+            <Translate id="problems.section.title.firstPart">Solving DeFi's</Translate>{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Four Major
+              <Translate id="problems.section.title.fourMajor">Four Major</Translate>
             </span>{" "}
-            Pain Points
+            <Translate id="problems.section.title.painPoints">Pain Points</Translate>
           </h2>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            TTSwap solves fundamental challenges that plague traditional decentralized exchanges,
-            providing unprecedented efficiency and user benefits.
+            <Translate id="problems.section.description">
+              TTSwap solves fundamental challenges that plague traditional decentralized exchanges,
+              providing unprecedented efficiency and user benefits.
+            </Translate>
           </p>
         </div>
 
@@ -45,20 +48,22 @@ export function ProblemsSection() {
                   50%+
                 </div>
                 <div className="text-lg font-semibold text-foreground mb-3">
-                  Slippage Reduction
+                  <Translate id="problems.section.slippageReduction.title">Slippage Reduction</Translate>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
-                  Innovative algorithms minimize slippage and maximize trading efficiency
+                  <Translate id="problems.section.slippageReduction.description">
+                    Innovative algorithms minimize slippage and maximize trading efficiency
+                  </Translate>
                 </p>
               </div>
 
               {/* Hover indicator */}
-              <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="inline-flex items-center text-xs font-medium text-primary">
-                  Learn More
+                  <Translate id="problems.section.learnMore">Learn More</Translate>
                   <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </Card>
 
@@ -76,19 +81,21 @@ export function ProblemsSection() {
                   0%
                 </div>
                 <div className="text-lg font-semibold text-foreground mb-3">
-                  Impermanent Loss
+                  <Translate id="problems.section.impermanentLoss.title">Impermanent Loss</Translate>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
-                  Revolutionary constant value formula completely eliminates AMM impermanent loss
+                  <Translate id="problems.section.impermanentLoss.description">
+                    Revolutionary constant value formula completely eliminates AMM impermanent loss
+                  </Translate>
                 </p>
               </div>
 
-              <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="inline-flex items-center text-xs font-medium text-secondary">
-                  Learn More
+                  <Translate id="problems.section.learnMore">Learn More</Translate>
                   <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </Card>
 
@@ -106,19 +113,21 @@ export function ProblemsSection() {
                   90%
                 </div>
                 <div className="text-lg font-semibold text-foreground mb-3">
-                  Gas Savings
+                  <Translate id="problems.section.gasSavings.title">Gas Savings</Translate>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
-                  Significantly reduce transaction fees through optimized contract architecture
+                  <Translate id="problems.section.gasSavings.description">
+                    Significantly reduce transaction fees through optimized contract architecture
+                  </Translate>
                 </p>
               </div>
 
-              <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="inline-flex items-center text-xs font-medium text-tertiary">
-                  Learn More
+                  <Translate id="problems.section.learnMore">Learn More</Translate>
                   <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </Card>
 
@@ -136,19 +145,21 @@ export function ProblemsSection() {
                   100%
                 </div>
                 <div className="text-lg font-semibold text-foreground mb-3">
-                  Fair Distribution
+                  <Translate id="problems.section.fairDistribution.title">Fair Distribution</Translate>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed group-hover:text-foreground/80 transition-colors duration-300">
-                  Contribution-based transparent reward mechanism ensures fairness
+                  <Translate id="problems.section.fairDistribution.description">
+                    Contribution-based transparent reward mechanism ensures fairness
+                  </Translate>
                 </p>
               </div>
 
-              <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {/* <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="inline-flex items-center text-xs font-medium text-accent">
-                  Learn More
+                  <Translate id="problems.section.learnMore">Learn More</Translate>
                   <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
                 </div>
-              </div>
+              </div> */}
             </div>
           </Card>
         </div>

@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { MathFormula } from "./MathFormula";
+import Translate from "@docusaurus/Translate";
 
 export function HeroSection() {
   const [swapAmount, setSwapAmount] = useState("");
@@ -28,32 +29,32 @@ export function HeroSection() {
   const features = [
     {
       icon: TrendingUp,
-      title: "Reduce 50%+ Trading Loss",
-      subtitle: "Slippage Reduction",
+      title: <Translate id="hero.features.slippageReduction.title" description="Slippage reduction feature title">Reduce 50%+ Trading Loss</Translate>,
+      subtitle: <Translate id="hero.features.slippageReduction.subtitle" description="Slippage reduction feature subtitle">Slippage Reduction</Translate>,
       color: "text-primary",
       bgColor: "bg-primary/5",
       borderColor: "border-primary/20",
     },
     {
       icon: Shield,
-      title: "Zero Impermanent Loss",
-      subtitle: "Capital Protection",
+      title: <Translate id="hero.features.capitalProtection.title" description="Capital protection feature title">Zero Impermanent Loss</Translate>,
+      subtitle: <Translate id="hero.features.capitalProtection.subtitle" description="Capital protection feature subtitle">Capital Protection</Translate>,
       color: "text-secondary",
       bgColor: "bg-secondary/5",
       borderColor: "border-secondary/20",
     },
     {
       icon: Zap,
-      title: "Lower 50%+ Trading Costs",
-      subtitle: "Fee & Gas Optimization",
+      title: <Translate id="hero.features.feeOptimization.title" description="Fee optimization feature title">Lower 50%+ Trading Costs</Translate>,
+      subtitle: <Translate id="hero.features.feeOptimization.subtitle" description="Fee optimization feature subtitle">Fee & Gas Optimization</Translate>,
       color: "text-tertiary",
       bgColor: "bg-tertiary/5",
       borderColor: "border-tertiary/20",
     },
     {
       icon: Users,
-      title: "Universal Participation",
-      subtitle: "Everyone Benefits",
+      title: <Translate id="hero.features.universalParticipation.title" description="Universal participation feature title">Universal Participation</Translate>,
+      subtitle: <Translate id="hero.features.universalParticipation.subtitle" description="Universal participation feature subtitle">Everyone Benefits</Translate>,
       color: "text-accent",
       bgColor: "bg-accent/5",
       borderColor: "border-accent/20",
@@ -68,16 +69,18 @@ export function HeroSection() {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-6 text-center lg:text-left">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-                Revolutionary{" "}
+                <Translate id="hero.title.first" description="First part of hero section title">Revolutionary</Translate>{" "}
                 <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  DeFi
+                  <Translate id="hero.title.second" description="Second part of hero section title">DeFi</Translate>
                 </span>{" "}
-                Trading Protocol
+                <Translate id="hero.title.third" description="Third part of hero section title">Trading Protocol</Translate>
               </h1>
 
               <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-                Constant value algorithm eliminates impermanent loss, lowers 50%+ trading costs.
-                Everyone can participate in decentralized trading.
+                <Translate id="hero.description" description="Hero section description">
+                  Constant value algorithm eliminates impermanent loss, lowers 50%+ trading costs.
+                  Everyone can participate in decentralized trading.
+                </Translate>
               </p>
             </div>
 
@@ -116,7 +119,9 @@ export function HeroSection() {
                   <Calculator className="h-4 w-4 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  Constant Value Trading Formula
+                  <Translate id="hero.formula.title" description="Constant value trading formula title">
+                    Constant Value Trading Formula
+                  </Translate>
                 </h3>
               </div>
 
@@ -124,10 +129,14 @@ export function HeroSection() {
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <p className="text-sm font-medium text-muted-foreground">
-                      Through input quantity to calculate value
+                      <Translate id="hero.formula.formula1.description" description="Description of formula 1">
+                        Through input quantity to calculate value
+                      </Translate>
                     </p>
                     <div className="px-2 py-1 rounded-md bg-primary/10 text-primary text-xs font-medium">
-                      Formula 1
+                      <Translate id="hero.formula.formula1.label" description="Label for formula 1">
+                        Formula 1
+                      </Translate>
                     </div>
                   </div>
                   <div className="p-4 bg-primary/5 rounded-xl border border-primary/20 overflow-x-auto">
@@ -141,10 +150,14 @@ export function HeroSection() {
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <p className="text-sm font-medium text-muted-foreground">
-                      Through value to calculate output quantity
+                      <Translate id="hero.formula.formula2.description" description="Description of formula 2">
+                        Through value to calculate output quantity
+                      </Translate>
                     </p>
                     <div className="px-2 py-1 rounded-md bg-secondary/10 text-secondary text-xs font-medium">
-                      Formula 2
+                      <Translate id="hero.formula.formula2.label" description="Label for formula 2">
+                        Formula 2
+                      </Translate>
                     </div>
                   </div>
                   <div className="p-4 bg-secondary/5 rounded-xl border border-secondary/20 overflow-x-auto">
@@ -159,14 +172,20 @@ export function HeroSection() {
               <div className="mt-6 p-4 bg-muted/30 rounded-xl border border-border/50">
                 <div className="text-xs text-muted-foreground">
                   <span className="font-medium">
-                    Variable Explanation：
+                    <Translate id="hero.formula.variableExplanation" description="Variable explanation label">
+                      Variable Explanation：
+                    </Translate>
                   </span>
                   <span className="ml-2">
-                    V: Market Value | Q: Token Quantity | a,b: Token Types
+                    <Translate id="hero.formula.variableDetails" description="Details of variables">
+                      V: Market Value | Q: Token Quantity | a,b: Token Types
+                    </Translate>
                   </span>
                 </div>
                 <p className="text-xs text-muted-foreground mt-2 italic">
-                  Revolutionary algorithm ensures constant value in all transactions
+                  <Translate id="hero.formula.algorithmNote" description="Note about the revolutionary algorithm">
+                    Revolutionary algorithm ensures constant value in all transactions
+                  </Translate>
                 </p>
               </div>
             </Card>
@@ -181,10 +200,14 @@ export function HeroSection() {
                   <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center mr-1">
                     <ArrowDownUp className="h-4 w-4 text-primary" />
                   </div>
-                  Quick Trading
+                  <Translate id="hero.swap.title" description="Quick trading title">
+                    Quick Trading
+                  </Translate>
                 </h3>
                 <div className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium">
-                  Real-time
+                  <Translate id="hero.swap.realtime" description="Real-time label">
+                    Real-time
+                  </Translate>
                 </div>
               </div>
 
@@ -193,7 +216,9 @@ export function HeroSection() {
 
                 {/* <div className="space-y-2">
                   <label className="text-sm font-medium text-muted-foreground">
-                    Sell
+                    <Translate id="hero.swap.sell" description="Sell label">
+                      Sell
+                    </Translate>
                   </label>
                   <div className="flex space-x-0">
                     <Select defaultValue="eth">
@@ -201,11 +226,21 @@ export function HeroSection() {
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="eth">ETH</SelectItem>
-                        <SelectItem value="usdc">
-                          USDC
+                        <SelectItem value="eth">
+                          <Translate id="hero.swap.tokens.eth" description="ETH token">
+                            ETH
+                          </Translate>
                         </SelectItem>
-                        <SelectItem value="btc">BTC</SelectItem>
+                        <SelectItem value="usdc">
+                          <Translate id="hero.swap.tokens.usdc" description="USDC token">
+                            USDC
+                          </Translate>
+                        </SelectItem>
+                        <SelectItem value="btc">
+                          <Translate id="hero.swap.tokens.btc" description="BTC token">
+                            BTC
+                          </Translate>
+                        </SelectItem>
                       </SelectContent>
                     </Select>
                     <Input
@@ -231,7 +266,9 @@ export function HeroSection() {
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-muted-foreground">
-                    Buy
+                    <Translate id="hero.swap.buy" description="Buy label">
+                      Buy
+                    </Translate>
                   </label>
                   <div className="flex space-x-2">
                     <Select defaultValue="usdc">
@@ -240,10 +277,20 @@ export function HeroSection() {
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="usdc">
-                          USDC
+                          <Translate id="hero.swap.tokens.usdc2" description="USDC token">
+                            USDC
+                          </Translate>
                         </SelectItem>
-                        <SelectItem value="eth">ETH</SelectItem>
-                        <SelectItem value="tts">TTS</SelectItem>
+                        <SelectItem value="eth">
+                          <Translate id="hero.swap.tokens.eth2" description="ETH token">
+                            ETH
+                          </Translate>
+                        </SelectItem>
+                        <SelectItem value="tts">
+                          <Translate id="hero.swap.tokens.tts" description="TTS token">
+                            TTS
+                          </Translate>
+                        </SelectItem>
                       </SelectContent>
                     </Select>
                     <Input
@@ -257,7 +304,9 @@ export function HeroSection() {
 
                 <div className="flex justify-between text-sm py-2">
                   <span className="text-muted-foreground">
-                    Price Impact
+                    <Translate id="hero.swap.priceImpact" description="Price impact label">
+                      Price Impact
+                    </Translate>
                   </span>
                   <span className="text-primary font-medium">
                     ~0.01%
@@ -267,7 +316,9 @@ export function HeroSection() {
                 <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
                   onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?en") }}>
                   <Zap className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                  Immediate Trading
+                  <Translate id="hero.swap.tradeButton" description="Immediate trading button">
+                    Immediate Trading
+                  </Translate>
                 </Button>
               </div>
             </Card>
@@ -279,11 +330,15 @@ export function HeroSection() {
                   <div className="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center mr-1">
                     <TrendingUp className="h-4 w-4 text-secondary" />
                   </div>
-                  Quick Staking
+                  <Translate id="hero.invest.title" description="Quick invest title">
+                    Quick Invest
+                  </Translate>
                 </h3>
                 {/* <div className="text-right">
                   <div className="text-sm text-muted-foreground">
-                    APY
+                    <Translate id="hero.stake.apy" description="APY label">
+                      APY
+                    </Translate>
                   </div>
                   <div className="text-lg font-bold text-secondary">
                     24.5%
@@ -296,7 +351,9 @@ export function HeroSection() {
 
                 {/* <div className="space-y-2">
                   <label className="text-sm font-medium text-muted-foreground">
-                    Staking Quantity
+                    <Translate id="hero.stake.quantity" description="Staking quantity label">
+                      Staking Quantity
+                    </Translate>
                   </label>
                   <div className="flex space-x-2">
                     <Select defaultValue="tts">
@@ -304,7 +361,11 @@ export function HeroSection() {
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="tts">TTS</SelectItem>
+                        <SelectItem value="tts">
+                          <Translate id="hero.stake.tokens.tts" description="TTS token">
+                            TTS
+                          </Translate>
+                        </SelectItem>
                       </SelectContent>
                     </Select>
                     <Input
@@ -317,14 +378,18 @@ export function HeroSection() {
                     />
                   </div>
                   <div className="text-xs text-muted-foreground">
-                    Balance: 12,345.67 TTS
+                    <Translate id="hero.stake.balance" description="Balance information">
+                      Balance: 12,345.67 TTS
+                    </Translate>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4 py-3">
                   <div>
                     <div className="text-muted-foreground">
-                      Expected Monthly Return
+                      <Translate id="hero.stake.expectedReturn" description="Expected monthly return label">
+                        Expected Monthly Return
+                      </Translate>
                     </div>
                     <div className="font-medium text-secondary">
                       +245 TTS
@@ -332,16 +397,24 @@ export function HeroSection() {
                   </div>
                   <div>
                     <div className="text-muted-foreground">
-                      Lock-up Period
+                      <Translate id="hero.stake.lockupPeriod" description="Lock-up period label">
+                        Lock-up Period
+                      </Translate>
                     </div>
-                    <div className="font-medium">Flexible</div>
+                    <div className="font-medium">
+                      <Translate id="hero.stake.flexible" description="Flexible lock-up period">
+                        Flexible
+                      </Translate>
+                    </div>
                   </div>
                 </div> */}
 
                 <Button className="w-full bg-secondary hover:bg-secondary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
                   onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?en") }}>
                   <TrendingUp className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
-                  Start Invest
+                  <Translate id="hero.stake.investButton" description="Start invest button">
+                    Start Invest
+                  </Translate>
                 </Button>
               </div>
             </Card>

@@ -6,6 +6,7 @@ import {
   TrendingUp,
   BarChart3,
 } from "lucide-react";
+import Translate from "@docusaurus/Translate";
 
 export function LossReductionSection() {
   return (
@@ -13,14 +14,20 @@ export function LossReductionSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            How We Reduce{" "}
+            <Translate id="lossReduction.title.first" description="First part of section title">
+              How We Reduce
+            </Translate>{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              50% Trading Loss
+              <Translate id="lossReduction.title.second" description="Second part of section title">
+                50% Trading Loss
+              </Translate>
             </span>
           </h2>
 
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Two revolutionary methods to maximize liquidity, improve trading efficiency, and minimize trading losses
+            <Translate id="lossReduction.subtitle" description="Section subtitle">
+              Two revolutionary methods to maximize liquidity, improve trading efficiency, and minimize trading losses
+            </Translate>
           </p>
         </div>
 
@@ -37,15 +44,21 @@ export function LossReductionSection() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold">
-                      Concentrated Liquidity
+                      <Translate id="lossReduction.method1.title" description="Method 1 title">
+                        Concentrated Liquidity
+                      </Translate>
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Concentrate multi-pool liquidity into a single pool
+                      <Translate id="lossReduction.method1.subtitle" description="Method 1 subtitle">
+                        Concentrate multi-pool liquidity into a single pool
+                      </Translate>
                     </p>
                   </div>
                 </div>
                 <div className="ml-auto px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-bold">
-                  Step 1
+                  <Translate id="lossReduction.method1.step" description="Method 1 step number">
+                    Step 1
+                  </Translate>
                 </div>
               </div>
 
@@ -53,21 +66,31 @@ export function LossReductionSection() {
                 {/* Before */}
                 <div className="p-5 bg-muted/30 rounded-xl border border-border/50">
                   <div className="text-sm font-medium text-muted-foreground mb-3">
-                    Traditional AMM (Before)
+                    <Translate id="lossReduction.method1.before.label" description="Before label">
+                      Traditional AMM (Before)
+                    </Translate>
                   </div>
                   <div className="grid grid-cols-3 gap-2 mb-3">
                     <div className="text-xs bg-red-100 text-red-700 px-3 py-2 rounded-lg text-center font-medium">
-                      Pool A: $1M
+                      <Translate id="lossReduction.method1.before.poolA" description="Pool A value">
+                        Pool A: $1M
+                      </Translate>
                     </div>
                     <div className="text-xs bg-red-100 text-red-700 px-3 py-2 rounded-lg text-center font-medium">
-                      Pool B: $0.5M
+                      <Translate id="lossReduction.method1.before.poolB" description="Pool B value">
+                        Pool B: $0.5M
+                      </Translate>
                     </div>
                     <div className="text-xs bg-red-100 text-red-700 px-3 py-2 rounded-lg text-center font-medium">
-                      Pool C: $0.75M
+                      <Translate id="lossReduction.method1.before.poolC" description="Pool C value">
+                        Pool C: $0.75M
+                      </Translate>
                     </div>
                   </div>
                   <div className="text-xs text-red-600 mt-3 text-center font-medium">
-                    Fragmented Liquidity = Higher Slippage
+                    <Translate id="lossReduction.method1.before.result" description="Before result">
+                      Fragmented Liquidity = Higher Slippage
+                    </Translate>
                   </div>
                 </div>
 
@@ -79,25 +102,35 @@ export function LossReductionSection() {
 
                 <div className="p-5 bg-muted/30 rounded-xl border border-border/50">
                   <div className="text-sm font-medium text-muted-foreground mb-3">
-                    TTSwap (After)
+                    <Translate id="lossReduction.method1.after.label" description="After label">
+                      TTSwap (After)
+                    </Translate>
                   </div>
                   <div className="flex justify-center">
                     <div className="text-sm bg-green-100 text-green-700 px-6 py-3 rounded-lg text-center font-medium group-hover:scale-105 group-hover:bg-green-200 transition-all duration-300">
-                      Unified Pool: $2.25M
+                      <Translate id="lossReduction.method1.after.unifiedPool" description="Unified pool value">
+                        Unified Pool: $2.25M
+                      </Translate>
                     </div>
                   </div>
                   <div className="text-xs text-green-600 mt-3 text-center font-medium">
-                    Concentrated Liquidity = Lower Slippage
+                    <Translate id="lossReduction.method1.after.result" description="After result">
+                      Concentrated Liquidity = Lower Slippage
+                    </Translate>
                   </div>
                 </div>
               </div>
 
               <div className="p-4 bg-primary/10 rounded-xl border border-primary/20">
                 <div className="text-sm font-semibold text-primary mb-2">
-                  Result:
+                  <Translate id="lossReduction.method1.result.label" description="Result label">
+                    Result:
+                  </Translate>
                 </div>
                 <div className="text-sm text-muted-foreground">
-                  Significantly reduce slippage and trading costs through liquidity aggregation
+                  <Translate id="lossReduction.method1.result.description" description="Result description">
+                    Significantly reduce slippage and trading costs through liquidity aggregation
+                  </Translate>
                 </div>
               </div>
             </div>
@@ -115,26 +148,36 @@ export function LossReductionSection() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold">
-                      Amplified Liquidity
+                      <Translate id="lossReduction.method2.title" description="Method 2 title">
+                        Amplified Liquidity
+                      </Translate>
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Multiply liquidity depth exponentially
+                      <Translate id="lossReduction.method2.subtitle" description="Method 2 subtitle">
+                        Multiply liquidity depth exponentially
+                      </Translate>
                     </p>
                   </div>
                 </div>
                 <div className="ml-auto px-3 py-1 rounded-full bg-secondary/20 text-secondary text-xs font-bold">
-                  Step 2
+                  <Translate id="lossReduction.method2.step" description="Method 2 step number">
+                    Step 2
+                  </Translate>
                 </div>
               </div>
 
               <div className="space-y-6">
                 <div className="p-5 bg-muted/30 rounded-xl border border-border/50">
                   <div className="text-sm font-medium text-muted-foreground mb-3">
-                    Real Liquidity
+                    <Translate id="lossReduction.method2.real.label" description="Real liquidity label">
+                      Real Liquidity
+                    </Translate>
                   </div>
                   <div className="w-full bg-blue-100 h-10 rounded-lg flex items-center justify-center">
                     <span className="text-sm font-semibold text-blue-700">
-                      $1M
+                      <Translate id="lossReduction.method2.real.value" description="Real liquidity value">
+                        $1M
+                      </Translate>
                     </span>
                   </div>
                 </div>
@@ -142,18 +185,24 @@ export function LossReductionSection() {
                 <div className="flex justify-center items-center">
                   <div className="px-4 py-2 bg-secondary/10 rounded-lg border border-secondary/20 group-hover:bg-secondary/20 transition-all duration-300 animate-pulse-soft">
                     <span className="text-lg font-bold text-secondary">
-                      5x Amplification
+                      <Translate id="lossReduction.method2.amplification" description="Amplification factor">
+                        5x Amplification
+                      </Translate>
                     </span>
                   </div>
                 </div>
 
                 <div className="p-5 bg-muted/30 rounded-xl border border-border/50">
                   <div className="text-sm font-medium text-muted-foreground mb-3">
-                    Effective Liquidity
+                    <Translate id="lossReduction.method2.effective.label" description="Effective liquidity label">
+                      Effective Liquidity
+                    </Translate>
                   </div>
                   <div className="w-full bg-purple-100 h-12 rounded-lg flex items-center justify-center group-hover:bg-purple-200 transition-all duration-300">
                     <span className="text-lg font-bold text-purple-700 group-hover:scale-105 transition-transform duration-300">
-                      $5M
+                      <Translate id="lossReduction.method2.effective.value" description="Effective liquidity value">
+                        $5M
+                      </Translate>
                     </span>
                   </div>
                 </div>
@@ -161,10 +210,14 @@ export function LossReductionSection() {
 
               <div className="p-4 bg-secondary/10 rounded-xl border border-secondary/20">
                 <div className="text-sm font-semibold text-secondary mb-2">
-                  Result:
+                  <Translate id="lossReduction.method2.result.label" description="Result label">
+                    Result:
+                  </Translate>
                 </div>
                 <div className="text-sm text-muted-foreground">
-                  Achieve 5x effective liquidity depth without additional capital requirements
+                  <Translate id="lossReduction.method2.result.description" description="Result description">
+                    Achieve 5x effective liquidity depth without additional capital requirements
+                  </Translate>
                 </div>
               </div>
             </div>
@@ -179,7 +232,9 @@ export function LossReductionSection() {
             <div className="relative">
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold bg-gradient-to-r from-tertiary to-accent bg-clip-text text-transparent">
-                  Liquidity Enhancement (20-2000x)
+                  <Translate id="lossReduction.combined.title" description="Combined effect title">
+                    Liquidity Enhancement (20-2000x)
+                  </Translate>
                 </h3>
               </div>
 
@@ -189,13 +244,19 @@ export function LossReductionSection() {
                     <TrendingUp className="h-8 w-8 text-primary group-hover/stat:scale-110 transition-transform duration-300" />
                   </div>
                   <div className="text-3xl font-bold text-primary mb-2 group-hover/stat:scale-105 transition-transform duration-300">
-                    50%+
+                    <Translate id="lossReduction.combined.stat1.value" description="Stat 1 value">
+                      50%+
+                    </Translate>
                   </div>
                   <div className="text-sm font-medium text-muted-foreground group-hover/stat:text-foreground/80 transition-colors duration-300">
-                    Slippage Reduction
+                    <Translate id="lossReduction.combined.stat1.label" description="Stat 1 label">
+                      Slippage Reduction
+                    </Translate>
                   </div>
                   <p className="text-xs text-muted-foreground mt-2 opacity-0 group-hover/stat:opacity-100 transition-opacity duration-300">
-                    Significantly reduce trading slippage through concentrated liquidity
+                    <Translate id="lossReduction.combined.stat1.description" description="Stat 1 description">
+                      Significantly reduce trading slippage through concentrated liquidity
+                    </Translate>
                   </p>
                 </div>
 
@@ -204,13 +265,19 @@ export function LossReductionSection() {
                     <Zap className="h-8 w-8 text-secondary group-hover/stat:scale-110 transition-transform duration-300" />
                   </div>
                   <div className="text-3xl font-bold text-secondary mb-2 group-hover/stat:scale-105 transition-transform duration-300">
-                    1-50x
+                    <Translate id="lossReduction.combined.stat2.value" description="Stat 2 value">
+                      1-50x
+                    </Translate>
                   </div>
                   <div className="text-sm font-medium text-muted-foreground group-hover/stat:text-foreground/80 transition-colors duration-300">
-                    Effective Liquidity
+                    <Translate id="lossReduction.combined.stat2.label" description="Stat 2 label">
+                      Effective Liquidity
+                    </Translate>
                   </div>
                   <p className="text-xs text-muted-foreground mt-2 opacity-0 group-hover/stat:opacity-100 transition-opacity duration-300">
-                    Virtual liquidity amplifies actual available capital depth
+                    <Translate id="lossReduction.combined.stat2.description" description="Stat 2 description">
+                      Virtual liquidity amplifies actual available capital depth
+                    </Translate>
                   </p>
                 </div>
 
@@ -219,13 +286,19 @@ export function LossReductionSection() {
                     <BarChart3 className="h-8 w-8 text-tertiary group-hover/stat:scale-110 transition-transform duration-300" />
                   </div>
                   <div className="text-3xl font-bold text-tertiary mb-2 group-hover/stat:scale-105 transition-transform duration-300">
-                    75%
+                    <Translate id="lossReduction.combined.stat3.value" description="Stat 3 value">
+                      75%
+                    </Translate>
                   </div>
                   <div className="text-sm font-medium text-muted-foreground group-hover/stat:text-foreground/80 transition-colors duration-300">
-                    Better Price Impact
+                    <Translate id="lossReduction.combined.stat3.label" description="Stat 3 label">
+                      Better Price Impact
+                    </Translate>
                   </div>
                   <p className="text-xs text-muted-foreground mt-2 opacity-0 group-hover/stat:opacity-100 transition-opacity duration-300">
-                    Large trades have smaller impact on market prices
+                    <Translate id="lossReduction.combined.stat3.description" description="Stat 3 description">
+                      Large trades have smaller impact on market prices
+                    </Translate>
                   </p>
                 </div>
               </div>

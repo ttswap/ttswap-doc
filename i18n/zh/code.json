@@ -1,4 +1,1620 @@
 {
+  "costReduction.title.first": {
+    "message": "我们如何降低",
+    "description": "First part of the section title"
+  },
+  "costReduction.title.second": {
+    "message": "50%交易成本",
+    "description": "Second part of the section title"
+  },
+  "costReduction.subtitle": {
+    "message": "通过直接交易和燃料费优化创新 实现革命性的成本优化",
+    "description": "Subtitle of the cost reduction section"
+  },
+  "costReduction.directTrading.title": {
+    "message": "直接代币交易，减少50%服务费",
+    "description": "Title for direct trading method"
+  },
+  "costReduction.method": {
+    "message": "方法1",
+    "description": "Method label"
+  },
+  "costReduction.traditionalPath": {
+    "message": "传统DEX路径",
+    "description": "Label for traditional DEX path"
+  },
+  "costReduction.multipleHops": {
+    "message": "多次跳转 = 更高费用 (0.1% × 3 = 0.3%)",
+    "description": "Description of multiple hops in traditional DEX"
+  },
+  "costReduction.vs": {
+    "message": "对比",
+    "description": "Versus label"
+  },
+  "costReduction.ttswapDirectPath": {
+    "message": "TTSwap直接路径",
+    "description": "Label for TTSwap direct path"
+  },
+  "costReduction.directSwap": {
+    "message": "直接交换 = 更低费用 (0.1%)",
+    "description": "Description of direct swap in TTSwap"
+  },
+  "costReduction.serviceFeeReduction": {
+    "message": "服务费降低：",
+    "description": "Service fee reduction label"
+  },
+  "costReduction.lowerBy": {
+    "message": "降低67%",
+    "description": "Percentage lower"
+  },
+  "costReduction.fromTo": {
+    "message": "从每笔交易0.3%降至0.1%",
+    "description": "Fee range"
+  },
+  "costReduction.optimizedComputing.title": {
+    "message": "优化计算，减少50%Gas费",
+    "description": "Title for optimized computing method"
+  },
+  "costReduction.method2": {
+    "message": "方法2",
+    "description": "Method 2 label"
+  },
+  "costReduction.gasCostComparison": {
+    "message": "Gas成本对比",
+    "description": "Gas cost comparison title"
+  },
+  "costReduction.traditionalDEX": {
+    "message": "传统DEX",
+    "description": "Traditional DEX label"
+  },
+  "costReduction.ttswap": {
+    "message": "TTSwap",
+    "description": "TTSwap label"
+  },
+  "costReduction.gasFeeSavings": {
+    "message": "燃料费节省：",
+    "description": "Gas fee savings label"
+  },
+  "costReduction.lowerBy60": {
+    "message": "降低60%",
+    "description": "60% lower label"
+  },
+  "costReduction.optimizedExecution": {
+    "message": "优化的智能合约执行",
+    "description": "Optimized smart contract execution"
+  },
+  "costReduction.totalCostSavings": {
+    "message": "总成本节省",
+    "description": "Total cost savings title"
+  },
+  "costReduction.traditionalDEX2": {
+    "message": "传统DEX",
+    "description": "Traditional DEX label in comparison"
+  },
+  "costReduction.serviceFee": {
+    "message": "服务费 (0.3%)",
+    "description": "Service fee label"
+  },
+  "costReduction.gasFee": {
+    "message": "燃料费",
+    "description": "Gas fee label"
+  },
+  "costReduction.total": {
+    "message": "总计",
+    "description": "Total label"
+  },
+  "costReduction.ttswap2": {
+    "message": "TTSwap",
+    "description": "TTSwap label in comparison"
+  },
+  "costReduction.serviceFee2": {
+    "message": "服务费 (0.1%)",
+    "description": "Service fee label (0.1%)"
+  },
+  "costReduction.gasFee2": {
+    "message": "燃料费",
+    "description": "Gas fee label"
+  },
+  "costReduction.total2": {
+    "message": "总计",
+    "description": "Total label"
+  },
+  "costReduction.totalSavings": {
+    "message": "总节省75%",
+    "description": "Total savings percentage"
+  },
+  "costReduction.saveAmount": {
+    "message": "每1000美元交易节省5美元",
+    "description": "Amount saved per trade"
+  },
+  "footer.brand.description": {
+    "message": "通过恒定价值算法消除无常损失并降低50%+交易成本的革命性DeFi协议。",
+    "description": "Brand description"
+  },
+  "footer.navigation.product": {
+    "message": "产品",
+    "description": "Product section title"
+  },
+  "footer.navigation.docs": {
+    "message": "文档",
+    "description": "Docs section title"
+  },
+  "footer.navigation.community": {
+    "message": "社区",
+    "description": "Community section title"
+  },
+  "footer.copyright": {
+    "message": "© 2025 TTSwap。版权所有。",
+    "description": "Copyright text"
+  },
+  "footer.social.x": {
+    "message": "X",
+    "description": "X (Twitter) social link name"
+  },
+  "footer.social.telegram": {
+    "message": "电报",
+    "description": "Telegram social link name"
+  },
+  "footer.social.github": {
+    "message": "Github",
+    "description": "GitHub social link name"
+  },
+  "footer.social.discord": {
+    "message": "Discord",
+    "description": "Discord social link name"
+  },
+  "footer.social.mail": {
+    "message": "邮箱",
+    "description": "Email contact link name"
+  },
+  "footer.navigation.product.trading": {
+    "message": "交易",
+    "description": "Trading link in product navigation"
+  },
+  "footer.navigation.resources.userDoc": {
+    "message": "用户文档",
+    "description": "User documentation link in resources navigation"
+  },
+  "footer.navigation.resources.tokenEconomic": {
+    "message": "代币经济",
+    "description": "Token economics link in resources navigation"
+  },
+  "footer.navigation.resources.whitePaper": {
+    "message": "白皮书",
+    "description": "Whitepaper link in resources navigation"
+  },
+  "footer.navigation.community.beReferral": {
+    "message": "成为推荐人",
+    "description": "Be referral link in community navigation"
+  },
+  "footer.navigation.community.beTokenOperator": {
+    "message": "成为代币运营商",
+    "description": "Be token operator link in community navigation"
+  },
+  "footer.navigation.community.beServiceProvider": {
+    "message": "成为服务提供商",
+    "description": "Be service provider link in community navigation"
+  },
+  "footer.navigation.community.beBuilder": {
+    "message": "成为建设者",
+    "description": "Be builder link in community navigation"
+  },
+  "footer.navigation.community.beLiquidityProvider": {
+    "message": "成为流动性提供者",
+    "description": "Be liquidity provider link in community navigation"
+  },
+  "footer.navigation.community.beInvestor": {
+    "message": "成为投资者",
+    "description": "Be investor link in community navigation"
+  },
+  "footer.navigation.company.about": {
+    "message": "关于我们",
+    "description": "About link in company navigation"
+  },
+  "footer.navigation.company.careers": {
+    "message": "职业机会",
+    "description": "Careers link in company navigation"
+  },
+  "footer.navigation.company.privacy": {
+    "message": "隐私政策",
+    "description": "Privacy policy link in company navigation"
+  },
+  "footer.navigation.company.terms": {
+    "message": "服务条款",
+    "description": "Terms of service link in company navigation"
+  },
+  "hero.features.slippageReduction.title": {
+    "message": "减少50%+交易损失",
+    "description": "Slippage reduction feature title"
+  },
+  "hero.features.slippageReduction.subtitle": {
+    "message": "滑点减少",
+    "description": "Slippage reduction feature subtitle"
+  },
+  "hero.features.capitalProtection.title": {
+    "message": "零无常损失",
+    "description": "Capital protection feature title"
+  },
+  "hero.features.capitalProtection.subtitle": {
+    "message": "资本保护",
+    "description": "Capital protection feature subtitle"
+  },
+  "hero.features.feeOptimization.title": {
+    "message": "降低50%+交易成本",
+    "description": "Fee optimization feature title"
+  },
+  "hero.features.feeOptimization.subtitle": {
+    "message": "手续费与Gas优化",
+    "description": "Fee optimization feature subtitle"
+  },
+  "hero.features.universalParticipation.title": {
+    "message": "全民参与",
+    "description": "Universal participation feature title"
+  },
+  "hero.features.universalParticipation.subtitle": {
+    "message": "人人受益",
+    "description": "Universal participation feature subtitle"
+  },
+  "hero.title.first": {
+    "message": "革命性",
+    "description": "First part of hero section title"
+  },
+  "hero.title.second": {
+    "message": "DeFi",
+    "description": "Second part of hero section title"
+  },
+  "hero.title.third": {
+    "message": "交易协议",
+    "description": "Third part of hero section title"
+  },
+  "hero.description": {
+    "message": "恒定价值算法消除无常损失，降低50%+交易成本。 人人都能参与的去中心化交易。",
+    "description": "Hero section description"
+  },
+  "hero.formula.title": {
+    "message": "恒定价值交易公式",
+    "description": "Constant value trading formula title"
+  },
+  "hero.formula.formula1.description": {
+    "message": "通过输入数量计算价值",
+    "description": "Description of formula 1"
+  },
+  "hero.formula.formula1.label": {
+    "message": "公式1",
+    "description": "Label for formula 1"
+  },
+  "hero.formula.formula2.description": {
+    "message": "通过价值计算输出数量",
+    "description": "Description of formula 2"
+  },
+  "hero.formula.formula2.label": {
+    "message": "公式2",
+    "description": "Label for formula 2"
+  },
+  "hero.formula.variableExplanation": {
+    "message": "变量说明：",
+    "description": "Variable explanation label"
+  },
+  "hero.formula.variableDetails": {
+    "message": "V: 市场价值 | Q: 代币数量 | a,b: 代币类型",
+    "description": "Details of variables"
+  },
+  "hero.formula.algorithmNote": {
+    "message": "革命性算法确保所有交易中的恒定价值保持",
+    "description": "Note about the revolutionary algorithm"
+  },
+  "hero.swap.title": {
+    "message": "快速交易",
+    "description": "Quick trading title"
+  },
+  "hero.swap.realtime": {
+    "message": "实时",
+    "description": "Real-time label"
+  },
+  "hero.swap.tradeButton": {
+    "message": "立即交易",
+    "description": "Immediate trading button"
+  },
+  "hero.invest.title": {
+    "message": "快速投资",
+    "description": "Quick invest title"
+  },
+  "hero.stake.investButton": {
+    "message": "开始投资",
+    "description": "Start invest button"
+  },
+  "impermanent.loss.section.title.firstPart": {
+    "message": "我们如何保障",
+    "description": "First part of impermanent loss section title"
+  },
+  "impermanent.loss.section.title.secondPart": {
+    "message": "零无常损失",
+    "description": "Second part of impermanent loss section title"
+  },
+  "impermanent.loss.section.description": {
+    "message": "革命性的资金池架构完全消除了困扰传统AMM协议的无常损失问题",
+    "description": "Description of impermanent loss section"
+  },
+  "impermanent.loss.section.traditional.title": {
+    "message": "传统AMM",
+    "description": "Traditional AMM title"
+  },
+  "impermanent.loss.section.traditional.subtitle": {
+    "message": "无常损失风险",
+    "description": "Traditional AMM subtitle"
+  },
+  "impermanent.loss.section.traditional.description": {
+    "message": "当代币价格偏离其初始比例时，流动性提供者相比单独持有代币会损失价值。",
+    "description": "Traditional AMM description"
+  },
+  "impermanent.loss.section.traditional.example.title": {
+    "message": "示例场景：",
+    "description": "Traditional AMM example title"
+  },
+  "impermanent.loss.section.traditional.example.priceA": {
+    "message": "• 代币A价格：100美元 → 200美元 (+100%)",
+    "description": "Traditional AMM example price A"
+  },
+  "impermanent.loss.section.traditional.example.priceB": {
+    "message": "• 代币B价格：100美元 → 50美元 (-50%)",
+    "description": "Traditional AMM example price B"
+  },
+  "impermanent.loss.section.traditional.example.loss": {
+    "message": "• 无常损失：约20%",
+    "description": "Traditional AMM example loss"
+  },
+  "impermanent.loss.section.traditional.visualization.title": {
+    "message": "损失可视化",
+    "description": "Traditional AMM visualization title"
+  },
+  "impermanent.loss.section.ttswap.title": {
+    "message": "TTSwap协议",
+    "description": "TTSwap title"
+  },
+  "impermanent.loss.section.ttswap.subtitle": {
+    "message": "零无常损失",
+    "description": "TTSwap subtitle"
+  },
+  "impermanent.loss.section.ttswap.description": {
+    "message": "我们的恒定价值算法无论价格如何波动都能保持比例价值，完全消除无常损失。",
+    "description": "TTSwap description"
+  },
+  "impermanent.loss.section.ttswap.example.title": {
+    "message": "示例场景：",
+    "description": "TTSwap example title"
+  },
+  "impermanent.loss.section.ttswap.example.deposit": {
+    "message": "投资代币时：代币A 100 个，代币B 200个",
+    "description": "TTSwap example deposit"
+  },
+  "impermanent.loss.section.ttswap.example.withdrawal": {
+    "message": "撤资代币时：代币A 100个，代币B 200个",
+    "description": "TTSwap example withdrawal"
+  },
+  "impermanent.loss.section.ttswap.example.rewards": {
+    "message": "撤资收益: 代币A 10个,代币B 15个",
+    "description": "TTSwap example rewards"
+  },
+  "impermanent.loss.section.ttswap.visualization.title": {
+    "message": "零损失保证",
+    "description": "TTSwap visualization title"
+  },
+  "impermanent.loss.section.technical.title": {
+    "message": "技术实现",
+    "description": "Technical implementation title"
+  },
+  "impermanent.loss.section.technical.step1.title": {
+    "message": "价值追踪",
+    "description": "Value tracking title"
+  },
+  "impermanent.loss.section.technical.step1.description": {
+    "message": "实时持续监控资金池总价值",
+    "description": "Value tracking description"
+  },
+  "impermanent.loss.section.technical.step1.detail": {
+    "message": "实时监控",
+    "description": "Value tracking detail"
+  },
+  "impermanent.loss.section.technical.step2.title": {
+    "message": "动态再平衡",
+    "description": "Dynamic rebalancing title"
+  },
+  "impermanent.loss.section.technical.step2.description": {
+    "message": "自动调整资金池比例以维持价值",
+    "description": "Dynamic rebalancing description"
+  },
+  "impermanent.loss.section.technical.step2.detail": {
+    "message": "自动调整",
+    "description": "Dynamic rebalancing detail"
+  },
+  "impermanent.loss.section.technical.step3.title": {
+    "message": "损失预防",
+    "description": "Loss prevention title"
+  },
+  "impermanent.loss.section.technical.step3.description": {
+    "message": "数学保证零无常损失",
+    "description": "Loss prevention description"
+  },
+  "impermanent.loss.section.technical.step3.detail": {
+    "message": "零损失保证",
+    "description": "Loss prevention detail"
+  },
+  "liquidityBenefits.benefits.amplification.title": {
+    "message": "流动性放大机制",
+    "description": "Liquidity amplification mechanism title"
+  },
+  "liquidityBenefits.benefits.amplification.subtitle": {
+    "message": "多倍手续费分佣",
+    "description": "Liquidity amplification subtitle"
+  },
+  "liquidityBenefits.benefits.amplification.description": {
+    "message": "创新的流动性放大机制，让单份流动性获得多倍手续费收益，最大化您的资金效率",
+    "description": "Liquidity amplification description"
+  },
+  "liquidityBenefits.benefits.amplification.features.1": {
+    "message": "2-5倍流动性放大",
+    "description": "Liquidity amplification feature 1"
+  },
+  "liquidityBenefits.benefits.amplification.features.2": {
+    "message": "智能分佣算法",
+    "description": "Liquidity amplification feature 2"
+  },
+  "liquidityBenefits.benefits.amplification.features.3": {
+    "message": "实时收益计算",
+    "description": "Liquidity amplification feature 3"
+  },
+  "liquidityBenefits.benefits.amplification.features.4": {
+    "message": "无需额外抵押",
+    "description": "Liquidity amplification feature 4"
+  },
+  "liquidityBenefits.benefits.amplification.multiplier": {
+    "message": "2-63倍",
+    "description": "Liquidity amplification multiplier"
+  },
+  "liquidityBenefits.benefits.amplification.highlight": {
+    "message": "最高63倍放大",
+    "description": "Liquidity amplification highlight"
+  },
+  "liquidityBenefits.benefits.mining.title": {
+    "message": "自动TTS代币挖矿",
+    "description": "Automatic TTS token mining title"
+  },
+  "liquidityBenefits.benefits.mining.subtitle": {
+    "message": "获得治理代币奖励",
+    "description": "Automatic TTS token mining subtitle"
+  },
+  "liquidityBenefits.benefits.mining.description": {
+    "message": "提供流动性即可自动参与TTS代币挖矿，获得平台治理代币奖励，享受协议成长红利",
+    "description": "Automatic TTS token mining description"
+  },
+  "liquidityBenefits.benefits.mining.features.1": {
+    "message": "自动挖矿奖励",
+    "description": "TTS token mining feature 1"
+  },
+  "liquidityBenefits.benefits.mining.features.2": {
+    "message": "治理权益获得",
+    "description": "TTS token mining feature 2"
+  },
+  "liquidityBenefits.benefits.mining.features.3": {
+    "message": "质押收益叠加",
+    "description": "TTS token mining feature 3"
+  },
+  "liquidityBenefits.benefits.mining.features.4": {
+    "message": "长期价值增长",
+    "description": "TTS token mining feature 4"
+  },
+  "liquidityBenefits.benefits.mining.multiplier": {
+    "message": "TTS",
+    "description": "TTS token mining multiplier"
+  },
+  "liquidityBenefits.benefits.mining.highlight": {
+    "message": "被动收益增长",
+    "description": "TTS token mining highlight"
+  },
+  "liquidityBenefits.benefits.airdrops.title": {
+    "message": "自动参与项目空投",
+    "description": "Automatic project airdrops title"
+  },
+  "liquidityBenefits.benefits.airdrops.subtitle": {
+    "message": "生态奖励自动获取",
+    "description": "Automatic project airdrops subtitle"
+  },
+  "liquidityBenefits.benefits.airdrops.description": {
+    "message": "流动性提供者自动获得合作项目空投资格，无需额外操作即可享受生态项目奖励",
+    "description": "Automatic project airdrops description"
+  },
+  "liquidityBenefits.benefits.airdrops.features.1": {
+    "message": "合作项目空投",
+    "description": "Project airdrops feature 1"
+  },
+  "liquidityBenefits.benefits.airdrops.features.2": {
+    "message": "生态奖励获取",
+    "description": "Project airdrops feature 2"
+  },
+  "liquidityBenefits.benefits.airdrops.features.3": {
+    "message": "无需额外操作",
+    "description": "Project airdrops feature 3"
+  },
+  "liquidityBenefits.benefits.airdrops.features.4": {
+    "message": "多重收益叠加",
+    "description": "Project airdrops feature 4"
+  },
+  "liquidityBenefits.benefits.airdrops.multiplier": {
+    "message": "空投",
+    "description": "Project airdrops multiplier"
+  },
+  "liquidityBenefits.benefits.airdrops.highlight": {
+    "message": "额外惊喜收益",
+    "description": "Project airdrops highlight"
+  },
+  "liquidityBenefits.stats.apy.label": {
+    "message": "平均年化收益率提升",
+    "description": "Average APY improvement label"
+  },
+  "liquidityBenefits.stats.apy.value": {
+    "message": "150%+",
+    "description": "Average APY improvement value"
+  },
+  "liquidityBenefits.stats.apy.description": {
+    "message": "相比传统AMM",
+    "description": "Average APY improvement description"
+  },
+  "liquidityBenefits.stats.providers.label": {
+    "message": "参与流动性提供者",
+    "description": "Active liquidity providers label"
+  },
+  "liquidityBenefits.stats.providers.value": {
+    "message": "50K+",
+    "description": "Active liquidity providers value"
+  },
+  "liquidityBenefits.stats.providers.description": {
+    "message": "活跃用户数量",
+    "description": "Active liquidity providers description"
+  },
+  "liquidityBenefits.stats.rewards.label": {
+    "message": "累计分发奖励",
+    "description": "Total rewards distributed label"
+  },
+  "liquidityBenefits.stats.rewards.value": {
+    "message": "$10M+",
+    "description": "Total rewards distributed value"
+  },
+  "liquidityBenefits.stats.rewards.description": {
+    "message": "总奖励价值",
+    "description": "Total rewards distributed description"
+  },
+  "liquidityBenefits.stats.partners.label": {
+    "message": "合作项目",
+    "description": "Partner projects label"
+  },
+  "liquidityBenefits.stats.partners.value": {
+    "message": "25+",
+    "description": "Partner projects value"
+  },
+  "liquidityBenefits.stats.partners.description": {
+    "message": "生态伙伴",
+    "description": "Partner projects description"
+  },
+  "liquidityBenefits.yieldBoosts.precise.title": {
+    "message": "精确收益计算",
+    "description": "Precise yield calculation title"
+  },
+  "liquidityBenefits.yieldBoosts.precise.description": {
+    "message": "实时显示预期收益，收益分配机制透明",
+    "description": "Precise yield calculation description"
+  },
+  "liquidityBenefits.yieldBoosts.tiered.title": {
+    "message": "分级奖励系统",
+    "description": "Tiered reward system title"
+  },
+  "liquidityBenefits.yieldBoosts.tiered.description": {
+    "message": "基于流动性贡献的不同级别额外奖励",
+    "description": "Tiered reward system description"
+  },
+  "liquidityBenefits.yieldBoosts.compound.title": {
+    "message": "复合增长机制",
+    "description": "Compound growth mechanism title"
+  },
+  "liquidityBenefits.yieldBoosts.compound.description": {
+    "message": "奖励自动复利，享受长期复合增长收益",
+    "description": "Compound growth mechanism description"
+  },
+  "liquidityBenefits.yieldBoosts.early.title": {
+    "message": "早期参与奖励",
+    "description": "Early participation rewards title"
+  },
+  "liquidityBenefits.yieldBoosts.early.description": {
+    "message": "早期流动性提供者享受额外启动奖励",
+    "description": "Early participation rewards description"
+  },
+  "liquidityBenefits.title.first": {
+    "message": "最大化您的",
+    "description": "First part of section title"
+  },
+  "liquidityBenefits.title.second": {
+    "message": "流动性收益",
+    "description": "Second part of section title"
+  },
+  "liquidityBenefits.subtitle": {
+    "message": "TTSwap不仅消除无常损失，更通过创新机制大幅提升流动性提供者的综合收益率， 让每一份流动性发挥最大价值",
+    "description": "Section subtitle"
+  },
+  "liquidityBenefits.yieldBoosts.title": {
+    "message": "多重收益增强机制",
+    "description": "Yield boost features title"
+  },
+  "liquidityBenefits.yieldBoosts.subtitle": {
+    "message": "通过多层级收益优化策略，确保流动性提供者获得最大回报",
+    "description": "Yield boost features subtitle"
+  },
+  "liquidityBenefits.cta.title.first": {
+    "message": "立即开始",
+    "description": "First part of CTA title"
+  },
+  "liquidityBenefits.cta.title.second": {
+    "message": "高收益",
+    "description": "Second part of CTA title"
+  },
+  "liquidityBenefits.cta.title.third": {
+    "message": "流动性挖矿",
+    "description": "Third part of CTA title"
+  },
+  "liquidityBenefits.cta.description": {
+    "message": "加入TTSwap生态，享受多重收益叠加，让您的每一份流动性都获得最大化回报",
+    "description": "CTA description"
+  },
+  "liquidityBenefits.cta.viewEarnings": {
+    "message": "查看收益",
+    "description": "View earnings button text"
+  },
+  "lossReduction.title.first": {
+    "message": "我们如何减少",
+    "description": "First part of section title"
+  },
+  "lossReduction.title.second": {
+    "message": "50%交易损失",
+    "description": "Second part of section title"
+  },
+  "lossReduction.subtitle": {
+    "message": "两种革命性方法最大化增加流动性，提升交易效率，最大化减少交易损失",
+    "description": "Section subtitle"
+  },
+  "lossReduction.method1.title": {
+    "message": "集中流动性",
+    "description": "Method 1 title"
+  },
+  "lossReduction.method1.subtitle": {
+    "message": "集中多池流动性到单一池中",
+    "description": "Method 1 subtitle"
+  },
+  "lossReduction.method1.step": {
+    "message": "步骤1",
+    "description": "Method 1 step number"
+  },
+  "lossReduction.method1.before.label": {
+    "message": "传统AMM（之前）",
+    "description": "Before label"
+  },
+  "lossReduction.method1.before.poolA": {
+    "message": "池A：100万美元",
+    "description": "Pool A value"
+  },
+  "lossReduction.method1.before.poolB": {
+    "message": "池B：50万美元",
+    "description": "Pool B value"
+  },
+  "lossReduction.method1.before.poolC": {
+    "message": "池C：75万美元",
+    "description": "Pool C value"
+  },
+  "lossReduction.method1.before.result": {
+    "message": "碎片化流动性 = 更高滑点",
+    "description": "Before result"
+  },
+  "lossReduction.method1.after.label": {
+    "message": "TTSwap（之后）",
+    "description": "After label"
+  },
+  "lossReduction.method1.after.unifiedPool": {
+    "message": "统一池：225万美元",
+    "description": "Unified pool value"
+  },
+  "lossReduction.method1.after.result": {
+    "message": "集中流动性 = 更低滑点",
+    "description": "After result"
+  },
+  "lossReduction.method1.result.label": {
+    "message": "结果：",
+    "description": "Result label"
+  },
+  "lossReduction.method1.result.description": {
+    "message": "通过流动性聚合大幅降低滑点和交易成本",
+    "description": "Result description"
+  },
+  "lossReduction.method2.title": {
+    "message": "放大流动性",
+    "description": "Method 2 title"
+  },
+  "lossReduction.method2.subtitle": {
+    "message": "成倍放大流动性深度",
+    "description": "Method 2 subtitle"
+  },
+  "lossReduction.method2.step": {
+    "message": "步骤2",
+    "description": "Method 2 step number"
+  },
+  "lossReduction.method2.real.label": {
+    "message": "实际流动性",
+    "description": "Real liquidity label"
+  },
+  "lossReduction.method2.real.value": {
+    "message": "100万美元",
+    "description": "Real liquidity value"
+  },
+  "lossReduction.method2.amplification": {
+    "message": "5倍放大",
+    "description": "Amplification factor"
+  },
+  "lossReduction.method2.effective.label": {
+    "message": "有效流动性",
+    "description": "Effective liquidity label"
+  },
+  "lossReduction.method2.effective.value": {
+    "message": "500万美元",
+    "description": "Effective liquidity value"
+  },
+  "lossReduction.method2.result.label": {
+    "message": "结果：",
+    "description": "Result label"
+  },
+  "lossReduction.method2.result.description": {
+    "message": "在无需额外资本要求下实现5倍有效流动性深度",
+    "description": "Result description"
+  },
+  "lossReduction.combined.title": {
+    "message": "流动性提升（20-2000倍）",
+    "description": "Combined effect title"
+  },
+  "lossReduction.combined.stat1.value": {
+    "message": "50%+",
+    "description": "Stat 1 value"
+  },
+  "lossReduction.combined.stat1.label": {
+    "message": "滑点减少",
+    "description": "Stat 1 label"
+  },
+  "lossReduction.combined.stat1.description": {
+    "message": "通过集中流动性显著减少交易滑点",
+    "description": "Stat 1 description"
+  },
+  "lossReduction.combined.stat2.value": {
+    "message": "1-50倍",
+    "description": "Stat 2 value"
+  },
+  "lossReduction.combined.stat2.label": {
+    "message": "有效流动性",
+    "description": "Stat 2 label"
+  },
+  "lossReduction.combined.stat2.description": {
+    "message": "虚拟流动性放大实际可用资本深度",
+    "description": "Stat 2 description"
+  },
+  "lossReduction.combined.stat3.value": {
+    "message": "75%",
+    "description": "Stat 3 value"
+  },
+  "lossReduction.combined.stat3.label": {
+    "message": "更好的价格影响",
+    "description": "Stat 3 label"
+  },
+  "lossReduction.combined.stat3.description": {
+    "message": "大额交易对市场价格的影响更小",
+    "description": "Stat 3 description"
+  },
+  "problems.section.title.firstPart": {
+    "message": "解决DeFi的",
+    "description": "First part of problems section title"
+  },
+  "problems.section.title.fourMajor": {
+    "message": "四大",
+    "description": "Four major problems section title"
+  },
+  "problems.section.title.painPoints": {
+    "message": "痛点",
+    "description": "Pain points problems section title"
+  },
+  "problems.section.description": {
+    "message": "TTSwap解决了困扰传统去中心化交易所的根本挑战， 提供前所未有的效率和用户收益。",
+    "description": "Problems section description"
+  },
+  "problems.section.slippageReduction.title": {
+    "message": "滑点减少",
+    "description": "Slippage reduction title"
+  },
+  "problems.section.slippageReduction.description": {
+    "message": "创新算法最小化滑点和最大化交易效率",
+    "description": "Slippage reduction description"
+  },
+  "problems.section.learnMore": {
+    "message": "了解更多",
+    "description": "Learn more button"
+  },
+  "problems.section.impermanentLoss.title": {
+    "message": "无常损失",
+    "description": "Impermanent loss title"
+  },
+  "problems.section.impermanentLoss.description": {
+    "message": "革命性恒定价值公式彻底消除AMM无常损失",
+    "description": "Impermanent loss description"
+  },
+  "problems.section.gasSavings.title": {
+    "message": "Gas节省",
+    "description": "Gas savings title"
+  },
+  "problems.section.gasSavings.description": {
+    "message": "通过优化合约架构大幅降低交易手续费",
+    "description": "Gas savings description"
+  },
+  "problems.section.fairDistribution.title": {
+    "message": "公平分配",
+    "description": "Fair distribution title"
+  },
+  "problems.section.fairDistribution.description": {
+    "message": "基于贡献的透明奖励机制确保公平",
+    "description": "Fair distribution description"
+  },
+  "rewards.section.roles.tokenManager.title": {
+    "message": "代币管理者",
+    "description": "Token manager role title"
+  },
+  "rewards.section.roles.tokenManager.subtitle": {
+    "message": "首个添加代币者",
+    "description": "Token manager role subtitle"
+  },
+  "rewards.section.roles.tokenManager.description": {
+    "message": "当用户首次向平台添加代币时，他们将成为代币管理者，代表社区委托的代币操作。",
+    "description": "Token manager role description"
+  },
+  "rewards.section.roles.tokenManager.details.1": {
+    "message": "社区委托管理",
+    "description": "Token manager detail 1"
+  },
+  "rewards.section.roles.tokenManager.details.2": {
+    "message": "非项目代币2年评估周期",
+    "description": "Token manager detail 2"
+  },
+  "rewards.section.roles.tokenManager.details.3": {
+    "message": "享受代币交易1%-3%分佣",
+    "description": "Token manager detail 3"
+  },
+  "rewards.section.roles.tokenManager.details.4": {
+    "message": "负责代币社区增长",
+    "description": "Token manager detail 4"
+  },
+  "rewards.section.roles.liquidityProvider.title": {
+    "message": "流动性提供者",
+    "description": "Liquidity provider role title"
+  },
+  "rewards.section.roles.liquidityProvider.subtitle": {
+    "message": "资金池流动性贡献者",
+    "description": "Liquidity provider role subtitle"
+  },
+  "rewards.section.roles.liquidityProvider.description": {
+    "message": "提供流动性的用户自动成为流动性提供者，分享大部分交易费用。",
+    "description": "Liquidity provider role description"
+  },
+  "rewards.section.roles.liquidityProvider.details.1": {
+    "message": "提供流动性后自动获得身份",
+    "description": "Liquidity provider detail 1"
+  },
+  "rewards.section.roles.liquidityProvider.details.2": {
+    "message": "分享50%-80%的交易费用",
+    "description": "Liquidity provider detail 2"
+  },
+  "rewards.section.roles.liquidityProvider.details.3": {
+    "message": "基于贡献比例分配",
+    "description": "Liquidity provider detail 3"
+  },
+  "rewards.section.roles.liquidityProvider.details.4": {
+    "message": "无无常损失风险",
+    "description": "Liquidity provider detail 4"
+  },
+  "rewards.section.roles.serviceProvider.title": {
+    "message": "服务提供商",
+    "description": "Service provider role title"
+  },
+  "rewards.section.roles.serviceProvider.subtitle": {
+    "message": "交易与投资服务",
+    "description": "Service provider role subtitle"
+  },
+  "rewards.section.roles.serviceProvider.description": {
+    "message": "为用户提供交易、投资和其他DeFi服务的服务提供者。",
+    "description": "Service provider role description"
+  },
+  "rewards.section.roles.serviceProvider.details.1": {
+    "message": "提供交易和投资服务",
+    "description": "Service provider detail 1"
+  },
+  "rewards.section.roles.serviceProvider.details.2": {
+    "message": "从促成的交易中获得5%-25%分佣",
+    "description": "Service provider detail 2"
+  },
+  "rewards.section.roles.serviceProvider.details.3": {
+    "message": "通过优质服务建立声誉",
+    "description": "Service provider detail 3"
+  },
+  "rewards.section.roles.serviceProvider.details.4": {
+    "message": "随用户基数扩大收益",
+    "description": "Service provider detail 4"
+  },
+  "rewards.section.roles.referrer.title": {
+    "message": "推荐人",
+    "description": "Referrer role title"
+  },
+  "rewards.section.roles.referrer.subtitle": {
+    "message": "用户推荐",
+    "description": "Referrer role subtitle"
+  },
+  "rewards.section.roles.referrer.description": {
+    "message": "推荐他人使用平台的用户可从被推荐人的交易费用中获得分佣。",
+    "description": "Referrer role description"
+  },
+  "rewards.section.roles.referrer.details.1": {
+    "message": "从被推荐人交易活动中获得收益",
+    "description": "Referrer detail 1"
+  },
+  "rewards.section.roles.referrer.details.2": {
+    "message": "获得被推荐人费用的5%-10%分佣",
+    "description": "Referrer detail 2"
+  },
+  "rewards.section.roles.referrer.details.3": {
+    "message": "通过网络建立被动收入",
+    "description": "Referrer detail 3"
+  },
+  "rewards.section.roles.referrer.details.4": {
+    "message": "无限推荐潜力",
+    "description": "Referrer detail 4"
+  },
+  "rewards.section.roles.user.title": {
+    "message": "用户",
+    "description": "User role title"
+  },
+  "rewards.section.roles.user.subtitle": {
+    "message": "平台交易者",
+    "description": "User role subtitle"
+  },
+  "rewards.section.roles.user.commission": {
+    "message": "10%折扣",
+    "description": "User role commission"
+  },
+  "rewards.section.roles.user.description": {
+    "message": "添加推荐人的普通用户在所有交易活动中享受交易费用折扣。",
+    "description": "User role description"
+  },
+  "rewards.section.roles.user.details.1": {
+    "message": "有推荐人时享受10%交易费折扣",
+    "description": "User detail 1"
+  },
+  "rewards.section.roles.user.details.2": {
+    "message": "使用所有平台功能",
+    "description": "User detail 2"
+  },
+  "rewards.section.roles.user.details.3": {
+    "message": "有潜力成为其他角色",
+    "description": "User detail 3"
+  },
+  "rewards.section.roles.user.details.4": {
+    "message": "参与社区治理",
+    "description": "User detail 4"
+  },
+  "rewards.section.roles.community.title": {
+    "message": "社区",
+    "description": "Community role title"
+  },
+  "rewards.section.roles.community.subtitle": {
+    "message": "技术支持",
+    "description": "Community role subtitle"
+  },
+  "rewards.section.roles.community.description": {
+    "message": "社区提供技术支持和开发，获得平台费用分成。",
+    "description": "Community role description"
+  },
+  "rewards.section.roles.community.details.1": {
+    "message": "提供技术支持和开发",
+    "description": "Community detail 1"
+  },
+  "rewards.section.roles.community.details.2": {
+    "message": "获得平台总费用的2%-8%",
+    "description": "Community detail 2"
+  },
+  "rewards.section.roles.community.details.3": {
+    "message": "治理和协议改进",
+    "description": "Community detail 3"
+  },
+  "rewards.section.roles.community.details.4": {
+    "message": "专注长期可持续性",
+    "description": "Community detail 4"
+  },
+  "rewards.section.title.part1": {
+    "message": "人人参与",
+    "description": "Rewards section title part 1"
+  },
+  "rewards.section.title.part2": {
+    "message": "，人人受益",
+    "description": "Rewards section title part 2"
+  },
+  "rewards.section.description": {
+    "message": "革命性的多角色分佣体系 确保平台所有参与者公平分享交易费用",
+    "description": "Rewards section description"
+  },
+  "rewards.section.become.role": {
+    "message": "成为{role}",
+    "description": "Become a role message"
+  },
+  "rewards.section.coreBenefits": {
+    "message": "核心优势",
+    "description": "Core benefits title"
+  },
+  "tokenomics.section.distribution.founder.role": {
+    "message": "创始人",
+    "description": "Founder role"
+  },
+  "tokenomics.section.distribution.founder.unlockRatio": {
+    "message": "≤1/12",
+    "description": "Founder unlock ratio"
+  },
+  "tokenomics.section.distribution.founder.description": {
+    "message": "承担巨大失败风险的项目发起者",
+    "description": "Founder description"
+  },
+  "tokenomics.section.distribution.partners.role": {
+    "message": "合伙人",
+    "description": "Partners role"
+  },
+  "tokenomics.section.distribution.partners.unlockRatio": {
+    "message": "≤1/8",
+    "description": "Partners unlock ratio"
+  },
+  "tokenomics.section.distribution.partners.description": {
+    "message": "在早期阶段坚持并相信项目的核心成员",
+    "description": "Partners description"
+  },
+  "tokenomics.section.distribution.partners.typeA.name": {
+    "message": "A类合伙人",
+    "description": "Type A partners name"
+  },
+  "tokenomics.section.distribution.partners.typeA.description": {
+    "message": "成员加入时确定初始价格，价格翻倍时解锁比例≤1/10，离开社区时解锁部分不销毁",
+    "description": "Type A partners description"
+  },
+  "tokenomics.section.distribution.partners.typeB.name": {
+    "message": "B类合伙人",
+    "description": "Type B partners name"
+  },
+  "tokenomics.section.distribution.partners.typeB.description": {
+    "message": "成员加入时确定初始价格，价格翻倍时解锁比例≤1/8，离开社区时解锁部分销毁",
+    "description": "Type B partners description"
+  },
+  "tokenomics.section.distribution.valueContributors.role": {
+    "message": "价值贡献者",
+    "description": "Value contributors role"
+  },
+  "tokenomics.section.distribution.valueContributors.unlockRatio": {
+    "message": "≤1/6",
+    "description": "Value contributors unlock ratio"
+  },
+  "tokenomics.section.distribution.valueContributors.description": {
+    "message": "为社区建设贡献价值的成员",
+    "description": "Value contributors description"
+  },
+  "tokenomics.section.distribution.valueContributors.position.name": {
+    "message": "岗位贡献",
+    "description": "Position contribution name"
+  },
+  "tokenomics.section.distribution.valueContributors.position.description": {
+    "message": "通过其职位贡献的全职和兼职员工",
+    "description": "Position contribution description"
+  },
+  "tokenomics.section.distribution.valueContributors.employee.name": {
+    "message": "员工期权",
+    "description": "Employee options name"
+  },
+  "tokenomics.section.distribution.valueContributors.employee.description": {
+    "message": "给予关键员工和贡献者的股权激励",
+    "description": "Employee options description"
+  },
+  "tokenomics.section.distribution.valueContributors.activities.name": {
+    "message": "活动",
+    "description": "Activities name"
+  },
+  "tokenomics.section.distribution.valueContributors.activities.description": {
+    "message": "参与社区活动和事件的奖励",
+    "description": "Activities description"
+  },
+  "tokenomics.section.distribution.valueContributors.community.name": {
+    "message": "社区",
+    "description": "Community contributors name"
+  },
+  "tokenomics.section.distribution.valueContributors.community.description": {
+    "message": "一般社区贡献者和活跃参与者",
+    "description": "Community contributors description"
+  },
+  "tokenomics.section.distribution.capitalContributors.role": {
+    "message": "资本贡献者",
+    "description": "Capital contributors role"
+  },
+  "tokenomics.section.distribution.capitalContributors.unlockRatio": {
+    "message": "≤1/5",
+    "description": "Capital contributors unlock ratio"
+  },
+  "tokenomics.section.distribution.capitalContributors.description": {
+    "message": "提供财务支持的投资者",
+    "description": "Capital contributors description"
+  },
+  "tokenomics.section.distribution.capitalContributors.fund.name": {
+    "message": "资金投资",
+    "description": "Fund investment name"
+  },
+  "tokenomics.section.distribution.capitalContributors.fund.description": {
+    "message": "提供资本的机构和战略投资者",
+    "description": "Fund investment description"
+  },
+  "tokenomics.section.distribution.capitalContributors.early.name": {
+    "message": "早期参与",
+    "description": "Early participation name"
+  },
+  "tokenomics.section.distribution.capitalContributors.early.description": {
+    "message": "早期支持者和天使投资者",
+    "description": "Early participation description"
+  },
+  "tokenomics.section.distribution.capitalContributors.public.name": {
+    "message": "公售募集",
+    "description": "Public sale name"
+  },
+  "tokenomics.section.distribution.capitalContributors.public.description": {
+    "message": "具有完全解锁状态的公开销售参与者",
+    "description": "Public sale description"
+  },
+  "tokenomics.section.rights.information.title": {
+    "message": "知情权",
+    "description": "Right to information title"
+  },
+  "tokenomics.section.rights.information.description": {
+    "message": "了解所有社区决策的权利",
+    "description": "Right to information description"
+  },
+  "tokenomics.section.rights.supervision.title": {
+    "message": "监督权",
+    "description": "Right to supervision title"
+  },
+  "tokenomics.section.rights.supervision.description": {
+    "message": "监督所有社区行动的权利",
+    "description": "Right to supervision description"
+  },
+  "tokenomics.section.rights.voting.title": {
+    "message": "投票权",
+    "description": "Voting rights title"
+  },
+  "tokenomics.section.rights.voting.description": {
+    "message": "对提案的投票权",
+    "description": "Voting rights description"
+  },
+  "tokenomics.section.rights.proposal.title": {
+    "message": "提案权",
+    "description": "Proposal rights title"
+  },
+  "tokenomics.section.rights.proposal.description": {
+    "message": "持有一定代币数量者的提案权",
+    "description": "Proposal rights description"
+  },
+  "tokenomics.section.features.lock.title": {
+    "message": "初始锁定",
+    "description": "Initial lock title"
+  },
+  "tokenomics.section.features.lock.value": {
+    "message": "5000万代币",
+    "description": "Initial lock value"
+  },
+  "tokenomics.section.features.lock.description": {
+    "message": "全部处于锁定状态，仅在满足条件时解锁",
+    "description": "Initial lock description"
+  },
+  "tokenomics.section.features.issuance.title": {
+    "message": "年度发行",
+    "description": "Annual issuance title"
+  },
+  "tokenomics.section.features.issuance.value": {
+    "message": "2%*(2亿-已解锁)",
+    "description": "Annual issuance value"
+  },
+  "tokenomics.section.features.issuance.description": {
+    "message": "全部给予流动性提供者",
+    "description": "Annual issuance description"
+  },
+  "tokenomics.section.features.buyback.title": {
+    "message": "回购与销毁",
+    "description": "Buyback & burn title"
+  },
+  "tokenomics.section.features.buyback.value": {
+    "message": "100%收益",
+    "description": "Buyback & burn value"
+  },
+  "tokenomics.section.features.buyback.description": {
+    "message": "所有社区收益用于回购和销毁代币",
+    "description": "Buyback & burn description"
+  },
+  "tokenomics.section.features.notice.title": {
+    "message": "公告期",
+    "description": "Notice period title"
+  },
+  "tokenomics.section.features.notice.value": {
+    "message": "30+天",
+    "description": "Notice period value"
+  },
+  "tokenomics.section.features.notice.description": {
+    "message": "分配变更需要提前通知",
+    "description": "Notice period description"
+  },
+  "tokenomics.section.title": {
+    "message": "TTS代币经济模型",
+    "description": "TTS token economics model title"
+  },
+  "tokenomics.section.description": {
+    "message": "基于4C增长社区的创新代币经济协议，确保长期价值增长和公平分配",
+    "description": "Tokenomics section description"
+  },
+  "tokenomics.section.tabs.distribution": {
+    "message": "代币分配",
+    "description": "Token distribution tab"
+  },
+  "tokenomics.section.tabs.mechanism": {
+    "message": "解锁机制",
+    "description": "Unlock mechanism tab"
+  },
+  "tokenomics.section.tabs.governance": {
+    "message": "治理权利",
+    "description": "Governance rights tab"
+  },
+  "tokenomics.section.tabs.economy": {
+    "message": "经济模型",
+    "description": "Economic model tab"
+  },
+  "tokenomics.section.distribution.subtitle": {
+    "message": "4C增长社区代币分配",
+    "description": "Token distribution subtitle"
+  },
+  "tokenomics.section.distribution.description": {
+    "message": "基于社区贡献模型的公平透明代币分配",
+    "description": "Token distribution description"
+  },
+  "tokenomics.section.distribution.maxUnlock": {
+    "message": "最大解锁：",
+    "description": "Max unlock label"
+  },
+  "tokenomics.section.distribution.allocation": {
+    "message": "分配",
+    "description": "Allocation label"
+  },
+  "tokenomics.section.distribution.of": {
+    "message": "5000万的{percentage}%",
+    "description": "Of label"
+  },
+  "tokenomics.section.distribution.million": {
+    "message": "5000万"
+  },
+  "tokenomics.section.distribution.categories": {
+    "message": "类别",
+    "description": "Categories label"
+  },
+  "tokenomics.section.distribution.summary.title": {
+    "message": "分配总结",
+    "description": "Distribution summary title"
+  },
+  "tokenomics.section.distribution.summary.totalSupply": {
+    "message": "供应量",
+    "description": "Total supply label"
+  },
+  "tokenomics.section.distribution.summary.distributionModel": {
+    "message": "分配模型",
+    "description": "Distribution model label"
+  },
+  "tokenomics.section.distribution.summary.doubleUnlock": {
+    "message": "翻倍解锁",
+    "description": "Double unlock label"
+  },
+  "tokenomics.section.distribution.summary.incentiveModel": {
+    "message": "激励模型",
+    "description": "Incentive model label"
+  },
+  "tokenomics.section.distribution.summary.buyback": {
+    "message": "回购销毁",
+    "description": "Buyback label"
+  },
+  "tokenomics.section.distribution.summary.valueCapture": {
+    "message": "价值体现",
+    "description": "Value capture label"
+  },
+  "tokenomics.section.mechanism.subtitle": {
+    "message": "智能解锁机制",
+    "description": "Smart unlock mechanism subtitle"
+  },
+  "tokenomics.section.mechanism.description": {
+    "message": "基于价格翻倍的分层解锁机制，确保代币价值稳定增长",
+    "description": "Unlock mechanism description"
+  },
+  "tokenomics.section.mechanism.unlock.title": {
+    "message": "解锁机制",
+    "description": "Unlock mechanism title"
+  },
+  "tokenomics.section.mechanism.unlock.requirements": {
+    "message": "解锁要求",
+    "description": "Unlock requirements label"
+  },
+  "tokenomics.section.mechanism.unlock.requirement1": {
+    "message": "解锁比例不能超过20%",
+    "description": "Unlock requirement 1"
+  },
+  "tokenomics.section.mechanism.unlock.requirement2": {
+    "message": "初始价格不能低于当前价格",
+    "description": "Unlock requirement 2"
+  },
+  "tokenomics.section.mechanism.unlock.requirement3": {
+    "message": "价格翻倍时，解锁剩余部分 × 解锁比例",
+    "description": "Unlock requirement 3"
+  },
+  "tokenomics.section.mechanism.calculation.title": {
+    "message": "计算示例",
+    "description": "Calculation example title"
+  },
+  "tokenomics.section.mechanism.calculation.allocate": {
+    "message": "分配20,000代币，解锁比例18%，分配价格0.05",
+    "description": "Calculation example allocation"
+  },
+  "tokenomics.section.mechanism.calculation.whenPrice": {
+    "message": "价格达到0.05时，解锁：",
+    "description": "Calculation example when price reaches 0.05"
+  },
+  "tokenomics.section.mechanism.calculation.tokens": {
+    "message": "代币",
+    "description": "Tokens label"
+  },
+  "tokenomics.section.mechanism.calculation.whenPrice2": {
+    "message": "价格达到0.1时，解锁：",
+    "description": "Calculation example when price reaches 0.1"
+  },
+  "tokenomics.section.mechanism.ratio.title": {
+    "message": "解锁比例（价格翻倍时）",
+    "description": "Unlock ratio title"
+  },
+  "tokenomics.section.mechanism.ratio.capital": {
+    "message": "资本贡献者",
+    "description": "Capital contributors label"
+  },
+  "tokenomics.section.mechanism.ratio.value": {
+    "message": "价值贡献者",
+    "description": "Value contributors label"
+  },
+  "tokenomics.section.mechanism.ratio.partners": {
+    "message": "合伙人",
+    "description": "Partners label"
+  },
+  "tokenomics.section.mechanism.ratio.founder": {
+    "message": "创始人",
+    "description": "Founder label"
+  },
+  "tokenomics.section.mechanism.rules.title": {
+    "message": "详细解锁规则",
+    "description": "Detailed unlock rules title"
+  },
+  "tokenomics.section.mechanism.rules.typeA": {
+    "message": "A类合伙人",
+    "description": "Type A partners label"
+  },
+  "tokenomics.section.mechanism.rules.typeA.rule1": {
+    "message": "成员加入时确定初始价格",
+    "description": "Type A partners rule 1"
+  },
+  "tokenomics.section.mechanism.rules.typeA.rule2": {
+    "message": "价格翻倍时解锁比例≤1/10",
+    "description": "Type A partners rule 2"
+  },
+  "tokenomics.section.mechanism.rules.typeA.rule3": {
+    "message": "离开社区时未解锁部分回收",
+    "description": "Type A partners rule 3"
+  },
+  "tokenomics.section.mechanism.rules.typeB": {
+    "message": "B类合伙人",
+    "description": "Type B partners label"
+  },
+  "tokenomics.section.mechanism.rules.typeB.rule1": {
+    "message": "成员加入时确定初始价格",
+    "description": "Type B partners rule 1"
+  },
+  "tokenomics.section.mechanism.rules.typeB.rule2": {
+    "message": "价格翻倍时解锁比例≤1/8",
+    "description": "Type B partners rule 2"
+  },
+  "tokenomics.section.mechanism.rules.typeB.rule3": {
+    "message": "离开社区时回收未解锁部分",
+    "description": "Type B partners rule 3"
+  },
+  "tokenomics.section.mechanism.rules.contribution": {
+    "message": "价值贡献激励",
+    "description": "Value contribution incentives label"
+  },
+  "tokenomics.section.mechanism.rules.contribution.rule1": {
+    "message": "初始价格高于分配价格",
+    "description": "Value contribution rule 1"
+  },
+  "tokenomics.section.mechanism.rules.contribution.rule2": {
+    "message": "价格翻倍时解锁比例≤1/6",
+    "description": "Value contribution rule 2"
+  },
+  "tokenomics.section.mechanism.rules.contribution.rule3": {
+    "message": "分配已解锁部分由社区根据效果调整，不再为社区服务时按当前价格收回",
+    "description": "Value contribution rule 3"
+  },
+  "tokenomics.section.mechanism.rules.capital": {
+    "message": "资本贡献规则",
+    "description": "Capital contribution rules label"
+  },
+  "tokenomics.section.mechanism.rules.capital.rule1": {
+    "message": "公开销售部分完全解锁",
+    "description": "Capital contribution rule 1"
+  },
+  "tokenomics.section.mechanism.rules.capital.rule2": {
+    "message": "投资部分价格和解锁比例通过谈判确定，≤1/5",
+    "description": "Capital contribution rule 2"
+  },
+  "tokenomics.section.mechanism.rules.capital.rule3": {
+    "message": "空投部分由具体活动计划确定，≤1/5",
+    "description": "Capital contribution rule 3"
+  },
+  "tokenomics.section.governance.subtitle": {
+    "message": "去中心化治理体系",
+    "description": "Decentralized governance system subtitle"
+  },
+  "tokenomics.section.governance.description": {
+    "message": "代币持有者享有完整的知情权、监督权、投票权和提案权",
+    "description": "Governance description"
+  },
+  "tokenomics.section.governance.process.title": {
+    "message": "社区治理流程",
+    "description": "Community governance process title"
+  },
+  "tokenomics.section.governance.process.transparency": {
+    "message": "信息透明",
+    "description": "Information transparency label"
+  },
+  "tokenomics.section.governance.process.transparency.description": {
+    "message": "所有决策和行动向代币持有者公开以确保透明度",
+    "description": "Information transparency description"
+  },
+  "tokenomics.section.governance.process.proposal": {
+    "message": "提案机制",
+    "description": "Proposal mechanism label"
+  },
+  "tokenomics.section.governance.process.proposal.description": {
+    "message": "拥有一定数量代币的用户可以发起社区提案",
+    "description": "Proposal mechanism description"
+  },
+  "tokenomics.section.governance.process.voting": {
+    "message": "投票决策",
+    "description": "Voting decision label"
+  },
+  "tokenomics.section.governance.process.voting.description": {
+    "message": "所有代币持有者都可以参与提案投票决策",
+    "description": "Voting decision description"
+  },
+  "tokenomics.section.economy.subtitle": {
+    "message": "可持续经济模型",
+    "description": "Sustainable economic model subtitle"
+  },
+  "tokenomics.section.economy.description": {
+    "message": "通过回购销毁和价值增长机制，构建长期可持续的代币经济生态",
+    "description": "Economic model description"
+  },
+  "tokenomics.section.economy.value.title": {
+    "message": "价值增长机制",
+    "description": "Value growth mechanism title"
+  },
+  "tokenomics.section.economy.value.item1": {
+    "message": "所有项目收益用于代币回购",
+    "description": "Value growth item 1"
+  },
+  "tokenomics.section.economy.value.item2": {
+    "message": "代币持有者收益来自价值升值或项目贡献",
+    "description": "Value growth item 2"
+  },
+  "tokenomics.section.economy.value.item3": {
+    "message": "不从损害任何参与者利益中获得收益",
+    "description": "Value growth item 3"
+  },
+  "tokenomics.section.economy.value.item4": {
+    "message": "推荐关系在代币中维护，一旦确认不可修改",
+    "description": "Value growth item 4"
+  },
+  "tokenomics.section.economy.deflation.title": {
+    "message": "通缩机制",
+    "description": "Deflation mechanism title"
+  },
+  "tokenomics.section.economy.deflation.buyback": {
+    "message": "回购销毁",
+    "description": "Buyback and burn label"
+  },
+  "tokenomics.section.economy.deflation.buyback.description": {
+    "message": "所有社区收益用于在市场购买官方代币进行销毁",
+    "description": "Buyback and burn description"
+  },
+  "tokenomics.section.economy.deflation.annual": {
+    "message": "年度增发逐年递减",
+    "description": "Annual issuance decreasing label"
+  },
+  "tokenomics.section.economy.deflation.annual.description": {
+    "message": "年度新增代币数量 = (2亿 - 已解锁代币) × 0.02",
+    "description": "Annual issuance decreasing description"
+  },
+  "tokenomics.section.economy.deflation.volume": {
+    "message": "减少抛售量",
+    "description": "Reduce selling volume label"
+  },
+  "tokenomics.section.economy.deflation.volume.description": {
+    "message": "任何参与者只能在价格翻倍时按比例解锁",
+    "description": "Reduce selling volume description"
+  },
+  "tokenomics.section.economy.flow.title": {
+    "message": "经济流动与收入分配",
+    "description": "Economic flow and income distribution title"
+  },
+  "tokenomics.section.economy.flow.income": {
+    "message": "交易收益",
+    "description": "Transaction income label"
+  },
+  "tokenomics.section.economy.flow.income.description": {
+    "message": "平台交易费收益和协议收益产生",
+    "description": "Transaction income description"
+  },
+  "tokenomics.section.economy.flow.enhancement": {
+    "message": "价值提升",
+    "description": "Value enhancement label"
+  },
+  "tokenomics.section.economy.flow.enhancement.description": {
+    "message": "通过协议改进持续提升生态价值",
+    "description": "Value enhancement description"
+  },
+  "tokenomics.section.economy.flow.burn": {
+    "message": "回购销毁",
+    "description": "Buyback and burn label"
+  },
+  "tokenomics.section.economy.flow.burn.description": {
+    "message": "持续减少代币供应量",
+    "description": "Buyback and burn description"
+  },
+  "tokenomics.section.economy.flow.incentive": {
+    "message": "流动性激励",
+    "description": "Liquidity incentive label"
+  },
+  "tokenomics.section.economy.flow.incentive.description": {
+    "message": "为流动性提供者分配增发代币",
+    "description": "Liquidity incentive description"
+  }
+,
+  "theme.NavBar.navAriaLabel": {
+    "message": "主导航",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "关闭导航栏",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "切换导航栏",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← 回到主菜单",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
   "theme.ErrorPageContent.title": {
     "message": "页面已崩溃。",
     "description": "The title of the fallback page when the page crashed"
@@ -79,6 +1695,17 @@
     "message": "下一页",
     "description": "The label used to navigate to the next doc"
   },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "{count} 篇文档带有标签",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged}「{tagName}」",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "版本：{versionLabel}"
+  },
   "theme.docs.versions.unreleasedVersionLabel": {
     "message": "此为 {siteTitle} {versionLabel} 版尚未发行的文档。",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
@@ -94,17 +1721,6 @@
   "theme.docs.versions.latestVersionLinkLabel": {
     "message": "最新版本",
     "description": "The label used for the latest version suggestion link label"
-  },
-  "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "{count} 篇文档带有标签",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged}「{tagName}」",
-    "description": "The title of the page for a docs tag"
-  },
-  "theme.docs.versionBadge.label": {
-    "message": "版本：{versionLabel}"
   },
   "theme.common.editThisPage": {
     "message": "编辑此页",
@@ -126,13 +1742,13 @@
     "message": "最后{byUser}{atDate}更新",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
-  "theme.NotFound.title": {
-    "message": "找不到页面",
-    "description": "The title of the 404 page"
-  },
   "theme.navbar.mobileVersionsDropdown.label": {
     "message": "选择版本",
     "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.NotFound.title": {
+    "message": "找不到页面",
+    "description": "The title of the 404 page"
   },
   "theme.tags.tagsListLabel": {
     "message": "标签：",
@@ -178,9 +1794,9 @@
     "message": "折叠侧边栏分类 '{label}'",
     "description": "The ARIA label to collapse the sidebar category"
   },
-  "theme.NavBar.navAriaLabel": {
-    "message": "主导航",
-    "description": "The ARIA label for the main navigation"
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "选择语言",
+    "description": "The label for the mobile language switcher dropdown"
   },
   "theme.NotFound.p1": {
     "message": "我们找不到您要找的页面。",
@@ -194,14 +1810,6 @@
     "message": "本页总览",
     "description": "The label used by the button on the collapsible TOC component"
   },
-  "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "选择语言",
-    "description": "The label for the mobile language switcher dropdown"
-  },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "阅读需 {readingTime} 分钟",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
   "theme.blog.post.readMore": {
     "message": "阅读更多",
     "description": "The label used in blog post item excerpts to link to full blog posts"
@@ -209,6 +1817,10 @@
   "theme.blog.post.readMoreLabel": {
     "message": "阅读 {title} 的全文",
     "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "阅读需 {readingTime} 分钟",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.CodeBlock.copy": {
     "message": "复制",
@@ -241,18 +1853,6 @@
   "theme.docs.sidebar.navAriaLabel": {
     "message": "文档侧边栏",
     "description": "The ARIA label for the sidebar navigation"
-  },
-  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "关闭导航栏",
-    "description": "The ARIA label for close button of mobile sidebar"
-  },
-  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← 回到主菜单",
-    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
-  },
-  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "切换导航栏",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
     "message": "Expand the dropdown",

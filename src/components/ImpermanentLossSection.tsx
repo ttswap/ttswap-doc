@@ -13,6 +13,7 @@ import {
   AlertTriangle,
   CheckCircle,
 } from "lucide-react";
+import Translate from '@docusaurus/Translate';
 
 export function ImpermanentLossSection() {
   // Sample data for comparison charts
@@ -29,12 +30,16 @@ export function ImpermanentLossSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            How We Guarantee{" "}
-            <span className="text-gradient">Zero Impermanent Loss</span>
+            <Translate id="impermanent.loss.section.title.firstPart">How We Guarantee</Translate>{" "}
+            <span className="text-gradient">
+              <Translate id="impermanent.loss.section.title.secondPart">Zero Impermanent Loss</Translate>
+            </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Revolutionary pool architecture completely eliminates
-            the impermanent loss problem that plagues traditional AMM protocols
+            <Translate id="impermanent.loss.section.description">
+              Revolutionary pool architecture completely eliminates
+              the impermanent loss problem that plagues traditional AMM protocols
+            </Translate>
           </p>
         </div>
 
@@ -51,40 +56,42 @@ export function ImpermanentLossSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">
-                    Traditional AMM
+                    <Translate id="impermanent.loss.section.traditional.title">Traditional AMM</Translate>
                   </h3>
                   <p className="text-sm text-red-400">
-                    Impermanent Loss Risk
+                    <Translate id="impermanent.loss.section.traditional.subtitle">Impermanent Loss Risk</Translate>
                   </p>
                 </div>
               </div>
 
               <div className="space-y-4">
                 <p className="text-sm text-muted-foreground">
-                  When token prices deviate from their initial ratio, liquidity providers
-                  lose value compared to simply holding the tokens.
+                  <Translate id="impermanent.loss.section.traditional.description">
+                    When token prices deviate from their initial ratio, liquidity providers
+                    lose value compared to simply holding the tokens.
+                  </Translate>
                 </p>
 
                 <div className="bg-red-500/10 p-4 rounded-lg border border-red-500/20 group-hover:bg-red-500/20 group-hover:border-red-500/30 transition-all duration-300">
                   <h5 className="font-semibold text-red-400 mb-2">
-                    Example Scenario:
+                    <Translate id="impermanent.loss.section.traditional.example.title">Example Scenario:</Translate>
                   </h5>
                   <ul className="space-y-1 text-sm text-muted-foreground">
                     <li className="hover:text-foreground/80 transition-colors duration-200">
-                      • Token A price: $100 → $200 (+100%)
+                      <Translate id="impermanent.loss.section.traditional.example.priceA">• Token A price: $100 → $200 (+100%)</Translate>
                     </li>
                     <li className="hover:text-foreground/80 transition-colors duration-200">
-                      • Token B price: $100 → $50 (-50%)
+                      <Translate id="impermanent.loss.section.traditional.example.priceB">• Token B price: $100 → $50 (-50%)</Translate>
                     </li>
                     <li className="hover:text-foreground/80 transition-colors duration-200 font-medium text-red-400">
-                      • Impermanent Loss: ~20%
+                      <Translate id="impermanent.loss.section.traditional.example.loss">• Impermanent Loss: ~20%</Translate>
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-background/50 p-4 rounded-lg border border-white/10 group-hover:bg-background/70 group-hover:border-red-500/20 transition-all duration-300">
                   <h5 className="font-semibold mb-2">
-                    Loss Visualization
+                    <Translate id="impermanent.loss.section.traditional.visualization.title">Loss Visualization</Translate>
                   </h5>
                   <ResponsiveContainer
                     width="100%"
@@ -119,41 +126,43 @@ export function ImpermanentLossSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold">
-                    TTSwap Protocol
+                    <Translate id="impermanent.loss.section.ttswap.title">TTSwap Protocol</Translate>
                   </h3>
                   <p className="text-sm text-green-400">
-                    Zero Impermanent Loss
+                    <Translate id="impermanent.loss.section.ttswap.subtitle">Zero Impermanent Loss</Translate>
                   </p>
                 </div>
               </div>
 
               <div className="space-y-4">
                 <p className="text-sm text-muted-foreground">
-                  Our constant value algorithm maintains proportional value
-                  regardless of price fluctuations, completely eliminating impermanent loss.
+                  <Translate id="impermanent.loss.section.ttswap.description">
+                    Our constant value algorithm maintains proportional value
+                    regardless of price fluctuations, completely eliminating impermanent loss.
+                  </Translate>
                 </p>
 
                 <div className="bg-green-500/10 p-4 rounded-lg border border-green-500/20 group-hover:bg-green-500/20 group-hover:border-green-500/30 transition-all duration-300">
                   <h5 className="font-semibold text-green-400 mb-2">
-                    Example Scenario:
+                    <Translate id="impermanent.loss.section.ttswap.example.title">Example Scenario:</Translate>
                   </h5>
                   <ul className="space-y-1 text-sm text-muted-foreground">
                     <li className="flex items-center space-x-2 hover:text-foreground/80 transition-colors duration-200">
                       <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
                       <span>
-                        Initial deposit: 100 Token A, 200 Token B
+                        <Translate id="impermanent.loss.section.ttswap.example.deposit">Initial deposit: 100 Token A, 200 Token B</Translate>
                       </span>
                     </li>
                     <li className="flex items-center space-x-2 hover:text-foreground/80 transition-colors duration-200">
                       <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
                       <span>
-                        Upon withdrawal: 100 Token A, 200 Token B
+                        <Translate id="impermanent.loss.section.ttswap.example.withdrawal">Upon withdrawal: 100 Token A, 200 Token B</Translate>
                       </span>
                     </li>
                     <li className="flex items-center space-x-2 hover:text-foreground/80 transition-colors duration-200 font-medium text-green-400">
                       <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
                       <span>
-                        Additional rewards: 10 Token A, 15 Token B
+                        <Translate id="impermanent.loss.section.ttswap.example.rewards">Additional rewards: 10 Token A, 15 Token B</Translate>
                       </span>
                     </li>
                   </ul>
@@ -161,7 +170,7 @@ export function ImpermanentLossSection() {
 
                 <div className="bg-background/50 p-4 rounded-lg border border-white/10 group-hover:bg-background/70 group-hover:border-green-500/20 transition-all duration-300">
                   <h5 className="font-semibold mb-2">
-                    Zero Loss Guarantee
+                    <Translate id="impermanent.loss.section.ttswap.visualization.title">Zero Loss Guarantee</Translate>
                   </h5>
                   <ResponsiveContainer
                     width="100%"
@@ -196,7 +205,7 @@ export function ImpermanentLossSection() {
 
           <div className="relative text-center space-y-6">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-green-500 bg-clip-text text-transparent">
-              Technical Implementation
+              <Translate id="impermanent.loss.section.technical.title">Technical Implementation</Translate>
             </h3>
 
             <div className="grid md:grid-cols-3 gap-6">
@@ -207,15 +216,15 @@ export function ImpermanentLossSection() {
                   </span>
                 </div>
                 <h4 className="font-semibold group-hover/step:text-blue-500 transition-colors duration-300">
-                  Value Tracking
+                  <Translate id="impermanent.loss.section.technical.step1.title">Value Tracking</Translate>
                 </h4>
                 <p className="text-sm text-muted-foreground group-hover/step:text-foreground/80 transition-colors duration-300">
-                  Real-time continuous monitoring of pool total value
+                  <Translate id="impermanent.loss.section.technical.step1.description">Real-time continuous monitoring of pool total value</Translate>
                 </p>
                 <div className="opacity-0 group-hover/step:opacity-100 transition-opacity duration-300">
                   <div className="inline-flex items-center text-xs font-medium text-blue-500">
                     <CheckCircle className="w-3 h-3 mr-1" />
-                    Real-time Monitoring
+                    <Translate id="impermanent.loss.section.technical.step1.detail">Real-time Monitoring</Translate>
                   </div>
                 </div>
               </div>
@@ -230,15 +239,15 @@ export function ImpermanentLossSection() {
                   </span>
                 </div>
                 <h4 className="font-semibold group-hover/step:text-purple-500 transition-colors duration-300">
-                  Dynamic Rebalancing
+                  <Translate id="impermanent.loss.section.technical.step2.title">Dynamic Rebalancing</Translate>
                 </h4>
                 <p className="text-sm text-muted-foreground group-hover/step:text-foreground/80 transition-colors duration-300">
-                  Automatically adjust pool ratios to maintain value
+                  <Translate id="impermanent.loss.section.technical.step2.description">Automatically adjust pool ratios to maintain value</Translate>
                 </p>
                 <div className="opacity-0 group-hover/step:opacity-100 transition-opacity duration-300">
                   <div className="inline-flex items-center text-xs font-medium text-purple-500">
                     <CheckCircle className="w-3 h-3 mr-1" />
-                    Auto Adjustment
+                    <Translate id="impermanent.loss.section.technical.step2.detail">Auto Adjustment</Translate>
                   </div>
                 </div>
               </div>
@@ -253,15 +262,15 @@ export function ImpermanentLossSection() {
                   </span>
                 </div>
                 <h4 className="font-semibold group-hover/step:text-green-500 transition-colors duration-300">
-                  Loss Prevention
+                  <Translate id="impermanent.loss.section.technical.step3.title">Loss Prevention</Translate>
                 </h4>
                 <p className="text-sm text-muted-foreground group-hover/step:text-foreground/80 transition-colors duration-300">
-                  Mathematical guarantee of zero impermanent loss
+                  <Translate id="impermanent.loss.section.technical.step3.description">Mathematical guarantee of zero impermanent loss</Translate>
                 </p>
                 <div className="opacity-0 group-hover/step:opacity-100 transition-opacity duration-300">
                   <div className="inline-flex items-center text-xs font-medium text-green-500">
                     <CheckCircle className="w-3 h-3 mr-1" />
-                    Zero Loss Guarantee
+                    <Translate id="impermanent.loss.section.technical.step3.detail">Zero Loss Guarantee</Translate>
                   </div>
                 </div>
               </div>

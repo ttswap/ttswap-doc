@@ -15,113 +15,111 @@ import {
   PiggyBank,
   Rocket,
 } from "lucide-react";
+import Translate from "@docusaurus/Translate";
 
 export function LiquidityBenefitsSection() {
   const benefits = [
     {
       icon: TrendingUp,
-      title: "Liquidity Amplification Mechanism",
-      subtitle: "Multi-fold fee commission",
-      description:
-        "Innovative liquidity amplification mechanism allows single liquidity to earn multi-fold fee returns, maximizing your capital efficiency",
+      title: <Translate id="liquidityBenefits.benefits.amplification.title" description="Liquidity amplification mechanism title">Liquidity Amplification Mechanism</Translate>,
+      subtitle: <Translate id="liquidityBenefits.benefits.amplification.subtitle" description="Liquidity amplification subtitle">Multi-fold fee commission</Translate>,
+      description: <Translate id="liquidityBenefits.benefits.amplification.description" description="Liquidity amplification description">Innovative liquidity amplification mechanism allows single liquidity to earn multi-fold fee returns, maximizing your capital efficiency</Translate>,
       features: [
-        "2-5x liquidity amplification",
-        "Smart commission algorithm",
-        "Real-time yield calculation",
-        "No additional collateral required",
+        <Translate id="liquidityBenefits.benefits.amplification.features.1" description="Liquidity amplification feature 1">2-5x liquidity amplification</Translate>,
+        <Translate id="liquidityBenefits.benefits.amplification.features.2" description="Liquidity amplification feature 2">Smart commission algorithm</Translate>,
+        <Translate id="liquidityBenefits.benefits.amplification.features.3" description="Liquidity amplification feature 3">Real-time yield calculation</Translate>,
+        <Translate id="liquidityBenefits.benefits.amplification.features.4" description="Liquidity amplification feature 4">No additional collateral required</Translate>,
       ],
       color: "primary",
-      multiplier: "2-63x",
-      highlight: "Up to 63x amplification",
+      multiplier: <Translate id="liquidityBenefits.benefits.amplification.multiplier" description="Liquidity amplification multiplier">2-63x</Translate>,
+      highlight: <Translate id="liquidityBenefits.benefits.amplification.highlight" description="Liquidity amplification highlight">Up to 63x amplification</Translate>,
     },
     {
       icon: Coins,
-      title: "Automatic TTS Token Mining",
-      subtitle: "Earn governance token rewards",
-      description:
-        "Providing liquidity automatically participates in TTS token mining, earning platform governance token rewards and enjoying protocol growth dividends",
+      title: <Translate id="liquidityBenefits.benefits.mining.title" description="Automatic TTS token mining title">Automatic TTS Token Mining</Translate>,
+      subtitle: <Translate id="liquidityBenefits.benefits.mining.subtitle" description="Automatic TTS token mining subtitle">Earn governance token rewards</Translate>,
+      description: <Translate id="liquidityBenefits.benefits.mining.description" description="Automatic TTS token mining description">Providing liquidity automatically participates in TTS token mining, earning platform governance token rewards and enjoying protocol growth dividends</Translate>,
       features: [
-        "Automatic mining rewards",
-        "Governance rights acquisition",
-        "Staking yield stacking",
-        "Long-term value growth",
+        <Translate id="liquidityBenefits.benefits.mining.features.1" description="TTS token mining feature 1">Automatic mining rewards</Translate>,
+        <Translate id="liquidityBenefits.benefits.mining.features.2" description="TTS token mining feature 2">Governance rights acquisition</Translate>,
+        <Translate id="liquidityBenefits.benefits.mining.features.3" description="TTS token mining feature 3">Staking yield stacking</Translate>,
+        <Translate id="liquidityBenefits.benefits.mining.features.4" description="TTS token mining feature 4">Long-term value growth</Translate>,
       ],
       color: "secondary",
-      multiplier: "TTS",
-      highlight: "Passive yield growth",
+      multiplier: <Translate id="liquidityBenefits.benefits.mining.multiplier" description="TTS token mining multiplier">TTS</Translate>,
+      highlight: <Translate id="liquidityBenefits.benefits.mining.highlight" description="TTS token mining highlight">Passive yield growth</Translate>,
     },
     {
       icon: Gift,
-      title: "Automatic Project Airdrops",
-      subtitle: "Ecosystem rewards auto-collection",
-      description:
-        "Liquidity providers automatically qualify for partner project airdrops, enjoying ecosystem project rewards without additional operations",
+      title: <Translate id="liquidityBenefits.benefits.airdrops.title" description="Automatic project airdrops title">Automatic Project Airdrops</Translate>,
+      subtitle: <Translate id="liquidityBenefits.benefits.airdrops.subtitle" description="Automatic project airdrops subtitle">Ecosystem rewards auto-collection</Translate>,
+      description: <Translate id="liquidityBenefits.benefits.airdrops.description" description="Automatic project airdrops description">Liquidity providers automatically qualify for partner project airdrops, enjoying ecosystem project rewards without additional operations</Translate>,
       features: [
-        "Partner project airdrops",
-        "Ecosystem reward collection",
-        "No additional operations required",
-        "Multiple yield stacking",
+        <Translate id="liquidityBenefits.benefits.airdrops.features.1" description="Project airdrops feature 1">Partner project airdrops</Translate>,
+        <Translate id="liquidityBenefits.benefits.airdrops.features.2" description="Project airdrops feature 2">Ecosystem reward collection</Translate>,
+        <Translate id="liquidityBenefits.benefits.airdrops.features.3" description="Project airdrops feature 3">No additional operations required</Translate>,
+        <Translate id="liquidityBenefits.benefits.airdrops.features.4" description="Project airdrops feature 4">Multiple yield stacking</Translate>,
       ],
       color: "accent",
-      multiplier: "Airdrops",
-      highlight: "Extra surprise yields",
+      multiplier: <Translate id="liquidityBenefits.benefits.airdrops.multiplier" description="Project airdrops multiplier">Airdrops</Translate>,
+      highlight: <Translate id="liquidityBenefits.benefits.airdrops.highlight" description="Project airdrops highlight">Extra surprise yields</Translate>,
     },
   ];
 
   const stats = [
     {
-      label: "Average APY Improvement",
-      value: "150%+",
+      label: <Translate id="liquidityBenefits.stats.apy.label" description="Average APY improvement label">Average APY Improvement</Translate>,
+      value: <Translate id="liquidityBenefits.stats.apy.value" description="Average APY improvement value">150%+</Translate>,
       icon: TrendingUp,
       color: "primary",
-      description: "vs Traditional AMM",
+      description: <Translate id="liquidityBenefits.stats.apy.description" description="Average APY improvement description">vs Traditional AMM</Translate>,
     },
     {
-      label: "Active Liquidity Providers",
-      value: "50K+",
+      label: <Translate id="liquidityBenefits.stats.providers.label" description="Active liquidity providers label">Active Liquidity Providers</Translate>,
+      value: <Translate id="liquidityBenefits.stats.providers.value" description="Active liquidity providers value">50K+</Translate>,
       icon: Users,
       color: "secondary",
-      description: "Active users count",
+      description: <Translate id="liquidityBenefits.stats.providers.description" description="Active liquidity providers description">Active users count</Translate>,
     },
     {
-      label: "Total Rewards Distributed",
-      value: "$10M+",
+      label: <Translate id="liquidityBenefits.stats.rewards.label" description="Total rewards distributed label">Total Rewards Distributed</Translate>,
+      value: <Translate id="liquidityBenefits.stats.rewards.value" description="Total rewards distributed value">$10M+</Translate>,
       icon: Coins,
       color: "tertiary",
-      description: "Total reward value",
+      description: <Translate id="liquidityBenefits.stats.rewards.description" description="Total rewards distributed description">Total reward value</Translate>,
     },
     {
-      label: "Partner Projects",
-      value: "25+",
+      label: <Translate id="liquidityBenefits.stats.partners.label" description="Partner projects label">Partner Projects</Translate>,
+      value: <Translate id="liquidityBenefits.stats.partners.value" description="Partner projects value">25+</Translate>,
       icon: Gift,
       color: "accent",
-      description: "Ecosystem partners",
+      description: <Translate id="liquidityBenefits.stats.partners.description" description="Partner projects description">Ecosystem partners</Translate>,
     },
   ];
 
   const yieldBoosts = [
     {
       icon: Target,
-      title: "Precise Yield Calculation",
-      description: "Real-time display of expected returns with transparent yield distribution mechanism",
+      title: <Translate id="liquidityBenefits.yieldBoosts.precise.title" description="Precise yield calculation title">Precise Yield Calculation</Translate>,
+      description: <Translate id="liquidityBenefits.yieldBoosts.precise.description" description="Precise yield calculation description">Real-time display of expected returns with transparent yield distribution mechanism</Translate>,
       color: "primary",
     },
     {
       icon: Award,
-      title: "Tiered Reward System",
-      description: "Different tier additional rewards based on liquidity contribution",
+      title: <Translate id="liquidityBenefits.yieldBoosts.tiered.title" description="Tiered reward system title">Tiered Reward System</Translate>,
+      description: <Translate id="liquidityBenefits.yieldBoosts.tiered.description" description="Tiered reward system description">Different tier additional rewards based on liquidity contribution</Translate>,
       color: "secondary",
     },
     {
       icon: PiggyBank,
-      title: "Compound Growth Mechanism",
-      description: "Rewards auto-compound for long-term compound growth benefits",
+      title: <Translate id="liquidityBenefits.yieldBoosts.compound.title" description="Compound growth mechanism title">Compound Growth Mechanism</Translate>,
+      description: <Translate id="liquidityBenefits.yieldBoosts.compound.description" description="Compound growth mechanism description">Rewards auto-compound for long-term compound growth benefits</Translate>,
       color: "tertiary",
     },
     {
       icon: Rocket,
-      title: "Early Participation Rewards",
-      description: "Early liquidity providers enjoy additional launch rewards",
+      title: <Translate id="liquidityBenefits.yieldBoosts.early.title" description="Early participation rewards title">Early Participation Rewards</Translate>,
+      description: <Translate id="liquidityBenefits.yieldBoosts.early.description" description="Early participation rewards description">Early liquidity providers enjoy additional launch rewards</Translate>,
       color: "accent",
     },
   ];
@@ -145,14 +143,16 @@ export function LiquidityBenefitsSection() {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Maximize Your
+            <Translate id="liquidityBenefits.title.first" description="First part of section title">Maximize Your</Translate>
             <span className="text-gradient mx-3">
-              Liquidity Yield
+              <Translate id="liquidityBenefits.title.second" description="Second part of section title">Liquidity Yield</Translate>
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            TTSwap not only eliminates volatility losses but also significantly enhances the overall return on liquidity provision through innovative mechanisms,
-            allowing every unit of liquidity to achieve its maximum value
+            <Translate id="liquidityBenefits.subtitle" description="Section subtitle">
+              TTSwap not only eliminates volatility losses but also significantly enhances the overall return on liquidity provision through innovative mechanisms,
+              allowing every unit of liquidity to achieve its maximum value
+            </Translate>
           </p>
         </div>
 
@@ -284,7 +284,7 @@ export function LiquidityBenefitsSection() {
                     }`}
                     variant="default"
                   >
-                    Learn More
+                    <Translate id="liquidityBenefits.benefits.learnMore" description="Learn more button text">Learn More</Translate>
                     <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                   </Button> */}
                 </div>
@@ -297,10 +297,14 @@ export function LiquidityBenefitsSection() {
         <div className="mb-16 animate-fade-in-delay-4">
           <div className="text-center mb-12">
             <h3 className="text-2xl font-bold mb-4">
-              Multiple Yield Enhancement Mechanisms
+              <Translate id="liquidityBenefits.yieldBoosts.title" description="Yield boost features title">
+                Multiple Yield Enhancement Mechanisms
+              </Translate>
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Through multi-tiered yield optimization strategies, ensure liquidity providers receive maximum returns
+              <Translate id="liquidityBenefits.yieldBoosts.subtitle" description="Yield boost features subtitle">
+                Through multi-tiered yield optimization strategies, ensure liquidity providers receive maximum returns
+              </Translate>
             </p>
           </div>
         </div>
@@ -358,12 +362,16 @@ export function LiquidityBenefitsSection() {
 
           <div className="relative">
             <h3 className="text-2xl font-bold mb-4 group-hover:text-primary/90 transition-colors duration-300">
-              Start Now
-              <span className="text-gradient mx-2">High Yield</span>
-              Liquidity Mining
+              <Translate id="liquidityBenefits.cta.title.first" description="First part of CTA title">Start Now</Translate>
+              <span className="text-gradient mx-2">
+                <Translate id="liquidityBenefits.cta.title.second" description="Second part of CTA title">High Yield</Translate>
+              </span>
+              <Translate id="liquidityBenefits.cta.title.third" description="Third part of CTA title">Liquidity Mining</Translate>
             </h3>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto group-hover:text-foreground/80 transition-colors duration-300">
-              Join the TTSwap ecosystem, enjoy multiple yield stacking, and maximize your return on every unit of liquidity
+              <Translate id="liquidityBenefits.cta.description" description="CTA description">
+                Join the TTSwap ecosystem, enjoy multiple yield stacking, and maximize your return on every unit of liquidity
+              </Translate>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               {/* <Button
@@ -372,7 +380,7 @@ export function LiquidityBenefitsSection() {
                 onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?en") }}
               >
                 <Zap className="mr-2 h-5 w-5" />
-                Provide Liquidity
+                <Translate id="liquidityBenefits.cta.provideLiquidity" description="Provide liquidity button text">Provide Liquidity</Translate>
               </Button> */}
               <Button
                 size="lg"
@@ -380,7 +388,7 @@ export function LiquidityBenefitsSection() {
                 className="border-primary/30 hover:border-primary/50 px-8 hover:scale-105 transition-all duration-300"
                 onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/profile?en") }}
               >
-                View Earnings
+                <Translate id="liquidityBenefits.cta.viewEarnings" description="View earnings button text">View Earnings</Translate>
                 <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
               </Button>
             </div>

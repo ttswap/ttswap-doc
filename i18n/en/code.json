@@ -321,5 +321,1373 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "costReduction.title.first": {
+    "message": "How We Reduce",
+    "description": "First part of the section title"
+  },
+  "costReduction.title.second": {
+    "message": "50% Trading Costs",
+    "description": "Second part of the section title"
+  },
+  "costReduction.subtitle": {
+    "message": "Revolutionary cost optimization through direct trading and gas fee optimization innovations",
+    "description": "Subtitle of the cost reduction section"
+  },
+  "costReduction.directTrading.title": {
+    "message": "Direct Token Trading, Reduce 50% Service Fees",
+    "description": "Title for direct trading method"
+  },
+  "costReduction.method": {
+    "message": "Method 1",
+    "description": "Method label"
+  },
+  "costReduction.traditionalPath": {
+    "message": "Traditional DEX Path",
+    "description": "Label for traditional DEX path"
+  },
+  "costReduction.multipleHops": {
+    "message": "Multiple hops = Higher fees (0.1% × 3 = 0.3%)",
+    "description": "Description of multiple hops in traditional DEX"
+  },
+  "costReduction.vs": {
+    "message": "VS",
+    "description": "Versus label"
+  },
+  "costReduction.ttswapDirectPath": {
+    "message": "TTSwap Direct Path",
+    "description": "Label for TTSwap direct path"
+  },
+  "costReduction.directSwap": {
+    "message": "Direct swap = Lower fees (0.1%)",
+    "description": "Description of direct swap in TTSwap"
+  },
+  "costReduction.serviceFeeReduction": {
+    "message": "Service Fee Reduction:",
+    "description": "Service fee reduction label"
+  },
+  "costReduction.lowerBy": {
+    "message": "67% Lower",
+    "description": "Percentage lower"
+  },
+  "costReduction.fromTo": {
+    "message": "From 0.3% to 0.1% per trade",
+    "description": "Fee range"
+  },
+  "costReduction.optimizedComputing.title": {
+    "message": "Optimized Computing, Reduce 50% Gas Fees",
+    "description": "Title for optimized computing method"
+  },
+  "costReduction.method2": {
+    "message": "Method 2",
+    "description": "Method 2 label"
+  },
+  "costReduction.gasCostComparison": {
+    "message": "Gas Cost Comparison",
+    "description": "Gas cost comparison title"
+  },
+  "costReduction.traditionalDEX": {
+    "message": "Traditional DEX",
+    "description": "Traditional DEX label"
+  },
+  "costReduction.ttswap": {
+    "message": "TTSwap",
+    "description": "TTSwap label"
+  },
+  "costReduction.gasFeeSavings": {
+    "message": "Gas Fee Savings:",
+    "description": "Gas fee savings label"
+  },
+  "costReduction.lowerBy60": {
+    "message": "60% Lower",
+    "description": "60% lower label"
+  },
+  "costReduction.optimizedExecution": {
+    "message": "Optimized smart contract execution",
+    "description": "Optimized smart contract execution"
+  },
+  "costReduction.totalCostSavings": {
+    "message": "Total Cost Savings",
+    "description": "Total cost savings title"
+  },
+  "costReduction.traditionalDEX2": {
+    "message": "Traditional DEX",
+    "description": "Traditional DEX label in comparison"
+  },
+  "costReduction.serviceFee": {
+    "message": "Service Fee (0.3%)",
+    "description": "Service fee label"
+  },
+  "costReduction.gasFee": {
+    "message": "Gas Fee",
+    "description": "Gas fee label"
+  },
+  "costReduction.total": {
+    "message": "Total",
+    "description": "Total label"
+  },
+  "costReduction.ttswap2": {
+    "message": "TTSwap",
+    "description": "TTSwap label in comparison"
+  },
+  "costReduction.serviceFee2": {
+    "message": "Service Fee (0.1%)",
+    "description": "Service fee label (0.1%)"
+  },
+  "costReduction.gasFee2": {
+    "message": "Gas Fee",
+    "description": "Gas fee label"
+  },
+  "costReduction.total2": {
+    "message": "Total",
+    "description": "Total label"
+  },
+  "costReduction.totalSavings": {
+    "message": "Total 75% Savings",
+    "description": "Total savings percentage"
+  },
+  "costReduction.saveAmount": {
+    "message": "Save $5 on every $1000 trade",
+    "description": "Amount saved per trade"
+  },
+  "footer.brand.description": {
+    "message": "Revolutionary DeFi protocol that eliminates impermanent loss and reduces 50%+ trading costs through constant value algorithms.",
+    "description": "Brand description"
+  },
+  "footer.navigation.trade": {
+    "message": "Trade",
+    "description": "Trade section title"
+  },
+  "footer.navigation.docs": {
+    "message": "Docs",
+    "description": "Docs section title"
+  },
+  "footer.navigation.community": {
+    "message": "Community",
+    "description": "Community section title"
+  },
+  "footer.copyright": {
+    "message": "© 2025 TTSwap. All rights reserved.",
+    "description": "Copyright text"
+  },
+  "footer.social.x": {
+    "message": "X",
+    "description": "X (Twitter) social link name"
+  },
+  "footer.social.telegram": {
+    "message": "Telegram",
+    "description": "Telegram social link name"
+  },
+  "footer.social.github": {
+    "message": "Github",
+    "description": "GitHub social link name"
+  },
+  "footer.social.discord": {
+    "message": "Discord",
+    "description": "Discord social link name"
+  },
+  "footer.social.mail": {
+    "message": "Mail",
+    "description": "Email contact link name"
+  },
+  "footer.navigation.product.trading": {
+    "message": "Trading",
+    "description": "Trading link in product navigation"
+  },
+  "footer.navigation.resources.userDoc": {
+    "message": "User Doc",
+    "description": "User documentation link in resources navigation"
+  },
+  "footer.navigation.resources.tokenEconomic": {
+    "message": "Token Economic",
+    "description": "Token economics link in resources navigation"
+  },
+  "footer.navigation.resources.whitePaper": {
+    "message": "WhitePaper",
+    "description": "Whitepaper link in resources navigation"
+  },
+  "footer.navigation.community.beReferral": {
+    "message": "Be Referral",
+    "description": "Be referral link in community navigation"
+  },
+  "footer.navigation.community.beTokenOperator": {
+    "message": "Be Token Operator",
+    "description": "Be token operator link in community navigation"
+  },
+  "footer.navigation.community.beServiceProvider": {
+    "message": "Be Service Provider",
+    "description": "Be service provider link in community navigation"
+  },
+  "footer.navigation.community.beBuilder": {
+    "message": "Be Builder",
+    "description": "Be builder link in community navigation"
+  },
+  "footer.navigation.community.beLiquidityProvider": {
+    "message": "Be Liquidityprovider",
+    "description": "Be liquidity provider link in community navigation"
+  },
+  "footer.navigation.community.beInvestor": {
+    "message": "Be Investor",
+    "description": "Be investor link in community navigation"
+  },
+  "footer.navigation.company.about": {
+    "message": "About",
+    "description": "About link in company navigation"
+  },
+  "footer.navigation.company.careers": {
+    "message": "Careers",
+    "description": "Careers link in company navigation"
+  },
+  "footer.navigation.company.privacy": {
+    "message": "Privacy",
+    "description": "Privacy policy link in company navigation"
+  },
+  "footer.navigation.company.terms": {
+    "message": "Terms",
+    "description": "Terms of service link in company navigation"
+  },
+  "hero.features.slippageReduction.title": {
+    "message": "Reduce 50%+ Trading Loss",
+    "description": "Slippage reduction feature title"
+  },
+  "hero.features.slippageReduction.subtitle": {
+    "message": "Slippage Reduction",
+    "description": "Slippage reduction feature subtitle"
+  },
+  "hero.features.capitalProtection.title": {
+    "message": "Zero Impermanent Loss",
+    "description": "Capital protection feature title"
+  },
+  "hero.features.capitalProtection.subtitle": {
+    "message": "Capital Protection",
+    "description": "Capital protection feature subtitle"
+  },
+  "hero.features.feeOptimization.title": {
+    "message": "Lower 50%+ Trading Costs",
+    "description": "Fee optimization feature title"
+  },
+  "hero.features.feeOptimization.subtitle": {
+    "message": "Fee & Gas Optimization",
+    "description": "Fee optimization feature subtitle"
+  },
+  "hero.features.universalParticipation.title": {
+    "message": "Universal Participation",
+    "description": "Universal participation feature title"
+  },
+  "hero.features.universalParticipation.subtitle": {
+    "message": "Everyone Benefits",
+    "description": "Universal participation feature subtitle"
+  },
+  "hero.title.first": {
+    "message": "Revolutionary",
+    "description": "First part of hero section title"
+  },
+  "hero.title.second": {
+    "message": "DeFi",
+    "description": "Second part of hero section title"
+  },
+  "hero.title.third": {
+    "message": "Trading Protocol",
+    "description": "Third part of hero section title"
+  },
+  "hero.description": {
+    "message": "Constant value algorithm eliminates impermanent loss, lowers 50%+ trading costs. Everyone can participate in decentralized trading.",
+    "description": "Hero section description"
+  },
+  "hero.formula.title": {
+    "message": "Constant Value Trading Formula",
+    "description": "Constant value trading formula title"
+  },
+  "hero.formula.formula1.description": {
+    "message": "Through input quantity to calculate value",
+    "description": "Description of formula 1"
+  },
+  "hero.formula.formula1.label": {
+    "message": "Formula 1",
+    "description": "Label for formula 1"
+  },
+  "hero.formula.formula2.description": {
+    "message": "Through value to calculate output quantity",
+    "description": "Description of formula 2"
+  },
+  "hero.formula.formula2.label": {
+    "message": "Formula 2",
+    "description": "Label for formula 2"
+  },
+  "hero.formula.variableExplanation": {
+    "message": "Variable Explanation：",
+    "description": "Variable explanation label"
+  },
+  "hero.formula.variableDetails": {
+    "message": "V: Market Value | Q: Token Quantity | a,b: Token Types",
+    "description": "Details of variables"
+  },
+  "hero.formula.algorithmNote": {
+    "message": "Revolutionary algorithm ensures constant value in all transactions",
+    "description": "Note about the revolutionary algorithm"
+  },
+  "hero.swap.title": {
+    "message": "Quick Trading",
+    "description": "Quick trading title"
+  },
+  "hero.swap.realtime": {
+    "message": "Real-time",
+    "description": "Real-time label"
+  },
+  "hero.swap.tradeButton": {
+    "message": "Immediate Trading",
+    "description": "Immediate trading button"
+  },
+  "hero.invest.title": {
+    "message": "Quick Invest",
+    "description": "Quick invest title"
+  },
+  "hero.stake.investButton": {
+    "message": "Start Invest",
+    "description": "Start invest button"
+  },
+  "impermanent.loss.section.title.firstPart": {
+    "message": "How We Guarantee"
+  },
+  "impermanent.loss.section.title.secondPart": {
+    "message": "Zero Impermanent Loss"
+  },
+  "impermanent.loss.section.description": {
+    "message": "Revolutionary pool architecture completely eliminates the impermanent loss problem that plagues traditional AMM protocols"
+  },
+  "impermanent.loss.section.traditional.title": {
+    "message": "Traditional AMM"
+  },
+  "impermanent.loss.section.traditional.subtitle": {
+    "message": "Impermanent Loss Risk"
+  },
+  "impermanent.loss.section.traditional.description": {
+    "message": "When token prices deviate from their initial ratio, liquidity providers lose value compared to simply holding the tokens."
+  },
+  "impermanent.loss.section.traditional.example.title": {
+    "message": "Example Scenario:"
+  },
+  "impermanent.loss.section.traditional.example.priceA": {
+    "message": "• Token A price: $100 → $200 (+100%)"
+  },
+  "impermanent.loss.section.traditional.example.priceB": {
+    "message": "• Token B price: $100 → $50 (-50%)"
+  },
+  "impermanent.loss.section.traditional.example.loss": {
+    "message": "• Impermanent Loss: ~20%"
+  },
+  "impermanent.loss.section.traditional.visualization.title": {
+    "message": "Loss Visualization"
+  },
+  "impermanent.loss.section.ttswap.title": {
+    "message": "TTSwap Protocol"
+  },
+  "impermanent.loss.section.ttswap.subtitle": {
+    "message": "Zero Impermanent Loss"
+  },
+  "impermanent.loss.section.ttswap.description": {
+    "message": "Our constant value algorithm maintains proportional value regardless of price fluctuations, completely eliminating impermanent loss."
+  },
+  "impermanent.loss.section.ttswap.example.title": {
+    "message": "Example Scenario:"
+  },
+  "impermanent.loss.section.ttswap.example.deposit": {
+    "message": "Initial deposit: 100 Token A, 200 Token B"
+  },
+  "impermanent.loss.section.ttswap.example.withdrawal": {
+    "message": "Upon withdrawal: 100 Token A, 200 Token B"
+  },
+  "impermanent.loss.section.ttswap.example.rewards": {
+    "message": "Additional rewards: 10 Token A, 15 Token B"
+  },
+  "impermanent.loss.section.ttswap.visualization.title": {
+    "message": "Zero Loss Guarantee"
+  },
+  "impermanent.loss.section.technical.title": {
+    "message": "Technical Implementation"
+  },
+  "impermanent.loss.section.technical.step1.title": {
+    "message": "Value Tracking"
+  },
+  "impermanent.loss.section.technical.step1.description": {
+    "message": "Real-time continuous monitoring of pool total value"
+  },
+  "impermanent.loss.section.technical.step1.detail": {
+    "message": "Real-time Monitoring"
+  },
+  "impermanent.loss.section.technical.step2.title": {
+    "message": "Dynamic Rebalancing"
+  },
+  "impermanent.loss.section.technical.step2.description": {
+    "message": "Automatically adjust pool ratios to maintain value"
+  },
+  "impermanent.loss.section.technical.step2.detail": {
+    "message": "Auto Adjustment"
+  },
+  "impermanent.loss.section.technical.step3.title": {
+    "message": "Loss Prevention"
+  },
+  "impermanent.loss.section.technical.step3.description": {
+    "message": "Mathematical guarantee of zero impermanent loss"
+  },
+  "impermanent.loss.section.technical.step3.detail": {
+    "message": "Zero Loss Guarantee"
+  },
+  "liquidityBenefits.benefits.amplification.title": {
+    "message": "Liquidity Amplification Mechanism",
+    "description": "Liquidity amplification mechanism title"
+  },
+  "liquidityBenefits.benefits.amplification.subtitle": {
+    "message": "Multi-fold fee commission",
+    "description": "Liquidity amplification subtitle"
+  },
+  "liquidityBenefits.benefits.amplification.description": {
+    "message": "Innovative liquidity amplification mechanism allows single liquidity to earn multi-fold fee returns, maximizing your capital efficiency",
+    "description": "Liquidity amplification description"
+  },
+  "liquidityBenefits.benefits.amplification.features.1": {
+    "message": "2-5x liquidity amplification",
+    "description": "Liquidity amplification feature 1"
+  },
+  "liquidityBenefits.benefits.amplification.features.2": {
+    "message": "Smart commission algorithm",
+    "description": "Liquidity amplification feature 2"
+  },
+  "liquidityBenefits.benefits.amplification.features.3": {
+    "message": "Real-time yield calculation",
+    "description": "Liquidity amplification feature 3"
+  },
+  "liquidityBenefits.benefits.amplification.features.4": {
+    "message": "No additional collateral required",
+    "description": "Liquidity amplification feature 4"
+  },
+  "liquidityBenefits.benefits.amplification.multiplier": {
+    "message": "2-63x",
+    "description": "Liquidity amplification multiplier"
+  },
+  "liquidityBenefits.benefits.amplification.highlight": {
+    "message": "Up to 63x amplification",
+    "description": "Liquidity amplification highlight"
+  },
+  "liquidityBenefits.benefits.mining.title": {
+    "message": "Automatic TTS Token Mining",
+    "description": "Automatic TTS token mining title"
+  },
+  "liquidityBenefits.benefits.mining.subtitle": {
+    "message": "Earn governance token rewards",
+    "description": "Automatic TTS token mining subtitle"
+  },
+  "liquidityBenefits.benefits.mining.description": {
+    "message": "Providing liquidity automatically participates in TTS token mining, earning platform governance token rewards and enjoying protocol growth dividends",
+    "description": "Automatic TTS token mining description"
+  },
+  "liquidityBenefits.benefits.mining.features.1": {
+    "message": "Automatic mining rewards",
+    "description": "TTS token mining feature 1"
+  },
+  "liquidityBenefits.benefits.mining.features.2": {
+    "message": "Governance rights acquisition",
+    "description": "TTS token mining feature 2"
+  },
+  "liquidityBenefits.benefits.mining.features.3": {
+    "message": "Staking yield stacking",
+    "description": "TTS token mining feature 3"
+  },
+  "liquidityBenefits.benefits.mining.features.4": {
+    "message": "Long-term value growth",
+    "description": "TTS token mining feature 4"
+  },
+  "liquidityBenefits.benefits.mining.multiplier": {
+    "message": "TTS",
+    "description": "TTS token mining multiplier"
+  },
+  "liquidityBenefits.benefits.mining.highlight": {
+    "message": "Passive yield growth",
+    "description": "TTS token mining highlight"
+  },
+  "liquidityBenefits.benefits.airdrops.title": {
+    "message": "Automatic Project Airdrops",
+    "description": "Automatic project airdrops title"
+  },
+  "liquidityBenefits.benefits.airdrops.subtitle": {
+    "message": "Ecosystem rewards auto-collection",
+    "description": "Automatic project airdrops subtitle"
+  },
+  "liquidityBenefits.benefits.airdrops.description": {
+    "message": "Liquidity providers automatically qualify for partner project airdrops, enjoying ecosystem project rewards without additional operations",
+    "description": "Automatic project airdrops description"
+  },
+  "liquidityBenefits.benefits.airdrops.features.1": {
+    "message": "Partner project airdrops",
+    "description": "Project airdrops feature 1"
+  },
+  "liquidityBenefits.benefits.airdrops.features.2": {
+    "message": "Ecosystem reward collection",
+    "description": "Project airdrops feature 2"
+  },
+  "liquidityBenefits.benefits.airdrops.features.3": {
+    "message": "No additional operations required",
+    "description": "Project airdrops feature 3"
+  },
+  "liquidityBenefits.benefits.airdrops.features.4": {
+    "message": "Multiple yield stacking",
+    "description": "Project airdrops feature 4"
+  },
+  "liquidityBenefits.benefits.airdrops.multiplier": {
+    "message": "Airdrops",
+    "description": "Project airdrops multiplier"
+  },
+  "liquidityBenefits.benefits.airdrops.highlight": {
+    "message": "Extra surprise yields",
+    "description": "Project airdrops highlight"
+  },
+  "liquidityBenefits.stats.apy.label": {
+    "message": "Average APY Improvement",
+    "description": "Average APY improvement label"
+  },
+  "liquidityBenefits.stats.apy.value": {
+    "message": "150%+",
+    "description": "Average APY improvement value"
+  },
+  "liquidityBenefits.stats.apy.description": {
+    "message": "vs Traditional AMM",
+    "description": "Average APY improvement description"
+  },
+  "liquidityBenefits.stats.providers.label": {
+    "message": "Active Liquidity Providers",
+    "description": "Active liquidity providers label"
+  },
+  "liquidityBenefits.stats.providers.value": {
+    "message": "50K+",
+    "description": "Active liquidity providers value"
+  },
+  "liquidityBenefits.stats.providers.description": {
+    "message": "Active users count",
+    "description": "Active liquidity providers description"
+  },
+  "liquidityBenefits.stats.rewards.label": {
+    "message": "Total Rewards Distributed",
+    "description": "Total rewards distributed label"
+  },
+  "liquidityBenefits.stats.rewards.value": {
+    "message": "$10M+",
+    "description": "Total rewards distributed value"
+  },
+  "liquidityBenefits.stats.rewards.description": {
+    "message": "Total reward value",
+    "description": "Total rewards distributed description"
+  },
+  "liquidityBenefits.stats.partners.label": {
+    "message": "Partner Projects",
+    "description": "Partner projects label"
+  },
+  "liquidityBenefits.stats.partners.value": {
+    "message": "25+",
+    "description": "Partner projects value"
+  },
+  "liquidityBenefits.stats.partners.description": {
+    "message": "Ecosystem partners",
+    "description": "Partner projects description"
+  },
+  "liquidityBenefits.yieldBoosts.precise.title": {
+    "message": "Precise Yield Calculation",
+    "description": "Precise yield calculation title"
+  },
+  "liquidityBenefits.yieldBoosts.precise.description": {
+    "message": "Real-time display of expected returns with transparent yield distribution mechanism",
+    "description": "Precise yield calculation description"
+  },
+  "liquidityBenefits.yieldBoosts.tiered.title": {
+    "message": "Tiered Reward System",
+    "description": "Tiered reward system title"
+  },
+  "liquidityBenefits.yieldBoosts.tiered.description": {
+    "message": "Different tier additional rewards based on liquidity contribution",
+    "description": "Tiered reward system description"
+  },
+  "liquidityBenefits.yieldBoosts.compound.title": {
+    "message": "Compound Growth Mechanism",
+    "description": "Compound growth mechanism title"
+  },
+  "liquidityBenefits.yieldBoosts.compound.description": {
+    "message": "Rewards auto-compound for long-term compound growth benefits",
+    "description": "Compound growth mechanism description"
+  },
+  "liquidityBenefits.yieldBoosts.early.title": {
+    "message": "Early Participation Rewards",
+    "description": "Early participation rewards title"
+  },
+  "liquidityBenefits.yieldBoosts.early.description": {
+    "message": "Early liquidity providers enjoy additional launch rewards",
+    "description": "Early participation rewards description"
+  },
+  "liquidityBenefits.title.first": {
+    "message": "Maximize Your",
+    "description": "First part of section title"
+  },
+  "liquidityBenefits.title.second": {
+    "message": "Liquidity Yield",
+    "description": "Second part of section title"
+  },
+  "liquidityBenefits.subtitle": {
+    "message": "TTSwap not only eliminates volatility losses but also significantly enhances the overall return on liquidity provision through innovative mechanisms, allowing every unit of liquidity to achieve its maximum value",
+    "description": "Section subtitle"
+  },
+  "liquidityBenefits.yieldBoosts.title": {
+    "message": "Multiple Yield Enhancement Mechanisms",
+    "description": "Yield boost features title"
+  },
+  "liquidityBenefits.yieldBoosts.subtitle": {
+    "message": "Through multi-tiered yield optimization strategies, ensure liquidity providers receive maximum returns",
+    "description": "Yield boost features subtitle"
+  },
+  "liquidityBenefits.cta.title.first": {
+    "message": "Start Now",
+    "description": "First part of CTA title"
+  },
+  "liquidityBenefits.cta.title.second": {
+    "message": "High Yield",
+    "description": "Second part of CTA title"
+  },
+  "liquidityBenefits.cta.title.third": {
+    "message": "Liquidity Mining",
+    "description": "Third part of CTA title"
+  },
+  "liquidityBenefits.cta.description": {
+    "message": "Join the TTSwap ecosystem, enjoy multiple yield stacking, and maximize your return on every unit of liquidity",
+    "description": "CTA description"
+  },
+  "liquidityBenefits.cta.viewEarnings": {
+    "message": "View Earnings",
+    "description": "View earnings button text"
+  },
+  "lossReduction.title.first": {
+    "message": "How We Reduce",
+    "description": "First part of section title"
+  },
+  "lossReduction.title.second": {
+    "message": "50% Trading Loss",
+    "description": "Second part of section title"
+  },
+  "lossReduction.subtitle": {
+    "message": "Two revolutionary methods to maximize liquidity, improve trading efficiency, and minimize trading losses",
+    "description": "Section subtitle"
+  },
+  "lossReduction.method1.title": {
+    "message": "Concentrated Liquidity",
+    "description": "Method 1 title"
+  },
+  "lossReduction.method1.subtitle": {
+    "message": "Concentrate multi-pool liquidity into a single pool",
+    "description": "Method 1 subtitle"
+  },
+  "lossReduction.method1.step": {
+    "message": "Step 1",
+    "description": "Method 1 step number"
+  },
+  "lossReduction.method1.before.label": {
+    "message": "Traditional AMM (Before)",
+    "description": "Before label"
+  },
+  "lossReduction.method1.before.poolA": {
+    "message": "Pool A: $1M",
+    "description": "Pool A value"
+  },
+  "lossReduction.method1.before.poolB": {
+    "message": "Pool B: $0.5M",
+    "description": "Pool B value"
+  },
+  "lossReduction.method1.before.poolC": {
+    "message": "Pool C: $0.75M",
+    "description": "Pool C value"
+  },
+  "lossReduction.method1.before.result": {
+    "message": "Fragmented Liquidity = Higher Slippage",
+    "description": "Before result"
+  },
+  "lossReduction.method1.after.label": {
+    "message": "TTSwap (After)",
+    "description": "After label"
+  },
+  "lossReduction.method1.after.unifiedPool": {
+    "message": "Unified Pool: $2.25M",
+    "description": "Unified pool value"
+  },
+  "lossReduction.method1.after.result": {
+    "message": "Concentrated Liquidity = Lower Slippage",
+    "description": "After result"
+  },
+  "lossReduction.method1.result.label": {
+    "message": "Result:",
+    "description": "Result label"
+  },
+  "lossReduction.method1.result.description": {
+    "message": "Significantly reduce slippage and trading costs through liquidity aggregation",
+    "description": "Result description"
+  },
+  "lossReduction.method2.title": {
+    "message": "Amplified Liquidity",
+    "description": "Method 2 title"
+  },
+  "lossReduction.method2.subtitle": {
+    "message": "Multiply liquidity depth exponentially",
+    "description": "Method 2 subtitle"
+  },
+  "lossReduction.method2.step": {
+    "message": "Step 2",
+    "description": "Method 2 step number"
+  },
+  "lossReduction.method2.real.label": {
+    "message": "Real Liquidity",
+    "description": "Real liquidity label"
+  },
+  "lossReduction.method2.real.value": {
+    "message": "$1M",
+    "description": "Real liquidity value"
+  },
+  "lossReduction.method2.amplification": {
+    "message": "5x Amplification",
+    "description": "Amplification factor"
+  },
+  "lossReduction.method2.effective.label": {
+    "message": "Effective Liquidity",
+    "description": "Effective liquidity label"
+  },
+  "lossReduction.method2.effective.value": {
+    "message": "$5M",
+    "description": "Effective liquidity value"
+  },
+  "lossReduction.method2.result.label": {
+    "message": "Result:",
+    "description": "Result label"
+  },
+  "lossReduction.method2.result.description": {
+    "message": "Achieve 5x effective liquidity depth without additional capital requirements",
+    "description": "Result description"
+  },
+  "lossReduction.combined.title": {
+    "message": "Liquidity Enhancement (20-2000x)",
+    "description": "Combined effect title"
+  },
+  "lossReduction.combined.stat1.value": {
+    "message": "50%+",
+    "description": "Stat 1 value"
+  },
+  "lossReduction.combined.stat1.label": {
+    "message": "Slippage Reduction",
+    "description": "Stat 1 label"
+  },
+  "lossReduction.combined.stat1.description": {
+    "message": "Significantly reduce trading slippage through concentrated liquidity",
+    "description": "Stat 1 description"
+  },
+  "lossReduction.combined.stat2.value": {
+    "message": "1-50x",
+    "description": "Stat 2 value"
+  },
+  "lossReduction.combined.stat2.label": {
+    "message": "Effective Liquidity",
+    "description": "Stat 2 label"
+  },
+  "lossReduction.combined.stat2.description": {
+    "message": "Virtual liquidity amplifies actual available capital depth",
+    "description": "Stat 2 description"
+  },
+  "lossReduction.combined.stat3.value": {
+    "message": "75%",
+    "description": "Stat 3 value"
+  },
+  "lossReduction.combined.stat3.label": {
+    "message": "Better Price Impact",
+    "description": "Stat 3 label"
+  },
+  "lossReduction.combined.stat3.description": {
+    "message": "Large trades have smaller impact on market prices",
+    "description": "Stat 3 description"
+  },
+  "problems.section.title.firstPart": {
+    "message": "Solving DeFi's"
+  },
+  "problems.section.title.fourMajor": {
+    "message": "Four Major"
+  },
+  "problems.section.title.painPoints": {
+    "message": "Pain Points"
+  },
+  "problems.section.description": {
+    "message": "TTSwap solves fundamental challenges that plague traditional decentralized exchanges, providing unprecedented efficiency and user benefits."
+  },
+  "problems.section.slippageReduction.title": {
+    "message": "Slippage Reduction"
+  },
+  "problems.section.slippageReduction.description": {
+    "message": "Innovative algorithms minimize slippage and maximize trading efficiency"
+  },
+  "problems.section.learnMore": {
+    "message": "Learn More"
+  },
+  "problems.section.impermanentLoss.title": {
+    "message": "Impermanent Loss"
+  },
+  "problems.section.impermanentLoss.description": {
+    "message": "Revolutionary constant value formula completely eliminates AMM impermanent loss"
+  },
+  "problems.section.gasSavings.title": {
+    "message": "Gas Savings"
+  },
+  "problems.section.gasSavings.description": {
+    "message": "Significantly reduce transaction fees through optimized contract architecture"
+  },
+  "problems.section.fairDistribution.title": {
+    "message": "Fair Distribution"
+  },
+  "problems.section.fairDistribution.description": {
+    "message": "Contribution-based transparent reward mechanism ensures fairness"
+  },
+  "rewards.section.roles.tokenManager.title": {
+    "message": "Token Manager"
+  },
+  "rewards.section.roles.tokenManager.subtitle": {
+    "message": "First token contributor"
+  },
+  "rewards.section.roles.tokenManager.description": {
+    "message": "When users first add a token to the platform, they become token managers, representing community-delegated token operations."
+  },
+  "rewards.section.roles.tokenManager.details.1": {
+    "message": "Community-delegated management"
+  },
+  "rewards.section.roles.tokenManager.details.2": {
+    "message": "Non-project tokens 2-year evaluation period"
+  },
+  "rewards.section.roles.tokenManager.details.3": {
+    "message": "Enjoy 1%-3% commission from token trades"
+  },
+  "rewards.section.roles.tokenManager.details.4": {
+    "message": "Responsible for token community growth"
+  },
+  "rewards.section.roles.liquidityProvider.title": {
+    "message": "Liquidity Provider"
+  },
+  "rewards.section.roles.liquidityProvider.subtitle": {
+    "message": "Pool liquidity contributor"
+  },
+  "rewards.section.roles.liquidityProvider.description": {
+    "message": "Users who provide liquidity automatically become liquidity providers, sharing the majority of trading fees."
+  },
+  "rewards.section.roles.liquidityProvider.details.1": {
+    "message": "Automatically gain status after providing liquidity"
+  },
+  "rewards.section.roles.liquidityProvider.details.2": {
+    "message": "Share 50%-80% of trading fees"
+  },
+  "rewards.section.roles.liquidityProvider.details.3": {
+    "message": "Distribution based on contribution ratio"
+  },
+  "rewards.section.roles.liquidityProvider.details.4": {
+    "message": "No impermanent loss risk"
+  },
+  "rewards.section.roles.serviceProvider.title": {
+    "message": "Service Provider"
+  },
+  "rewards.section.roles.serviceProvider.subtitle": {
+    "message": "Trading & investment services"
+  },
+  "rewards.section.roles.serviceProvider.description": {
+    "message": "Service providers who offer trading, investment, and other DeFi services to users."
+  },
+  "rewards.section.roles.serviceProvider.details.1": {
+    "message": "Provide trading and investment services"
+  },
+  "rewards.section.roles.serviceProvider.details.2": {
+    "message": "Earn 5%-25% commission from facilitated trades"
+  },
+  "rewards.section.roles.serviceProvider.details.3": {
+    "message": "Build reputation through quality service"
+  },
+  "rewards.section.roles.serviceProvider.details.4": {
+    "message": "Revenue grows with user base"
+  },
+  "rewards.section.roles.referrer.title": {
+    "message": "Referrer"
+  },
+  "rewards.section.roles.referrer.subtitle": {
+    "message": "User referral"
+  },
+  "rewards.section.roles.referrer.description": {
+    "message": "Users who refer others to the platform can earn commission from their referees' trading fees."
+  },
+  "rewards.section.roles.referrer.details.1": {
+    "message": "Earn from referee trading activities"
+  },
+  "rewards.section.roles.referrer.details.2": {
+    "message": "Get 5%-10% commission from referee fees"
+  },
+  "rewards.section.roles.referrer.details.3": {
+    "message": "Build passive income through network"
+  },
+  "rewards.section.roles.referrer.details.4": {
+    "message": "Unlimited referral potential"
+  },
+  "rewards.section.roles.user.title": {
+    "message": "User"
+  },
+  "rewards.section.roles.user.subtitle": {
+    "message": "Platform trader"
+  },
+  "rewards.section.roles.user.description": {
+    "message": "Regular users who add referrers enjoy trading fee discounts on all trading activities."
+  },
+  "rewards.section.roles.user.details.1": {
+    "message": "Enjoy 10% trading fee discount with referrer"
+  },
+  "rewards.section.roles.user.details.2": {
+    "message": "Access to all platform features"
+  },
+  "rewards.section.roles.user.details.3": {
+    "message": "Potential to become other roles"
+  },
+  "rewards.section.roles.user.details.4": {
+    "message": "Participate in community governance"
+  },
+  "rewards.section.roles.community.title": {
+    "message": "Community"
+  },
+  "rewards.section.roles.community.subtitle": {
+    "message": "Technical support"
+  },
+  "rewards.section.roles.community.description": {
+    "message": "Community provides technical support and development, earning platform fee share."
+  },
+  "rewards.section.roles.community.details.1": {
+    "message": "Provide technical support and development"
+  },
+  "rewards.section.roles.community.details.2": {
+    "message": "Earn 2%-8% of total platform fees"
+  },
+  "rewards.section.roles.community.details.3": {
+    "message": "Governance and protocol improvements"
+  },
+  "rewards.section.roles.community.details.4": {
+    "message": "Focus on long-term sustainability"
+  },
+  "rewards.section.title.part1": {
+    "message": "Everyone Participates"
+  },
+  "rewards.section.title.part2": {
+    "message": ", Everyone Benefits"
+  },
+  "rewards.section.description": {
+    "message": "Revolutionary multi-role commission system ensures all platform participants fairly share trading fees"
+  },
+  "rewards.section.become.role": {
+    "message": "Become {role}"
+  },
+  "rewards.section.coreBenefits": {
+    "message": "Core Benefits"
+  },
+  "tokenomics.section.distribution.founder.role": {
+    "message": "Founder"
+  },
+  "tokenomics.section.distribution.founder.unlockRatio": {
+    "message": "≤1/12"
+  },
+  "tokenomics.section.distribution.founder.description": {
+    "message": "Project initiators who bear huge failure risks"
+  },
+  "tokenomics.section.distribution.partners.role": {
+    "message": "Partners"
+  },
+  "tokenomics.section.distribution.partners.unlockRatio": {
+    "message": "≤1/8"
+  },
+  "tokenomics.section.distribution.partners.description": {
+    "message": "Core members who persisted and believed in the project during early stages"
+  },
+  "tokenomics.section.distribution.partners.typeA.name": {
+    "message": "Type A Partners"
+  },
+  "tokenomics.section.distribution.partners.typeA.description": {
+    "message": "Initial price determined when member joins, unlock ratio ≤1/10 when price doubles, unlocked portion not destroyed when leaving community"
+  },
+  "tokenomics.section.distribution.partners.typeB.name": {
+    "message": "Type B Partners"
+  },
+  "tokenomics.section.distribution.partners.typeB.description": {
+    "message": "Initial price determined when member joins, unlock ratio ≤1/8 when price doubles, unlocked portion destroyed when leaving community"
+  },
+  "tokenomics.section.distribution.valueContributors.role": {
+    "message": "Value Contributors"
+  },
+  "tokenomics.section.distribution.valueContributors.unlockRatio": {
+    "message": "≤1/6"
+  },
+  "tokenomics.section.distribution.valueContributors.description": {
+    "message": "Members who contribute value to community building"
+  },
+  "tokenomics.section.distribution.valueContributors.position.name": {
+    "message": "Position Contribution"
+  },
+  "tokenomics.section.distribution.valueContributors.position.description": {
+    "message": "Full-time and part-time employees contributing through their roles"
+  },
+  "tokenomics.section.distribution.valueContributors.employee.name": {
+    "message": "Employee Options"
+  },
+  "tokenomics.section.distribution.valueContributors.employee.description": {
+    "message": "Equity incentives given to key employees and contributors"
+  },
+  "tokenomics.section.distribution.valueContributors.activities.name": {
+    "message": "Activities"
+  },
+  "tokenomics.section.distribution.valueContributors.activities.description": {
+    "message": "Rewards for participating in community activities and events"
+  },
+  "tokenomics.section.distribution.valueContributors.community.name": {
+    "message": "Community"
+  },
+  "tokenomics.section.distribution.valueContributors.community.description": {
+    "message": "General community contributors and active participants"
+  },
+  "tokenomics.section.distribution.capitalContributors.role": {
+    "message": "Capital Contributors"
+  },
+  "tokenomics.section.distribution.capitalContributors.unlockRatio": {
+    "message": "≤1/5"
+  },
+  "tokenomics.section.distribution.capitalContributors.description": {
+    "message": "Investors providing financial support"
+  },
+  "tokenomics.section.distribution.capitalContributors.fund.name": {
+    "message": "Fund Investment"
+  },
+  "tokenomics.section.distribution.capitalContributors.fund.description": {
+    "message": "Institutional and strategic investors providing capital"
+  },
+  "tokenomics.section.distribution.capitalContributors.early.name": {
+    "message": "Early Participation"
+  },
+  "tokenomics.section.distribution.capitalContributors.early.description": {
+    "message": "Early supporters and angel investors"
+  },
+  "tokenomics.section.distribution.capitalContributors.public.name": {
+    "message": "Public Sale"
+  },
+  "tokenomics.section.distribution.capitalContributors.public.description": {
+    "message": "Public sale participants with fully unlocked status"
+  },
+  "tokenomics.section.rights.information.title": {
+    "message": "Right to Information"
+  },
+  "tokenomics.section.rights.information.description": {
+    "message": "Right to know all community decisions"
+  },
+  "tokenomics.section.rights.supervision.title": {
+    "message": "Right to Supervision"
+  },
+  "tokenomics.section.rights.supervision.description": {
+    "message": "Right to supervise all community actions"
+  },
+  "tokenomics.section.rights.voting.title": {
+    "message": "Voting Rights"
+  },
+  "tokenomics.section.rights.voting.description": {
+    "message": "Voting rights on proposals"
+  },
+  "tokenomics.section.rights.proposal.title": {
+    "message": "Proposal Rights"
+  },
+  "tokenomics.section.rights.proposal.description": {
+    "message": "Proposal rights for holders of certain token amounts"
+  },
+  "tokenomics.section.features.lock.title": {
+    "message": "Initial Lock"
+  },
+  "tokenomics.section.features.lock.value": {
+    "message": "50M tokens"
+  },
+  "tokenomics.section.features.lock.description": {
+    "message": "All in locked state, unlocked only when conditions are met"
+  },
+  "tokenomics.section.features.issuance.title": {
+    "message": "Annual Issuance"
+  },
+  "tokenomics.section.features.issuance.value": {
+    "message": "2%*(200M-unlocked)"
+  },
+  "tokenomics.section.features.issuance.description": {
+    "message": "All given to liquidity providers"
+  },
+  "tokenomics.section.features.buyback.title": {
+    "message": "Buyback & Burn"
+  },
+  "tokenomics.section.features.buyback.value": {
+    "message": "100% profit"
+  },
+  "tokenomics.section.features.buyback.description": {
+    "message": "All community profits used to buy and burn tokens"
+  },
+  "tokenomics.section.features.notice.title": {
+    "message": "Notice Period"
+  },
+  "tokenomics.section.features.notice.value": {
+    "message": "30+ days"
+  },
+  "tokenomics.section.features.notice.description": {
+    "message": "Distribution changes require advance notice"
+  },
+  "tokenomics.section.title": {
+    "message": "TTS Token Economics Model"
+  },
+  "tokenomics.section.description": {
+    "message": "Innovative token economic protocol based on 4C growth community, ensuring long-term value growth and fair distribution"
+  },
+  "tokenomics.section.tabs.distribution": {
+    "message": "Token Distribution"
+  },
+  "tokenomics.section.tabs.mechanism": {
+    "message": "Unlock Mechanism"
+  },
+  "tokenomics.section.tabs.governance": {
+    "message": "Governance Rights"
+  },
+  "tokenomics.section.tabs.economy": {
+    "message": "Economic Model"
+  },
+  "tokenomics.section.distribution.subtitle": {
+    "message": "4C Growth Community Token Distribution"
+  },
+  "tokenomics.section.distribution.description": {
+    "message": "Fair and transparent token distribution based on community contribution model"
+  },
+  "tokenomics.section.distribution.maxUnlock": {
+    "message": "Max Unlock:"
+  },
+  "tokenomics.section.distribution.allocation": {
+    "message": "Allocation"
+  },
+  "tokenomics.section.distribution.of": {
+    "message": "of"
+  },
+  "tokenomics.section.distribution.categories": {
+    "message": "Categories"
+  },
+  "tokenomics.section.distribution.summary.title": {
+    "message": "Distribution Summary"
+  },
+  "tokenomics.section.distribution.summary.totalSupply": {
+    "message": "Total Supply"
+  },
+  "tokenomics.section.distribution.summary.distributionModel": {
+    "message": "Distribution Model"
+  },
+  "tokenomics.section.distribution.summary.doubleUnlock": {
+    "message": "Double Unlock"
+  },
+  "tokenomics.section.distribution.summary.incentiveModel": {
+    "message": "Incentive Model"
+  },
+  "tokenomics.section.distribution.summary.buyback": {
+    "message": "Buyback & Burn"
+  },
+  "tokenomics.section.distribution.summary.valueCapture": {
+    "message": "Value Capture"
+  },
+  "tokenomics.section.mechanism.subtitle": {
+    "message": "Smart Unlock Mechanism"
+  },
+  "tokenomics.section.mechanism.description": {
+    "message": "Layered unlock mechanism based on price doubling to ensure stable token value growth"
+  },
+  "tokenomics.section.mechanism.unlock.title": {
+    "message": "Unlock Mechanism"
+  },
+  "tokenomics.section.mechanism.unlock.requirements": {
+    "message": "Unlock Requirements"
+  },
+  "tokenomics.section.mechanism.unlock.requirement1": {
+    "message": "Unlock ratio cannot exceed 20%"
+  },
+  "tokenomics.section.mechanism.unlock.requirement2": {
+    "message": "Initial price cannot be lower than current price"
+  },
+  "tokenomics.section.mechanism.unlock.requirement3": {
+    "message": "When price doubles, unlock remaining portion × unlock ratio"
+  },
+  "tokenomics.section.mechanism.calculation.title": {
+    "message": "Calculation Example"
+  },
+  "tokenomics.section.mechanism.calculation.allocate": {
+    "message": "Allocate 20,000 tokens, unlock ratio 18%, allocation price 0.05"
+  },
+  "tokenomics.section.mechanism.calculation.whenPrice": {
+    "message": "When price reaches 0.05, unlock:"
+  },
+  "tokenomics.section.mechanism.calculation.tokens": {
+    "message": "tokens"
+  },
+  "tokenomics.section.mechanism.calculation.whenPrice2": {
+    "message": "When price reaches 0.1, unlock:"
+  },
+  "tokenomics.section.mechanism.ratio.title": {
+    "message": "Unlock Ratio (when price doubles)"
+  },
+  "tokenomics.section.mechanism.ratio.capital": {
+    "message": "Capital Contributors"
+  },
+  "tokenomics.section.mechanism.ratio.value": {
+    "message": "Value Contributors"
+  },
+  "tokenomics.section.mechanism.ratio.partners": {
+    "message": "Partners"
+  },
+  "tokenomics.section.mechanism.ratio.founder": {
+    "message": "Founder"
+  },
+  "tokenomics.section.mechanism.rules.title": {
+    "message": "Detailed Unlock Rules"
+  },
+  "tokenomics.section.mechanism.rules.typeA": {
+    "message": "Type A Partners"
+  },
+  "tokenomics.section.mechanism.rules.typeA.rule1": {
+    "message": "Member joins with initial price"
+  },
+  "tokenomics.section.mechanism.rules.typeA.rule2": {
+    "message": "Unlock ratio ≤1/10 when price doubles"
+  },
+  "tokenomics.section.mechanism.rules.typeA.rule3": {
+    "message": "Unlocked portion not destroyed when leaving community"
+  },
+  "tokenomics.section.mechanism.rules.typeB": {
+    "message": "Type B Partners"
+  },
+  "tokenomics.section.mechanism.rules.typeB.rule1": {
+    "message": "Member joins with initial price"
+  },
+  "tokenomics.section.mechanism.rules.typeB.rule2": {
+    "message": "Unlock ratio ≤1/8 when price doubles"
+  },
+  "tokenomics.section.mechanism.rules.typeB.rule3": {
+    "message": "Unlocked portion destroyed when leaving community"
+  },
+  "tokenomics.section.mechanism.rules.contribution": {
+    "message": "Value Contribution Incentives"
+  },
+  "tokenomics.section.mechanism.rules.contribution.rule1": {
+    "message": "Initial price higher than allocation price"
+  },
+  "tokenomics.section.mechanism.rules.contribution.rule2": {
+    "message": "Unlock ratio ≤1/6 when price doubles"
+  },
+  "tokenomics.section.mechanism.rules.contribution.rule3": {
+    "message": "Unlocked portion adjusted by community based on performance, no longer for community service when leaving"
+  },
+  "tokenomics.section.mechanism.rules.capital": {
+    "message": "Capital Contribution Rules"
+  },
+  "tokenomics.section.mechanism.rules.capital.rule1": {
+    "message": "Public sale portion fully unlocked"
+  },
+  "tokenomics.section.mechanism.rules.capital.rule2": {
+    "message": "Investment portion price and unlock ratio determined through negotiation, ≤1/5"
+  },
+  "tokenomics.section.mechanism.rules.capital.rule3": {
+    "message": "Airdrop portion determined by specific activity plans, ≤1/5"
+  },
+  "tokenomics.section.governance.subtitle": {
+    "message": "Decentralized Governance System"
+  },
+  "tokenomics.section.governance.description": {
+    "message": "Token holders enjoy full rights to information, supervision, voting, and proposal"
+  },
+  "tokenomics.section.governance.process.title": {
+    "message": "Community Governance Process"
+  },
+  "tokenomics.section.governance.process.transparency": {
+    "message": "Information Transparency"
+  },
+  "tokenomics.section.governance.process.transparency.description": {
+    "message": "All decisions and actions disclosed to token holders to ensure transparency"
+  },
+  "tokenomics.section.governance.process.proposal": {
+    "message": "Proposal Mechanism"
+  },
+  "tokenomics.section.governance.process.proposal.description": {
+    "message": "Users with a certain amount of tokens can initiate community proposals"
+  },
+  "tokenomics.section.governance.process.voting": {
+    "message": "Voting Decision"
+  },
+  "tokenomics.section.governance.process.voting.description": {
+    "message": "All token holders can participate in proposal voting decisions"
+  },
+  "tokenomics.section.economy.subtitle": {
+    "message": "Sustainable Economic Model"
+  },
+  "tokenomics.section.economy.description": {
+    "message": "Through buyback and burn mechanisms, build a long-term sustainable token economic ecosystem"
+  },
+  "tokenomics.section.economy.value.title": {
+    "message": "Value Growth Mechanism"
+  },
+  "tokenomics.section.economy.value.item1": {
+    "message": "All project profits used for token buyback"
+  },
+  "tokenomics.section.economy.value.item2": {
+    "message": "Token holder income comes from value appreciation or project contributions"
+  },
+  "tokenomics.section.economy.value.item3": {
+    "message": "No profit from harming any participant"
+  },
+  "tokenomics.section.economy.value.item4": {
+    "message": "Recommendation relationships maintained in tokens, once confirmed cannot be modified"
+  },
+  "tokenomics.section.economy.deflation.title": {
+    "message": "Deflation Mechanism"
+  },
+  "tokenomics.section.economy.deflation.buyback": {
+    "message": "Buyback and Burn"
+  },
+  "tokenomics.section.economy.deflation.buyback.description": {
+    "message": "All community profits used to buy and burn tokens"
+  },
+  "tokenomics.section.economy.deflation.annual": {
+    "message": "Annual Issuance Decreasing"
+  },
+  "tokenomics.section.economy.deflation.annual.description": {
+    "message": "Annual new token quantity = (200M - unlocked) × 0.02"
+  },
+  "tokenomics.section.economy.deflation.volume": {
+    "message": "Reduce Selling Volume"
+  },
+  "tokenomics.section.economy.deflation.volume.description": {
+    "message": "Any participant can only unlock in proportion when price doubles"
+  },
+  "tokenomics.section.economy.flow.title": {
+    "message": "Economic Flow and Income Distribution"
+  },
+  "tokenomics.section.economy.flow.income": {
+    "message": "Transaction Income"
+  },
+  "tokenomics.section.economy.flow.income.description": {
+    "message": "Platform transaction fee income and protocol income generated"
+  },
+  "tokenomics.section.economy.flow.enhancement": {
+    "message": "Value Enhancement"
+  },
+  "tokenomics.section.economy.flow.enhancement.description": {
+    "message": "Continuously improve ecosystem value through agreements"
+  },
+  "tokenomics.section.economy.flow.burn": {
+    "message": "Buyback and Burn"
+  },
+  "tokenomics.section.economy.flow.burn.description": {
+    "message": "Continuously reduce token supply"
+  },
+  "tokenomics.section.economy.flow.incentive": {
+    "message": "Liquidity Incentive"
+  },
+  "tokenomics.section.economy.flow.incentive.description": {
+    "message": "Allocate additional tokens to liquidity providers"
   }
 }
