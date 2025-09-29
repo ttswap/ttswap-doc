@@ -3,13 +3,54 @@ import Github from "/img/github.svg";
 import X from "/img/x.svg";
 import Telegram from "/img/tg.svg";
 import Discord from "/img/discord.svg";
+import { translate } from '@docusaurus/Translate';
 
 export const socialLinks = [
-    { name: "X", icon: X, href: "https://x.com/ttswapfinance" },
-    { name: "Telegram", icon: Telegram, href: "https://t.me/ttswapfinance" },
-    { name: "Github", icon: Github, href: "http://github.com/ttswap-doc" },
-    { name: "Discord", icon: Discord, href: "https://discord.gg/XygqnmQgX3" },
-    { name: "Mail", icon: Mail, href: "mailto:bussiness@ttswap.io" },
+    { 
+      name: translate({
+        id: 'footer.social.x',
+        message: 'X',
+        description: 'X (Twitter) social link name'
+      }), 
+      icon: X, 
+      href: "https://x.com/ttswapfinance" 
+    },
+    { 
+      name: translate({
+        id: 'footer.social.telegram',
+        message: 'Telegram',
+        description: 'Telegram social link name'
+      }), 
+      icon: Telegram, 
+      href: "https://t.me/ttswapfinance" 
+    },
+    { 
+      name: translate({
+        id: 'footer.social.github',
+        message: 'Github',
+        description: 'GitHub social link name'
+      }), 
+      icon: Github, 
+      href: "http://github.com/ttswap-doc" 
+    },
+    { 
+      name: translate({
+        id: 'footer.social.discord',
+        message: 'Discord',
+        description: 'Discord social link name'
+      }), 
+      icon: Discord, 
+      href: "https://discord.gg/XygqnmQgX3" 
+    },
+    { 
+      name: translate({
+        id: 'footer.social.mail',
+        message: 'Mail',
+        description: 'Email contact link name'
+      }), 
+      icon: Mail, 
+      href: "mailto:bussiness@ttswap.io" 
+    },
 ];
 
 export const navigationZh = {
@@ -42,28 +83,126 @@ export const navigationZh = {
 
 export const navigation = {
     product: [
-        { name: "Trading", href: "https://app.ttswap.io/hoodiTestnet/ttswap/trade?en" },
+        { 
+          name: translate({
+            id: 'footer.navigation.product.trading',
+            message: 'Trading',
+            description: 'Trading link in product navigation'
+          }), 
+          href: "https://app.ttswap.io/hoodiTestnet/ttswap/trade?en" 
+        },
         // { name: "Staking", href: "#stake" },
         // { name: "Governance", href: "#governance" },
         // { name: "Analytics", href: "#analytics" },
     ],
     resources: [
-        { name: "User Doc", href: "/docs/knowledge/userdoc" },
-        { name: "Token Economic", href: "/docs/knowledge/tokeneconomic" },
-        { name: "WhitePaper", href: "/docs/knowledge/whitepaper" },
+        { 
+          name: translate({
+            id: 'footer.navigation.resources.userDoc',
+            message: 'User Doc',
+            description: 'User documentation link in resources navigation'
+          }), 
+          href: "/docs/knowledge/userdoc" 
+        },
+        { 
+          name: translate({
+            id: 'footer.navigation.resources.tokenEconomic',
+            message: 'Token Economic',
+            description: 'Token economics link in resources navigation'
+          }), 
+          href: "/docs/knowledge/tokeneconomic" 
+        },
+        { 
+          name: translate({
+            id: 'footer.navigation.resources.whitePaper',
+            message: 'WhitePaper',
+            description: 'Whitepaper link in resources navigation'
+          }), 
+          href: "/docs/knowledge/whitepaper" 
+        },
     ],
     community: [
-        { href: "/docs/community/recommander", name: "Be Referral", },
-        { href: "/docs/community/tokenoperator", name: "Be Token Operator", },
-        { href: "/docs/community/gate", name: "Be Service Provider", },
-        { href: "/docs/community/builder", name: "Be Builder", },
-        { href: "/docs/community/liquidityprovider", name: "Be Liquidityprovider", },
-        { href: "/docs/community/investor", name: "Be Investor", },
+        { 
+          href: "/docs/community/recommander", 
+          name: translate({
+            id: 'footer.navigation.community.beReferral',
+            message: 'Be Referral',
+            description: 'Be referral link in community navigation'
+          }) 
+        },
+        { 
+          href: "/docs/community/tokenoperator", 
+          name: translate({
+            id: 'footer.navigation.community.beTokenOperator',
+            message: 'Be Token Operator',
+            description: 'Be token operator link in community navigation'
+          }) 
+        },
+        { 
+          href: "/docs/community/gate", 
+          name: translate({
+            id: 'footer.navigation.community.beServiceProvider',
+            message: 'Be Service Provider',
+            description: 'Be service provider link in community navigation'
+          }) 
+        },
+        { 
+          href: "/docs/community/builder", 
+          name: translate({
+            id: 'footer.navigation.community.beBuilder',
+            message: 'Be Builder',
+            description: 'Be builder link in community navigation'
+          }) 
+        },
+        { 
+          href: "/docs/community/liquidityprovider", 
+          name: translate({
+            id: 'footer.navigation.community.beLiquidityProvider',
+            message: 'Be Liquidityprovider',
+            description: 'Be liquidity provider link in community navigation'
+          }) 
+        },
+        { 
+          href: "/docs/community/investor", 
+          name: translate({
+            id: 'footer.navigation.community.beInvestor',
+            message: 'Be Investor',
+            description: 'Be investor link in community navigation'
+          }) 
+        },
     ],
     company: [
-        { name: "About", href: "#about" },
-        { name: "Careers", href: "#careers" },
-        { name: "Privacy", href: "#privacy" },
-        { name: "Terms", href: "#terms" },
+        { 
+          name: translate({
+            id: 'footer.navigation.company.about',
+            message: 'About',
+            description: 'About link in company navigation'
+          }), 
+          href: "#about" 
+        },
+        { 
+          name: translate({
+            id: 'footer.navigation.company.careers',
+            message: 'Careers',
+            description: 'Careers link in company navigation'
+          }), 
+          href: "#careers" 
+        },
+        { 
+          name: translate({
+            id: 'footer.navigation.company.privacy',
+            message: 'Privacy',
+            description: 'Privacy policy link in company navigation'
+          }), 
+          href: "#privacy" 
+        },
+        { 
+          name: translate({
+            id: 'footer.navigation.company.terms',
+            message: 'Terms',
+            description: 'Terms of service link in company navigation'
+          }), 
+          href: "#terms" 
+        },
     ],
 };

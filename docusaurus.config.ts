@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
@@ -37,7 +37,7 @@ const config: Config = {
   organizationName: 'ttswap', // Usually your GitHub org/user name.
   projectName: 'ttswap-docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -45,8 +45,18 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
-    // locales: ['en','zh'],
+    // locales: ['en'],
+    locales: ['en', 'zh'],
+    // localeConfigs: {
+    //   en: {
+    //     label: 'English',
+    //     direction: 'ltr',
+    //   },
+    //   zh: {
+    //     label: '中文',
+    //     direction: 'ltr',
+    //   },
+    // },
   },
 
   presets: [
@@ -60,6 +70,7 @@ const config: Config = {
           rehypePlugins: [rehypeKatex],
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // includeCurrentVersion: true,
         },
         blog: {
           showReadingTime: true,
@@ -97,49 +108,55 @@ const config: Config = {
         alt: 'TTSwap Logo',
         src: 'img/logo.png',  // 记得把 logo 放到 /static/img/tt_logo.png
       },
-       items: [
+      items: [
         // 中间菜单
-        {to: '/', label: 'Home', position: 'left'},
-        {label: 'Activity', position: 'left',items:[
-          {to: '/docs/articles/publicsell', label: 'Public Sell', },
-          {to: '/docs/articles/tokenairdrop', label: 'Token Airdrop', },
-        ],},
-        {label: 'Knowledge', position: 'left',items:[
-          {to: '/docs/knowledge/userdoc/userdoc', label: 'User Doc', },
-          {to: '/docs/knowledge/tokeneconomic', label: 'Token Economic', },
-          {to: '/docs/knowledge/whitepaper/whitepaper', label: 'WhitePaper', },
-        ],},
-        {label: 'Join DAO', position: 'left',items:[
-          {to: '/docs/community/introduce', label: 'Allocate Commission By Role', },
-          {to: '/docs/community/recommander', label: 'Be Referral', },
-          {to: '/docs/community/tokenoperator', label: 'Be Token Operator', },
-          {to: '/docs/community/gate', label: 'Be Service Provider', },
-          {to: '/docs/community/builder', label: 'Be Builder', },
-          {to: '/docs/community/liquidityprovider', label: 'Be Liquidityprovider', },
-          {to: '/docs/community/investor', label: 'Be Investor', },
-        ],},
+        { to: '/', label: 'Home', position: 'left' },
+        {
+          label: 'Activity', position: 'left', items: [
+            { to: '/docs/articles/publicsell', label: 'Public Sell', },
+            { to: '/docs/articles/tokenairdrop', label: 'Token Airdrop', },
+          ],
+        },
+        {
+          label: 'Knowledge', position: 'left', items: [
+            { to: '/docs/knowledge/userdoc', label: 'User Doc', },
+            { to: '/docs/knowledge/tokeneconomic', label: 'Token Economic', },
+            { to: '/docs/knowledge/whitepaper', label: 'WhitePaper', },
+          ],
+        },
+        {
+          label: 'Join DAO', position: 'left', items: [
+            { to: '/docs/community/introduce', label: 'Allocate Commission By Role', },
+            { to: '/docs/community/recommander', label: 'Be Referral', },
+            { to: '/docs/community/tokenoperator', label: 'Be Token Operator', },
+            { to: '/docs/community/gate', label: 'Be Service Provider', },
+            { to: '/docs/community/builder', label: 'Be Builder', },
+            { to: '/docs/community/liquidityprovider', label: 'Be Liquidityprovider', },
+            { to: '/docs/community/investor', label: 'Be Investor', },
+          ],
+        },
 
         // 右侧社交图标
         {
-          href: 'https://discord.gg/xxxx',
+          href: 'https://discord.gg/XygqnmQgX3',
           position: 'right',
           className: 'header-discord-link',
           'aria-label': 'Discord',
         },
         {
-          href: 'https://t.me/xxxx',
+          href: 'https://t.me/ttswapfinance',
           position: 'right',
           className: 'header-telegram-link',
           'aria-label': 'Telegram',
         },
         {
-          href: 'https://twitter.com/xxxx',
+          href: 'https://x.com/ttswapfinance',
           position: 'right',
           className: 'header-twitter-link',
           'aria-label': 'Twitter',
         },
         {
-          href: 'https://github.com/xxxx',
+          href: 'https://github.com/ttswap-doc',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub',

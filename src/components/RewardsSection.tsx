@@ -9,6 +9,7 @@ import {
   Building,
 } from "lucide-react";
 import { useState } from "react";
+import Translate from '@docusaurus/Translate';
 
 export function RewardsSection() {
   const [selectedRole, setSelectedRole] = useState(0);
@@ -16,95 +17,102 @@ export function RewardsSection() {
   const roles = [
     {
       icon: Crown,
-      title: "Token Manager",
-      subtitle: "First token contributor",
+      title: <Translate id="rewards.section.roles.tokenManager.title">Token Manager</Translate>,
+      subtitle: <Translate id="rewards.section.roles.tokenManager.subtitle">First token contributor</Translate>,
       commission: "1%-3%",
-      description:
-        "When users first add a token to the platform, they become token managers, representing community-delegated token operations.",
+      description: <Translate id="rewards.section.roles.tokenManager.description">
+        When users first add a token to the platform, they become token managers, representing community-delegated token operations.
+      </Translate>,
       details: [
-        "Community-delegated management",
-        "Non-project tokens 2-year evaluation period",
-        "Enjoy 1%-3% commission from token trades",
-        "Responsible for token community growth",
+        <Translate key="1" id="rewards.section.roles.tokenManager.details.1">Community-delegated management</Translate>,
+        <Translate key="2" id="rewards.section.roles.tokenManager.details.2">Non-project tokens 2-year evaluation period</Translate>,
+        <Translate key="3" id="rewards.section.roles.tokenManager.details.3">Enjoy 1%-3% commission from token trades</Translate>,
+        <Translate key="4" id="rewards.section.roles.tokenManager.details.4">Responsible for token community growth</Translate>,
       ],
       to: "/docs/community/tokenoperator",
       gradient: "from-yellow-500 to-orange-500",
     },
     {
       icon: Droplets,
-      title: "Liquidity Provider",
-      subtitle: "Pool liquidity contributor",
+      title: <Translate id="rewards.section.roles.liquidityProvider.title">Liquidity Provider</Translate>,
+      subtitle: <Translate id="rewards.section.roles.liquidityProvider.subtitle">Pool liquidity contributor</Translate>,
       commission: "50%-80%",
-      description:
-        "Users who provide liquidity automatically become liquidity providers, sharing the majority of trading fees.",
+      description: <Translate id="rewards.section.roles.liquidityProvider.description">
+        Users who provide liquidity automatically become liquidity providers, sharing the majority of trading fees.
+      </Translate>,
       details: [
-        "Automatically gain status after providing liquidity",
-        "Share 50%-80% of trading fees",
-        "Distribution based on contribution ratio",
-        "No impermanent loss risk",
+        <Translate key="1" id="rewards.section.roles.liquidityProvider.details.1">Automatically gain status after providing liquidity</Translate>,
+        <Translate key="2" id="rewards.section.roles.liquidityProvider.details.2">Share 50%-80% of trading fees</Translate>,
+        <Translate key="3" id="rewards.section.roles.liquidityProvider.details.3">Distribution based on contribution ratio</Translate>,
+        <Translate key="4" id="rewards.section.roles.liquidityProvider.details.4">No impermanent loss risk</Translate>,
       ],
       to: "/docs/community/liquidityprovider",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
       icon: Headphones,
-      title: "Service Provider",
-      subtitle: "Trading & investment services",
+      title: <Translate id="rewards.section.roles.serviceProvider.title">Service Provider</Translate>,
+      subtitle: <Translate id="rewards.section.roles.serviceProvider.subtitle">Trading & investment services</Translate>,
       commission: "5%-25%",
-      description:
-        "Service providers who offer trading, investment, and other DeFi services to users.",
+      description: <Translate id="rewards.section.roles.serviceProvider.description">
+        Service providers who offer trading, investment, and other DeFi services to users.
+      </Translate>,
       details: [
-        "Provide trading and investment services",
-        "Earn 5%-25% commission from facilitated trades",
-        "Build reputation through quality service",
-        "Revenue grows with user base",
+        <Translate key="1" id="rewards.section.roles.serviceProvider.details.1">Provide trading and investment services</Translate>,
+        <Translate key="2" id="rewards.section.roles.serviceProvider.details.2">Earn 5%-25% commission from facilitated trades</Translate>,
+        <Translate key="3" id="rewards.section.roles.serviceProvider.details.3">Build reputation through quality service</Translate>,
+        <Translate key="4" id="rewards.section.roles.serviceProvider.details.4">Revenue grows with user base</Translate>,
       ],
       to: "/docs/community/gate",
       gradient: "from-purple-500 to-pink-500",
     },
     {
       icon: Share,
-      title: "Referrer",
-      subtitle: "User referral",
+      title: <Translate id="rewards.section.roles.referrer.title">Referrer</Translate>,
+      subtitle: <Translate id="rewards.section.roles.referrer.subtitle">User referral</Translate>,
       commission: "5%-10%",
-      description:
-        "Users who refer others to the platform can earn commission from their referees' trading fees.",
+      description: <Translate id="rewards.section.roles.referrer.description">
+        Users who refer others to the platform can earn commission from their referees' trading fees.
+      </Translate>,
       details: [
-        "Earn from referee trading activities",
-        "Get 5%-10% commission from referee fees",
-        "Build passive income through network",
-        "Unlimited referral potential",
+        <Translate key="1" id="rewards.section.roles.referrer.details.1">Earn from referee trading activities</Translate>,
+        <Translate key="2" id="rewards.section.roles.referrer.details.2">Get 5%-10% commission from referee fees</Translate>,
+        <Translate key="3" id="rewards.section.roles.referrer.details.3">Build passive income through network</Translate>,
+        <Translate key="4" id="rewards.section.roles.referrer.details.4">Unlimited referral potential</Translate>,
       ],
       to: "/docs/community/recommander",
       gradient: "from-green-500 to-teal-500",
     },
     {
       icon: User,
-      title: "User",
-      subtitle: "Platform trader",
-      commission: "10% discount",
-      description:
-        "Regular users who add referrers enjoy trading fee discounts on all trading activities.",
+      title: <Translate id="rewards.section.roles.user.title">User</Translate>,
+      subtitle: <Translate id="rewards.section.roles.user.subtitle">Platform trader</Translate>,
+      commission: <Translate id="rewards.section.roles.user.commission">10% discount</Translate>,
+      description: <Translate id="rewards.section.roles.user.description">
+        Regular users who add referrers enjoy trading fee discounts on all trading activities.
+      </Translate>,
       details: [
-        "Enjoy 10% trading fee discount with referrer",
-        "Access to all platform features",
-        "Potential to become other roles",
-        "Participate in community governance",
+        <Translate key="1" id="rewards.section.roles.user.details.1">Enjoy 10% trading fee discount with referrer</Translate>,
+        <Translate key="2" id="rewards.section.roles.user.details.2">Access to all platform features</Translate>,
+        <Translate key="3" id="rewards.section.roles.user.details.3">Potential to become other roles</Translate>,
+        <Translate key="4" id="rewards.section.roles.user.details.4">Participate in community governance</Translate>,
       ],
       to: null,
       gradient: "from-indigo-500 to-purple-500",
     },
     {
       icon: Building,
-      title: "Community",
-      subtitle: "Technical support",
+      title: <Translate id="rewards.section.roles.community.title">Community</Translate>,
+      subtitle: <Translate id="rewards.section.roles.community.subtitle">Technical support</Translate>,
       commission: "2%-8%",
-      description: "Community provides technical support and development, earning platform fee share.",
+      description: <Translate id="rewards.section.roles.community.description">
+        Community provides technical support and development, earning platform fee share.
+      </Translate>,
       details: [
-        "Provide technical support and development",
-        "Earn 2%-8% of total platform fees",
-        "Governance and protocol improvements",
-        "Focus on long-term sustainability",
+        <Translate key="1" id="rewards.section.roles.community.details.1">Provide technical support and development</Translate>,
+        <Translate key="2" id="rewards.section.roles.community.details.2">Earn 2%-8% of total platform fees</Translate>,
+        <Translate key="3" id="rewards.section.roles.community.details.3">Governance and protocol improvements</Translate>,
+        <Translate key="4" id="rewards.section.roles.community.details.4">Focus on long-term sustainability</Translate>,
       ],
       to: "/docs/community/builder",
       gradient: "from-red-500 to-pink-500",
@@ -116,12 +124,14 @@ export function RewardsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            <span className="text-gradient">Everyone Participates</span>
-            , Everyone Benefits
+            <span className="text-gradient"><Translate id="rewards.section.title.part1">Everyone Participates</Translate></span>
+            <Translate id="rewards.section.title.part2">, Everyone Benefits</Translate>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Revolutionary multi-role commission system ensures
-            all platform participants fairly share trading fees
+            <Translate id="rewards.section.description">
+              Revolutionary multi-role commission system ensures
+              all platform participants fairly share trading fees
+            </Translate>
           </p>
         </div>
 
@@ -247,7 +257,9 @@ export function RewardsSection() {
                   onClick={() => { location.href = roles[selectedRole].to; }}
                   className={`bg-gradient-to-r ${roles[selectedRole].gradient} hover:opacity-90 hover:scale-105 hover:shadow-lg transition-all duration-300`}
                 >
-                  Become {roles[selectedRole].title}
+                  <Translate id="rewards.section.become.role" values={{role: roles[selectedRole].title}}>
+                    {"Become {role}"}
+                  </Translate>
                 </Button>
               ) : null}
 
@@ -255,7 +267,7 @@ export function RewardsSection() {
 
             <div className="space-y-4">
               <h4 className="text-lg font-semibold group-hover:text-primary/90 transition-colors duration-300">
-                Core Benefits
+                <Translate id="rewards.section.coreBenefits">Core Benefits</Translate>
               </h4>
               <ul className="space-y-3">
                 {roles[selectedRole].details.map(
