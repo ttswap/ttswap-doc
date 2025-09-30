@@ -113,7 +113,7 @@ const config: Config = {
         { to: '/', label: 'Home', position: 'left' },
         {
           label: 'Activity', position: 'left', items: [
-            { to: '/docs/articles/publicsell', label: 'Public Sell', },
+            { to: '/docs/articles/publicsale', label: 'Public Sale', },
             { to: '/docs/articles/tokenairdrop', label: 'Token Airdrop', },
           ],
         },
