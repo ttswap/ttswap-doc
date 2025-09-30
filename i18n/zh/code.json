@@ -1060,7 +1060,7 @@
     "description": "Founder role"
   },
   "tokenomics.section.distribution.founder.unlockRatio": {
-    "message": "≤1/12",
+    "message": "≤1/20",
     "description": "Founder unlock ratio"
   },
   "tokenomics.section.distribution.founder.description": {
@@ -1072,7 +1072,7 @@
     "description": "Partners role"
   },
   "tokenomics.section.distribution.partners.unlockRatio": {
-    "message": "≤1/8",
+    "message": "≤1/16",
     "description": "Partners unlock ratio"
   },
   "tokenomics.section.distribution.partners.description": {
@@ -1092,7 +1092,7 @@
     "description": "Type B partners name"
   },
   "tokenomics.section.distribution.partners.typeB.description": {
-    "message": "成员加入时确定初始价格，价格翻倍时解锁比例≤1/8，离开社区时解锁部分销毁",
+    "message": "成员加入时确定初始价格，价格翻倍时解锁比例≤1/16，离开社区时解锁部分销毁",
     "description": "Type B partners description"
   },
   "tokenomics.section.distribution.valueContributors.role": {
@@ -1100,7 +1100,7 @@
     "description": "Value contributors role"
   },
   "tokenomics.section.distribution.valueContributors.unlockRatio": {
-    "message": "≤1/6",
+    "message": "≤1/12",
     "description": "Value contributors unlock ratio"
   },
   "tokenomics.section.distribution.valueContributors.description": {
@@ -1144,7 +1144,7 @@
     "description": "Capital contributors role"
   },
   "tokenomics.section.distribution.capitalContributors.unlockRatio": {
-    "message": "≤1/5",
+    "message": "≤1/8",
     "description": "Capital contributors unlock ratio"
   },
   "tokenomics.section.distribution.capitalContributors.description": {
@@ -1431,7 +1431,7 @@
     "description": "Type B partners rule 1"
   },
   "tokenomics.section.mechanism.rules.typeB.rule2": {
-    "message": "价格翻倍时解锁比例≤1/8",
+    "message": "价格翻倍时解锁比例≤1/16",
     "description": "Type B partners rule 2"
   },
   "tokenomics.section.mechanism.rules.typeB.rule3": {
@@ -1447,7 +1447,7 @@
     "description": "Value contribution rule 1"
   },
   "tokenomics.section.mechanism.rules.contribution.rule2": {
-    "message": "价格翻倍时解锁比例≤1/6",
+    "message": "价格翻倍时解锁比例≤1/12",
     "description": "Value contribution rule 2"
   },
   "tokenomics.section.mechanism.rules.contribution.rule3": {
@@ -1463,11 +1463,11 @@
     "description": "Capital contribution rule 1"
   },
   "tokenomics.section.mechanism.rules.capital.rule2": {
-    "message": "投资部分价格和解锁比例通过谈判确定，≤1/5",
+    "message": "投资部分价格和解锁比例通过谈判确定，≤1/8",
     "description": "Capital contribution rule 2"
   },
   "tokenomics.section.mechanism.rules.capital.rule3": {
-    "message": "空投部分由具体活动计划确定，≤1/5",
+    "message": "空投部分由具体活动计划确定，≤1/8",
     "description": "Capital contribution rule 3"
   },
   "tokenomics.section.governance.subtitle": {
