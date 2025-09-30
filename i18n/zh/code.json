@@ -1351,7 +1351,7 @@
     "description": "Unlock requirements label"
   },
   "tokenomics.section.mechanism.unlock.requirement1": {
-    "message": "解锁比例不能超过20%",
+    "message": "解锁比例不能超过12.5%",
     "description": "Unlock requirement 1"
   },
   "tokenomics.section.mechanism.unlock.requirement2": {
