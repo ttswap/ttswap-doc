@@ -605,8 +605,7 @@ TTS is TTSWAP's platform token, used for governance, rewards, and participating 
 ---
 ### 📦 1. Total Supply and New Issuance Explanation
 
-- 📊 Total supply cap: 200 million TTS
-- 🪙 Initial minting: 50 million (all locked, allocated to different contribution roles)
+- 📊  Supply cap: 50 million (all locked, allocated to different contribution roles)
 - 🔁 Annual new issuance = (200 million - current unlocked amount) × 2%
 - 🎯 New token use: All used for rewarding liquidity providers, promoting platform development  
 >💡 New issuance only for liquidity mining, not flowing to founders or capital parties, eliminating "excessive issuance dump" risk. This rule is already fixed in the contract.
@@ -616,17 +615,17 @@ TTS is TTSWAP's platform token, used for governance, rewards, and participating 
 **⚛️ 1️⃣ Basic Rules**  
 - All tokens received by everyone are initially locked, cannot be used immediately.
 - Unlock condition: Token price rises to 2x the distribution price (e.g., if distributed at $0.05, must rise to $0.10 to start unlocking).
-- Each time can unlock maximum 20% of remaining portion, harvest a small basket at a time, cannot harvest all at once.
+- Each time can unlock maximum 12.5% of remaining portion, harvest a small basket at a time, cannot harvest all at once.
 
 ---
 **🧩 2️⃣ Four Role Distribution Methods** (Like different identities in a game)
 |Role | Who? | Unlock Speed | Unlock Rules | Example🌰 |  
 | ------- | ------------------- | ----- | -------------  | --------- |  
-|👨‍🚀 Founder | Project initiator, bears most risk | 🐢 Slowest | Can only unlock 1/12 each time price doubles | 1000 tokens → First unlock about 83 tokens | 
-|🤝 Partner A | Core team, early participation | 🚲 Slow | Unlock 1/10 each time, retains after leaving | 1000 tokens → First unlock 100 tokens | 
-|🤝 Partner B | Key members with continuous contribution | 🏍 Faster | Unlock 1/8 each time, ununlocked portion reclaimed if leaves | 1000 tokens → First unlock 125 tokens | 
-|💎 Value Contributor | Community members, technical/content/operational supporters | 🚗 Fast | Maximum unlock 1/6 each time, reclaimed if inactive | 1000 tokens → First unlock 166 tokens | 
-|💰 Capital Contributor | Investors, early airdrop recipients | ✈️ Fastest | Maximum unlock 1/5 each time, some immediately liquid | 1000 tokens → First unlock 200 tokens | 
+|👨‍🚀 Founder | Project initiator, bears most risk | 🐢 Slowest | Can only unlock 1/20 each time price doubles | 1000 tokens → First unlock about 50 tokens | 
+|🤝 Partner A | Core team, early participation | 🚲 Slow | Unlock 1/16 each time, retains after leaving | 1000 tokens → First unlock 62.5 tokens | 
+|🤝 Partner B | Key members with continuous contribution | 🏍 Faster | Unlock 1/14 each time, ununlocked portion reclaimed if leaves | 1000 tokens → First unlock 71.4 tokens | 
+|💎 Value Contributor | Community members, technical/content/operational supporters | 🚗 Fast | Maximum unlock 1/12 each time, reclaimed if inactive | 1000 tokens → First unlock 83 tokens | 
+|💰 Capital Contributor | Investors, early airdrop recipients | ✈️ Fastest | Maximum unlock 1/8 each time, some immediately liquid | 1000 tokens → First unlock 125 tokens | 
 
 ---
 **📌 3️⃣ Additional Notes**

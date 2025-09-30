@@ -436,21 +436,21 @@ The 4C Growth Community Token roles are divided into four categories: Founders, 
 
 #### 11.2.1 Founder Portion  
 
-The Founder portion is for the project initiators who provide significant human capital to develop the product, establish the brand, expand the market, recruit talent, and build the management system, while bearing substantial failure risks and enjoying the benefits. (Initial price is 0.05, price doubles, unlocking ratio is 1/10).  
+The Founder portion is for the project initiators who provide significant human capital to develop the product, establish the brand, expand the market, recruit talent, and build the management system, while bearing substantial failure risks and enjoying the benefits. (Initial price is 0.05, price doubles, unlocking ratio is 1/20).  
 
 #### 11.2.2 Partner Portion  
 
 The Partner portion is for members who, during the initial stages of the project, utilize their team's strong execution capabilities to overcome various difficulties, persist, and firmly believe in growing the community together.  
 
 1. Partner Portion Type A  
-   The initial price is confirmed upon member joining. When the token price doubles, the remaining portion is unlocked at a ratio of 1/8. The ununlocked portion is not burned if the member leaves the community.  
+   The initial price is confirmed upon member joining. When the token price doubles, the remaining portion is unlocked at a ratio of 1/16. The ununlocked portion is not burned if the member leaves the community.  
 
 1. Partner Portion Type B  
-   The initial price is confirmed upon member joining. When the token price doubles, the remaining portion is unlocked at a ratio of 1/6. The ununlocked portion is burned if the member leaves the community.  
+   The initial price is confirmed upon member joining. When the token price doubles, the remaining portion is unlocked at a ratio of 1/14. The ununlocked portion is burned if the member leaves the community.  
 
 #### 11.2.3 Value Contribution  
 
-The community provides token pre-allocation incentives for members contributing to community building. The initial price is the allocation price, and the unlocking ratio does not exceed 1/5 when the price doubles. Specific agreements and announcements will be made with relevant personnel. The allocated but ununlocked portion may be adjusted by the community based on achieved results. When a member no longer serves the community, the allocated but ununlocked portion will be reclaimed by the community.  
+The community provides token pre-allocation incentives for members contributing to community building. The initial price is the allocation price, and the unlocking ratio does not exceed 1/12 when the price doubles. Specific agreements and announcements will be made with relevant personnel. The allocated but ununlocked portion may be adjusted by the community based on achieved results. When a member no longer serves the community, the allocated but ununlocked portion will be reclaimed by the community.  
 
 1. Community Position Portion:  
    The position portion is determined by the importance of the roles within the community. This portion is allocated to the responsible persons of important positions, with the corresponding ratio determined by the community at the beginning of each year. The community may convert a certain portion to Partner Type A or Partner Type B for qualified and excellent responsible persons through community decision-making.  
@@ -462,6 +462,7 @@ The community provides token pre-allocation incentives for members contributing 
    Used for treasury, operations, activities, advisors, etc.  
 
 #### 11.2.4 Capital Contribution  
+the unlocking ratio does not exceed 1/8 when the price doubles.  
 
 1. Public Sale Portion (refer to the public sale plan):  
    Provides financial support for team building, product development, and liquidity building. (The public sale portion is fully unlocked and not locked).  
@@ -495,21 +496,17 @@ If the project unintentionally violates other projects' open-source licenses, pl
 Contract
 ├── TTSwap_Market.sol(BUSL-1.1)  
 ├── TTSwap_Token.sol(BUSL-1.1)
-├── TTSwap_StakeETH.sol(BUSL-1.1)
 ├── interfaces  
 │   ├── I_TTSwap_Market.sol(MIT)   
 │   ├── I_TTSwap_Token.sol(MIT)   
-│   └── I_TTSwap_StakeETH.sol(MIT)    
 └── libraries           
-   ├── L_Currency_Stake.sol (MIT)    
    ├── L_Currency.sol (MIT)    
    ├── L_Error.sol (MIT)     
    ├── L_Good.sol(BUSL-1.1)    
    ├── L_GoodConfig.sol(MIT)     
    ├── L_MarketConfig.sol(MIT)    
    ├── L_Proof.sol(BUSL-1.1)     
-   ├── L_SignatureVerification.sol(MIT)   
-   ├── L_Transient_Stake.sol (MIT)  
+   ├── L_SignatureVerification.sol(MIT)  
    ├── L_Transient.sol (MIT)  
    ├── L_TTSTokenConfig.sol (MIT)     
    ├── L_TTSwapUINT256.sol (MIT)     

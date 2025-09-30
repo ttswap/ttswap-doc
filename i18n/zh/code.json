@@ -1072,7 +1072,7 @@
     "description": "Partners role"
   },
   "tokenomics.section.distribution.partners.unlockRatio": {
-    "message": "≤1/16",
+    "message": "≤1/14",
     "description": "Partners unlock ratio"
   },
   "tokenomics.section.distribution.partners.description": {
@@ -1084,7 +1084,7 @@
     "description": "Type A partners name"
   },
   "tokenomics.section.distribution.partners.typeA.description": {
-    "message": "成员加入时确定初始价格，价格翻倍时解锁比例≤1/10，离开社区时解锁部分不销毁",
+    "message": "成员加入时确定初始价格，价格翻倍时解锁比例≤1/16，离开社区时解锁部分不销毁",
     "description": "Type A partners description"
   },
   "tokenomics.section.distribution.partners.typeB.name": {
@@ -1092,7 +1092,7 @@
     "description": "Type B partners name"
   },
   "tokenomics.section.distribution.partners.typeB.description": {
-    "message": "成员加入时确定初始价格，价格翻倍时解锁比例≤1/16，离开社区时解锁部分销毁",
+    "message": "成员加入时确定初始价格，价格翻倍时解锁比例≤1/14，离开社区时解锁部分销毁",
     "description": "Type B partners description"
   },
   "tokenomics.section.distribution.valueContributors.role": {

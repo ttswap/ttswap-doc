@@ -1298,7 +1298,7 @@
     "message": "Partners"
   },
   "tokenomics.section.distribution.partners.unlockRatio": {
-    "message": "≤1/16"
+    "message": "≤1/14"
   },
   "tokenomics.section.distribution.partners.description": {
     "message": "Core members who persisted and believed in the project during early stages"
@@ -1307,13 +1307,13 @@
     "message": "Type A Partners"
   },
   "tokenomics.section.distribution.partners.typeA.description": {
-    "message": "Initial price determined when member joins, unlock ratio ≤1/18 when price doubles, unlocked portion not destroyed when leaving community"
+    "message": "Initial price determined when member joins, unlock ratio ≤1/16 when price doubles, unlocked portion not destroyed when leaving community"
   },
   "tokenomics.section.distribution.partners.typeB.name": {
     "message": "Type B Partners"
   },
   "tokenomics.section.distribution.partners.typeB.description": {
-    "message": "Initial price determined when member joins, unlock ratio ≤1/16 when price doubles, unlocked portion destroyed when leaving community"
+    "message": "Initial price determined when member joins, unlock ratio ≤1/14 when price doubles, unlocked portion destroyed when leaving community"
   },
   "tokenomics.section.distribution.valueContributors.role": {
     "message": "Value Contributors"

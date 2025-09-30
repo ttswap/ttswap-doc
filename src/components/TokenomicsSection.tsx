@@ -53,7 +53,7 @@ export function TokenomicsSection() {
     {
       role: <Translate id="tokenomics.section.distribution.partners.role">Partners</Translate>,
       percentage: 12,
-      unlockRatio: <Translate id="tokenomics.section.distribution.partners.unlockRatio">≤1/16</Translate>,
+      unlockRatio: <Translate id="tokenomics.section.distribution.partners.unlockRatio">≤1/14</Translate>,
       description: <Translate id="tokenomics.section.distribution.partners.description">Core members who persisted and believed in the project during early stages</Translate>,
       color: "bg-secondary",
       icon: Handshake,
@@ -62,13 +62,13 @@ export function TokenomicsSection() {
         {
           name: <Translate id="tokenomics.section.distribution.partners.typeA.name">Type A Partners</Translate>,
           description: <Translate id="tokenomics.section.distribution.partners.typeA.description">
-            Initial price determined when member joins, unlock ratio ≤1/10 when price doubles, unlocked portion not destroyed when leaving community
+            Initial price determined when member joins, unlock ratio ≤1/16 when price doubles, unlocked portion not destroyed when leaving community
           </Translate>,
         },
         {
           name: <Translate id="tokenomics.section.distribution.partners.typeB.name">Type B Partners</Translate>,
           description: <Translate id="tokenomics.section.distribution.partners.typeB.description">
-            Initial price determined when member joins, unlock ratio ≤1/8 when price doubles, unlocked portion destroyed when leaving community
+            Initial price determined when member joins, unlock ratio ≤1/14 when price doubles, unlocked portion destroyed when leaving community
           </Translate>,
         },
       ],
@@ -103,7 +103,7 @@ export function TokenomicsSection() {
     {
       role: <Translate id="tokenomics.section.distribution.capitalContributors.role">Capital Contributors</Translate>,
       percentage: 24,
-      unlockRatio: <Translate id="tokenomics.section.distribution.capitalContributors.unlockRatio">≤1/16</Translate>,
+      unlockRatio: <Translate id="tokenomics.section.distribution.capitalContributors.unlockRatio">≤1/14</Translate>,
       description: <Translate id="tokenomics.section.distribution.capitalContributors.description">Investors providing financial support</Translate>,
       color: "bg-accent",
       icon: DollarSign,
@@ -610,7 +610,7 @@ export function TokenomicsSection() {
                       variant="outline"
                       className="group-hover/ratio:border-tertiary/40 group-hover/ratio:scale-110 transition-all duration-300"
                     >
-                      ≤8.3%
+                      ≤7.1%
                     </Badge>
                   </div>
                   <ChevronDown

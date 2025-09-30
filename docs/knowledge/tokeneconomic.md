@@ -18,11 +18,11 @@ createTime: 2025/06/08 23:48:54
 ### 🌱 2. Token Distribution Plan
 | Role Type | Allocation | Unlock Rules | Special Notes |
 |-----------|------------|--------------|---------------|
-| 👨‍🚀 Founder | 20% | Unlock 1/12 each 2x price increase | Bears highest risk, strongest alignment |
-| 🤝 Partner A | 12% | Unlock 1/10 each increase | Core team, retains rights after leaving |
-| 🤝 Partner B | 0% | Unlock 1/8 each increase | Continuous contribution, forfeits on leaving |
-| 💎 Value Contributors | 44% | Max unlock 1/6 each increase | Community members, inactive rights revoked |
-| 💰 Capital Contributors | 24% | Max unlock 1/5 each increase | Investors, some immediately liquid |
+| 👨‍🚀 Founder | 20% | Unlock 1/20 each 2x price increase | Bears highest risk, strongest alignment |
+| 🤝 Partner A | 12% | Unlock 1/16 each increase | Core team, retains rights after leaving |
+| 🤝 Partner B | 0% | Unlock 1/14 each increase | Continuous contribution, forfeits on leaving |
+| 💎 Value Contributors | 44% | Max unlock 1/12 each increase | Community members, inactive rights revoked |
+| 💰 Capital Contributors | 24% | Max unlock 1/8 each increase | Investors, some immediately liquid |
 
 #### 📝 Detailed Role Descriptions
 ##### 👨‍🚀 Founder
@@ -39,13 +39,13 @@ Partners are divided into A and B types, both important early supporters of the 
 
 **🎖️ Partner A Type**
 - 💰 Initial price confirmed upon joining
-- 📊 Price doubling unlocks 1/10 of remaining allocation
+- 📊 Price doubling unlocks 1/16 of remaining allocation
 - 🛡️ Unlocked portion not destroyed upon leaving community
 - ⏰ Can hold rights long-term
 
 **🏃‍♂️ Partner B Type**
 - 💰 Initial price confirmed upon joining
-- 📊 Price doubling unlocks 1/8 of remaining allocation
+- 📊 Price doubling unlocks 1/14 of remaining allocation
 - ❌ Unlocked portion destroyed upon leaving community
 - 🔄 Must continuously contribute to community
 
@@ -91,11 +91,11 @@ Provide funding support for project development, including:
 #### 🎯 Unlock Speed Comparison
 | Role | Unlock Speed | Unlock Ratio | Binding Strength |
 |------|--------------|--------------|------------------|
-| Founder | 🐢 Slowest | 1/12 | Strongest |
-| Partner A | 🚲 Slow | 1/10 | Strong |
-| Partner B | 🏍 Moderate | 1/8 | Medium |
-| Value Contributors | 🚗 Fast | 1/6 | Weak |
-| Capital Contributors | ✈️ Fastest | 1/5 | Weakest |
+| Founder | 🐢 Slowest | 1/20 | Strongest |
+| Partner A | 🚲 Slow | 1/16 | Strong |
+| Partner B | 🏍 Moderate | 1/14 | Medium |
+| Value Contributors | 🚗 Fast | 1/12 | Weak |
+| Capital Contributors | ✈️ Fastest | 1/8 | Weakest |
 
 ### 💰 4. Token Use Cases
 1. 🏛️ **Governance Rights**
