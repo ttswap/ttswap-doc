@@ -1,537 +1,467 @@
+---
+lang: zh-CN
+title: 📖TTSWAP 技术白皮书
+description: TTSWAP 是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。
+createTime: 2025/05/20 23:47:01
+---
 
-## 1 Overview  
 
-TTSWAP (token-token swap) is an automated market-making protocol built on EVM-compatible blockchains, meaning it does not rely on centralized institutions or individuals to conduct transactions. Its core principle is to automatically trigger the transfer of market value based on user behavior, thereby creating a protocol based on a constant value trading model.  
+## 1 概要  
 
-This project's whitepaper explains the design logic of TTSWAP, covering the following aspects:  
+TTSWAP(token-token swap)是建立在支持EVM的区块链上的自动做市协议，意味着它不依赖于中心化的机构或个人来进行交易。它的核心原理是根据用户的行为，自动触发市场价值的转移，形成新的价格，从而构建了一个基于恒定价值交易的自动做市协议。  
 
-1. Token Trading: Users can directly exchange one token for another without needing an intermediary token.  
-2. Value Token Investment and Withdrawal: Users can invest in specific value tokens and withdraw their investments when needed.  
-3. Regular Token Investment and Withdrawal: In addition to value tokens, users can also invest in regular tokens and withdraw their investments at any time.
-4. Token Fee Generation and Distribution: Fees generated during transactions are distributed according to specific rules to incentivize more participants to join the market.  
-5. Token Economic Model: Designed with the aim of safeguarding the rights and interests of all members (including regular users, marketers, service providers, community builders, etc.), the model outlines the token distribution, unlocking details, and associated rights.  
+白皮书解释TTSWAP的设计逻辑，涵盖以下几个方面：  
 
-In summary, TTSWAP provides a simple, transparent, and efficient cryptocurrency trading protocol for ordinary users, using an innovative AMM logic—the constant value trading model. It aims to create a convenient, secure, and low-GAS fee protocol.  
+1. Token交易：用户使用Token直接换取任何Token，而不需要通过其他中间Token中转。  
+2. 价值Token投资与撤资：用户可以投资特定的价值Token，并在需要时撤回他们的投资。  
+3. 普通Token投资与撤资：除了价值Token外，用户也可以投资普通Token，并随时撤回他们的投资。  
+4. Token手续费的产生与分配：在交易过程中产生的手续费会按照一定的规则进行分配，以激励更多的人参与到这个协议中来。  
+5. 代币经济协议：以维护所有代币持有者(普通用户、市场推广者、服务提供者、社区建设者等)的权益为宗旨的目标下，设计的代币分配，解锁细则，与代币持有者的权利。
 
-## 2 Features
+总之，TTSWAP为普通用户提供了一个简单、透明、高效的加密货币交易协议，这个协议使用的是一个革新地AMM逻辑——恒定价值交易协议。旨在打造一个方便、安全、低GAS费用的协议。
+同时TTSWAP社区也期望打造公平，公正，透明的去中心化社区。
 
-1. Constant Value Trading Model
-The core idea of this model is to ensure that the value of the transaction remains constant throughout the process. This means that regardless of when the transaction occurs, it objectively reflects the market value of the tokens, allowing for free, simple, and fast token trading.
+## 2 特点
 
-2. Direct Trading Without Intermediaries  
-On this protocol, any two tokens can be traded directly without needing to convert one token into an intermediary token first. This direct trading model simplifies the transaction process, saving time and costs.
+1. 恒定价值交易协议  
+  这个协议的核心思想是确保交易的价值在整个过程中保持恒定，这意味着无论交易何时进行，都能客观地反映出币种的市场价值，这可让Token自由、简单、快速地交易。
 
-3. No Slippage Trading  
-Slippage refers to the phenomenon where the transaction price deviates from expectations due to market price fluctuations during the transaction. In this protocol, as long as the transaction amount is below a specific threshold, there will be no price slippage, meaning the transaction is stable and reliable under certain conditions.
+1. 集中流动性，直接交易  
+无需在多个传统币对中添加，只需要给协议中代币添加流动性，流动性能与协议中其它任何代币共享，用户直接兑换代币，避免流动性碎片化，提升了交易体验。
 
-4. No Impermanent Loss  
-Impermanent loss refers to the loss suffered by liquidity providers due to market fluctuations when providing liquidity. This trading model avoids the issue of impermanent loss through its design logic, meaning liquidity providers or token investors can maintain the original value of their investment when withdrawing and also earn profits from providing liquidity.
+1. 低滑点交易  
+  滑点是指在交易过程中由于市场价格波动导致的交易价格偏离预期的现象。在这个协议中，通过流动性增强和集中流动性,显著降低交易滑点。
 
-5. Low Gas Fees  
-Gas fees are the costs required to execute smart contracts on the Ethereum network. Due to the relatively simple logic and low computational requirements of this trading model, Gas consumption is low, allowing users to save significant Gas fees during transactions, making trading more economical and efficient. Compared to other trading models, it can save 50% to 90% in Gas fees.
+1. 没有无常损失  
+  无常损失是指流动性提供者在提供流动性时因市场波动而遭受的损失。这个交易协议通过其设计逻辑上避免了无常损失的问题，这意味着流动性提供者或者Token投资者在撤资时可以保持原有投资的价值，并且还能获得提供流动性所产生的收益。
 
-6. Fee Distribution by Role  
-On the protocol, fees are distributed according to the different roles of participants, including merchants (token sellers), token investors (liquidity providers), gateways, referrals, and ordinary users. Anyone has the opportunity to participate in the protocol's operations and share the profits from the protocol's development, thereby incentivizing more users to participate in the protocol's construction.
+1. 低Gas费用  
+  Gas费用是在以太坊网络上执行智能合约时需要支付的费用。由于这个交易协议的逻辑相对简单且运算量较少，因此Gas消耗较低，用户在交易过程中可以节省大量的Gas费用，让交易更加经济高效。相比于其他交易协议，可以节省50%至90%的Gas费用。
 
-7. Native ETH Support  
-The protocol supports direct exchange of native ETH for any token.
+1. 手续费按角色分配  
+  在协议上，手续费根据参与者的不同角色进行分配，这包括商家(Token卖家)、Token投资者（流动性提供者）、门户、推荐者和普通用户。任何人都有机会参与到协议的运作中，并分享协议发展所带来的收益，从而激励更多的用户参与到协议建设中。
 
-8. Proof of Investment Secondary TTS Mining  
-When users invest in tokens, the protocol automatically mines for them based on the investment value.
+1. native ETH支持  
+  协议中支持Native ETH直接兑换成任何代币。
 
-9. Community-Driven  
-TTSWAP embraces the community, driving project improvements and refinements through community involvement.
+1. 投资证明二次TTS挖矿  
+  当用户投资了Token后，协议会根据投资价值自动为用户进行挖矿。
 
-## 3 Constant Value Trading Model Principle
+1. 价格导向型代币经济模型  
+  TTS代币采用创新的价格导向型解锁模型，通过价格翻倍解锁机制和社区盈利销毁，确保代币价值与项目发展紧密绑定。同时，通过差异化的解锁规则，激励不同角色为生态做出贡献，实现多方共赢。
 
-### 3.1 Constant Value Trading Model
+## 3 价值守恒交易横型原理
 
-$$
-\begin{align}
-   
-    trade\ before(V_a+V_b+....+V_z)&=trade\ after(V_a+V_b+....+V_z)  \\
-    V_a:Record\ token\ a's&\ market\ value  \\
-    Q_a:Record\ token\ a's&\ quantity  \\
-    Δa:Record\ token\ a's&\ change\ amount(buy\ or\ sell )  \\
-    V_b:Record\ token\ b's&\ market\ value   \\
-    Q_b:Record\ token\ b's&\ quantity  \\
-    Δb:Record\ token\ b's&\ change\ amount(buy\ or\ sell )  \\
-    V_z:Record\ token\ z's&\ market\ value   \\
-    Q_z:Record\ token\ z's&\ quantity  \\
-    Δz:Record\ token\ z's&\ change\ amount( buy\ or\ sell )   \\
-\end{align}
-$$
-
-Market value measures the degree of user demand for tokens in the protocol.  
-When users sell tokens, it indicates a decrease in demand for the tokens in the protocol, leading to a decrease in the token's market value.  
-When users buy tokens, it indicates an increase in demand for the tokens in the protocol, leading to an increase in the token's market value.
-
-#### 3.1.1 Calculation Logic
-
-* State of Token~a~ and Token~b~ before the transaction  
+### 3.1 恒定价值交易协议
 
 $$
 \begin{align}
-    a's\ market\  value\ in\ protocol:V_a \\
-    a's\ quantity\ in\ protocol:Q_a \\
-    b's\ market\ value\ in\ protocol:V_b \\
-    b's\ quantity\ in\ protocol:Q_b \\
-\end{align}
-$$
-alter trading  Δa for Δb
-$$
-\begin{align}
-    a's\ market\ value\ in\ protocol:V_a-{V_a \over Q_a}*Δa \\
-    a's\ quantity\ in\ protocol:Q_b+Δb \\
-    b's\ market\ value\ in\ protocol:V_a+{V_a \over Q_a}*Δa \\
-    b's\ quantity\ in\ protocol:Q_b-{ {V_a \over Q_a}*Δa*Q_b \over V_b}   \\
-    receive\ Δb={ {V_a \over Q_a}*Δa*Q_b \over V_b} \\
+    商品交易前的价值=商品交易后的价值  \\
+    V_a:表示协议中Token_A&的市场价值  \\
+    Q_a:表示协议中Token_A&的数量  \\
+    Δa:表示协议中Token_A&的购买量或者出售量  \\
+    V_b:表示协议中Token_B&的市场价值  \\
+    Q_b:表示协议中Token_B&的数量  \\
+    Δb:表示协议中Token_B&的购买量或者出售量  \\
+    V_z:表示协议中Token_Z&的市场价值  \\
+    Q_z:表示协议中Token_Z&的数量  \\
+    Δz:表示协议中Token_Z&的购买量或者出售量  \\
 \end{align}
 $$
 
-### 3.2 Market Value of Tokens
+>交换原因是数量与价值不匹配,通过市场手段自动匹配
+  
 
-When a token is added to the protocol, its market value is the same as its real value.  
-Example: When 2000 Tokena1 is added to the protocol, its real value is 2000, so the market value of the token is 2000.  
-![Alt text](./whitepaper_image_en/TOKENSTATEEN.png)  
-Definition:
-Market value V~a1~: 2000
-Token quantity Q~a1~: 2000.  
-Unit value P~a1~: 1, the market value per unit quantity.
+#### 3.1.1 在相同价值的情况下
 
-### 3.3 Relationship Between Tokens in the Market and User Trading Behavior
+$$
+Δb = \frac{Q_b}{Q_a + Δa} \cdot  Δa
+$$
+>把商品b根据a的数量进行拆分,然后兑换Δa份出来
+#### 3.1.2 推导在价值不相同的情况下,兑换公式
+$$
+ΔV = \frac{V_a}{Q_a + {{Δa}\over 2}} \cdot Δa \\
+$$
+$$
+Δb = \frac{Q_b}{V_b + {{ΔV}\over 2}} \cdot ΔV \\
+$$
+#### 3.1.3 交易后更新代币A和B的价值与数量
 
-* Example 1: a user spends 1000 to purchase Token~a~.
+|      | Token A    | Token B    |
+| ---- | ---------- | ---------- |
+| 价值 | $V_a$      | $V_b$      |
+| 数量 | $Q_a + Δa$ | $Q_b - Δb$ |
 
-When a user purchases, it indicates an increase in the token's market value V. V~a1~=2000+1000=3000  
-When a user purchases, the token quantity Q in the protocol decreases. Q~a1~=2000-1000=1000  
-The unit value P of the token in the protocol changes to P~a1~=3  
-User purchases lead to an increase in the token's unit value.  
 
-* Example 2: a user sells 1000 to purchase Token~a~.
+#### 3.1.4：交易后形成新的兑换比例
 
-When a user sells, it indicates a decrease in the token's market value V. V~a2~=2000-1000=1000  
-When a user sells, the token quantity Q in the protocol increases. Q~a2~=2000+1000=3000  
-The unit value P of the token in the protocol changes to P~a2~=0.3333  
-User sales lead to a decrease in the token's unit value.  
+* 交易完成后，新的边际价值：
 
-As shown below  
-![Alt text](./whitepaper_image_en/TOKEN_bUYSELL_EN.png)
+$$
+P_a^{\text{new}} = \frac{V_a}{Q_a + Δa}
+\quad , \quad
+P_b^{\text{new}} = \frac{V_b}{Q_b - Δb}
+$$
 
-### 3.4 Relationship Between User Behavior and Token State in the Market
+* 新的兑换比例：
 
-User sales and purchases cause changes in the token's market value V and token quantity Q, and the token's price also changes accordingly. The changes in the token's market value V and token quantity Q are shown in the figure.
-![Alt text](./whitepaper_image_en/TOKEN_BUYSELL_MORE_EN.png)
+$$
+R_{a \to b} = \frac{P_a^{\text{new}}}{P_b^{\text{new}}}
+$$
 
-### 3.5 Relationship Between Two Items in the Market
 
-There are two tokens in the market, Token~a~ (2000,4000) and Token~b~ (4000,2000).
+## 4 Token
 
-* A user uses 500 Token~a~, corresponding to a market value of 1000. The market value of 1000 corresponds to 1000 Token~b~.  
+### 4.1 Token介绍
 
-When a user purchases 500 Token~a~, they spend 1000 Token~b~, and the tokens in the protocol move from position a to position a1 in the figure, and from position b to position b1.  
-When a user sells 500 Token~a~, they receive 1000 Token~b~, and the tokens in the protocol move from position a to position a2 in the figure, and from position b to position b2.  
-![Alt text](./whitepaper_image_en/TOKEN_TWO_RELATION_EN.png)  
-Because the positions change, P(a) and P(b) also change, and the price of Token~b~ relative to Token~a~ changes. If there is a difference with the external market price, other transactions will promote the unification of the market price and the external market price.  
->Note: If the purchase quantity is too large relative to the market data, it will cause strong fluctuations in the relative price of the two tokens. Therefore, each transaction will be split into multiple small orders.
+关于Token的描述：协议拥有市场价值3000的15枚Token~A~，那么Token就有三个基础属性：市场价值,当前数量,投资数量。如下图  
 
-### 3.6 Relationship Between Multiple Tokens in the Market
+![Alt text](whitepaper_image_cn/TOKEN_INTRO.png)
 
-Any two tokens will change positions due to user transactions, causing changes in their positions relative to other tokens and resulting in synchronized price changes.  
-![Alt text](./whitepaper_image_en/TOKEN_MULTI_EN.png)
+* 名词解释  
+**市场价值**：用来衡量代币的市场价值,代币的市场价值在交易过程不发生变化。  
+**当前数量**：记录协议中Token的当前数量和代币产生的手续费。  
+**投资数量**：记录协议中Token的总投资数量和代币产生的手续费。  
+当用户认为代币的价值偏低(即市场价值/当前数量),用户会购入此代币.  
+当用记认为代币的价值低高(即市场价值/当前数量),用户会出售此代币.  
 
-### 3.7 Relationship Between Token Transaction Size and Price in the Market
+可以如下图描述其它任何Token，例如.  
 
-The token quantity in the market is 100,000,000, and the market value is 100,000,000.
+![Alt text](whitepaper_image_cn/TOKENS.png)
 
- | Transaction Size | Price Change   |
- | ---------------- | -------------- |
- | 10               | 0.000000200000 |
- | 50               | 0.000001000000 |
- | 100              | 0.000002000002 |
- | 500              | 0.000010000050 |
- | 1000             | 0.000020000200 |
- | 5000             | 0.000100005000 |
- | 10000            | 0.000200020002 |
- | 50000            | 0.001000500250 |
- | 100000           | 0.002002002002 |
- | 500000           | 0.010050251256 |
- | 1000000          | 0.020202020202 |
- | 5000000          | 0.105263157895 |
+### 4.2 Token分类
 
-### 3.8 No-Slippage Threshold (Transaction Threshold)
+| Token分类 | 说明                                       | 交易是否产生手续费 | 是否可以单独投资自己 | 是否可以与其它价值Token一同投资 |
+| --------- | ------------------------------------------ | ----------------------- | ------------------------- | ------------------------------------ |
+| 元Token   | 协议中添加的首个Token                      | 是                      | 是                        | 否                                   |
+| 价值Token | Token得到市场认可，有良好的生态及团队 | 是                      | 是                        | 否                                   |
+| 普通Token | 个人新增Token，市场价值待确认         | 是                      | 否                        | 是                                   |
 
-To avoid user transactions causing a run on the protocol's tokens, each token is initialized with a split number, and each split size is the no-slippage threshold for that token. Therefore, when a user transacts, if the transaction value is less than the token's no-slippage threshold, there will be no impermanent loss. If the transaction is larger than the token's no-slippage threshold, the transaction will be split into multiple orders based on the threshold.  
-![Alt text](./whitepaper_image_en/TOKEN_NOSLIP_EN.png)  
+### 4.3 Token配置
 
-## 4 Tokens
+Token配置占255位
 
-### 4.1 Token Introduction
+#### 4.3.1 市场可以调整
 
-Description of the token: The protocol has 15 Token~a~ with a market value of 3000, so the token has two attributes: market value and current quantity. As shown below  
-![Alt text](./whitepaper_image_en/TOKEN_INTRO_EN.png)
+| id  | 配置项             | 位数 | 单位     | 最大值 | 最小值 | 起始位 | 结束位 | 说明 |
+| --- | ------------------ | ---- | -------- | ------ | ------ | ------ | ------ | ---- |
+| 1   | 市场价值Token      | 1    | BOOLEAN  | 1      | 0      | 1      | 1      |      |
+| 2   | 预留               | 1    | BOOLEAN  | 1      | 0      | 2      | 2      |      |
+| 3   | Token投资者分佣    | 3    | 十分之一 | 7      | 1      | 3      | 5      |      |
+| 4   | 代币运营者分佣     | 4    | 百分之二 | 7      | 1      | 6      | 9      |      |
+| 5   | 门户分佣           | 3    | 百分之四 | 7      | 1      | 10     | 12     |      |
+| 6   | 推荐者分佣         | 5    | 百分之一 | 31     | 1      | 13     | 17     |      |
+| 7   | 用户分佣           | 5    | 百分之一 | 31     | 1      | 18     | 22     |      |
+| 8   | 协议费率           | 5    | 百分之一 | 31     | 1      | 23     | 27     |      |
+| 9   | 最大流动性加强倍数 | 6    | 1倍      | 63     | 1      | 28     | 33     |      |
+| ... |                    |      |          |        |        |        |        |      |
+> 备注:分佣比例的和为100
+#### 4.3.2 用户可以配置
 
-* Terminology Explanation
-**Market Value**: Used to measure the degree of user demand for the protocol's tokens. If a user purchases a token, it indicates an increase in demand for that token, and thus the token's market value increases. Conversely, if a user starts selling a token, it indicates a decrease in demand for that token, and thus the token's market value decreases.
-**Current Quantity**: Records the current quantity of tokens in the protocol.  
+| id  | 配置项         | 位数 | 单位     | 最大值 | 最小值 | 起始位 | 结束位 | 说明          |
+| --- | -------------- | ---- | -------- | ------ | ------ | ------ | ------ | ------------- |
+| 1   | 投资费率       | 6    | 万分之一 | 63     | 0      | 34     | 39     | (0~63)/10000  |
+| 2   | 撤资费率       | 6    | 万分之一 | 63     | 0      | 40     | 45     | (0~63)/10000  |
+| 3   | 购买费率       | 7    | 万分之一 | 127    | 0      | 46     | 52     | (0~127)/10000 |
+| 4   | 出售费率       | 7    | 万分之一 | 127    | 0      | 53     | 59     | (0~127)/10000 |
+| 5   | 流动性加强倍数 | 10   | 20       | 1023   | 0      | 64     | 69     | (1~1023)      |
+| 6   | 撤资切片数     | 10   | 1        | 1023   | 0      | 70     | 79     | (1~1023)      |
 
-* Other tokens can be described as follows, for example  
-![Alt text](./whitepaper_image_en/TOKEN_EN.png)
 
-### 4.2 Token Classification
+## 5 Token交换
 
-| Token Classification | Description                                                 | Do Transactions Generate Fees | Can It Be Invested Alone | Can It Be Invested with Other Value Tokens |
-| -------------------- | ----------------------------------------------------------- | ----------------------------- | ------------------------ | ------------------------------------------ |
-| Meta Token           | The first token added to the market                         | Yes                           | Yes                      | No                                         |
-| Value Token          | Tokens recognized by the market, with good ecology and team | Yes                           | Yes                      | No                                         |
-| Regular Token        | Personally added tokens, with market value to be confirmed  | Yes                           | No                       | Yes                                        |
+Token的交换实际上就是用户用自己手里的Token~a~去交换市场上的Token~b~。当用户选择放弃Token~a~时，这时就计算Token~a~的市场价值,从而选择购买等市场价值的Token~b~时.  
 
-### 4.3 Token Configuration
+![token swap image](whitepaper_image_cn/TOKEN_SWAP.png)
 
-Token configuration occupies 255 bits
+如图所示，当用户放弃Token~a~时，协议中的Token~a~数量增加，而Token~a~的单位价值降低。  
+而当用户获得Token~b~时，协议中的Token~b~数量减少，而Token~b~的单位价值增加。  
+这就导致了相对于Token_a，Token~b~的价格上升。因此，如果再次进行交易，用相同数量的Token~a~只能换取比上次少一些的Token~b~。
 
-#### 4.3.1 Adjustable by the Market
+### 5.1 计算过程
 
-| id  | Configuration Item | Bits | Unit    | Max Value | Min Value | Start Bit | End Bit | Description    |
-| --- | ------------------ | ---- | ------- | --------- | --------- | --------- | ------- | -------------- |
-| 1   | Market Value Token | 1    | BOOLEAN | 1         | 0         | 1         | 1       |                |
-| 2   | Reserved           | 28   | 1       | 1023      | 0         | 2         | 27      | Reserved Field |
-| ... |||||||||
-
-#### 4.3.2 Configurable by Users
-
-| id  | Configuration Item       | Bits | Unit               | Max Value | Min Value | Start Bit | End Bit | Description         |
-| --- | ------------------------ | ---- | ------------------ | --------- | --------- | --------- | ------- | ------------------- |
-| 1   | Flash Loan Fee Rate      | 6    | One ten-thousandth | 63        | 0         | 28        | 33      | Flash Loan Fee Rate |
-| 2   | Investment Fee Rate      | 6    | One ten-thousandth | 63        | 0         | 34        | 39      | (0~63)/10000        |
-| 3   | Withdrawal Fee Rate      | 6    | One ten-thousandth | 63        | 0         | 40        | 45      | (0~63)/10000        |
-| 4   | Purchase Fee Rate        | 7    | One ten-thousandth | 127       | 0         | 46        | 52      | (0~127)/10000       |
-| 5   | Sale Fee Rate            | 7    | One ten-thousandth | 127       | 0         | 53        | 59      | (0~127)/10000       |
-| 6   | Transaction Slice Number | 10   | 64                 | 1023      | 0         | 60        | 69      | (1~1023)X64         |
-| 7   | Withdrawal Slice Number  | 10   | 1                  | 1023      | 0         | 70        | 79      | (1~1023)            |
-
-## 5 Token Exchange  
-
-Token exchange essentially involves users swapping their Token~a~ for Token~b~ in the market. When users choose to give up Token~a~, it indicates a decrease in the market value of Token~a~, as users no longer need it. Conversely, when users choose to purchase Token~b~, it signifies an increase in the market value of Token~b~, as users desire it.  
-![Alt text](./whitepaper_image_en/TOKEN_SWAP.png)  
-
-As shown in the figure, when users give up Token~a~, the quantity of Token~a~ in the protocol increases, while its market value decreases. When users acquire Token~b~, the quantity of Token~b~ in the protocol decreases, while its market value increases. This results in an increase in the price of Token~b~ relative to Token~a~. Therefore, if another transaction is conducted, the same amount of Token~a~ will yield fewer Token~b~ than before.  
-
-### 5.1 Calculation Process
+#### 5.1.1 计算Token~a~对应的市场价值  
 
 $$
 \begin{align}
-    {V_a\over Q_a}*Δa&={V_b\over Q_b}*Δb  \\
-    before\ trading: P_{ab}&={ {V_a*Q_b} \over {Q_a*V_b}}=4 \\
-    ΔB={ {V_a*Δa*Q_b} \over {Q_a*V_b}}&={ {40000*2500*40000} \over {20000*20000}}=10000 \\
-    V_a=V_a-{V_a\over Q_a}*Δa&=40000-{40000\over 20000}*2500=35000\\
-    Q_a=Q_a+Δa&=20000+2500=22500 \\
-    V_b=V_b+{V_b\over Q_b}*ΔB&=20000+{20000\over 40000}*10000=25000\\
-    Q_b=Q_b+ΔB&=40000-10000=30000 \\
-    after\ trading: P_{ab}&={ {V_a*Q_b} \over {Q_a*V_b}}=1.86666 \\
+    价值(RV)&={V_a *Δa\over {Q_a+{Δa\over 2}}} \\
+    价值(RV)&={40000 *2500\over {20000+{2500\over 2}}}  \\
+    价值(RV)&=4705.8  \\
 \end{align}
 $$
 
-## 6 Token Investment and Withdrawal
+#### 5.1.2 计算等市场价值的Token b  
 
-### 6.1 Recording Investment and Withdrawal
+$$
+\begin{align}
+    数量Δb&={Q_b*RV\over {V_b+{RV\over 2}}} \\
+    数量Δb&= {40000*4705.8\over {20000+{4705.8\over 2}}} \\
+    数量Δb&=8420.9 \\
+\end{align}
+$$
 
-Token transactions in the market require users to provide liquidity. Therefore, the total market value and total quantity of token investments must be recorded.  
-![Alt text](./whitepaper_image_en/TOKENINVESTSTATE_EN.png)  
+#### 5.1.3 结果
+用户花费2500个Token a获得8420.9个 Token b.收取用户1个token A 1,2个token B作为手续费.  
+![alt text](whitepaper_image_cn/TOKEN_SWAP_RESULT.png)
+### 5.2 关于合约  验证
+#### 5.2.1 验证1:公平性
+用户使用 Token~a~ 购买 Token~b~ 后,再使用购买到的Token~b~再到协议中能购买到最初数量的Token~a~
+>参见 modified_swap_without_fee:testswapA2B2Awithoutfee[测试合约地址](https://github.com/ttswap/ttswap-core/blob/5326e7cef7305d00fe9b909064113becc58968bd/test/modified_swap_without_fee.sol)
+#### 5.2.2 验证2:合理性
+用户购买Token~b~时,分多笔订单与一次性成交的结果是一致的.
+>参见 modified_swap_without_fee:testswapA2B2C2Awithoutfee[测试合约地址](https://github.com/ttswap/ttswap-core/blob/5326e7cef7305d00fe9b909064113becc58968bd/test/modified_swap_without_fee.sol)
+#### 5.2.3 验证3:连接性
+用户使用a个 Token~a~ 购买 Token~b~,再使用获得Token~b~购买 Token~c~,再使用获得的 Token~c~购买 Token~a~.最终得到 Token~a~ = 最初花费Token~a~     
+>参见 modified_swap_without_fee:testswapA2B_part1 testswapA2B_part1 [测试合约地址](https://github.com/ttswap/ttswap-core/blob/5326e7cef7305d00fe9b909064113becc58968bd/test/modified_swap_without_fee.sol)
 
-* Terminology Explanation  
-Investment Value: The total market value of tokens at the time of user investment.  
-Investment Quantity: The total quantity of tokens at the time of user investment.  
+## 6 Token投资与撤资
 
-### 6.2 Value Token Investment and Withdrawal Process
+### 6.1 记录投资和撤资
 
-![Alt text](./whitepaper_image_en/TOKENVALUE_INVORDEV_EN.png)  
+协议中Token的交易，需有用户提供流动性。就应记录Token投资总市场价值与投资总数量。  
 
-* User Investment in Value Tokens  
-  Users calculate the market value corresponding to the investment quantity based on the current state of the value token. This facilitates profit calculation during withdrawal.  
+![Alt text](whitepaper_image_cn/TOKEN_INVEST_STATE.png)  
 
-* User Withdrawal of Value Tokens  
-  Users calculate the profits generated from the investment based on the investment records.  
+* 名词解释  
+**投资价值**：用户投资时Token的市场总价值。  
+**投资数量**：用户投资时Token的总数量。  
 
-> When withdrawing tokens, the withdrawal quantity must be less than the total token quantity divided by the withdrawal slice number, and the market value corresponding to the withdrawal quantity must be less than the total token value divided by the withdrawal slice number.  
+### 6.2 Token投资与撤资流程  
 
-### 6.3 Regular Token Investment  
+![Alt text](whitepaper_image_cn/TOKEN_INVESTORDEVIST.png)
 
-![Alt text](./whitepaper_image_en/TOKEN_NORMAL_INVEST.png)  
+* 用户投资价值Token
+  用户根据当前价值Token的状态，计算投资数量对应的市场价值。方便撤资时计算收益。
+* 用户撤资价值Token  
+  用户根据投资记录，计算投资产生的收益
 
-* User Investment in Regular Tokens  
-  Due to the high volatility of regular tokens' market value, arbitrage within the protocol may occur, leading to losses for token investors. To prevent this, investments must be made in value tokens of equivalent market value. Both the invested value tokens and regular tokens generate investment returns. Refer to the fee distribution section for details.  
+>撤资Token时，取消数量＜Token当前的总数量/撤资切片数 和 取消数量对应的市场价值＜Token总价值/撤资切片数。
 
-### 6.4 Regular Token Withdrawal  
+### 7.1 Token手续费记录方式
 
-![Alt text](./whitepaper_image_en/TOKEN_NORMAL_DIVEST.png)  
+  **手续费**=每次交易产生的手续费都会记录到代币的当前数量和投资数量中去
 
-* User Withdrawal of Regular Tokens  
-  Based on the investment records, calculate the profits from regular tokens and invested tokens. Refer to the fee distribution section for details.  
-  When withdrawing tokens, the withdrawal quantity or the market value corresponding to the withdrawal quantity must be less than the total token quantity or total value divided by the maximum withdrawal ratio.  
+### 7.2 手续费来源
 
-## 7 Token Fees  
+![Alt text](whitepaper_image_cn/TOKEN_FEE_SOURCE.png)  
 
-Fees are generated when users conduct transactions or make investments. These fees are stored in a pool and distributed when users remove liquidity.  
+手续费(实际手续费)的来源是根据Token的费率，当用户进行操作时，计算得到。
 
-### 7.1 Token Fee Recording Method  
+### 7.3 手续费分配
 
-![Alt text](./whitepaper_image_en/TOKENFEESTATE_EN.png)  
+![Alt text](whitepaper_image_cn/TOKEN_FEE_ALLOCATION.png)  
 
-* Terminology Explanation  
-  Total Fees = Actual Fees Generated + Constructed Fees  
-  Constructed Fees = Virtual fees introduced to calculate user investment profits, not actual fees. Refer to sections 7.4 and 7.5 for details.  
+协议中涉及协议技术、门户运营、推荐人、用户以及流动性提供者。协议会合理分配利润。  
+其中流动性提供者的手续费分配参见 7.4与7.5手续费流程  
 
-### 7.2 Fee Sources  
+* 如果用户填写了推荐者。  
+按用户的相关角色进行实时分配。  
 
-![Alt text](./whitepaper_image_en/TOKENFEESOURCE_EN.png)  
-Fees (actual fees) are generated based on the token's fee rate when users perform operations.  
+* 如果用户未填写推荐者。  
+手续费分配中用户所占比例划归于代币管理员。  
+手续费分配中推荐者所占比例划归于门户角色。  
 
-### 7.3 Fee Distribution  
+### 7.4 手续费计算流程(投资与撤资)  
 
-![Alt text](./whitepaper_image_en/TOKENFEEALLOCATION_EN.png)  
-The protocol involves protocol technology, gateway operations, referrals, users, and liquidity providers. The protocol will distribute profits fairly.  
-The fee distribution for liquidity providers is detailed in sections 7.4 and 7.5.  
+![Alt text](whitepaper_image_cn/TOKEN_FEE_COMPUTE_1.png)
 
-* If the user has a referral:  
-  Fees are distributed in real-time based on the user's relevant roles.  
+* 图1 用户投资前Token状态
+  净值指每一份对应的代币数量，净值=(投资总数+手续费)/总份额;
+  随着交易的进行，手续费不断产生，手续费总额增加，净值就增加。
 
-* If the user does not have a referral:  
-  The user's share of the fee distribution is allocated to the token administrator.  
-  The referral's share of the fee distribution is allocated to the gateway role.  
+* 图2 用户开始投资
+  协议根据用户投资的数量,计算应得的投资份额。
+  用户投资份额=(用户投资数量)/净值。
 
-### 7.4 Fee Calculation Process (Investment)  
+* 图3 随着代币不断流通,不停有手续费收益
+  由于手续费的不断增加,导致净值在不断上升
 
-![Alt text](./whitepaper_image_en/TOKENFEECOMPUTE_EN.png)  
+* 图4 用户撤资
+  用户撤资时,协议计算用户的收益与本金后,一同发放给用户.
 
-* Figure 1: Token State Before User Investment  
-  Unit Fee refers to the fee per unit of investment. Unit Fee = Total Fees / Total Investment Quantity.  
-  As transactions proceed, fees are continuously generated, increasing the total fees and unit fees.  
-  Constructed Fees represent the total fees that the user should not enjoy at the time of investment.  
-  Constructed Fees = Investment Quantity * Unit Fee at the Time of Investment.  
+### 7.6 Token福利
 
-* Figure 2: Fee Accumulation After User Investment  
-  As fees are continuously generated in the protocol, unit fees keep increasing.  
-  User Investment Profit = Unit Fee * Investment Quantity - Constructed Fees.  
+项目方或者卖家可以充值Token到手续费中，提升投资年化，增强投资吸引力。  
 
-* Figure 3: Multiple Investments by a User on a Token  
-  When a user makes multiple investments on the same token, they can be consolidated into a single investment record.  
-  Consolidated Constructed Fees = Sum of Constructed Fees Before Consolidation.  
-  User Investment Profit = Unit Fee * Investment Quantity - Consolidated Constructed Fees.  
+![alt text](whitepaper_image_cn/TOKEN_WALEFARE.png)  
 
-* Figure 4: Consolidation of Multiple Investments by a User on a Token  
-  This figure shows the consolidated investment status.  
+## 8 流动性挖矿
 
-* Figure 5: Multiple Users Investing in a Token  
-  When multiple users invest, the total investment quantity, total market value, and total constructed fees for the token are aggregated.  
-  The total actual investment profit for the token = Total Current Fees - Total Constructed Fees.  
+协议中所有代币会自动进行二次挖矿,根据给代币添加流动性时的价值,折算成算力.  
 
-* Figure 6: Consolidation of Multiple Users' Investments in a Token  
+![alt text](whitepaper_image_cn/Liquidity_Mining.png)
+a. 用户把任意代币存入代币池子
+b. 用户享受池子产生的手续费返佣
+c. 用户享受流动性挖矿TTS代币  
 
-### 7.5 Fee Calculation Process (Withdrawal)  
 
-![Alt text](./whitepaper_image_en/feecompute_disinvest_EN.png)  
+## 9 主要代码实现(参见代码)
 
-* Figure 1: Individual Token Investment (This figure represents no impermanent loss when providing liquidity)  
-  This figure shows an individual's investment in a token. When a user withdraws, the calculation logic is as follows:  
-  Current Unit Fee of the Token = Total Current Fees of the Token / Total Current Investment Quantity of the Token.  
-  Constructed Fees at Withdrawal = Constructed Fees*(Withdrawal Quantity / Total User Investment Quantity).  
-  When a user withdraws, the profit obtained = Current Unit Fee*Withdrawal Quantity - Constructed Fees at Withdrawal.  
-
-* Figure 2: Total Token Investment  
-  The calculation logic for the token after user withdrawal:  
-  Total Current Fees of the Token = Original Total Current Fees of the Token - User Profit at Withdrawal - Constructed Fees at Withdrawal.  
-  Constructed Fees of the Token = Original Constructed Fees of the Token - Constructed Fees at Withdrawal.  
-  Investment Quantity of the Token = Original Investment Quantity of the Token - User Withdrawal Quantity.  
-
-### 7.6 Token benefits  
-
-Project parties or sellers can deposit tokens into the fee pool to increase investment annualization and enhance investment attractiveness.  
-![alt text](./whitepaper_image_en/TOKEN_WALEFARE.png)  
-
-## 8 Market Configuration  
-
-| id  | Configuration Item        | Bits | Unit        | Max Value | Min Value | Start Bit | End Bit | Description |
-| --- | ------------------------- | ---- | ----------- | --------- | --------- | --------- | ------- | ----------- |
-| 1   | Token Investor Commission | 6    | One percent | 63        | 0         | 256       | 251     |             |
-| 2   | Merchant Commission       | 6    | One percent | 63        | 0         | 250       | 245     |             |
-| 3   | Gateway Commission        | 6    | One percent | 63        | 0         | 244       | 239     |             |
-| 4   | Referral Commission       | 6    | One percent | 63        | 0         | 238       | 233     |             |
-| 5   | User Commission           | 6    | One percent | 63        | 0         | 232       | 227     |             |
-| 6   | Protocol Fee Rate         | 6    | One percent | 63        | 0         | 226       | 221     |             |
-| ... |                           |      |             |           |           |           |         |             |
-
-## 9 Main Code Implementation (Refer to Code)  
-
-### 9.1 Contract Deployment GAS
+### 9.1 合约部署GAS
 
 | Deployment Cost | Deployment Size |
 | --------------- | --------------- |
 | 5644297         | 26543           |
 
-### 9.2 Contract Functions (Partial Main Functions) GAS  
+### 9.2 合约函数(部份主要函数)GAS
 
-| Function Name  | First  | second or more  | Remarks                                  |
-| -------------- | ------ | ------  | ---------------------------------------- |
-| buyGood        | 104056 | 86942   | Purchase Token                           |
-| disinvestProof | 255412 | 198512  | Withdraw Regular Proof                   |
-| disinvestProof | 176765 | 129300  | Withdraw Value Proof                     |
-| initGood       | 399488 |        | Initialize Regular Token                 |
-| investGood     | 172331 | 114339  | Invest in Regular Token                  |
-| investGood     | 242021 | 114414  | Invest in Value Token                    |
-| collectProof   | 238070 | 80158  | Collect Regular Investment Proof Profits |
-| collectProof   | 140453 | 103453  | Collect Value Investment Proof Profits   |
-| warefare       | 69462  | 52362  | Add Fees for Benefits                    |
+| Function Name      | avg    | 备注             |
+| ------------------ | ------ | ---------------- |
+| buyGood(NativeETH) | 81190  | 购买Token        |
+| buyGood(ERC20)     | 89761  | 购买Token        |
+| disinvestProof     | 164402 | 撤资             |
+| initGood           | 376985 | 初始化Token      |
+| investGood         | 153945 | 投资Token        |
+| goodWelfare        | 52396  | 增加手续费发福利 |
 
-When a user transacts with a token for the first time, GAS consumption is at the MEDIAN level. For the second or subsequent transactions with the same token, GAS consumption is generally at the MIN level.
 
-To promote better project growth and protect the interests of project supporters, the following token plan is introduced.  
+## 10 协议中角色说明
 
-## 10 Roles in the Protocol  
+协议中提供对于5种角色的支持，包含：代币管理员、代币流动性提供者、服务提供者、推荐者、用户、社区。
 
-The protocol supports five roles: Token administrator, Token Liquidity Provider, Service Provider, Referral, User, and Platform.  
+### 10.1 代币管理员
 
-### 10.1 Token Administrator  
+当用户在平台首次添加代币时，用户就成为这代币的管理员，相当于社区委托用户进行代币相关运营。享受该手续费1%-3%的分佣。非项目亲自运营的代币委托2年评估一次。
 
-When a user adds a token to the platform for the first time, they become the token's administrator, equivalent to being entrusted by the community to manage the token. They enjoy a commission of 1%-3% of the fees. Tokens not directly operated by the project are evaluated every two years.  
+### 10.2 代币流动性提供者
 
-### 10.2 Token Liquidity Provider  
+当用户给代币提供流程动性时，自动成为代币的流动性提供者，共同享受手续费的50%-80%的分佣。计算方式参见手续费计算逻辑小节。
 
-When a user provides liquidity for a token, they automatically become a liquidity provider for that token and share a commission of 50%-80% of the fees. The calculation method is detailed in the fee calculation logic section.  
+### 10.3 服务提供者
 
-### 10.3 Service Provider  
+为用户的提供交易，投资等服务的服务提供商，可享受手续费的5%到25%的分佣。
 
-Service providers offer trading, investment, and other services to users and can enjoy a commission of 5% to 25% of the fees.  
+### 10.4 推荐者
 
-### 10.4 Referral  
+当用户推荐其它用户，就可以享受被推荐人的手续费的5%-10的分佣。
 
-When a user refers other users, they can enjoy a commission of 5%-10% of the fees from the referred users.  
+### 10.5 用户
 
-### 10.5 User  
+当用户添加推荐人后，享受10%的手续费折扣。
 
-When a user adds a referral, they enjoy a 10% discount on fees.  
+### 10.6 社区
 
-### 10.6 Community  
+社区提供技术支持，可享受手续费的2%-8%的手续费分佣。
 
-The community provides technical support and can enjoy a commission of 2%-8% of the fees.  
+## 11 代币经济方案
 
-## 11 Token Economic Plan  
+1. 代币名称为TTSWAP Token，简称TTS。
+2. 初始发行五千万枚。(均为锁定状态，需达到条件才能解锁)。
+3. 每年新增(2亿-已解锁代币数量)\* 0.02给流动性提供者。
+4. 社区所有收益均用于在市场上购买官方代币进行销毁。禁止用于其它用途。
+5. 社区的建设者、运营者、支持者等代币持有者收益均来至代币价值上涨，而不是通过稀释，超发等方式获取收益。
+6. 关于代币的社区分配变动均需提前30天以上公示。
+7. 代币持有者拥有提案，和提案的投票权，参与社区的成长建设。
+8. 推荐关系均维护在本代币中，推荐关系一但确认，就无法修改。同时本项目后续版本均使用本推荐关系。
 
-1. Initial token issuance:50 million tokens(all in a locked state, requiring conditions to be met for unlocking).  
-2. Annual addition: (200 million - number of unfrozen tokens) * 0.02 to liquidity providers.  
-3. All community earnings are used to purchase official tokens on the market for burning. They are prohibited from being used for other purposes.  
-4. The earnings of community builders, operators, and supporters come from the increase in token value, not through dilution, over-issuance, or other means.  
-5. Any changes to the community allocation of tokens must be announced at least 30 days in advance.  
-6. Token holders have the right to propose and vote on proposals, participating in the growth and development of the community.  
-7. Referral relationships are maintained within this token, and once confirmed, they cannot be modified. All future versions of this project will use this referral relationship.  
+### 11.1 初始代币分配原则
 
-### 11.1 Initial Token Allocation Principles  
+1. 分配时需配置解锁比例(不能高于20%)和初始价格(不能低于当前价格)，当价格涨一倍，用户才可以解锁剩余部份X解锁比例。
+例如分配给A用户20000枚，解锁比例为18%，分配时价格为0.05。 当价格达到0.05时才能解锁20,000\*0.18枚。当价格达到0.1时才能解锁20,000\*0.18\*0.18枚。
+1. 促进建设者更聚焦于长期利益。代币价格上涨50%，创建始人解锁比例 < 合伙人解锁比例 < 价值贡献解锁比例 < 资本贡献解锁比例  < 20%。
 
-Allocations must be configured with an unlocking ratio (not exceeding 20%) and an initial price (not lower than the current price). When the price doubles, users can unfreeze the remaining portion*unlocking ratio.  
-For example, if user A is allocated 20,000 tokens with an unlocking ratio of 18%, and the allocation price is 0.05, then 20,000*0.18 tokens can be unfrozen when the price reaches 0.05. When the price reaches 0.1, 20,000*0.18*0.18 tokens can be unfrozen.  
+### 11.2 4C成长型社区代币治经济协议
 
-### 11.2 4C Growth Community Token Economic Model  
+  4C成长型社区代币角色分为四类：创始人、合伙人、价值贡献、资本贡献。
 
-The 4C Growth Community Token roles are divided into four categories: Founders, Partners, Value Contributors, and Capital Contributors.  
+#### 11.2.1 创始人部份
+解锁比例不高于1/12
 
-#### 11.2.1 Founder Portion  
+  创始人部份作为项目发起人提供大量的人力资本，用以开发产品、创立品牌、拓展市场、招募人才、建立管理制度，同时并承担了巨大的失败风险而享受的待遇。(初始价格为0.05，价格上涨一倍，解锁比例1/12)
 
-The Founder portion is for the project initiators who provide significant human capital to develop the product, establish the brand, expand the market, recruit talent, and build the management system, while bearing substantial failure risks and enjoying the benefits. (Initial price is 0.05, price doubles, unlocking ratio is 1/10).  
+#### 11.2.2 合伙人部份
+解锁比例不高于1/8
 
-#### 11.2.2 Partner Portion  
+  合伙人部份作为项目发起初期，在没有资源的情况下，需要充分利用自己团队的强大的执行力，去克服各种困难，一起坚持并坚信把社区做大做好做强的成员享受的待遇。
 
-The Partner portion is for members who, during the initial stages of the project, utilize their team's strong execution capabilities to overcome various difficulties, persist, and firmly believe in growing the community together.  
+1. 合伙人部份A类型
+  初始价格为成员加入时确认。代币价格上涨一倍解锁剩余比例为1/10。未解锁部份不因离开社区而销毁。
 
-1. Partner Portion Type A  
-   The initial price is confirmed upon member joining. When the token price doubles, the remaining portion is unlocked at a ratio of 1/8. The ununlocked portion is not burned if the member leaves the community.  
+1. 合伙人部份B类型
+  初始价格为成员加入时确认。代币价格上涨一部解锁剩余比例的1/8。未解锁部份会因离开社区而销毁。
 
-1. Partner Portion Type B  
-   The initial price is confirmed upon member joining. When the token price doubles, the remaining portion is unlocked at a ratio of 1/6. The ununlocked portion is burned if the member leaves the community.  
+#### 11.2.3 价值贡献
+解锁比例不高于1/6
 
-#### 11.2.3 Value Contribution  
+  社区为给社区建设的成员提供激励进行代币预分配，初始价格为分配时价格，价格上涨一部解锁比例不高于1/6，根据具体情况与相应人员进行约定与公示，已分配未解锁部份社区会根据达成效果而调整。当成员不在为社区服务时，已分配未解锁部份会被社区回收。
 
-The community provides token pre-allocation incentives for members contributing to community building. The initial price is the allocation price, and the unlocking ratio does not exceed 1/5 when the price doubles. Specific agreements and announcements will be made with relevant personnel. The allocated but ununlocked portion may be adjusted by the community based on achieved results. When a member no longer serves the community, the allocated but ununlocked portion will be reclaimed by the community.  
+1. 社区岗位部份：
+  岗位部份由担承社区重要职位的重要程度而决定，这部分分给社区重要职位对应负责人，重要职位对应的比例由每年初的社区确定。社区对于重要职位的合格、优秀的负责人经过社区决策后可转一定比例为合伙人部份A类型和合伙人部份B类型。
 
-1. Community Position Portion:  
-   The position portion is determined by the importance of the roles within the community. This portion is allocated to the responsible persons of important positions, with the corresponding ratio determined by the community at the beginning of each year. The community may convert a certain portion to Partner Type A or Partner Type B for qualified and excellent responsible persons through community decision-making.  
+1. 社区成员部份：
+  激励成员为社区一起成长而预留部分。社区对于优秀成员经过社区决策后可转一定比例为合伙人部分B类型。
 
-1. Community Member Portion:  
-   This portion is reserved to incentivize members to grow with the community. The community may convert a certain portion to Partner Type B for outstanding members through community decision-making.  
+1. 其它部份：
+  金库、运营、活动、顾问等用途使用。
 
-1. Other Portions:  
-   Used for treasury, operations, activities, advisors, etc.  
+#### 11.2.4 资本贡献  
+解锁比例不高于1/5
 
-#### 11.2.4 Capital Contribution  
+1. 公售部份(参见公售方案)：
+  为团队建设、产品建设、流动性建设提供资金支持。(公售部份全部为解锁状态，不进行锁定)
 
-1. Public Sale Portion (refer to the public sale plan):  
-   Provides financial support for team building, product development, and liquidity building. (The public sale portion is fully unlocked and not locked).  
+1. 投资部份：
+  为团队精进，产品完善等提供资金支持。关于初始价格与解锁比例沟通中确定。
 
-1. Investment Portion:  
-   Provides financial support for team improvement and product refinement. The initial price and unlocking ratio will be determined through communication.  
+1. 空投部份：
+  为弥补协议早期用户风险。关于初始价格与解锁比例根据具体活动方案而定。  
 
-1. Airdrop Portion:  
-   Compensates for the risks taken by early protocol users. The initial price and unlocking ratio will be determined based on specific event plans.  
+### 11.3 4C成长型社区代币分配细则设计
 
-### 11.3 4C Growth Community Token Allocation Detailed Design  
+![Alt text](whitepaper_image_cn/partnership_agreement.png)
 
-![Alt text](./whitepaper_image_en/partnership_agreement.png)  
+### 11.4 权利
 
-## 12 Legal Permissions  
+1. 代币持有者拥有社区所有决定的知情权。
+2. 代币持有者拥有社区所有行为的监督权。
+3. 代币持有者拥有提案的投票权。
+4. 持有一定数量的代币持有者拥有提案权。
 
-### 12.1 Explanation  
+## 12 法律许可
 
-To protect the project's rights and facilitate user understanding of the protocol, different files have different open-source licenses. Violations of the license will be legally pursued.  
+### 12.1 说明  
 
-### 12.2 Protocol Explanation  
+为了维护项目正常权利，同时也方便其它用户了解协议，对于不同文件不同开源协议。违反协议将得到法律追究。  
 
-Files using the MIT license are freely available for use.  
-Files using the BUSL-1.1 license can only be used for learning purposes during the protocol's validity period and cannot be used for commercial purposes. For specific license details, refer to:  
-[LICENSE file in the project](https://github.com/tt-swap/ttswap-core/blob/529db0eb94ac1c5631beb03c4697222a6ce1cd79/LICENSE): https://github.com/tt-swap/ttswap-core/blob/529db0eb94ac1c5631beb03c4697222a6ce1cd79/LICENSE.  
-If the project unintentionally violates other projects' open-source licenses, please contact us, and we will make adjustments promptly.  
+### 12.2 协议说明  
 
-### 12.3 File Open-Source License Information  
+采用MIT协议的文件供大家自由使用  
+采用BUSL-1.1协议的文件才协议有效期内只能用户于学习目标，不能运用于商业用途。具体协议内容参见：  
+[项目中LICENSE文件](https://github.com/tt-swap/ttswap-core/blob/529db0eb94ac1c5631beb03c4697222a6ce1cd79/LICENSE):https://github.com/tt-swap/ttswap-core/blob/529db0eb94ac1c5631beb03c4697222a6ce1cd79/LICENSE   
+如因项目在未知的情况违反其它项目开源协议，及时联系我们，我们尽快调整。
+
+### 12.3 文件开源协议信息
 
 ```markdown
-Contract
+src
 ├── TTSwap_Market.sol(BUSL-1.1)  
 ├── TTSwap_Token.sol(BUSL-1.1)
-├── TTSwap_StakeETH.sol(BUSL-1.1)
 ├── interfaces  
-│   ├── I_TTSwap_Market.sol(MIT)   
-│   ├── I_TTSwap_Token.sol(MIT)   
-│   └── I_TTSwap_StakeETH.sol(MIT)    
+│   ├── I_TTSwap_Market.sol(MIT)  
+│   └── I_TTSwap_Token.sol(MIT)    
 └── libraries           
-   ├── L_Currency_Stake.sol (MIT)    
    ├── L_Currency.sol (MIT)    
    ├── L_Error.sol (MIT)     
    ├── L_Good.sol(BUSL-1.1)    
-   ├── L_GoodConfig.sol(MIT)     
-   ├── L_MarketConfig.sol(MIT)    
-   ├── L_Proof.sol(BUSL-1.1)     
-   ├── L_SignatureVerification.sol(MIT)   
-   ├── L_Transient_Stake.sol (MIT)  
+   ├── L_GoodConfig.sol(MIT)      
+   ├── L_Proof.sol(BUSL-1.1)  
+   ├── L_SignatureVerification.sol(MIT)  
    ├── L_Transient.sol (MIT)  
    ├── L_TTSTokenConfig.sol (MIT)     
    ├── L_TTSwapUINT256.sol (MIT)     
    └── L_UserConfig.sol(MIT)    
 docs
 ├── ebook
-├── whitepaper-cn
-│   └──whitepaper-cn.pdf(BUSL-1.1)
-└── whitepaper-en
-    └──whitepaper-en.pdf(BUSL-1.1)
 tests
 
 ```
 
-
-## 13 Participation and Collaboration Contact Information  
+## 13 参与和合作联系方式
 
 Twitter:[ttswapfinance](https://x.com/ttswapfinance)  
 Telegram:[@ttswapfinance](https://t.me/ttswapfinance)  
 Email:[bussiness@ttswap.io](mailto:bussiness@ttswap.io)  
 Discord:[ttswap](https://discord.gg/XygqnmQgX3)  
 Website:[ttswap.io](http://www.ttswap.io)  
-Github:[ttswap](http://github.com/ttswap)  
 
-We welcome talents from all regions to join the community.
+欢迎来自各个地区的人才加入社区

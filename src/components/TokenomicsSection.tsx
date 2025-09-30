@@ -44,7 +44,7 @@ export function TokenomicsSection() {
     {
       role: <Translate id="tokenomics.section.distribution.founder.role">Founder</Translate>,
       percentage: 20,
-      unlockRatio: <Translate id="tokenomics.section.distribution.founder.unlockRatio">≤1/12</Translate>,
+      unlockRatio: <Translate id="tokenomics.section.distribution.founder.unlockRatio">≤1/20</Translate>,
       description: <Translate id="tokenomics.section.distribution.founder.description">Project initiators who bear huge failure risks</Translate>,
       color: "bg-primary",
       icon: Crown,
@@ -53,7 +53,7 @@ export function TokenomicsSection() {
     {
       role: <Translate id="tokenomics.section.distribution.partners.role">Partners</Translate>,
       percentage: 12,
-      unlockRatio: <Translate id="tokenomics.section.distribution.partners.unlockRatio">≤1/8</Translate>,
+      unlockRatio: <Translate id="tokenomics.section.distribution.partners.unlockRatio">≤1/16</Translate>,
       description: <Translate id="tokenomics.section.distribution.partners.description">Core members who persisted and believed in the project during early stages</Translate>,
       color: "bg-secondary",
       icon: Handshake,
@@ -76,7 +76,7 @@ export function TokenomicsSection() {
     {
       role: <Translate id="tokenomics.section.distribution.valueContributors.role">Value Contributors</Translate>,
       percentage: 44,
-      unlockRatio: <Translate id="tokenomics.section.distribution.valueContributors.unlockRatio">≤1/6</Translate>,
+      unlockRatio: <Translate id="tokenomics.section.distribution.valueContributors.unlockRatio">≤1/20</Translate>,
       description: <Translate id="tokenomics.section.distribution.valueContributors.description">Members who contribute value to community building</Translate>,
       color: "bg-yellow-500",
       icon: Star,
@@ -103,7 +103,7 @@ export function TokenomicsSection() {
     {
       role: <Translate id="tokenomics.section.distribution.capitalContributors.role">Capital Contributors</Translate>,
       percentage: 24,
-      unlockRatio: <Translate id="tokenomics.section.distribution.capitalContributors.unlockRatio">≤1/5</Translate>,
+      unlockRatio: <Translate id="tokenomics.section.distribution.capitalContributors.unlockRatio">≤1/16</Translate>,
       description: <Translate id="tokenomics.section.distribution.capitalContributors.description">Investors providing financial support</Translate>,
       color: "bg-accent",
       icon: DollarSign,
@@ -557,19 +557,19 @@ export function TokenomicsSection() {
                     </h4>
                     <div className="text-sm text-muted-foreground space-y-1 group-hover/calc:text-foreground/70 transition-colors duration-300">
                       <p>
-                        <Translate id="tokenomics.section.mechanism.calculation.allocate">Allocate 20,000 tokens, unlock ratio 18%, allocation price 0.05</Translate>
+                        <Translate id="tokenomics.section.mechanism.calculation.allocate">Allocate 20,000 tokens, unlock ratio 10%, allocation price 0.05</Translate>
                       </p>
                       <p className="pl-4 border-l-2 border-primary/30">
-                        <Translate id="tokenomics.section.mechanism.calculation.whenPrice">When price reaches 0.05, unlock:</Translate> 20,000×0.18 ={" "}
+                        <Translate id="tokenomics.section.mechanism.calculation.whenPrice">When price reaches 0.05, unlock:</Translate> 20,000×0.10 ={" "}
                         <span className="font-semibold text-primary">
-                          3,600 <Translate id="tokenomics.section.mechanism.calculation.tokens">tokens</Translate>
+                          2,000 <Translate id="tokenomics.section.mechanism.calculation.tokens">tokens</Translate>
                         </span>
                       </p>
                       <p className="pl-4 border-l-2 border-secondary/30">
-                        <Translate id="tokenomics.section.mechanism.calculation.whenPrice2">When price reaches 0.1, unlock:</Translate> (20,000-3,600)×0.18
+                        <Translate id="tokenomics.section.mechanism.calculation.whenPrice2">When price reaches 0.1, unlock:</Translate> (20,000-2,000)×0.10
                         ={" "}
                         <span className="font-semibold text-secondary">
-                          2,952 <Translate id="tokenomics.section.mechanism.calculation.tokens">tokens</Translate>
+                          1,800 <Translate id="tokenomics.section.mechanism.calculation.tokens">tokens</Translate>
                         </span>
                       </p>
                     </div>
@@ -598,7 +598,7 @@ export function TokenomicsSection() {
                       variant="outline"
                       className="group-hover/ratio:border-accent/40 group-hover/ratio:scale-110 transition-all duration-300"
                     >
-                      ≤20%
+                      ≤12.5%
                     </Badge>
                   </div>
                   <ChevronDown className="h-4 w-4 text-muted-foreground mx-auto animate-pulse-soft" />
@@ -610,7 +610,7 @@ export function TokenomicsSection() {
                       variant="outline"
                       className="group-hover/ratio:border-tertiary/40 group-hover/ratio:scale-110 transition-all duration-300"
                     >
-                      ≤16.7%
+                      ≤8.3%
                     </Badge>
                   </div>
                   <ChevronDown
@@ -625,7 +625,7 @@ export function TokenomicsSection() {
                       variant="outline"
                       className="group-hover/ratio:border-secondary/40 group-hover/ratio:scale-110 transition-all duration-300"
                     >
-                      ≤12.5%
+                      ≤6.25%
                     </Badge>
                   </div>
                   <ChevronDown
@@ -640,7 +640,7 @@ export function TokenomicsSection() {
                       variant="outline"
                       className="group-hover/ratio:border-primary/40 group-hover/ratio:scale-110 transition-all duration-300"
                     >
-                      ≤8.3%
+                      ≤5%
                     </Badge>
                   </div>
                 </div>
@@ -708,7 +708,7 @@ export function TokenomicsSection() {
                         </li>
                         <li className="flex items-center space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
                           <div className="w-1.5 h-1.5 rounded-full bg-tertiary" />
-                          <span><Translate id="tokenomics.section.mechanism.rules.contribution.rule2">Unlock ratio ≤1/6 when price doubles</Translate></span>
+                          <span><Translate id="tokenomics.section.mechanism.rules.contribution.rule2">Unlock ratio ≤1/12 when price doubles</Translate></span>
                         </li>
                         <li className="flex items-start space-x-2 group-hover/rule:text-foreground/70 transition-colors duration-300">
                           <div className="w-1.5 h-1.5 rounded-full bg-tertiary mt-1.5 flex-shrink-0" />
@@ -733,7 +733,7 @@ export function TokenomicsSection() {
                           <div className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" />
                           <span>
                             <Translate id="tokenomics.section.mechanism.rules.capital.rule2">
-                              Investment portion price and unlock ratio determined through negotiation, ≤1/5
+                              Investment portion price and unlock ratio determined through negotiation, ≤1/8
                             </Translate>
                           </span>
                         </li>
@@ -741,7 +741,7 @@ export function TokenomicsSection() {
                           <div className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" />
                           <span>
                             <Translate id="tokenomics.section.mechanism.rules.capital.rule3">
-                              Airdrop portion determined by specific activity plans, ≤1/5
+                              Airdrop portion determined by specific activity plans, ≤1/8
                             </Translate>
                           </span>
                         </li>

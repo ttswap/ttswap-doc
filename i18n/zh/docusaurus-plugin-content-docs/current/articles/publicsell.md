@@ -1,93 +1,98 @@
+# 公售计划
+### 为建设下一代DEX注入动力，与我们一起成长！
 
-
-# Public Token Sale Plan
-
-## 🚀【TTSWAP Public Sale Launch | Limited TTS Token Offering】
-
-### Powering the Next Generation DEX - Grow With Us! 我们是好学生
-
-TTSWAP is an **efficient, secure, and innovative decentralized trading platform** built for users. We are now officially launching the **public sale of TTS tokens**. This public sale will provide initial liquidity for TTSWAP and drive the full launch of our ecosystem!
+TTSWAP 是一款为用户打造的**高效、安全、创新型去中心化交易平台**。现在，我们正式开启 **TTS 代币公开发售**，本轮公售将为 TTSWAP 提供初始流动性，推动生态全面启动！
 
 ---
 
-## 💎 Why Choose TTS Token?
+## 💎 为什么选择 TTS 代币？
 
-**TTS is not just another "dump after airdrop" speculative token, but the core driving force of the entire TTSWAP ecosystem.**
+**TTS 不是一枚“空投即抛”的投机代币，而是整个 TTSWAP 生态的核心驱动力。**
 
-### ✅ Multiple Value Propositions:
+### ✅ 多重价值支撑：
 
-1. **Platform Governance**: TTS holders can participate in platform governance, deciding on fee structures, feature upgrades, and future direction.
-2. **Fee Distribution Mechanism (Optional Design)**: Active users and token holders may receive platform fee rewards, incentivizing long-term holding.
-3. **Ecosystem Building Incentives**: Liquidity mining, trading rewards, referral incentives, and DAO tasks will all revolve around TTS.
-4. **Real Liquidity Support**: 100% of public sale proceeds will be injected into DEX initial liquidity pools - no token locking, no artificial metrics.
-5. **Long-term Growth Potential**: As user base and trading volume increase, TTS's scarcity and value within the DEX ecosystem will continue to amplify.
-
----
-
-## 🪙 TTS Token Distribution Information
-
-* **Token Name**: TTS
-* **Total Supply**: 50,000,000 tokens
-* **Public Sale Amount**: 5,000,000 tokens (10% of total supply)
-* **Use of Proceeds**: All raised funds will be used to **launch initial liquidity pools**, visible and verifiable by the community.
+1. **平台治理权**：TTS 持有者可参与平台治理，决定手续费、功能升级、未来走向。
+2. **手续费分红机制**：活跃用户和代币持有者有望获得平台手续费奖励，激励长期持仓。
+3. **生态建设激励**：做市挖矿、交易奖励、推荐激励、DAO任务等机制将围绕 TTS 展开。
+4. **真实流动性支撑**：公售所得资金100%注入DEX初始流动性，不锁仓、不做账面文章。
+5. **长期发展可期**：随着用户增加和交易量上升，TTS在DEX生态中的稀缺性与价值将持续放大。
 
 ---
 
-## 💰 Three-Round Public Sale with Early Bird Benefits
+## 🪙 TTS 代币发行信息
 
-| Round | Raise Amount      | TTS per USDT | Price (Est.) | Max Supply      |
-| ----- | ---------------- | ------------ | ------------ | --------------- |
-| 1st   | 175,000 USDT     | 24 TTS       | $0.0417      | 4,200,000 TTS   |
-| 2nd   | 150,000 USDT     | 20 TTS       | $0.0500      | 3,000,000 TTS   |
-| 3rd   | 175,000 USDT     | 16 TTS       | $0.0625      | 2,800,000 TTS   |
-
-✅ Earlier participation means better value; limited supply, no additional rounds.
+* **代币名称**：TTS
+* **总发行量**：50,000,000 枚
+* **本轮公售量**：5,000,000 枚（占总量10%）
+* **用途说明**：全部募集资金将用于**启动初始流动性池**，由社区可见、可验证。
 
 ---
 
-## 🛠️ How to Participate
+## 💰 公售分三轮，早鸟享优惠
 
-1. Prepare your USDT (ERC-20/BEP-20 supported)
-2. Visit the public sale page: [Official Website Link]
-3. Connect your wallet, select a round, enter amount
-4. Confirm transaction, wait for TTS distribution after sale completion
+| 轮次  | 募资金额         | 每USDT兑换  | 单价（估算）   | 数量上限        |
+| --- | ------------ | -------- | -------- | ----------- |
+| 第1轮 | 175,000 USDT | 24 枚 TTS | \$0.0417 | 4,200,000 枚 |
+| 第2轮 | 150,000 USDT | 20 枚 TTS | \$0.0500 | 3,000,000 枚 |
+| 第3轮 | 175,000 USDT | 16 枚 TTS | \$0.0625 | 2,800,000 枚 |
 
----
-
-## 🔐 Security and Transparency
-
-* All raised funds go directly into **smart contract-locked initial liquidity pools**;
-* Funds and transaction records are verifiable on-chain, ensuring transparency;
-* No institutional pre-sales, no backroom deals - equal opportunity for all participants.
+✅ 越早参与，越高性价比；售完即止，不追加。
 
 ---
 
-## 📈 Our Vision: Beyond Just a DEX
+## 🛠️ 如何参与
 
-TTSWAP will gradually build a complete **multi-chain aggregated trading ecosystem**, with future features including:
-
-* **Liquidity Aggregation (Swap Aggregator)**
-* **DAO Governance System**
-* **Launchpad / IDO Platform**
-* **On-chain Yield Tracking and Strategy Trading Plugins**
-
-TTS will serve as the backbone token throughout the entire ecosystem, enjoying comprehensive benefits from platform growth.
-
-
+1. 准备好您的 USDT（支持ERC-20/BEP-20）
+2. 前往公售页面：\[官网链接]
+3. 连接钱包，选择轮次，输入金额
+4. 确认交易，等待公售结束统一发放 TTS
 
 ---
 
-## 📣 Join Our Community, Get Ahead!
+## 🔐 安全与透明
 
-* X (Twitter): [ttswapfinance](https://x.com/ttswapfinance)
-* Telegram: [@ttswapfinance](https://t.me/ttswapfinance)
-* Discord: [ttswap](https://discord.gg/XygqnmQgX3)
-* Email: [bussiness@ttswap.io](mailto:bussiness@ttswap.io)
-* Website: [ttswap.io](http://www.ttswap.io)
+* 所有募集资金均直接进入 **智能合约锁定的初始流动性池**；
+* 资金、交易记录可链上查看，确保过程透明；
+* 无机构预购、无暗箱操作，人人平等参与。
 
 ---
 
-## 🌟 Build Together, Share the Future
+## 📈 我们的目标：不仅仅是DEX
 
-The decentralized future of TTSWAP is shaped by our collective decisions.
-TTS tokens represent not just participation, but a voice and long-term value proposition. 
+TTSWAP 将逐步构建完整的**多链聚合交易生态**，未来功能包括：
+
+* **聚合流动性交易（Swap Aggregator）**
+* **DAO 治理系统**
+* **Launchpad / IDO平台**
+* **链上收益追踪与策略交易插件**
+
+TTS 将作为贯穿整个生态系统的主轴代币，享受平台成长带来的全方位红利。
+
+---
+
+## 🕒 公售时间（建议示例）
+
+* 第一轮：2025年6月10日 12:00 UTC
+* 第二轮：2025年7月17日 12:00 UTC
+* 第三轮：2025年8月24日 12:00 UTC
+
+---
+
+## 📣 加入社区，抢先一步！
+
+* X（Twitter）：[@ttswapfinance](https://x.com/ttswapfinance)
+* Telegram：[@ttswapfinance](https://t.me/ttswapfinance)  
+* 邮箱：[bussiness@ttswap.io](mailto:bussiness@ttswap.io)  
+* Discord：[ttswap](https://discord.gg/XygqnmQgX3) 
+* 官网：[ttswap.io](http://www.ttswap.io)
+
+---
+
+## 🌟 携手共建，分享未来
+
+TTSWAP 的去中心化未来，由你我共同决定。
+TTS代币不只是参与，更是一份话语权与长期价值的体现。
+
+
+
+

@@ -1,716 +1,690 @@
+---
+lang: zh-CN
+title: ⚖️ TTSWAP  详细介绍
+description: TTSWAP 是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。
+collapsed: true
+---
 
+## ✅ 一 什么是 TTSWAP？
+TTSWAP 是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。
+它的运行完全由智能合约驱动，不需要中间人，价格由协议交易自动决定。这种新型的机制被称为「恒定价值交易协议，它让交易过程更加透明、公平和稳定。  
+### 💪你可以在 TTSWAP 上做什么？
+1. **自由兑换任何代币**  
+不需要通过中间币种（比如 USDT），你可以直接把 A 代币换成 B 代币，过程简单、迅速、无滑点。
+2. **为代币无风险提供流动性,赚取收益**  
+如果你看好某个代币，可以将它存入协议，获取手续费返佣和平台代币挖矿奖励；需要时无损取出。
+3. **为TTSWAP提供流动性,二次挖矿TTS代币**  
+给TTSWAP提供流动性，享受二次挖矿TTS，参与项目早期建设，将获得更高的回报。
+4. **为TTSWAP拉新,永久享受手续费分佣**  
+推荐关系存于代币合约，牢不可破也牢不可改，永久享受手续费分佣。
+5. **为TTSWAP中代币进行运营,享受代币交易分红**  
+为协议添加代币,成为代币的运营者，享受这个代币交易的手续费分佣。
+6. **通过TTSWAP创建自己门户，为用户使用提供方便**  
+为自己庞大私域流量提供高质量高标准的服务，获得服务收益。
+7. **接入TTSWAP创建自己应用，状大TTSWAP生态**  
+TTSWAP是一个开放的社区，允许开发者接入到自己的应用中，状大TTSWAP生态。 
+8. **持有TTS代币,享受社区成长收益**  
+TTS代币是目标导向型通缩代币.除市场上购买,参与公售,流动性挖矿途径外,其它途径获取的代币只有当价格上涨才能解锁.同时社区盈利部份均用于代币销毁,保护代币持有者权益.  
+同时代币持有者拥有提案权,投票权和社区监督权.  
+---
+### 📘 小结
+TTSWAP 致力于打造一个：
+- 低交易成本
+- 无中介
+- 公平公开透明
+- 鼓励共赢
+ 的 Web3 代币兑换平台。
+## ✅ 二 为什么选择 TTSWAP？
+TTSWAP 不仅能让你方便、安全地兑换代币，还具有以下 10 个优势，让你的每一次交易都更高效、更划算。  
+### 🌐 1. 稳定价格，不怕滑点   
+在 TTSWAP中，小额交易不会因价格波动导致"亏损"，你预估多少就能成交多少——交易体验更可控。  
+### 💧 2. 所有代币共享流动性，交易更自由  
+你不再需要一个个建立币对，也不用担心"池子太小流动性不够"。TTSWAP 让所有币对中的同一个代币共用一个**超级池子，交易更快、更顺畅**。  
+### 🛡️ 3. 没有无常损失，LP更安心  
+在其他平台，当你提供流动性时容易因为价格波动而亏钱，这叫**无常损失**。TTSWAP 的机制可以有效避免这个问题，你的投入不会减少。  
+### ⛽ 4. Gas费节省 50%-90%  
+智能合约结构精简，计算逻辑优化，让你每一笔交易都比在传统平台**省钱**——Gas 省得看得见。  
+### 🔁 5. 直接支持 ETH，省去麻烦  
+你可以直接用 ETH 交易，无需先换成 WETH（包裹ETH），一步到位更方便。  
+### 💰 6. 每笔投资都可能挖矿（TTS）  
+当你投入代币，系统会按你投入的价值自动计算并开始**二次挖矿**，赚取额外 TTS 奖励。  
+### 🌱 7. 投资收益还能叠加 ETH 质押奖励   
+把 ETH 投入 SETH / SWETH 池子后，系统会自动将未使用资金进行 Rocketpool 质押，享受年化**3~5%的额外回报**。  
+### 📊 8. 人人可参与,手续费自动按角色分红  
+你是用户、推荐者、门户、流动性提供者、代币运营者？都能获得一定比例的手续费分润，**人人可参与**。  
+### 🧱 9. 模块化，灵活配置，轻松集成  
+协议接口简单，调用方便，同时每个代币的参数、手续费、挖矿比率都可以**灵活设置**，为项目方和开发者提供更多自由度。  
+### 💎 10. TTS代币是目标导向型通缩代币  
+TTS发行总量固定,初始发行时均为锁定状态,**价格上涨才能解锁**.社区盈利均用于代币销毁,由代币持有者共同享受社区盈利.  
+### 👥 11. 社区驱动，用户主导未来  
+TTSWAP 不属于某个公司，它属于社区。**项目发展方向和奖励机制，由社区共识推动决定。** 
 
-## ✅ I. What is TTSWAP?
-TTSWAP is a decentralized token trading platform where anyone can quickly and safely exchange one token for another without relying on centralized exchanges.
-It operates entirely through smart contracts, eliminating intermediaries, with prices automatically determined by protocol trading. This innovative mechanism is called the "Constant Value Trading Protocol," making the trading process more transparent, fair, and stable.
+## ✅ 三 背后的运作逻辑是什么？  
+### 🧠 1. 用一句话解释 
+TTSWAP 的核心机制叫**恒定价值模型** ,又称之为多资产动态平衡模型，它确保每次代币交换时，双方的"总市场价值"是相等的，交易就像两边的天平，**你给出多少价值，就能换回同等价值的另一种代币**。
 
-### 💪 What Can You Do on TTSWAP?
-1. **Freely Exchange Any Token**  
-No need for intermediate tokens (like USDT), you can directly exchange Token A for Token B - simple, fast, and slippage-free.
-2. **Provide Risk-Free Liquidity, Earn Returns**  
-If you're bullish on a token, you can deposit it into the protocol to earn fee rebates and platform token mining rewards; withdraw anytime without loss.
-3. **Provide Liquidity to TTSWAP, Secondary Mining of TTS Tokens**  
-Provide liquidity to TTSWAP, enjoy secondary mining of TTS, participate in early project development, and receive higher returns.
-4. **Refer New Users to TTSWAP, Permanently Enjoy Fee Sharing**  
-Referral relationships are stored in the token contract, unbreakable and unchangeable, ensuring permanent fee sharing.
-5. **Operate Tokens in TTSWAP, Enjoy Token Trading Dividends**  
-Add tokens to the protocol, become a token operator, and enjoy fee sharing from that token's trading.
-6. **Create Your Own Portal Through TTSWAP, Provide Convenience for Users**  
-Provide high-quality, high-standard services for your large private domain traffic, earning service revenue.
-7. **Integrate TTSWAP to Create Your Own Application, Expand TTSWAP Ecosystem**  
-TTSWAP is an open community, allowing developers to integrate it into their applications, expanding the TTSWAP ecosystem.
-8. **Hold TTS Tokens, Enjoy Community Growth Benefits**  
-TTS tokens are goal-oriented deflationary tokens. Besides market purchases, public sales, and liquidity mining, tokens obtained through other means can only be unlocked when the price increases. Meanwhile, community profits are used for token burning, protecting token holders' rights.
-Token holders also have proposal rights, voting rights, and community supervision rights.
+### 📊 2. 类比解释  
+想象你去水果市场，用 10 块钱买苹果：
+- 如果苹果贵，每斤 10 元，那你只能买 1 斤。
+- 如果苹果便宜，每斤 5 元，你就能买 2 斤。 
+
+TTSWAP 也是这样运作的。不同的是，它不是用法币定价，而是用**市场上已有的代币数量和价值**自动算出兑换比例。  
+系统通过下面公式让价格随着供需变动，始终保持公平。
 
 ---
-### 📘 Summary
-TTSWAP is committed to building a Web3 token exchange platform that is:
-- Low transaction costs
-- No intermediaries
-- Fair, open, and transparent
-- Encouraging win-win cooperation
-
-## ✅ II. Why Choose TTSWAP?
-TTSWAP not only allows you to conveniently and safely exchange tokens but also offers these 10 advantages, making every transaction more efficient and cost-effective.
-
-### 🌐 1. Stable Prices, No Slippage Worries  
-In TTSWAP, small transactions won't result in "losses" due to price fluctuations - what you estimate is what you get, making trading more controllable.
-
-### 💧 2. All Tokens Share Liquidity, More Freedom in Trading  
-You no longer need to establish trading pairs one by one, nor worry about "insufficient liquidity in small pools." TTSWAP allows all pairs of the same token to share a **super pool**, making trading faster and smoother.
-
-### 🛡️ 3. No Impermanent Loss, LP Providers Feel Secure  
-On other platforms, providing liquidity can lead to losses due to price fluctuations, known as **impermanent loss**. TTSWAP's mechanism effectively avoids this issue, ensuring your investment doesn't decrease.
-
-### ⛽ 4. 50%-90% Gas Fee Savings  
-Streamlined smart contract structure and optimized calculation logic make every transaction **more economical** than traditional platforms - the gas savings are visible.
-
-### 🔁 5. Direct ETH Support, Eliminating Hassle  
-You can trade directly with ETH without first converting to WETH (wrapped ETH), making it more convenient in one step.
-
-### 💰 6. Every Investment Can Mine (TTS)  
-When you invest tokens, the system automatically calculates and starts **secondary mining** based on your invested value, earning additional TTS rewards.
-
-### 🌱 7. Investment Returns Can Stack with ETH Staking Rewards  
-After depositing ETH into the SETH/SWETH pool, the system automatically stakes unused funds in Rocketpool, enjoying an additional **3-5% annual return**.
-
-### 📊 8. Everyone Can Participate, Fees Automatically Distributed by Role  
-Are you a user, referral, portal, liquidity provider, or token operator? Everyone gets a certain percentage of fee sharing, **everyone can participate**.
-
-### 🧱 9. Modular, Flexible Configuration, Easy Integration  
-Simple protocol interface, convenient calls, while each token's parameters, fees, and mining ratios can be **flexibly set**, providing more freedom for project parties and developers.
-
-### 💎 10. TTS Token is a Goal-Oriented Deflationary Token  
-TTS has a fixed total supply, all initially locked, **unlocked only when price increases**. Community profits are used for token burning, shared by token holders.
-
-### 👥 11. Community-Driven, User-Led Future  
-TTSWAP doesn't belong to any company, it belongs to the community. **Project development direction and reward mechanisms are driven by community consensus.**
-
-## ✅ III. What's the Operating Logic Behind It?
-
-### 🧠 1. Explained in One Sentence  
-TTSWAP's core mechanism is called the **Constant Value Model**, also known as the Multi-Asset Dynamic Balance Model. It ensures that during each token exchange, the "total market value" of both sides is equal. Trading is like a balance scale - **you give how much value, you get back equal value in another token**.
-
-### 📊 2. Analogy Explanation  
-Imagine going to a fruit market with $10 to buy apples:
-- If apples are expensive at $10 per pound, you can only buy 1 pound.
-- If apples are cheap at $5 per pound, you can buy 2 pounds.
-
-TTSWAP operates similarly. The difference is that it doesn't use fiat currency pricing but automatically calculates exchange rates based on **existing token quantities and values in the market**.
-The system uses the following formula to keep prices fair as supply and demand change.
-
----
-### ⚖️ 3. Calculation Principle  
+### ⚖️ 3. 计算原理是  
 $$\begin{align}
     {V_a\over Q_a}*Δa={V_b\over Q_b}*Δb=...&={V_z\over Q_z}*Δz  \\
-    Before(V_a+V_b+....+V_z)&=After(V_a+V_b+....+V_z)  \\
-    V_a:\ represents\ Token_A's&\ market\ value\ in\ protocol  \\
-    Q_a:\ represents\ Token_A's&\ quantity\ in\ protocol  \\
-    Δa:\ represents\ Token_A's&\ purchase\ or\ sale\ amount  \\
-    V_b:\ represents\ Token_B's&\ market\ value\ in\ protocol  \\
-    Q_b:\ represents\ Token_B's&\ quantity\ in\ protocol  \\
-    Δb:\ represents\ Token_B's&\ purchase\ or\ sale\ amount  \\
-    V_z:\ represents\ Token_Z's&\ market\ value\ in\ protocol  \\
-    Q_z:\ represents\ Token_Z's&\ quantity\ in\ protocol  \\
-    Δz:\ represents\ Token_Z's&\ purchase\ or\ sale\ amount  \\
+    交易前(V_a+V_b+....+V_z)&=交易后(V_a+V_b+....+V_z)  \\
+    V_a:表示协议中Token_A&的市场价值  \\
+    Q_a:表示协议中Token_A&的数量  \\
+    Δa:表示协议中Token_A&的购买量或者出售量  \\
+    V_b:表示协议中Token_B&的市场价值  \\
+    Q_b:表示协议中Token_B&的数量  \\
+    Δb:表示协议中Token_B&的购买量或者出售量  \\
+    V_z:表示协议中Token_Z&的市场价值  \\
+    Q_z:表示协议中Token_Z&的数量  \\
+    Δz:表示协议中Token_Z&的购买量或者出售量  \\
 \end{align}
 $$
-
 ---
-### 🔄 4. How is the Exchange Rate Calculated?  
-The system determines how much A you need to exchange for B based on:
-- The quantity of each token in the pool
-- The current market value of each token  
+### 🔄 4. 如何计算交换比例？    
+系统会根据：
+- 每种代币在池子中的数量
+- 每种代币当前的市场价值   
 $$
 \begin{align}
-    Get\ Δb&={ {V_a \over Q_a}*Δa*Q_b \over V_b} 
+    获得Δb&={ {V_a \over Q_a}*Δa*Q_b \over V_b} 
 \end{align}
 $$
-
-> 💡 If many people are buying Token A, its "market value" will rise, and you'll get fewer tokens in return; conversely, if many are selling, its price will fall.
-
----
-### 📐 5. What are "No Slippage" and "Trading Threshold"?  
-In TTSWAP, if your transaction amount is below **a certain threshold**, the system won't batch match orders but execute at the current price in one go.
-This avoids "slippage" (where you thought you could buy 10 but only got 9).
+来决定：你要用多少 A 才能换回多少 B。  
+> 💡 如果很多人都在买 Token A，它的"市场价值"会上升，换回的数量就会减少；反之，卖得多，它的价格会下降。
 
 ---
-### 🔄 6. Visual Trading Process  
-- How price P changes with buying and selling
-![Price Changes with Trading](whitepaper_image_en/TOKEN_BUYSELL_CHANGE.png)
-P changes with trading behavior  
-- [Figure 2] Why Total Value Remains Constant
-![Relationship Between Two Tokens](whitepaper_image_en/TOKEN_TWO_RELATIONS.png)
-The value lost by one token transfers to another, as total value remains unchanged  
-- [Figure 3] How Multiple Tokens Interact to Affect Prices
-![Multiple Token Relationships](whitepaper_image_en/TOKEN_MULTI.png)
-When one token's P changes, its relative relationship with other tokens also changes 
+### 📐 5. 什么是"无滑点"和"交易阈值"？  
+在 TTSWAP 中，如果你交易的金额小于**某个阈值**，系统就不会分批撮合，一次性按照当前价格成交。  
+这就避免了"滑点"（即你本来以为能买10个，结果只买到9个的情况）。
 
 ---
+### 🔄 6. 图文展示买卖流程  
+- 价格P如何随着买入卖出变化
+![买卖导致价格变化](whitepaper_image_cn/TOKEN_BUYSELL_CHANGE.png)
+P会随着买卖行为发生变化  
+- 【图2】为什么总价值保持不变  
+![两种商品的关系](whitepaper_image_cn/TOKEN_TWO_RELATIONS.png)  
+一种代币减少的价值会转移到另一种代币上,因为总价值不会发生变化  
+- 【图3】多种 Token 如何联动影响价格
+![多种代币的关系](whitepaper_image_cn/TOKEN_MULTI.png)
+当一种代币的P发生变化,那这种代币与其它代币的相对关系也会发生变化 
+---
 
-## ✅ IV. How to Invest in Tokens and Earn Returns?
-On TTSWAP, you can not only trade tokens but also "deposit to earn returns." The platform rewards you with fee sharing + TTS mining rewards based on your token deposits.
+
+## ✅ 四 如何投资代币并赚收益？
+在 TTSWAP 中，你不仅可以交易代币，还可以"存进去赚收益"。平台会根据你投入的代币，给予你 手续费分成 + TTS 挖矿奖励。
 
 ---
-### 🔹 1. Each Token Has Two Core Attributes:
-- Market Value: What the market currently thinks this token is worth
-- Quantity: How many of this token are in the pool  
+### 🔹 1. 每个代币有两个核心属性：
+- 市场价值：当前市场认为这个代币值多少钱
+- 数量：池子里还有多少这个代币  
 
-> 💡 These two data points determine how much return users can earn after investing and the exchange rate.
+> 💡 这两个数据决定了用户投资后能获得多少收益、以及兑换比例。
 
 ---
-### 🧩 2. Tokens Are Divided into Three Categories, Choose Your Participation Method:  
+### 🧩 2. Token 分为两类，选择适合你的方式参与：  
 
-| Token Type | What is it | What can you do | Fee Returns | Supports Solo Investment |
+| Token类型 | 是什么       | 能做什么 | 手续费收益| 是否支持单独投资 |
 | --------- | ---------------------  | ------------------ | ------ |  ------ | 
-| 🌱 Meta Token | First token added to protocol | Serves as liquidity base |✅ Yes |✅ Yes |
-| 🌟 Value Token | Market-recognized tokens with ecosystem support (like ETH) | Independent investment, independent earnings |✅ Yes | ✅ Yes |
-| 📦 Regular Token | User-added tokens, pending market validation | Must be invested alongside Value Tokens | ✅ Yes | ❌ No |
+| 🌟价值Token | 市场认可、有生态支撑的代币（如ETH）| 独立投资、独立赚钱   |✅是              | ✅可以    |
+| 📦普通Token | 用户自己添加的代币，待市场验证     | 需要搭配价值Token一起投资      | ✅是 | ❌不可以单独 | 
 
 ---
-### 💡 3. How to Invest?
-1. Choose the token you want to support
-2. Deposit a certain amount of that token (if it's a Regular Token, you need to deposit an equivalent amount of Value Token)
-3. Wait for returns: You'll receive:
-  - Fee sharing from each transaction
-  - TTS tokens from liquidity mining
+### 💡 3. 怎么投资？
+1. 选择你想支持的 Token
+2. 投入一定数量的该代币（如果是普通Token，还需等值的价值Token一同投入）
+3. 坐等收益：你将获得：
+  - 每笔交易产生的手续费分红
+  - 流动性挖矿获得的 TTS 代币
 
 ---
-### 📤 4. How to Withdraw?   
-You can withdraw your invested tokens anytime, and the system will distribute accumulated returns based on your investment time and proportion.    
-> ⚠️ To prevent sudden large withdrawals from affecting the system, single withdrawals cannot exceed a certain percentage of the current pool (known as "withdrawal slice" limit).
+### 📤 4. 怎么撤资？   
+你可以随时取回你投资的代币，同时系统会根据你的投资时间和比例，发放已累计的收益。    
+> ⚠️ 为了防止突发大额撤资影响系统，单笔撤资不能超过当前池子的一定比例（称为"撤资切片"限制）。
 
 ---
-### 🛡️ 5. Why Must Regular Tokens Be Paired with Value Tokens?  
-Because Regular Tokens have high price volatility and are susceptible to arbitrage. To protect investors, the system requires:
-- When investing Regular Tokens, you must pair with an equivalent amount of "Value Token"
-- These two types of tokens record returns separately, and you can view and withdraw them separately
+### 🛡️ 5. 投普通 Token 为什么要配套价值 Token？  
+因为普通 Token 价格波动大，容易被人套利。为了保护投资者，系统要求：
+- 投入普通 Token 时，必须配对投入等值的"价值Token"
+- 这两种 Token 会分别记录收益，你可以分别查看并提取
 
 ---
-### 💵 6. Investment Process Diagram
-1. You select a token and input quantity
-2. System calculates corresponding investment value based on market value
-3. Successful investment, start accumulating returns (fees + TTS)
+### 💵 6. 投资流程示意图
+1. 你选择代币并输入数量
+2. 系统根据市场价值计算对应投资价值
+3. 投入成功，开始积累收益（手续费 + TTS）
 
-## ✅ V. How Do You Exchange Token for Token?
-TTSWAP allows you to exchange one token (like A) for another (like B) anytime, with the trading process independent of intermediaries and no need to wait for order matching.
-
----
-### 🔁 1. Exchange Logic: Using "Market Value" Instead of Fixed Prices  
-
-Each token has:  
-
-- Current quantity in pool (how many A, how many B)  
-- Current market value (is this token popular? Are people buying it?) 
-
-The system completes transactions based on "market value of token given = market value of token received."   
-**Example:**     
->You exchange 2500 A for B, the system calculates how much 2500 A is worth (say $100), then checks B's current unit price (say 1 B = $0.01), and gives you 10,000 B.
+## ✅ 五 你是怎么用 Token 换 Token 的？
+TTSWAP 让你可以随时把手中的一种代币（比如 A）换成你想要的另一种（比如 B），而且交易过程不依赖中介，也不用挂单等待。
 
 ---
+### 🔁 1. 交换逻辑：用"市场价值"衡量，而不是死板价格  
 
-### 📉 2. Why Does Price Increase with More Purchases?  
+每种代币都有：  
 
-Each exchange changes the pool's state:
+- 当前池子中的数量（比如有多少个 A、多少个 B）  
+- 当前的市场价值（这个币现在受欢迎吗？有人买吗？） 
 
-- Given token quantity **increases** → its market value **decreases**
-- Received token quantity **decreases** → its market value **increases**
-
-So next time you exchange, the same amount of A might not get you as many B.  
-> 💡 Analogy: Like when you buy more of a fruit, the vendor thinks it's in high demand and raises the price.
+系统会按照 "你给出的 Token 的市场价值 = 你换到的 Token 的市场价值" 来完成交易。   
+**举个例子：**     
+>你用 2500 个 A 去换 B，系统会计算这 2500 个 A 值多少钱（比如值 $100），然后再看看当前的 B 单价是多少（比如 1 B = $0.01），就会给你 10,000 个 B。
 
 ---
 
-### 📊 3. Real-time Price Calculation Illustration  
+### 📉 2. 为什么越购买价格越高？  
 
-The system actually executes this formula:  
+每次你交换，都改变了池子的状态：
+
+- 给出去的 Token 数量 **变多** → 它的市场价值 **变低**
+- 收回的 Token 数量 **变少** → 它的市场价值 **变高**
+
+所以你下次再来换，同样数量的 A，可能换不到那么多 B 了。  
+> 💡 类比一下：就像你越买某个水果，摊主就越觉得这水果抢手，就会提价一样。
+
+---
+
+### 📊 3. 实时计算价格示意  
+
+系统实际执行以下公式：  
 $$
 \begin{align}
-   Given:&={Token~A\ market\ value \over quantity} × amount  \\
-Received:&= {Token~B\ market\ value \over quantity} × amount  \\
-Given:&= Received \\
+   {{A的市场价值} \over {A的数量}} × 你给出的A数量
+= {{B的市场价值} \over {B的数量}} × 你能换到的B数量
 \end{align}
 $$
  
-You don't need to memorize this! Just know it ensures fair exchanges without black-box pricing.
+你不用背这个！只要知道它帮你保证交换是公平的，不会被黑箱定价。
 
 ---
-### ⛽ 4. Does Price Change After Every Transaction?   
+### ⛽ 4. 每次交易后价格都会变化？   
 
-Yes, but **the system splits large transactions into multiple small ones**, preventing sudden price spikes or drops, avoiding slippage losses.  
-This is the core logic behind TTSWAP's "slippage-free trading":  
-As long as your transaction amount doesn't exceed a certain **threshold** (system-set "slice value"), each transaction executes at a stable price.
+是的，协议根据两代币形成的交易阈值和用户交易的大小自动拆分成多个子交易，**系统会把大交易拆分成多笔子交易**，让价格不会暴涨暴跌，避免你因为滑点吃亏。  
+这也就是 TTSWAP 支持"无滑点交易"的核心逻辑：  
+用户的子订单都具有对应的成交价格,避免滑点的损失，同时第一个子订单是按当前价进行成交。
 
-
----
-**📘 Additional Notes:**  
-- All transactions are automatically calculated on-chain, public, transparent, and verifiable
-- No need to wait for order matching, no "failed orders"
-- No "bot front-running," your transactions are processed in real-time according to rules
 
 ---
-
-## ✅ VI. How to Invest, Earn, and Withdraw?
-
-On TTSWAP, besides trading tokens, you can **earn fees and TTS token rewards through "investing."** It's like depositing money in a bank, but you get both interest and additional dividends.  
+**📘 补充说明：**  
+- 所有交易都在链上自动计算完成，公开、透明、可验证
+- 不需要等待撮合，不怕"订单撮不成"
+- 不存在"机器人抢单"，你的交易按规则实时处理
 
 ---
 
-### 💡 1. What is "Investing"?
+## ✅ 六 怎么投、怎么赚、怎么退？
 
-Investing = depositing your tokens into the platform's pool for other users to trade with, while earning returns.
-The more you deposit and the longer you hold, the more you earn.
-The system records two core data points:
-
-- 📈 Market value at investment time
-- 📦 Amount of tokens deposited
+在 TTSWAP 中，除了交易代币，你还可以**通过"投资"赚手续费和 TTS 代币奖励**。这就像你在银行存钱，不但能拿利息，还有额外分红。  
 
 ---
 
-### 📌 2. Two Types of Investment
+### 💡 1. 什么是"投资"？
 
-|Investment Type| Description | Return Source | Requires Pairing |
+投资 = 把你的代币存入平台的池子，供其他用户交易使用，同时赚取收益。
+ 你存得越多、时间越长，赚得越多。
+系统会记录两个核心数据：
+
+- 📈 投资时的市场价值
+- 📦 投入的代币数量
+
+---
+
+### 📌 2. 投资类型有两种
+
+📌 投资类型有两种：  
+|投资类型|	描述|	收益来源|	是否需要配对|
 |----------|----------|--------|----|
-|🌟 Value Token Investment | Deposit mainstream tokens like ETH | Fee sharing + TTS mining | No |
-|🔍 Regular Token Investment | Deposit new project tokens | Fee sharing + TTS mining | ✅ Requires Value Token pairing |
+|🌟 价值Token投资|	投入 ETH 等主流代币|	手续费分成 + TTS 挖矿|	否|
+|🔍 普通Token投资|	投入新项目代币|	手续费分成 + TTS 挖矿|	✅需配对价值Token|
 
 ---
 
-### 💰 3. How to Earn Returns After Investing?
+### 💰 3. 投进去后怎么赚收益？
 
-The system continuously records fees generated from trading and distributes them according to your investment proportion.  
-You also receive platform tokens TTS as mining rewards.  
-> ✅ Example: If you invested 10% of the ETH pool share, you'll receive 10% of the fees and rewards generated by this pool.
-
----
-
-### ⛏️ 4. What is "Construction Fee"?  
-
-To ensure fairness, the system records the **construction fee** (= deposit amount * (total fees/total deposit amount)) corresponding to your investment time, which doesn't count as your profit.  
-Only fees generated after your deposit count as your profit.
+系统会持续记录交易中产生的手续费，并将其按照你投资的比例分给你。  
+同时你还会获得平台币 TTS 作为挖矿奖励。  
+> ✅ 举个例子：你投入了 10% 的 ETH 池子份额，那你就能拿走这个池子产生的 10% 的手续费和奖励。
 
 ---
 
-### 💼 5. How to Withdraw? Can You Withdraw Anytime?
+### ⛏️ 4. 什么是"构建手续费"？  
 
-You can withdraw anytime, and the system will calculate your returns based on your investment proportion and historical data, automatically distributing them.
-⚠️ Note:
-> Single withdrawals cannot be too large (system sets maximum withdrawal proportion) to avoid affecting overall market stability.
-
----
-
-**💡 Special Note for Regular Token Investment:**
-- Because Regular Tokens are more volatile, to prevent arbitrage
-- The system requires you to simultaneously deposit an equivalent amount of "Value Token" (like ETH)
-- The more you deposit and the longer you hold, the more returns you earn on both sides
-- If the regular token price goes to zero, the corresponding value token cannot be withdrawn
+为保证公平，系统会记录你投入时对应的**构建手续费**(=投入数量*(总手续续/总投入数量))，这部分收益不算你的。  
+只有在你投入后新产生的手续费，才是你的利润。
 
 ---
 
-### 📌 6. Investment Diagram
+### 💼 5. 撤资怎么操作？能随时退吗？
 
-![Investment Diagram](whitepaper_image_en/TOKEN_NORMAL_INVEST.png)
-
-1. Set deposit amount
-2. Calculate required equivalent token deposit amount based on deposit amount
-3. Record investment time quantities and market values of both tokens, and corresponding construction fees
-4. Record investment time construction fees for both tokens
+你可以随时撤资，系统会根据你的投资比例和历史数据，计算你的收益并自动发放。
+⚠️ 注意：
+> 单笔撤资不能太大（系统会设定最大撤资比例），避免影响整个市场稳定。
 
 ---
 
-### 💵 7. Withdrawal Diagram
-
-![Withdrawal Diagram](whitepaper_image_en/TOKEN_NORMAL_DIVEST.png)  
-
-1. Set withdrawal amount
-2. Calculate required equivalent token withdrawal amount based on withdrawal amount
-3. Calculate investment time quantities and market values of both tokens
-4. Calculate current fees and returns for both tokens
-
-## ✅ VII. How Are Fees Earned? How Does the Platform Distribute Money?
-On TTSWAP, every transaction and investment generates fees. These aren't kept by the platform but automatically distributed to different participants by the system - just participate, and you have a chance to earn!
+**💡 投资普通Token的特别说明：**
+- 因为普通Token波动较大，为了防止套利。
+- 系统要求你必须同时投入等价值的"价值Token"（比如ETH）。
+- 投入越多、时间越长，两边都能获得收益。
+- 如果当普通代币价格归零时,对应的价值代币也无法撤出。**请不要投资超高风险项目,造成资金损失**
 
 ---
-### 💸 1. Where Do Fees Come From?
-Whenever someone:
-- Makes a transaction (exchanges tokens)
-- Invests tokens
-- Withdraws
-The system deducts a portion as fees according to a certain ratio.
+
+### 📌 6. 投资 示意图
+
+![投资示意图](whitepaper_image_cn/TOKEN_NORMAL_INVEST.png)
+
+1. 设置投入数量
+2. 根据投入数量,计算需要的等价值的代币投入数量
+3. 记录投资时两个代币的数量与市场价格价值,和对应的构建手续费
+4. 记录投资时两个代币构建手续费
 
 ---
-### 📊 2. How Are Fees Distributed?  
-Fees aren't monopolized by the platform but reasonably distributed based on your role in the protocol:  
-| Role | Fee Distribution Ratio (Example) |
+
+### 💵 7. 撤资 示意图
+
+![撤资示意图](whitepaper_image_cn/TOKEN_NORMAL_DIVEST.png)  
+
+1. 设置撤资数量
+2. 根据撤资数量,计算需要的等价值的代币撤资数量
+3. 计算投资时两个代币的数量与市场价格价值
+4. 计算两个代币的当前手续费与收益
+
+## ✅ 七 手续费是怎么赚的？平台怎么分钱？
+在 TTSWAP 中，每一次交易和投资都会产生手续费。这不是平台自己赚走，而是由系统自动分配给不同参与者，你只要参与，就有机会获得分润！
+
+---
+### 💸 1. 手续费从哪来？
+每当有人：
+- 进行交易（兑换 Token）
+- 投资代币
+- 撤资
+系统就会按照一定比例，从这笔交易中扣除一部分作为手续费。
+
+---
+### 📊 2. 手续费怎么分？  
+手续费并不被平台独吞，而是根据你在协议中的角色进行合理分配：  
+| 角色身份 | 能获得手续费比例说明（示意） |
 | --------- | --------------------- |
-| 💧 Liquidity Provider | 50%~80% (distributed by investment proportion) |
-| 🧑‍💼 Service Provider/Portal | 5%~25% |
-| 👤 Referral | 5%~10% |
-| 🧑‍🤝‍🧑 User | Exclusive 10% discount or reward |
-| 🛠️ Token Administrator | 1%~3% sharing |     
-| 🌐 Community and Protocol | Used for buyback/burning/development funds etc. |
->💡 The system automatically adjusts these ratios based on conditions like whether a referral is filled in or if a portal is used, ensuring fairness and transparency.  
+| 💧 流动性提供者 |	50%~80%（按投入占比分） |
+| 🧑‍💼 服务商/门户 |	5%~25% |
+| 👤 推荐者 |	5%~10% |
+| 🧑‍🤝‍🧑 用户本人 |	专享10%折扣或奖励 |
+| 🛠️ 代币管理员 |	分润1%~3% |     
+| 🌐 社区和协议 | 	用于回购/销毁/开发资金等 |
+>💡系统会根据是否填写推荐人、是否使用门户等条件，自动调整这些比例，确保公平透明。  
 
 ---
-### 🧮 3. How Are Investor Fees Calculated?
-Key terms: unit fee, construction fee
-After you invest, the system records:
-- What's the current total fee?
-- What's your deposit amount?  
+### 🧮 3. 投资者手续费是怎么算出来的？
+关键词：单位手续费、构建手续费
+当你投资后，系统记录：
+- 当前总手续费是多少？
+- 你的投入数量是多少？  
  
-As others continue trading, system fees increase, generating profit for your portion.  
-Return formula:  
+随着别人不断交易，系统手续费越来越多，你这部分就会产生利润。  
+收益公式：  
 $$
 \begin{align}
-Return\ =\ Current\ Unit\ Fee\ ×\ Your\ Investment\ Amount\ -\ Construction\ Fee  
+收益 = 当前单位手续费 × 你的投资数量 - 构建手续费  
 \end{align}
 $$
 
-> 💡 Construction fee is your share of "historical fees" at investment time, not counted in your returns, ensuring fairness.
+> 💡构建手续费是你投资当时"历史手续费"的份额，不算进你的收益中，这样更公平。
 
 ---
-### 📈 4. Can Multiple Investments Merge Returns?  
-Of course! The system automatically merges your multiple investments in the same pool, calculating and distributing all returns uniformly, no manual operation needed.
+### 📈 4. 多次投资也能合并收益？  
+当然可以！系统会自动合并你在同一个池子的多次投资，把所有收益统一计算发放，你无需手动操作。
 
 ---
-### 💼 5. Are Returns Automatically Distributed Upon Withdrawal?
-Yes. When you withdraw your investment:
-- The system calculates your fee returns in real-time
-- Then sends you "principal + returns" in one go
-And automatically deducts your share from the pool, updating system status.
+### 💼 5. 撤资时会自动发放收益吗？
+是的。当你撤出投资：
+- 系统会实时计算你应得的手续费收益
+- 然后将"本金 + 收益"一次性打给你
+并自动从池子中扣除你的份额，更新系统状态。
 
 ---
-### 🧧 6. Can Fees Be Distributed as Benefits?
-Yes, project parties or token issuers can actively deposit some tokens into the fee pool to:
-- Increase annual returns, attract more investors
-- Incentivize liquidity providers
-- Hold promotional activities
+### 🧧 6. 手续费还能作为福利发放？
+是的，项目方或代币发行方可以主动把部分 Token 存入手续费池中，用来：
+- 提高年化收益率，吸引更多投资者
+- 激励流动性提供者
+- 举办活动福利
 
 ---
-### 📚 7. Flow Chart Explanation   
+### 📚 7.手续费计算流程(投资时)   
+![手续费计算流程(投资时)](whitepaper_image_cn/TOKEN_FEE_COMPUTE_1.png)  
 
-- Figure 1: How fees accumulate after investment
-- Figure 2: How returns are settled upon withdrawal
-- Figure 3: How multiple investments are merged and calculated
-- Figure 4: Referral/service provider fee path diagram
+* 📊 图1 用户投资前Token状态  
+  💡 单位手续费指单位投资应该得到多少手续费，单位手续费=手续费总额/总投资数量;  
+  📈 随着交易的进行，手续费不断产生，手续费总额增加，单位手续费就增加。  
+  🔒 构建手续费提用户开始投资时，为记录用户不应该享受的手续费总额。  
+  🧮 构建手续费=投资数量X投资时单位手续费  
+
+* 📈 图2 用户投资后手续费积累增加  
+  💰 当协议中不停有手续费产生时，单位手续费会不停增加。  
+  📊 用户投资产生的收益=单位手续费x投资数量-构建手续费。  
+
+* 🔄 图3 个人在Token上的多笔投资  
+  📝 当用户在同一下Token上，进行多笔投资，可以合成同一条投资记录。  
+  🧮 合并后的构建手续费=合并前的构建手续费汇总  
+  💰 手户投资产生的收益=单位手续费x投资数量-汇总后的构建手续费  
+
+* 🔗 图4 个人在Token上多笔投资进行合并  
+  📊 该图展示合并后的投资情况  
+
+* 👥 图5 多人在Token上的投资  
+  📈 当多个用户进行投资时，就可以汇总成这个Token总投资数量，总投资市场价值，总构建手续费。  
+  💰 该Token当前总共实际投资利润=当前总费用-汇总构建手续费。  
+
+* 🔄 图6 多人在Token上的投资进行合并
+
+### 📊 8. 手续费计算流程(撤资)
+
+![手续费计算流程(撤资)](whitepaper_image_cn/TOKEN_FEE_COMPUTE_2.png)
+
+* 👤 图1 个人Token投资(此图表示如果提供流程性时无无常损失)  
+  📝 此图是个人在此Token的投资情况，当用户进行撤资时，计算逻辑：  
+  🧮 Token当前单位手续费=Token当前手续费总额/Token当前投资数量  
+  📊 撤资时构建手续费=构建手续费X(撤资数量/用户投资总量)  
+  💰 当用户撤资时，获得利润= 当前单位手续费X撤资数量-撤资时构建手续费  
+
+* 👥 图2 Token总投资  
+  📈 在Token减去用户撤资时的计算逻辑：  
+  💰 Token当前手续费总额=原Token当前手续费总额-用户撤资时利润-撤资时构建手续费  
+  📊 Token构建手续费=Token构建手续费-撤资时构建手续费  
+  🔢 Token投资数量=原Token投资数量-用户撤资数量  
+
+## ✅ 八 什么是流动性挖矿？越参与，挖得越多！
+流动性挖矿 = 你投入代币 → 协议根据你贡献的"价值" → 分发平台代币（TTS）作为奖励。
 
 ---
-
-## ✅ VIII. What is Liquidity Mining? The More You Participate, The More You Mine!
-Liquidity mining = You deposit tokens → Protocol calculates your "value" contribution → Distributes platform tokens (TTS) as rewards.
-
----
-### ⛏️ 1. What is "Secondary Mining"?  
-On TTSWAP, every time you invest tokens or provide liquidity, you not only earn fees but also automatically participate in mining platform tokens TTS.  
-This is called "secondary mining," an additional reward.    
-> TTS is the platform's governance/incentive token, which can be used for voting, participating in profit sharing, trading, etc. in the future.
+### ⛏️ 1. 什么是"二次挖矿"？  
+在 TTSWAP 上，你每次投资代币、提供流动性时，不光能赚手续费，还能自动参与平台代币 TTS 的挖矿。  
+这叫"二次挖矿"，是额外赠送的奖励。    
+> TTS 是平台发行的治理/激励代币，未来可用于投票、参与分润、交易等。
 
 ---
-### 💧 2. Who Can Participate in Mining?  
-As long as you deposit tokens (any token) into the platform pool, **the system calculates your computing power based on your "market value" investment**, thus earning TTS rewards.  
-|What you do| Reward situation|
+### 💧 2. 谁能参与挖矿？  
+只要你把代币（任意代币）投入平台池子，**系统就会根据你投入的"市场价值"计算出算力**，从而获得 TTS 奖励。  
+|你做的事|	奖励情况|
 | ------------ | ------- |
-|Deposit ETH and other tokens |✅ Start mining TTS|
-|Deposit regular tokens |✅ Can also mine (requires Value Token pairing)|
-|Earlier investment |✅ More rewards|
-|More investment |✅ Higher rewards|
+|投入 ETH 等代币	|✅ 开始挖 TTS|
+|投入普通代币|	✅ 也能挖（需配对价值Token）|
+|越早投入|	✅ 奖励越多|
+|投入越多	|✅ 奖励越高|
 
 ---
-### 📊 3. What are the Reward Rules?  
-- Daily distribution of **((200 million - unlocked amount) * 2%/366 days)**
-- The system determines how much you can mine based on your current computing power (invested market value) proportion of total computing power
+### 📊 3. 奖励规则是怎样的？  
+- 每天发放**((2亿枚-已解锁数量)*2%/366天)**
+- 系统会根据你当前算力（投入市场价值）占总算力的比例，来决定你能挖多少
 
-**Example:**  
-Total network investment is 1000 USDT, you invested 100, so you currently have 10% computing power.  
-If the system distributes 1000 TTS, you'll get 100 TTS.
-
----
-### 🧠 4. No Additional Operations? Completely Automatic?
-Yes, you only need to:
-- Deposit tokens into the pool
-- Leave the rest to smart contracts
-The system automatically:
-- Distributes fee rebates
-- Accumulates TTS mining rewards
-- You can check & withdraw anytime
+**举个例子：**  
+全网总投入是1000 USDT，你投入了100，那你当前就拥有10%的算力。  
+系统发放1000 TTS，你就能分得 100 TTS。
 
 ---
-### 🎁 5. What Can Mined TTS Be Used For?  
-- Can be used for platform governance and voting
-- Can be sold for other tokens
-- Can participate in future ecosystem incentive activities
-- Future plans support "staking for value increase" and more features
+### 🧠 4. 不用额外操作？完全自动？
+对，你只需要：
+- 把代币投入池子
+- 剩下的事情交给智能合约自动完成
+系统会自动：
+- 分配手续费返佣
+- 累积 TTS 挖矿奖励
+- 你可以随时查看 & 提取
 
 ---
-### 📚 6. Diagram Explanation 
-- Figure 1: User deposits Token into pool
-- Figure 2: System converts to computing power based on market value
-- Figure 3: TTS continuously accumulates, can be claimed
+### 🎁 5. 挖到的 TTS 有什么用？  
+- 可以用于 平台治理和投票
+- 可以卖出换其他代币
+- 可以参与未来生态激励活动
+- 后续计划支持"锁仓增值"等更多玩法
+
 
 ---
-### 📘 7. Summary  
-**Liquidity mining = Deposit tokens → Accumulate returns + Mine platform tokens + Zero operation threshold**  
-**Like "wealth management + mining machine + automatic ATM" three-in-one**
+### 📘 7. 小结  
+**流动性挖矿 = 投入代币 → 累积收益 + 挖平台币 + 零操作门槛**  
+**就像是"理财 + 矿机 + 自动提款机"三合一**
 
-## ✅ IX. Stake ETH Once, Earn Five Returns - How?
-Are you holding ETH? On TTSWAP, with just one stake, the system automatically opens **five return channels** for your **ETH**, no more "idle lying flat."
 
----
-### 💰 1. One Stake, Five Returns
-| Return Source | Description|
-| ----------| ------------------------------------ |
-|① Fee Rebates | As a liquidity provider, enjoy fee sharing from transactions |
-|② TTS Mining Rewards | System distributes platform token TTS rewards based on your ETH value |
-|③ Validator Rewards | System stakes unused ETH liquidity in Rocketpool, earning validation rewards (about 3~5% annual) |
-|④ rETH Pool Rebates | Received rETH automatically joins rETH pool, continuing to generate fee rebates |
-|⑤ rETH Re-mining Returns | Continue participating in TTS mining in rETH pool, returns compound like a snowball |
+## ✅ 九 谁参与，谁分润——TTSWAP的角色激励机制
+TTSWAP 的核心理念是：**让每个为生态做出贡献的人，都能获得真实收益。**
+无论你是用户、开发者、项目方、推荐者、门户运营方……只要你参与，都有你的一份奖励。
 
 ---
-### 🧠 2. Entire Process Automatic, No Operation Needed
-You only need to do one thing:    
-**Deposit ETH or WETH into corresponding pool (SETH or SWETH)**  
-
-The system automatically completes:
-- **Rocketpool staking (obtaining rETH)**
-- **Re-staking rETH (obtaining more rebates and rewards)**
-- **Managing return distribution**
-
----
-### 🧪 3. Why Higher Returns Than Regular Staking?     
-Traditional ETH staking only gets 3%~5% validator annual returns.  
-TTSWAP achieves return stacking effects through **combined pool design + automatic compound interest**, **far exceeding single staking return models**.
-
----
-### 🔗 4. What is This Mechanism Based On?
-- Rocketpool: Decentralized ETH staking protocol
-- rETH: Staking certificate issued by Rocketpool (including returns)
-- SETH / SWETH: TTSWAP internal ETH/WETH mapping tokens, supporting user participation and tracking
-
----
-### 📚 5. Secondary Staking Process Diagram
-![ethRestaking](whitepaper_image_en/ETHReStaking.png) 
-a. User deposits ETH → SETH pool  
-b. User receives SETH pool fee sharing  
-c. User receives SETH pool liquidity mining TTS  
-d. Unused portion in SETH → Rocketpool staking   
-e. User receives validator returns  
-f. Receive rETH → Deposit into rETH pool  
-g. User receives rETH pool fee sharing  
-h. User receives rETH pool liquidity mining TTS  
-
-**User simultaneously receives five returns:**  
-**- SETH pool fees + SETH pool mining + validation rewards + rETH pool fees + rETH pool mining**
-
----
-### 📘 6. Summary  
-This is a way to turn your ETH into a **"return engine"**:  
-Just one operation, system automatically helps you earn 5 streams of income, wasting no opportunities.
-
-
-## ✅ X. Who Participates, Who Benefits - TTSWAP's Role Incentive Mechanism
-TTSWAP's core philosophy is: **Let everyone who contributes to the ecosystem receive real returns.**
-Whether you're a user, developer, project party, referral, portal operator... as long as you participate, there's a reward for you.
-
----
-### 🎯 1. System Roles and Corresponding Return Sources   
-| Role | Fee Distribution Ratio (Example) |
+### 🎯 1. 系统角色和对应收益来源   
+| 角色身份 | 能获得手续费比例说明（示意） |
 | --------- | --------------------- |
-| 💧 Liquidity Provider | 50%~80% (distributed by investment proportion) |
-| 🧑‍💼 Service Provider/Portal | 5%~25% |
-| 👤 Referral | 5%~10% |
-| 🧑‍🤝‍🧑 User | Exclusive 10% discount or reward |
-| 🛠️ Token Administrator | 1%~3% sharing |     
-| 🌐 Community and Protocol | Used for buyback/burning/development funds etc. |
+| 💧 流动性提供者 |	50%~80%（按投入占比分） |
+| 🧑‍💼 服务商/门户 |	5%~25% |
+| 👤 推荐者 |	5%~10% |
+| 🧑‍🤝‍🧑 用户本人 |	专享10%折扣或奖励 |
+| 🛠️ 代币管理员 |	分润1%~3% |     
+| 🌐 社区和协议 | 	用于回购/销毁/开发资金等 |
 
->💡 Ratios are not fixed, specific distribution plans are determined by community/token holder governance.
+>💡 比例并非固定不变，具体分配方案由社区/代币持有人治理决定。
 
 ---
-### 🔧 2. Backend Configuration (For Developers/Project Parties)  
-The system internally supports flexible setting of sharing ratios for each role, for example:  
-|Sharing Item | Range | Example Default (Changeable)|
+### 🔧 2. 后台配置说明（面向开发者/项目方）  
+系统内部支持对每个角色的分润比例进行灵活设置，比如：  
+|分润项 |	范围	|示例默认值 （可改）|
 | ------- | ----- | -------- |
-|Investor Sharing | 0% ~ 63% | 60%|
-|Merchant Sharing | 0% ~ 63% | 2% |
-|Portal Sharing | 0% ~ 63% | 15% |
-|Referral Sharing | 0% ~ 63% | 10% |
-|User Sharing (Discount) | 0% ~ 63% | 5% |
-|Protocol Base Rate | 0% ~ 63% | 3%|
+|投资者分佣	| 0% ~ 63% |	60%|
+|商家分佣	| 0% ~ 63% |	2% |
+|门户分佣	| 0% ~ 63% |	15% |
+|推荐者分佣 |	0% ~ 63% |	10% |
+|用户分润（折扣） |	0% ~ 63% |	5% |
+|协议基本费率 |	0% ~ 63% |	3%|
 
-These parameters can be flexibly adjusted according to market conditions. **Platform supports configurable market incentive mechanisms, facilitating long-term operation and fair distribution.**
-
----
-### 📌 3. Example: Fee Distribution Path for One Transaction  
-Suppose User A exchanges ETH for Token B, generating $10 in fees, configured as follows:
-- Investor sharing: $5
-- Referral (A filled in you) sharing: $1
-- Portal platform (like integrated third-party DApp) sharing: $1
-- User discount reward: $1
-- Protocol income: $2
-> 💡 All these distributions are automatically handled by smart contracts, no need to trust platform or intermediaries.
+这些参数都可以根据市场情况灵活调整.**平台支持可配置化市场激励机制，便于长期运行和公平分配。**
 
 ---
-### 📘 4. Summary  
-TTSWAP's market incentive mechanism is built on this belief:  
-**"Who participates, who shares. Decentralization isn't just technology, it's fairness."**  
-
-
-## ✅ XI. TTSWAP Trading Saves Money, GAS Consumption Fully Transparent
-On platforms like Ethereum, every operation (like trading, staking, investing) consumes so-called "Gas fees."  
-Lower Gas means less user spending.  
-TTSWAP specially optimizes contract structure and logic, making platform operations more economical, faster, and lighter.
-
----
-### 🧪 1. What's the Average Operation Cost?  
-Content temporarily unavailable outside Feishu document
->💡 First call usually has more initialization costs, subsequent operation fees significantly decrease.
+### 📌 3. 举个例子：一次交易手续费的分配路径  
+假设用户 A 用 ETH 换了 B 代币，产生了 $10 手续费，配置如下：
+- 投资者分佣：$5
+- 推荐人（A 填写了你）分佣：$1
+- 门户平台（比如接入的第三方 DApp）分佣：$1
+- 用户折扣奖励：$1
+- 协议收入：$2
+> 💡  所有这些分润都由智能合约自动分配，你无需信任平台或中介。
 
 ---
-### 💡 2. Why Can TTSWAP Save So Much?   
-Compared to other DEX platforms (like Uniswap, Balancer, etc.), TTSWAP's Gas costs can save 50%~90%, reasons include:
-- Simpler smart contract logic (no redundant calculations)
-- Highly reusable core functions (cached configuration after first call)
-- All tokens share liquidity pool (no need for trading pairs)
->💡 The more you trade and operate, the more TTSWAP helps you save.
+### 📘 4. 小结  
+TTSWAP 的市场激励机制建立在这样一个信念上：  
+**"谁参与，谁共享。去中心化不只是技术，更是公平。"**  
+
+
+## ✅ 十 TTSWAP 交易更省钱，GAS消耗全透明
+在以太坊等链上平台上，每一次操作（比如交易、质押、投资）都会消耗所谓的 "Gas 费"。  
+Gas 越低，用户花费越少。  
+TTSWAP 特别优化了合约结构和逻辑，使得用户在平台上的操作更省、更快、更轻便。
 
 ---
-### ⚙️ 3. Contract Deployment Performance
-- Contract size: 26543 bytes (very compact)
-- Deployment cost: about 5644297 Gas
-- Modular design, beneficial for auditing, secure reuse
+### 🧪 1.平均操作成本是多少？  
+| Function Name      | first  | second or more | 备注                 |
+| ------------------ | ------ | -------------- | -------------------- |
+| buyGood(NativeETH) | 104056 | 86942          | 购买Token            |
+| buyGood(ERC20)     | 112715 | 95615          | 购买Token            |
+| disinvestProof     | 255412 | 198512         | 撤资普通证明         |
+| disinvestProof     | 176765 | 129300         | 撤资价值证明         |
+| initGood           | 399488 |                | 初始化普通Token      |
+| investGood         | 172331 | 114339         | 投资普通Token        |
+| investGood         | 242021 | 114414         | 投资价值Token        |
+| collectProof       | 238070 | 80158          | 获取普通投资证明收益 |
+| collectProof       | 140453 | 103453         | 获取价值投资证明收益 |
+| warefare           | 69462  | 52362          | 增加手续费发福利     |
+>💡 首次调用通常会多一些初始化成本，后续操作费用显著减少。
 
 ---
-### 📘 4. Summary  
-On TTSWAP:  
-- You can complete more operations with less ETH/Gas  
-- Not only more economical, but also more environmentally friendly (reducing on-chain burden)  
-- More suitable for high-frequency trading, long-term holding users  
+### 💡 2.为什么 TTSWAP 能省这么多？   
+相比其他 DEX 平台（如 Uniswap、Balancer 等），TTSWAP 的 Gas 成本可节省 50%~90%，原因包括：
+- 智能合约逻辑更简洁（无多余计算）
+- 核心函数高度复用（首次调用后缓存配置）
+- 所有 Token 共用流动池（无需分币对）
+>💡 你交易得多、操作得多，TTSWAP 帮你省的钱就越多。
+
+---
+### ⚙️ 3. 合约部署性能表现
+- 合约体积：26543 字节（非常紧凑）
+- 部署成本：约 5644297 Gas
+- 采用模块化设计，利于审计、安全复用
+
+---
+### 📘 4. 小结  
+在 TTSWAP 上：  
+- 你能花更少的 Gas 完成更多操作  
+- 不仅更经济，还更环保（减少链上负担）  
+- 更适合高频交易、长期持仓用户使用  
 
 ---
 
-## ✅ XII. You're Not Just a User, You're a Platform Co-builder     
+## ✅ 十一 你不仅是用户，更是平台共建者     
 
-TTSWAP isn't a "officially operated" centralized platform, but an **open protocol where all users can participate in co-building and win-win cooperation**.  
-You're not a "customer," you're a "partner."  
-The platform divides all participants into 6 role types, each can receive **real participation returns and community rights.**
+TTSWAP 并不是一个"官方操盘"的中心化平台，而是一个**所有用户都可以参与共建、共赢的开放协议**。  
+你不是"客户"，你是"合伙人"。  
+平台将所有参与者分成6类角色，每一类都能获得**真实的参与收益和社区权利。**
 
 ---
 
-### 👤 1. Role Overview: Everyone Can Participate  
-|Role Name | What can you do? | What can you get?|
+### 👤 1. 角色一览：谁都能参与其中  
+|角色名称 |	你可以做什么？ |	你能获得什么？|
 | --------- |------------------------|--------------|
-|🛠️ Token Administrator | First to list a token, set parameters, operate that Token | Receive 1~3% fee sharing from that token's trading |
-|💧 Liquidity Provider | Deposit tokens to provide trading pool for platform | Share 50%~80% of fees + mining rewards |
-|🧑‍💼 Service Provider | Provide technical interfaces, integrate wallets, create investment entry points | Can receive 5%~25% fee sharing |
-|👥 Referral | Refer others to use TTSWAP | Can receive 5%~10% of referred users' fees |
-|🙋‍♂️ Regular User | Use platform for trading, investing | Receive fee discounts (default 10%) |
-|🌐 Community Member | Participate in project governance, make suggestions, vote | Have proposal rights, voting rights, and information rights |
+|🛠️ 代币运营者 |	首次上线某个代币、设置参数、运营该 Token | 	获得该代币交易的手续费分润 1~3%|
+|💧 LP(流动性提供者) |	投入代币为平台提供交易池  | 	分得 50%~80% 的手续费 + 挖矿奖励|
+|🧑‍💼 门户(服务提供者)	| 提供技术接口、集成钱包、做投资入口	 | 可获得手续费分润 5%~25%|
+|👥 推广者	| 推荐他人使用 TTSWAP	 | 可获得被推荐人手续费的 5%~10%|
+|🙋‍♂️ 普通用户 |	使用平台进行交易、投资 | 	获得手续费折扣（默认 10%）|
+|🌐 社区成员 |	参与项目治理、提出建议、投票 | 	拥有提案权、投票权和信息知情权|
 
 ---
-### 🗳️ 2. Your Rights Include Not Just Returns, But Decision-Making Power
-Token holders can:
-- Initiate governance proposals
-- Vote on platform parameters, incentive mechanisms, token distribution, and other major matters
-- View protocol fund movements (fully verifiable on-chain)    
+### 🗳️ 2. 你的权利不仅是收益，还有决策权
+代币持有者可以：
+- 发起治理提案
+- 对平台参数、激励机制、代币分发等重大事项投票
+- 查看协议资金动向（全链上可查）    
 
-> This is the core spirit of decentralized platforms: **Participation is rights, holding is governance**
-
----
-### 💡 3. Becoming a Role is Very Simple:
-- Want to be an administrator? Just be the first to list a Token
-- Want to be a referral? Register and share your invitation code
-- Want to earn service sharing? Develop wallets, integrate entry points
-- Want governance rights? Just hold TTS tokens
+> 这就是去中心化平台的核心精神：**参与即权利，持有即治理**
 
 ---
-### 📘 4. Summary   
-TTSWAP isn't just a tool, but an open community that can be co-built and share returns.  
-Whether you're a developer, investor, or content creator, **you can find your valuable role in this system.**  
+### 💡 3. 成为某个角色的方式非常简单：
+- 想成为管理员？只需首次上线某个 Token
+- 想成为推荐人？注册并分享你的邀请码
+- 想赚服务分润？部署平台,变现资源
+- 想拥有治理权？持有 TTS 代币即可
+
+---
+### 📘 4. 小结   
+TTSWAP 不仅仅是一个工具，更是一个可以一起共建、共享收益的开放社区。  
+无论你是开发者、投资者、内容创作者，**你都能在这个系统中找到自己的价值角色。**  
 
 ---
 
-## ✅ XIII. How are TTS Tokens Distributed? Unlock Rules Like a Farming Game
-TTS is TTSWAP's platform token, used for governance, rewards, and participating in ecosystem building. To protect everyone's long-term interests, tokens aren't immediately sellable upon receipt, but like "farming," need to "mature" before they can be "harvested."
+## ✅ 十二 TTS代币怎么分？解锁规则像种菜游戏
+TTS 是 TTSWAP 的平台币，用于治理、奖励和参与生态建设。为了保障每个人的长期利益，代币不是一拿就能卖，而是像"种菜"一样，需要"成熟"才可以"摘"。
 
 ---
-### 📦 1. Total Supply and New Issuance Explanation
+### 📦 1. 总量和新增发行说明
 
-- 📊 Total supply cap: 200 million TTS
-- 🪙 Initial minting: 50 million (all locked, allocated to different contribution roles)
-- 🔁 Annual new issuance = (200 million - current unlocked amount) × 2%
-- 🎯 New token use: All used for rewarding liquidity providers, promoting platform development  
->💡 New issuance only for liquidity mining, not flowing to founders or capital parties, eliminating "excessive issuance dump" risk. This rule is already fixed in the contract.
-
----
-### 🌱 2. Simple Token Unlock Rules (Like a Farming Game)
-**⚛️ 1️⃣ Basic Rules**  
-- All tokens received by everyone are initially locked, cannot be used immediately.
-- Unlock condition: Token price rises to 2x the distribution price (e.g., if distributed at $0.05, must rise to $0.10 to start unlocking).
-- Each time can unlock maximum 20% of remaining portion, harvest a small basket at a time, cannot harvest all at once.
+- 📊 发行总量上限：2亿枚 TTS
+- 🪙 初始铸造：5000万枚（全部锁仓，分配给不同贡献角色）
+- 🔁 每年新增发行 =（2亿 - 当前解锁量）× 2%
+- 🎯 新增代币用途：全部用于奖励流动性提供者，推动平台发展  
+>💡 新增部分只用户流动性挖矿，不流向创始人或资本方，杜绝"超发砸盘"风险。该规则已经在合约中固定.
 
 ---
-**🧩 2️⃣ Four Role Distribution Methods** (Like different identities in a game)
-|Role | Who? | Unlock Speed | Unlock Rules | Example🌰 |  
+### 🌱 2. 简单版代币解锁规则（像种菜游戏）
+**⚛️ 1️⃣ 基本规则**  
+- 所有人拿到的代币一开始都是锁定的，不能立即使用。
+- 解锁条件：代币价格涨到发放时的 2 倍（比如发的时候是 $0.05，得涨到 $0.10 才能开始解锁）。
+- 每次最多解锁剩余部份的 20%，一次摘一小篮，不能一次全摘完。
+
+---
+**🧩 2️⃣ 四种角色分配方式**（就像游戏里的不同身份）
+|角色	 | 是谁？ | 	解锁速度	 | 解锁规则	 | 举个例子🌰 |  
 | ------- | ------------------- | ----- | -------------  | --------- |  
-|👨‍🚀 Founder | Project initiator, bears most risk | 🐢 Slowest | Can only unlock 1/12 each time price doubles | 1000 tokens → First unlock about 83 tokens | 
-|🤝 Partner A | Core team, early participation | 🚲 Slow | Unlock 1/10 each time, retains after leaving | 1000 tokens → First unlock 100 tokens | 
-|🤝 Partner B | Key members with continuous contribution | 🏍 Faster | Unlock 1/8 each time, ununlocked portion reclaimed if leaves | 1000 tokens → First unlock 125 tokens | 
-|💎 Value Contributor | Community members, technical/content/operational supporters | 🚗 Fast | Maximum unlock 1/6 each time, reclaimed if inactive | 1000 tokens → First unlock 166 tokens | 
-|💰 Capital Contributor | Investors, early airdrop recipients | ✈️ Fastest | Maximum unlock 1/5 each time, some immediately liquid | 1000 tokens → First unlock 200 tokens | 
+|👨‍🚀 创始人 | 	项目发起人，承担最多风险 | 	🐢 最慢 | 	每次涨1倍只能解锁 1/12 | 	1000 枚 → 首次解锁约 83 枚 | 
+|🤝 合伙人A | 	核心骨干，早期参与 | 	🚲 慢 | 	每次解锁 1/10，离职仍可保留	 | 1000 枚 → 首次解锁 100 枚 | 
+|🤝 合伙人B | 	持续付出的关键成员	 | 🏍 较快 | 	每次解锁 1/8，离职会被回收未解锁 | 	1000 枚 → 首次解锁 125 枚 | 
+|💎 价值贡献者 | 	社区成员、技术/内容/运营支持者  | 	🚗 快 | 	每次最高解锁 1/6，不活跃会回收 | 	1000 枚 → 首次解锁 166 枚 | 
+|💰 资本贡献者 | 投资人、早期得到空投用户	 | ✈️ 最快 | 	每次最高解锁 1/5，部分可立即流通 | 	1000   枚 → 首次解锁 200 枚 | 
 
 ---
-**📌 3️⃣ Additional Notes**
-- 💡 Adopts who benefits who bears responsibility: Who benefits more, who bears more responsibility, who is more tightly bound to the project.
-- ⚠️ Exit penalty mechanism: Partners B and contributors lose ununlocked portion if they leave midway.
-- 🔄 Can upgrade: Community members with excellent performance have chance to be promoted to partners (like upgrading VIP in games).
-- 📈 Token price real-time monitoring: System automatically detects market price, can only "unlock" when conditions are met.
+**📌 3️⃣ 补充说明**
+- 💡 采用谁受益谁负责：谁受益越多,谁负责越多,谁就与项目绑定越紧。
+- ⚠️ 退出惩罚机制：合伙人B和贡献者如果中途离开，会失去未解锁部分。
+- 🔄 可以升级：社区成员表现优秀，有机会晋升合伙人（像打游戏升 VIP）。
+- 📈 币价实时监控：系统自动检测市场价格，涨到条件后才能"解锁"。
 
 ---
-**🧲 4️⃣ Why This Design?**  
-|Purpose | Implementation Method | 
+**🧲 4️⃣ 为什么要这样设计？**  
+|目的	| 	实现方式	| 
 |------- | ------ |
-|Prevent dump and run | Ununlocked portion much larger than unlocked portion, any selling dump is unfavorable to self and other holders | 
-|Incentivize contribution | Value/partners more flexible unlocking than investors | 
-|Promote ecosystem growth | More price increase, more unlocking | 
-|Encourage long-term participation | Each role has unlock growth curve | 
-|Return distribution | More reasonable, more transparent return distribution | 
+|防止砸盘跑路		| 未解锁部份大福多于解锁那部份,任何的抛售砸盘对于自己与其它持有者都不利	| 
+|激励做贡献	| 	价值/合伙人比投资人解锁更灵活	| 
+|促进生态增长		| 价格涨越多，解锁就越多	| 
+|鼓励长期参与		| 每个角色都有解锁成长曲线	| 
+|收益分配	| 更合理,更透明进行收益分配	| 
 
 ---
-**❓ 5️⃣ Frequently Asked Questions**  
-Q1: What if token price never rises?  
- → All tokens remain locked, cannot unlock. Team has motivation to push project success.  
-Q2: What can unlocked tokens be used for?  
- → Can be freely traded, participate in voting, can also continue staking or investing.  
-Q3: Can this mechanism be manipulated?  
- → No, all distribution and unlock records are public on-chain, transparent and verifiable, cannot be modified.  
+**❓ 5️⃣ 用户常问的问题**  
+Q1: 如果币价一直不涨怎么办？  
+ → 所有代币将持续锁定，解锁不了。团队就有动力去推动项目成功。  
+Q2: 解锁后的币可以干嘛？  
+ → 可以自由交易、参与投票、也能继续质押或投资。  
+Q3: 这个机制会不会被操控？  
+ → 不会，所有分配和解锁记录都公开在链上，透明可查，不能修改。  
 
 ---
-### 📘 3. Summary  
-TTS tokens are like a tree you plant yourself, grow well, harvest more.
+### 📘 3. 小结  
+TTS代币就像一棵你自己种的树，长得好，就能摘得多。
 
-## ✅ XIV. Open Source, Transparent, Compliant, User Rights Protected
-TTSWAP is a fully open source, compliant Web3 project, with all core code and documentation clearly authorized and subject to community supervision.
+## ✅ 十三 开源透明合规，用户权益有保障
+TTSWAP 是一个完全开源、合规运行的 Web3 项目，所有核心代码与文档均明确授权，并接受社区监督。
 
 ---
-### 📂1. Project Follows Two Types of Open Source Licenses:  
-|License Type | Used For | Meaning |
+### 📂1.项目遵循两类开源协议：  
+|协议类型|	用于哪些部分|	含义说明|
 | -------- | ---------| ---------|
-|🟩 MIT | Interfaces, tools, documentation, some contracts | Fully open source, free to use and commercialize |
-|🟦 BUSL-1.1 | Core smart contracts | Can be used for learning and testing, commercial applications require protocol authorization |  
+|🟩 MIT |	接口、工具、文档、部分合约 |	完全开源，可自由使用与商用|
+|🟦 BUSL-1.1 |	核心智能合约 |	可用于学习与测试，商业应用需按协议授权|  
 
-✅ BUSL-1.1 sets certain protection period, preventing core logic from malicious copying  
-✅ MIT ensures developers can freely reference non-core modules  
-
----
-### 🔎 2. Project File Structure Transparent and Open
-- Core contract path: /contracts/TTSwap_*
-- Documentation path: /docs/whitepaper-cn.pdf etc.
-- Protocol files: See LICENSE file in GitHub  
-
->💡 If you discover any content that may infringe third-party open source licenses, please contact us immediately, we will respond promptly.
-
-## ✅ XV. Contact Us & Join Community
-TTSWAP is a decentralized project, welcoming global users, developers, content creators, and investors to join in co-building.  
-📣 Whether you want to promote, participate in mining, integrate entry points, operate community, or just make suggestions, here are our official designated channels:
+✅ BUSL-1.1  设定一定保护期，防止核心逻辑被恶意抄袭  
+✅ MIT  保证开发者可自由引用非核心模块  
 
 ---
-### 🔗 1. Official Contact Information
-|Channel | Address|
+### 🔎 2. 项目文件结构透明开放
+- 核心合约路径：/contracts/TTSwap_*
+- 文档路径：/docs/whitepaper-cn.pdf 等
+- 协议文件：详见 GitHub 中的 LICENSE 文件  
+
+>💡 如果你发现任何可能侵犯第三方开源协议的内容，请立即联系我们，我们会积极响应处理。
+## ✅ 十四 联系我们 & 加入社区
+TTSWAP 是一个去中心化项目，欢迎全球用户、开发者、内容创作者、投资者一起加入共建。  
+📣 不论你是想进行推广、参与挖矿、接入入口、运营社区或只是提建议，以下是我们官方唯一指定渠道：
+
+---
+### 🔗 1. 官方联系信息
+|渠道 |	地址|
 |-------|------|
-|🌐 Website | [ttswap.io](https://ttswap.io)|
-|✉️ Email | [bussiness@ttswap.io](mailto:bussiness@ttswap.io)|
-|🐦 Twitter | [@ttswapfinance](https://x.com/ttswapfinance)|
-|💬 Telegram | [@ttswapfinance](https://t.me/ttswapfinance)|
-|💻 Discord | [ttswap0](https://discord.com/invite/XygqnmQgX3)|
+|🌐 官网|	[ttswap.io](https://ttswap.io)|
+|✉️ 邮箱|	[bussiness@ttswap.io](mailto:bussiness@ttswap.io)|
+|🐦 Twitter |	[@ttswapfinance](https://x.com/ttswapFinance)|
+|💬 Telegram|	[@ttswapfinance](https://t.me/ttswapfinance)|
+|💻 Discord	| [ttswap0](https://discord.com/invite/XygqnmQgX3)|
 
 ---
-### 🙌 2. We Welcome
-- 📢 Web3 content creators: Join in spreading TTSWAP philosophy
-- 💻 Developers/technical teams: Assist with integration and tool building
-- 💰 Investors/capital parties: Co-build long-term sustainable incentive ecosystem
-- 🌍 Global community members: Voice, suggest, vote, participate in decisions
+### 🙌 2. 我们欢迎
+- 📢 Web3内容创作者：加入传播TTSWAP理念
+- 💻 开发者/技术团队：协助集成与工具建设
+- 💰 投资人/资本方：共建长期可持续激励生态
+- 🌍 全球社区成员：发声、建议、投票、参与决策
 
 ---
-### 📘 3. Summary  
+### 📘 3. 小结  
 
-TTSWAP isn't just a product, but a Web3 public protocol co-owned, operated, and benefited by the community. We look forward to your participation. 
+TTSWAP 不只是一个产品，而是一个由社区共同拥有、运营和受益的 Web3 公共协议。我们期待你的加入。
