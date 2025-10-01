@@ -48,13 +48,10 @@ npm i
 
 ```sh
 # start dev server
-npm run docs:dev
+npm run start
 # build for production
-npm run docs:build
-# preview production build in local
-npm run docs:preview
-# update vuepress and theme
-npm run vp-update
+npm run build
+
 ```
 
 ## 4. Socials / Contract
