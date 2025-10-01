@@ -1,9 +1,5 @@
----
-title: TTSwap Liquidity Provider Rewards Program: Zero Risk, High Returns
-createTime: 2025/06/08 23:52:26
----
 
-# 🌟 **TTSwap Liquidity Provider Rewards Program: Zero Risk, High Returns!**
+# 🌟 TTSwap Liquidity Provider Rewards Program: Zero Risk, High Returns!
 **—— World's First "Zero Impermanent Loss" Liquidity Mining with Principal Protection and High Yields**
 
 ---
