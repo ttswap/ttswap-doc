@@ -80,7 +80,7 @@ $$
 \text{根据价值计算输出数量:}  \\
 \Delta b &= \frac{Q_b \cdot \Delta V}{V_b + \frac{\Delta V}{2}}  \\
 \text{代币恒定价值:}  \\
-\text{交易前价值V}=\text{交易后价值V}
+\text{交易前价值V}&=\text{交易后价值V}
 \end{align}
 $$
 
@@ -106,7 +106,7 @@ $$
 
 ---
 ### 🔄 5. 图文展示买卖流程  
-- 价格P如何随着买入卖出变化
+- 价格P如何随着买入卖出变化  
 ![买卖导致价格变化](whitepaper_image_cn/TOKEN_BUYSELL_CHANGE.png)
 P会随着买卖行为发生变化  
 - 【图2】为什么总价值保持不变  
