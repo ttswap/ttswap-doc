@@ -76,9 +76,9 @@ TTSWAP 也是这样运作的。不同的是，它不是用法币定价，而是�
 $$
 \begin{align}
 \text{根据输入数量计算价值:}  \\
-\Delta V &= \frac{V_a \cdot \Delta a}{Q_a + \frac{\Delta a}{2}}  \\
+\Delta V &= \frac{2 * V_a \cdot \Delta a}{2 * Q_a + \Delta a}  \\
 \text{根据价值计算输出数量:}  \\
-\Delta b &= \frac{Q_b \cdot \Delta V}{V_b + \frac{\Delta V}{2}}  \\
+\Delta b &= \frac{2 * Q_b \cdot \Delta V}{2* V_b + \Delta V}  \\
 \text{代币恒定价值:}  \\
 \text{交易前价值V}&=\text{交易后价值V}
 \end{align}
@@ -98,7 +98,6 @@ $$
 | $Q_z$ | 协议中 Token Z 的数量 |
 | $\Delta z$ | 协议中 Token Z 的购买量或出售量 |
 > 💡 如果很多人都在买 Token A，它的"市场价值"会上升，换回的数量就会减少；反之，卖得多，它的价格会下降。
-
 ---
 ### 📐 4. 什么是"无滑点"和"交易阈值"？  
 在 TTSWAP 中，如果你交易的金额小于**某个阈值**，系统就不会分批撮合，一次性按照当前价格成交。  

@@ -29,6 +29,9 @@ TTSWAP(token-token swap)是建立在支持EVM的区块链上的自动做市协�
 1. 集中流动性，直接交易  
 无需在多个传统币对中添加，只需要给协议中代币添加流动性，流动性能与协议中其它任何代币共享，用户直接兑换代币，避免流动性碎片化，提升了交易体验。
 
+1. 流动性放大  
+  根据代币稳定性,动态设置流动放大倍数,用户使用提供一份流动性,实际产生多倍流动性的效果,获得多倍收益。
+
 1. 低滑点交易  
   滑点是指在交易过程中由于市场价格波动导致的交易价格偏离预期的现象。在这个协议中，通过流动性增强和集中流动性,显著降低交易滑点。
 
@@ -57,9 +60,9 @@ TTSWAP(token-token swap)是建立在支持EVM的区块链上的自动做市协�
 $$
 \begin{align}
 \text{根据输入数量计算价值:}  \\
-\Delta V &= \frac{V_A \cdot \Delta a}{Q_A + \frac{\Delta a}{2}}  \\
+\Delta V &= \frac{2*V_A \cdot \Delta a}{2*Q_A + \Delta a}  \\
 \text{根据价值计算输出数量:}  \\
-\Delta b &= \frac{Q_B \cdot \Delta V}{V_B + \frac{\Delta V}{2}}  \\
+\Delta b &= \frac{2*Q_B \cdot \Delta V}{2*V_B + \Delta V}  \\
 \text{代币恒定价值:}  \\
 \text{交易前价值V}&=\text{交易后价值V}
 \end{align}
