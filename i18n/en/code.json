@@ -1689,5 +1689,15 @@
   },
   "tokenomics.section.economy.flow.incentive.description": {
     "message": "Allocate additional tokens to liquidity providers"
+  },
+  "footer.navigation.product": {
+    "message": "Product",
+    "description": "Product section title"
+  },
+  "rewards.section.roles.user.commission": {
+    "message": "10% discount"
+  },
+  "tokenomics.section.distribution.million": {
+    "message": "50M"
   }
 }
