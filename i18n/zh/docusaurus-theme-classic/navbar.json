@@ -15,9 +15,9 @@
     "message": "活动",
     "description": "Navbar item with label Activity"
   },
-  "item.label.Public Sell": {
+  "item.label.Public Sale": {
     "message": "公开发售",
-    "description": "Navbar item with label Public Sell"
+    "description": "Navbar item with label Public Sale"
   },
   "item.label.Token Airdrop": {
     "message": "代币空投",
