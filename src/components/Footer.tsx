@@ -3,6 +3,7 @@ import { Input } from "./ui/input";
 import { Mail } from "lucide-react";
 import { socialLinks, navigation } from "./FooterConfig";
 import Translate from "@docusaurus/Translate";
+import Link from '@docusaurus/Link';
 
 export function Footer() {
 
@@ -101,13 +102,13 @@ export function Footer() {
               </h4>
               <nav className="space-y-2">
                 {navigation.resources.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     className="block text-sm text-muted-foreground hover:text-primary transition-all duration-300"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </nav>
             </div>
@@ -121,13 +122,13 @@ export function Footer() {
               </h4>
               <nav className="space-y-2">
                 {navigation.community.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     className="block text-sm text-muted-foreground hover:text-primary transition-all duration-300"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </nav>
             </div>
@@ -141,13 +142,13 @@ export function Footer() {
               </h4>
               <nav className="space-y-2">
                 {navigation.company.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.href}
                     className="block text-sm text-muted-foreground hover:text-primary transition-all duration-300"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </nav>
             </div> */}
