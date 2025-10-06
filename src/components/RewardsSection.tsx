@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import Translate from '@docusaurus/Translate';
+import Link from '@docusaurus/Link';
 
 export function RewardsSection() {
   const [selectedRole, setSelectedRole] = useState(0);
@@ -144,25 +145,23 @@ export function RewardsSection() {
             return (
               <Card
                 key={index}
-                className={`p-6 cursor-pointer transition-all duration-500 group overflow-hidden relative ${
-                  index === 0
-                    ? "animate-fade-in-delay-1"
-                    : index === 1
-                      ? "animate-fade-in-delay-2"
-                      : index === 2
-                        ? "animate-fade-in-delay-3"
-                        : index === 3
-                          ? "animate-fade-in-delay-4"
-                          : index === 4
-                            ? "animate-fade-in-delay-5"
-                            : index === 5
-                              ? "animate-fade-in-delay-6"
-                              : "animate-fade-in"
-                } ${
-                  isSelected
+                className={`p-6 cursor-pointer transition-all duration-500 group overflow-hidden relative ${index === 0
+                  ? "animate-fade-in-delay-1"
+                  : index === 1
+                    ? "animate-fade-in-delay-2"
+                    : index === 2
+                      ? "animate-fade-in-delay-3"
+                      : index === 3
+                        ? "animate-fade-in-delay-4"
+                        : index === 4
+                          ? "animate-fade-in-delay-5"
+                          : index === 5
+                            ? "animate-fade-in-delay-6"
+                            : "animate-fade-in"
+                  } ${isSelected
                     ? "border-primary/50 bg-primary/5 glow-effect shadow-xl scale-105"
                     : "border-white/10 bg-card/80 hover:border-primary/30 hover:shadow-lg hover:scale-[1.02]"
-                }`}
+                  }`}
                 onClick={() => setSelectedRole(index)}
               >
                 {/* Subtle background gradient effect */}
@@ -170,11 +169,10 @@ export function RewardsSection() {
 
                 <div className="relative text-center space-y-4">
                   <div
-                    className={`w-16 h-16 mx-auto rounded-full bg-gradient-to-r ${role.gradient} flex items-center justify-center ${
-                      isSelected
-                        ? "scale-110 shadow-lg"
-                        : "group-hover:scale-110 group-hover:shadow-md"
-                    } transition-all duration-300 animate-pulse-soft`}
+                    className={`w-16 h-16 mx-auto rounded-full bg-gradient-to-r ${role.gradient} flex items-center justify-center ${isSelected
+                      ? "scale-110 shadow-lg"
+                      : "group-hover:scale-110 group-hover:shadow-md"
+                      } transition-all duration-300 animate-pulse-soft`}
                     style={{
                       animationDelay: `${index * 0.2}s`,
                     }}
@@ -203,11 +201,10 @@ export function RewardsSection() {
 
                     {/* Selection indicator */}
                     <div
-                      className={`mt-3 h-1 bg-gradient-to-r ${role.gradient} rounded-full transition-all duration-300 ${
-                        isSelected
-                          ? "opacity-100 scale-100"
-                          : "opacity-0 scale-75"
-                      }`}
+                      className={`mt-3 h-1 bg-gradient-to-r ${role.gradient} rounded-full transition-all duration-300 ${isSelected
+                        ? "opacity-100 scale-100"
+                        : "opacity-0 scale-75"
+                        }`}
                     />
                   </div>
                 </div>
@@ -253,14 +250,15 @@ export function RewardsSection() {
                 {roles[selectedRole].description}
               </p>
               {roles[selectedRole].to !== null ? (
-                <Button
-                  onClick={() => { location.href = roles[selectedRole].to; }}
-                  className={`bg-gradient-to-r ${roles[selectedRole].gradient} hover:opacity-90 hover:scale-105 hover:shadow-lg transition-all duration-300`}
-                >
-                  <Translate id="rewards.section.become.role" values={{role: roles[selectedRole].title}}>
-                    {"Become {role}"}
-                  </Translate>
-                </Button>
+                <Link to={roles[selectedRole].to}>
+                  <Button
+                    className={`bg-gradient-to-r ${roles[selectedRole].gradient} hover:opacity-90 hover:scale-105 hover:shadow-lg transition-all duration-300`}
+                  >
+                    <Translate id="rewards.section.become.role" values={{ role: roles[selectedRole].title }}>
+                      {"Become {role}"}
+                    </Translate>
+                  </Button>
+                </Link>
               ) : null}
 
             </div>
