@@ -1415,7 +1415,7 @@
     "description": "Type A partners rule 1"
   },
   "tokenomics.section.mechanism.rules.typeA.rule2": {
-    "message": "价格翻倍时解锁比例≤1/10",
+    "message": "价格翻倍时解锁比例≤1/16",
     "description": "Type A partners rule 2"
   },
   "tokenomics.section.mechanism.rules.typeA.rule3": {
@@ -1431,7 +1431,7 @@
     "description": "Type B partners rule 1"
   },
   "tokenomics.section.mechanism.rules.typeB.rule2": {
-    "message": "价格翻倍时解锁比例≤1/16",
+    "message": "价格翻倍时解锁比例≤1/14",
     "description": "Type B partners rule 2"
   },
   "tokenomics.section.mechanism.rules.typeB.rule3": {

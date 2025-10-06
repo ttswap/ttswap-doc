@@ -1466,7 +1466,7 @@
     "message": "Allocation"
   },
   "tokenomics.section.distribution.of": {
-    "message": "of"
+    "message": " {percentage}% of 50M"
   },
   "tokenomics.section.distribution.categories": {
     "message": "Categories"
@@ -1553,7 +1553,7 @@
     "message": "Member joins with initial price"
   },
   "tokenomics.section.mechanism.rules.typeA.rule2": {
-    "message": "Unlock ratio ≤1/20 when price doubles"
+    "message": "Unlock ratio ≤1/16 when price doubles"
   },
   "tokenomics.section.mechanism.rules.typeA.rule3": {
     "message": "Unlocked portion not destroyed when leaving community"
@@ -1565,7 +1565,7 @@
     "message": "Member joins with initial price"
   },
   "tokenomics.section.mechanism.rules.typeB.rule2": {
-    "message": "Unlock ratio ≤1/16 when price doubles"
+    "message": "Unlock ratio ≤1/14 when price doubles"
   },
   "tokenomics.section.mechanism.rules.typeB.rule3": {
     "message": "Unlocked portion destroyed when leaving community"
