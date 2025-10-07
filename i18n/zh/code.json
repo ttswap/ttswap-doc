@@ -224,27 +224,27 @@
     "description": "Terms of service link in company navigation"
   },
   "hero.features.slippageReduction.title": {
-    "message": "减少50%以上交易损失",
+    "message": "减少交易损失",
     "description": "Slippage reduction feature title"
   },
   "hero.features.slippageReduction.subtitle": {
-    "message": "通过集中和放大流动性减少",
+    "message": "通过集中和放大流动性减少超50%交易损失",
     "description": "Slippage reduction feature subtitle"
   },
   "hero.features.capitalProtection.title": {
-    "message": "零无常损失和高收益",
+    "message": "保障本金安全",
     "description": "Capital protection feature title"
   },
   "hero.features.capitalProtection.subtitle": {
-    "message": "本协议原生没有无常损失",
+    "message": "通过恒定价值算法保障本金安全和高收益",
     "description": "Capital protection feature subtitle"
   },
   "hero.features.feeOptimization.title": {
-    "message": "降低50%以上交易成本",
+    "message": "降低交易成本",
     "description": "Fee optimization feature title"
   },
   "hero.features.feeOptimization.subtitle": {
-    "message": "减少手续费环节和Gas费深度优化",
+    "message": "减少手续费环节和Gas费深度优化降低超50%的交易成本",
     "description": "Fee optimization feature subtitle"
   },
   "hero.features.universalParticipation.title": {
