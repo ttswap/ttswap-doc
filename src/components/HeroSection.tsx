@@ -182,11 +182,6 @@ export function HeroSection() {
                     </Translate>
                   </span>
                 </div>
-                <p className="text-xs text-muted-foreground mt-2 italic">
-                  <Translate id="hero.formula.algorithmNote" description="Note about the revolutionary algorithm">
-                    Revolutionary algorithm ensures constant value in all transactions
-                  </Translate>
-                </p>
               </div>
             </Card>
           </div>

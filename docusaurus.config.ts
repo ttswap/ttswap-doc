@@ -9,7 +9,7 @@ import rehypeKatex from 'rehype-katex';
 const config: Config = {
   title: 'TTSwap',
   tagline: 'Trade & Invest crypto freely',
-  favicon: 'img/logo.png',
+  favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
