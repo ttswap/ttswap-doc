@@ -224,35 +224,35 @@
     "description": "Terms of service link in company navigation"
   },
   "hero.features.slippageReduction.title": {
-    "message": "减少50%+交易损失",
+    "message": "减少50%以上交易损失",
     "description": "Slippage reduction feature title"
   },
   "hero.features.slippageReduction.subtitle": {
-    "message": "滑点减少",
+    "message": "通过集中和放大流动性减少",
     "description": "Slippage reduction feature subtitle"
   },
   "hero.features.capitalProtection.title": {
-    "message": "零无常损失",
+    "message": "零无常损失和高收益",
     "description": "Capital protection feature title"
   },
   "hero.features.capitalProtection.subtitle": {
-    "message": "资本保护",
+    "message": "本协议原生没有无常损失",
     "description": "Capital protection feature subtitle"
   },
   "hero.features.feeOptimization.title": {
-    "message": "降低50%+交易成本",
+    "message": "降低50%以上交易成本",
     "description": "Fee optimization feature title"
   },
   "hero.features.feeOptimization.subtitle": {
-    "message": "手续费与Gas优化",
+    "message": "减少手续费环节和Gas费深度优化",
     "description": "Fee optimization feature subtitle"
   },
   "hero.features.universalParticipation.title": {
-    "message": "全民参与",
+    "message": "人人参与",
     "description": "Universal participation feature title"
   },
   "hero.features.universalParticipation.subtitle": {
-    "message": "人人受益",
+    "message": "基于贡献的按角色透明奖励机制",
     "description": "Universal participation feature subtitle"
   },
   "hero.title.first": {
@@ -298,10 +298,6 @@
   "hero.formula.variableDetails": {
     "message": "V: 市场价值 | Q: 代币数量 | a,b: 代币类型",
     "description": "Details of variables"
-  },
-  "hero.formula.algorithmNote": {
-    "message": "革命性算法确保所有交易中的恒定价值保持",
-    "description": "Note about the revolutionary algorithm"
   },
   "hero.swap.title": {
     "message": "快速交易",
