@@ -244,7 +244,7 @@
     "description": "Fee optimization feature title"
   },
   "hero.features.feeOptimization.subtitle": {
-    "message": "减少手续费环节和Gas费深度优化降低超50%的交易成本",
+    "message": "通过手续费和Gas费优化降低超50%的交易成本",
     "description": "Fee optimization feature subtitle"
   },
   "hero.features.universalParticipation.title": {
