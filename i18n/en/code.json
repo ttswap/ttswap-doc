@@ -1705,8 +1705,8 @@
     "description": "Label for the share button"
   },
   "shareButton.modal.title": {
-    "message": "Share Link Generator",
-    "description": "Title of the share modal"
+    "message": "Generate Your Share Link",
+    "description": "Generate Your Share Link"
   },
   "shareButton.modal.description": {
     "message": "Enter your wallet address to generate a share link",
@@ -1718,7 +1718,7 @@
   },
   "shareButton.walletAddress.placeholder": {
     "message": "Please enter your wallet address",
-    "description": "Placeholder for wallet address input"
+    "description": "Please enter your wallet address"
   },
   "shareButton.generatedUrl.label": {
     "message": "Your Share Link",

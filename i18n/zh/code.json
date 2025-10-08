@@ -1922,7 +1922,7 @@
     "description": "Label for the share button"
   },
   "shareButton.modal.title": {
-    "message": "分享链接生成器",
+    "message": "生成专属分享链接",
     "description": "Title of the share modal"
   },
   "shareButton.modal.description": {
