@@ -1699,5 +1699,73 @@
   },
   "tokenomics.section.distribution.million": {
     "message": "50M"
+  },
+  "shareButton.label": {
+    "message": "Share",
+    "description": "Label for the share button"
+  },
+  "shareButton.modal.title": {
+    "message": "Share Link Generator",
+    "description": "Title of the share modal"
+  },
+  "shareButton.modal.description": {
+    "message": "Enter your wallet address to generate a share link",
+    "description": "Description in the share modal"
+  },
+  "shareButton.walletAddress.label": {
+    "message": "Wallet Address",
+    "description": "Label for wallet address input"
+  },
+  "shareButton.walletAddress.placeholder": {
+    "message": "Please enter your wallet address",
+    "description": "Placeholder for wallet address input"
+  },
+  "shareButton.generatedUrl.label": {
+    "message": "Your Share Link",
+    "description": "Label for generated URL"
+  },
+  "shareButton.generate.button": {
+    "message": "Generate Share Link",
+    "description": "Button text for generating share link"
+  },
+  "shareButton.generating.button": {
+    "message": "Generating...",
+    "description": "Button text when generating share link"
+  },
+  "shareButton.copy.button": {
+    "message": "Copy Link",
+    "description": "ARIA label for copy button"
+  },
+  "shareButton.close.button": {
+    "message": "Close",
+    "description": "ARIA label for close button"
+  },
+  "shareButton.error.emptyWallet": {
+    "message": "Please enter a wallet address",
+    "description": "Error message when wallet address is empty"
+  },
+  "shareButton.error.invalidWallet": {
+    "message": "Please enter a valid wallet address",
+    "description": "Error message when wallet address is invalid"
+  },
+  "shareButton.success.linkGenerated": {
+    "message": "Short link generated: ",
+    "description": "Success message when link is generated"
+  },
+  "shareButton.success.copied": {
+    "message": "Link copied to clipboard",
+    "description": "Success message when link is copied"
+  },
+  "shareButton.error.copyFailed": {
+    "message": "Copy failed, please copy manually:",
+    "description": "Error message when copy fails"
+  },
+  "shareButton.success": {
+    "message": "Success",
+    "description": "Success message"
+  },
+  "shareButton.error": {
+    "message": "Error",
+    "description": "Error message"
   }
 }
