@@ -1,6 +1,12 @@
 
 # User document
-This documentation provides users with an understanding of TTSWAP's operational mechanics, design rationale, and implementation guidelines.
+## This documentation provides users with an understanding of TTSWAP's operational mechanics, design rationale, and implementation guidelines.
+---
+
+import { ShareButton } from '@site/src/components/ShareButton';  
+
+<ShareButton />
+
 ## ✅ I. What is TTSWAP?
 TTSWAP is a decentralized token trading platform where anyone can quickly and safely exchange one token for another without relying on centralized exchanges.
 It operates entirely through smart contracts, eliminating intermediaries, with prices automatically determined by protocol trading. This innovative mechanism is called the "Constant Value Trading Protocol," making the trading process more transparent, fair, and stable.
