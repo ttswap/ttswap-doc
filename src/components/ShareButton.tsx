@@ -3,6 +3,7 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Copy, Share2, X } from 'lucide-react';
 import { translate } from '@docusaurus/Translate';
+import { getUsernameFromCookie, getCurrentUrlFromCookie, updateLaunchAppHref } from './FromCookie';
 
 interface ShareButtonProps {
     walletAddress?: string;
@@ -36,21 +37,21 @@ export function ShareButton({ walletAddress: propWalletAddress }: ShareButtonPro
     };
 
     useEffect(() => {
-        getUsernameFromCookie();
+        getUsernameFromCookies();
     }, []);
 
     // 从 cookie 获取用户名
-    function getUsernameFromCookie() {
+    function getUsernameFromCookies() {
         if (typeof document === 'undefined') return '';
-        let name: any = document.cookie.match(new RegExp(`(^| )username=([^;]+)`));
-        name = name ? decodeURIComponent(name[2]) : "";
-        const currentUrl = window.location.href;
-        let url: any = document.cookie.match(new RegExp(`(^| )${currentUrl}=([^;]+)`));
-        url = url ? decodeURIComponent(url[2]) : "";
-        // console.log("cookie-name:", name, "--url:", url)
-        setWalletAddress(name);
-        setShortUrl(url);
-        // return match ? decodeURIComponent(match[1]) : '';
+        // let name: any = document.cookie.match(new RegExp(`(^| )username=([^;]+)`));
+        // name = name ? decodeURIComponent(name[2]) : "";
+        // const currentUrl = window.location.href;
+        // let url: any = document.cookie.match(new RegExp(`(^| )${currentUrl}=([^;]+)`));
+        // url = url ? decodeURIComponent(url[2]) : "";
+        setWalletAddress(getUsernameFromCookie());
+        setShortUrl(getCurrentUrlFromCookie());
+        updateLaunchAppHref(getUsernameFromCookie());
+        console.log("cookie-name:", getUsernameFromCookie(), "--url:", getCurrentUrlFromCookie())
     };
     // getUsernameFromCookie();
     function isValidETHAddress(address: string) {

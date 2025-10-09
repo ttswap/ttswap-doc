@@ -18,13 +18,16 @@ import {
   ArrowRight,
   Calculator,
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MathFormula } from "./MathFormula";
 import Translate from "@docusaurus/Translate";
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { getUsernameFromCookie, updateLaunchAppHref } from './FromCookie';
 
 export function HeroSection() {
   const [swapAmount, setSwapAmount] = useState("");
   const [stakeAmount, setStakeAmount] = useState("");
+  const { i18n: { currentLocale } } = useDocusaurusContext();
 
   const features = [
     {
@@ -60,6 +63,22 @@ export function HeroSection() {
       borderColor: "border-accent/20",
     },
   ];
+
+  // 根据当前语言确定要使用的图片前缀
+  const getImagePath = (baseName: string) => {
+    // 定义不同语言对应的图片后缀
+    const imageSuffixes: Record<string, string> = {
+      'zh': '-zh',
+      'en': '-en',
+    };
+
+    const suffix = imageSuffixes[currentLocale] || '-en';
+    return `/img/${baseName}${suffix}.png`;
+  };
+
+  useEffect(() => {
+    updateLaunchAppHref(getUsernameFromCookie());
+  }, []);
 
   return (
     <section className="min-h-screen flex items-center pt-16 pb-12">
@@ -207,109 +226,9 @@ export function HeroSection() {
               </div>
 
               <div className="space-y-2">
-                <img src="/img/swap-en.png" alt="Swap" className="w-full" />
-
-                {/* <div className="space-y-2">
-                  <label className="text-sm font-medium text-muted-foreground">
-                    <Translate id="hero.swap.sell" description="Sell label">
-                      Sell
-                    </Translate>
-                  </label>
-                  <div className="flex space-x-0">
-                    <Select defaultValue="eth">
-                      <SelectTrigger className="w-24 bg-input-background border-border">
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="eth">
-                          <Translate id="hero.swap.tokens.eth" description="ETH token">
-                            ETH
-                          </Translate>
-                        </SelectItem>
-                        <SelectItem value="usdc">
-                          <Translate id="hero.swap.tokens.usdc" description="USDC token">
-                            USDC
-                          </Translate>
-                        </SelectItem>
-                        <SelectItem value="btc">
-                          <Translate id="hero.swap.tokens.btc" description="BTC token">
-                            BTC
-                          </Translate>
-                        </SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <Input
-                      placeholder="0.0"
-                      value={swapAmount}
-                      onChange={(e) =>
-                        setSwapAmount(e.target.value)
-                      }
-                      className="bg-input-background border-border focus:border-primary/50"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex justify-center py-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="border-primary/30 hover:bg-primary/5 text-primary"
-                  >
-                    <ArrowDownUp className="h-4 w-4" />
-                  </Button>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-muted-foreground">
-                    <Translate id="hero.swap.buy" description="Buy label">
-                      Buy
-                    </Translate>
-                  </label>
-                  <div className="flex space-x-2">
-                    <Select defaultValue="usdc">
-                      <SelectTrigger className="w-24 bg-input-background border-border">
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="usdc">
-                          <Translate id="hero.swap.tokens.usdc2" description="USDC token">
-                            USDC
-                          </Translate>
-                        </SelectItem>
-                        <SelectItem value="eth">
-                          <Translate id="hero.swap.tokens.eth2" description="ETH token">
-                            ETH
-                          </Translate>
-                        </SelectItem>
-                        <SelectItem value="tts">
-                          <Translate id="hero.swap.tokens.tts" description="TTS token">
-                            TTS
-                          </Translate>
-                        </SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <Input
-                      placeholder="0.0"
-                      readOnly
-                      className="bg-input-background border-border"
-                      value="1,234.56"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex justify-between text-sm py-2">
-                  <span className="text-muted-foreground">
-                    <Translate id="hero.swap.priceImpact" description="Price impact label">
-                      Price Impact
-                    </Translate>
-                  </span>
-                  <span className="text-primary font-medium">
-                    ~0.01%
-                  </span>
-                </div> */}
-
+                <img src={getImagePath('swap')} alt="Swap" className="w-full" />
                 <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
-                  onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?en") }}>
+                  onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?" + getUsernameFromCookie()) }}>
                   <Zap className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                   <Translate id="hero.swap.tradeButton" description="Immediate trading button">
                     Immediate Trading
@@ -329,83 +248,13 @@ export function HeroSection() {
                     Quick Invest
                   </Translate>
                 </h3>
-                {/* <div className="text-right">
-                  <div className="text-sm text-muted-foreground">
-                    <Translate id="hero.stake.apy" description="APY label">
-                      APY
-                    </Translate>
-                  </div>
-                  <div className="text-lg font-bold text-secondary">
-                    24.5%
-                  </div>
-                </div> */}
+
               </div>
 
               <div className="space-y-4">
-                <img src="/img/invest-en.png" alt="Swap" className="w-full" />
-
-                {/* <div className="space-y-2">
-                  <label className="text-sm font-medium text-muted-foreground">
-                    <Translate id="hero.stake.quantity" description="Staking quantity label">
-                      Staking Quantity
-                    </Translate>
-                  </label>
-                  <div className="flex space-x-2">
-                    <Select defaultValue="tts">
-                      <SelectTrigger className="w-24 bg-input-background border-border">
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="tts">
-                          <Translate id="hero.stake.tokens.tts" description="TTS token">
-                            TTS
-                          </Translate>
-                        </SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <Input
-                      placeholder="0.0"
-                      value={stakeAmount}
-                      onChange={(e) =>
-                        setStakeAmount(e.target.value)
-                      }
-                      className="bg-input-background border-border focus:border-secondary/50"
-                    />
-                  </div>
-                  <div className="text-xs text-muted-foreground">
-                    <Translate id="hero.stake.balance" description="Balance information">
-                      Balance: 12,345.67 TTS
-                    </Translate>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 gap-4 py-3">
-                  <div>
-                    <div className="text-muted-foreground">
-                      <Translate id="hero.stake.expectedReturn" description="Expected monthly return label">
-                        Expected Monthly Return
-                      </Translate>
-                    </div>
-                    <div className="font-medium text-secondary">
-                      +245 TTS
-                    </div>
-                  </div>
-                  <div>
-                    <div className="text-muted-foreground">
-                      <Translate id="hero.stake.lockupPeriod" description="Lock-up period label">
-                        Lock-up Period
-                      </Translate>
-                    </div>
-                    <div className="font-medium">
-                      <Translate id="hero.stake.flexible" description="Flexible lock-up period">
-                        Flexible
-                      </Translate>
-                    </div>
-                  </div>
-                </div> */}
-
+                <img src={getImagePath('invest')} alt="Swap" className="w-full" />
                 <Button className="w-full bg-secondary hover:bg-secondary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
-                  onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?en") }}>
+                  onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?" + getUsernameFromCookie()) }}>
                   <TrendingUp className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                   <Translate id="hero.stake.investButton" description="Start invest button">
                     Start Invest

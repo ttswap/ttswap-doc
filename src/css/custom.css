@@ -178,6 +178,7 @@
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.2;
+  margin: 0;
 }
 
 .share-modal-close-button {
@@ -211,6 +212,7 @@
   font-size: 0.95rem;
   color: var(--muted-foreground);
   line-height: 1.5;
+  margin: 0;
 }
 
 .share-modal-label {
