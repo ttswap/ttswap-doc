@@ -3,7 +3,11 @@ title: TTSWAP创新分佣机制：六大角色共享千亿交易红利
 createTime: 2025/06/08 23:51:55
 ---
 
-# 💰 TTSWAP创新分佣机制：六大角色共享千亿交易红利
+___
+
+import { ShareButton } from '@site/src/components/ShareButton';  
+
+<ShareButton />
 
 ## 一、什么是按角色分佣？ 🤔
 

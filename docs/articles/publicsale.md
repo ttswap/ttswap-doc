@@ -1,12 +1,17 @@
+---
+lang: en-US
+title: Token Public Sale Plan
+createTime: 2025/05/17 14:18:10
+---
+Powering the Next Generation DEX - Grow With Us!
+---
 
+import { ShareButton } from '@site/src/components/ShareButton';  
 
-# Public Token Sale Plan
-## 🚀【TTSWAP Public Sale Launch | Limited TTS Token Offering】
-### Powering the Next Generation DEX - Grow With Us!
+<ShareButton />
 
 TTSWAP is an **efficient, secure, and innovative decentralized trading platform** built for users. We are now officially launching the **public sale of TTS tokens**. This public sale will provide initial liquidity for TTSWAP and drive the full launch of our ecosystem!
 
----
 
 ## 💎 Why Choose TTS Token?
 

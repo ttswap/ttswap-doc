@@ -567,7 +567,7 @@
     "description": "Fee optimization feature title"
   },
   "hero.features.feeOptimization.subtitle": {
-    "message": "减少手续费环节和Gas费深度优化降低超50%的交易成本",
+    "message": "通过手续费和Gas费优化降低超50%的交易成本",
     "description": "Fee optimization feature subtitle"
   },
   "hero.features.universalParticipation.title": {
@@ -1922,7 +1922,7 @@
     "description": "Label for the share button"
   },
   "shareButton.modal.title": {
-    "message": "分享链接生成器",
+    "message": "生成专属分享链接",
     "description": "Title of the share modal"
   },
   "shareButton.modal.description": {
