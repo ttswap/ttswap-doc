@@ -67,7 +67,7 @@ export const navigationZh = {
     { href: '/zh/docs/knowledge/whitepaper/whitepaper', name: '白皮书' },
   ],
   community: [
-    { href: '/zh/docs/community/recommander', name: '成为推荐人' },
+    { href: '/zh/docs/community/ambassador', name: '成为推荐大使' },
     { href: '/zh/docs/community/tokenoperator', name: '成为代币操作员' },
     { href: '/zh/docs/community/gate', name: '成为服务提供商' },
     { href: '/zh/docs/community/builder', name: '成为建设者' },
@@ -124,7 +124,7 @@ export const navigation = {
   ],
   community: [
     {
-      href: "/docs/community/recommander",
+      href: "/docs/community/ambassador",
       name: translate({
         id: 'footer.navigation.community.beReferral',
         message: 'Be Referral',

@@ -1,8 +1,6 @@
----
-title: TTSWAP创新分佣机制：六大角色共享千亿交易红利
-createTime: 2025/06/08 23:51:55
----
 
+# TTSwap 按角色分佣机制
+** 六大角色共享千亿交易红利 **
 ___
 
 import { ShareButton } from '@site/src/components/ShareButton';  
@@ -25,7 +23,7 @@ TTSWAP 采用创新的"按角色分佣"机制，将平台产生的每一笔交�
 - **收益来源**：通过其渠道产生的交易手续费分成
 - **举例**：某钱包APP接入TTSWAP，其用户提供流动性后获得1000 USDT的手续费，那某钱包按角色分佣后50~250 USDT分成。
 
-### 3. 👥 推荐者 (5%~10%)[详情查看](/docs/community/recommander)
+### 3. 👥 推荐大使 (5%~10%)[详情查看](/docs/community/ambassador)
 - **角色定义**：成功推荐新用户使用TTSWAP的推广者
 - **收益来源**：被推荐用户产生的交易手续费分成
 - **举例**：小红推荐小张使用TTSWAP，用户提供流动性后获得1000 USDT的手续费，小红可获得50-100 USDT的推荐奖励。

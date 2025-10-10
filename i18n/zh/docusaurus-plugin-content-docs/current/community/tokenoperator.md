@@ -1,11 +1,11 @@
+
+# 🎮 成为TTSWAP代币运营官指南  
+** 【独家】TTSWAP代币运营官招募：1-3%永久分成 + 运营权拍卖收益，打造你的DeFi财富帝国！ **
 ---
-title: 【独家】TTSWAP代币运营官招募：1-3%永久分成 + 运营权拍卖收益，打造你的DeFi财富帝国！
-createTime: 2025/06/08 23:52:26
----
 
+import { ShareButton } from '@site/src/components/ShareButton';  
 
-# 🎮 成为TTSWAP代币运营官指南
-
+<ShareButton />
 ## 一、什么是代币运营官？ 🤔
 
 代币运营官（Token Operator）是TTSWAP生态中的重要角色，负责代币的上线、参数设置和持续运营。作为代币运营官，你不仅能够获得代币交易产生的手续费分成（1%~3%），还能通过合理的运营策略提升代币价值，实现多方共赢。

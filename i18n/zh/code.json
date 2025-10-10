@@ -507,8 +507,8 @@
     "description": "Whitepaper link in resources navigation"
   },
   "footer.navigation.community.beReferral": {
-    "message": "成为推荐人",
-    "description": "Be referral link in community navigation"
+    "message": "成为推荐大使",
+    "description": "Be referral Ambassador link in community navigation"
   },
   "footer.navigation.community.beTokenOperator": {
     "message": "成为代币运营商",
@@ -1267,11 +1267,11 @@
     "description": "Service provider detail 4"
   },
   "rewards.section.roles.referrer.title": {
-    "message": "推荐人",
+    "message": "推荐大使",
     "description": "Referrer role title"
   },
   "rewards.section.roles.referrer.subtitle": {
-    "message": "用户推荐",
+    "message": "向用户推荐",
     "description": "Referrer role subtitle"
   },
   "rewards.section.roles.referrer.description": {

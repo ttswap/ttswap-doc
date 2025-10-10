@@ -114,7 +114,7 @@ const config: Config = {
         {
           label: 'Activity', position: 'left', items: [
             { to: '/docs/articles/publicsale', label: 'Public Sale', },
-            { to: '/docs/articles/tokenairdrop', label: 'Token Airdrop', },
+            // { to: '/docs/articles/tokenairdrop', label: 'Token Airdrop', },
           ],
         },
         {
@@ -127,7 +127,7 @@ const config: Config = {
         {
           label: 'Join DAO', position: 'left', items: [
             { to: '/docs/community/introduce', label: 'Allocate Commission By Role', },
-            { to: '/docs/community/recommander', label: 'Be Referral', },
+            { to: '/docs/community/ambassador', label: 'Be Ambassador', },
             { to: '/docs/community/tokenoperator', label: 'Be Token Operator', },
             { to: '/docs/community/gate', label: 'Be Service Provider', },
             { to: '/docs/community/builder', label: 'Be Builder', },

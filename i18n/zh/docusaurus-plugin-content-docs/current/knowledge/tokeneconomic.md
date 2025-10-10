@@ -5,8 +5,14 @@ description: TTSWAP 是一个去中心化的代币交易平台，任何人都可
 collapsed: true
 createTime: 2025/06/08 23:48:54
 ---
+
 # 创新性TTS代币方案
 TTS代币初始全锁定,价格翻倍才能按比例解锁,合理保证每个角色的利益.
+---
+
+import { ShareButton } from '@site/src/components/ShareButton';  
+
+<ShareButton />
 
 
 ## 💎 1. 代币基本信息

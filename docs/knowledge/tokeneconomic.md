@@ -5,6 +5,9 @@ collapsed: true
 createTime: 2025/06/08 23:48:54
 ---
 
+import { ShareButton } from '@site/src/components/ShareButton';  
+
+<ShareButton />
 
 ## 📊 TTS Token Economic Model
 

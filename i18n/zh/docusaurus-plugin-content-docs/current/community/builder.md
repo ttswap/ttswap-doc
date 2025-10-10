@@ -1,9 +1,14 @@
----
-title: 【重磅招募】加入TTSWAP，成为Web3交易革命的引领者！🚀
-createTime: 2025/06/08 23:52:44
+
+# 🌟 如何成为TTSWAP共建者
+** 【重磅招募】加入TTSWAP，成为Web3交易革命的引领者！🚀 **
+
 ---
 
-# 🌟 TTSWAP协议建设者招募计划
+import { ShareButton } from '@site/src/components/ShareButton';  
+
+<ShareButton />
+
+
 
 > 💡 **为什么选择成为TTSWAP建设者？**
 > - 影响10,000+ 用户群体 👥

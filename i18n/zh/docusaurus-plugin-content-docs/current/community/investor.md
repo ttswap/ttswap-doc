@@ -1,8 +1,10 @@
----
-title: 三重路径参与下一代DeFi巨头
-createTime: 2025/06/08 23:52:26
----
-# 💎TTSwap 项目投资
+# 💎如何投资TTSWAP
+** 三重路径参与下一代DeFi巨头 **
+___
+
+import { ShareButton } from '@site/src/components/ShareButton';  
+
+<ShareButton />
 
 ## 🚀 **TTSwap 项目投资方案：三重路径参与下一代DeFi巨头**
 
