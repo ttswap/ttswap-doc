@@ -1,8 +1,10 @@
 
-
 # How to sharing the fee income
-## TTSWAP Innovative Revenue Sharing Mechanism~ Six Roles Share Trillion-Dollar Trading Benefits
+
+TTSWAP Innovative Revenue Sharing Mechanism~ Six Roles Share Trillion-Dollar Trading Benefits
+
 ---
+
 import { ShareButton } from '@site/src/components/ShareButton';  
 
 <ShareButton />

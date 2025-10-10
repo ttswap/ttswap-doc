@@ -1,6 +1,8 @@
 
 # 🎮 成为TTSWAP代币运营官指南  
-** 【独家】TTSWAP代币运营官招募：1-3%永久分成 + 运营权拍卖收益，打造你的DeFi财富帝国！ **
+
+【独家】TTSWAP代币运营官招募：1-3%永久分成 + 运营权拍卖收益，打造你的DeFi财富帝国！ 
+
 ---
 
 import { ShareButton } from '@site/src/components/ShareButton';  

@@ -17,7 +17,7 @@
   },
   "item.label.Public Sale": {
     "message": "Public Sale",
-    "description": "Navbar item with label Public Sell"
+    "description": "Navbar item with label Public Sale"
   },
   "item.label.Token Airdrop": {
     "message": "Token Airdrop",
@@ -79,8 +79,8 @@
     "message": "Launch App",
     "description": "Navbar item with label Launch App"
   },
-  "item.label.Public Sale": {
-    "message": "Public Sale",
-    "description": "Navbar item with label Public Sale"
+  "item.label.Be Ambassador": {
+    "message": "Be Ambassador",
+    "description": "Navbar item with label Be Ambassador"
   }
 }

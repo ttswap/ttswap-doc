@@ -47,8 +47,8 @@
     "message": "按角色分配佣金",
     "description": "Navbar item with label Allocate Commission By Role"
   },
-  "item.label.Be Referral": {
-    "message": "成为推荐人",
+  "item.label.Be Ambassador": {
+    "message": "成为推荐大使",
     "description": "Navbar item with label Be Referral"
   },
   "item.label.Be Token Operator": {
@@ -60,7 +60,7 @@
     "description": "Navbar item with label Be Service Provider"
   },
   "item.label.Be Builder": {
-    "message": "成为建设者",
+    "message": "成为共建者",
     "description": "Navbar item with label Be Builder"
   },
   "item.label.Be Liquidityprovider": {

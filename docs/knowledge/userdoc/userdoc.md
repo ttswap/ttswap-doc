@@ -1,6 +1,8 @@
 
-# User document
-## This documentation provides users with an understanding of TTSWAP's operational mechanics, design rationale, and implementation guidelines.
+# User document  
+
+This documentation provides users with an understanding of TTSWAP's operational mechanics, design rationale, and implementation guidelines.  
+
 ---
 
 import { ShareButton } from '@site/src/components/ShareButton';  

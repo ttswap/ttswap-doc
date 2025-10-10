@@ -1,5 +1,7 @@
-# 公售计划
- 为建设下一代DEX注入动力，与我们一起成长！
+# 公售计划  
+
+为建设下一代DEX注入动力，与我们一起成长！  
+
 ---
 
 import { ShareButton } from '@site/src/components/ShareButton';  
