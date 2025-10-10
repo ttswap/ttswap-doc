@@ -1,5 +1,6 @@
 # How to Become the TTswap Ambassador
-** TTSWAP Ambassador Recruitment~ 5%-10% Permanent Revenue Share, Build Your Passive Income Pipeline! **
+
+TTSWAP Ambassador Recruitment~ 5%-10% Permanent Revenue Share, Build Your Passive Income Pipeline! 
 
 ---
 import { ShareButton } from '@site/src/components/ShareButton';  

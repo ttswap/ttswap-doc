@@ -1,8 +1,7 @@
-
-
-
 # 🚪 如何成为TTSWAP门户
-**【独家】TTSWAP门户运营商招募：最高25%交易分成，零成本启动，打造你的Web3流量变现帝国！**
+
+【独家】TTSWAP门户运营商招募：最高25%交易分成，零成本启动，打造你的Web3流量变现帝国！
+
 ---
 
 import { ShareButton } from '@site/src/components/ShareButton';  

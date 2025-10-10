@@ -1,6 +1,8 @@
 
-# 🌟 **如何成为TTSWAP质押者**
-**—— 全球首创「零无常损失」流动性挖矿，让本金安全与高收益兼得**
+# 🌟 如何成为TTSWAP质押者
+
+—— 全球首创「零无常损失」流动性挖矿，让本金安全与高收益兼得
+
 ---
 
 import { ShareButton } from '@site/src/components/ShareButton';  
