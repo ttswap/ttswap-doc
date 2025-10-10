@@ -1,5 +1,10 @@
 # 公售计划
-### 为建设下一代DEX注入动力，与我们一起成长！
+ 为建设下一代DEX注入动力，与我们一起成长！
+---
+
+import { ShareButton } from '@site/src/components/ShareButton';  
+
+<ShareButton />
 
 TTSWAP 是一款为用户打造的**高效、安全、创新型去中心化交易平台**。现在，我们正式开启 **TTS 代币公开发售**，本轮公售将为 TTSWAP 提供初始流动性，推动生态全面启动！
 

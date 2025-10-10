@@ -1,10 +1,12 @@
----
-title: 【零门槛】TTSWAP推荐官招募：永久分成5%-10%，打造你的被动收入管道！
-createTime: 2025/06/08 23:52:07
+
+# 🎯 如何成为TTSWAP推荐大使
+** 【零门槛】TTSWAP推荐官招募：永久分成5%-10%，打造你的被动收入管道！**
+
 ---
 
+import { ShareButton } from '@site/src/components/ShareButton';  
 
-# 🎯 TTSWAP推荐官指南
+<ShareButton />
 
 ## 一、什么是TTSWAP推荐官？ 🤔
 

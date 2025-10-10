@@ -81,7 +81,7 @@ export function RewardsSection() {
         <Translate key="3" id="rewards.section.roles.referrer.details.3">Build passive income through network</Translate>,
         <Translate key="4" id="rewards.section.roles.referrer.details.4">Unlimited referral potential</Translate>,
       ],
-      to: "/docs/community/recommander",
+      to: "/docs/community/ambassador",
       gradient: "from-green-500 to-teal-500",
     },
     {

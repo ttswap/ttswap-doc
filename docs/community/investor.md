@@ -1,5 +1,11 @@
 # how to invest the ttswap
 【EXCLUSIVE】TTSWAP Investment Opportunity~ 55% Annual Return Potential, 90% Gas Fee Savings, Build Your Web3 Wealth Growth Engine!
+
+---
+import { ShareButton } from '@site/src/components/ShareButton';  
+
+<ShareButton />
+
 ## I. Why is Now the Best Time to Invest in TTSWAP? 🚀
 
 As a next-generation decentralized trading protocol, TTSWAP is on the eve of explosive growth, offering the following core investment values:

@@ -507,8 +507,8 @@
     "description": "Whitepaper link in resources navigation"
   },
   "footer.navigation.community.beReferral": {
-    "message": "Be Referral",
-    "description": "Be referral link in community navigation"
+    "message": "Be Ambassador",
+    "description": "Be ambassador link in community navigation"
   },
   "footer.navigation.community.beTokenOperator": {
     "message": "Be Token Operator",
@@ -1208,7 +1208,7 @@
     "message": "Revenue grows with user base"
   },
   "rewards.section.roles.referrer.title": {
-    "message": "Referrer"
+    "message": "Recommended Ambassador"
   },
   "rewards.section.roles.referrer.subtitle": {
     "message": "User referral"
