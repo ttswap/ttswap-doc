@@ -508,7 +508,7 @@
   },
   "footer.navigation.community.beReferral": {
     "message": "Be Ambassador",
-    "description": "Be ambassador link in community navigation"
+    "description": "Be referral link in community navigation"
   },
   "footer.navigation.community.beTokenOperator": {
     "message": "Be Token Operator",
@@ -1706,7 +1706,7 @@
   },
   "shareButton.modal.title": {
     "message": "Generate Your Share Link",
-    "description": "Generate Your Share Link"
+    "description": "Title of the share modal"
   },
   "shareButton.modal.description": {
     "message": "Enter your wallet address to generate a share link",
@@ -1718,7 +1718,7 @@
   },
   "shareButton.walletAddress.placeholder": {
     "message": "Please enter your wallet address",
-    "description": "Please enter your wallet address"
+    "description": "Placeholder for wallet address input"
   },
   "shareButton.generatedUrl.label": {
     "message": "Your Share Link",
