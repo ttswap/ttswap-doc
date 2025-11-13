@@ -13,5 +13,7 @@ node_modules/
 # Log files
 *.log
 
+*.pdf
+
 .docusaurus
 
