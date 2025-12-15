@@ -119,7 +119,7 @@ const config: Config = {
         },
         {
           label: 'Knowledge', position: 'left', items: [
-            { to: '/docs/knowledge/userdoc', label: 'User Doc', },
+           // { to: '/docs/knowledge/userdoc', label: 'User Doc', },
             { to: '/docs/knowledge/tokeneconomic', label: 'Token Economic', },
             { to: '/docs/knowledge/whitepaper', label: 'WhitePaper', },
           ],
