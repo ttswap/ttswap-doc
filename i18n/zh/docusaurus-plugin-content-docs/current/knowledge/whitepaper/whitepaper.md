@@ -293,9 +293,9 @@ $$
 
 协议已通过多项数学一致性测试：
 
-*   **公平性**：A 换 B，立即用 B 换回 A，除手续费外损失极小（路径无关性）。  
-*   **合理性**：单笔大额交易与拆分为多笔小额交易的结果一致（无套利空间）。  
-*   **闭环性**：A->B->C->A 的循环交易逻辑自洽。
+*   **公平性**：A 换 B，立即用 B 换回 A，除手续费外损失极小（路径无关性）。   *（TTSWAP 模型反向兑换（闭环性）推导证明**附录 H**）* 
+*   **合理性**：单笔大额交易与拆分为多笔小额交易的结果一致（无套利空间）。   *（TTSWAP 通用模型下拆分交易的误差分析证明参见**附录 I**）* 
+*   **闭环性**：A->B->C->A 的循环交易逻辑自洽。  *（TTSWAP 循环兑换一致性证明**附录 J**）* 
   
 > 参见 modified_swap_without_fee [测试合约地址](https://github.com/ttswap/ttswap-core/blob/5326e7cef7305d00fe9b909064113becc58968bd/test/modified_swap_without_fee.sol)
 
@@ -918,4 +918,453 @@ $$ \text{Net Value (净值)} = \frac{I + \text{Accumulated Fees}}{S} $$
 *   **分润执行**：将计算出的总收益按照预设比例（如 LP 70%、平台 30%）进行实时分配。
  
 通过这种机制，TTSWAP 实现了**自动复利**：LP 无需手动领取收益再质押，手续费直接留存在池内产生新的流动性，直到撤资时才进行结算。
- 
+
+# 附录 H: TTSWAP 模型反向兑换（闭环性）推导证明
+
+本章节旨在证明 TTSWAP 价值守恒交易模型的**路径无关性**与**可逆性**。即在不考虑手续费的情况下，用户用 $\Delta a$ 个 Token A 换取 $\Delta b$ 个 Token B 后，若立即用这笔 $\Delta b$ 个 Token B 进行反向兑换，将精确换回 $\Delta a$ 个 Token A。
+
+## 1. 初始状态设定
+
+设系统处于初始状态 $S_0$：
+*   **Token A**:
+    *   价值: $V_A$
+    *   数量: $Q_A$
+*   **Token B**:
+    *   价值: $V_B$
+    *   数量: $Q_B$
+
+---
+
+## 2. 正向兑换：Token A $\to$ Token B
+
+用户输入 $\Delta a$ 个 Token A。
+
+### 2.1 计算过程
+根据白皮书核心公式：
+
+**Step 1: 计算转移价值 ($\Delta V$)**
+$$
+\Delta V = \frac{2 \cdot V_A \cdot \Delta a}{2 \cdot Q_A + \Delta a} \quad \text{......(公式 1)}
+$$
+
+**Step 2: 计算输出数量 ($\Delta b$)**
+$$
+\Delta b = \frac{2 \cdot Q_B \cdot \Delta V}{2 \cdot V_B + \Delta V} \quad \text{......(公式 2)}
+$$
+
+### 2.2 交易后状态 ($S_1$)
+交易完成后，系统状态更新为：
+*   **Token A**:
+    *   价值: $V_A$ (不变)
+    *   数量: $Q_A' = Q_A + \Delta a$
+*   **Token B**:
+    *   价值: $V_B$ (不变)
+    *   数量: $Q_B' = Q_B - \Delta b$
+
+---
+
+## 3. 反向兑换：Token B $\to$ Token A
+
+现在，我们在状态 $S_1$ 下，输入 $\Delta b$ 个 Token B，试图换回 Token A。设换回的数量为 $\Delta a_{out}$。
+
+### 3.1 Step 1: 计算反向转移价值 ($\Delta V'$)
+
+输入 $\Delta b$ 个 Token B。根据输入公式，分母为“交易前数量 + 输入量”。
+此时 Token B 的池内数量为 $Q_B'$。
+
+$$
+\Delta V' = \frac{2 \cdot V_B \cdot \Delta b}{2 \cdot Q_B' + \Delta b}
+$$
+
+代入 $Q_B' = Q_B - \Delta b$：
+
+$$
+\Delta V' = \frac{2 \cdot V_B \cdot \Delta b}{2 \cdot (Q_B - \Delta b) + \Delta b} = \frac{2 \cdot V_B \cdot \Delta b}{2Q_B - 2\Delta b + \Delta b}
+$$
+
+$$
+\Delta V' = \frac{2 \cdot V_B \cdot \Delta b}{2 \cdot Q_B - \Delta b} \quad \text{......(公式 3)}
+$$
+
+**验证 $\Delta V'$ 与 $\Delta V$ 的关系：**
+由正向兑换的 (公式 2) $\Delta b = \frac{2 Q_B \Delta V}{2 V_B + \Delta V}$ 可变形为：
+$$ \Delta b (2 V_B + \Delta V) = 2 Q_B \Delta V $$
+$$ 2 V_B \Delta b + \Delta b \Delta V = 2 Q_B \Delta V $$
+$$ 2 V_B \Delta b = \Delta V (2 Q_B - \Delta b) $$
+$$ \Delta V = \frac{2 V_B \Delta b}{2 Q_B - \Delta b} $$
+
+对比 (公式 3)，可得结论：
+$$ \Delta V' = \Delta V $$
+**即：正向交易产生的价值转移量，在反向全额交易时完全相等。**
+
+### 3.2 Step 2: 计算反向输出数量 ($\Delta a_{out}$)
+
+根据输出公式，我们使用 $\Delta V'$ (即 $\Delta V$) 从 Token A 池中换取资产。
+此时 Token A 的池内数量为 $Q_A'$。
+
+$$
+\Delta a_{out} = \frac{2 \cdot Q_A' \cdot \Delta V}{2 \cdot V_A + \Delta V}
+$$
+
+代入 $Q_A' = Q_A + \Delta a$：
+
+$$
+\Delta a_{out} = \frac{2 \cdot (Q_A + \Delta a) \cdot \Delta V}{2 \cdot V_A + \Delta V} \quad \text{......(公式 4)}
+$$
+
+---
+
+## 4. 证明 $\Delta a_{out} = \Delta a$
+
+我们需要证明 (公式 4) 的结果等于初始输入 $\Delta a$。
+即证明：
+$$
+\frac{2 \cdot (Q_A + \Delta a) \cdot \Delta V}{2 \cdot V_A + \Delta V} \stackrel{?}{=} \Delta a
+$$
+
+**推导：**
+将等式两边同乘分母 $(2 V_A + \Delta V)$：
+$$
+2 (Q_A + \Delta a) \Delta V = \Delta a (2 V_A + \Delta V)
+$$
+
+展开两边：
+$$
+2 Q_A \Delta V + 2 \Delta a \Delta V = 2 V_A \Delta a + \Delta a \Delta V
+$$
+
+移项，将含 $\Delta V$ 的项移至左边：
+$$
+2 Q_A \Delta V + 2 \Delta a \Delta V - \Delta a \Delta V = 2 V_A \Delta a
+$$
+$$
+2 Q_A \Delta V + \Delta a \Delta V = 2 V_A \Delta a
+$$
+
+提取公因式 $\Delta V$：
+$$
+\Delta V (2 Q_A + \Delta a) = 2 V_A \Delta a
+$$
+
+解出 $\Delta V$：
+$$
+\Delta V = \frac{2 \cdot V_A \cdot \Delta a}{2 \cdot Q_A + \Delta a}
+$$
+
+**结论：**
+推导出的 $\Delta V$ 表达式与正向兑换时的初始定义 **(公式 1)** 完全一致。
+
+$$
+\therefore \Delta a_{out} = \Delta a
+$$
+
+## 5. 总结
+
+通过上述代数推导证明，TTSWAP 的价值守恒模型满足数学上的闭环性（Consistency）。
+*   **状态 $S_0 \xrightarrow{+\Delta a} S_1$**：Token A 增加 $\Delta a$，Token B 减少 $\Delta b$。
+*   **状态 $S_1 \xrightarrow{+\Delta b} S_0$**：Token B 增加 $\Delta b$，Token A 减少 $\Delta a$。
+
+# 附录 I: TTSWAP 通用模型下拆分交易的误差分析证明
+
+本章节旨在证明 TTSWAP 交易模型在处理一笔大额交易 ($\Delta a$) 与将其拆分为两笔小额交易 ($\Delta a_1 + \Delta a_2$) 时的数学关系，并推导其精确误差公式。
+
+## 1. 定义与目标
+
+*   **初始状态**:
+    *   Token A: 价值 $V_A$, 数量 $Q_A$
+    *   Token B: 价值 $V_B$, 数量 $Q_B$
+*   **交易量**: $\Delta a = x_1 + x_2$
+*   **目标**: 计算并比较 $\Delta b_{total}$ (一次性交易) 与 $\Delta b_{split} = \Delta b_1 + \Delta b_2$ (拆分交易) 的差值。
+
+## 2. 基础函数构建
+
+TTSWAP 的输入输出联立公式为：
+$$ \Delta b = \frac{2 Q_B V_A \Delta a}{2 V_B Q_A + (V_A + V_B) \Delta a} $$
+
+为了简化推导，定义常数参数：
+*   **$K = 2 Q_B V_A$**
+*   **$M = 2 V_B Q_A$**
+*   **$N = V_A + V_B$**
+
+交易函数简化为：
+$$ f(x) = \frac{K x}{M + N x} $$
+
+---
+
+## 3. 推导过程
+
+### 3.1 场景 A：一次性交易 (Total)
+
+直接代入总量 $\Delta a = x_1 + x_2$：
+
+$$
+\Delta b_{total} = \frac{K (x_1 + x_2)}{M + N (x_1 + x_2)}
+$$
+
+令分母 **$D_{total} = M + N (x_1 + x_2)$**，则：
+$$ \Delta b_{total} = \frac{K (x_1 + x_2)}{D_{total}} $$
+
+### 3.2 场景 B：拆分交易 (Split)
+
+**第一笔交易 ($x_1$)**:
+$$ \Delta b_1 = \frac{K x_1}{M + N x_1} $$
+令分母 **$D_1 = M + N x_1$**，则 $\Delta b_1 = \frac{K x_1}{D_1}$。
+
+**状态更新**:
+交易后系统参数变为 $Q_A', Q_B'$，导致 $K, M$ 发生变化：
+*   $M' = 2 V_B (Q_A + x_1) = M + 2 V_B x_1$
+*   $K' = 2 V_A (Q_B - \Delta b_1) = K - 2 V_A \Delta b_1 = K - \frac{2 V_A K x_1}{D_1}$
+
+**第二笔交易 ($x_2$)**:
+$$ \Delta b_2 = \frac{K' x_2}{M' + N x_2} $$
+代入 $K', M'$ 并化简（省略繁琐通分过程，直接给出结果）：
+$$
+\Delta b_2 = \frac{K x_2 [M + (V_B - V_A) x_1]}{D_1 \cdot (M + 2 V_B x_1 + N x_2)}
+$$
+
+令第二笔交易的有效分母 **$D_2 = M + 2 V_B x_1 + N x_2$**。
+
+**拆分交易总产出**:
+$$
+\Delta b_{split} = \Delta b_1 + \Delta b_2 = \frac{K x_1}{D_1} + \frac{K x_2 [M + (V_B - V_A) x_1]}{D_1 D_2}
+$$
+通分求和后：
+$$
+\Delta b_{split} = \frac{K (x_1 + x_2) (M + 2 V_B x_1)}{D_1 D_2}
+$$
+
+---
+
+## 4. 误差公式 (The Error Formula)
+
+我们计算两者的差值：
+$$ \text{Diff} = \Delta b_{total} - \Delta b_{split} $$
+
+代入上述结果：
+$$
+\text{Diff} = K (x_1 + x_2) \left[ \frac{1}{D_{total}} - \frac{M + 2 V_B x_1}{D_1 D_2} \right]
+$$
+
+$$
+\text{Diff} = \frac{K (x_1 + x_2)}{D_{total} D_1 D_2} \left[ D_1 D_2 - D_{total} (M + 2 V_B x_1) \right]
+$$
+
+### 4.1 核心差异项计算 (方括号内部)
+
+我们需要计算 $\Delta_{core} = D_1 D_2 - D_{total} (M + 2 V_B x_1)$。
+
+展开各项：
+1.  $D_1 D_2 = (M + N x_1)(M + 2 V_B x_1 + N x_2)$
+2.  $D_{total} (M + 2 V_B x_1) = (M + N x_1 + N x_2)(M + 2 V_B x_1)$
+
+经过代数相减消去相同项 (过程略，详见原草稿)，剩余项为：
+$$ \Delta_{core} = (N^2 - 2 V_B N) x_1 x_2 $$
+
+代入 $N = V_A + V_B$：
+$$ \Delta_{core} = [(V_A + V_B)^2 - 2 V_B (V_A + V_B)] x_1 x_2 $$
+$$ \Delta_{core} = (V_A^2 - V_B^2) x_1 x_2 $$
+
+### 4.2 最终完整公式
+
+将 $\Delta_{core}$ 代回原式，得到精确误差公式：
+
+$$
+\text{Diff} = \frac{K \cdot (x_1 + x_2) \cdot [(V_A^2 - V_B^2) x_1 x_2]}{(M + N (x_1+x_2)) \cdot (M + N x_1) \cdot (M + 2 V_B x_1 + N x_2)}
+$$
+
+---
+
+## 5. 结论与分析
+
+### 5.1 路径无关性条件
+*   **当 $V_A = V_B$ 时**：
+    分子中的 $(V_A^2 - V_B^2) = 0$，故 $\text{Diff} = 0$。
+    **结论**：此时 TTSWAP 完全等价于 Uniswap (CPMM)，交易结果与路径无关。
+
+*   **当 $V_A \neq V_B$ 时**：
+    $\text{Diff} \neq 0$，存在微小的路径依赖。
+    *   $V_A > V_B$：$\text{Diff} > 0$ (一次性交易更优)
+    *   $V_A < V_B$：$\text{Diff} < 0$ (拆分交易更优)
+
+### 5.2 误差量级分析 (为什么误差极小？)
+
+尽管分子中的核心项 $(V_A^2 - V_B^2)$ 可能很大（例如 $10^8$），但分母项的存在决定了最终误差的微小。
+
+观察分母的量级：
+$$ \text{分母} \approx M^3 = (2 V_B Q_A)^3 \approx 8 \cdot V_B^3 \cdot Q_A^3 $$
+
+观察分子的量级：
+$$ \text{分子} \approx (2 Q_B V_A) \cdot \Delta a \cdot V_A^2 \cdot (\Delta a)^2 \approx 2 \cdot Q_B \cdot V_A^3 \cdot (\Delta a)^3 $$
+
+相对误差率近似为：
+$$ \frac{\text{Diff}}{\Delta b} \approx \left( \frac{\Delta a}{Q_A} \right)^2 \cdot \frac{V_A^2 - V_B^2}{V_B^2} $$
+
+由于单笔交易量 $\Delta a$ 通常远小于资金池深度 $Q_A$ (例如 $\Delta a / Q_A \approx 0.001$)，其平方项 ($10^{-6}$) 会极大地缩小误差。
+
+**数值示例**：
+若代入 $V_A=10000, Q_A=10000, V_B=100, Q_B=100, \Delta a=2$：
+*   核心差异项 $\approx 10^8$
+*   分母 $\approx 10^{18}$
+*   最终误差 $\approx 10^{-5}$
+
+这证明了 TTSWAP 在获得 Balancer 级加权特性的同时，通过代数近似，仅引入了工程上可忽略不计的微小误差，换取了巨大的 Gas 优势。
+
+# 附录 J: TTSWAP 循环兑换一致性证明 (三角闭环)
+
+本章节旨在证明 TTSWAP 价值守恒交易模型的**多跳路径闭环性**。即在不考虑手续费的情况下，用户进行 $A \to B \to C \to A$ 的循环交易后，最终获得的 Token A 数量等于初始投入数量。
+
+$$ \Delta a_{final} = \Delta a_{initial} $$
+
+## 1. 初始状态设定
+
+设系统中有三个代币池，初始状态如下：
+
+1.  **Token A**: 价值 $V_A$, 数量 $Q_A$
+2.  **Token B**: 价值 $V_B$, 数量 $Q_B$
+3.  **Token C**: 价值 $V_C$, 数量 $Q_C$
+
+---
+
+## 2. 第一跳：Token A $\to$ Token B
+
+用户输入 $\Delta a$ 个 Token A。
+
+### 2.1 计算过程
+根据 TTSWAP 核心公式：
+
+$$
+\Delta V_{AB} = \frac{2 \cdot V_A \cdot \Delta a}{2 \cdot Q_A + \Delta a}
+$$
+
+$$
+\Delta b = \frac{2 \cdot Q_B \cdot \Delta V_{AB}}{2 \cdot V_B + \Delta V_{AB}}
+$$
+
+### 2.2 状态更新 ($S_1$)
+*   $Q_A' = Q_A + \Delta a$
+*   $Q_B' = Q_B - \Delta b$
+*   Token C 状态不变。
+
+---
+
+## 3. 第二跳：Token B $\to$ Token C
+
+用户使用第一跳获得的 $\Delta b$ 个 Token B 进行兑换。
+
+### 3.1 计算过程
+输入量为 $\Delta b$。根据公式，我们先计算 Token B 带来的价值转移量 $\Delta V_{BC}$。
+注意此时 Token B 的池内数量为 $Q_B'$。
+
+$$
+\Delta V_{BC} = \frac{2 \cdot V_B \cdot \Delta b}{2 \cdot Q_B' + \Delta b}
+$$
+
+代入 $Q_B' = Q_B - \Delta b$：
+$$
+\Delta V_{BC} = \frac{2 \cdot V_B \cdot \Delta b}{2(Q_B - \Delta b) + \Delta b} = \frac{2 \cdot V_B \cdot \Delta b}{2 Q_B - \Delta b}
+$$
+
+**关键引理：价值传递守恒**
+回顾第一跳中 $\Delta b$ 的公式：
+$$ \Delta b = \frac{2 Q_B \Delta V_{AB}}{2 V_B + \Delta V_{AB}} $$
+变形可得：
+$$ \Delta b (2 V_B + \Delta V_{AB}) = 2 Q_B \Delta V_{AB} $$
+$$ 2 V_B \Delta b = \Delta V_{AB} (2 Q_B - \Delta b) $$
+$$ \Delta V_{AB} = \frac{2 V_B \Delta b}{2 Q_B - \Delta b} $$
+
+对比 $\Delta V_{BC}$ 的表达式，可得：
+$$ \Delta V_{BC} = \Delta V_{AB} $$
+
+**物理含义**：Token A 带来的价值量 ($\Delta V_{AB}$) 在转化为 Token B 数量 ($\Delta b$) 后，若将这笔 Token B 全额投入下一跳，其携带的价值量 ($\Delta V_{BC}$) 完全等于初始价值量。
+令 $\Delta V = \Delta V_{AB} = \Delta V_{BC}$。
+
+**计算输出 $\Delta c$**：
+$$
+\Delta c = \frac{2 \cdot Q_C \cdot \Delta V}{2 \cdot V_C + \Delta V}
+$$
+
+### 3.2 状态更新 ($S_2$)
+*   $Q_B'' = Q_B' + \Delta b = (Q_B - \Delta b) + \Delta b = Q_B$ (**Token B 池恢复初始状态**)
+*   $Q_C' = Q_C - \Delta c$
+
+---
+
+## 4. 第三跳：Token C $\to$ Token A
+
+用户使用第二跳获得的 $\Delta c$ 个 Token C 换回 Token A。
+
+### 4.1 计算过程
+输入量为 $\Delta c$。计算价值转移量 $\Delta V_{CA}$。
+此时 Token C 的池内数量为 $Q_C'$。
+
+$$
+\Delta V_{CA} = \frac{2 \cdot V_C \cdot \Delta c}{2 \cdot Q_C' + \Delta c}
+$$
+
+代入 $Q_C' = Q_C - \Delta c$：
+$$
+\Delta V_{CA} = \frac{2 \cdot V_C \cdot \Delta c}{2 Q_C - \Delta c}
+$$
+
+同样利用之前的引理（形式相同），由 $\Delta c = \frac{2 Q_C \Delta V}{2 V_C + \Delta V}$ 可反推导出：
+$$ \Delta V = \frac{2 V_C \Delta c}{2 Q_C - \Delta c} $$
+
+因此：
+$$ \Delta V_{CA} = \Delta V $$
+
+**价值量再次守恒**：这表明资金流转一圈回到 Token A 池前，携带的“购买力价值”仍然是最初产生的 $\Delta V$。
+
+**计算最终输出 $\Delta a_{final}$**：
+此时 Token A 的池内数量为 $Q_A'$ (第一跳增加后的数量)。
+$$ Q_A' = Q_A + \Delta a $$
+
+我们使用 $\Delta V$ 从 Token A 池中换出资产：
+$$
+\Delta a_{final} = \frac{2 \cdot Q_A' \cdot \Delta V}{2 \cdot V_A + \Delta V}
+$$
+
+代入 $Q_A'$：
+$$
+\Delta a_{final} = \frac{2 \cdot (Q_A + \Delta a) \cdot \Delta V}{2 \cdot V_A + \Delta V}
+$$
+
+### 4.2 证明 $\Delta a_{final} = \Delta a$
+
+我们需要验证：
+$$ \frac{2 (Q_A + \Delta a) \Delta V}{2 V_A + \Delta V} \stackrel{?}{=} \Delta a $$
+
+回顾第一跳中 $\Delta V$ 的定义：
+$$ \Delta V = \frac{2 V_A \Delta a}{2 Q_A + \Delta a} $$
+变形得：
+$$ \Delta V (2 Q_A + \Delta a) = 2 V_A \Delta a $$
+
+现在看 $\Delta a_{final}$ 的分子：
+$$ 2 (Q_A + \Delta a) \Delta V = 2 \Delta V Q_A + 2 \Delta V \Delta a $$
+这似乎不是最简路径。我们采用更直接的代数变换。
+
+**目标等式**：
+$$ \Delta a_{final} = \Delta a $$
+$$ \Updownarrow $$
+$$ \frac{2 (Q_A + \Delta a) \Delta V}{2 V_A + \Delta V} = \Delta a $$
+两边同乘分母：
+$$ 2 (Q_A + \Delta a) \Delta V = \Delta a (2 V_A + \Delta V) $$
+展开：
+$$ 2 Q_A \Delta V + 2 \Delta a \Delta V = 2 V_A \Delta a + \Delta a \Delta V $$
+移项整理：
+$$ 2 Q_A \Delta V + \Delta a \Delta V = 2 V_A \Delta a $$
+提取 $\Delta V$：
+$$ \Delta V (2 Q_A + \Delta a) = 2 V_A \Delta a $$
+$$ \Delta V = \frac{2 V_A \Delta a}{2 Q_A + \Delta a} $$
+
+这正是我们出发时的定义式。等式成立。
+
+## 5. 结论
+
+**证毕**。
+
+通过数学推导证明：
+1.  **价值传递守恒**：在中间环节（Token B 和 Token C），输入代币产生的价值增量 $\Delta V$，在全额兑换后，能够无损地传递到下一个环节。
+2.  **闭环无损**：最终换回的 Token A 数量 $\Delta a_{final}$ 严格等于初始投入 $\Delta a$。
+3.  **状态复原**：交易完成后，Token B 和 Token C 的池内数量恢复初始值，Token A 池内数量先增后减也恢复初始值。系统整体状态完全回滚。
+
+这证明了 TTSWAP 模型在多跳循环交易中具备严格的数学闭环性，不存在无风险套利机会。
