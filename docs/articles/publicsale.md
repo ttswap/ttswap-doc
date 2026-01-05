@@ -1,6 +1,8 @@
 ---
 lang: en-US
 title: Token Public Sale Plan
+description: Details of the TTSwap Token (TTS) Public Sale, including rounds, pricing, participation guide, and liquidity allocation.
+keywords: [TTSwap Public Sale, TTS Token Sale, IDO, Crypto Investment, Token Launch]
 createTime: 2025/05/17 14:18:10
 ---  
 

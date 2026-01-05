@@ -1,6 +1,8 @@
 ---
 lang: en-US
 title: TTSWAP Token Economics
+description: Explore the TTSwap token (TTS) economic model, including distribution, unlock mechanisms, and utility cases. Learn how TTS drives the ecosystem.
+keywords: [TTSwap, Tokenomics, TTS Token, Crypto Economics, Vesting Schedule, DeFi]
 collapsed: true
 createTime: 2025/06/08 23:48:54
 ---
