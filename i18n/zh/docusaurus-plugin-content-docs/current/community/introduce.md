@@ -1,4 +1,11 @@
 
+---
+lang: zh-CN
+title: TTSWAP 按角色分佣机制
+description: 探索 TTSWAP 创新的按角色收益分享模型。了解 LPs、推荐人和合作伙伴如何分享平台收益。
+keywords: [TTSWAP 收益分享, 加密被动收入, DeFi 费用结构, 推荐奖励, 流动性提供者收益]
+---
+
 # TTSwap 按角色分佣机制
 
 六大角色共享千亿交易红利 

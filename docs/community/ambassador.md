@@ -1,3 +1,10 @@
+---
+lang: en-US
+title: How to Become the TTswap Ambassador
+description: Join the TTSwap Ambassador program. Earn permanent commissions by referring users to the next-generation decentralized exchange.
+keywords: [TTSwap Ambassador, Crypto Affiliate Program, Referral Rewards, DeFi Ambassador, Passive Income]
+---
+
 # How to Become the TTswap Ambassador
 
 TTSWAP Ambassador Recruitment~ 5%-10% Permanent Revenue Share, Build Your Passive Income Pipeline! 

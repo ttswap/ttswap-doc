@@ -1,3 +1,9 @@
+---
+lang: en-US
+title: How to be service provider
+description: Become a TTSwap Gateway Operator. Monetize your traffic with high revenue shares and zero-cost launch options.
+keywords: [Service Provider, Crypto Gateway, Traffic Monetization, DeFi Partnership, TTSwap Integration]
+---
 
 # How to be service provider
 

@@ -1,3 +1,9 @@
+---
+lang: en-US
+title: User Documentation
+description: Comprehensive user guide for TTSwap. Learn how to trade, provide liquidity, and participate in governance on the next-gen DEX.
+keywords: [TTSwap User Guide, How to Trade Crypto, Liquidity Provision Tutorial, DeFi Governance, TTSwap Features]
+---
 
 # User document  
 

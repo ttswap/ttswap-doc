@@ -1,7 +1,8 @@
 ---
 lang: zh-CN
-title: 📖TTSWAP 技术白皮书
-description: TTSWAP 是一个去中心化的代币交易平台，采用创新的恒定价值模型，实现了低 Gas 费用的多倍流动性交易。
+title: 📖 TTSWAP 技术白皮书 - 恒定价值 AMM 与集中流动性
+description: 深入了解 TTSWAP 技术白皮书。探索创新的恒定价值 AMM 模型、集中流动性设计、以及零无常损失保护机制，实现低滑点、低 Gas 的去中心化交易。
+keywords: [TTSWAP 白皮书, 恒定价值 AMM, 集中流动性, 零无常损失, 去中心化交易所, DEX 架构, 加密货币交易协议]
 createTime: 2025/05/20 23:47:01
 ---
 # 📖TTSWAP 技术白皮书  

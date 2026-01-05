@@ -1,3 +1,10 @@
+---
+lang: zh-CN
+title: 如何投资 TTSWAP
+description: TTSWAP 投资指南。分析回报、了解商业模式，并学习在 Web3 中实现长期财富增长的策略。
+keywords: [TTSWAP 投资, DeFi 投资, 加密回报, Web3 财富, 代币经济学]
+---
+
 # 💎如何投资TTSWAP
 
 三重路径参与下一代DeFi巨头 

@@ -1,4 +1,11 @@
 
+---
+lang: zh-CN
+title: 如何成为 TTSWAP 推荐大使
+description: 加入 TTSWAP 大使计划。通过推荐用户使用下一代去中心化交易所，赚取永久佣金。
+keywords: [TTSWAP 大使, 加密货币推荐计划, 推荐奖励, DeFi 大使, 被动收入]
+---
+
 # 🎯 如何成为TTSWAP推荐大使
 
 【零门槛】TTSWAP推荐官招募：永久分成5%-10%，打造你的被动收入管道！
