@@ -1,3 +1,9 @@
+---
+lang: en-US
+title: TTSwap Liquidity Provider Rewards Program
+description: Discover the benefits of providing liquidity on TTSwap. Enjoy zero impermanent loss, high capital efficiency, and triple rewards.
+keywords: [Liquidity Provider, Yield Farming, Zero Impermanent Loss, Crypto Staking, TTSwap LP]
+---
 
 # 🌟 TTSwap Liquidity Provider Rewards Program: Zero Risk, High Returns!
 

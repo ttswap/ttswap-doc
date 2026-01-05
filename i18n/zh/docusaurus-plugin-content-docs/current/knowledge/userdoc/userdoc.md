@@ -1,7 +1,8 @@
 ---
 lang: zh-CN
-title: ⚖️ TTSWAP  详细介绍
-description: TTSWAP 是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。
+title: TTSWAP 用户文档 - 交易、投资与挖矿指南
+description: TTSWAP 综合用户指南。学习如何在下一代 DEX 上进行代币交易、提供流动性赚取收益、参与二次挖矿以及进行社区治理。
+keywords: [TTSWAP 使用教程, 去中心化交易指南, 流动性挖矿教程, DeFi 投资, 加密货币兑换, TTSWAP 功能介绍]
 collapsed: true
 ---
 

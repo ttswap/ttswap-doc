@@ -1,3 +1,11 @@
+---
+lang: zh-CN
+title: TTSWAP 代币公售计划
+description: TTSWAP 代币 (TTS) 公售详情。了解公售轮次、价格、参与方式以及资金用途。100% 资金注入初始流动性池。
+keywords: [TTSWAP 公售, TTS 代币销售, IDO, 加密货币投资, 代币发行, DEX 流动性]
+createTime: 2025/05/17 14:18:10
+---
+
 # 公售计划  
 
 为建设下一代DEX注入动力，与我们一起成长！  

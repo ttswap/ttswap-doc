@@ -1,7 +1,8 @@
 ---
 lang: en-US
 title: 📖 TTSWAP Technical Whitepaper
-description: TTSWAP is a decentralized token trading platform adopting an innovative Constant Value Model, achieving multi-fold liquidity trading with low Gas fees.
+description: Deep dive into the TTSwap technical whitepaper. Understand the innovative Constant Value AMM, concentrated liquidity, and zero impermanent loss mechanisms.
+keywords: [TTSwap Whitepaper, Constant Value AMM, Concentrated Liquidity, Zero Impermanent Loss, DEX Architecture, Crypto Trading Protocol]
 createTime: 2025/05/20 23:47:01
 ---
 

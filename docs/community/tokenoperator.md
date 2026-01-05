@@ -1,3 +1,9 @@
+---
+lang: en-US
+title: How to be TTSWAP Token Operator
+description: Learn how to become a Token Operator on TTSwap. Earn trading fees, manage token parameters, and drive ecosystem growth.
+keywords: [Token Operator, TTSwap Management, Token Listing, DeFi Operations, Crypto Revenue Sharing]
+---
 
 # How to be TTSWAP Token Operator
 

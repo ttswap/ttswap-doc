@@ -1,3 +1,9 @@
+---
+lang: zh-CN
+title: 如何成为 TTSWAP 代币运营官
+description: 学习如何成为 TTSWAP 的代币运营官。赚取交易费分成、管理代币参数并推动生态系统增长。
+keywords: [代币运营官, TTSWAP 管理, 代币上线, DeFi 运营, 加密货币收益分享]
+---
 
 # 🎮 成为TTSWAP代币运营官指南  
 

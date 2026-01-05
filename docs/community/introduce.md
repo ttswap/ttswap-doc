@@ -1,3 +1,9 @@
+---
+lang: en-US
+title: How to sharing the fee income
+description: Explore TTSwap's innovative role-based revenue sharing model. Understand how LPs, referrers, and partners share in the platform's success.
+keywords: [TTSwap Revenue Sharing, Crypto Passive Income, DeFi Fee Structure, Referral Rewards, Liquidity Provider Earnings]
+---
 
 # How to sharing the fee income
 

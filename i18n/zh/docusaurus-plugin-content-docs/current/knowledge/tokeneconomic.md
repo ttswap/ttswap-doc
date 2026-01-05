@@ -1,7 +1,8 @@
 ---
 lang: zh-CN
-title: TTS 代币方案-初始全部锁定,价格翻倍才能比例解锁
-description: TTSWAP 是一个去中心化的代币交易平台，任何人都可以快速、安全地将一种代币兑换为另一种，无需依赖中心化交易所。
+title: TTS 代币经济学 - 价格导向型解锁机制
+description: 详解 TTSWAP 代币 (TTS) 经济模型。了解其创新的价格导向型解锁机制、分配方案、通缩模型以及代币在生态系统中的治理与效用。
+keywords: [TTS 代币, 代币经济学, 价格解锁, 通缩模型, TTSWAP 治理, 加密货币分配, 流动性挖矿奖励]
 collapsed: true
 createTime: 2025/06/08 23:48:54
 ---
