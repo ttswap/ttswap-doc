@@ -9,8 +9,8 @@ export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title="TTSwap"
-      description=""
+      title="TTSwap - Efficient & Secure Decentralized Exchange"
+      description="TTSwap is a leading decentralized exchange (DEX) providing seamless crypto trading, liquidity mining, and DAO governance. Join the future of DeFi."
       wrapperClassName="ttswap-docusaurus-wrapper"
     >
       <div className="ttswap-app">

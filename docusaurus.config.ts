@@ -11,6 +11,8 @@ const config: Config = {
   tagline: 'Trade & Invest crypto freely',
   favicon: 'img/favicon.ico',
 
+
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -90,6 +92,18 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+          createSitemapItems: async (params) => {
+            const { defaultCreateSitemapItems, ...rest } = params;
+            const items = await defaultCreateSitemapItems(rest);
+            return items.filter((item) => !item.url.includes('/page/'));
+          },
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -102,6 +116,10 @@ const config: Config = {
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
+    metadata: [
+      { name: 'keywords', content: 'TTSwap, DEX, DeFi, Decentralized Exchange, Crypto Trading, AMM, Yield Farming, Liquidity Provider' },
+      { name: 'description', content: 'TTSwap is a next-generation decentralized exchange (DEX) offering secure trading, high liquidity efficiency, and community-driven governance.' },
+    ],
     navbar: {
       title: 'TTSwap',
       logo: {
@@ -119,7 +137,7 @@ const config: Config = {
         },
         {
           label: 'Knowledge', position: 'left', items: [
-           // { to: '/docs/knowledge/userdoc', label: 'User Doc', },
+            // { to: '/docs/knowledge/userdoc', label: 'User Doc', },
             { to: '/docs/knowledge/tokeneconomic', label: 'Token Economic', },
             { to: '/docs/knowledge/whitepaper', label: 'WhitePaper', },
           ],
