@@ -501,7 +501,7 @@ tests
 *   **Telegram**: [@ttswapfinance](https://t.me/ttswapfinance)
 *   **Email**: [bussiness@ttswap.io](mailto:bussiness@ttswap.io)
 *   **Discord**: [ttswap](https://discord.gg/XygqnmQgX3)
-*   **Website**: [ttswap.io](http://www.ttswap.io)
+*   **Website**: [ttswap.io](http://ttswap.io)
 
 
 ## Appendix A: Detailed Derivation of Constant Value Trading Model Core Formulas
