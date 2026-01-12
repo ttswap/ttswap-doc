@@ -44,9 +44,9 @@ TTSWAP is an **efficient, secure, and innovative decentralized trading platform*
 
 | Round | Raise Amount      | TTS per USDT | Price (Est.) | Max Supply      |
 | ----- | ---------------- | ------------ | ------------ | --------------- |
-| 1st   | 87,500 USDT     | 24 TTS       | $0.0417      | 4,200,000 TTS   |
-| 2nd   | 75,000 USDT     | 20 TTS       | $0.0500      | 3,000,000 TTS   |
-| 3rd   | 87,500 USDT     | 16 TTS       | $0.0625      | 2,800,000 TTS   |
+| 1st   | 87,500 USDT     | 25 TTS       | $0.0417      | 2,187,500 TTS   |
+| 2nd   | 75,000 USDT     | 20 TTS       | $0.0500      | 1,500,000 TTS   |
+| 3rd   | 87,500 USDT     | 16 TTS       | $0.0625      | 1,400,000 TTS   |
 
 ✅ Earlier participation means better value; limited supply, no additional rounds.
 
@@ -90,7 +90,7 @@ TTS will serve as the backbone token throughout the entire ecosystem, enjoying c
 * Telegram: [@ttswapfinance](https://t.me/ttswapfinance)
 * Discord: [ttswap](https://discord.gg/XygqnmQgX3)
 * Email: [bussiness@ttswap.io](mailto:bussiness@ttswap.io)
-* Website: [ttswap.io](http://www.ttswap.io)
+* Website: [ttswap.io](http://ttswap.io)
 
 ---
 
