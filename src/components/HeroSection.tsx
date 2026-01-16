@@ -225,20 +225,20 @@ export function HeroSection() {
                 </div>
               </div>
 
-              <div className="space-y-2">
-                <img src={getImagePath('swap')} alt="Swap" className="w-full" />
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
-                  onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?" + getUsernameFromCookie()) }}>
+              <div className="space-y-2 flex flex-col items-center" onClick={() => { window.open("https://app.ttswap.io/trade?" + getUsernameFromCookie()) }}>
+                <img src={getImagePath('swap')} alt="Swap" className="w-auto" />
+                {/* <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
+                  onClick={() => { window.open("https://app.ttswap.io/trade?" + getUsernameFromCookie()) }}>
                   <Zap className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                   <Translate id="hero.swap.tradeButton" description="Immediate trading button">
                     Immediate Trading
                   </Translate>
-                </Button>
+                </Button> */}
               </div>
             </Card>
 
             {/* Stake Card */}
-            <Card className="p-6 bg-card border border-border shadow-xl hover:shadow-2xl transition-all duration-300">
+            {/* <Card className="p-6 bg-card border border-border shadow-xl hover:shadow-2xl transition-all duration-300">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-xl font-semibold flex items-center">
                   <div className="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center mr-1">
@@ -261,7 +261,7 @@ export function HeroSection() {
                   </Translate>
                 </Button>
               </div>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>
