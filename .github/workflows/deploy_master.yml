@@ -39,7 +39,7 @@ jobs:
         run: npm ci
 
       - name: Build documentation site
-        run: npm run build-all 
+        run: npm run build
 
       - name: scp file
         run: |
