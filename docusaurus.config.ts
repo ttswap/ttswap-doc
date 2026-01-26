@@ -27,7 +27,7 @@ const config: Config = {
   ],
 
   // Set the production url of your site here
-  url: 'https://ttswap.io',
+  url: 'https://docs.ttswap.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -169,7 +169,7 @@ const config: Config = {
         },
         // 最右边 Connect Wallet 按钮
         {
-          href: 'https://app.ttswap.io',
+          href: 'https://ttswap.io',
           label: 'Launch App',
           position: 'right',
           className: 'navbar-wallet-button',

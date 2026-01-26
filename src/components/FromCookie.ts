@@ -36,7 +36,7 @@ export const updateLaunchAppHref = (name: any) => {
     if (launchAppButton) {
         const referralCode = name;
         if (referralCode) {
-            const originalHref = 'https://app.ttswap.io';
+            const originalHref = 'https://ttswap.io';
             (launchAppButton as HTMLAnchorElement).href = `${originalHref}?${referralCode}`;
         }
     }

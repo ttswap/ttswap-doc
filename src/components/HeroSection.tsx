@@ -225,10 +225,10 @@ export function HeroSection() {
                 </div>
               </div>
 
-              <div className="space-y-2 flex flex-col items-center" onClick={() => { window.open("https://app.ttswap.io/trade?" + getUsernameFromCookie()) }}>
+              <div className="space-y-2 flex flex-col items-center" onClick={() => { window.open("https://ttswap.io/trade?" + getUsernameFromCookie()) }}>
                 <img src={getImagePath('swap')} alt="Swap" className="w-auto" />
                 {/* <Button className="w-full bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
-                  onClick={() => { window.open("https://app.ttswap.io/trade?" + getUsernameFromCookie()) }}>
+                  onClick={() => { window.open("https://ttswap.io/trade?" + getUsernameFromCookie()) }}>
                   <Zap className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                   <Translate id="hero.swap.tradeButton" description="Immediate trading button">
                     Immediate Trading
@@ -254,7 +254,7 @@ export function HeroSection() {
               <div className="space-y-4">
                 <img src={getImagePath('invest')} alt="Swap" className="w-full" />
                 <Button className="w-full bg-secondary hover:bg-secondary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 group"
-                  onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?" + getUsernameFromCookie()) }}>
+                  onClick={() => { window.open("https://ttswap.io/hoodiTestnet/ttswap/trade?" + getUsernameFromCookie()) }}>
                   <TrendingUp className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                   <Translate id="hero.stake.investButton" description="Start invest button">
                     Start Invest
