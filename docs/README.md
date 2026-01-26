@@ -17,7 +17,7 @@ config:
         -
           text: Start Trading
           theme: brand
-          link: https://app.ttswap.io
+          link: https://ttswap.io
   -
     type: features
     features:

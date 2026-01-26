@@ -56,7 +56,7 @@ export const socialLinks = [
 
 export const navigationZh = {
   product: [
-    { name: "交易", href: "https://app.ttswap.io/hoodiTestnet/ttswap/trade?zh" },
+    { name: "交易", href: "https://ttswap.io/trade?zh" },
     // { name: "质押", href: "#stake" },
     // { name: "治理", href: "#governance" },
     // { name: "分析", href: "#analytics" },
@@ -90,7 +90,7 @@ export const navigation = {
         message: 'Trading',
         description: 'Trading link in product navigation'
       }),
-      href: "https://app.ttswap.io/hoodiTestnet/ttswap/trade?"+getUsernameFromCookie()
+      href: "https://ttswap.io/trade?"+getUsernameFromCookie()
     },
     // { name: "Staking", href: "#stake" },
     // { name: "Governance", href: "#governance" },

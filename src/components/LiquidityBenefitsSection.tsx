@@ -380,7 +380,7 @@ export function LiquidityBenefitsSection() {
               {/* <Button
                 size="lg"
                 className="bg-primary hover:bg-primary/90 px-8 hover:scale-105 transition-all duration-300"
-                onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/trade?"+getUsernameFromCookie()) }}
+                onClick={() => { window.open("https://ttswap.io/hoodiTestnet/ttswap/trade?"+getUsernameFromCookie()) }}
               >
                 <Zap className="mr-2 h-5 w-5" />
                 <Translate id="liquidityBenefits.cta.provideLiquidity" description="Provide liquidity button text">Provide Liquidity</Translate>
@@ -389,7 +389,7 @@ export function LiquidityBenefitsSection() {
                 size="lg"
                 variant="outline"
                 className="border-primary/30 hover:border-primary/50 px-8 hover:scale-105 transition-all duration-300"
-                onClick={() => { window.open("https://app.ttswap.io/hoodiTestnet/ttswap/profile?"+getUsernameFromCookie()) }}
+                onClick={() => { window.open("https://ttswap.io/hoodiTestnet/ttswap/profile?"+getUsernameFromCookie()) }}
               >
                 <Translate id="liquidityBenefits.cta.viewEarnings" description="View earnings button text">View Earnings</Translate>
                 <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />

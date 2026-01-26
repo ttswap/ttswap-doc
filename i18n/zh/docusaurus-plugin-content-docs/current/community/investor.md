@@ -166,8 +166,8 @@ graph LR
 
 ## 📞 **立即行动**
 ### 🌐 **参与渠道**
-- **公售平台**：[https://app.ttswap.io](https://app.ttswap.io)
-- **流动性挖矿**：[https://app.ttswap.io/](https://app.ttswap.io)
+- **公售平台**：[https://ttswap.io](https://ttswap.io)
+- **流动性挖矿**：[https://ttswap.io/](https://ttswap.io)
 - **直接投资咨询**：bd@ttswap.io
 
 ### 📱 **联系信息**
