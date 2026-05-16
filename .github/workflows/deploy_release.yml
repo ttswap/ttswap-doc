@@ -41,13 +41,31 @@ jobs:
       - name: Build documentation site
         run: npm run build
 
-      - name: scp file
+      - name: Deploy to server
         run: |
-          echo "${{ secrets.SERVER_IP }}"
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > key.pem
           chmod 600 key.pem
-          ssh -o StrictHostKeyChecking=no -i key.pem ${{ secrets.SSH_USERNAME }}@${{ secrets.SERVER_IP }} "rm -rf /mydata/nginx/html/docs/*"
-          scp -o StrictHostKeyChecking=no -i key.pem -r build/* ${{ secrets.SSH_USERNAME }}@${{ secrets.SERVER_IP }}:/mydata/nginx/html/docs
+          SSH_OPTS="-o StrictHostKeyChecking=no -i key.pem"
+          REMOTE="${{ secrets.SSH_USERNAME }}@${{ secrets.SERVER_IP }}"
+          DOCS_BASE="/mydata/nginx/html"
+
+          ssh $SSH_OPTS "$REMOTE" "rm -rf ${DOCS_BASE}/docs_new && mkdir -p ${DOCS_BASE}/docs_new"
+          scp $SSH_OPTS -r build/* "$REMOTE:${DOCS_BASE}/docs_new/"
+
+          ssh $SSH_OPTS "$REMOTE" bash -s <<'EOF'
+          set -euo pipefail
+          DOCS_BASE="/mydata/nginx/html"
+          TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+          cd "$DOCS_BASE"
+
+          if [ -d docs ]; then
+            mv docs "docs_${TIMESTAMP}"
+          fi
+          mv docs_new docs
+
+          # 保留最近 10 个 docs_* 备份，删除更旧的
+          ls -1dt docs_[0-9]* 2>/dev/null | tail -n +11 | xargs -r rm -rf
+          EOF
 
       # - name: Restart Nginx (optional)
       #   uses: appleboy/ssh-action@master
