@@ -3,7 +3,7 @@
 name: Deploy TTswap doc to Dev Environment
 on:
   push:
-    branches: [ "dev" ]
+    branches: [ "master" ]
 jobs:
   build:
     runs-on: ubuntu-latest
