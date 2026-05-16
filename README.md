@@ -1,62 +1,91 @@
+# TTSWAP Documentation
 
-# TTSWAP
+Official documentation site for [TTSWAP](https://ttswap.io) — a next-generation decentralized exchange built on EVM-compatible blockchains. This repository powers [docs.ttswap.io](https://docs.ttswap.io) using [Docusaurus](https://docusaurus.io/) with English and Chinese (`en` / `zh`) locales.
 
-TTSWAP (token-token swap) is an automated market-making protocol built on EVM-compatible blockchains, meaning it does not rely on centralized institutions or individuals to conduct transactions. Its core principle is to automatically trigger the transfer of market value based on user behavior, thereby creating a protocol based on a constant value trading model.
+## About TTSWAP
 
-## 1 Features
+**TTSWAP** (Token–Token Swap) is an Automated Market Maker (AMM) protocol that runs entirely on smart contracts—no centralized matching or custody. Its core innovation is a **Constant Value AMM**: trades preserve total market value while enabling price discovery through user-driven transfers. The model is algebraically equivalent to Uniswap-style CPMM when token weights are equal, and to Balancer-style weighted pools when they differ—without the gas cost of exponential math.
 
-1. ***Value Conservation Trading Strategy***
-The value conservation trading strategy accurately reflects the true market value of currencies and facilitates fast goods transactions.
+**Tagline:** *No intermediary · Low slippage · No impermanent loss · Role-based fees · Low gas*
 
-1. ***Direct Trading without Intermediaries***
-On this platform, any two types of items can be directly traded without the need for intermediate conversions.
+### Key features
 
-1. ***Lower Slippage within Stengthened & Concentrated invest ***
-Through stengthened the invest and concentrated invest, reduce the slippage more then 50%.
+| Area | Highlights |
+|------|------------|
+| **Trading** | Direct token-to-token swaps; shared liquidity across pairs; liquidity amplification and concentrated depth (70%+ slippage reduction vs fragmented pools) |
+| **LP protection** | Value-anchoring design to mitigate impermanent loss; withdraw principal plus earned fees |
+| **Gas & UX** | Streamlined contract logic (50–90% gas savings); native ETH swap and invest without WETH wrapping |
+| **Economics** | Six-role fee sharing (LPs, gateways, referrers, users, token operators, protocol); Proof of Investment with TTS liquidity mining |
+| **Tokenomics** | TTS unlock tied to price milestones (double-to-unlock); community buyback and burn |
+| **Payments** | Built-in [X402](https://docs.ttswap.io/docs/knowledge/whitepaper) support for signer/payer separation (PayFi) |
 
-1. ***No Impermanent Loss for Liquidity Providers or goods Investors***
-Constant market value inherently prevents impermanent loss. When users withdraw their investment, they receive the original invested goods plus profits generated from providing liquidity.
+### Constant Value model (summary)
 
-1. ***Low Gas Fees with Simple Computational Logic***
-The logic behind the constant value trading model is simple, resulting in low computational load and gas consumption.
+Value is conserved across each swap. For input \(\Delta a\) of Token A:
 
-1. ***Fee Distribution Based on Roles for Everyone***
-Fees are distributed based on roles, allowing anyone to become a goods investor (liquidity provider), goods seller, gater, referrer, user, or platform role, sharing in the platform's growth earnings.
+\[
+\Delta V = \frac{2 V_A \Delta a}{2 Q_A + \Delta a}, \quad
+\Delta b = \frac{2 Q_B \Delta V}{2 V_B + \Delta V}
+\]
 
-1. ***Support Native ETH Exchange and Invest***
-anyone can you native ETH without wrap to swap, invest easily.
+See the [technical whitepaper](https://docs.ttswap.io/docs/knowledge/whitepaper) and [home page formulas](https://docs.ttswap.io/) for full derivations and appendices.
 
+## Repository layout
 
-7. ***Support customer restaking TTS token***
-when customer invest good, the protocol will auto restake tts token for customer.
+| Path | Description |
+|------|-------------|
+| `docs/` | English source docs (default locale) — whitepaper, token economics, community guides, articles |
+| `i18n/zh/` | Simplified Chinese translations (`docusaurus-plugin-content-docs`, theme strings) |
+| `i18n/en/` | English theme and plugin overrides |
+| `src/` | React components, styles, and site customization |
+| `static/` | Images, favicon, and other static assets |
+| `docusaurus.config.ts` | Site URL, i18n, navbar, and preset configuration |
 
-8. ***Community-Driven Developement and Innovation***
-ttswap emphasizes a community-driven approach to development and innovation. Since its code release, there has been active community engagement, with many issues, pull requests, and unique feature ideas contributed by users. The protocol is designed to encourage innovation, allowing the global community to shape the future of AMMs.
+### Documentation sections
 
-## 2. Contributing
+- **Knowledge** — [Whitepaper](docs/knowledge/whitepaper/whitepaper.md), [Token economics](docs/knowledge/tokeneconomic.md)
+- **Community / Join DAO** — Role-based commission, ambassador, token operator, gateway, builder, liquidity provider, investor guides
+- **Activity** — Public sale and related announcements
 
-If you’re interested in contributing please see our [contribution guidelines](./CONTRIBUTING.md)!
+## Local development
 
-## 3. Deploy local instruction only for study 
+**Requirements:** Node.js ≥ 18
 
-### Install
 ```sh
+# Install dependencies
 npm i
-```
 
-### Usage
-
-```sh
-# start dev server
+# Start dev server (English default)
 npm run start
-# build for production
+
+# Build for production (English)
 npm run build
 
+# Build both English and Chinese
+npm run build-all
+
+# Serve production build locally
+npm run serve
 ```
 
-## 4. Socials / Contract
-Twitter:[ttswap_exchange](https://x.com/ttswap_exchange)  
-Telegram:[@ttswap01](https://t.me/ttswap01)  
-Email:[ttswap.exchange@gmail.com](mailto:ttswap.exchange@gmail.com)  
-Discord:[ttswap](https://discord.gg/5PhXn9DR)  
-Website:[ttswap.io](http://ttswap.io)  
+Chinese locale in dev: `npm run start -- --locale zh`
+
+## Contributing
+
+Documentation improvements and translations are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
+## Links
+
+| | |
+|---|---|
+| **App** | [ttswap.io](https://ttswap.io) |
+| **Docs** | [docs.ttswap.io](https://docs.ttswap.io) |
+| **X (Twitter)** | [@ttswapfinance](https://x.com/ttswapfinance) |
+| **Telegram** | [@ttswapfinance](https://t.me/ttswapfinance) |
+| **Discord** | [TTSWAP](https://discord.gg/XygqnmQgX3) |
+| **Email** | [bussiness@ttswap.io](mailto:bussiness@ttswap.io) |
+| **GitHub** | [ttswap](https://github.com/ttswap) · [ttswap-doc](https://github.com/ttswap-doc) |
+
+---
+
+Copyright © TTSWAP. Documentation built with Docusaurus.
