@@ -55,16 +55,17 @@ jobs:
           ssh $SSH_OPTS "$REMOTE" bash -s <<'EOF'
           set -euo pipefail
           DOCS_BASE="/mydata/nginx/html"
+          BACKUP_BASE="/mydata/backups"
           TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-          cd "$DOCS_BASE"
+          mkdir -p "$BACKUP_BASE"
 
-          if [ -d docs ]; then
-            mv docs "docs_${TIMESTAMP}"
+          if [ -d "${DOCS_BASE}/docs" ]; then
+            mv "${DOCS_BASE}/docs" "${BACKUP_BASE}/docs_${TIMESTAMP}"
           fi
-          mv docs_new docs
+          mv "${DOCS_BASE}/docs_new" "${DOCS_BASE}/docs"
 
-          # 保留最近 10 个 docs_* 备份，删除更旧的
-          ls -1dt docs_[0-9]* 2>/dev/null | tail -n +11 | xargs -r rm -rf
+          # 保留最近 10 个备份，删除更旧的
+          ls -1dt "${BACKUP_BASE}"/docs_[0-9]* 2>/dev/null | tail -n +11 | xargs -r rm -rf
           EOF
 
       # - name: Restart Nginx (optional)
