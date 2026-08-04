@@ -14,7 +14,7 @@ import PdfViewer from '@site/src/components/PdfViewer';
 
 <PdfViewer
   src="/docs/supermarket_en.pdf"
-  srcZh="/docs/suppermarket.pdf"
-  title="TTSWAP 技术白皮书"
+  srcZh="/docs/supermarket.pdf"
+  title="TTSWAP Whitepaper (Decentralized Mall)"
   height={900}
 />
