@@ -34,7 +34,7 @@ TTSWAP (Token-Token Swap) is a decentralized market-making protocol on EVM-compa
 
 1. [Concepts](./Concept) — glossary aligned with the technical whitepaper  
 2. [Trade](../Trade/Overview) — `buyGood` / `payGood` / X402  
-3. [Invest & Divest](../Invest&Devest/Overview) — single-sided LP, proofs, safe line  
+3. [Invest & Divest](../Invest&divest/Overview) — single-sided LP, proofs, safe line  
 4. [Tokenomics](../Tokenomics/Overview) — TTS supply, 4C, doubling unlock  
 5. [Whitepaper](./WhitePaper) / [Supermarket narrative](./SuperMarket) — full protocol deep-dives  
 
@@ -44,9 +44,9 @@ TTSWAP (Token-Token Swap) is a decentralized market-making protocol on EVM-compa
 |:--|:--|:--|
 | Exact-in swap | `buyGood` | [Buy Good](../Trade/BuyGood) |
 | Exact-out / same-token pay | `payGood` | [Pay Good](../Trade/PayGood) |
-| List a new token | `initGood` | [Invest](../Invest&Devest/Invest) |
-| Append LP | `investGood` | [Invest](../Invest&Devest/Invest) |
-| Exit LP + harvest | `disinvestProof` | [Divest](../Invest&Devest/Devest) |
+| List a new token | `initGood` | [Invest](../Invest&divest/Invest) |
+| Append LP | `investGood` | [Invest](../Invest&divest/Invest) |
+| Exit LP + harvest | `disinvestProof` | [Divest](../Invest&divest/divest) |
 | Unlock 4C TTS | `shareMint` | [Price-doubling Unlock](../Tokenomics/Price-doubling%20Unlock) |
 
 Website: [ttswap.io](https://ttswap.io) · Contracts: Market / Token **v2.0.0** baseline (Token symbol TTS, precision 12).

@@ -4,7 +4,7 @@ title: Concepts
 description: TTSWAP glossary — goods state, T_GoodKey, proofs, value vs normal goods, six-way fees, TTS, and X402 terms.
 keywords: [TTSWAP, concepts, glossary, T_GoodKey, Proof, safeLine, CV-AMM, X402]
 displayed_sidebar: guideSidebar
-sidebar_position: 2
+sidebar_position: 3
 createTime: 2025/05/20 23:47:01
 ---
 
@@ -102,4 +102,4 @@ Collect with `collectCommission` (≤ 100 goods / call; 1-unit sentinel reserved
 
 ## Next
 
-- [Overview](./Overview) · [Trade](../Trade/Overview) · [Invest & Divest](../Invest&Devest/Overview) · [Tokenomics](../Tokenomics/Overview)
+- [Overview](./Overview) · [Trade](../Trade/Overview) · [Invest & Divest](../Invest&divest/Overview) · [Tokenomics](../Tokenomics/Overview)

@@ -85,4 +85,4 @@ investGood(goodKey, packed(0, quantity), ...)
 | `investGood` 补货 | **仅当货架 `isPromised`** |
 | `disinvestProof` 撤货 | 有算力则按撤出份额 `unstake` |
 
-算力按**贡献价值**（`investvalue`）记账，不按枚数；每日增发按全网活跃 LP 算力占比分配，收益一般在撤货时兑现。更多见 [撤资](./Devest) 与 [代币经济](../Tokenomics/Overview)。
+算力按**贡献价值**（`investvalue`）记账，不按枚数；每日增发按全网活跃 LP 算力占比分配，收益一般在撤货时兑现。更多见 [撤资](./divest) 与 [代币经济](../Tokenomics/Overview)。

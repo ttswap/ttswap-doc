@@ -41,7 +41,7 @@ TTSWAP（Token-Token Swap）是运行在 EVM 兼容链上的去中心化做市�
 |:--|:--|:--|
 | **快速开始** | [概览](./Get%20Started/Overview) · [快速上手](./Get%20Started/Quick%20Start) · [专用名词](./Get%20Started/Concept) | 心智模型、上手路径、术语表 |
 | **交易** | [交易概览](./Trade/Overview) | `buyGood` / `payGood` / X402 / multicall |
-| **投资与撤资** | [投资与撤资概览](./Invest&Devest/Overview) | 单边 LP、投资证明、安全线、退出 |
+| **投资与撤资** | [投资与撤资概览](./Invest&divest/Overview) | 单边 LP、投资证明、安全线、退出 |
 | **代币经济** | [代币经济概览](./Tokenomics/Overview) | TTS 供应、4C 分配、价格翻倍解锁 |
 | **社区** | [手续费分润](./Community/Overview) | LP、Gate、Operator、推荐人、建设者等角色 |
 | **深度阅读** | [白皮书](./Get%20Started/WhitePaper) · [商场叙事](./Get%20Started/SuperMarket) | 完整数学与产品故事 |
@@ -52,9 +52,9 @@ TTSWAP（Token-Token Swap）是运行在 EVM 兼容链上的去中心化做市�
 |:--|:--|:--|
 | Exact-in 兑换 | `buyGood` | [买入商品](./Trade/BuyGood) |
 | Exact-out / 同币支付 | `payGood` | [支付商品](./Trade/PayGood) |
-| 上架新币 | `initGood` | [投资](./Invest&Devest/Invest) |
-| 追加流动性 | `investGood` | [投资](./Invest&Devest/Invest) |
-| 退出 LP + 收息 | `disinvestProof` | [撤资](./Invest&Devest/Devest) |
+| 上架新币 | `initGood` | [投资](./Invest&divest/Invest) |
+| 追加流动性 | `investGood` | [投资](./Invest&divest/Invest) |
+| 退出 LP + 收息 | `disinvestProof` | [撤资](./Invest&divest/divest) |
 | 解锁 4C TTS | `shareMint` | [价格翻倍解锁](./Tokenomics/Price-doubling%20Unlock) |
 
 ## 架构快照

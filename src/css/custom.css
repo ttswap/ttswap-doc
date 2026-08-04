@@ -1,6 +1,46 @@
 @import './docs-fonts.css';
 @import './docs-content.css';
 
+/*
+ * Docs loaded inside an iframe (PdfViewer / embed):
+ * hide site chrome so only article content shows.
+ */
+html.docs-embed .navbar,
+html.docs-embed .navbar-sidebar,
+html.docs-embed .theme-doc-sidebar-container,
+html.docs-embed .theme-doc-toc-desktop,
+html.docs-embed .theme-doc-toc-mobile,
+html.docs-embed .tocCollapsible,
+html.docs-embed .theme-doc-toc-mobile .tocCollapsibleButton,
+html.docs-embed .breadcrumbsRow,
+html.docs-embed .theme-doc-breadcrumbs,
+html.docs-embed .share-button,
+html.docs-embed .share-button--inline,
+html.docs-embed .pagination-nav,
+html.docs-embed .theme-doc-footer,
+html.docs-embed .footer,
+html.docs-embed .plugin-pages,
+html.docs-embed [class*='DocBreadcrumbs'],
+html.docs-embed [class*='docItemToc'] {
+  display: none !important;
+}
+
+html.docs-embed .main-wrapper,
+html.docs-embed .docs-wrapper,
+html.docs-embed .docMainContainer,
+html.docs-embed .docItemContainer,
+html.docs-embed article {
+  margin: 0 !important;
+  padding-top: 0 !important;
+  max-width: 100% !important;
+}
+
+html.docs-embed .container {
+  max-width: 100% !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
 :root {
   --font-size: 16px;
   --background: #fafafa;

@@ -39,7 +39,7 @@ Each LP position is stored in `proofs[proofid]`:
 
 `disinvestGood` returns  
 `actualDisinvestQuantity = proofInvest × shares / proofShares`  
-independent of the live pool price. Fees and welfare show up as net-value profit, then six-way `allocateFee`. See [Divest](./Devest) and [Triple Defense](./LP).
+independent of the live pool price. Fees and welfare show up as net-value profit, then six-way `allocateFee`. See [Divest](./divest) and [Triple Defense](./LP).
 
 ## Three stacked LP yields
 
@@ -52,5 +52,5 @@ independent of the live pool price. Fees and welfare show up as net-value profit
 ## In this section
 
 - [Invest](./Invest) — `initGood` / `investGood`, enpower, promised mining  
-- [Divest](./Devest) — historical return, chips, TTS harvest  
+- [Divest](./divest) — historical return, chips, TTS harvest  
 - [Triple Defense](./LP) — `safeLine`, zero IL, attack surface

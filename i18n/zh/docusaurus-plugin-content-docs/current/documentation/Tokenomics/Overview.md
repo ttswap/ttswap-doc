@@ -42,7 +42,7 @@ sidebar_class_name: hide-from-sidebar
 - 约 50 年线性释放完毕；
 - 算力在补货时记账，收益通常在撤货 `unstake` 时铸造到账——无需单独 `claim`。
 
-开货架（`initGood`）本身**不记** TTS 算力。详见 [投资](../Invest&Devest/Invest) 与 [撤资](../Invest&Devest/Devest)。
+开货架（`initGood`）本身**不记** TTS 算力。详见 [投资](../Invest&divest/Invest) 与 [撤资](../Invest&divest/divest)。
 
 ## 4C 初始分配
 

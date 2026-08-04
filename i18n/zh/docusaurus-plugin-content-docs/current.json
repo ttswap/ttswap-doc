@@ -11,9 +11,9 @@
     "message": "交易",
     "description": "The label for category Trade in sidebar guideSidebar"
   },
-  "sidebar.guideSidebar.category.Invest & Devest": {
+  "sidebar.guideSidebar.category.Invest & divest": {
     "message": "投资与撤资",
-    "description": "The label for category Invest & Devest in sidebar guideSidebar"
+    "description": "The label for category Invest & divest in sidebar guideSidebar"
   },
   "sidebar.guideSidebar.category.Tokenomics": {
     "message": "代币经济",

@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: WhitePaper
+title: WhitePaper(Technical Edition)
 sidebar_position: 3
 description: Deep dive into the TTSwap technical whitepaper. Understand the innovative Constant Value AMM, concentrated liquidity, and zero impermanent loss mechanisms.
 keywords: [TTSwap Whitepaper, Constant Value AMM, Concentrated Liquidity, Zero Impermanent Loss, DEX Architecture, Crypto Trading Protocol]

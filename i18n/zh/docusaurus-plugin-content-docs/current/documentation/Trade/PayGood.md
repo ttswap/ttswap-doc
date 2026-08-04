@@ -109,4 +109,4 @@ createTime: 2025/05/20 23:47:01
 
 - [交易概览](./Overview)
 - [购买与出售 buyGood](./BuyGood)
-- [投资与撤资](../Invest&Devest/Overview)
+- [投资与撤资](../Invest&divest/Overview)

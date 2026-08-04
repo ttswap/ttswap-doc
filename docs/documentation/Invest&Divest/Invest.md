@@ -53,7 +53,7 @@ You only need the listed token itself (no paired USDT inventory required).
 | `investGood` | **Only if** `goodConfig.isPromised()` |
 | `disinvestProof` | `unstake` if that proof accrued hashrate |
 
-Hashrate tracks **invested value**, not raw token count. Daily emission and harvest timing: [Tokenomics](../Tokenomics/Overview) and [Divest](./Devest).
+Hashrate tracks **invested value**, not raw token count. Daily emission and harvest timing: [Tokenomics](../Tokenomics/Overview) and [Divest](./divest).
 
 ## Meta-tx note
 
