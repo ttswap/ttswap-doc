@@ -41,7 +41,7 @@ This hub is the entry to the official docs. For the full technical deep-dive, op
 |:--|:--|:--|
 | **Get Started** | [Overview](./Get%20Started/Overview) · [Quick Start](./Get%20Started/Quick%20Start) · [Concepts](./Get%20Started/Concept) | Mental model, first steps, glossary |
 | **Trade** | [Trading Overview](./Trade/Overview) | `buyGood` / `payGood` / X402 / multicall |
-| **Invest & Divest** | [Invest & Divest Overview](./Invest&Devest/Overview) | Single-sided LP, proofs, safe line, exit |
+| **Invest & Divest** | [Invest & Divest Overview](./Invest&divest/Overview) | Single-sided LP, proofs, safe line, exit |
 | **Tokenomics** | [Tokenomics Overview](./Tokenomics/Overview) | TTS supply, 4C allocation, doubling unlock |
 | **Community** | [Fee sharing](./Community/Overview) | Roles: LP, Gate, Operator, Referral, Builder… |
 | **Deep dives** | [Whitepaper](./Get%20Started/WhitePaper) · [Supermarket narrative](./Get%20Started/SuperMarket) | Full math & product story |
@@ -52,9 +52,9 @@ This hub is the entry to the official docs. For the full technical deep-dive, op
 |:--|:--|:--|
 | Exact-in swap | `buyGood` | [Buy Good](./Trade/BuyGood) |
 | Exact-out / same-token pay | `payGood` | [Pay Good](./Trade/PayGood) |
-| List a new token | `initGood` | [Invest](./Invest&Devest/Invest) |
-| Append LP | `investGood` | [Invest](./Invest&Devest/Invest) |
-| Exit LP + harvest | `disinvestProof` | [Divest](./Invest&Devest/Devest) |
+| List a new token | `initGood` | [Invest](./Invest&divest/Invest) |
+| Append LP | `investGood` | [Invest](./Invest&divest/Invest) |
+| Exit LP + harvest | `disinvestProof` | [Divest](./Invest&divest/divest) |
 | Unlock 4C TTS | `shareMint` | [Price-doubling Unlock](./Tokenomics/Price-doubling%20Unlock) |
 
 ## Architecture snapshot

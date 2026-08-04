@@ -84,4 +84,4 @@ Merchants may locally verify small EIP-712 payments and settle later via `multic
 
 ## Related
 
-- [Trading Overview](./Overview) · [Buy Good](./BuyGood) · [Invest & Divest](../Invest&Devest/Overview)
+- [Trading Overview](./Overview) · [Buy Good](./BuyGood) · [Invest & Divest](../Invest&divest/Overview)

@@ -32,7 +32,7 @@ daily_mint ≈ (2e20 - totalSupply) / 18250 × chainRatio / 10000
 (floor at 1 TTS = 1e12 wei if computed amount is smaller)
 ```
 
-Roughly **50-year linear** release to active LP hashrate. Harvest typically lands on `disinvestProof` → `unstake`. See [Invest](../Invest&Devest/Invest) / [Divest](../Invest&Devest/Devest).
+Roughly **50-year linear** release to active LP hashrate. Harvest typically lands on `disinvestProof` → `unstake`. See [Invest](../Invest&divest/Invest) / [Divest](../Invest&divest/divest).
 
 ## 4C initial allocation
 

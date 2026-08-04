@@ -56,7 +56,7 @@ TTSWAP 是一间开在链上的**去中心化商场**：每种商品一条货架
 4. 若货架为**承诺型（`isPromised`）**，同时开始记 TTS 挖矿算力；
 5. 之后可随时按规则**撤货**取回本金与利润。
 
-详解：[投资](../Invest&Devest/Invest) · [撤资](../Invest&Devest/Devest) · [三重防护](../Invest&Devest/LP)
+详解：[投资](../Invest&divest/Invest) · [撤资](../Invest&divest/divest) · [三重防护](../Invest&divest/LP)
 
 供货商通常同时拿到：本金返还 + 手续费分佣 +（条件满足时）TTS。
 
@@ -85,8 +85,8 @@ TTSWAP 是一间开在链上的**去中心化商场**：每种商品一条货架
 | 普通兑换（预算固定） | `buyGood` | [BuyGood](../Trade/BuyGood) |
 | 精确买 N 件 / 精确收款 | `payGood` | [PayGood](../Trade/PayGood) |
 | 无 Gas 用户下单 | X402 签名 | [PayGood](../Trade/PayGood) |
-| 给货架补货 | `investGood` | [Invest](../Invest&Devest/Invest) |
-| 取回本金与利润 | `disinvestProof` | [Devest](../Invest&Devest/Devest) |
+| 给货架补货 | `investGood` | [Invest](../Invest&divest/Invest) |
+| 取回本金与利润 | `disinvestProof` | [divest](../Invest&divest/divest) |
 | 领取累积佣金 | `collectCommission` | 社区 / 分佣说明 |
 | 了解 TTS、4C、解锁 | — | [代币经济](../Tokenomics/Overview) |
 
@@ -102,7 +102,7 @@ TTSWAP 是一间开在链上的**去中心化商场**：每种商品一条货架
 
 1. [专用名词](./Concept)  
 2. 本页走通与你相关的一条路径  
-3. [交易](../Trade/Overview) → [投资与撤资](../Invest&Devest/Overview) → [代币经济](../Tokenomics/Overview)  
+3. [交易](../Trade/Overview) → [投资与撤资](../Invest&divest/Overview) → [代币经济](../Tokenomics/Overview)  
 4. [商场版白皮书](./SuperMarket) / [技术白皮书](./WhitePaper) 深入机制  
 
 官网与社区：[ttswap.io](https://ttswap.io) · [@ttswapfinance](https://x.com/ttswapfinance)

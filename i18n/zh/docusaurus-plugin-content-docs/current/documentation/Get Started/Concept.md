@@ -99,5 +99,5 @@ TTSWAP 用「去中心化商场」讲协议。读文档前先记住下列对照�
 ## 下一步
 
 - [从零开始](./Quick%20Start) — 按角色走通第一笔操作  
-- [交易概览](../Trade/Overview) · [投资与撤资](../Invest&Devest/Overview) · [代币经济](../Tokenomics/Overview)  
+- [交易概览](../Trade/Overview) · [投资与撤资](../Invest&divest/Overview) · [代币经济](../Tokenomics/Overview)  
 - [商场版白皮书](./SuperMarket)

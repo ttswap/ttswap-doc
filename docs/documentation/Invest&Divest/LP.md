@@ -67,4 +67,4 @@ Large swaps are applied in ~**1% of pool depth** steps with the same algebraic k
 
 ## Related
 
-- [Invest](./Invest) · [Divest](./Devest) · [Trade Overview](../Trade/Overview)
+- [Invest](./Invest) · [Divest](./divest) · [Trade Overview](../Trade/Overview)

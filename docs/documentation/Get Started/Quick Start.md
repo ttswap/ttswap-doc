@@ -4,7 +4,7 @@ title: Quick Start
 description: Get started with TTSWAP — connect, swap, provide single-sided liquidity, list a token, or accept X402 payments.
 keywords: [TTSWAP, quick start, buyGood, payGood, investGood, X402, initGood]
 displayed_sidebar: guideSidebar
-sidebar_position: 3
+sidebar_position: 2
 createTime: 2025/05/20 23:47:01
 ---
 
@@ -58,7 +58,7 @@ Details: [Trade Overview](../Trade/Overview) · [Buy Good](../Trade/BuyGood) · 
 4. If the good is **`isPromised`**, TTS mining hashrate starts accruing.
 5. Exit later with `disinvestProof` to reclaim principal + fee share (+ TTS if staked).
 
-Details: [Invest](../Invest&Devest/Invest) · [Divest](../Invest&Devest/Devest) · [Triple Defense](../Invest&Devest/LP)
+Details: [Invest](../Invest&divest/Invest) · [Divest](../Invest&divest/divest) · [Triple Defense](../Invest&divest/LP)
 
 LPs typically stack three yields: historical principal + fee commission + conditional TTS.
 
@@ -87,8 +87,8 @@ Details: [Pay Good & X402](../Trade/PayGood)
 | Swap with a fixed budget | `buyGood` | [Buy Good](../Trade/BuyGood) |
 | Get / collect an exact amount | `payGood` | [Pay Good](../Trade/PayGood) |
 | Let a gasless user trade | X402 signature | [Pay Good](../Trade/PayGood) |
-| Add single-sided LP | `investGood` | [Invest](../Invest&Devest/Invest) |
-| Exit LP + harvest | `disinvestProof` | [Divest](../Invest&Devest/Devest) |
+| Add single-sided LP | `investGood` | [Invest](../Invest&divest/Invest) |
+| Exit LP + harvest | `disinvestProof` | [Divest](../Invest&divest/divest) |
 | Claim accrued commissions | `collectCommission` | Fee section / Community docs |
 | Understand TTS / 4C / unlocks | — | [Tokenomics](../Tokenomics/Overview) |
 
@@ -105,7 +105,7 @@ Details: [Pay Good & X402](../Trade/PayGood)
 
 1. [Concepts](./Concept)  
 2. Walk one path on this page  
-3. [Trade](../Trade/Overview) → [Invest & Divest](../Invest&Devest/Overview) → [Tokenomics](../Tokenomics/Overview)  
+3. [Trade](../Trade/Overview) → [Invest & Divest](../Invest&divest/Overview) → [Tokenomics](../Tokenomics/Overview)  
 4. [Supermarket](./SuperMarket) / [Technical whitepaper](./WhitePaper)  
 
 Site & community: [ttswap.io](https://ttswap.io) · [@ttswapfinance](https://x.com/ttswapfinance)

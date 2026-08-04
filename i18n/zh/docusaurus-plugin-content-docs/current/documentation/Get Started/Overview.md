@@ -34,7 +34,7 @@ TTSWAP（Token-Token Swap）是运行在 EVM 兼容链上的去中心化做市�
 
 1. [专用名词](./Concept) — 与技术白皮书对齐的术语表  
 2. [交易](../Trade/Overview) — `buyGood` / `payGood` / X402  
-3. [投资与撤资](../Invest&Devest/Overview) — 单边 LP、投资证明、安全线  
+3. [投资与撤资](../Invest&divest/Overview) — 单边 LP、投资证明、安全线  
 4. [代币经济](../Tokenomics/Overview) — TTS 供应、4C、价格翻倍解锁  
 5. [白皮书](./WhitePaper) / [商场叙事](./SuperMarket) — 完整协议深读  
 
@@ -44,9 +44,9 @@ TTSWAP（Token-Token Swap）是运行在 EVM 兼容链上的去中心化做市�
 |:--|:--|:--|
 | Exact-in 兑换 | `buyGood` | [买入商品](../Trade/BuyGood) |
 | Exact-out / 同币支付 | `payGood` | [支付商品](../Trade/PayGood) |
-| 上架新币 | `initGood` | [投资](../Invest&Devest/Invest) |
-| 追加流动性 | `investGood` | [投资](../Invest&Devest/Invest) |
-| 退出 LP + 收息 | `disinvestProof` | [撤资](../Invest&Devest/Devest) |
+| 上架新币 | `initGood` | [投资](../Invest&divest/Invest) |
+| 追加流动性 | `investGood` | [投资](../Invest&divest/Invest) |
+| 退出 LP + 收息 | `disinvestProof` | [撤资](../Invest&divest/divest) |
 | 解锁 4C TTS | `shareMint` | [价格翻倍解锁](../Tokenomics/Price-doubling%20Unlock) |
 
 官网：[ttswap.io](https://ttswap.io) · 合约基准：Market / Token **v2.0.0**（代币符号 TTS，精度 12）。
