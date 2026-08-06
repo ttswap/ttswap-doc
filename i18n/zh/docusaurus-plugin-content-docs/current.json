@@ -11,8 +11,12 @@
     "message": "交易",
     "description": "The label for category Trade in sidebar guideSidebar"
   },
-  "sidebar.guideSidebar.category.Invest & divest": {
+  "sidebar.guideSidebar.category.Invest & Divest": {
     "message": "投资与撤资",
+    "description": "The label for category Invest & divest in sidebar guideSidebar"
+  },
+  "sidebar.guideSidebar.category.CV-AMM": {
+    "message": "恒定价值交易模型",
     "description": "The label for category Invest & divest in sidebar guideSidebar"
   },
   "sidebar.guideSidebar.category.Tokenomics": {
