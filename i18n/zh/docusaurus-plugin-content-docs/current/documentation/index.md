@@ -1,8 +1,9 @@
 ---
 lang: zh-CN
 title: 文档中心
-description: TTSWAP 官方文档入口 — 恒定价值 AMM、一币一池、零无常损失、六方分佣、X402 与 TTS 代币经济。
-keywords: [TTSWAP, 文档, 恒定价值 AMM, Singleton, 零无常损失, X402, 代币经济]
+description: TTSWAP 官方文档入口 — 恒定价值 AMM（CV-AMM）、一币一池 DEX、零无常损失、六方分佣、X402 PayFi 与 TTS 代币经济。
+keywords: [TTSWAP, 文档, 恒定价值 AMM, CV-AMM, Singleton, 零无常损失, X402, 代币经济, DEX]
+image: /img/og-social-card.png
 slug: /documentation
 displayed_sidebar: guideSidebar
 sidebar_position: 1
@@ -40,6 +41,7 @@ TTSWAP（Token-Token Swap）是运行在 EVM 兼容链上的去中心化做市�
 | 章节 | 从这里开始 | 你会得到 |
 |:--|:--|:--|
 | **快速开始** | [概览](./Get%20Started/Overview) · [快速上手](./Get%20Started/Quick%20Start) · [专用名词](./Get%20Started/Concept) | 心智模型、上手路径、术语表 |
+| **恒定价值 AMM** | [CV-AMM 概览](/documentation/CV-AMM/Overview) · [核心公式](/documentation/CV-AMM/Core%20Formulas) | 交易数学、等价性证明、模型性质 |
 | **交易** | [交易概览](./Trade/Overview) | `buyGood` / `payGood` / X402 / multicall |
 | **投资与撤资** | [投资与撤资概览](./Invest&divest/Overview) | 单边 LP、投资证明、安全线、退出 |
 | **代币经济** | [代币经济概览](./Tokenomics/Overview) | TTS 供应、4C 分配、价格翻倍解锁 |

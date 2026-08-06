@@ -1,8 +1,9 @@
 ---
 lang: en-US
 title: Documentation
-description: TTSWAP documentation hub — Constant Value AMM, one-token-one-pool, zero-IL LP returns, six-way fees, X402, and TTS tokenomics.
-keywords: [TTSWAP, documentation, Constant Value AMM, Singleton, zero IL, X402, tokenomics]
+description: TTSWAP documentation hub — Constant Value AMM (CV-AMM), one-token-one-pool DEX, zero-IL LP returns, six-way fees, X402 PayFi, and TTS tokenomics.
+keywords: [TTSWAP, documentation, Constant Value AMM, CV-AMM, Singleton, zero IL, X402, tokenomics, DEX]
+image: /img/og-social-card.png
 slug: /documentation
 displayed_sidebar: guideSidebar
 sidebar_position: 1
@@ -40,6 +41,7 @@ This hub is the entry to the official docs. For the full technical deep-dive, op
 | Section | Start here | What you get |
 |:--|:--|:--|
 | **Get Started** | [Overview](./Get%20Started/Overview) · [Quick Start](./Get%20Started/Quick%20Start) · [Concepts](./Get%20Started/Concept) | Mental model, first steps, glossary |
+| **CV-AMM** | [Constant Value AMM Overview](/documentation/CV-AMM/Overview) · [Core Formulas](/documentation/CV-AMM/Core%20Formulas) | Trading math, equivalence proofs, model properties |
 | **Trade** | [Trading Overview](./Trade/Overview) | `buyGood` / `payGood` / X402 / multicall |
 | **Invest & Divest** | [Invest & Divest Overview](./Invest&divest/Overview) | Single-sided LP, proofs, safe line, exit |
 | **Tokenomics** | [Tokenomics Overview](./Tokenomics/Overview) | TTS supply, 4C allocation, doubling unlock |

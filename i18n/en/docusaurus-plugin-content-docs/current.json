@@ -7,13 +7,17 @@
     "message": "Get Started",
     "description": "The label for category Get Started in sidebar guideSidebar"
   },
+  "sidebar.guideSidebar.category.CV-AMM": {
+    "message": "CV-AMM",
+    "description": "The label for category CV-AMM in sidebar guideSidebar"
+  },
   "sidebar.guideSidebar.category.Trade": {
     "message": "Trade",
     "description": "The label for category Trade in sidebar guideSidebar"
   },
-  "sidebar.guideSidebar.category.Invest & divest": {
+  "sidebar.guideSidebar.category.Invest & Divest": {
     "message": "Invest & Divest",
-    "description": "The label for category Invest & divest in sidebar guideSidebar"
+    "description": "The label for category Invest & Divest in sidebar guideSidebar"
   },
   "sidebar.guideSidebar.category.Tokenomics": {
     "message": "Tokenomics",

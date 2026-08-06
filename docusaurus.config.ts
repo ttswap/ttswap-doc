@@ -7,9 +7,9 @@ import rehypeKatex from 'rehype-katex';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'TTSwap Docs',
+  title: 'TTSWAP Docs',
   tagline:
-    'Constant Value AMM documentation — one-token-one-pool, zero-IL LP, six-way fees, X402 payments',
+    'Constant Value AMM (CV-AMM) docs — one-token-one-pool DEX, zero-IL LP, six-way fees, X402 PayFi',
   favicon: 'img/favicon.ico',
   titleDelimiter: '·',
 
@@ -46,6 +46,15 @@ const config: Config = {
   // Per-page canonical URLs are emitted by Docusaurus; do not set a site-wide canonical here.
   headTags: [
     {
+      tagName: 'link',
+      attributes: {
+        rel: 'alternate',
+        type: 'text/plain',
+        href: 'https://docs.ttswap.io/llms.txt',
+        title: 'llms.txt',
+      },
+    },
+    {
       tagName: 'script',
       attributes: {
         type: 'application/ld+json',
@@ -56,28 +65,76 @@ const config: Config = {
           {
             '@type': 'Organization',
             '@id': 'https://ttswap.io/#organization',
-            name: 'TTSwap',
+            name: 'TTSWAP',
+            alternateName: ['TTSwap', 'Token-Token Swap'],
             url: 'https://ttswap.io',
             logo: {
               '@type': 'ImageObject',
               url: 'https://docs.ttswap.io/img/logo.png',
+              width: 400,
+              height: 400,
             },
             sameAs: [
               'https://x.com/ttswapfinance',
               'https://t.me/ttswapfinance',
               'https://discord.gg/XygqnmQgX3',
-              'https://github.com/ttswap-doc',
+              'https://github.com/ttswap',
             ],
           },
           {
             '@type': 'WebSite',
             '@id': 'https://docs.ttswap.io/#website',
-            name: 'TTSwap Docs',
+            name: 'TTSWAP Docs',
             url: 'https://docs.ttswap.io',
             description:
-              'Official TTSWAP documentation: Constant Value AMM, one-token-one-pool, zero-IL LP, six-way fees, X402, and TTS tokenomics.',
+              'Official TTSWAP documentation: Constant Value AMM (CV-AMM), one-token-one-pool, zero-IL LP, six-way fees, X402, and TTS tokenomics.',
             publisher: { '@id': 'https://ttswap.io/#organization' },
             inLanguage: ['en', 'zh-Hans'],
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: {
+                '@type': 'EntryPoint',
+                urlTemplate:
+                  'https://docs.ttswap.io/search?q={search_term_string}',
+              },
+              'query-input': 'required name=search_term_string',
+            },
+          },
+          {
+            '@type': 'TechArticle',
+            '@id': 'https://docs.ttswap.io/documentation/CV-AMM/Overview#article',
+            headline: 'Constant Value AMM (CV-AMM)',
+            description:
+              'TTSWAP Constant Value AMM — O(1) two-step value-hub trading that unifies CPMM, Balancer weighted pools, and StableSwap-like behavior.',
+            url: 'https://docs.ttswap.io/documentation/CV-AMM/Overview',
+            inLanguage: ['en', 'zh-Hans'],
+            author: { '@id': 'https://ttswap.io/#organization' },
+            publisher: { '@id': 'https://ttswap.io/#organization' },
+            image: 'https://docs.ttswap.io/img/og-social-card.png',
+            mainEntityOfPage:
+              'https://docs.ttswap.io/documentation/CV-AMM/Overview',
+            about: [
+              'Constant Value AMM',
+              'Automated Market Maker',
+              'Decentralized Exchange',
+              'DeFi',
+            ],
+          },
+          {
+            '@type': 'SoftwareApplication',
+            '@id': 'https://ttswap.io/#app',
+            name: 'TTSWAP',
+            applicationCategory: 'FinanceApplication',
+            operatingSystem: 'Web',
+            url: 'https://ttswap.io',
+            description:
+              'Decentralized exchange powered by Constant Value AMM — any-to-any swaps, single-sided LP, zero impermanent loss.',
+            offers: {
+              '@type': 'Offer',
+              price: '0',
+              priceCurrency: 'USD',
+            },
+            publisher: { '@id': 'https://ttswap.io/#organization' },
           },
         ],
       }),
@@ -192,6 +249,9 @@ const config: Config = {
                 ) {
                   return { ...item, priority: 1.0, changefreq: 'daily' as const };
                 }
+                if (path.includes('/CV-AMM/')) {
+                  return { ...item, priority: 0.9, changefreq: 'weekly' as const };
+                }
                 if (
                   path.includes('/Get%20Started/') ||
                   path.includes('/Get Started/') ||
@@ -220,8 +280,8 @@ const config: Config = {
       minHeadingLevel: 2,
       maxHeadingLevel: 4,
     },
-    // Open Graph / Twitter social card (absolute URL resolved from site url)
-    image: 'img/logo.png',
+    // Open Graph / Twitter social card (1200×630; absolute URL resolved from site url)
+    image: 'img/og-social-card.png',
     colorMode: {
       defaultMode: 'light',
       disableSwitch: true,
@@ -231,34 +291,43 @@ const config: Config = {
       {
         name: 'description',
         content:
-          'Official TTSWAP docs: Constant Value AMM (CV-AMM), one-token-one-pool, zero-impermanent-loss LP returns, six-way fee split, X402 payments, and TTS tokenomics.',
+          'Official TTSWAP docs: Constant Value AMM (CV-AMM), one-token-one-pool DEX, zero-impermanent-loss LP, six-way fee split, X402 PayFi, and TTS tokenomics.',
       },
       {
         name: 'keywords',
         content:
-          'TTSwap, TTSWAP, DEX, DeFi, Constant Value AMM, CV-AMM, Singleton, one-token-one-pool, zero impermanent loss, X402, PayFi, TTS, liquidity provider, buyGood, payGood',
+          'TTSWAP, TTSwap, DEX, DeFi, Constant Value AMM, CV-AMM, AMM, Singleton, one-token-one-pool, zero impermanent loss, X402, PayFi, TTS, liquidity provider, buyGood, payGood, Uniswap alternative',
       },
-      { name: 'author', content: 'TTSwap' },
-      { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
-      { name: 'googlebot', content: 'index, follow' },
+      { name: 'author', content: 'TTSWAP' },
+      {
+        name: 'robots',
+        content:
+          'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+      },
+      { name: 'googlebot', content: 'index, follow, max-image-preview:large' },
       { name: 'bingbot', content: 'index, follow' },
+      { name: 'theme-color', content: '#80d088' },
       // Open Graph
       { property: 'og:type', content: 'website' },
-      { property: 'og:site_name', content: 'TTSwap Docs' },
+      { property: 'og:site_name', content: 'TTSWAP Docs' },
       { property: 'og:locale', content: 'en' },
       { property: 'og:locale:alternate', content: 'zh_CN' },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
+      { property: 'og:image:alt', content: 'TTSWAP Docs — Constant Value AMM documentation' },
       // Twitter / X
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@ttswapfinance' },
       { name: 'twitter:creator', content: '@ttswapfinance' },
+      { name: 'twitter:image:alt', content: 'TTSWAP Docs — Constant Value AMM documentation' },
       // Optional: paste verification codes from Search Console / Bing Webmaster after claiming the property
       // { name: 'google-site-verification', content: 'YOUR_GOOGLE_VERIFICATION_CODE' },
       // { name: 'msvalidate.01', content: 'YOUR_BING_VERIFICATION_CODE' },
     ],
     navbar: {
-      title: 'TTSwap',
+      title: 'TTSWAP',
       logo: {
-        alt: 'TTSwap Logo',
+        alt: 'TTSWAP logo — jade and gold globe',
         src: 'img/logo.png',
         href: '/documentation/',
       },

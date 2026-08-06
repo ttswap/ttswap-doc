@@ -1,10 +1,10 @@
 {
   "title": {
-    "message": "TTSwap",
+    "message": "TTSWAP",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "TTSwap logo",
+    "message": "TTSWAP 标志 — 翡翠与金色地球",
     "description": "The alt text of navbar logo"
   },
   "item.label.Home": {
