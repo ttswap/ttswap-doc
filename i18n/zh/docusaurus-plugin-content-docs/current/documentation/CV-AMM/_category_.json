@@ -1,0 +1,10 @@
+{
+  "label": "恒定价值 AMM",
+  "key": "cv-amm",
+  "position": 2,
+  "collapsed": false,
+  "link": {
+    "type": "doc",
+    "id": "documentation/CV-AMM/Overview"
+  }
+}
