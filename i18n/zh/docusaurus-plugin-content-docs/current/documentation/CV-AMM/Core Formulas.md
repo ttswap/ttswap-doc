@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: CV-AMM 核心公式
+title: 核心公式
 description: CV-AMM 两步内核 —— 输入侧价值映射、输出侧数量映射、1% 分片迭代、safeLine 边界，以及 L_Good 中的精确代码映射。
 keywords: [TTSWAP, CV-AMM, buyGoodInput, buyGoodOutput, safeLine, 分片迭代, 调和平均, AMM 公式]
 image: /img/og-social-card.png

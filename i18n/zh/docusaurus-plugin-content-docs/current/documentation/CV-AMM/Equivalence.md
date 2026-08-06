@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: CV-AMM 与 Uniswap / Balancer / Curve 的等价性
+title: 与主流 AMM 的等价性
 description: 一对 CV-AMM 公式如何严格复现 Uniswap 的 CPMM、对齐 Balancer 加权池现价，并逼近 Curve StableSwap 的平坦区——全程无指数、无迭代。
 keywords: [TTSWAP, CV-AMM, CPMM, Uniswap, Balancer, Curve, StableSwap, 等价性证明, AMM 对比]
 image: /img/og-social-card.png

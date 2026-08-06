@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: CV-AMM 模型性质 — 价值守恒与闭环
+title: 模型性质
 description: CV-AMM 的形式化性质 —— 价值守恒、往返与三角闭环、拆单误差上界，以及价值中枢为何不存在无风险套利环。
 keywords: [TTSWAP, CV-AMM, 路径无关, 价值守恒, 闭环, 套利, 滑点, AMM 性质]
 image: /img/og-social-card.png

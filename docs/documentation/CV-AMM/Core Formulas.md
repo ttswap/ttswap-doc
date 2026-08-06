@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: CV-AMM Core Formulas
+title: Core Formulas
 description: The CV-AMM two-step kernel — input-side value mapping, output-side quantity mapping, 1% slice iteration, safeLine bounds, and the exact code mapping in L_Good.
 keywords: [TTSWAP, CV-AMM, buyGoodInput, buyGoodOutput, safeLine, slice iteration, harmonic mean, AMM formula]
 image: /img/og-social-card.png

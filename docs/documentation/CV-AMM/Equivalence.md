@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: CV-AMM Equivalence with Uniswap, Balancer & Curve
+title: Equivalence with other dex
 description: How one CV-AMM formula pair reproduces Uniswap's CPMM exactly, matches Balancer's weighted spot price, and approximates Curve's StableSwap flatness — without exponentiation or iteration.
 keywords: [TTSWAP, CV-AMM, CPMM, Uniswap, Balancer, Curve, StableSwap, equivalence proof, AMM comparison]
 image: /img/og-social-card.png

@@ -1,6 +1,6 @@
 ---
 lang: en-US
-title: CV-AMM Model Properties — Value Conservation & Closure
+title: Model Properties 
 description: Formal properties of the CV-AMM — value conservation, round-trip and triangular closure, split-trade error bounds, and why the value hub admits no risk-free arbitrage loop.
 keywords: [TTSWAP, CV-AMM, path independence, value conservation, closure, arbitrage, slippage, AMM properties]
 image: /img/og-social-card.png
