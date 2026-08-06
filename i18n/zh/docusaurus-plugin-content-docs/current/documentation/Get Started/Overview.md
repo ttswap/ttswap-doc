@@ -33,10 +33,11 @@ TTSWAP（Token-Token Swap）是运行在 EVM 兼容链上的去中心化做市�
 ## 如何阅读本套文档
 
 1. [专用名词](./Concept) — 与技术白皮书对齐的术语表  
-2. [交易](../Trade/Overview) — `buyGood` / `payGood` / X402  
-3. [投资与撤资](../Invest&Divest/Overview) — 单边 LP、投资证明、安全线  
-4. [代币经济](../Tokenomics/Overview) — TTS 供应、4C、价格翻倍解锁  
-5. [白皮书](./WhitePaper) / [商场叙事](./SuperMarket) — 完整协议深读  
+2. [恒定价值 AMM](../CV-AMM/Overview) — CV-AMM 数学、等价性与模型性质  
+3. [交易](../Trade/Overview) — `buyGood` / `payGood` / X402  
+4. [投资与撤资](../Invest&Divest/Overview) — 单边 LP、投资证明、安全线  
+5. [代币经济](../Tokenomics/Overview) — TTS 供应、4C、价格翻倍解锁  
+6. [白皮书](./WhitePaper) / [商场叙事](./SuperMarket) — 完整协议深读  
 
 ## 常用入口
 

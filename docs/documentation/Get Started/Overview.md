@@ -33,10 +33,11 @@ TTSWAP (Token-Token Swap) is a decentralized market-making protocol on EVM-compa
 ## How to read this docs set
 
 1. [Concepts](./Concept) — glossary aligned with the technical whitepaper  
-2. [Trade](../Trade/Overview) — `buyGood` / `payGood` / X402  
-3. [Invest & Divest](../Invest&Divest/Overview) — single-sided LP, proofs, safe line  
-4. [Tokenomics](../Tokenomics/Overview) — TTS supply, 4C, doubling unlock  
-5. [Whitepaper](./WhitePaper) / [Supermarket narrative](./SuperMarket) — full protocol deep-dives  
+2. [CV-AMM](../CV-AMM/Overview) — Constant Value AMM math, equivalence, properties  
+3. [Trade](../Trade/Overview) — `buyGood` / `payGood` / X402  
+4. [Invest & Divest](../Invest&Divest/Overview) — single-sided LP, proofs, safe line  
+5. [Tokenomics](../Tokenomics/Overview) — TTS supply, 4C, doubling unlock  
+6. [Whitepaper](./WhitePaper) / [Supermarket narrative](./SuperMarket) — full protocol deep-dives  
 
 ## Typical entry points
 

@@ -1,8 +1,9 @@
 ---
 lang: zh-CN
-title: 恒定价值 AMM 概览
+title: 恒定价值 AMM（CV-AMM）概览
 description: 什么是恒定价值 AMM —— 两步价值中枢交易模型，用 O(1) 代数公式统一覆盖 CPMM、加权池与 StableSwap，无指数、无迭代。
-keywords: [TTSWAP, CV-AMM, 恒定价值 AMM, 价值中枢, Singleton, 一币一池]
+keywords: [TTSWAP, CV-AMM, 恒定价值 AMM, 价值中枢, Singleton, 一币一池, DEX, DeFi]
+image: /img/og-social-card.png
 displayed_sidebar: guideSidebar
 sidebar_position: 1
 sidebar_class_name: hide-from-sidebar

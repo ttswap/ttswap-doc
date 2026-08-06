@@ -1,12 +1,38 @@
 # https://docs.ttswap.io/robots.txt
-# Allow Googlebot and Bingbot to crawl documentation
+# TTSWAP Docs — crawl policy for search engines
 
 User-agent: Googlebot
 Allow: /
 Disallow: /search
 Disallow: /*/search
+Disallow: /*_bak*
+Disallow: /*bak*
 
 User-agent: Bingbot
+Allow: /
+Disallow: /search
+Disallow: /*/search
+Disallow: /*_bak*
+Disallow: /*bak*
+
+# Common AI / research crawlers (documentation is public)
+User-agent: GPTBot
+Allow: /
+Disallow: /search
+Disallow: /*/search
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /search
+Disallow: /*/search
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
 Allow: /
 Disallow: /search
 Disallow: /*/search
@@ -15,7 +41,9 @@ User-agent: *
 Allow: /
 Disallow: /search
 Disallow: /*/search
+Disallow: /*_bak*
+Disallow: /*bak*
 
-# Production sitemaps (en + zh)
+# Production sitemaps (English + Chinese)
 Sitemap: https://docs.ttswap.io/sitemap.xml
 Sitemap: https://docs.ttswap.io/zh/sitemap.xml

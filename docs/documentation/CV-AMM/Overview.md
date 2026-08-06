@@ -1,8 +1,9 @@
 ---
 lang: en-US
-title: CV-AMM Overview
+title: Constant Value AMM (CV-AMM) Overview
 description: What the Constant Value AMM is — a two-step value-hub trading model that unifies CPMM, weighted pools, and StableSwap behavior with O(1) algebra and no iteration.
-keywords: [TTSWAP, CV-AMM, Constant Value AMM, value hub, Singleton, one-token-one-pool]
+keywords: [TTSWAP, CV-AMM, Constant Value AMM, value hub, Singleton, one-token-one-pool, DEX, DeFi AMM]
+image: /img/og-social-card.png
 displayed_sidebar: guideSidebar
 sidebar_position: 1
 sidebar_class_name: hide-from-sidebar
