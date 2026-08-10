@@ -1,0 +1,10 @@
+{
+  "label": "漏洞赏金计划",
+  "key": "bounty-program",
+  "position": 2,
+  "collapsed": false,
+  "link": {
+    "type": "doc",
+    "id": "documentation/Bounty Program/Overview"
+  }
+}

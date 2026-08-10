@@ -1,7 +1,7 @@
 {
   "label": "恒定价值 AMM",
   "key": "cv-amm",
-  "position": 2,
+  "position": 3,
   "collapsed": false,
   "link": {
     "type": "doc",

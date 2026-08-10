@@ -1,0 +1,10 @@
+{
+  "label": "Bounty Program",
+  "key": "bounty-program",
+  "position": 2,
+  "collapsed": false,
+  "link": {
+    "type": "doc",
+    "id": "documentation/Bounty Program/Overview"
+  }
+}

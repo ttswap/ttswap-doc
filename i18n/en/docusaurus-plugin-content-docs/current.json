@@ -26,5 +26,9 @@
   "sidebar.guideSidebar.category.Community": {
     "message": "Community",
     "description": "The label for category Community in sidebar guideSidebar"
+  },
+  "sidebar.guideSidebar.category.Bounty Program": {
+    "message": "Bounty Program",
+    "description": "The label for category Bounty Program in sidebar guideSidebar"
   }
 }

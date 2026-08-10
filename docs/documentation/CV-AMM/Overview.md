@@ -1,7 +1,7 @@
 ---
 lang: en-US
 title: Constant Value AMM (CV-AMM) Overview
-description: What the Constant Value AMM is — ledgered value conserved across trades, O(1) algebra unifying CPMM / weighted / StableSwap, relative prices pulled toward the market by trading.
+description: What the Constant Value AMM is — a good’s ledgered value is unchanged before vs after a trade; O(1) algebra unifies CPMM / weighted / StableSwap; relative prices are pulled toward the market.
 keywords: [TTSWAP, CV-AMM, Constant Value AMM, value conservation, relative price, value hub, Singleton, one-token-one-pool, DEX, DeFi AMM]
 image: /img/og-social-card.png
 displayed_sidebar: guideSidebar
@@ -49,24 +49,28 @@ The instantaneous price of a token *in value units* is simply $P = V / Q$. Becau
 
 ## Why "constant value"
 
-**Constant value** means the architecture **conserves ledgered value across trades**: a swap **transfers value between shelves but never creates or destroys it**. The value removed from shelf A ($\Delta V$) is exactly the value deposited on shelf B. The invariant the protocol conserves is *value*, not a per-pair product $x \cdot y = k$ — hence *Constant Value AMM*.
+**Constant value** means a good’s **ledgered value is the same before and after a trade** — the swap itself does not increase or decrease that value.
 
-### Constant shelf value → unit value = $V / Q$
+A swap only changes inventory $Q$; it **does not rewrite** each shelf’s invested total value $V$ (`investState.amount1`). Through the value hub, the transferred value $\Delta V$ appraised out of shelf A is exactly the same $\Delta V$ credited into shelf B — value moves between shelves and is **neither created nor destroyed**. The invariant the protocol conserves is therefore *value*, not a per-pair product $x \cdot y = k$ — hence *Constant Value AMM*.
 
-For a **single shelf**, the invested total value $V$ (`investState.amount1`) stays **unchanged during trading** — buys and sells only move the live inventory $Q$, not that shelf's value ledger. The protocol's **unit value** is therefore:
+(Whitepaper: `investState` is unchanged during trading; only invest / divest / welfare injection may modify $V$.)
+
+### Unchanged shelf value → unit value = $V / Q$
+
+Because shelf total value $V$ is constant across the trade, the protocol’s **unit value** is:
 
 $$
 P \;=\; \frac{V}{Q}
 $$
 
-i.e. “total value on the shelf ÷ current quantity.” That matches how users think about **unit price**: every unit of the same good on a shelf represents the same share of internal purchasing power.
+i.e. “total value on the shelf ÷ current quantity.” Every unit of the same good on a shelf represents the same share of internal purchasing power — the user’s **unit price**.
 
 | User action | What happens on the shelf | Unit value $P = V/Q$ |
 |:--|:--|:--|
-| **Sell to the shelf** (deposit tokens) | $Q$ rises, $V$ fixed | $P$ **falls** |
-| **Buy from the shelf** (withdraw tokens) | $Q$ falls, $V$ fixed | $P$ **rises** |
+| **Sell to the shelf** (deposit tokens) | $Q$ rises, $V$ unchanged | $P$ **falls** |
+| **Buy from the shelf** (withdraw tokens) | $Q$ falls, $V$ unchanged | $P$ **rises** |
 
-On a cross-token swap, both shelves move as in the table: $A \to B$ raises $P_A$ and lowers $P_B$, so the **relative price $P_A / P_B$** shifts continuously with the trade.
+On a cross-token swap, both shelves move as in the table: $A \to B$ raises $P_A$ and lowers $P_B$, so the **relative price $P_A / P_B$** shifts continuously — what changes is relative price and inventory, **not** each shelf’s ledgered total value.
 
 ### Trades pull relative prices toward the market
 
@@ -76,7 +80,7 @@ The protocol does not rely on an oracle feed. When the external market relative 
 
 Three properties follow (proofs in [Model Properties](./Properties)):
 
-1. **Value conservation** — input value ≡ output value across the hop, fee-free; trading does not mint or burn ledgered value.
+1. **Value conservation** — a good’s ledgered value is the same before and after the trade; fee-free, input value ≡ output value across the hop ($\Delta V$ moves, $V$ does not mint or burn).
 2. **Bounded slippage** — the marginal rate worsens monotonically with size; a whale cannot sweep a shelf at the spot price.
 3. **Unified behavior** — with $V_A = V_B$ the kernel degenerates *exactly* to Uniswap's CPMM; with $V_A \neq V_B$ it reproduces Balancer's weighted spot price; with liquidity amplification (`power`) plus `safeLine` bounds it approximates Curve's StableSwap flatness — all from one formula pair ([Equivalence](./Equivalence)).
 

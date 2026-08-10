@@ -26,5 +26,9 @@
   "sidebar.guideSidebar.category.Community": {
     "message": "社区",
     "description": "The label for category Community in sidebar guideSidebar"
+  },
+  "sidebar.guideSidebar.category.Bounty Program": {
+    "message": "漏洞赏金计划",
+    "description": "The label for category Bounty Program in sidebar guideSidebar"
   }
 }
